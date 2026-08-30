@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code or the derived dataset, please cite it as below."
+title: "State-to-Congress Legislators: Linking State and Federal Legislative Sponsorship Records, 1979-Present"
+type: software
+authors:
+  - family-names: Zhong
+    given-names: Ardis
+    affiliation: "San Diego State University, MA Political Science"
+repository-code: "https://github.com/chowchowsies/state-to-congress-legislators"
+license: MIT
+date-released: 2026-08-30
+abstract: >
+  A linked dataset and pipeline tracking U.S. legislators who served in a
+  state legislature before or during their time in Congress, 1979-present.
+  Combines federal sponsored-legislation records (via Congress.gov) with
+  state sponsored-legislation records (via LegiScan) for the same set of
+  people, matched across both data sources.

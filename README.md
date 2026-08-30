@@ -95,6 +95,10 @@ basis in the meantime. The repo is kept private for now as a precaution,
 and this section will be updated if LegiScan responds with different
 guidance.
 
+**This project's own code** (everything under `scripts/`) is released
+separately under the MIT License -- see `LICENSE`. See `CITATION.cff` for
+how to cite this project.
+
 ## Repo structure
 
 ```
