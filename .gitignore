@@ -9,6 +9,16 @@ legiscan_billtext_cache/
 # --- Truly raw/intermediate data: never committed ---
 data/raw/
 
+# --- Pipeline working files that live at the project root because the
+# scripts write them there directly (CSVs, JSON, zips). The leading slash
+# anchors these to the repo root ONLY, so it does NOT affect the curated
+# copies you deliberately place in data/processed/ for publishing -- those
+# stay tracked. Anything landing loose at root is raw/regenerable, not a
+# deliberate publish decision, so it's ignored by default. ---
+/*.csv
+/*.csv.gz
+/*.json
+
 # --- Probe/scratch outputs from API exploration ---
 legiscan_probe*_dataset.zip
 legiscan_probe*_sample_bill.json

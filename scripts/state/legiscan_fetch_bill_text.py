@@ -46,6 +46,7 @@ import html
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import time
@@ -56,9 +57,12 @@ CACHE_DIR = "legiscan_billtext_cache"
 
 MIME_EXT = {
     "text/html": "html", "text/plain": "txt", "application/pdf": "pdf",
-    "application/msword": "doc",
+    "application/msword": "doc", "application/doc": "doc", "application/rtf": "rtf",
     "application/vnd.openxmlformats-officedocument.wordprocessingml.document": "docx",
 }
+
+# mimes handled via macOS's built-in `textutil` (see extract_via_textutil below)
+TEXTUTIL_MIMES = {"application/rtf", "application/doc", "application/msword"}
 
 _pdfplumber = None
 
@@ -100,7 +104,7 @@ def call(op, key, **params):
             return data
         except Exception as e:  # noqa: BLE001
             last_err = str(e)
-            time.sleep(1 * attempt)
+            time.sleep(5 * attempt)  # more patience for a transient WiFi/network drop
     raise RuntimeError(f"Failed op={op} params={params} after {MAX_RETRIES} retries: {last_err}")
 
 
@@ -112,6 +116,41 @@ def strip_html(raw_bytes):
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"\n\s*\n+", "\n\n", text)
     return text.strip()
+
+
+def extract_via_textutil(raw_path, mime):
+    """Convert legacy .rtf/.doc bill text to plain text using macOS's
+    built-in `textutil` command -- ships with every Mac, no install needed.
+    NOTE: this only works on macOS. On another OS these files will fall
+    back to "no extractor" and stay raw-only -- a known, small (~0.3% of
+    documents) platform limitation worth knowing about if this pipeline is
+    ever reproduced on Linux/Windows."""
+    ext = {"application/rtf": "rtf", "application/doc": "doc",
+           "application/msword": "doc"}.get(mime)
+    if not ext:
+        return None, f"no textutil mapping for mime {mime!r}"
+    # textutil detects the source format from the file extension, so make
+    # sure it's looking at a correctly-named copy (older cached files were
+    # saved as .raw.bin before this mime mapping was added).
+    src_path = raw_path
+    if not raw_path.endswith(f".{ext}"):
+        src_path = raw_path + f".{ext}"
+        shutil.copyfile(raw_path, src_path)
+    try:
+        result = subprocess.run(
+            ["textutil", "-convert", "txt", "-stdout", src_path],
+            capture_output=True, text=True, timeout=30,
+        )
+    except FileNotFoundError:
+        return None, "textutil not found -- this extractor only works on macOS"
+    except Exception as e:  # noqa: BLE001
+        return None, f"textutil error: {e}"
+    if result.returncode != 0:
+        return None, f"textutil error: {result.stderr.strip()[:200]}"
+    text = result.stdout.strip()
+    if not text:
+        return None, "textutil produced no text"
+    return text, None
 
 
 def extract_pdf(path):
@@ -191,7 +230,26 @@ def main():
                 raw_bytes = f.read()
             consecutive_failures = 0
         else:
-            resp = call("getBillText", key, id=doc_id)
+            try:
+                resp = call("getBillText", key, id=doc_id)
+            except RuntimeError as e:
+                # A network blip (WiFi drop, DNS hiccup, brief outage) that outlasted
+                # the retries in call() -- don't crash the whole run, just log it and
+                # move on. The circuit breaker below still stops cleanly if this
+                # keeps happening (e.g. the connection is down for good).
+                consecutive_failures += 1
+                manifest.append({"DocId": doc_id, "BillIds": ";".join(sorted(info["bill_ids"])),
+                                  "Mime": info["mime"], "RawPath": "", "TextPath": "",
+                                  "TextLength": 0, "Error": f"network/request error: {e}"})
+                if consecutive_failures >= STOP_AFTER_CONSECUTIVE_FAILURES:
+                    print(f"\n{consecutive_failures} consecutive failed fetches -- this looks like "
+                          f"a quota limit, outage, or lost connection rather than isolated bad "
+                          f"doc_ids. Stopping here so we don't burn through the remaining "
+                          f"{len(docs) - i} doc_id(s) on doomed requests.\n"
+                          f"Check your internet connection, then re-run this same command -- "
+                          f"everything fetched so far is cached and will be skipped.")
+                    break
+                continue
             if not first_call_diagnostic_shown:
                 text_obj = resp.get("text", {})
                 print(f"\n[diagnostic] First getBillText response -- top-level keys: "
@@ -234,6 +292,8 @@ def main():
             extracted = raw_bytes.decode("utf-8", errors="replace")
         elif mime == "application/pdf":
             extracted, error = extract_pdf(raw_path)
+        elif mime in TEXTUTIL_MIMES:
+            extracted, error = extract_via_textutil(raw_path, mime)
         else:
             extracted, error = None, f"no extractor for mime type {mime!r} -- raw file saved"
 
