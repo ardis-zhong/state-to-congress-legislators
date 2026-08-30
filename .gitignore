@@ -1,0 +1,31 @@
+# --- API caches (large, and/or under review for redistribution terms) ---
+legiscan_session_cache/
+legiscan_dataset_cache/
+legiscan_billtext_cache/
+*.zip
+
+# --- Generated data outputs (not yet committed -- see README) ---
+data/raw/
+data/processed/*.csv
+data/processed/*.csv.gz
+!data/processed/.gitkeep
+
+# --- Probe/scratch outputs from API exploration ---
+legiscan_probe*_dataset.zip
+legiscan_probe*_sample_bill.json
+legiscan_schema_probe.json
+
+# --- Never commit credentials ---
+*api_key*
+.env
+
+# --- OS / editor cruft ---
+.DS_Store
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+
+# --- Python environments, if you ever set one up here ---
+venv/
+.venv/
