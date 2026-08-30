@@ -54,7 +54,7 @@ import time
 import urllib.request
 import urllib.error
 
-API_KEY = "REDACTED"
+API_KEY = None  # set from --api-key at runtime, see main()
 BASE_URL = "https://api.congress.gov/v3/member/{bioguide_id}/sponsored-legislation"
 PAGE_LIMIT = 250
 MAX_RETRIES = 5
@@ -183,7 +183,11 @@ def main():
     ap.add_argument("--delay", type=float, default=0.35, help="seconds between API calls")
     ap.add_argument("--limit-people", type=int, default=0, help="0 = all people; use e.g. 5 for a smoke test")
     ap.add_argument("--resume", action="store_true", help="skip people already present in --output")
+    ap.add_argument("--api-key", required=True, help="Congress.gov API key")
     args = ap.parse_args()
+
+    global API_KEY
+    API_KEY = args.api_key
 
     people = load_queue(args.queue, args.limit_people)
     done_ids = already_done(args.output) if args.resume else set()
