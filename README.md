@@ -28,8 +28,10 @@ legislator (Bioguide ID).
 | `scripts/federal/classify_status.py` | Classify each bill's outcome status |
 | `scripts/federal/gap_fill_missing_items.py` | Backfill records missed in the initial pull |
 | `scripts/federal/build_combined.py` | Merge federal legislator + bill data |
-| `scripts/federal/build_final_datasets.py` | Produce final federal output tables |
+| `scripts/federal/build_final_datasets.py` | Produce final federal output tables (`person_level.csv` -- the full 910-person population, see "Data coverage & limitations" below) |
 | `scripts/federal/build_stata_files.py` | Export Stata-format files for analysis |
+| `scripts/federal/filter_federal_targets.py` | Filter federal sponsored-legislation records down to the 247-person LegiScan-reachable scope (`state_bill_targets.csv`) |
+| `scripts/federal/fetch_federal_bill_text.py` | Fetch and extract full text (Introduced version) for federally sponsored bills, via `api.congress.gov`'s text endpoint |
 
 ### State (LegiScan)
 
@@ -44,6 +46,49 @@ Exploratory API probes (`legiscan_probe2.py`, `legiscan_probe3.py`,
 `legiscan_coverage_check.py`) are kept for provenance -- they document how
 the LegiScan API's actual response shapes were confirmed before the real
 pipeline was built against them.
+
+## Data coverage & limitations
+
+**The full population** of U.S. legislators who served in a state
+legislature before or during their time in Congress, 1979-present, is
+**910 people** (built from the biographical data behind
+`scripts/federal/build_final_datasets.py`). This repo's actual working
+scope -- `state_bill_targets.csv`, 247 people -- is a deliberately
+filtered subset of those 910, not the whole population, and here's why.
+
+**LegiScan's digitized archive does not go back to 1979 for any state.**
+Checking every state's earliest available session
+(`scripts/state/legiscan_coverage_check.py`, output in
+`legiscan_state_coverage.csv`) shows every single state's LegiScan coverage
+begins somewhere between 2007 and 2010 -- there is no earlier state
+legislative data available through this API, for any state, full stop.
+
+Of the full 910, **661 people (73%) served in a state legislature entirely
+before their state's LegiScan coverage begins.** For them, zero state
+bill-sponsorship data is retrievable through LegiScan, no matter how the
+matching or fetching logic is written -- it isn't a matching failure, the
+data simply isn't digitized. The remaining **247** are everyone whose state
+legislative service has *any* chance of overlapping LegiScan's window, and
+that's the population this repo actually works with.
+
+**Coverage is still partial for many of the 247.** Even among people who do
+overlap LegiScan's window, 133 of the 247 (54%) served part of their state
+career *before* their state's coverage starts, so their earliest state
+legislative activity is missing -- only the portion after their state's
+coverage start date is retrievable. Only 114 of 247 (46%) have their entire
+state legislative career inside LegiScan's window. Averaged across the 133
+affected people, about 8.3 years of state service per person is missing;
+the worst case is 35 missing years (a legislator with a state career
+starting in the 1970s). See `legiscan_coverage_gap_analysis.csv` for the
+full person-by-person breakdown.
+
+**Practical takeaway:** the state-side dataset in this repo reflects bills
+sponsored *within LegiScan's digitized window* (2007-2010 onward,
+depending on the state), not each person's full state legislative career.
+This is a structural limit of the LegiScan API itself, not a gap in this
+project's matching logic. The federal side (Congress.gov) is not affected
+by this -- its digitized coverage extends across the full 1979-present
+period.
 
 ## Reproducing this pipeline
 
