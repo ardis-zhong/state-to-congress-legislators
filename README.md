@@ -8,12 +8,11 @@ same set of people, matched across both data sources.
 
 ## Status
 
-This repo currently contains **pipeline code and methodology only**. Bulk
-data derived from LegiScan (state bill metadata and full text) is **not
-yet published here** pending clarification of LegiScan's API terms of
-service on redistribution (see "Data sources and licensing" below).
-Federal (Congress.gov) data is U.S. government work and not subject to
-the same restriction. This note should be updated once that's resolved.
+This repo currently contains **pipeline code and methodology**, plus
+derived data as it becomes available. State (LegiScan) data is published
+here under the CC BY 4.0 attribution described in "Data sources and
+licensing" below. This repo is currently **private**; it will be made
+public once the full pipeline and dataset are further along.
 
 ## Pipeline overview
 
@@ -76,21 +75,37 @@ api.data.gov (rate limits, no-abuse) -- see
 https://www.congress.gov/help/using-data-offsite for the Library of
 Congress's current guidance before large-scale republishing.
 
-**State data** (LegiScan / `api.legiscan.com`): LegiScan's Terms of
-Service (https://legiscan.com/terms-of-service) state that users "will
-not reproduce, duplicate, copy, sell, trade or resell the Services for
-any purpose" without a separate written agreement. This project has not
-yet confirmed with LegiScan what's permissible for academic/non-commercial
-redistribution of derived bulk data (bill metadata, full text). **Do not
-push `state_legislation_sponsored.csv`, `bill_text_manifest.csv`, or
-anything under the LegiScan cache directories to this repo until that's
-resolved.**
+**State data** (LegiScan / `api.legiscan.com`): LegiScan's API page states
+"LegiScan API by LegiScan LLC is licensed under CC BY 4.0 Creative Commons
+Attribution" (https://legiscan.com/legiscan), so data derived from the API
+is published here under that license, with attribution:
+
+> Bill sponsorship data and bill text derived from the LegiScan API,
+> © LegiScan LLC, licensed under CC BY 4.0
+> (https://creativecommons.org/licenses/by/4.0/). Retrieved via
+> https://legiscan.com.
+
+Note: LegiScan's Terms of Service (https://legiscan.com/terms-of-service)
+separately state that users "will not reproduce, duplicate, copy, sell,
+trade or resell the Services for any purpose" without a separate written
+agreement, which isn't fully reconciled with the CC BY 4.0 statement above.
+This project has not received explicit confirmation from LegiScan on
+redistribution of derived bulk data, and is proceeding on the CC BY 4.0
+basis in the meantime. The repo is kept private for now as a precaution,
+and this section will be updated if LegiScan responds with different
+guidance.
 
 ## Repo structure
 
 ```
 scripts/federal/    -- Congress.gov pipeline
 scripts/state/       -- LegiScan pipeline
-data/processed/      -- small derived/summary tables (gitignored for now, see above)
+data/processed/      -- published derived/summary tables (see "Data sources and licensing" above)
 data/raw/             -- never committed; regenerate locally with your own API keys
 ```
+
+The large raw-text caches (`legiscan_billtext_cache/`, etc.) stay local/gitignored
+for now regardless of licensing -- they're tens of thousands of individual files,
+which isn't a great fit for a git repo. Once the full pipeline is done, we'll
+package the actual bill full text into a more repo-friendly form (e.g. one
+combined file per state or per Congress) before publishing it here.

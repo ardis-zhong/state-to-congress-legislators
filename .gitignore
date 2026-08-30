@@ -1,14 +1,13 @@
-# --- API caches (large, and/or under review for redistribution terms) ---
+# --- Raw API caches: large, regenerate locally with your own API key ---
+# (not the same as the *processed* summary tables below, which ARE published --
+# see data/processed/ and the README's "Data sources and licensing" section)
 legiscan_session_cache/
 legiscan_dataset_cache/
 legiscan_billtext_cache/
 *.zip
 
-# --- Generated data outputs (not yet committed -- see README) ---
+# --- Truly raw/intermediate data: never committed ---
 data/raw/
-data/processed/*.csv
-data/processed/*.csv.gz
-!data/processed/.gitkeep
 
 # --- Probe/scratch outputs from API exploration ---
 legiscan_probe*_dataset.zip
