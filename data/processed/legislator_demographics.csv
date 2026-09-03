@@ -1,0 +1,911 @@
+BioguideId,Name,Gender,MostRecentParty,PartyChanged,PartyHistory,Matched
+A000009,James Abdnor,M,Republican,No,Republican (1973-1987),Yes
+A000014,Neil Abercrombie,M,Democrat,No,Democrat (1985-2010),Yes
+A000022,Gary Ackerman,M,Democrat,No,Democrat (1983-2013),Yes
+A000109,Wayne Allard,M,Republican,No,Republican (1991-2009),Yes
+A000121,George Allen,M,Republican,No,Republican (1991-2007),Yes
+A000189,Glenn M. Anderson,M,Democrat,No,Democrat (1969-1993),Yes
+A000211,Tom Andrews,M,Democrat,No,Democrat (1991-1995),Yes
+A000214,Douglas Applegate,M,Democrat,No,Democrat (1977-1995),Yes
+A000215,Bill Archer,M,Republican,No,Republican (1971-2001),Yes
+A000219,William L. Armstrong,M,Republican,No,Republican (1973-1991),Yes
+A000226,Chester Atkins,M,Democrat,No,Democrat (1985-1993),Yes
+A000337,Les AuCoin,M,Democrat,No,Democrat (1975-1993),Yes
+A000361,Rodney Alexander,M,Republican,Yes,Democrat (2003-2004); Republican (2004-2013),Yes
+A000364,John Adler,M,Democrat,No,Democrat (2009-2011),Yes
+A000365,Steve Austria,M,Republican,No,Republican (2009-2013),Yes
+A000366,Sandy Adams,F,Republican,No,Republican (2011-2013),Yes
+A000367,Justin Amash,M,Libertarian,Yes,Republican (2011-2019); Independent (2019-2020); Libertarian (2020-2021),Yes
+A000369,Mark Amodei,M,Republican,No,Republican (2011-2027),Yes
+A000370,Alma Adams,F,Democrat,No,Democrat (2014-2027),Yes
+A000373,Brad Ashford,M,Democrat,No,Democrat (2015-2017),Yes
+A000377,Kelly Armstrong,M,Republican,No,Republican (2019-2024),Yes
+B000013,Spencer Bachus,M,Republican,No,Republican (1993-2015),Yes
+B000024,Robert Badham,M,Republican,No,Republican (1977-1989),Yes
+B000029,Skip Bafalis,M,Republican,No,Republican (1973-1983),Yes
+B000047,Wendell Bailey,M,Republican,No,Republican (1981-1983),Yes
+B000072,Richard Baker,M,Republican,No,Republican (1987-2008),Yes
+B000078,Bill Baker,M,Republican,No,Republican (1993-1997),Yes
+B000081,John Baldacci,M,Democrat,No,Democrat (1995-2003),Yes
+B000104,Cass Ballenger,M,Republican,No,Republican (1986-2005),Yes
+B000134,James Barcia,M,Democrat,No,Democrat (1993-2003),Yes
+B000179,Bill Barrett,M,Republican,No,Republican (1991-2001),Yes
+B000220,Charles Bass,M,Republican,No,Republican (1995-2013),Yes
+B000229,Herbert H. Bateman,M,Republican,No,Republican (1983-2000),Yes
+B000243,Max Baucus,M,Democrat,No,Democrat (1975-2014),Yes
+B000244,Robert Bauman,M,Republican,No,Republican (1973-1981),Yes
+B000279,Edward Beard,M,Democrat,No,Democrat (1975-1981),Yes
+B000287,Xavier Becerra,M,Democrat,No,Democrat (1993-2017),Yes
+B000318,Anthony Beilenson,M,Democrat,No,Democrat (1977-1997),Yes
+B000363,Adam Benjamin Jr.,M,Democrat,No,Democrat (1977-1983),Yes
+B000371,Charles Edward Bennett,M,Democrat,No,Democrat (1949-1993),Yes
+B000403,Doug Bereuter,M,Republican,No,Republican (1979-2004),Yes
+B000410,Howard Berman,M,Democrat,No,Democrat (1983-2013),Yes
+B000431,Tom Bevill,M,Democrat,No,Democrat (1967-1997),Yes
+B000462,James Bilbray,M,Democrat,No,Democrat (1987-1995),Yes
+B000490,Sanford Bishop,M,Democrat,No,Democrat (1993-2027),Yes
+B000518,Rod Blagojevich,M,Democrat,No,Democrat (1997-2003),Yes
+B000574,Earl Blumenauer,M,Democrat,No,Democrat (1996-2025),Yes
+B000576,Peter Blute,M,Republican,No,Republican (1993-1997),Yes
+B000589,John Boehner,M,Republican,No,Republican (1991-2015),Yes
+B000600,Edward Boland,M,Democrat,No,Democrat (1953-1989),Yes
+B000639,David Boren,M,Democrat,No,Democrat (1979-1994),Yes
+B000652,Leonard Boswell,M,Democrat,No,Democrat (1997-2013),Yes
+B000657,Rick Boucher,M,Democrat,No,Democrat (1983-2011),Yes
+B000668,Cliff Bentz,M,Republican,No,Republican (2021-2027),Yes
+B000716,Allen Boyd,M,Democrat,No,Democrat (1997-2011),Yes
+B000740,Stephanie Bice,F,Republican,No,Republican (2021-2027),Yes
+B000755,Kevin Brady,M,Republican,No,Republican (1997-2023),Yes
+B000798,Joseph E. Brennan,M,Democrat,No,Democrat (1987-1991),Yes
+B000817,Bill Brewster,M,Democrat,No,Democrat (1991-1997),Yes
+B000839,Jack Brinkley,M,Democrat,No,Democrat (1967-1983),Yes
+B000880,Jack Brooks,M,Democrat,No,Democrat (1953-1995),Yes
+B000890,William Broomfield,M,Republican,No,Republican (1957-1993),Yes
+B000897,Glen Browder,M,Democrat,No,Democrat (1989-1997),Yes
+B000911,Corrine Brown,F,Democrat,No,Democrat (1993-2017),Yes
+B000918,George E. Brown Jr.,M,Democrat,No,Democrat (1963-1999),Yes
+B000919,Hank Brown,M,Republican,No,Republican (1981-1997),Yes
+B000944,Sherrod Brown,M,Democrat,No,Democrat (1993-2025),Yes
+B000971,Terry L. Bruce,M,Democrat,No,Democrat (1985-1993),Yes
+B000993,Richard Bryan,M,Democrat,No,Democrat (1989-2001),Yes
+B000997,John Bryant,M,Democrat,No,Democrat (1983-1997),Yes
+B001036,Jack Buechner,M,Republican,No,Republican (1987-1991),Yes
+B001066,Jim Bunning,M,Republican,No,Republican (1987-2011),Yes
+B001080,Clair Burgener,M,Republican,No,Republican (1973-1983),Yes
+B001149,Dan Burton,M,Republican,No,Republican (1983-2013),Yes
+B001153,John Burton,M,Democrat,No,Democrat (1973-1983),Yes
+B001156,Phillip Burton,M,Democrat,No,Democrat (1963-1983),Yes
+B001182,M. Caldwell Butler,M,Republican,No,Republican (1971-1983),Yes
+B001209,Harry F. Byrd Jr.,M,Independent,Yes,Democrat (1965-1971); Independent (1971-1983),Yes
+B001210,Robert Byrd,M,Democrat,No,Democrat (1953-2010),Yes
+B001213,Leslie Byrne,F,Democrat,No,Democrat (1993-1995),Yes
+B001226,Peter Barca,M,Democrat,No,Democrat (1993-1995),Yes
+B001230,Tammy Baldwin,F,Democrat,No,Democrat (1999-2031),Yes
+B001231,Shelley Berkley,F,Democrat,No,Democrat (1999-2013),Yes
+B001232,Judy Biggert,F,Republican,No,Republican (1999-2013),Yes
+B001233,Birch Bayh,M,Democrat,No,Democrat (1999-2011),Yes
+B001234,Joe Baca,M,Democrat,No,Democrat (1999-2013),Yes
+B001238,Frank Ballance,M,Democrat,No,Democrat (2003-2004),Yes
+B001239,Gresham Barrett,M,Republican,No,Republican (2003-2011),Yes
+B001243,Marsha Blackburn,F,Republican,No,Republican (2003-2031),Yes
+B001246,Jeb Bradley,M,Republican,No,Republican (2003-2007),Yes
+B001247,Ginny Brown-Waite,F,Republican,No,Republican (2003-2011),Yes
+B001249,Max Burns,M,Republican,No,Republican (2003-2005),Yes
+B001250,Rob Bishop,M,Republican,No,Republican (2003-2021),Yes
+B001254,Dan Boren,M,Democrat,No,Democrat (2005-2013),Yes
+B001256,Michele Bachmann,F,Republican,No,Republican (2007-2015),Yes
+B001257,Gus Bilirakis,M,Republican,No,Republican (2007-2027),Yes
+B001261,John Barrasso,M,Republican,No,Republican (2007-2031),Yes
+B001263,John Boccieri,M,Democrat,No,Democrat (2009-2011),Yes
+B001268,Scott Brown,M,Republican,No,Republican (2010-2013),Yes
+B001270,Karen Bass,F,Democrat,No,Democrat (2011-2023),Yes
+B001272,Rick Berg,M,Republican,No,Republican (2011-2013),Yes
+B001273,Diane Black,F,Republican,No,Republican (2011-2019),Yes
+B001274,Mo Brooks,M,Republican,No,Republican (2011-2023),Yes
+B001277,Richard Blumenthal,M,Democrat,No,Democrat (2011-2029),Yes
+B001278,Suzanne Bonamici,F,Democrat,No,Democrat (2012-2027),Yes
+B001281,Joyce Beatty,F,Democrat,No,Democrat (2013-2027),Yes
+B001285,Julia Brownley,F,Democrat,No,Democrat (2013-2027),Yes
+B001289,Bradley Byrne,M,Republican,No,Republican (2014-2021),Yes
+B001295,Mike Bost,M,Republican,No,Republican (2015-2027),Yes
+B001296,Brendan Boyle,M,Democrat,No,Democrat (2015-2027),Yes
+B001299,Jim Banks,M,Republican,No,Republican (2017-2031),Yes
+B001302,Andy Biggs,M,Republican,No,Republican (2017-2027),Yes
+B001304,Anthony Brown,M,Democrat,No,Democrat (2017-2023),Yes
+B001306,Troy Balderson,M,Republican,No,Republican (2018-2027),Yes
+B001307,Jim Baird,M,Republican,No,Republican (2019-2027),Yes
+B001309,Tim Burchett,M,Republican,No,Republican (2019-2027),Yes
+B001310,Mike Braun,M,Republican,No,Republican (2019-2025),Yes
+B001311,Dan Bishop,M,Republican,No,Republican (2019-2025),Yes
+B001314,Aaron Bean,M,Republican,No,Republican (2023-2027),Yes
+B001316,Eric Burlison,M,Republican,No,Republican (2023-2027),Yes
+B001317,Josh Brecheen,M,Republican,No,Republican (2023-2027),Yes
+B001318,Becca Balint,F,Democrat,No,Democrat (2023-2027),Yes
+B001321,Tom Barrett,M,Republican,No,Republican (2025-2027),Yes
+B001322,Michael Baumgartner,M,Republican,No,Republican (2025-2027),Yes
+B001326,Janelle Bynum,F,Democrat,No,Democrat (2025-2027),Yes
+C000052,Sonny Callahan,M,Republican,No,Republican (1985-2003),Yes
+C000071,Dave Camp,M,Republican,No,Republican (1991-2015),Yes
+C000077,Ben Nighthorse Campbell,M,Republican,Yes,Democrat (1987-1995); Republican (1995-2005),Yes
+C000079,Carroll Campbell Jr.,M,Republican,No,Republican (1979-1987),Yes
+C000107,Charles Canady,M,Republican,No,Republican (1993-2001),Yes
+C000127,Maria Cantwell,F,Democrat,No,Democrat (1993-2031),Yes
+C000141,Ben Cardin,M,Democrat,No,Democrat (1987-2025),Yes
+C000191,Julia Carson,F,Democrat,No,Democrat (1997-2007),Yes
+C000243,Michael N. Castle,M,Republican,No,Republican (1993-2011),Yes
+C000293,Rod Chandler,M,Republican,No,Republican (1983-1993),Yes
+C000321,Bill Chappell,M,Democrat,No,Democrat (1969-1989),Yes
+C000356,Lawton Chiles,M,Democrat,No,Democrat (1971-1989),Yes
+C000371,Shirley Chisholm,F,Democrat,No,Democrat (1969-1983),Yes
+C000462,James McClure Clarke,M,Democrat,No,Democrat (1983-1991),Yes
+C000512,James Cleveland,M,Republican,No,Republican (1963-1981),Yes
+C000556,Howard Coble,M,Republican,No,Republican (1985-2015),Yes
+C000618,E. Thomas Coleman,M,Republican,No,Republican (1975-1993),Yes
+C000621,Ronald D. Coleman,M,Democrat,No,Democrat (1983-1997),Yes
+C000640,Mac Collins,M,Republican,No,Republican (1993-2005),Yes
+C000666,Barber Conable,M,Republican,No,Republican (1965-1985),Yes
+C000670,Gary Condit,M,Democrat,No,Democrat (1989-2003),Yes
+C000709,Silvio Conte,M,Republican,No,Republican (1959-1991),Yes
+C000813,Paul Coverdell,M,Republican,No,Republican (1993-2000),Yes
+C000858,Larry Craig,M,Republican,No,Republican (1981-2009),Yes
+C000880,Mike Crapo,M,Republican,No,Republican (1993-2029),Yes
+C000962,Barbara Cubin,F,Republican,No,Republican (1995-2009),Yes
+C000984,Elijah Cummings,M,Democrat,No,Democrat (1996-2019),Yes
+C001034,Max Cleland,M,Democrat,No,Democrat (1997-2003),Yes
+C001038,Joseph Crowley,M,Democrat,No,Democrat (1999-2019),Yes
+C001045,Ander Crenshaw,M,Republican,No,Republican (2001-2017),Yes
+C001046,Eric Cantor,M,Republican,No,Republican (2001-2014),Yes
+C001047,Shelley Moore Capito,F,Republican,No,Republican (2001-2027),Yes
+C001048,John Culberson,M,Republican,No,Republican (2001-2019),Yes
+C001049,Lacy Clay,M,Democrat,No,Democrat (2001-2021),Yes
+C001050,Dennis Cardoza,M,Democrat,No,Democrat (2003-2012),Yes
+C001053,Tom Cole,M,Republican,No,Republican (2003-2027),Yes
+C001055,Ed Case,M,Democrat,No,Democrat (2003-2027),Yes
+C001059,Jim Costa,M,Democrat,No,Democrat (2005-2027),Yes
+C001060,Russ Carnahan,M,Democrat,No,Democrat (2005-2013),Yes
+C001063,Henry Cuellar,M,Democrat,No,Democrat (2005-2027),Yes
+C001068,Steve Cohen,M,Democrat,No,Democrat (2007-2027),Yes
+C001069,Joe Courtney,M,Democrat,No,Democrat (2007-2027),Yes
+C001075,Bill Cassidy,M,Republican,No,Republican (2009-2027),Yes
+C001077,Mike Coffman,M,Republican,No,Republican (2009-2019),Yes
+C001080,Judy Chu,F,Democrat,No,Democrat (2009-2027),Yes
+C001084,David Cicilline,M,Democrat,No,Democrat (2011-2023),Yes
+C001085,Hansen Clarke,M,Democrat,No,Democrat (2011-2013),Yes
+C001091,Joaquin Castro,M,Democrat,No,Democrat (2013-2027),Yes
+C001093,Doug Collins,M,Republican,No,Republican (2013-2021),Yes
+C001094,Paul Cook,M,Republican,No,Republican (2013-2020),Yes
+C001097,Tony Cardenas,M,Democrat,No,Democrat (2013-2025),Yes
+C001101,Katherine Clark,F,Democrat,No,Democrat (2013-2027),Yes
+C001103,Buddy Carter,M,Republican,No,Republican (2015-2027),Yes
+C001105,Barbara Comstock,F,Republican,No,Republican (2015-2019),Yes
+C001108,James Comer,M,Republican,No,Republican (2016-2027),Yes
+C001110,Lou Correa,M,Democrat,No,Democrat (2017-2027),Yes
+C001111,Charlie Crist,M,Democrat,No,Democrat (2017-2022),Yes
+C001118,Ben Cline,M,Republican,No,Republican (2019-2027),Yes
+C001125,Troy Carter,M,Democrat,No,Democrat (2021-2027),Yes
+C001130,Jasmine Crockett,F,Democrat,No,Democrat (2023-2027),Yes
+C001134,Yadira Caraveo,F,Democrat,No,Democrat (2023-2025),Yes
+C001136,Herb Conaway,M,Democrat,No,Democrat (2025-2027),Yes
+D000032,Byron Donalds,M,Republican,No,Republican (2021-2027),Yes
+D000038,"W.C. ""Dan"" Daniel",M,Democrat,No,Democrat (1969-1988),Yes
+D000044,William Dannemeyer,M,Republican,No,Republican (1979-1993),Yes
+D000046,Pat Danner,F,Democrat,No,Democrat (1993-2001),Yes
+D000051,Buddy Darden,M,Democrat,No,Democrat (1983-1995),Yes
+D000106,Jack Davis,M,Republican,No,Republican (1987-1989),Yes
+D000131,Bob Davis,M,Republican,No,Republican (1979-1993),Yes
+D000168,Nathan Deal,M,Republican,Yes,Democrat (1993-1995); Republican (1995-2010),Yes
+D000183,Joel Deckard,M,Republican,No,Republican (1979-1983),Yes
+D000197,Diana DeGette,F,Democrat,No,Democrat (1997-2027),Yes
+D000203,Kika de la Garza,M,Democrat,No,Democrat (1965-1997),Yes
+D000210,Bill Delahunt,M,Democrat,No,Democrat (1997-2011),Yes
+D000217,Tom DeLay,M,Republican,No,Republican (1985-2006),Yes
+D000230,Don Davis,M,Democrat,No,Democrat (2023-2027),Yes
+D000231,Lawrence J. DeNardis,M,Republican,No,Republican (1981-1983),Yes
+D000267,Butler Derrick,M,Democrat,No,Democrat (1975-1995),Yes
+D000269,Edward Derwinski,M,Republican,No,Republican (1959-1983),Yes
+D000275,Peter Deutsch,M,Democrat,No,Democrat (1993-2005),Yes
+D000294,Mike DeWine,M,Republican,No,Republican (1983-2007),Yes
+D000299,Lincoln Diaz-Balart,M,Republican,No,Republican (1993-2011),Yes
+D000366,Alan J. Dixon,M,Democrat,No,Democrat (1981-1993),Yes
+D000373,Julian Dixon,M,Democrat,No,Democrat (1979-2001),Yes
+D000399,Lloyd Doggett,M,Democrat,No,Democrat (1995-2027),Yes
+D000401,Bob Dole,M,Republican,No,Republican (1961-1996),Yes
+D000416,Brian Donnelly,M,Democrat,No,Democrat (1979-1993),Yes
+D000429,John Doolittle,M,Republican,No,Republican (1991-2009),Yes
+D000586,Bernard J. Dwyer,M,Democrat,No,Democrat (1981-1993),Yes
+D000592,Mervyn Dymally,M,Democrat,No,Democrat (1981-1993),Yes
+D000593,Roy Dyson,M,Democrat,No,Democrat (1981-1991),Yes
+D000597,Jo Ann Davis,F,Republican,No,Republican (2001-2007),Yes
+D000598,Susan Davis,F,Democrat,No,Democrat (2001-2021),Yes
+D000599,Lincoln Davis,M,Democrat,No,Democrat (2003-2011),Yes
+D000600,Mario Diaz-Balart,M,Republican,No,Republican (2003-2027),Yes
+D000604,Charlie Dent,M,Republican,No,Republican (2005-2018),Yes
+D000605,Thelma Drake,F,Republican,No,Republican (2005-2009),Yes
+D000606,David Davis,M,Republican,No,Republican (2007-2009),Yes
+D000610,Ted Deutch,M,Democrat,No,Democrat (2010-2022),Yes
+D000611,Charles Djou,M,Republican,No,Republican (2010-2011),Yes
+D000615,Jeff Duncan,M,Republican,No,Republican (2011-2025),Yes
+D000623,Mark DeSaulnier,M,Democrat,No,Democrat (2015-2027),Yes
+D000631,Madeleine Dean,F,Democrat,No,Democrat (2019-2027),Yes
+D000635,Maxine Dexter,F,Democrat,No,Democrat (2025-2027),Yes
+E000013,Joseph D. Early,M,Democrat,No,Democrat (1975-1993),Yes
+E000035,Bob Eckhardt,M,Democrat,No,Democrat (1967-1981),Yes
+E000071,Jake Ellzey,M,Republican,No,Republican (2021-2027),Yes
+E000092,Vernon Ehlers,M,Republican,No,Republican (1993-2011),Yes
+E000093,Bob Ehrlich,M,Republican,No,Republican (1995-2003),Yes
+E000175,David F. Emery,M,Republican,No,Republican (1975-1983),Yes
+E000179,Eliot Engel,M,Democrat,No,Democrat (1989-2021),Yes
+E000186,Karan English,F,Democrat,No,Democrat (1993-1995),Yes
+E000198,Arlen Erdahl,M,Republican,No,Republican (1979-1983),Yes
+E000201,Ben Erdreich,M,Democrat,No,Democrat (1983-1993),Yes
+E000226,Bob Etheridge,M,Democrat,No,Democrat (1997-2011),Yes
+E000233,Billy Lee Evans,M,Democrat,No,Democrat (1977-1983),Yes
+E000236,Daniel J. Evans,M,Republican,No,Republican (1983-1989),Yes
+E000246,Chuck Edwards,M,Republican,No,Republican (2023-2027),Yes
+E000259,T. Cooper Evans,M,Republican,No,Republican (1981-1987),Yes
+E000282,Tom Ewing,M,Republican,No,Republican (1991-2001),Yes
+E000285,Mike Enzi,M,Republican,No,Republican (1997-2021),Yes
+E000288,Keith Ellison,M,Democrat,No,Democrat (2007-2019),Yes
+E000293,Elizabeth Esty,F,Democrat,No,Democrat (2013-2019),Yes
+E000294,Tom Emmer,M,Republican,No,Republican (2015-2027),Yes
+E000295,Joni Ernst,F,Republican,No,Republican (2015-2027),Yes
+E000296,Dwight Evans,M,Democrat,No,Democrat (2016-2027),Yes
+E000297,Adriano Espaillat,M,Democrat,No,Democrat (2017-2027),Yes
+E000300,Gabe Evans,M,Republican,No,Republican (2025-2027),Yes
+E000301,Sarah Elfreth,F,Democrat,No,Democrat (2025-2027),Yes
+F000030,Sam Farr,M,Democrat,No,Democrat (1993-2017),Yes
+F000040,John G. Fary,M,Democrat,No,Democrat (1975-1983),Yes
+F000041,Dante Fascell,M,Democrat,No,Democrat (1955-1993),Yes
+F000043,Chaka Fattah,M,Democrat,No,Democrat (1995-2016),Yes
+F000049,Harris Fawell,M,Republican,No,Republican (1985-1999),Yes
+F000053,Vic Fazio,M,Democrat,No,Democrat (1979-1999),Yes
+F000061,Russ Feingold,M,Democrat,No,Democrat (1993-2011),Yes
+F000078,Millicent Fenwick,F,Republican,No,Republican (1975-1983),Yes
+F000110,Cleo Fields,M,Democrat,No,Democrat (1993-2027),Yes
+F000128,Eric Fingerhut,M,Democrat,No,Democrat (1993-1995),Yes
+F000208,Ronnie Flippo,M,Democrat,No,Democrat (1977-1991),Yes
+F000215,James Florio,M,Democrat,No,Democrat (1975-1990),Yes
+F000238,Mark Foley,M,Republican,No,Republican (1995-2006),Yes
+F000246,Pat Fallon,M,Republican,No,Republican (2021-2027),Yes
+F000261,Harold Ford Sr.,M,Democrat,No,Democrat (1975-1997),Yes
+F000268,Wendell Ford,M,Democrat,No,Democrat (1974-1999),Yes
+F000270,William D. Ford,M,Democrat,No,Democrat (1965-1995),Yes
+F000286,Edwin B. Forsythe,M,Republican,No,Republican (1969-1984),Yes
+F000319,L. H. Fountain,M,Democrat,No,Democrat (1953-1983),Yes
+F000339,Barney Frank,M,Democrat,No,Democrat (1981-2013),Yes
+F000349,Bob Franks,M,Republican,No,Republican (1993-2001),Yes
+F000372,Rodney Frelinghuysen,M,Republican,No,Republican (1995-2019),Yes
+F000380,Bill Frenzel,M,Republican,No,Republican (1971-1991),Yes
+F000430,Don Fuqua,M,Democrat,No,Democrat (1963-1987),Yes
+F000441,Ernie Fletcher,M,Republican,No,Republican (1999-2003),Yes
+F000442,Peter Fitzgerald,M,Republican,No,Republican (1999-2005),Yes
+F000445,J. Randy Forbes,M,Republican,No,Republican (2001-2017),Yes
+F000446,Randy Feenstra,M,Republican,No,Republican (2021-2027),Yes
+F000447,Tom Feeney,M,Republican,No,Republican (2003-2009),Yes
+F000448,Trent Franks,M,Republican,No,Republican (2003-2017),Yes
+F000450,Virginia Foxx,F,Republican,No,Republican (2005-2027),Yes
+F000453,Mary Fallin,F,Republican,No,Republican (2007-2011),Yes
+F000463,Deb Fischer,F,Republican,No,Republican (2013-2031),Yes
+F000467,Abby Finkenauer,F,Democrat,No,Democrat (2019-2021),Yes
+F000469,Russ Fulcher,M,Republican,No,Republican (2019-2027),Yes
+F000470,Michelle Fischbach,F,Republican,No,Republican (2021-2027),Yes
+F000471,Scott Fitzgerald,M,Republican,No,Republican (2021-2027),Yes
+F000474,Mike Flood,M,Republican,No,Republican (2022-2027),Yes
+F000475,Brad Finstad,M,Republican,No,Republican (2022-2027),Yes
+F000478,Russell Fry,M,Republican,No,Republican (2023-2027),Yes
+F000480,Vince Fong,M,Republican,No,Republican (2024-2027),Yes
+F000483,Laura Friedman,F,Democrat,No,Democrat (2025-2027),Yes
+F000484,Randy Fine,M,Republican,No,Republican (2025-2027),Yes
+G000025,Dean A. Gallo,M,Republican,No,Republican (1985-1995),Yes
+G000047,Robert Garcia,M,Democrat,No,Democrat (1977-1990),Yes
+G000105,Joseph M. Gaydos,M,Democrat,No,Democrat (1967-1993),Yes
+G000120,Sam Gejdenson,M,Democrat,No,Democrat (1981-2001),Yes
+G000121,George Gekas,M,Republican,No,Republican (1983-2003),Yes
+G000152,Jim Gibbons,M,Republican,No,Republican (1997-2007),Yes
+G000210,Paul Gillmor,M,Republican,No,Republican (1989-2007),Yes
+G000212,Benjamin Gilman,M,Republican,No,Republican (1973-2003),Yes
+G000272,Henry B. Gonzalez,M,Democrat,No,Democrat (1961-1999),Yes
+G000280,Virgil Goode,M,Republican,Yes,Democrat (1997-2000); Independent (2000-2002); Republican (2002-2009),Yes
+G000333,Slade Gorton,M,Republican,No,Republican (1981-2001),Yes
+G000352,Bob Graham,M,Democrat,No,Democrat (1987-2005),Yes
+G000359,Lindsey Graham,M,Republican,No,Republican (1995-2026),Yes
+G000382,Bill Grant,M,Republican,Yes,Democrat (1987-1989); Republican (1989-1991),Yes
+G000386,Chuck Grassley,M,Republican,No,Republican (1975-2029),Yes
+G000388,Mike Gravel,M,Democrat,No,Democrat (1969-1981),Yes
+G000410,Gene Green,M,Democrat,No,Democrat (1993-2019),Yes
+G000439,Jim Greenwood,M,Republican,No,Republican (1993-2005),Yes
+G000480,Wayne Grisham,M,Republican,No,Republican (1979-1983),Yes
+G000499,John E. Grotberg,M,Republican,No,Republican (1985-1987),Yes
+G000511,Frank J. Guarini,M,Democrat,No,Democrat (1979-1993),Yes
+G000524,Steve Gunderson,M,Republican,No,Republican (1981-1997),Yes
+G000536,Gil Gutknecht,M,Republican,No,Republican (1995-2007),Yes
+G000545,Mark Green,M,Republican,No,Republican (1999-2007),Yes
+G000546,Sam Graves,M,Republican,No,Republican (2001-2027),Yes
+G000548,Scott Garrett,M,Republican,No,Republican (2003-2017),Yes
+G000549,Jim Gerlach,M,Republican,No,Republican (2003-2015),Yes
+G000550,Phil Gingrey,M,Republican,No,Republican (2003-2015),Yes
+G000554,Gabby Giffords,F,Democrat,No,Democrat (2007-2012),Yes
+G000557,Parker Griffith,M,Republican,Yes,Democrat (2009-2009); Republican (2009-2011),Yes
+G000558,Brett Guthrie,M,Republican,No,Republican (2009-2027),Yes
+G000559,John Garamendi,M,Democrat,No,Democrat (2009-2027),Yes
+G000560,Tom Graves,M,Republican,No,Republican (2010-2020),Yes
+G000562,Cory Gardner,M,Republican,No,Republican (2011-2021),Yes
+G000563,Bob Gibbs,M,Republican,No,Republican (2011-2023),Yes
+G000568,Morgan Griffith,M,Republican,No,Republican (2011-2027),Yes
+G000570,Frank Guinta,M,Republican,No,Republican (2011-2017),Yes
+G000571,Tulsi Gabbard,F,Democrat,No,Democrat (2013-2021),Yes
+G000572,Pete Gallego,M,Democrat,No,Democrat (2013-2015),Yes
+G000574,Ruben Gallego,M,Democrat,No,Democrat (2015-2031),Yes
+G000576,Glenn Grothman,M,Republican,No,Republican (2015-2027),Yes
+G000578,Matt Gaetz,M,Republican,No,Republican (2017-2024),Yes
+G000580,Tom Garrett,M,Republican,No,Republican (2017-2019),Yes
+G000585,Jimmy Gomez,M,Democrat,No,Democrat (2017-2027),Yes
+G000586,"Jesus ""Chuy"" Garcia",M,Democrat,No,Democrat (2019-2027),Yes
+G000587,Sylvia Garcia,F,Democrat,No,Democrat (2019-2027),Yes
+G000589,Lance Gooden,M,Republican,No,Republican (2019-2027),Yes
+G000590,Mark Green,M,Republican,No,Republican (2019-2025),Yes
+G000592,Jared Golden,M,Democrat,No,Democrat (2019-2027),Yes
+G000597,Andrew Garbarino,M,Republican,No,Republican (2021-2027),Yes
+G000601,Craig Goldman,M,Republican,No,Republican (2025-2027),Yes
+G000605,Adam Gray,M,Democrat,No,Democrat (2025-2027),Yes
+H000012,Tom Hagedorn,M,Republican,No,Republican (1975-1983),Yes
+H000058,Katie Hall,F,Democrat,No,Democrat (1981-1985),Yes
+H000067,Ralph Hall,M,Republican,Yes,Democrat (1981-2004); Republican (2004-2015),Yes
+H000074,Tony Hall,M,Democrat,No,Democrat (1979-2002),Yes
+H000144,Kent Hance,M,Democrat,No,Democrat (1979-1985),Yes
+H000172,James V. Hansen,M,Republican,No,Republican (1981-2003),Yes
+H000302,Thomas F. Hartnett,M,Republican,No,Republican (1981-1987),Yes
+H000323,Dennis Hastert,M,Republican,No,Republican (1987-2007),Yes
+H000329,Doc Hastings,M,Republican,No,Republican (1995-2015),Yes
+H000340,Charles Hatcher,M,Democrat,No,Democrat (1981-1993),Yes
+H000343,Mark Hatfield,M,Republican,No,Republican (1967-1997),Yes
+H000367,Augustus Hawkins,M,Democrat,No,Democrat (1963-1991),Yes
+H000439,Chic Hecht,M,Republican,No,Republican (1983-1989),Yes
+H000444,Joel Hefley,M,Republican,No,Republican (1987-2007),Yes
+H000514,Paul B. Henry,M,Republican,No,Republican (1985-1993),Yes
+H000528,Wally Herger,M,Republican,No,Republican (1987-2013),Yes
+H000547,Dennis Hertel,M,Democrat,No,Democrat (1981-1993),Yes
+H000582,Jack Hightower,M,Democrat,No,Democrat (1975-1985),Yes
+H000621,Earl Hilliard Sr.,M,Democrat,No,Democrat (1993-2003),Yes
+H000624,Elwood Hillis,M,Republican,No,Republican (1971-1987),Yes
+H000627,Maurice Hinchey,M,Democrat,No,Democrat (1993-2013),Yes
+H000652,Peter Hoagland,M,Democrat,No,Democrat (1989-1995),Yes
+H000666,David Hobson,M,Republican,No,Republican (1991-2009),Yes
+H000670,George Hochbrueckner,M,Democrat,No,Democrat (1987-1995),Yes
+H000722,Harold C. Hollenbeck,M,Republican,No,Republican (1977-1983),Yes
+H000725,Fritz Hollings,M,Democrat,No,Democrat (1966-2005),Yes
+H000762,Darlene Hooley,F,Democrat,No,Democrat (1997-2009),Yes
+H000776,Larry Hopkins,M,Republican,No,Republican (1979-1993),Yes
+H000874,Steny Hoyer,M,Democrat,No,Democrat (1981-2027),Yes
+H000878,Carroll Hubbard,M,Democrat,No,Democrat (1975-1993),Yes
+H000905,Walter Huddleston,M,Democrat,No,Democrat (1973-1985),Yes
+H001015,Tim Hutchinson,M,Republican,No,Republican (1993-2003),Yes
+H001016,Kay Bailey Hutchison,F,Republican,No,Republican (1993-2013),Yes
+H001018,Earl Hutto,M,Democrat,No,Democrat (1979-1995),Yes
+H001022,Henry Hyde,M,Republican,No,Republican (1975-2007),Yes
+H001029,Robin Hayes,M,Republican,No,Republican (1999-2009),Yes
+H001030,Baron Hill,M,Democrat,No,Democrat (1999-2011),Yes
+H001033,Melissa Hart,F,Republican,No,Republican (2001-2007),Yes
+H001038,Brian Higgins,M,Democrat,No,Democrat (2005-2024),Yes
+H001041,Dean Heller,M,Republican,No,Republican (2007-2019),Yes
+H001042,Mazie Hirono,F,Democrat,No,Democrat (2007-2031),Yes
+H001044,Debbie Halvorson,F,Democrat,No,Democrat (2009-2011),Yes
+H001049,Kay Hagan,F,Democrat,No,Democrat (2009-2015),Yes
+H001050,Colleen Hanabusa,F,Democrat,No,Democrat (2011-2019),Yes
+H001052,Andy Harris,M,Republican,No,Republican (2011-2027),Yes
+H001053,Vicky Hartzler,F,Republican,No,Republican (2011-2023),Yes
+H001055,Joe Heck,M,Republican,No,Republican (2011-2017),Yes
+H001056,Jaime Herrera Beutler,F,Republican,No,Republican (2011-2023),Yes
+H001057,Tim Huelskamp,M,Republican,No,Republican (2011-2017),Yes
+H001058,Bill Huizenga,M,Republican,No,Republican (2011-2027),Yes
+H001059,Randy Hultgren,M,Republican,No,Republican (2011-2019),Yes
+H001060,Robert Hurt,M,Republican,No,Republican (2011-2017),Yes
+H001064,Denny Heck,M,Democrat,No,Democrat (2013-2021),Yes
+H001066,Steven Horsford,M,Democrat,No,Democrat (2013-2027),Yes
+H001068,Jared Huffman,M,Democrat,No,Democrat (2013-2027),Yes
+H001070,Cresent Hardy,M,Republican,No,Republican (2015-2017),Yes
+H001076,Maggie Hassan,F,Democrat,No,Democrat (2017-2029),Yes
+H001079,Cindy Hyde-Smith,F,Republican,No,Republican (2018-2027),Yes
+H001084,Yvette Herrell,F,Republican,No,Republican (2021-2023),Yes
+H001091,Ashley Hinson,F,Republican,No,Republican (2021-2027),Yes
+H001093,Erin Houchin,F,Republican,No,Republican (2023-2027),Yes
+H001094,Val Hoyle,F,Democrat,No,Democrat (2023-2027),Yes
+H001104,Jon Husted,M,Republican,No,Republican (2025-2026),Yes
+I000001,Richard Ichord,M,Democrat,No,Democrat (1961-1981),Yes
+I000024,Jim Inhofe,M,Republican,No,Republican (1987-2023),Yes
+I000025,Daniel Inouye,M,Democrat,No,Democrat (1959-2012),Yes
+I000026,Jay Inslee,M,Democrat,No,Democrat (1993-2012),Yes
+I000047,Ernest Istook,M,Republican,No,Republican (1993-2007),Yes
+I000055,Johnny Isakson,M,Republican,No,Republican (1999-2019),Yes
+J000033,Andrew Jacobs Jr.,M,Democrat,No,Democrat (1965-1997),Yes
+J000070,William J. Jefferson,M,Democrat,No,Democrat (1991-2009),Yes
+J000072,Jim Jeffords,M,Independent,Yes,Republican (1975-2001); Independent (2001-2007),Yes
+J000082,Bill Jenkins,M,Republican,No,Republican (1997-2007),Yes
+J000099,John Jenrette,M,Democrat,No,Democrat (1975-1981),Yes
+J000101,Roger Jepsen,M,Republican,No,Republican (1979-1985),Yes
+J000120,Don Johnson Jr.,M,Democrat,No,Democrat (1993-1995),Yes
+J000126,Eddie Bernice Johnson,F,Democrat,No,Democrat (1993-2023),Yes
+J000163,Nancy Johnson,F,Republican,No,Republican (1983-2007),Yes
+J000174,Sam Johnson,M,Republican,No,Republican (1991-2019),Yes
+J000177,Tim Johnson,M,Democrat,No,Democrat (1987-2015),Yes
+J000187,Harry Johnston,M,Democrat,No,Democrat (1989-1997),Yes
+J000189,J. Bennett Johnston,M,Democrat,No,Democrat (1972-1997),Yes
+J000255,Walter B. Jones Jr.,M,Republican,No,Republican (1995-2019),Yes
+J000265,Jim Jontz,M,Democrat,No,Democrat (1987-1993),Yes
+J000285,Tim Johnson,M,Republican,No,Republican (2001-2013),Yes
+J000290,Lynn Jenkins,F,Republican,No,Republican (2009-2019),Yes
+J000294,Hakeem Jeffries,M,Democrat,No,Democrat (2013-2027),Yes
+J000297,Evan Jenkins,M,Republican,No,Republican (2015-2018),Yes
+J000298,Pramila Jayapal,F,Democrat,No,Democrat (2017-2027),Yes
+J000299,Mike Johnson,M,Republican,No,Republican (2017-2027),Yes
+J000308,Jeff Jackson,M,Democrat,No,Democrat (2023-2024),Yes
+J000310,Julie Johnson,F,Democrat,No,Democrat (2025-2027),Yes
+K000016,John Kasich,M,Republican,No,Republican (1983-2001),Yes
+K000019,Bob Kasten,M,Republican,No,Republican (1975-1993),Yes
+K000025,Abraham Kazen Jr.,M,Democrat,No,Democrat (1967-1985),Yes
+K000113,Patrick J. Kennedy,M,Democrat,No,Democrat (1995-2011),Yes
+K000172,Dale Kildee,M,Democrat,No,Democrat (1977-2013),Yes
+K000220,Jack Kingston,M,Republican,No,Republican (1993-2015),Yes
+K000259,Jerry Kleczka,M,Democrat,No,Democrat (1984-2005),Yes
+K000262,Herbert C. Klein,M,Democrat,No,Democrat (1993-1995),Yes
+K000304,Raymond Kogovsek,M,Democrat,No,Democrat (1979-1985),Yes
+K000306,Jim Kolbe,M,Republican,No,Republican (1985-2007),Yes
+K000307,Joseph P. Kolter,M,Democrat,No,Democrat (1983-1993),Yes
+K000309,Ernie Konnyu,M,Republican,No,Republican (1987-1989),Yes
+K000322,Ken Kramer,M,Republican,No,Republican (1979-1987),Yes
+K000328,Mike Kreidler,M,Democrat,No,Democrat (1993-1995),Yes
+K000336,Dennis Kucinich,M,Democrat,No,Democrat (1997-2013),Yes
+K000362,Steve King,M,Republican,No,Republican (2003-2021),Yes
+K000364,Randy Kuhl,M,Republican,No,Republican (2005-2009),Yes
+K000366,Ron Klein,M,Democrat,No,Democrat (2007-2011),Yes
+K000368,Ann Kirkpatrick,F,Democrat,No,Democrat (2009-2023),Yes
+K000370,Suzanne Kosmas,F,Democrat,No,Democrat (2009-2011),Yes
+K000375,William Keating,M,Democrat,No,Democrat (2011-2027),Yes
+K000381,Derek Kilmer,M,Democrat,No,Democrat (2013-2025),Yes
+K000385,Robin Kelly,F,Democrat,No,Democrat (2013-2027),Yes
+K000387,Steve Knight,M,Republican,No,Republican (2015-2019),Yes
+K000390,Ruben Kihuen,M,Democrat,No,Democrat (2017-2019),Yes
+K000395,Fred Keller,M,Republican,No,Republican (2019-2023),Yes
+K000396,Kai Kahele,M,Democrat,No,Democrat (2021-2023),Yes
+K000397,Young Kim,F,Republican,No,Republican (2021-2027),Yes
+K000398,Thomas Kean Jr.,M,Republican,No,Republican (2023-2027),Yes
+K000399,Jen Kiggans,F,Republican,No,Republican (2023-2027),Yes
+K000400,Sydney Kamlager-Dove,F,Democrat,No,Democrat (2023-2027),Yes
+K000401,Kevin Kiley,M,Independent,Yes,Republican (2023-2026); Independent (2026-2027),Yes
+K000402,Tim Kennedy,M,Democrat,No,Democrat (2024-2027),Yes
+K000403,Mike Kennedy,M,Republican,No,Republican (2025-2027),Yes
+L000020,Robert J. Lagomarsino,M,Republican,No,Republican (1973-1993),Yes
+L000045,H. Martin Lancaster,M,Democrat,No,Democrat (1987-1995),Yes
+L000167,Buddy Leach,M,Democrat,No,Democrat (1979-1981),Yes
+L000225,Richard H. Lehman,M,Democrat,No,Democrat (1983-1995),Yes
+L000237,Mickey Leland,M,Democrat,No,Democrat (1979-1989),Yes
+L000243,Norman F. Lent,M,Republican-Conservative,Yes,Republican (1971-1991); Republican-Conservative (1991-1993),Yes
+L000263,Sander Levin,M,Democrat,No,Democrat (1983-2019),Yes
+L000264,Mel Levine,M,Democrat,No,Democrat (1983-1993),Yes
+L000265,Elliott H. Levitas,M,Democrat,No,Democrat (1975-1985),Yes
+L000266,Jake LaTurner,M,Republican,No,Republican (2021-2025),Yes
+L000274,Jerry Lewis,M,Republican,No,Republican (1979-2013),Yes
+L000295,Tom Lewis,M,Republican,No,Republican (1983-1995),Yes
+L000304,Joe Lieberman,M,Independent,Yes,Democrat (1989-2007); Independent (2007-2013),Yes
+L000321,John Linder,M,Republican,No,Republican (1993-2011),Yes
+L000491,Frank D. Lucas,M,Republican,No,Republican (1993-2027),Yes
+L000509,"Donald E. ""Buz"" Lukens",M,Republican,No,Republican (1967-1991),Yes
+L000550,Mary Landrieu,F,Democrat,No,Democrat (1997-2015),Yes
+L000551,Barbara Lee,F,Democrat,No,Democrat (1998-2025),Yes
+L000552,Ray LaHood,M,Republican,No,Republican (1995-2009),Yes
+L000554,Frank LoBiondo,M,Republican,No,Republican (1995-2019),Yes
+L000556,John LaFalce,M,Democrat,No,Democrat (1975-2003),Yes
+L000557,John B. Larson,M,Democrat,No,Democrat (1999-2027),Yes
+L000559,Jim Langevin,M,Democrat,No,Democrat (2001-2023),Yes
+L000562,Stephen Lynch,M,Democrat,No,Democrat (2001-2027),Yes
+L000564,Doug Lamborn,M,Republican,No,Republican (2007-2025),Yes
+L000567,Leonard Lance,M,Republican,No,Republican (2009-2019),Yes
+L000568,Gary A. Lee,M,Republican,No,Republican (2009-2011),Yes
+L000569,Blaine Luetkemeyer,M,Republican,No,Republican (2009-2025),Yes
+L000571,Cynthia Lummis,F,Republican,No,Republican (2009-2027),Yes
+L000573,Raul Labrador,M,Republican,No,Republican (2011-2019),Yes
+L000578,Doug LaMalfa,M,Republican,No,Republican (2013-2026),Yes
+L000582,Ted Lieu,M,Democrat,No,Democrat (2015-2027),Yes
+L000583,Barry Loudermilk,M,Republican,No,Republican (2015-2027),Yes
+L000585,Darin LaHood,M,Republican,No,Republican (2015-2027),Yes
+L000589,Debbie Lesko,F,Republican,No,Republican (2018-2025),Yes
+L000599,Mike Lawler,M,Republican,No,Republican (2023-2027),Yes
+L000602,Summer Lee,F,Democrat,No,Democrat (2023-2027),Yes
+L000606,George Latimer,M,Democrat,No,Democrat (2025-2027),Yes
+M000023,Buddy MacKay,M,Democrat,No,Democrat (1983-1989),Yes
+M000041,Edward Madigan,M,Republican,No,Republican (1973-1991),Yes
+M000053,Warren Magnuson,M,Democrat,No,Democrat (1937-1981),Yes
+M000090,James H. Maloney,M,Democrat,No,Democrat (1997-2003),Yes
+M000133,Ed Markey,M,Democrat,No,Democrat (1975-2027),Yes
+M000194,Nancy Mace,F,Republican,No,Republican (2021-2027),Yes
+M000195,Lynn M. Martin,F,Republican,No,Republican (1981-1991),Yes
+M000206,Matthew G. Martinez,M,Republican,Yes,Democrat (1981-2000); Republican (2000-2001),Yes
+M000250,Spark Matsunaga,M,Democrat,No,Democrat (1963-1990),Yes
+M000260,Jim Mattox,M,Democrat,No,Democrat (1977-1983),Yes
+M000291,Romano Mazzoli,M,Democrat,No,Democrat (1971-1995),Yes
+M000316,Karen McCarthy,F,Democrat,No,Democrat (1995-2005),Yes
+M000317,Nicole Malliotakis,F,Republican,No,Republican (2021-2027),Yes
+M000340,Robert McClory,M,Republican,No,Republican (1963-1983),Yes
+M000346,James A. McClure,M,Republican,No,Republican (1967-1991),Yes
+M000365,Mike McCormack,M,Democrat,No,Democrat (1971-1981),Yes
+M000404,Jim McDermott,M,Democrat,No,Democrat (1989-2017),Yes
+M000458,Raymond J. McGrath,M,Republican,No,Republican (1981-1993),Yes
+M000472,John M. McHugh,M,Republican,No,Republican (1993-2009),Yes
+M000477,Scott McInnis,M,Republican,No,Republican (1993-2005),Yes
+M000490,K. Gunn McKay,M,Democrat,No,Democrat (1971-1981),Yes
+M000512,John R. McKernan Jr.,M,Republican,No,Republican (1983-1987),Yes
+M000523,Cynthia McKinney,F,Democrat,No,Democrat (1993-2007),Yes
+M000527,Stewart McKinney,M,Republican,No,Republican (1971-1987),Yes
+M000589,James F. McNulty Jr.,M,Democrat,No,Democrat (1983-1985),Yes
+M000590,Michael McNulty,M,Democrat,No,Democrat (1989-2009),Yes
+M000628,Carrie Meek,F,Democrat,No,Democrat (1993-2003),Yes
+M000639,Bob Menendez,M,Democrat,No,Democrat (1993-2024),Yes
+M000669,Jack Metcalf,M,Republican,No,Republican (1995-2001),Yes
+M000678,Howard Metzenbaum,M,Democrat,No,Democrat (1974-1995),Yes
+M000689,John Mica,M,Republican,No,Republican (1993-2017),Yes
+M000714,Juanita Millender-McDonald,F,Democrat,No,Democrat (1996-2007),Yes
+M000808,Donald J. Mitchell,M,Republican,No,Republican (1973-1983),Yes
+M000834,Joseph Moakley,M,Democrat,Yes,Ind. Democrat (1973-1975); Democrat (1975-2001),Yes
+M000842,Guy Molinari,M,Republican,No,Republican (1981-1989),Yes
+M000865,Sonny Montgomery,M,Democrat,No,Democrat (1967-1997),Yes
+M000926,Carlos J. Moorhead,M,Republican,No,Republican (1973-1997),Yes
+M000934,Jerry Moran,M,Republican,No,Republican (1997-2029),Yes
+M000941,Connie Morella,F,Republican,No,Republican (1987-2003),Yes
+M000956,Robert B. Morgan,M,Democrat,No,Democrat (1975-1981),Yes
+M000999,Sid Morrison,M,Republican,No,Republican (1981-1993),Yes
+M001025,Carol Moseley Braun,F,Democrat,No,Democrat (1993-1999),Yes
+M001088,Austin J. Murphy,M,Democrat,No,Democrat (1977-1995),Yes
+M001111,Patty Murray,F,Democrat,No,Democrat (1993-2029),Yes
+M001120,John Murtha,M,Democrat,No,Democrat (1973-2010),Yes
+M001121,Edmund Muskie,M,Democrat,No,Democrat (1959-1980),Yes
+M001137,Gregory Meeks,M,Democrat,No,Democrat (1997-2027),Yes
+M001139,Gary Miller,M,Republican,No,Republican (1999-2015),Yes
+M001141,Zell Miller,M,Democrat,No,Democrat (2000-2005),Yes
+M001143,Betty McCollum,F,Democrat,No,Democrat (2001-2027),Yes
+M001147,Thaddeus McCotter,M,Republican,No,Republican (2003-2012),Yes
+M001148,Kendrick Meek,M,Democrat,No,Democrat (2003-2011),Yes
+M001149,Mike Michaud,M,Democrat,No,Democrat (2003-2015),Yes
+M001151,Tim Murphy,M,Republican,No,Republican (2003-2017),Yes
+M001152,Marilyn Musgrave,F,Republican,No,Republican (2003-2009),Yes
+M001153,Lisa Murkowski,F,Republican,No,Republican (2003-2029),Yes
+M001154,Brad Miller,M,Democrat,No,Democrat (2003-2013),Yes
+M001156,Patrick McHenry,M,Republican,No,Republican (2005-2025),Yes
+M001158,Kenny Marchant,M,Republican,No,Republican (2005-2021),Yes
+M001159,Cathy McMorris Rodgers,F,Republican,No,Republican (2005-2025),Yes
+M001160,Gwen Moore,F,Democrat,No,Democrat (2005-2027),Yes
+M001161,Charlie Melancon,M,Democrat,No,Democrat (2005-2011),Yes
+M001165,Kevin McCarthy,M,Republican,No,Republican (2007-2023),Yes
+M001167,Harry Mitchell,M,Democrat,No,Democrat (2007-2011),Yes
+M001169,Chris Murphy,M,Democrat,No,Democrat (2007-2031),Yes
+M001170,Claire McCaskill,F,Democrat,No,Democrat (2007-2019),Yes
+M001176,Jeff Merkley,M,Democrat,No,Democrat (2009-2027),Yes
+M001177,Tom McClintock,M,Republican,No,Republican (2009-2027),Yes
+M001180,David McKinley,M,Republican,No,Republican (2011-2023),Yes
+M001182,Mick Mulvaney,M,Republican,No,Republican (2011-2017),Yes
+M001183,Joe Manchin,M,Independent,Yes,Democrat (2010-2024); Independent (2024-2025),Yes
+M001188,Grace Meng,F,Democrat,No,Democrat (2013-2027),Yes
+M001189,Luke Messer,M,Republican,No,Republican (2013-2019),Yes
+M001194,John Moolenaar,M,Republican,No,Republican (2015-2027),Yes
+M001195,Alex Mooney,M,Republican,No,Republican (2015-2025),Yes
+M001200,Donald McEachin,M,Democrat,No,Democrat (2017-2022),Yes
+M001205,Carol Miller,F,Republican,No,Republican (2019-2027),Yes
+M001206,Joseph Morelle,M,Democrat,No,Democrat (2018-2027),Yes
+M001209,Ben McAdams,M,Democrat,No,Democrat (2019-2021),Yes
+M001212,Barry Moore,M,Republican,No,Republican (2021-2027),Yes
+M001215,Mariannette Miller-Meeks,F,Republican,No,Republican (2021-2027),Yes
+M001217,Jared Moskowitz,M,Democrat,No,Democrat (2023-2027),Yes
+M001220,Morgan McGarvey,M,Democrat,No,Democrat (2023-2027),Yes
+M001225,Kevin Mullin,M,Democrat,No,Democrat (2023-2027),Yes
+M001227,Jennifer McClellan,F,Democrat,No,Democrat (2023-2027),Yes
+M001230,Ryan Mackenzie,M,Republican,No,Republican (2025-2027),Yes
+M001231,John Mannion,M,Democrat,No,Democrat (2025-2027),Yes
+M001233,Mark Messmer,M,Republican,No,Republican (2025-2027),Yes
+M001234,Kelly Morrison,F,Democrat,No,Democrat (2025-2027),Yes
+M001235,Riley Moore,M,Republican,No,Republican (2025-2027),Yes
+M001236,Tim Moore,M,Republican,No,Republican (2025-2027),Yes
+M001237,Kristen McDonald Rivet,F,Democrat,No,Democrat (2025-2027),Yes
+M001238,Sarah McBride,F,Democrat,No,Democrat (2025-2027),Yes
+M001239,John McGuire,M,Republican,No,Republican (2025-2027),Yes
+M001241,Dave Min,M,Democrat,No,Democrat (2025-2027),Yes
+N000002,Jerrold Nadler,M,Democrat,No,Democrat (1992-2027),Yes
+N000032,Bill Nelson,M,Democrat,No,Democrat (1979-2019),Yes
+N000033,Gaylord Nelson,M,Democrat,No,Democrat (1963-1981),Yes
+N000081,Bob Ney,M,Republican,No,Republican (1995-2006),Yes
+N000095,Bill Nichols,M,Democrat,No,Democrat (1967-1989),Yes
+N000102,Don Nickles,M,Republican,No,Republican (1981-2005),Yes
+N000106,Howard C. Nielson,M,Republican,No,Republican (1983-1991),Yes
+N000127,Rick Nolan,M,Democrat,No,Democrat (1975-2019),Yes
+N000143,Anne Northup,F,Republican,No,Republican (1997-2007),Yes
+N000171,Sam Nunn,M,Democrat,No,Democrat (1972-1997),Yes
+N000179,Grace Napolitano,F,Democrat,No,Democrat (1999-2025),Yes
+N000184,Kristi Noem,F,Republican,No,Republican (2011-2019),Yes
+N000186,Alan Nunnelee,M,Republican,No,Republican (2011-2015),Yes
+N000188,Donald Norcross,M,Democrat,No,Democrat (2014-2027),Yes
+N000189,Dan Newhouse,M,Republican,No,Republican (2015-2027),Yes
+N000190,Ralph Norman,M,Republican,No,Republican (2017-2027),Yes
+N000193,Zach Nunn,M,Republican,No,Republican (2023-2027),Yes
+N000194,Wiley Nickel,M,Democrat,No,Democrat (2023-2025),Yes
+O000007,David Obey,M,Democrat,No,Democrat (1969-2011),Yes
+O000010,George M. O'Brien,M,Republican,No,Republican (1973-1987),Yes
+O000019,Jay Obernolte,M,Republican,No,Republican (2021-2027),Yes
+O000098,Tip O'Neill,M,Democrat,No,Democrat (1953-1987),Yes
+O000159,Major Owens,M,Democrat,No,Democrat (1983-2007),Yes
+O000163,Mike Oxley,M,Republican,No,Republican (1981-2007),Yes
+O000166,Butch Otter,M,Republican,No,Republican (2001-2007),Yes
+O000167,Barack Obama,M,Democrat,No,Democrat (2005-2008),Yes
+O000171,Tom O'Halleran,M,Democrat,No,Democrat (2017-2023),Yes
+O000173,Ilhan Omar,F,Democrat,No,Democrat (2019-2027),Yes
+O000176,Johnny Olszewski,M,Democrat,No,Democrat (2025-2027),Yes
+O000177,Bob Onder,M,Republican,No,Republican (2025-2027),Yes
+P000009,Bob Packwood,M,Republican,No,Republican (1969-1995),Yes
+P000034,Frank Pallone,M,Democrat,No,Democrat (1987-2027),Yes
+P000080,Stan Parris,M,Republican,No,Republican (1973-1991),Yes
+P000096,Bill Pascrell,M,Democrat,No,Democrat (1997-2024),Yes
+P000104,Bill Patman,M,Democrat,No,Democrat (1981-1985),Yes
+P000112,Liz Patterson,F,Democrat,No,Democrat (1987-1993),Yes
+P000145,Alex Padilla,M,Democrat,No,Democrat (2021-2029),Yes
+P000148,Bill Paxon,M,Republican,No,Republican (1989-1999),Yes
+P000171,Ed Pease,M,Republican,No,Republican (1997-2001),Yes
+P000215,Timothy Penny,M,Democrat,No,Democrat (1983-1995),Yes
+P000218,Claude Pepper,M,Democrat,No,Democrat (1936-1989),Yes
+P000229,Carl Christopher Perkins,M,Democrat,No,Democrat (1983-1993),Yes
+P000230,Carl D. Perkins,M,Democrat,No,Democrat (1949-1985),Yes
+P000258,Collin Peterson,M,Democrat,No,Democrat (1991-2021),Yes
+P000263,John Peterson,M,Republican,No,Republican (1997-2009),Yes
+P000265,Tom Petri,M,Republican,No,Republican (1979-2015),Yes
+P000326,Owen B. Pickett,M,Democrat,No,Democrat (1987-2001),Yes
+P000373,Joseph Pitts,M,Republican,No,Republican (1997-2017),Yes
+P000422,Earl Pomeroy,M,Democrat,No,Democrat (1993-2011),Yes
+P000444,John Edward Porter,M,Republican,No,Republican (1979-2001),Yes
+P000452,Glenn Poshard,M,Democrat,No,Democrat (1989-1999),Yes
+P000556,David Pryor,M,Democrat,No,Democrat (1965-1997),Yes
+P000574,Carl Pursell,M,Republican,No,Republican (1977-1993),Yes
+P000584,David D. Phelps,M,Democrat,No,Democrat (1999-2003),Yes
+P000585,Todd Platts,M,Republican,No,Republican (2001-2013),Yes
+P000586,Adam Putnam,M,Republican,No,Republican (2001-2011),Yes
+P000589,Jon Porter,M,Republican,No,Republican (2003-2009),Yes
+P000591,Tom Price,M,Republican,No,Republican (2005-2017),Yes
+P000593,Ed Perlmutter,M,Democrat,No,Democrat (2007-2023),Yes
+P000594,Erik Paulsen,M,Republican,No,Republican (2009-2019),Yes
+P000595,Gary Peters,M,Democrat,No,Democrat (2009-2027),Yes
+P000597,Chellie Pingree,F,Democrat,No,Democrat (2009-2027),Yes
+P000599,Bill Posey,M,Republican,No,Republican (2009-2025),Yes
+P000601,Steven Palazzo,M,Republican,No,Republican (2011-2023),Yes
+P000605,Scott Perry,M,Republican,No,Republican (2013-2027),Yes
+P000606,Robert Pittenger,M,Republican,No,Republican (2013-2019),Yes
+P000607,Mark Pocan,M,Democrat,No,Democrat (2013-2027),Yes
+P000614,Chris Pappas,M,Democrat,No,Democrat (2019-2027),Yes
+P000619,Mary Peltola,F,Democrat,No,Democrat (2022-2025),Yes
+P000620,Brittany Pettersen,F,Democrat,No,Democrat (2023-2027),Yes
+P000621,Nellie Pou,F,Democrat,No,Democrat (2025-2027),Yes
+P000622,Jimmy Patronis,M,Republican,No,Republican (2025-2027),Yes
+Q000013,Jimmy Quillen,M,Republican,No,Republican (1963-1997),Yes
+R000012,Tom Railsback,M,Republican,No,Republican (1967-1983),Yes
+R000033,Jim Ramstad,M,Republican,No,Republican (1991-2009),Yes
+R000053,Charles Rangel,M,Democrat,No,Democrat (1971-2017),Yes
+R000067,William R. Ratchford,M,Democrat,No,Democrat (1979-1985),Yes
+R000072,Arthur Ravenel Jr.,M,Republican,No,Republican (1987-1995),Yes
+R000103,Matt Rosendale,M,Republican,No,Republican (2021-2025),Yes
+R000122,Jack Reed,M,Democrat,No,Democrat (1991-2027),Yes
+R000141,Ralph Regula,M,Republican,No,Republican (1973-2009),Yes
+R000146,Harry Reid,M,Democrat,No,Democrat (1983-2017),Yes
+R000191,Abraham Ribicoff,M,Democrat,No,Democrat (1949-1981),Yes
+R000262,Matthew J. Rinaldo,M,Republican,No,Republican (1973-1993),Yes
+R000281,Lynn Rivers,F,Democrat,No,Democrat (1995-2003),Yes
+R000305,Deborah Ross,F,Democrat,No,Democrat (2021-2027),Yes
+R000312,Ray Roberts,M,Democrat,No,Democrat (1961-1981),Yes
+R000337,J. Kenneth Robinson,M,Republican,No,Republican (1971-1985),Yes
+R000361,Jay Rockefeller,M,Democrat,No,Democrat (1985-2015),Yes
+R000386,James Rogan,M,Republican,No,Republican (1997-2001),Yes
+R000435,Ileana Ros-Lehtinen,F,Republican,No,Republican (1989-2019),Yes
+R000458,Dan Rostenkowski,M,Democrat,No,Democrat (1959-1995),Yes
+R000459,Toby Roth,M,Republican,No,Republican (1979-1997),Yes
+R000481,J. Roy Rowland,M,Democrat,No,Democrat (1983-1995),Yes
+R000482,John G. Rowland,M,Republican,No,Republican (1985-1991),Yes
+R000486,Lucille Roybal-Allard,F,Democrat,No,Democrat (1993-2023),Yes
+R000487,Ed Royce,M,Republican,No,Republican (1993-2019),Yes
+R000510,Harold L. Runnels,M,Democrat,No,Democrat (1971-1981),Yes
+R000568,Ciro Rodriguez,M,Democrat,No,Democrat (1997-2011),Yes
+R000571,Denny Rehberg,M,Republican,No,Republican (2001-2013),Yes
+R000572,Mike Rogers,M,Republican,No,Republican (2001-2015),Yes
+R000573,Mike Ross,M,Democrat,No,Democrat (2001-2013),Yes
+R000575,Mike Rogers,M,Republican,No,Republican (2003-2027),Yes
+R000577,Tim Ryan,M,Democrat,No,Democrat (2003-2023),Yes
+R000580,Peter Roskam,M,Republican,No,Republican (2007-2019),Yes
+R000581,Laura Richardson,F,Democrat,No,Democrat (2007-2013),Yes
+R000584,Jim Risch,M,Republican,No,Republican (2009-2027),Yes
+R000588,Cedric Richmond,M,Democrat,No,Democrat (2011-2021),Yes
+R000590,David Rivera,M,Republican,No,Republican (2011-2013),Yes
+R000593,Dennis Ross,M,Republican,No,Republican (2011-2019),Yes
+R000595,Marco Rubio,M,Republican,No,Republican (2011-2025),Yes
+R000604,Steve Russell,M,Republican,No,Republican (2015-2019),Yes
+R000605,Mike Rounds,M,Republican,No,Republican (2015-2027),Yes
+R000606,Jamie Raskin,M,Democrat,No,Democrat (2017-2027),Yes
+R000610,Guy Reschenthaler,M,Republican,No,Republican (2019-2027),Yes
+R000617,Delia Ramirez,F,Democrat,No,Democrat (2023-2027),Yes
+R000620,Luz Rivas,F,Democrat,No,Democrat (2025-2027),Yes
+R000621,Emily Randall,F,Democrat,No,Democrat (2025-2027),Yes
+S000005,Martin Olav Sabo,M,Democrat,No,Democrat (1979-2007),Yes
+S000014,Pat Saiki,F,Republican,No,Republican (1987-1991),Yes
+S000018,Matt Salmon,M,Republican,No,Republican (1995-2017),Yes
+S000055,Terry Sanford,M,Democrat,No,Democrat (1986-1993),Yes
+S000056,George Sangmeister,M,Democrat,No,Democrat (1989-1995),Yes
+S000064,Paul Sarbanes,M,Democrat,No,Democrat (1971-2007),Yes
+S000066,Bill Sarpalius,M,Democrat,No,Democrat (1989-1995),Yes
+S000070,David E. Satterfield III,M,Democrat,No,Democrat (1965-1981),Yes
+S000097,Jim Saxton,M,Republican,No,Republican (1984-2009),Yes
+S000109,Daniel Schaefer,M,Republican,No,Republican (1983-1999),Yes
+S000112,Bob Schaffer,M,Republican,No,Republican (1997-2003),Yes
+S000148,Chuck Schumer,M,Democrat,No,Democrat (1981-2029),Yes
+S000185,Bobby Scott,M,Democrat,No,Democrat (1993-2027),Yes
+S000217,Keith Sebelius,M,Republican,No,Republican (1969-1981),Yes
+S000244,Jim Sensenbrenner,M,Republican,No,Republican (1979-2021),Yes
+S000248,Jose E. Serrano,M,Democrat,No,Democrat (1990-2021),Yes
+S000269,John Seymour,M,Republican,No,Republican (1991-1992),Yes
+S000320,Richard Shelby,M,Republican,Yes,Democrat (1979-1994); Republican (1994-2023),Yes
+S000423,Paul Simon,M,Democrat,No,Democrat (1975-1997),Yes
+S000429,Alan Simpson,M,Republican,No,Republican (1979-1997),Yes
+S000453,Norman Sisisky,M,Democrat,No,Democrat (1983-2001),Yes
+S000462,David Skaggs,M,Democrat,No,Democrat (1987-1999),Yes
+S000465,Ike Skelton,M,Democrat,No,Democrat (1977-2011),Yes
+S000477,Jim Slattery,M,Democrat,No,Democrat (1983-1995),Yes
+S000479,D. French Slaughter Jr.,M,Republican,No,Republican (1985-1991),Yes
+S000480,Louise Slaughter,F,Democrat,No,Democrat (1987-2018),Yes
+S000510,Adam Smith,M,Democrat,No,Democrat (1997-2027),Yes
+S000583,Lamar Smith,M,Republican,No,Republican (1987-2019),Yes
+S000586,Lawrence J. Smith,M,Democrat,No,Democrat (1983-1993),Yes
+S000587,Linda Smith,F,Republican,No,Republican (1995-1999),Yes
+S000597,Nick Smith,M,Republican,No,Republican (1993-2005),Yes
+S000601,Peter P. Smith,M,Republican,No,Republican (1989-1991),Yes
+S000607,"Robert F. ""Bob"" Smith",M,Republican,No,Republican (1983-1999),Yes
+S000663,Olympia Snowe,F,Republican,No,Republican (1979-2013),Yes
+S000672,Vic Snyder,M,Democrat,No,Democrat (1997-2011),Yes
+S000673,Stephen Solarz,M,Democrat,No,Democrat (1975-1993),Yes
+S000675,Gerald B.H. Solomon,M,Republican,No,Republican (1979-1999),Yes
+S000718,Floyd Spence,M,Republican,No,Republican (1971-2001),Yes
+S000762,Fernand St Germain,M,Democrat,No,Democrat (1961-1989),Yes
+S000770,Debbie Stabenow,F,Democrat,No,Democrat (1997-2025),Yes
+S000779,Harley O. Staggers Jr.,M,Democrat,No,Democrat (1983-1993),Yes
+S000795,Arlan Stangeland,M,Republican,No,Republican (1977-1991),Yes
+S000852,John Stennis,M,Democrat,No,Democrat (1947-1989),Yes
+S000888,Ted Stevens,M,Republican,No,Republican (1968-2009),Yes
+S000890,Adlai Stevenson III,M,Democrat,No,Democrat (1970-1981),Yes
+S000907,Donald W. Stewart,M,Democrat,No,Democrat (1978-1981),Yes
+S000929,Victoria Spartz,F,Republican,No,Republican (2021-2027),Yes
+S000962,Richard (Dick) Stone,M,Democrat,No,Democrat (1975-1981),Yes
+S000991,Michael Strang,M,Republican,No,Republican (1985-1987),Yes
+S001044,Bob Stump,M,Republican,Yes,Democrat (1977-1983); Republican (1983-2003),Yes
+S001045,Bart Stupak,M,Democrat,No,Democrat (1993-2011),Yes
+S001142,Gordon Smith,M,Republican,No,Republican (1997-2009),Yes
+S001144,Chris Shays,M,Republican,No,Republican (1987-2009),Yes
+S001147,Ronnie Shows,M,Democrat,No,Democrat (1999-2003),Yes
+S001148,Mike Simpson,M,Republican,No,Republican (1999-2027),Yes
+S001150,Adam Schiff,M,Democrat,No,Democrat (2001-2031),Yes
+S001151,Ed Schrock,M,Republican,No,Republican (2001-2005),Yes
+S001152,Rob Simmons,M,Republican,No,Republican (2001-2007),Yes
+S001157,David Scott,M,Democrat,No,Democrat (2003-2026),Yes
+S001158,John Salazar,M,Democrat,No,Democrat (2005-2011),Yes
+S001162,Allyson Schwartz,F,Democrat,No,Democrat (2005-2015),Yes
+S001164,Jean Schmidt,F,Republican,No,Republican (2005-2013),Yes
+S001165,Albio Sires,M,Democrat,No,Democrat (2006-2023),Yes
+S001167,Bill Sali,M,Republican,No,Republican (2007-2009),Yes
+S001172,Adrian Smith,M,Republican,No,Republican (2007-2027),Yes
+S001174,Betty Sutton,F,Democrat,No,Democrat (2007-2013),Yes
+S001175,Jackie Speier,F,Democrat,No,Democrat (2008-2023),Yes
+S001176,Steve Scalise,M,Republican,No,Republican (2008-2027),Yes
+S001179,Aaron Schock,M,Republican,No,Republican (2009-2015),Yes
+S001180,Kurt Schrader,M,Democrat,No,Democrat (2009-2023),Yes
+S001181,Jeanne Shaheen,F,Democrat,No,Democrat (2009-2027),Yes
+S001183,David Schweikert,M,Republican,No,Republican (2011-2027),Yes
+S001184,Tim Scott,M,Republican,No,Republican (2011-2029),Yes
+S001187,Steve Stivers,M,Republican,No,Republican (2011-2021),Yes
+S001188,Marlin Stutzman,M,Republican,No,Republican (2010-2027),Yes
+S001189,Austin Scott,M,Republican,No,Republican (2011-2027),Yes
+S001191,Kyrsten Sinema,F,Independent,Yes,Democrat (2013-2022); Independent (2022-2025),Yes
+S001194,Brian Schatz,M,Democrat,No,Democrat (2012-2029),Yes
+S001195,Jason Smith,M,Republican,No,Republican (2013-2027),Yes
+S001200,Darren Soto,M,Democrat,No,Democrat (2017-2027),Yes
+S001214,Greg Steube,M,Republican,No,Republican (2019-2027),Yes
+S001218,Melanie Stansbury,F,Democrat,No,Democrat (2021-2027),Yes
+S001223,Emilia Sykes,F,Democrat,No,Democrat (2023-2027),Yes
+S001226,Andrea Salinas,F,Democrat,No,Democrat (2023-2027),Yes
+S001227,Eric Schmitt,M,Republican,No,Republican (2023-2029),Yes
+S001228,Derek Schmidt,M,Republican,No,Republican (2025-2027),Yes
+S001230,Suhas Subramanyam,M,Democrat,No,Democrat (2025-2027),Yes
+T000024,Jim Talent,M,Republican,No,Republican (1993-2007),Yes
+T000034,Robin Tallon,M,Democrat,No,Democrat (1983-1993),Yes
+T000038,John Tanner,M,Democrat,No,Democrat (1989-2011),Yes
+T000048,Randy Tate,M,Republican,No,Republican (1995-1997),Yes
+T000053,Tom Tauke,M,Republican,No,Republican (1979-1991),Yes
+T000058,Billy Tauzin,M,Republican,Yes,Democrat (1979-1995); Republican (1995-2005),Yes
+T000067,Charles H. Taylor,M,Republican,No,Republican (1991-2007),Yes
+T000074,Gene Taylor,M,Democrat,No,Democrat (1989-2011),Yes
+T000113,Frank Tejeda,M,Democrat,No,Democrat (1993-1997),Yes
+T000162,Craig Thomas,M,Republican,No,Republican (1989-2007),Yes
+T000165,Tom Tiffany,M,Republican,No,Republican (2020-2027),Yes
+T000188,Bill Thomas,M,Republican,No,Republican (1979-2007),Yes
+T000200,Frank Thompson Jr.,M,Democrat,No,Democrat (1955-1981),Yes
+T000253,Karen Thurman,F,Democrat,No,Democrat (1993-2003),Yes
+T000254,Strom Thurmond,M,Republican,Yes,Democrat (1954-1964); Republican (1964-2003),Yes
+T000260,Todd Tiahrt,M,Republican,No,Republican (1995-2011),Yes
+T000356,Bob Traxler,M,Democrat,No,Democrat (1973-1993),Yes
+T000424,Jim Turner,M,Democrat,No,Democrat (1997-2005),Yes
+T000458,Tom Tancredo,M,Republican,No,Republican (1999-2009),Yes
+T000460,Mike Thompson,M,Democrat,No,Democrat (1999-2027),Yes
+T000462,Pat Tiberi,M,Republican,No,Republican (2001-2018),Yes
+T000464,Jon Tester,M,Democrat,No,Democrat (2007-2025),Yes
+T000468,Dina Titus,F,Democrat,No,Democrat (2009-2027),Yes
+T000469,Paul Tonko,M,Democrat,No,Democrat (2009-2027),Yes
+T000470,Scott Tipton,M,Republican,No,Republican (2011-2021),Yes
+T000473,Mark Takai,M,Democrat,No,Democrat (2015-2016),Yes
+T000474,Norma Torres,F,Democrat,No,Democrat (2015-2027),Yes
+T000476,Thom Tillis,M,Republican,No,Republican (2015-2027),Yes
+T000477,Scott Taylor,M,Republican,No,Republican (2017-2019),Yes
+T000478,Claudia Tenney,F,Republican,No,Republican (2017-2027),Yes
+T000479,Van Taylor,M,Republican,No,Republican (2019-2023),Yes
+T000480,William Timmons,M,Republican,No,Republican (2019-2027),Yes
+T000481,Rashida Tlaib,F,Democrat,No,Democrat (2019-2027),Yes
+T000487,Jill Tokuda,F,Democrat,No,Democrat (2023-2027),Yes
+T000488,Shri Thanedar,M,Democrat,No,Democrat (2023-2027),Yes
+T000489,Sylvester Turner,M,Democrat,No,Democrat (2025-2025),Yes
+U000017,Jolene Unsoeld,F,Democrat,No,Democrat (1989-1995),Yes
+U000038,Mark Udall,M,Democrat,No,Democrat (1999-2015),Yes
+V000027,Guy Vander Jagt,M,Republican,No,Republican (1966-1993),Yes
+V000087,Bruce Vento,M,Democrat,No,Democrat (1977-2001),Yes
+V000112,Harold Volkmer,M,Democrat,No,Democrat (1977-1997),Yes
+V000126,George Voinovich,M,Republican,No,Republican (1999-2011),Yes
+V000127,David Vitter,M,Republican,No,Republican (1999-2017),Yes
+V000128,Chris Van Hollen,M,Democrat,No,Democrat (2003-2029),Yes
+V000129,David Valadao,M,Republican,No,Republican (2013-2027),Yes
+V000130,Juan Vargas,M,Democrat,No,Democrat (2013-2027),Yes
+V000131,Marc Veasey,M,Democrat,No,Democrat (2013-2027),Yes
+V000133,Jeff Van Drew,M,Republican,Yes,Democrat (2019-2019); Republican (2019-2027),Yes
+W000092,Malcolm Wallop,M,Republican,No,Republican (1977-1995),Yes
+W000139,Mike Ward,M,Democrat,No,Democrat (1995-1997),Yes
+W000177,Craig Washington,M,Democrat,No,Democrat (1989-1995),Yes
+W000180,Harold Washington,M,Democrat,No,Democrat (1981-1985),Yes
+W000187,Maxine Waters,F,Democrat,No,Democrat (1991-2027),Yes
+W000194,Wes Watkins,M,Republican,Yes,Democrat (1977-1991); Republican (1997-2003),Yes
+W000215,Henry Waxman,M,Democrat,No,Democrat (1975-2015),Yes
+W000273,Jerry Weller,M,Republican,No,Republican (1995-2009),Yes
+W000314,Robert Wexler,M,Democrat,No,Democrat (1997-2010),Yes
+W000315,Robert Weygand,M,Democrat,No,Democrat (1997-2001),Yes
+W000326,Alan Wheat,M,Democrat,No,Democrat (1983-1995),Yes
+W000390,Richard C. White,M,Democrat,No,Democrat (1965-1983),Yes
+W000413,Ed Whitfield,M,Republican,No,Republican (1995-2016),Yes
+W000428,Jamie Whitten,M,Democrat,No,Democrat (1941-1995),Yes
+W000437,Roger Wicker,M,Republican,No,Republican (1995-2031),Yes
+W000520,Pat Williams,M,Democrat,No,Democrat (1979-1997),Yes
+W000570,Charlie Wilson,M,Democrat,No,Democrat (1973-1997),Yes
+W000571,Charles H. Wilson,M,Democrat,No,Democrat (1963-1981),Yes
+W000607,Pete Wilson,M,Republican,No,Republican (1983-1991),Yes
+W000654,Bob Wise,M,Democrat,No,Democrat (1983-2001),Yes
+W000682,Howard Wolpe,M,Democrat,No,Democrat (1979-1993),Yes
+W000777,Joseph P. Wyatt Jr.,M,Democrat,No,Democrat (1979-1981),Yes
+W000784,Albert Wynn,M,Democrat,No,Democrat (1993-2008),Yes
+W000788,Nikema Williams,F,Democrat,No,Democrat (2021-2027),Yes
+W000791,Greg Walden,M,Republican,No,Republican (1999-2021),Yes
+W000794,Diane Watson,F,Democrat,No,Democrat (2001-2011),Yes
+W000795,Joe Wilson,M,Republican,No,Republican (2001-2027),Yes
+W000796,Lynn Westmoreland,M,Republican,No,Republican (2005-2017),Yes
+W000797,Debbie Wasserman Schultz,F,Democrat,No,Democrat (2005-2027),Yes
+W000798,Tim Walberg,M,Republican,No,Republican (2007-2027),Yes
+W000800,Peter Welch,M,Democrat,No,Democrat (2007-2029),Yes
+W000801,Charlie Wilson,M,Democrat,No,Democrat (2007-2011),Yes
+W000804,Rob Wittman,M,Republican,No,Republican (2007-2027),Yes
+W000806,Daniel Webster,M,Republican,No,Republican (2011-2027),Yes
+W000808,Frederica Wilson,F,Democrat,No,Democrat (2011-2027),Yes
+W000813,Jackie Walorski,F,Republican,No,Republican (2013-2022),Yes
+W000820,Mimi Walters,F,Republican,No,Republican (2015-2019),Yes
+W000821,Bruce Westerman,M,Republican,No,Republican (2015-2027),Yes
+W000822,Bonnie Watson Coleman,F,Democrat,No,Democrat (2015-2027),Yes
+W000825,Jennifer Wexton,F,Democrat,No,Democrat (2019-2025),Yes
+W000827,Jim Wright,M,Republican,No,Republican (2019-2021),Yes
+Y000014,Gus Yatron,M,Democrat,No,Democrat (1969-1993),Yes
+Y000033,Don Young,M,Republican,No,Republican (1973-2022),Yes
+Y000047,Milton Young,M,Republican,No,Republican (1945-1981),Yes
+Y000051,Robert A. Young,M,Democrat,No,Democrat (1977-1987),Yes
+Y000066,David Young,M,Republican,No,Republican (2015-2019),Yes
+Z000001,Clement Zablocki,M,Democrat,No,Democrat (1949-1983),Yes
+Z000008,Dick Zimmer,M,Republican,No,Republican (1991-1997),Yes
+Z000018,Ryan Zinke,M,Republican,No,Republican (2015-2027),Yes
