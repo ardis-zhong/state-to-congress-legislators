@@ -1,0 +1,960 @@
+Name,State,Chamber,BioguideId,TotalSponsoredItems,Source
+Donald W. Stewart,Alabama,Senate,S000907,22,API
+Richard Shelby,Alabama,Senate,S000320,666,API
+Ted Stevens,Alaska,Senate,S000888,1445,API
+Mike Gravel,Alaska,Senate,G000388,187,API
+Lisa Murkowski,Alaska,Senate,M001153,1236,manually corrected (disambiguation)
+Kyrsten Sinema,Arizona,Senate,S001191,181,API
+Ruben Gallego,Arizona,Senate,G000574,281,API
+David Pryor,Arkansas,Senate,P000556,449,API
+Pete Wilson,California,Senate,W000607,339,API
+John Seymour,California,Senate,S000269,88,API
+Alex Padilla,California,Senate,P000145,616,API
+Adam Schiff,California,Senate,S001150,588,API
+William L. Armstrong,Colorado,Senate,A000219,483,"API (resolved via targeted search, confidence=HIGH)"
+Ben Nighthorse Campbell,Colorado,Senate,C000077,460,API
+Wayne Allard,Colorado,Senate,A000109,457,API
+Cory Gardner,Colorado,Senate,G000562,375,API
+Hank Brown,Colorado,Senate,B000919,487,API
+Abraham Ribicoff,Connecticut,Senate,R000191,233,API
+Joe Lieberman,Connecticut,Senate,L000304,861,API
+Richard Blumenthal,Connecticut,Senate,B001277,1155,API
+Chris Murphy,Connecticut,Senate,M001169,620,API
+Lawton Chiles,Florida,Senate,C000356,433,API
+Richard (Dick) Stone,Florida,Senate,S000962,107,API
+Bob Graham,Florida,Senate,G000352,877,API
+Bill Nelson,Florida,Senate,N000032,911,API
+Marco Rubio,Florida,Senate,R000595,1476,API
+Sam Nunn,Georgia,Senate,N000171,531,API
+Paul Coverdell,Georgia,Senate,C000813,252,API
+Zell Miller,Georgia,Senate,M001141,63,API
+Max Cleland,Georgia,Senate,C001034,199,API
+Johnny Isakson,Georgia,Senate,I000055,415,API
+Daniel Inouye,Hawaii,Senate,I000025,2164,API
+Spark Matsunaga,Hawaii,Senate,M000250,796,API
+Brian Schatz,Hawaii,Senate,S001194,726,API
+Mazie Hirono,Hawaii,Senate,H001042,804,API
+James A. McClure,Idaho,Senate,M000346,713,API
+Larry Craig,Idaho,Senate,C000858,619,API
+Mike Crapo,Idaho,Senate,C000880,623,API
+Jim Risch,Idaho,Senate,R000584,649,API
+Adlai Stevenson III,Illinois,Senate,S000890,148,manually corrected (disambiguation)
+Alan J. Dixon,Illinois,Senate,D000366,341,API
+Paul Simon,Illinois,Senate,S000423,816,API
+Carol Moseley Braun,Illinois,Senate,M001025,141,"API (resolved via targeted search, confidence=HIGH)"
+Peter Fitzgerald,Illinois,Senate,F000442,442,API
+Barack Obama,Illinois,Senate,O000167,282,API
+Birch Bayh,Indiana,Senate,B001233,314,API
+Mike Braun,Indiana,Senate,B001310,460,API
+Jim Banks,Indiana,Senate,B001299,270,API
+Roger Jepsen,Iowa,Senate,J000101,164,API
+Chuck Grassley,Iowa,Senate,G000386,2492,API
+Joni Ernst,Iowa,Senate,E000295,669,API
+Bob Dole,Kansas,Senate,D000401,2456,API
+Jerry Moran,Kansas,Senate,M000934,788,API
+Wendell Ford,Kentucky,Senate,F000268,773,API
+Walter Huddleston,Kentucky,Senate,H000905,179,API
+Jim Bunning,Kentucky,Senate,B001066,323,API
+J. Bennett Johnston,Louisiana,Senate,J000189,756,API
+Mary Landrieu,Louisiana,Senate,L000550,1080,API
+David Vitter,Louisiana,Senate,V000127,1170,API
+Bill Cassidy,Louisiana,Senate,C001075,727,API
+Edmund Muskie,Maine,Senate,M001121,105,API
+Olympia Snowe,Maine,Senate,S000663,1405,API
+Chris Van Hollen,Maryland,Senate,V000128,628,"API (resolved via targeted search, confidence=HIGH)"
+Paul Sarbanes,Maryland,Senate,S000064,387,API
+Ben Cardin,Maryland,Senate,C000141,1365,API
+Scott Brown,Massachusetts,Senate,B001268,93,API
+Ed Markey,Massachusetts,Senate,M000133,1680,API
+Debbie Stabenow,Michigan,Senate,S000770,732,API
+Gary Peters,Michigan,Senate,P000595,917,API
+John Stennis,Mississippi,Senate,S000852,149,API
+Roger Wicker,Mississippi,Senate,W000437,760,API
+Cindy Hyde-Smith,Mississippi,Senate,H001079,160,API
+Jim Talent,Missouri,Senate,T000024,219,API
+Claire McCaskill,Missouri,Senate,M001170,367,API
+Eric Schmitt,Missouri,Senate,S001227,124,"API (resolved via targeted search, confidence=HIGH)"
+Max Baucus,Montana,Senate,B000243,1832,API
+Jon Tester,Montana,Senate,T000464,794,API
+Deb Fischer,Nebraska,Senate,F000463,350,API
+Harry Reid,Nevada,Senate,R000146,1995,API
+Richard Bryan,Nevada,Senate,B000993,455,API
+Chic Hecht,Nevada,Senate,H000439,78,API
+Dean Heller,Nevada,Senate,H001041,488,API
+Jeanne Shaheen,New Hampshire,Senate,S001181,1255,API
+Maggie Hassan,New Hampshire,Senate,H001076,415,API
+Bob Menendez,New Jersey,Senate,M000639,1954,manually corrected (disambiguation)
+Chuck Schumer,New York,Senate,S000148,2453,API
+Terry Sanford,North Carolina,Senate,S000055,120,API
+Kay Hagan,North Carolina,Senate,H001049,266,API
+Thom Tillis,North Carolina,Senate,T000476,684,API
+Robert B. Morgan,North Carolina,Senate,M000956,74,API
+Milton Young,North Dakota,Senate,Y000047,61,API
+Howard Metzenbaum,Ohio,Senate,M000678,3329,API
+Mike DeWine,Ohio,Senate,D000294,504,API
+Sherrod Brown,Ohio,Senate,B000944,1463,API
+George Voinovich,Ohio,Senate,V000126,394,API
+Jon Husted,Ohio,Senate,H001104,82,API
+David Boren,Oklahoma,Senate,B000639,350,API
+Jim Inhofe,Oklahoma,Senate,I000024,1297,API
+Don Nickles,Oklahoma,Senate,N000102,587,API
+Mark Hatfield,Oregon,Senate,H000343,761,API
+Bob Packwood,Oregon,Senate,P000009,1444,API
+Gordon Smith,Oregon,Senate,S001142,505,manually corrected (disambiguation)
+Jeff Merkley,Oregon,Senate,M001176,1266,API
+Jack Reed,Rhode Island,Senate,R000122,1289,API
+Strom Thurmond,South Carolina,Senate,T000254,1560,API
+Fritz Hollings,South Carolina,Senate,H000725,1066,API
+Lindsey Graham,South Carolina,Senate,G000359,774,API
+Tim Scott,South Carolina,Senate,S001184,468,API
+James Abdnor,South Dakota,Senate,A000009,309,"API (resolved via targeted search, confidence=HIGH)"
+Tim Johnson,South Dakota,Senate,J000177,463,API
+Mike Rounds,South Dakota,Senate,R000605,405,API
+Marsha Blackburn,Tennessee,Senate,B001243,810,API
+Kay Bailey Hutchison,Texas,Senate,H001016,959,API
+Jim Jeffords,Vermont,Senate,J000072,912,API
+Peter Welch,Vermont,Senate,W000800,764,API
+Harry F. Byrd Jr.,Virginia,Senate,B001209,52,"API (resolved via targeted search, confidence=HIGH)"
+George Allen,Virginia,Senate,A000121,212,API
+Warren Magnuson,Washington,Senate,M000053,356,API
+Slade Gorton,Washington,Senate,G000333,616,API
+Daniel J. Evans,Washington,Senate,E000236,193,API
+Patty Murray,Washington,Senate,M001111,1206,API
+Maria Cantwell,Washington,Senate,C000127,1006,API
+Robert Byrd,West Virginia,Senate,B001210,1501,API
+Jay Rockefeller,West Virginia,Senate,R000361,887,API
+Joe Manchin,West Virginia,Senate,M001183,544,API
+Shelley Moore Capito,West Virginia,Senate,C001047,398,API
+Gaylord Nelson,Wisconsin,Senate,N000033,343,API
+Bob Kasten,Wisconsin,Senate,K000019,434,API
+Russ Feingold,Wisconsin,Senate,F000061,1173,API
+Tammy Baldwin,Wisconsin,Senate,B001230,756,API
+Alan Simpson,Wyoming,Senate,S000429,338,API
+Malcolm Wallop,Wyoming,Senate,W000092,411,API
+Craig Thomas,Wyoming,Senate,T000162,313,API
+Mike Enzi,Wyoming,Senate,E000285,659,API
+John Barrasso,Wyoming,Senate,B001261,713,API
+Cynthia Lummis,Wyoming,Senate,L000571,248,API
+Sonny Callahan,Alabama,House,C000052,61,API
+Bradley Byrne,Alabama,House,B001289,89,API
+Barry Moore,Alabama,House,M001212,66,API
+Mike Rogers,Alabama,House,R000575,115,API
+Mo Brooks,Alabama,House,B001274,67,API
+Spencer Bachus,Alabama,House,B000013,124,API
+Richard Shelby,Alabama,House,S000320,666,API
+Earl Hilliard Sr.,Alabama,House,H000621,31,"API (resolved via targeted search, confidence=HIGH)"
+Tom Bevill,Alabama,House,B000431,101,API
+Ronnie Flippo,Alabama,House,F000208,63,API
+Bill Nichols,Alabama,House,N000095,141,API
+Ben Erdreich,Alabama,House,E000201,76,API
+Glen Browder,Alabama,House,B000897,19,API
+Parker Griffith,Alabama,House,G000557,11,API
+Don Young,Alaska,House,Y000033,1199,API
+Mary Peltola,Alaska,House,P000619,36,"API (resolved via targeted search, confidence=HIGH)"
+Tim Hutchinson,Arkansas,House,H001015,243,manually corrected (disambiguation)
+Vic Snyder,Arkansas,House,S000672,34,API
+Mike Ross,Arkansas,House,R000573,93,API
+Bruce Westerman,Arkansas,House,W000821,94,API
+Diana DeGette,Colorado,House,D000197,249,API
+David Skaggs,Colorado,House,S000462,85,API
+Mark Udall,Colorado,House,U000038,420,API
+Raymond Kogovsek,Colorado,House,K000304,48,"API (resolved via targeted search, confidence=HIGH)"
+Michael Strang,Colorado,House,S000991,12,"API (resolved via targeted search, confidence=HIGH)"
+Ben Nighthorse Campbell,Colorado,House,C000077,460,API
+Scott McInnis,Colorado,House,M000477,142,API
+John Salazar,Colorado,House,S001158,70,API
+Scott Tipton,Colorado,House,T000470,133,API
+Wayne Allard,Colorado,House,A000109,457,API
+Bob Schaffer,Colorado,House,S000112,49,API
+Marilyn Musgrave,Colorado,House,M001152,73,API
+Cory Gardner,Colorado,House,G000562,375,API
+Hank Brown,Colorado,House,B000919,487,API
+Ken Kramer,Colorado,House,K000322,57,"API (resolved via targeted search, confidence=HIGH)"
+Joel Hefley,Colorado,House,H000444,295,API
+Doug Lamborn,Colorado,House,L000564,183,API
+Daniel Schaefer,Colorado,House,S000109,48,API
+Tom Tancredo,Colorado,House,T000458,163,API
+Mike Coffman,Colorado,House,C001077,100,API
+Ed Perlmutter,Colorado,House,P000593,138,API
+Brittany Pettersen,Colorado,House,P000620,72,API
+Yadira Caraveo,Colorado,House,C001134,41,API
+Gabe Evans,Colorado,House,E000300,22,API
+John B. Larson,Connecticut,House,L000557,262,API
+Sam Gejdenson,Connecticut,House,G000120,213,API
+Rob Simmons,Connecticut,House,S001152,88,API
+Joe Courtney,Connecticut,House,C001069,188,API
+Lawrence J. DeNardis,Connecticut,House,D000231,7,"API (resolved via targeted search, confidence=HIGH)"
+Stewart McKinney,Connecticut,House,M000527,205,API
+Chris Shays,Connecticut,House,S001144,230,API
+William R. Ratchford,Connecticut,House,R000067,25,API
+John G. Rowland,Connecticut,House,R000482,33,"API (resolved via targeted search, confidence=HIGH)"
+James H. Maloney,Connecticut,House,M000090,27,API
+Nancy Johnson,Connecticut,House,J000163,329,API
+Chris Murphy,Connecticut,House,M001169,620,API
+Elizabeth Esty,Connecticut,House,E000293,85,API
+Michael N. Castle,Delaware,House,C000243,299,API
+Sarah McBride,Delaware,House,M001238,10,API
+Phillip Burton,California,House,B001156,468,manually corrected (disambiguation)
+John Burton,California,House,B001153,171,API
+Vic Fazio,California,House,F000053,196,API
+Bill Thomas,California,House,T000188,343,API
+Robert J. Lagomarsino,California,House,L000020,350,API
+Carlos J. Moorhead,California,House,M000926,194,API
+Glenn M. Anderson,California,House,A000189,520,API
+Jerry Lewis,California,House,L000274,157,API
+Wally Herger,California,House,H000528,216,API
+Gary Condit,California,House,C000670,103,API
+Sam Farr,California,House,F000030,147,API
+James Rogan,California,House,R000386,34,API
+Henry Waxman,California,House,W000215,635,API
+Matthew G. Martinez,California,House,M000206,105,API
+Julian Dixon,California,House,D000373,86,API
+Mervyn Dymally,California,House,D000592,207,API
+Augustus Hawkins,California,House,H000367,248,API
+Diane Watson,California,House,W000794,84,API
+Karen Bass,California,House,B001270,167,API
+Maxine Waters,California,House,W000187,624,API
+Sydney Kamlager-Dove,California,House,K000400,69,API
+Joe Baca,California,House,B001234,219,API
+Ed Royce,California,House,R000487,292,API
+John Doolittle,California,House,D000429,134,API
+Susan Davis,California,House,D000598,235,API
+Gary Miller,California,House,M001139,109,manually corrected (disambiguation)
+Anthony Beilenson,California,House,B000318,279,API
+Mel Levine,California,House,L000264,133,API
+Richard H. Lehman,California,House,L000225,83,API
+Charles H. Wilson,California,House,W000571,159,manually corrected (disambiguation)
+Kevin McCarthy,California,House,M001165,133,API
+Jim Costa,California,House,C001059,187,API
+Dennis Cardoza,California,House,C001050,103,API
+Mike Thompson,California,House,T000460,366,API
+Jackie Speier,California,House,S001175,284,API
+Judy Chu,California,House,C001080,256,API
+Barbara Lee,California,House,L000551,668,API
+Adam Schiff,California,House,S001150,588,API
+Howard Berman,California,House,B000410,221,API
+Jared Huffman,California,House,H001068,242,API
+Julia Brownley,California,House,B001285,307,API
+Tony Cardenas,California,House,C001097,190,"API (resolved via targeted search, confidence=HIGH)"
+Juan Vargas,California,House,V000130,91,API
+Norma Torres,California,House,T000474,193,manually corrected (disambiguation)
+Ted Lieu,California,House,L000582,273,API
+Mimi Walters,California,House,W000820,17,API
+Steve Knight,California,House,K000387,45,API
+Lou Correa,California,House,C001110,122,API
+Jimmy Gomez,California,House,G000585,87,API
+Kevin Kiley,California,House,K000401,44,API
+Young Kim,California,House,K000397,112,manually corrected (disambiguation)
+Vince Fong,California,House,F000480,19,API
+Adam Gray,California,House,G000605,8,"API (resolved via targeted search, confidence=HIGH)"
+Dave Min,California,House,M001241,30,API
+Luz Rivas,California,House,R000620,14,API
+Laura Friedman,California,House,F000483,11,API
+John Garamendi,California,House,G000559,240,API
+Mark DeSaulnier,California,House,D000623,226,API
+Xavier Becerra,California,House,B000287,130,API
+Lucille Roybal-Allard,California,House,R000486,164,API
+Grace Napolitano,California,House,N000179,100,API
+David Valadao,California,House,V000129,91,API
+Jay Obernolte,California,House,O000019,72,API
+Tom McClintock,California,House,M001177,155,API
+Doug LaMalfa,California,House,L000578,131,API
+Paul Cook,California,House,C001094,61,API
+Ernie Konnyu,California,House,K000309,7,"API (resolved via targeted search, confidence=HIGH)"
+William Dannemeyer,California,House,D000044,213,API
+Wayne Grisham,California,House,G000480,9,API
+Clair Burgener,California,House,B001080,82,"API (resolved via targeted search, confidence=HIGH)"
+Bill Baker,California,House,B000078,23,API
+Robert Badham,California,House,B000024,44,"API (resolved via targeted search, confidence=HIGH)"
+George E. Brown Jr.,California,House,B000918,430,"API (resolved via targeted search, confidence=HIGH)"
+Juanita Millender-McDonald,California,House,M000714,192,API
+Laura Richardson,California,House,R000581,109,API
+Kevin Mullin,California,House,M001225,40,API
+Sanford Bishop,Georgia,House,B000490,144,API
+Nikema Williams,Georgia,House,W000788,159,API
+Austin Scott,Georgia,House,S001189,89,manually corrected (disambiguation)
+Barry Loudermilk,Georgia,House,L000583,75,API
+Buddy Carter,Georgia,House,C001103,213,API
+J. Roy Rowland,Georgia,House,R000481,61,API
+Nathan Deal,Georgia,House,D000168,94,API
+Cynthia McKinney,Georgia,House,M000523,74,API
+John Linder,Georgia,House,L000321,199,API
+Mac Collins,Georgia,House,C000640,114,API
+Johnny Isakson,Georgia,House,I000055,415,API
+David Scott,Georgia,House,S001157,116,API
+Tom Price,Georgia,House,P000591,145,API
+Jack Kingston,Georgia,House,K000220,103,API
+Lynn Westmoreland,Georgia,House,W000796,38,API
+Tom Graves,Georgia,House,G000560,23,API
+Doug Collins,Georgia,House,C001093,125,manually corrected (disambiguation)
+Elliott H. Levitas,Georgia,House,L000265,263,API
+Jack Brinkley,Georgia,House,B000839,265,"API (resolved via targeted search, confidence=HIGH)"
+Billy Lee Evans,Georgia,House,E000233,53,"API (resolved via targeted search, confidence=HIGH)"
+Don Johnson Jr.,Georgia,House,J000120,2,"API (resolved via targeted search, confidence=HIGH)"
+Charles Hatcher,Georgia,House,H000340,23,API
+Phil Gingrey,Georgia,House,G000550,198,API
+Max Burns,Georgia,House,B001249,18,API
+Buddy Darden,Georgia,House,D000051,61,API
+Dante Fascell,Florida,House,F000041,423,API
+Claude Pepper,Florida,House,P000218,1158,API
+Charles Canady,Florida,House,C000107,57,API
+Peter Deutsch,Florida,House,D000275,61,API
+Harry Johnston,Florida,House,J000187,35,API
+Carrie Meek,Florida,House,M000628,62,API
+Karen Thurman,Florida,House,T000253,56,API
+Corrine Brown,Florida,House,B000911,115,API
+Ander Crenshaw,Florida,House,C001045,39,API
+Robert Wexler,Florida,House,W000314,101,API
+Debbie Wasserman Schultz,Florida,House,W000797,183,"API (resolved via targeted search, confidence=HIGH)"
+Kendrick Meek,Florida,House,M001148,84,manually corrected (disambiguation)
+Mario Diaz-Balart,Florida,House,D000600,111,manually corrected (disambiguation)
+Lincoln Diaz-Balart,Florida,House,D000299,173,API
+Ileana Ros-Lehtinen,Florida,House,R000435,373,API
+Tom Feeney,Florida,House,F000447,36,API
+Ron Klein,Florida,House,K000366,39,API
+Suzanne Kosmas,Florida,House,K000370,21,API
+Bill Posey,Florida,House,P000599,232,API
+David Rivera,Florida,House,R000590,9,API
+Sandy Adams,Florida,House,A000366,8,API
+Daniel Webster,Florida,House,W000806,60,API
+Dennis Ross,Florida,House,R000593,79,API
+Ted Deutch,Florida,House,D000610,173,API
+Frederica Wilson,Florida,House,W000808,174,API
+Darren Soto,Florida,House,S001200,154,API
+Charlie Crist,Florida,House,C001111,69,API
+Matt Gaetz,Florida,House,G000578,96,API
+Greg Steube,Florida,House,S001214,287,API
+Byron Donalds,Florida,House,D000032,147,API
+Aaron Bean,Florida,House,B001314,48,API
+Jared Moskowitz,Florida,House,M001217,38,API
+Jimmy Patronis,Florida,House,P000622,18,API
+Randy Fine,Florida,House,F000484,31,API
+Adam Putnam,Florida,House,P000586,87,API
+Ginny Brown-Waite,Florida,House,B001247,105,API
+Allen Boyd,Florida,House,B000716,33,API
+Bill Nelson,Florida,House,N000032,911,API
+Buddy MacKay,Florida,House,M000023,28,API
+Bill Grant,Florida,House,G000382,21,API
+Skip Bafalis,Florida,House,B000029,95,API
+Bill Chappell,Florida,House,C000321,331,"API (resolved via targeted search, confidence=HIGH)"
+Tom Lewis,Florida,House,L000295,75,API
+Lawrence J. Smith,Florida,House,S000586,105,API
+Don Fuqua,Florida,House,F000430,463,API
+Earl Hutto,Florida,House,H001018,80,API
+Mark Foley,Florida,House,F000238,149,API
+Gus Bilirakis,Florida,House,B001257,301,manually corrected (disambiguation)
+John Mica,Florida,House,M000689,148,manually corrected (disambiguation)
+Charles Edward Bennett,Florida,House,B000371,757,API
+Jim Kolbe,Arizona,House,K000306,181,API
+Matt Salmon,Arizona,House,S000018,146,API
+Tom O'Halleran,Arizona,House,O000171,125,API
+Kyrsten Sinema,Arizona,House,S001191,181,API
+Karan English,Arizona,House,E000186,9,API
+Harry Mitchell,Arizona,House,M001167,23,API
+Trent Franks,Arizona,House,F000448,116,API
+Gabby Giffords,Arizona,House,G000554,61,API
+Debbie Lesko,Arizona,House,L000589,107,API
+Andy Biggs,Arizona,House,B001302,935,API
+Bob Stump,Arizona,House,S001044,222,API
+James F. McNulty Jr.,Arizona,House,M000589,23,"API (resolved via targeted search, confidence=HIGH)"
+David Schweikert,Arizona,House,S001183,190,API
+Ruben Gallego,Arizona,House,G000574,281,API
+Ann Kirkpatrick,Arizona,House,K000368,82,API
+Neil Abercrombie,Hawaii,House,A000014,133,API
+Pat Saiki,Hawaii,House,S000014,30,"API (resolved via targeted search, confidence=HIGH)"
+Charles Djou,Hawaii,House,D000611,12,API
+Colleen Hanabusa,Hawaii,House,H001050,43,API
+Mark Takai,Hawaii,House,T000473,13,API
+Ed Case,Hawaii,House,C001055,137,API
+Mazie Hirono,Hawaii,House,H001042,804,API
+Tulsi Gabbard,Hawaii,House,G000571,120,API
+Kai Kahele,Hawaii,House,K000396,17,"API (resolved via targeted search, confidence=HIGH)"
+Jill Tokuda,Hawaii,House,T000487,76,API
+Larry Craig,Idaho,House,C000858,619,API
+Butch Otter,Idaho,House,O000166,56,API
+Bill Sali,Idaho,House,S001167,20,API
+Raul Labrador,Idaho,House,L000573,33,API
+Russ Fulcher,Idaho,House,F000469,50,API
+Mike Crapo,Idaho,House,C000880,623,API
+Mike Simpson,Idaho,House,S001148,160,API
+David F. Emery,Maine,House,E000175,69,"API (resolved via targeted search, confidence=HIGH)"
+Olympia Snowe,Maine,House,S000663,1405,API
+John R. McKernan Jr.,Maine,House,M000512,27,"API (resolved via targeted search, confidence=HIGH)"
+Joseph E. Brennan,Maine,House,B000798,18,API
+Tom Andrews,Maine,House,A000211,17,API
+John Baldacci,Maine,House,B000081,44,API
+Mike Michaud,Maine,House,M001149,121,API
+Chellie Pingree,Maine,House,P000597,180,API
+Jared Golden,Maine,House,G000592,88,API
+Harold Washington,Illinois,House,W000180,6,"API (resolved via targeted search, confidence=HIGH)"
+Robin Kelly,Illinois,House,K000385,160,API
+Delia Ramirez,Illinois,House,R000617,44,API
+Edward Derwinski,Illinois,House,D000269,166,"API (resolved via targeted search, confidence=HIGH)"
+George M. O'Brien,Illinois,House,O000010,152,API
+Jack Davis,Illinois,House,D000106,12,manually corrected (disambiguation)
+George Sangmeister,Illinois,House,S000056,35,API
+"Jesus ""Chuy"" Garcia",Illinois,House,G000586,73,"API (resolved via targeted search, confidence=HIGH)"
+John G. Fary,Illinois,House,F000040,45,"API (resolved via targeted search, confidence=HIGH)"
+Dan Rostenkowski,Illinois,House,R000458,391,API
+Rod Blagojevich,Illinois,House,B000518,46,API
+Henry Hyde,Illinois,House,H001022,466,API
+Peter Roskam,Illinois,House,R000580,120,API
+Robert McClory,Illinois,House,M000340,150,API
+Harris Fawell,Illinois,House,F000049,179,API
+Judy Biggert,Illinois,House,B001232,176,API
+John E. Grotberg,Illinois,House,G000499,8,API
+Dennis Hastert,Illinois,House,H000323,67,API
+Randy Hultgren,Illinois,House,H001059,67,API
+Edward Madigan,Illinois,House,M000041,128,API
+Tom Ewing,Illinois,House,E000282,54,API
+Tim Johnson,Illinois,House,J000285,47,API
+Lynn M. Martin,Illinois,House,M000195,53,API
+Aaron Schock,Illinois,House,S001179,84,API
+Darin LaHood,Illinois,House,L000585,141,manually corrected (disambiguation)
+Ray LaHood,Illinois,House,L000552,103,API
+Tom Railsback,Illinois,House,R000012,244,API
+Terry L. Bruce,Illinois,House,B000971,49,API
+Glenn Poshard,Illinois,House,P000452,30,API
+David D. Phelps,Illinois,House,P000584,5,API
+Paul Simon,Illinois,House,S000423,816,API
+John Edward Porter,Illinois,House,P000444,227,API
+Jerry Weller,Illinois,House,W000273,156,API
+Debbie Halvorson,Illinois,House,H001044,29,API
+Mike Bost,Illinois,House,B001295,140,API
+Adam Benjamin Jr.,Indiana,House,B000363,38,"API (resolved via targeted search, confidence=HIGH)"
+Katie Hall,Indiana,House,H000058,8,API
+Elwood Hillis,Indiana,House,H000624,160,API
+Andrew Jacobs Jr.,Indiana,House,J000033,663,"API (resolved via targeted search, confidence=HIGH)"
+Jim Jontz,Indiana,House,J000265,53,API
+Baron Hill,Indiana,House,H001030,65,API
+Dan Burton,Indiana,House,B001149,470,API
+Julia Carson,Indiana,House,C000191,55,API
+Ed Pease,Indiana,House,P000171,6,API
+Jackie Walorski,Indiana,House,W000813,89,API
+Marlin Stutzman,Indiana,House,S001188,43,API
+Jim Banks,Indiana,House,B001299,270,API
+Jim Baird,Indiana,House,B001307,44,API
+Victoria Spartz,Indiana,House,S000929,46,API
+Luke Messer,Indiana,House,M001189,80,API
+Erin Houchin,Indiana,House,H001093,69,API
+Mark Messmer,Indiana,House,M001233,16,API
+Joel Deckard,Indiana,House,D000183,6,"API (resolved via targeted search, confidence=HIGH)"
+Carroll Hubbard,Kentucky,House,H000878,79,API
+Romano Mazzoli,Kentucky,House,M000291,178,API
+Larry Hopkins,Kentucky,House,H000776,47,API
+Carl Christopher Perkins,Kentucky,House,P000229,29,manually corrected (disambiguation)
+Jim Bunning,Kentucky,House,B001066,323,API
+Ernie Fletcher,Kentucky,House,F000441,25,API
+Ed Whitfield,Kentucky,House,W000413,133,API
+Mike Ward,Kentucky,House,W000139,6,API
+Anne Northup,Kentucky,House,N000143,14,API
+Brett Guthrie,Kentucky,House,G000558,140,API
+James Comer,Kentucky,House,C001108,51,API
+Morgan McGarvey,Kentucky,House,M001220,48,API
+Carl D. Perkins,Kentucky,House,P000230,401,manually corrected (disambiguation)
+Chuck Grassley,Iowa,House,G000386,2492,API
+Tom Tauke,Iowa,House,T000053,147,"API (resolved via targeted search, confidence=HIGH)"
+T. Cooper Evans,Iowa,House,E000259,113,"API (resolved via targeted search, confidence=HIGH)"
+Leonard Boswell,Iowa,House,B000652,106,API
+Steve King,Iowa,House,K000362,315,API
+David Young,Iowa,House,Y000066,36,API
+Abby Finkenauer,Iowa,House,F000467,41,"API (resolved via targeted search, confidence=HIGH)"
+Randy Feenstra,Iowa,House,F000446,103,API
+Mariannette Miller-Meeks,Iowa,House,M001215,133,API
+Ashley Hinson,Iowa,House,H001091,95,API
+Zach Nunn,Iowa,House,N000193,121,API
+Keith Sebelius,Kansas,House,S000217,192,"API (resolved via targeted search, confidence=HIGH)"
+Jim Slattery,Kansas,House,S000477,146,API
+Jerry Moran,Kansas,House,M000934,788,API
+Tim Huelskamp,Kansas,House,H001057,52,API
+Lynn Jenkins,Kansas,House,J000290,108,API
+Todd Tiahrt,Kansas,House,T000260,136,API
+Jake LaTurner,Kansas,House,L000266,20,API
+Derek Schmidt,Kansas,House,S001228,17,API
+Buddy Leach,Louisiana,House,L000167,1,API
+David Vitter,Louisiana,House,V000127,1170,API
+Steve Scalise,Louisiana,House,S001176,110,API
+William J. Jefferson,Louisiana,House,J000070,124,API
+Cedric Richmond,Louisiana,House,R000588,93,API
+Troy Carter,Louisiana,House,C001125,70,API
+Billy Tauzin,Louisiana,House,T000058,271,API
+Charlie Melancon,Louisiana,House,M001161,54,API
+Rodney Alexander,Louisiana,House,A000361,46,API
+Richard Baker,Louisiana,House,B000072,180,API
+Bill Cassidy,Louisiana,House,C001075,727,API
+Cleo Fields,Louisiana,House,F000110,28,API
+Mike Johnson,Louisiana,House,J000299,74,API
+Robert Bauman,Maryland,House,B000244,61,"API (resolved via targeted search, confidence=HIGH)"
+Roy Dyson,Maryland,House,D000593,80,"API (resolved via targeted search, confidence=HIGH)"
+Andy Harris,Maryland,House,H001052,50,API
+Bob Ehrlich,Maryland,House,E000093,28,API
+Johnny Olszewski,Maryland,House,O000176,18,API
+Ben Cardin,Maryland,House,C000141,1365,API
+Sarah Elfreth,Maryland,House,E000301,17,API
+Albert Wynn,Maryland,House,W000784,129,API
+Anthony Brown,Maryland,House,B001304,154,API
+Steny Hoyer,Maryland,House,H000874,375,API
+Elijah Cummings,Maryland,House,C000984,225,API
+Connie Morella,Maryland,House,M000941,251,API
+Chris Van Hollen,Maryland,House,V000128,628,"API (resolved via targeted search, confidence=HIGH)"
+Jamie Raskin,Maryland,House,R000606,144,API
+Tip O'Neill,Massachusetts,House,O000098,258,API
+Edward Boland,Massachusetts,House,B000600,190,"API (resolved via targeted search, confidence=HIGH)"
+Silvio Conte,Massachusetts,House,C000709,609,API
+Joseph Moakley,Massachusetts,House,M000834,783,API
+Brian Donnelly,Massachusetts,House,D000416,209,API
+Joseph D. Early,Massachusetts,House,E000013,29,API
+Chester Atkins,Massachusetts,House,A000226,44,API
+Barney Frank,Massachusetts,House,F000339,797,API
+Ed Markey,Massachusetts,House,M000133,1680,API
+Peter Blute,Massachusetts,House,B000576,26,API
+Bill Delahunt,Massachusetts,House,D000210,88,API
+Stephen Lynch,Massachusetts,House,L000562,254,API
+William Keating,Massachusetts,House,K000375,172,API
+Katherine Clark,Massachusetts,House,C001101,88,API
+Dale Kildee,Michigan,House,K000172,283,API
+Sander Levin,Michigan,House,L000263,217,manually corrected (disambiguation)
+Paul B. Henry,Michigan,House,H000514,53,API
+Vernon Ehlers,Michigan,House,E000092,135,API
+James Barcia,Michigan,House,B000134,38,API
+Dave Camp,Michigan,House,C000071,214,API
+Bart Stupak,Michigan,House,S001045,345,API
+Nick Smith,Michigan,House,S000597,200,API
+Debbie Stabenow,Michigan,House,S000770,732,API
+Mike Rogers,Michigan,House,R000572,129,API
+Thaddeus McCotter,Michigan,House,M001147,83,API
+Hansen Clarke,Michigan,House,C001085,42,API
+Justin Amash,Michigan,House,A000367,74,API
+Tim Walberg,Michigan,House,W000798,225,API
+Bill Huizenga,Michigan,House,H001058,177,API
+John Moolenaar,Michigan,House,M001194,110,API
+Rashida Tlaib,Michigan,House,T000481,146,API
+Shri Thanedar,Michigan,House,T000488,67,API
+Kristen McDonald Rivet,Michigan,House,M001237,18,"API (resolved via targeted search, confidence=HIGH)"
+Tom Barrett,Michigan,House,B001321,51,API
+Bob Davis,Michigan,House,D000131,157,API
+Howard Wolpe,Michigan,House,W000682,65,API
+Dennis Hertel,Michigan,House,H000547,130,API
+William Broomfield,Michigan,House,B000890,291,API
+Guy Vander Jagt,Michigan,House,V000027,300,"API (resolved via targeted search, confidence=HIGH)"
+Carl Pursell,Michigan,House,P000574,73,API
+Lynn Rivers,Michigan,House,R000281,52,API
+Bob Traxler,Michigan,House,T000356,201,API
+William D. Ford,Michigan,House,F000270,278,API
+Pat Williams,Montana,House,W000520,253,API
+Denny Rehberg,Montana,House,R000571,108,API
+Ryan Zinke,Montana,House,Z000018,57,API
+Matt Rosendale,Montana,House,R000103,97,"API (resolved via targeted search, confidence=HIGH)"
+Tom Hagedorn,Minnesota,House,H000012,113,API
+Rick Nolan,Minnesota,House,N000127,230,API
+Martin Olav Sabo,Minnesota,House,S000005,84,API
+Bill Frenzel,Minnesota,House,F000380,520,API
+Arlen Erdahl,Minnesota,House,E000198,28,API
+Timothy Penny,Minnesota,House,P000215,161,API
+Gil Gutknecht,Minnesota,House,G000536,48,API
+Collin Peterson,Minnesota,House,P000258,210,API
+Arlan Stangeland,Minnesota,House,S000795,145,"API (resolved via targeted search, confidence=HIGH)"
+Bruce Vento,Minnesota,House,V000087,324,API
+Betty McCollum,Minnesota,House,M001143,173,API
+Jim Ramstad,Minnesota,House,R000033,180,API
+Erik Paulsen,Minnesota,House,P000594,176,API
+Kelly Morrison,Minnesota,House,M001234,17,API
+Keith Ellison,Minnesota,House,E000288,255,API
+Ilhan Omar,Minnesota,House,O000173,126,API
+Michele Bachmann,Minnesota,House,B001256,67,API
+Tom Emmer,Minnesota,House,E000294,128,API
+Michelle Fischbach,Minnesota,House,F000470,70,API
+Brad Finstad,Minnesota,House,F000475,65,API
+Doug Bereuter,Nebraska,House,B000403,353,API
+Peter Hoagland,Nebraska,House,H000652,59,API
+Bill Barrett,Nebraska,House,B000179,42,API
+Adrian Smith,Nebraska,House,S001172,137,API
+Brad Ashford,Nebraska,House,A000373,11,API
+Mike Flood,Nebraska,House,F000474,50,API
+Wendell Bailey,Missouri,House,B000047,6,"API (resolved via targeted search, confidence=HIGH)"
+Richard Ichord,Missouri,House,I000001,109,"API (resolved via targeted search, confidence=HIGH)"
+Robert A. Young,Missouri,House,Y000051,50,"API (resolved via targeted search, confidence=HIGH)"
+E. Thomas Coleman,Missouri,House,C000618,109,API
+Harold Volkmer,Missouri,House,V000112,205,API
+Jack Buechner,Missouri,House,B001036,44,"API (resolved via targeted search, confidence=HIGH)"
+Jim Talent,Missouri,House,T000024,219,API
+Ike Skelton,Missouri,House,S000465,238,API
+Alan Wheat,Missouri,House,W000326,114,API
+Pat Danner,Missouri,House,D000046,19,API
+Karen McCarthy,Missouri,House,M000316,31,API
+Lacy Clay,Missouri,House,C001049,180,manually corrected (disambiguation)
+Vicky Hartzler,Missouri,House,H001053,98,API
+Sam Graves,Missouri,House,G000546,272,API
+Blaine Luetkemeyer,Missouri,House,L000569,230,API
+Jason Smith,Missouri,House,S001195,124,API
+Russ Carnahan,Missouri,House,C001060,71,manually corrected (disambiguation)
+Eric Burlison,Missouri,House,B001316,55,API
+Bob Onder,Missouri,House,O000177,19,API
+James Cleveland,New Hampshire,House,C000512,101,"API (resolved via targeted search, confidence=HIGH)"
+Jeb Bradley,New Hampshire,House,B001246,43,API
+Frank Guinta,New Hampshire,House,G000570,36,API
+Chris Pappas,New Hampshire,House,P000614,180,API
+Charles Bass,New Hampshire,House,B000220,80,API
+Roger Wicker,Mississippi,House,W000437,760,API
+Sonny Montgomery,Mississippi,House,M000865,779,API
+Ronnie Shows,Mississippi,House,S001147,36,API
+Gene Taylor,Mississippi,House,T000074,78,API
+Alan Nunnelee,Mississippi,House,N000186,9,API
+Jamie Whitten,Mississippi,House,W000428,439,API
+Steven Palazzo,Mississippi,House,P000601,54,API
+Harry Reid,Nevada,House,R000146,1995,API
+James Bilbray,Nevada,House,B000462,39,API
+Jim Gibbons,Nevada,House,G000152,120,API
+Dean Heller,Nevada,House,H001041,488,API
+Jon Porter,Nevada,House,P000589,59,API
+Dina Titus,Nevada,House,T000468,251,API
+Joe Heck,Nevada,House,H001055,61,API
+Steven Horsford,Nevada,House,H001066,119,API
+Cresent Hardy,Nevada,House,H001070,16,API
+Ruben Kihuen,Nevada,House,K000390,12,"API (resolved via targeted search, confidence=HIGH)"
+Mark Amodei,Nevada,House,A000369,107,API
+Shelley Berkley,Nevada,House,B001231,117,API
+James Florio,New Jersey,House,F000215,273,API
+Frank J. Guarini,New Jersey,House,G000511,257,API
+Edwin B. Forsythe,New Jersey,House,F000286,194,API
+Harold C. Hollenbeck,New Jersey,House,H000722,49,"API (resolved via targeted search, confidence=HIGH)"
+Millicent Fenwick,New Jersey,House,F000078,139,"API (resolved via targeted search, confidence=HIGH)"
+Bernard J. Dwyer,New Jersey,House,D000586,50,API
+Dean A. Gallo,New Jersey,House,G000025,48,API
+Matthew J. Rinaldo,New Jersey,House,R000262,354,API
+Jim Saxton,New Jersey,House,S000097,333,API
+Bob Franks,New Jersey,House,F000349,118,API
+Rodney Frelinghuysen,New Jersey,House,F000372,169,API
+Robert Menendez,New Jersey,House,M000639,1954,manually corrected (disambiguation)
+Frank Pallone,New Jersey,House,P000034,579,API
+Herbert C. Klein,New Jersey,House,K000262,17,API
+Albio Sires,New Jersey,House,S001165,110,API
+Bill Pascrell,New Jersey,House,P000096,357,API
+Scott Garrett,New Jersey,House,G000548,237,API
+Leonard Lance,New Jersey,House,L000567,89,API
+Thomas Kean Jr.,New Jersey,House,K000398,58,"API (resolved via targeted search, confidence=HIGH)"
+Jeff Van Drew,New Jersey,House,V000133,170,"API (resolved via targeted search, confidence=HIGH)"
+Donald Norcross,New Jersey,House,N000188,108,API
+Bonnie Watson Coleman,New Jersey,House,W000822,205,"API (resolved via targeted search, confidence=HIGH)"
+Herb Conaway,New Jersey,House,C001136,15,API
+Frank LoBiondo,New Jersey,House,L000554,126,API
+John Adler,New Jersey,House,A000364,26,API
+Nellie Pou,New Jersey,House,P000621,13,API
+Dick Zimmer,New Jersey,House,Z000008,98,API
+Frank Thompson Jr.,New Jersey,House,T000200,227,"API (resolved via targeted search, confidence=HIGH)"
+Charles Rangel,New York,House,R000053,1048,API
+Gerald B.H. Solomon,New York,House,S000675,858,API
+Benjamin Gilman,New York,House,G000212,671,API
+Norman F. Lent,New York,House,L000243,342,API
+Stephen Solarz,New York,House,S000673,387,API
+John LaFalce,New York,House,L000556,580,API
+Robert Garcia,New York,House,G000047,123,API
+Barber Conable,New York,House,C000666,304,API
+Shirley Chisholm,New York,House,C000371,64,"API (resolved via targeted search, confidence=HIGH)"
+Jerrold Nadler,New York,House,N000002,546,API
+Donald J. Mitchell,New York,House,M000808,190,"API (resolved via targeted search, confidence=HIGH)"
+Gary A. Lee,New York,House,L000568,17,API
+Guy Molinari,New York,House,M000842,55,API
+Major Owens,New York,House,O000159,277,API
+Charles Schumer,New York,House,S000148,2453,API
+George Hochbrueckner,New York,House,H000670,74,API
+Bill Paxon,New York,House,P000148,44,API
+Eliot Engel,New York,House,E000179,528,API
+Louise Slaughter,New York,House,S000480,442,API
+Raymond J. McGrath,New York,House,M000458,90,API
+Michael McNulty,New York,House,M000590,101,API
+Jose E. Serrano,New York,House,S000248,267,API
+Maurice Hinchey,New York,House,H000627,207,API
+John M. McHugh,New York,House,M000472,99,API
+Joseph Crowley,New York,House,C001038,249,API
+Gregory Meeks,New York,House,M001137,244,API
+Grace Meng,New York,House,M001188,320,API
+Andrew Garbarino,New York,House,G000597,96,API
+Nicole Malliotakis,New York,House,M000317,138,API
+Mike Lawler,New York,House,L000599,195,API
+Claudia Tenney,New York,House,T000478,233,API
+George Latimer,New York,House,L000606,9,API
+John Mannion,New York,House,M001231,9,API
+Tim Kennedy,New York,House,K000402,34,API
+Paul Tonko,New York,House,T000469,220,API
+Joseph Morelle,New York,House,M001206,141,API
+Brian Higgins,New York,House,H001038,132,API
+Randy Kuhl,New York,House,K000364,37,API
+Adriano Espaillat,New York,House,E000297,233,API
+Gary Ackerman,New York,House,A000022,264,API
+Hakeem Jeffries,New York,House,J000294,133,API
+Earl Pomeroy,North Dakota,House,P000422,166,API
+Rick Berg,North Dakota,House,B001272,7,API
+Kelly Armstrong,North Dakota,House,A000377,43,API
+Fernand St Germain,Rhode Island,House,S000762,443,"API (resolved via targeted search, confidence=HIGH)"
+Patrick J. Kennedy,Rhode Island,House,K000113,175,API
+David Cicilline,Rhode Island,House,C001084,265,API
+Jack Reed,Rhode Island,House,R000122,1289,API
+Robert Weygand,Rhode Island,House,W000315,47,API
+Jim Langevin,Rhode Island,House,L000559,318,API
+John Boehner,Ohio,House,B000589,158,API
+Dennis Kucinich,Ohio,House,K000336,236,API
+Tony Hall,Ohio,House,H000074,231,API
+Sherrod Brown,Ohio,House,B000944,1463,API
+Bob Ney,Ohio,House,N000081,130,API
+Pat Tiberi,Ohio,House,T000462,109,API
+Ralph Regula,Ohio,House,R000141,241,API
+John Kasich,Ohio,House,K000016,130,API
+Eric Fingerhut,Ohio,House,F000128,7,API
+David Hobson,Ohio,House,H000666,52,API
+Paul Gillmor,Ohio,House,G000210,112,API
+Mike DeWine,Ohio,House,D000294,504,API
+Douglas Applegate,Ohio,House,A000214,192,API
+"Donald E. ""Buz"" Lukens",Ohio,House,L000509,5,API
+Charlie Wilson,Ohio,House,W000801,17,API
+Betty Sutton,Ohio,House,S001174,66,API
+Steve Austria,Ohio,House,A000365,7,API
+Jean Schmidt,Ohio,House,S001164,32,API
+Steve Stivers,Ohio,House,S001187,120,API
+Bob Gibbs,Ohio,House,G000563,62,API
+Troy Balderson,Ohio,House,B001306,62,API
+Emilia Sykes,Ohio,House,S001223,62,API
+Joyce Beatty,Ohio,House,B001281,183,API
+Tim Ryan,Ohio,House,R000577,217,API
+John Boccieri,Ohio,House,B001263,13,API
+Mike Oxley,Ohio,House,O000163,109,API
+Edward Beard,Rhode Island,House,B000279,99,"API (resolved via targeted search, confidence=HIGH)"
+John Murtha,Pennsylvania,House,M001120,218,API
+Chaka Fattah,Pennsylvania,House,F000043,134,API
+George Gekas,Pennsylvania,House,G000121,254,API
+Joseph Pitts,Pennsylvania,House,P000373,178,API
+Melissa Hart,Pennsylvania,House,H001033,59,API
+Jim Greenwood,Pennsylvania,House,G000439,117,API
+Allyson Schwartz,Pennsylvania,House,S001162,78,API
+Todd Platts,Pennsylvania,House,P000585,118,API
+Tim Murphy,Pennsylvania,House,M001151,152,manually corrected (disambiguation)
+Charlie Dent,Pennsylvania,House,D000604,111,API
+Jim Gerlach,Pennsylvania,House,G000549,135,API
+Scott Perry,Pennsylvania,House,P000605,340,API
+Brendan Boyle,Pennsylvania,House,B001296,133,API
+Dwight Evans,Pennsylvania,House,E000296,64,API
+Madeleine Dean,Pennsylvania,House,D000631,118,API
+Guy Reschenthaler,Pennsylvania,House,R000610,58,API
+Fred Keller,Pennsylvania,House,K000395,32,"API (resolved via targeted search, confidence=HIGH)"
+Summer Lee,Pennsylvania,House,L000602,43,API
+Ryan Mackenzie,Pennsylvania,House,M001230,29,API
+John Peterson,Pennsylvania,House,P000263,62,API
+Austin J. Murphy,Pennsylvania,House,M001088,159,API
+Joseph M. Gaydos,Pennsylvania,House,G000105,312,API
+Joseph P. Kolter,Pennsylvania,House,K000307,57,API
+Gus Yatron,Pennsylvania,House,Y000014,227,API
+Floyd Spence,South Carolina,House,S000718,143,API
+Butler Derrick,South Carolina,House,D000267,354,API
+Liz Patterson,South Carolina,House,P000112,15,API
+Arthur Ravenel Jr.,South Carolina,House,R000072,38,"API (resolved via targeted search, confidence=HIGH)"
+Robin Tallon,South Carolina,House,T000034,50,API
+John Jenrette,South Carolina,House,J000099,67,API
+Lindsey Graham,South Carolina,House,G000359,774,API
+Joe Wilson,South Carolina,House,W000795,346,API
+Tim Scott,South Carolina,House,S001184,468,API
+Gresham Barrett,South Carolina,House,B001239,45,API
+Jeff Duncan,South Carolina,House,D000615,127,API
+Mick Mulvaney,South Carolina,House,M001182,99,API
+William Timmons,South Carolina,House,T000480,39,API
+Nancy Mace,South Carolina,House,M000194,208,API
+Russell Fry,South Carolina,House,F000478,32,API
+Ralph Norman,South Carolina,House,N000190,178,API
+Carroll Campbell Jr.,South Carolina,House,C000079,51,"API (resolved via targeted search, confidence=HIGH)"
+Thomas F. Hartnett,South Carolina,House,H000302,47,API
+James Inhofe,Oklahoma,House,I000024,1297,API
+Tom Cole,Oklahoma,House,C001053,229,API
+Mary Fallin,Oklahoma,House,F000453,17,API
+Josh Brecheen,Oklahoma,House,B001317,46,API
+Frank D. Lucas,Oklahoma,House,L000491,124,API
+Stephanie Bice,Oklahoma,House,B000740,84,API
+Ernest Istook,Oklahoma,House,I000047,79,API
+Wes Watkins,Oklahoma,House,W000194,167,API
+Bill Brewster,Oklahoma,House,B000817,23,API
+Dan Boren,Oklahoma,House,B001254,76,manually corrected (disambiguation)
+Steve Russell,Oklahoma,House,R000604,46,API
+Harold L. Runnels,New Mexico,House,R000510,66,"API (resolved via targeted search, confidence=HIGH)"
+Yvette Herrell,New Mexico,House,H001084,25,"API (resolved via targeted search, confidence=HIGH)"
+Melanie Stansbury,New Mexico,House,S001218,55,API
+Les AuCoin,Oregon,House,A000337,213,API
+Darlene Hooley,Oregon,House,H000762,146,API
+Greg Walden,Oregon,House,W000791,154,API
+Earl Blumenauer,Oregon,House,B000574,500,API
+Kurt Schrader,Oregon,House,S001180,133,API
+Suzanne Bonamici,Oregon,House,B001278,292,API
+Cliff Bentz,Oregon,House,B000668,31,API
+Val Hoyle,Oregon,House,H001094,25,API
+Andrea Salinas,Oregon,House,S001226,61,API
+Maxine Dexter,Oregon,House,D000635,17,API
+Janelle Bynum,Oregon,House,B001326,22,API
+"Robert F. ""Bob"" Smith",Oregon,House,S000607,95,API
+Virginia Foxx,North Carolina,House,F000450,264,API
+H. Martin Lancaster,North Carolina,House,L000045,30,API
+Robin Hayes,North Carolina,House,H001029,72,API
+Bob Etheridge,North Carolina,House,E000226,68,API
+Frank Ballance,North Carolina,House,B001238,8,API
+Don Davis,North Carolina,House,D000230,56,API
+Howard Coble,North Carolina,House,C000556,329,API
+Alma Adams,North Carolina,House,A000370,184,API
+Robert Pittenger,North Carolina,House,P000606,33,API
+Dan Bishop,North Carolina,House,B001311,42,API
+Chuck Edwards,North Carolina,House,E000246,42,API
+Wiley Nickel,North Carolina,House,N000194,13,API
+Deborah Ross,North Carolina,House,R000305,90,API
+Jeff Jackson,North Carolina,House,J000308,13,API
+Tim Moore,North Carolina,House,M001236,31,API
+Patrick McHenry,North Carolina,House,M001156,139,API
+Walter B. Jones Jr.,North Carolina,House,J000255,288,"API (resolved via targeted search, confidence=HIGH)"
+Cass Ballenger,North Carolina,House,B000104,91,API
+Charles H. Taylor,North Carolina,House,T000067,59,API
+Brad Miller,North Carolina,House,M001154,48,API
+L. H. Fountain,North Carolina,House,F000319,61,API
+James McClure Clarke,North Carolina,House,C000462,12,"API (resolved via targeted search, confidence=HIGH)"
+Ray Roberts,Texas,House,R000312,205,"API (resolved via targeted search, confidence=HIGH)"
+Jim Mattox,Texas,House,M000260,22,API
+John Bryant,Texas,House,B000997,134,API
+Bob Eckhardt,Texas,House,E000035,99,"API (resolved via targeted search, confidence=HIGH)"
+Jack Hightower,Texas,House,H000582,39,"API (resolved via targeted search, confidence=HIGH)"
+Bill Sarpalius,Texas,House,S000066,21,API
+Joseph P. Wyatt Jr.,Texas,House,W000777,12,"API (resolved via targeted search, confidence=HIGH)"
+Mickey Leland,Texas,House,L000237,141,"API (resolved via targeted search, confidence=HIGH)"
+Craig Washington,Texas,House,W000177,20,API
+Henry B. Gonzalez,Texas,House,G000272,519,API
+Frank Tejeda,Texas,House,T000113,9,API
+Ciro Rodriguez,Texas,House,R000568,77,API
+Henry Cuellar,Texas,House,C001063,123,API
+Eddie Bernice Johnson,Texas,House,J000126,347,API
+Jasmine Crockett,Texas,House,C001130,43,API
+Charlie Wilson,Texas,House,W000570,172,API
+Sam Johnson,Texas,House,J000174,278,manually corrected (disambiguation)
+Van Taylor,Texas,House,T000479,16,"API (resolved via targeted search, confidence=HIGH)"
+Ralph Hall,Texas,House,H000067,151,API
+Jim Turner,Texas,House,T000424,33,API
+Pat Fallon,Texas,House,F000246,65,API
+Lance Gooden,Texas,House,G000589,68,API
+Jake Ellzey,Texas,House,E000071,11,API
+Bill Archer,Texas,House,A000215,384,API
+John Culberson,Texas,House,C001048,94,API
+Kevin Brady,Texas,House,B000755,213,API
+Jack Brooks,Texas,House,B000880,390,API
+Jim Wright,Texas,House,W000827,14,API
+Craig Goldman,Texas,House,G000601,14,API
+Bill Patman,Texas,House,P000104,12,API
+Kika de la Garza,Texas,House,D000203,411,"API (resolved via targeted search, confidence=HIGH)"
+Richard C. White,Texas,House,W000390,194,"API (resolved via targeted search, confidence=HIGH)"
+Ronald D. Coleman,Texas,House,C000621,84,API
+Kent Hance,Texas,House,H000144,60,API
+Joaquin Castro,Texas,House,C001091,187,API
+Lamar Smith,Texas,House,S000583,303,API
+Tom DeLay,Texas,House,D000217,159,API
+Abraham Kazen Jr.,Texas,House,K000025,73,"API (resolved via targeted search, confidence=HIGH)"
+Pete Gallego,Texas,House,G000572,16,API
+Kenny Marchant,Texas,House,M001158,65,API
+Gene Green,Texas,House,G000410,315,API
+Sylvia Garcia,Texas,House,G000587,89,API
+Julie Johnson,Texas,House,J000310,25,manually corrected (disambiguation)
+Marc Veasey,Texas,House,V000131,124,API
+Lloyd Doggett,Texas,House,D000399,266,API
+Sylvester Turner,Texas,House,T000489,2,manually corrected (disambiguation)
+Tim Burchett,Tennessee,House,B001309,148,API
+Diane Black,Tennessee,House,B001273,114,API
+Marsha Blackburn,Tennessee,House,B001243,810,API
+Mark Green,Tennessee,House,G000590,121,API
+Steve Cohen,Tennessee,House,C001068,492,API
+Jimmy Quillen,Tennessee,House,Q000013,551,API
+David Davis,Tennessee,House,D000606,19,manually corrected (disambiguation)
+Bill Jenkins,Tennessee,House,J000082,38,API
+Harold Ford Sr.,Tennessee,House,F000261,126,"API (resolved via targeted search, confidence=HIGH)"
+John Tanner,Tennessee,House,T000038,72,API
+Lincoln Davis,Tennessee,House,D000599,24,API
+Herbert H. Bateman,Virginia,House,B000229,87,API
+Jo Ann Davis,Virginia,House,D000597,107,manually corrected (disambiguation)
+Rob Wittman,Virginia,House,W000804,212,API
+Owen B. Pickett,Virginia,House,P000326,62,API
+Ed Schrock,Virginia,House,S001151,10,API
+Thelma Drake,Virginia,House,D000605,29,API
+Scott Taylor,Virginia,House,T000477,20,"API (resolved via targeted search, confidence=HIGH)"
+Jen Kiggans,Virginia,House,K000399,82,API
+David E. Satterfield III,Virginia,House,S000070,163,"API (resolved via targeted search, confidence=HIGH)"
+Bobby Scott,Virginia,House,S000185,331,API
+Norman Sisisky,Virginia,House,S000453,24,API
+J. Randy Forbes,Virginia,House,F000445,119,API
+Donald McEachin,Virginia,House,M001200,70,API
+Jennifer McClellan,Virginia,House,M001227,49,API
+"W.C. ""Dan"" Daniel",Virginia,House,D000038,83,"API (resolved via targeted search, confidence=HIGH)"
+Virgil Goode,Virginia,House,G000280,84,API
+Robert Hurt,Virginia,House,H001060,25,API
+Tom Garrett,Virginia,House,G000580,21,"API (resolved via targeted search, confidence=HIGH)"
+John McGuire,Virginia,House,M001239,22,API
+M. Caldwell Butler,Virginia,House,B001182,56,"API (resolved via targeted search, confidence=HIGH)"
+Ben Cline,Virginia,House,C001118,61,API
+J. Kenneth Robinson,Virginia,House,R000337,214,"API (resolved via targeted search, confidence=HIGH)"
+D. French Slaughter Jr.,Virginia,House,S000479,32,"API (resolved via targeted search, confidence=HIGH)"
+George Allen,Virginia,House,A000121,212,API
+Eric Cantor,Virginia,House,C001046,81,API
+Stan Parris,Virginia,House,P000080,156,API
+Rick Boucher,Virginia,House,B000657,172,API
+Morgan Griffith,Virginia,House,G000568,218,API
+Barbara Comstock,Virginia,House,C001105,34,API
+Jennifer Wexton,Virginia,House,W000825,64,API
+Suhas Subramanyam,Virginia,House,S001230,37,API
+Leslie Byrne,Virginia,House,B001213,52,API
+Maria Cantwell,Washington,House,C000127,1006,API
+Jay Inslee,Washington,House,I000026,171,API
+Jack Metcalf,Washington,House,M000669,50,API
+Jolene Unsoeld,Washington,House,U000017,58,API
+Linda Smith,Washington,House,S000587,31,manually corrected (disambiguation)
+Jaime Herrera Beutler,Washington,House,H001056,63,"API (resolved via targeted search, confidence=HIGH)"
+Mike McCormack,Washington,House,M000365,153,API
+Sid Morrison,Washington,House,M000999,62,API
+Doc Hastings,Washington,House,H000329,304,API
+Dan Newhouse,Washington,House,N000189,168,API
+Cathy McMorris Rodgers,Washington,House,M001159,215,"API (resolved via targeted search, confidence=HIGH)"
+Michael Baumgartner,Washington,House,B001322,25,API
+Derek Kilmer,Washington,House,K000381,196,API
+Emily Randall,Washington,House,R000621,13,"API (resolved via targeted search, confidence=HIGH)"
+Jim McDermott,Washington,House,M000404,342,API
+Pramila Jayapal,Washington,House,J000298,197,API
+Rod Chandler,Washington,House,C000293,65,API
+Mike Kreidler,Washington,House,K000328,25,API
+Randy Tate,Washington,House,T000048,13,API
+Adam Smith,Washington,House,S000510,237,API
+Denny Heck,Washington,House,H001064,62,API
+James Abdnor,South Dakota,House,A000009,309,"API (resolved via targeted search, confidence=HIGH)"
+Tim Johnson,South Dakota,House,J000177,463,API
+Kristi Noem,South Dakota,House,N000184,93,API
+Craig Thomas,Wyoming,House,T000162,313,API
+Barbara Cubin,Wyoming,House,C000962,104,API
+Cynthia Lummis,Wyoming,House,L000571,248,API
+Jim Jeffords,Vermont,House,J000072,912,API
+Peter P. Smith,Vermont,House,S000601,13,"API (resolved via targeted search, confidence=HIGH)"
+Peter Welch,Vermont,House,W000800,764,API
+Becca Balint,Vermont,House,B001318,47,API
+K. Gunn McKay,Utah,House,M000490,57,API
+James V. Hansen,Utah,House,H000172,193,API
+Howard C. Nielson,Utah,House,N000106,53,API
+Rob Bishop,Utah,House,B001250,216,API
+Ben McAdams,Utah,House,M001209,19,"API (resolved via targeted search, confidence=HIGH)"
+Mike Kennedy,Utah,House,K000403,36,API
+David McKinley,West Virginia,House,M001180,230,API
+Carol Miller,West Virginia,House,M001205,98,API
+Bob Wise,West Virginia,House,W000654,145,API
+Shelley Moore Capito,West Virginia,House,C001047,398,API
+Alex Mooney,West Virginia,House,M001195,89,API
+Riley Moore,West Virginia,House,M001235,19,API
+Evan Jenkins,West Virginia,House,J000297,25,API
+Harley O. Staggers Jr.,West Virginia,House,S000779,62,"API (resolved via targeted search, confidence=HIGH)"
+Peter Barca,Wisconsin,House,B001226,11,API
+Tammy Baldwin,Wisconsin,House,B001230,756,API
+Mark Pocan,Wisconsin,House,P000607,171,API
+Steve Gunderson,Wisconsin,House,G000524,167,API
+Clement Zablocki,Wisconsin,House,Z000001,189,"API (resolved via targeted search, confidence=HIGH)"
+Jerry Kleczka,Wisconsin,House,K000259,130,API
+Gwen Moore,Wisconsin,House,M001160,290,API
+Jim Sensenbrenner,Wisconsin,House,S000244,525,API
+Scott Fitzgerald,Wisconsin,House,F000471,79,API
+Tom Petri,Wisconsin,House,P000265,279,API
+Glenn Grothman,Wisconsin,House,G000576,190,API
+David Obey,Wisconsin,House,O000007,428,API
+Tom Tiffany,Wisconsin,House,T000165,72,API
+Toby Roth,Wisconsin,House,R000459,142,API
+Mark Green,Wisconsin,House,G000545,113,API
