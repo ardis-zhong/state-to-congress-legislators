@@ -132,14 +132,18 @@ def load_target_years(path):
 
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python3 legiscan_fetch_state_bills.py YOUR_LEGISCAN_API_KEY")
+    if len(sys.argv) not in (2, 3):
+        print("Usage: python3 legiscan_fetch_state_bills.py YOUR_LEGISCAN_API_KEY [targets_file.csv]")
+        print("  targets_file.csv defaults to state_bill_targets.csv -- pass the same file you")
+        print("  used with legiscan_match_people.py (e.g. state_bill_targets_full.csv for the")
+        print("  full 1019-person population).")
         sys.exit(1)
     key = sys.argv[1]
+    targets_path = sys.argv[2] if len(sys.argv) == 3 else "state_bill_targets.csv"
 
     print("Loading matched people and target years...")
     people_id_to_person, state_to_ids = load_matched_people("legiscan_people_matches.csv")
-    target_years = load_target_years("state_bill_targets.csv")
+    target_years = load_target_years(targets_path)
     print(f"  {len(people_id_to_person)} matched people_id(s) across {len(state_to_ids)} states.")
 
     # Figure out which (state, session_id) pairs are actually needed, using

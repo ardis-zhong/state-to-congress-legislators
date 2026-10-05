@@ -29,9 +29,11 @@ SEN_FIELDS = ["Name","State","StateLegChamber","StateLegYears","StateLegTerms",
               "SenateYears","SenateCongresses","SenateTerms",
               "BillsIntroducedSenate","BillsIntroducedStateLeg","Notes/Sources"]
 sen_rows = []
-for f in ['/home/claude/senate_project/data/senators_A.csv',
-          '/home/claude/senate_project/data/senators_B.csv',
-          '/home/claude/senate_project/data/senators_C.csv']:
+for f in ['data/source/senate/senators_A.csv',
+          'data/source/senate/senators_B.csv',
+          'data/source/senate/senators_C.csv',
+          'data/source/senate/senate_batch2_completeness_gap.csv',
+          'data/source/senate/senate_batch3_completeness_gap2.csv']:
     sen_rows.extend(load(f))
 for r in sen_rows:
     r['BillsIntroducedSenate'] = bill_label(r['Name'], r['State'], 'Senate')
@@ -66,10 +68,11 @@ house_files_regular = [
  'house_batch3_groupA.csv','house_batch3_groupB.csv','house_batch3_groupC.csv',
  'house_batch4_FINAL.csv',
  'house_batch5_texas.csv','house_batch5_groupB.csv','house_batch5_groupC.csv',
+ 'house_batch6_completeness_gap.csv','house_batch7_completeness_gap2.csv',
 ]
 house_rows = []
 for f in house_files_regular:
-    rows = load_repair('/home/claude/house_project/data/'+f)
+    rows = load_repair('data/source/house/'+f)
     for r in rows:
         if r['State'] in STATE_FIX:
             r['State'] = STATE_FIX[r['State']]

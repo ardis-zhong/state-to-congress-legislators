@@ -19,6 +19,12 @@ data/raw/
 /*.csv
 /*.csv.gz
 /*.json
+# ...except these root-level pipeline files, which are small, hand-curated
+# or not cheaply regenerable, and are needed to rerun the build:
+!/billcount_FINAL.csv
+!/extraction_queue.csv
+!/extraction_queue_new109.csv
+!/state_bill_targets_full.csv
 
 # --- Probe/scratch outputs from API exploration ---
 legiscan_probe*_dataset.zip

@@ -1,0 +1,914 @@
+Name,State,Chambers,BioguideId,MaxCongress,TotalSponsoredItems
+Chuck Grassley,Iowa,House+Senate,G000386,119,2492
+Chuck Schumer,New York,Senate,S000148,119,2453
+Ed Markey,Massachusetts,House+Senate,M000133,119,1680
+Jack Reed,Rhode Island,House+Senate,R000122,119,1289
+Jeff Merkley,Oregon,Senate,M001176,119,1266
+Jeanne Shaheen,New Hampshire,Senate,S001181,119,1255
+Lisa Murkowski,Alaska,Senate,M001153,119,1236
+Patty Murray,Washington,Senate,M001111,119,1206
+Richard Blumenthal,Connecticut,Senate,B001277,119,1155
+Maria Cantwell,Washington,House+Senate,C000127,119,1006
+Andy Biggs,Arizona,House,B001302,119,935
+Gary Peters,Michigan,Senate,P000595,119,917
+Marsha Blackburn,Tennessee,House+Senate,B001243,119,810
+Mazie Hirono,Hawaii,House+Senate,H001042,119,804
+Jerry Moran,Kansas,House+Senate,M000934,119,788
+Lindsey Graham,South Carolina,House+Senate,G000359,119,774
+Peter Welch,Vermont,House+Senate,W000800,119,764
+Roger Wicker,Mississippi,House+Senate,W000437,119,760
+Tammy Baldwin,Wisconsin,House+Senate,B001230,119,756
+Bill Cassidy,Louisiana,House+Senate,C001075,119,727
+Brian Schatz,Hawaii,Senate,S001194,119,726
+John Barrasso,Wyoming,Senate,B001261,119,713
+Thom Tillis,North Carolina,Senate,T000476,119,684
+Joni Ernst,Iowa,Senate,E000295,119,669
+Jim Risch,Idaho,Senate,R000584,119,649
+Chris Van Hollen,Maryland,House+Senate,V000128,119,628
+Maxine Waters,California,House,W000187,119,624
+Mike Crapo,Idaho,House+Senate,C000880,119,623
+Chris Murphy,Connecticut,House+Senate,M001169,119,620
+Alex Padilla,California,Senate,P000145,119,616
+Adam Schiff,California,House+Senate,S001150,119,588
+Frank Pallone,New Jersey,House,P000034,119,579
+Jerrold Nadler,New York,House,N000002,119,546
+Steve Cohen,Tennessee,House,C001068,119,492
+Tim Scott,South Carolina,House+Senate,S001184,119,468
+Maggie Hassan,New Hampshire,Senate,H001076,119,415
+Mike Rounds,South Dakota,Senate,R000605,119,405
+Shelley Moore Capito,West Virginia,House+Senate,C001047,119,398
+Steny Hoyer,Maryland,House,H000874,119,375
+Mike Thompson,California,House,T000460,119,366
+Deb Fischer,Nebraska,Senate,F000463,119,350
+Joe Wilson,South Carolina,House,W000795,119,346
+Scott Perry,Pennsylvania,House,P000605,119,340
+Bobby Scott,Virginia,House,S000185,119,331
+Grace Meng,New York,House,M001188,119,320
+Julia Brownley,California,House,B001285,119,307
+Gus Bilirakis,Florida,House,B001257,119,301
+Suzanne Bonamici,Oregon,House,B001278,119,292
+Gwen Moore,Wisconsin,House,M001160,119,290
+Greg Steube,Florida,House,S001214,119,287
+Ruben Gallego,Arizona,House+Senate,G000574,119,281
+Ted Lieu,California,House,L000582,119,273
+Sam Graves,Missouri,House,G000546,119,272
+Jim Banks,Indiana,House+Senate,B001299,119,270
+Lloyd Doggett,Texas,House,D000399,119,266
+Virginia Foxx,North Carolina,House,F000450,119,264
+John B. Larson,Connecticut,House,L000557,119,262
+Judy Chu,California,House,C001080,119,256
+Stephen Lynch,Massachusetts,House,L000562,119,254
+Dina Titus,Nevada,House,T000468,119,251
+Diana DeGette,Colorado,House,D000197,119,249
+Cynthia Lummis,Wyoming,House+Senate,L000571,119,248
+Gregory Meeks,New York,House,M001137,119,244
+Jared Huffman,California,House,H001068,119,242
+John Garamendi,California,House,G000559,119,240
+Adam Smith,Washington,House,S000510,119,237
+Adriano Espaillat,New York,House,E000297,119,233
+Claudia Tenney,New York,House,T000478,119,233
+Tom Cole,Oklahoma,House,C001053,119,229
+Tim Walberg,Michigan,House,W000798,119,225
+Paul Tonko,New York,House,T000469,119,220
+Morgan Griffith,Virginia,House,G000568,119,218
+Buddy Carter,Georgia,House,C001103,119,213
+Rob Wittman,Virginia,House,W000804,119,212
+Nancy Mace,South Carolina,House,M000194,119,208
+Bonnie Watson Coleman,New Jersey,House,W000822,119,205
+Pramila Jayapal,Washington,House,J000298,119,197
+Mike Lawler,New York,House,L000599,119,195
+Norma Torres,California,House,T000474,119,193
+David Schweikert,Arizona,House,S001183,119,190
+Glenn Grothman,Wisconsin,House,G000576,119,190
+Joe Courtney,Connecticut,House,C001069,119,188
+Jim Costa,California,House,C001059,119,187
+Joaquin Castro,Texas,House,C001091,119,187
+Alma Adams,North Carolina,House,A000370,119,184
+Debbie Wasserman Schultz,Florida,House,W000797,119,183
+Joyce Beatty,Ohio,House,B001281,119,183
+Chellie Pingree,Maine,House,P000597,119,180
+Chris Pappas,New Hampshire,House,P000614,119,180
+Ralph Norman,South Carolina,House,N000190,119,178
+Bill Huizenga,Michigan,House,H001058,119,177
+Frederica Wilson,Florida,House,W000808,119,174
+Betty McCollum,Minnesota,House,M001143,119,173
+William Keating,Massachusetts,House,K000375,119,172
+Mark Pocan,Wisconsin,House,P000607,119,171
+Jeff Van Drew,New Jersey,House,V000133,119,170
+Dan Newhouse,Washington,House,N000189,119,168
+Cindy Hyde-Smith,Mississippi,Senate,H001079,119,160
+Mike Simpson,Idaho,House,S001148,119,160
+Robin Kelly,Illinois,House,K000385,119,160
+Nikema Williams,Georgia,House,W000788,119,159
+Tom McClintock,California,House,M001177,119,155
+Darren Soto,Florida,House,S001200,119,154
+Tim Burchett,Tennessee,House,B001309,119,148
+Byron Donalds,Florida,House,D000032,119,147
+Rashida Tlaib,Michigan,House,T000481,119,146
+Jamie Raskin,Maryland,House,R000606,119,144
+Sanford Bishop,Georgia,House,B000490,119,144
+Darin LaHood,Illinois,House,L000585,119,141
+Joseph Morelle,New York,House,M001206,119,141
+Brett Guthrie,Kentucky,House,G000558,119,140
+Mike Bost,Illinois,House,B001295,119,140
+Nicole Malliotakis,New York,House,M000317,119,138
+Adrian Smith,Nebraska,House,S001172,119,137
+Ed Case,Hawaii,House,C001055,119,137
+Brendan Boyle,Pennsylvania,House,B001296,119,133
+Hakeem Jeffries,New York,House,J000294,119,133
+Mariannette Miller-Meeks,Iowa,House,M001215,119,133
+Doug LaMalfa,California,House,L000578,119,131
+Tom Emmer,Minnesota,House,E000294,119,128
+Ilhan Omar,Minnesota,House,O000173,119,126
+Eric Schmitt,Missouri,Senate,S001227,119,124
+Frank D. Lucas,Oklahoma,House,L000491,119,124
+Jason Smith,Missouri,House,S001195,119,124
+Marc Veasey,Texas,House,V000131,119,124
+Henry Cuellar,Texas,House,C001063,119,123
+Lou Correa,California,House,C001110,119,122
+Mark Green,Tennessee,House,G000590,119,121
+Zach Nunn,Iowa,House,N000193,119,121
+Steven Horsford,Nevada,House,H001066,119,119
+Madeleine Dean,Pennsylvania,House,D000631,119,118
+David Scott,Georgia,House,S001157,119,116
+Mike Rogers,Alabama,House,R000575,119,115
+Young Kim,California,House,K000397,119,112
+Mario Diaz-Balart,Florida,House,D000600,119,111
+John Moolenaar,Michigan,House,M001194,119,110
+Steve Scalise,Louisiana,House,S001176,119,110
+Donald Norcross,New Jersey,House,N000188,119,108
+Mark Amodei,Nevada,House,A000369,119,107
+Randy Feenstra,Iowa,House,F000446,119,103
+Carol Miller,West Virginia,House,M001205,119,98
+Andrew Garbarino,New York,House,G000597,119,96
+Ashley Hinson,Iowa,House,H001091,119,95
+Bruce Westerman,Arkansas,House,W000821,119,94
+David Valadao,California,House,V000129,119,91
+Juan Vargas,California,House,V000130,119,91
+Deborah Ross,North Carolina,House,R000305,119,90
+Austin Scott,Georgia,House,S001189,119,89
+Sylvia Garcia,Texas,House,G000587,119,89
+Jared Golden,Maine,House,G000592,119,88
+Katherine Clark,Massachusetts,House,C001101,119,88
+Jimmy Gomez,California,House,G000585,119,87
+Stephanie Bice,Oklahoma,House,B000740,119,84
+Jen Kiggans,Virginia,House,K000399,119,82
+Jon Husted,Ohio,Senate,H001104,119,82
+Scott Fitzgerald,Wisconsin,House,F000471,119,79
+Jill Tokuda,Hawaii,House,T000487,119,76
+Barry Loudermilk,Georgia,House,L000583,119,75
+Mike Johnson,Louisiana,House,J000299,119,74
+"Jesus ""Chuy"" Garcia",Illinois,House,G000586,119,73
+Brittany Pettersen,Colorado,House,P000620,119,72
+Jay Obernolte,California,House,O000019,119,72
+Tom Tiffany,Wisconsin,House,T000165,119,72
+Michelle Fischbach,Minnesota,House,F000470,119,70
+Troy Carter,Louisiana,House,C001125,119,70
+Erin Houchin,Indiana,House,H001093,119,69
+Sydney Kamlager-Dove,California,House,K000400,119,69
+Lance Gooden,Texas,House,G000589,119,68
+Shri Thanedar,Michigan,House,T000488,119,67
+Barry Moore,Alabama,House,M001212,119,66
+Brad Finstad,Minnesota,House,F000475,119,65
+Pat Fallon,Texas,House,F000246,119,65
+Dwight Evans,Pennsylvania,House,E000296,119,64
+Emilia Sykes,Ohio,House,S001223,119,62
+Troy Balderson,Ohio,House,B001306,119,62
+Andrea Salinas,Oregon,House,S001226,119,61
+Ben Cline,Virginia,House,C001118,119,61
+Daniel Webster,Florida,House,W000806,119,60
+Guy Reschenthaler,Pennsylvania,House,R000610,119,58
+Thomas Kean Jr.,New Jersey,House,K000398,119,58
+Ryan Zinke,Montana,House,Z000018,119,57
+Don Davis,North Carolina,House,D000230,119,56
+Eric Burlison,Missouri,House,B001316,119,55
+Melanie Stansbury,New Mexico,House,S001218,119,55
+James Comer,Kentucky,House,C001108,119,51
+Tom Barrett,Michigan,House,B001321,119,51
+Andy Harris,Maryland,House,H001052,119,50
+Mike Flood,Nebraska,House,F000474,119,50
+Russ Fulcher,Idaho,House,F000469,119,50
+Jennifer McClellan,Virginia,House,M001227,119,49
+Aaron Bean,Florida,House,B001314,119,48
+Morgan McGarvey,Kentucky,House,M001220,119,48
+Becca Balint,Vermont,House,B001318,119,47
+Josh Brecheen,Oklahoma,House,B001317,119,46
+Victoria Spartz,Indiana,House,S000929,119,46
+Delia Ramirez,Illinois,House,R000617,119,44
+Jim Baird,Indiana,House,B001307,119,44
+Kevin Kiley,California,House,K000401,119,44
+Jasmine Crockett,Texas,House,C001130,119,43
+Marlin Stutzman,Indiana,House,S001188,119,43
+Summer Lee,Pennsylvania,House,L000602,119,43
+Chuck Edwards,North Carolina,House,E000246,119,42
+Kevin Mullin,California,House,M001225,119,40
+William Timmons,South Carolina,House,T000480,119,39
+Jared Moskowitz,Florida,House,M001217,119,38
+Suhas Subramanyam,Virginia,House,S001230,119,37
+Mike Kennedy,Utah,House,K000403,119,36
+Tim Kennedy,New York,House,K000402,119,34
+Jean Schmidt,Ohio,House,S001164,119,32
+Russell Fry,South Carolina,House,F000478,119,32
+Cliff Bentz,Oregon,House,B000668,119,31
+Randy Fine,Florida,House,F000484,119,31
+Tim Moore,North Carolina,House,M001236,119,31
+Dave Min,California,House,M001241,119,30
+Ryan Mackenzie,Pennsylvania,House,M001230,119,29
+Cleo Fields,Louisiana,House,F000110,119,28
+Julie Johnson,Texas,House,J000310,119,25
+Michael Baumgartner,Washington,House,B001322,119,25
+Val Hoyle,Oregon,House,H001094,119,25
+Yvette Herrell,New Mexico,House,H001084,119,25
+Gabe Evans,Colorado,House,E000300,119,22
+Janelle Bynum,Oregon,House,B001326,119,22
+John McGuire,Virginia,House,M001239,119,22
+Bob Onder,Missouri,House,O000177,119,19
+Riley Moore,West Virginia,House,M001235,119,19
+Vince Fong,California,House,F000480,119,19
+Jimmy Patronis,Florida,House,P000622,119,18
+Johnny Olszewski,Maryland,House,O000176,119,18
+Kristen McDonald Rivet,Michigan,House,M001237,119,18
+Derek Schmidt,Kansas,House,S001228,119,17
+Kelly Morrison,Minnesota,House,M001234,119,17
+Maxine Dexter,Oregon,House,D000635,119,17
+Sarah Elfreth,Maryland,House,E000301,119,17
+Mark Messmer,Indiana,House,M001233,119,16
+Herb Conaway,New Jersey,House,C001136,119,15
+Craig Goldman,Texas,House,G000601,119,14
+Luz Rivas,California,House,R000620,119,14
+Emily Randall,Washington,House,R000621,119,13
+Nellie Pou,New Jersey,House,P000621,119,13
+Jake Ellzey,Texas,House,E000071,119,11
+Laura Friedman,California,House,F000483,119,11
+Sarah McBride,Delaware,House,M001238,119,10
+George Latimer,New York,House,L000606,119,9
+John Mannion,New York,House,M001231,119,9
+Adam Gray,California,House,G000605,119,8
+Sylvester Turner,Texas,House,T000489,119,2
+Bob Menendez,New Jersey,Senate,M000639,118,1954
+Marco Rubio,Florida,Senate,R000595,118,1476
+Sherrod Brown,Ohio,House+Senate,B000944,118,1463
+Ben Cardin,Maryland,House+Senate,C000141,118,1365
+Jon Tester,Montana,Senate,T000464,118,794
+Debbie Stabenow,Michigan,House+Senate,S000770,118,732
+Barbara Lee,California,House,L000551,118,668
+Joe Manchin,West Virginia,Senate,M001183,118,544
+Earl Blumenauer,Oregon,House,B000574,118,500
+Mike Braun,Indiana,Senate,B001310,118,460
+Bill Pascrell,New Jersey,House,P000096,118,357
+Bill Posey,Florida,House,P000599,118,232
+Blaine Luetkemeyer,Missouri,House,L000569,118,230
+Mark DeSaulnier,California,House,D000623,118,226
+Cathy McMorris Rodgers,Washington,House,M001159,118,215
+Derek Kilmer,Washington,House,K000381,118,196
+Tony Cardenas,California,House,C001097,118,190
+Doug Lamborn,Colorado,House,L000564,118,183
+Kyrsten Sinema,Arizona,House+Senate,S001191,118,181
+Patrick McHenry,North Carolina,House,M001156,118,139
+Kevin McCarthy,California,House,M001165,118,133
+Brian Higgins,New York,House,H001038,118,132
+Jeff Duncan,South Carolina,House,D000615,118,127
+Debbie Lesko,Arizona,House,L000589,118,107
+Grace Napolitano,California,House,N000179,118,100
+Matt Rosendale,Montana,House,R000103,118,97
+Matt Gaetz,Florida,House,G000578,118,96
+Alex Mooney,West Virginia,House,M001195,118,89
+Jennifer Wexton,Virginia,House,W000825,118,64
+Kelly Armstrong,North Dakota,House,A000377,118,43
+Dan Bishop,North Carolina,House,B001311,118,42
+Yadira Caraveo,Colorado,House,C001134,118,41
+Mary Peltola,Alaska,House,P000619,118,36
+Jake LaTurner,Kansas,House,L000266,118,20
+Jeff Jackson,North Carolina,House,J000308,118,13
+Wiley Nickel,North Carolina,House,N000194,118,13
+Jim Inhofe,Oklahoma,Senate,I000024,117,1297
+Don Young,Alaska,House,Y000033,117,1199
+Richard Shelby,Alabama,House+Senate,S000320,117,666
+Eddie Bernice Johnson,Texas,House,J000126,117,347
+Jim Langevin,Rhode Island,House,L000559,117,318
+Jackie Speier,California,House,S001175,117,284
+David Cicilline,Rhode Island,House,C001084,117,265
+David McKinley,West Virginia,House,M001180,117,230
+Tim Ryan,Ohio,House,R000577,117,217
+Kevin Brady,Texas,House,B000755,117,213
+Ted Deutch,Florida,House,D000610,117,173
+Karen Bass,California,House,B001270,117,167
+Lucille Roybal-Allard,California,House,R000486,117,164
+Anthony Brown,Maryland,House,B001304,117,154
+Ed Perlmutter,Colorado,House,P000593,117,138
+Kurt Schrader,Oregon,House,S001180,117,133
+Tom O'Halleran,Arizona,House,O000171,117,125
+Steve Stivers,Ohio,House,S001187,117,120
+Albio Sires,New Jersey,House,S001165,117,110
+Vicky Hartzler,Missouri,House,H001053,117,98
+Jackie Walorski,Indiana,House,W000813,117,89
+Ann Kirkpatrick,Arizona,House,K000368,117,82
+Donald McEachin,Virginia,House,M001200,117,70
+Charlie Crist,Florida,House,C001111,117,69
+Mo Brooks,Alabama,House,B001274,117,67
+Jaime Herrera Beutler,Washington,House,H001056,117,63
+Bob Gibbs,Ohio,House,G000563,117,62
+Steven Palazzo,Mississippi,House,P000601,117,54
+Fred Keller,Pennsylvania,House,K000395,117,32
+Kai Kahele,Hawaii,House,K000396,117,17
+Van Taylor,Texas,House,T000479,117,16
+Mike Enzi,Wyoming,Senate,E000285,116,659
+Eliot Engel,New York,House,E000179,116,528
+Jim Sensenbrenner,Wisconsin,House,S000244,116,525
+Johnny Isakson,Georgia,House+Senate,I000055,116,415
+Cory Gardner,Colorado,House+Senate,G000562,116,375
+Steve King,Iowa,House,K000362,116,315
+Walter B. Jones Jr.,North Carolina,House,J000255,116,288
+Jose E. Serrano,New York,House,S000248,116,267
+Susan Davis,California,House,D000598,116,235
+Elijah Cummings,Maryland,House,C000984,116,225
+Rob Bishop,Utah,House,B001250,116,216
+Collin Peterson,Minnesota,House,P000258,116,210
+Lacy Clay,Missouri,House,C001049,116,180
+Greg Walden,Oregon,House,W000791,116,154
+Scott Tipton,Colorado,House,T000470,116,133
+Doug Collins,Georgia,House,C001093,116,125
+Tulsi Gabbard,Hawaii,House,G000571,116,120
+Cedric Richmond,Louisiana,House,R000588,116,93
+Bradley Byrne,Alabama,House,B001289,116,89
+Justin Amash,Michigan,House,A000367,116,74
+Kenny Marchant,Texas,House,M001158,116,65
+Denny Heck,Washington,House,H001064,116,62
+Paul Cook,California,House,C001094,116,61
+Abby Finkenauer,Iowa,House,F000467,116,41
+Tom Graves,Georgia,House,G000560,116,23
+Ben McAdams,Utah,House,M001209,116,19
+Bill Nelson,Florida,House+Senate,N000032,115,911
+Dean Heller,Nevada,House+Senate,H001041,115,488
+Louise Slaughter,New York,House,S000480,115,442
+Ileana Ros-Lehtinen,Florida,House,R000435,115,373
+Claire McCaskill,Missouri,Senate,M001170,115,367
+Gene Green,Texas,House,G000410,115,315
+Lamar Smith,Texas,House,S000583,115,303
+Ed Royce,California,House,R000487,115,292
+Sam Johnson,Texas,House,J000174,115,278
+Keith Ellison,Minnesota,House,E000288,115,255
+Joseph Crowley,New York,House,C001038,115,249
+Rick Nolan,Minnesota,House,N000127,115,230
+Sander Levin,Michigan,House,L000263,115,217
+Erik Paulsen,Minnesota,House,P000594,115,176
+Rodney Frelinghuysen,New Jersey,House,F000372,115,169
+Tim Murphy,Pennsylvania,House,M001151,115,152
+Frank LoBiondo,New Jersey,House,L000554,115,126
+Peter Roskam,Illinois,House,R000580,115,120
+Diane Black,Tennessee,House,B001273,115,114
+Charlie Dent,Pennsylvania,House,D000604,115,111
+Pat Tiberi,Ohio,House,T000462,115,109
+Lynn Jenkins,Kansas,House,J000290,115,108
+Mike Coffman,Colorado,House,C001077,115,100
+John Culberson,Texas,House,C001048,115,94
+Kristi Noem,South Dakota,House,N000184,115,93
+Leonard Lance,New Jersey,House,L000567,115,89
+Elizabeth Esty,Connecticut,House,E000293,115,85
+Luke Messer,Indiana,House,M001189,115,80
+Dennis Ross,Florida,House,R000593,115,79
+Randy Hultgren,Illinois,House,H001059,115,67
+Steve Russell,Oklahoma,House,R000604,115,46
+Steve Knight,California,House,K000387,115,45
+Colleen Hanabusa,Hawaii,House,H001050,115,43
+David Young,Iowa,House,Y000066,115,36
+Barbara Comstock,Virginia,House,C001105,115,34
+Raul Labrador,Idaho,House,L000573,115,33
+Robert Pittenger,North Carolina,House,P000606,115,33
+Evan Jenkins,West Virginia,House,J000297,115,25
+Tom Garrett,Virginia,House,G000580,115,21
+Scott Taylor,Virginia,House,T000477,115,20
+Mimi Walters,California,House,W000820,115,17
+Ruben Kihuen,Nevada,House,K000390,115,12
+Harry Reid,Nevada,House+Senate,R000146,114,1995
+David Vitter,Louisiana,House+Senate,V000127,114,1170
+Charles Rangel,New York,House,R000053,114,1048
+Jim McDermott,Washington,House,M000404,114,342
+Scott Garrett,New Jersey,House,G000548,114,237
+Joseph Pitts,Pennsylvania,House,P000373,114,178
+John Boehner,Ohio,House,B000589,114,158
+John Mica,Florida,House,M000689,114,148
+Sam Farr,California,House,F000030,114,147
+Matt Salmon,Arizona,House,S000018,114,146
+Tom Price,Georgia,House,P000591,114,145
+Chaka Fattah,Pennsylvania,House,F000043,114,134
+Ed Whitfield,Kentucky,House,W000413,114,133
+Xavier Becerra,California,House,B000287,114,130
+J. Randy Forbes,Virginia,House,F000445,114,119
+Trent Franks,Arizona,House,F000448,114,116
+Corrine Brown,Florida,House,B000911,114,115
+Mick Mulvaney,South Carolina,House,M001182,114,99
+Joe Heck,Nevada,House,H001055,114,61
+Tim Huelskamp,Kansas,House,H001057,114,52
+Ander Crenshaw,Florida,House,C001045,114,39
+Lynn Westmoreland,Georgia,House,W000796,114,38
+Frank Guinta,New Hampshire,House,G000570,114,36
+Robert Hurt,Virginia,House,H001060,114,25
+Cresent Hardy,Nevada,House,H001070,114,16
+Mark Takai,Hawaii,House,T000473,114,13
+Brad Ashford,Nebraska,House,A000373,114,11
+Alan Nunnelee,Mississippi,House,N000186,114,9
+Max Baucus,Montana,Senate,B000243,113,1832
+Mary Landrieu,Louisiana,Senate,L000550,113,1080
+Jay Rockefeller,West Virginia,Senate,R000361,113,887
+Henry Waxman,California,House,W000215,113,635
+Tim Johnson,South Dakota,House+Senate,J000177,113,463
+Howard Coble,North Carolina,House,C000556,113,329
+Doc Hastings,Washington,House,H000329,113,304
+Tom Petri,Wisconsin,House,P000265,113,279
+Kay Hagan,North Carolina,Senate,H001049,113,266
+Dave Camp,Michigan,House,C000071,113,214
+Phil Gingrey,Georgia,House,G000550,113,198
+Ralph Hall,Texas,House,H000067,113,151
+Jim Gerlach,Pennsylvania,House,G000549,113,135
+Mike Rogers,Michigan,House,R000572,113,129
+Spencer Bachus,Alabama,House,B000013,113,124
+Mike Michaud,Maine,House,M001149,113,121
+Gary Miller,California,House,M001139,113,109
+Jack Kingston,Georgia,House,K000220,113,103
+Aaron Schock,Illinois,House,S001179,113,84
+Eric Cantor,Virginia,House,C001046,113,81
+Allyson Schwartz,Pennsylvania,House,S001162,113,78
+Michele Bachmann,Minnesota,House,B001256,113,67
+Rodney Alexander,Louisiana,House,A000361,113,46
+Pete Gallego,Texas,House,G000572,113,16
+Daniel Inouye,Hawaii,Senate,I000025,112,2164
+Olympia Snowe,Maine,House+Senate,S000663,112,1405
+Kay Bailey Hutchison,Texas,Senate,H001016,112,959
+Joe Lieberman,Connecticut,Senate,L000304,112,861
+Barney Frank,Massachusetts,House,F000339,112,797
+Dan Burton,Indiana,House,B001149,112,470
+Dale Kildee,Michigan,House,K000172,112,283
+Gary Ackerman,New York,House,A000022,112,264
+Dennis Kucinich,Ohio,House,K000336,112,236
+Howard Berman,California,House,B000410,112,221
+Joe Baca,California,House,B001234,112,219
+Wally Herger,California,House,H000528,112,216
+Maurice Hinchey,New York,House,H000627,112,207
+Judy Biggert,Illinois,House,B001232,112,176
+Jay Inslee,Washington,House,I000026,112,171
+Jerry Lewis,California,House,L000274,112,157
+Todd Platts,Pennsylvania,House,P000585,112,118
+Shelley Berkley,Nevada,House,B001231,112,117
+Laura Richardson,California,House,R000581,112,109
+Denny Rehberg,Montana,House,R000571,112,108
+Leonard Boswell,Iowa,House,B000652,112,106
+Dennis Cardoza,California,House,C001050,112,103
+Mike Ross,Arkansas,House,R000573,112,93
+Scott Brown,Massachusetts,Senate,B001268,112,93
+Thaddeus McCotter,Michigan,House,M001147,112,83
+Charles Bass,New Hampshire,House,B000220,112,80
+Dan Boren,Oklahoma,House,B001254,112,76
+Russ Carnahan,Missouri,House,C001060,112,71
+Betty Sutton,Ohio,House,S001174,112,66
+Gabby Giffords,Arizona,House,G000554,112,61
+Brad Miller,North Carolina,House,M001154,112,48
+Tim Johnson,Illinois,House,J000285,112,47
+Hansen Clarke,Michigan,House,C001085,112,42
+David Rivera,Florida,House,R000590,112,9
+Sandy Adams,Florida,House,A000366,112,8
+Rick Berg,North Dakota,House,B001272,112,7
+Steve Austria,Ohio,House,A000365,112,7
+Robert Byrd,West Virginia,Senate,B001210,111,1501
+Russ Feingold,Wisconsin,Senate,F000061,111,1173
+David Obey,Wisconsin,House,O000007,111,428
+George Voinovich,Ohio,Senate,V000126,111,394
+Bart Stupak,Michigan,House,S001045,111,345
+Jim Bunning,Kentucky,House+Senate,B001066,111,323
+Michael N. Castle,Delaware,House,C000243,111,299
+Ike Skelton,Missouri,House,S000465,111,238
+John Murtha,Pennsylvania,House,M001120,111,218
+John Linder,Georgia,House,L000321,111,199
+Patrick J. Kennedy,Rhode Island,House,K000113,111,175
+Lincoln Diaz-Balart,Florida,House,D000299,111,173
+Rick Boucher,Virginia,House,B000657,111,172
+Earl Pomeroy,North Dakota,House,P000422,111,166
+Todd Tiahrt,Kansas,House,T000260,111,136
+Vernon Ehlers,Michigan,House,E000092,111,135
+Neil Abercrombie,Hawaii,House,A000014,111,133
+Ginny Brown-Waite,Florida,House,B001247,111,105
+Robert Wexler,Florida,House,W000314,111,101
+Nathan Deal,Georgia,House,D000168,111,94
+Bill Delahunt,Massachusetts,House,D000210,111,88
+Adam Putnam,Florida,House,P000586,111,87
+Diane Watson,California,House,W000794,111,84
+Kendrick Meek,Florida,House,M001148,111,84
+Gene Taylor,Mississippi,House,T000074,111,78
+Ciro Rodriguez,Texas,House,R000568,111,77
+John Tanner,Tennessee,House,T000038,111,72
+John Salazar,Colorado,House,S001158,111,70
+Bob Etheridge,North Carolina,House,E000226,111,68
+Baron Hill,Indiana,House,H001030,111,65
+Charlie Melancon,Louisiana,House,M001161,111,54
+Gresham Barrett,South Carolina,House,B001239,111,45
+Ron Klein,Florida,House,K000366,111,39
+Vic Snyder,Arkansas,House,S000672,111,34
+Allen Boyd,Florida,House,B000716,111,33
+Debbie Halvorson,Illinois,House,H001044,111,29
+John Adler,New Jersey,House,A000364,111,26
+Lincoln Davis,Tennessee,House,D000599,111,24
+Harry Mitchell,Arizona,House,M001167,111,23
+Suzanne Kosmas,Florida,House,K000370,111,21
+Charlie Wilson,Ohio,House,W000801,111,17
+Mary Fallin,Oklahoma,House,F000453,111,17
+John Boccieri,Ohio,House,B001263,111,13
+Charles Djou,Hawaii,House,D000611,111,12
+Parker Griffith,Alabama,House,G000557,111,11
+Ted Stevens,Alaska,Senate,S000888,110,1445
+Larry Craig,Idaho,House+Senate,C000858,110,619
+Gordon Smith,Oregon,Senate,S001142,110,505
+Wayne Allard,Colorado,House+Senate,A000109,110,457
+Mark Udall,Colorado,House,U000038,110,420
+Jim Saxton,New Jersey,House,S000097,110,333
+Craig Thomas,Wyoming,House+Senate,T000162,110,313
+Barack Obama,Illinois,Senate,O000167,110,282
+Ralph Regula,Ohio,House,R000141,110,241
+Chris Shays,Connecticut,House,S001144,110,230
+Juanita Millender-McDonald,California,House,M000714,110,192
+Jim Ramstad,Minnesota,House,R000033,110,180
+Richard Baker,Louisiana,House,B000072,110,180
+Tom Tancredo,Colorado,House,T000458,110,163
+Jerry Weller,Illinois,House,W000273,110,156
+Darlene Hooley,Oregon,House,H000762,110,146
+John Doolittle,California,House,D000429,110,134
+Albert Wynn,Maryland,House,W000784,110,129
+William J. Jefferson,Louisiana,House,J000070,110,124
+Paul Gillmor,Ohio,House,G000210,110,112
+Jo Ann Davis,Virginia,House,D000597,110,107
+Barbara Cubin,Wyoming,House,C000962,110,104
+Ray LaHood,Illinois,House,L000552,110,103
+Michael McNulty,New York,House,M000590,110,101
+John M. McHugh,New York,House,M000472,110,99
+Virgil Goode,Virginia,House,G000280,110,84
+Marilyn Musgrave,Colorado,House,M001152,110,73
+Robin Hayes,North Carolina,House,H001029,110,72
+John Peterson,Pennsylvania,House,P000263,110,62
+Jon Porter,Nevada,House,P000589,110,59
+Julia Carson,Indiana,House,C000191,110,55
+David Hobson,Ohio,House,H000666,110,52
+Randy Kuhl,New York,House,K000364,110,37
+Tom Feeney,Florida,House,F000447,110,36
+Thelma Drake,Virginia,House,D000605,110,29
+Bill Sali,Idaho,House,S001167,110,20
+David Davis,Tennessee,House,D000606,110,19
+Robert Menendez,New Jersey,House,M000639,109,1954
+Jim Jeffords,Vermont,House+Senate,J000072,109,912
+Mike DeWine,Ohio,House+Senate,D000294,109,504
+Henry Hyde,Illinois,House,H001022,109,466
+Paul Sarbanes,Maryland,Senate,S000064,109,387
+Bill Thomas,California,House,T000188,109,343
+Nancy Johnson,Connecticut,House,J000163,109,329
+Joel Hefley,Colorado,House,H000444,109,295
+Major Owens,New York,House,O000159,109,277
+Jim Talent,Missouri,House+Senate,T000024,109,219
+George Allen,Virginia,House+Senate,A000121,109,212
+Jim Kolbe,Arizona,House,K000306,109,181
+Tom DeLay,Texas,House,D000217,109,159
+Mark Foley,Florida,House,F000238,109,149
+Bob Ney,Ohio,House,N000081,109,130
+Jim Gibbons,Nevada,House,G000152,109,120
+Mark Green,Wisconsin,House,G000545,109,113
+Mike Oxley,Ohio,House,O000163,109,109
+Rob Simmons,Connecticut,House,S001152,109,88
+Martin Olav Sabo,Minnesota,House,S000005,109,84
+Ernest Istook,Oklahoma,House,I000047,109,79
+Cynthia McKinney,Georgia,House,M000523,109,74
+Dennis Hastert,Illinois,House,H000323,109,67
+Charles H. Taylor,North Carolina,House,T000067,109,59
+Melissa Hart,Pennsylvania,House,H001033,109,59
+Butch Otter,Idaho,House,O000166,109,56
+Gil Gutknecht,Minnesota,House,G000536,109,48
+Jeb Bradley,New Hampshire,House,B001246,109,43
+Bill Jenkins,Tennessee,House,J000082,109,38
+Anne Northup,Kentucky,House,N000143,109,14
+Fritz Hollings,South Carolina,Senate,H000725,108,1066
+Bob Graham,Florida,Senate,G000352,108,877
+Don Nickles,Oklahoma,Senate,N000102,108,587
+Ben Nighthorse Campbell,Colorado,House+Senate,C000077,108,460
+Peter Fitzgerald,Illinois,Senate,F000442,108,442
+Doug Bereuter,Nebraska,House,B000403,108,353
+Billy Tauzin,Louisiana,House,T000058,108,271
+Nick Smith,Michigan,House,S000597,108,200
+Scott McInnis,Colorado,House,M000477,108,142
+Jerry Kleczka,Wisconsin,House,K000259,108,130
+Jim Greenwood,Pennsylvania,House,G000439,108,117
+Mac Collins,Georgia,House,C000640,108,114
+Cass Ballenger,North Carolina,House,B000104,108,91
+Zell Miller,Georgia,Senate,M001141,108,63
+Peter Deutsch,Florida,House,D000275,108,61
+Jim Turner,Texas,House,T000424,108,33
+Karen McCarthy,Missouri,House,M000316,108,31
+Ernie Fletcher,Kentucky,House,F000441,108,25
+Max Burns,Georgia,House,B001249,108,18
+Ed Schrock,Virginia,House,S001151,108,10
+Frank Ballance,North Carolina,House,B001238,108,8
+Strom Thurmond,South Carolina,Senate,T000254,107,1560
+Joseph Moakley,Massachusetts,House,M000834,107,783
+Benjamin Gilman,New York,House,G000212,107,671
+John LaFalce,New York,House,L000556,107,580
+George Gekas,Pennsylvania,House,G000121,107,254
+Connie Morella,Maryland,House,M000941,107,251
+Tony Hall,Ohio,House,H000074,107,231
+Bob Stump,Arizona,House,S001044,107,222
+Max Cleland,Georgia,Senate,C001034,107,199
+James V. Hansen,Utah,House,H000172,107,193
+Wes Watkins,Oklahoma,House,W000194,107,167
+Gary Condit,California,House,C000670,107,103
+Julian Dixon,California,House,D000373,107,86
+Carrie Meek,Florida,House,M000628,107,62
+Sonny Callahan,Alabama,House,C000052,107,61
+Karen Thurman,Florida,House,T000253,107,56
+Lynn Rivers,Michigan,House,R000281,107,52
+Bob Schaffer,Colorado,House,S000112,107,49
+Rod Blagojevich,Illinois,House,B000518,107,46
+John Baldacci,Maine,House,B000081,107,44
+James Barcia,Michigan,House,B000134,107,38
+Ronnie Shows,Mississippi,House,S001147,107,36
+Earl Hilliard Sr.,Alabama,House,H000621,107,31
+Bob Ehrlich,Maryland,House,E000093,107,28
+James H. Maloney,Connecticut,House,M000090,107,27
+David D. Phelps,Illinois,House,P000584,107,5
+Slade Gorton,Washington,Senate,G000333,106,616
+Richard Bryan,Nevada,Senate,B000993,106,455
+George E. Brown Jr.,California,House,B000918,106,430
+Bill Archer,Texas,House,A000215,106,384
+Bruce Vento,Minnesota,House,V000087,106,324
+Paul Coverdell,Georgia,Senate,C000813,106,252
+John Edward Porter,Illinois,House,P000444,106,227
+Sam Gejdenson,Connecticut,House,G000120,106,213
+Bob Wise,West Virginia,House,W000654,106,145
+Floyd Spence,South Carolina,House,S000718,106,143
+John Kasich,Ohio,House,K000016,106,130
+Bob Franks,New Jersey,House,F000349,106,118
+Matthew G. Martinez,California,House,M000206,106,105
+Herbert H. Bateman,Virginia,House,B000229,106,87
+Owen B. Pickett,Virginia,House,P000326,106,62
+Charles Canady,Florida,House,C000107,106,57
+Tom Ewing,Illinois,House,E000282,106,54
+Jack Metcalf,Washington,House,M000669,106,50
+Robert Weygand,Rhode Island,House,W000315,106,47
+Bill Barrett,Nebraska,House,B000179,106,42
+James Rogan,California,House,R000386,106,34
+Norman Sisisky,Virginia,House,S000453,106,24
+Pat Danner,Missouri,House,D000046,106,19
+Ed Pease,Indiana,House,P000171,106,6
+Charles Schumer,New York,House,S000148,105,2453
+Gerald B.H. Solomon,New York,House,S000675,105,858
+Wendell Ford,Kentucky,Senate,F000268,105,773
+Henry B. Gonzalez,Texas,House,G000272,105,519
+Vic Fazio,California,House,F000053,105,196
+Harris Fawell,Illinois,House,F000049,105,179
+Carol Moseley Braun,Illinois,Senate,M001025,105,141
+"Robert F. ""Bob"" Smith",Oregon,House,S000607,105,95
+David Skaggs,Colorado,House,S000462,105,85
+Daniel Schaefer,Colorado,House,S000109,105,48
+Bill Paxon,New York,House,P000148,105,44
+Linda Smith,Washington,House,S000587,105,31
+Glenn Poshard,Illinois,House,P000452,105,30
+Frank Tejeda,Texas,House,T000113,105,9
+Bob Dole,Kansas,Senate,D000401,104,2456
+Bob Packwood,Oregon,Senate,P000009,104,1444
+Paul Simon,Illinois,House+Senate,S000423,104,816
+Sonny Montgomery,Mississippi,House,M000865,104,779
+Mark Hatfield,Oregon,Senate,H000343,104,761
+J. Bennett Johnston,Louisiana,Senate,J000189,104,756
+Andrew Jacobs Jr.,Indiana,House,J000033,104,663
+Jimmy Quillen,Tennessee,House,Q000013,104,551
+Sam Nunn,Georgia,Senate,N000171,104,531
+Hank Brown,Colorado,House+Senate,B000919,104,487
+David Pryor,Arkansas,Senate,P000556,104,449
+Kika de la Garza,Texas,House,D000203,104,411
+Alan Simpson,Wyoming,Senate,S000429,104,338
+Anthony Beilenson,California,House,B000318,104,279
+Pat Williams,Montana,House,W000520,104,253
+Tim Hutchinson,Arkansas,House,H001015,104,243
+Harold Volkmer,Missouri,House,V000112,104,205
+Carlos J. Moorhead,California,House,M000926,104,194
+Charlie Wilson,Texas,House,W000570,104,172
+Steve Gunderson,Wisconsin,House,G000524,104,167
+Toby Roth,Wisconsin,House,R000459,104,142
+John Bryant,Texas,House,B000997,104,134
+Harold Ford Sr.,Tennessee,House,F000261,104,126
+Tom Bevill,Alabama,House,B000431,104,101
+Dick Zimmer,New Jersey,House,Z000008,104,98
+Ronald D. Coleman,Texas,House,C000621,104,84
+Harry Johnston,Florida,House,J000187,104,35
+Peter Blute,Massachusetts,House,B000576,104,26
+Bill Baker,California,House,B000078,104,23
+Bill Brewster,Oklahoma,House,B000817,104,23
+Glen Browder,Alabama,House,B000897,104,19
+Randy Tate,Washington,House,T000048,104,13
+Mike Ward,Kentucky,House,W000139,104,6
+Howard Metzenbaum,Ohio,Senate,M000678,103,3329
+James Inhofe,Oklahoma,House,I000024,103,1297
+Jamie Whitten,Mississippi,House,W000428,103,439
+Malcolm Wallop,Wyoming,Senate,W000092,103,411
+Dan Rostenkowski,Illinois,House,R000458,103,391
+Jack Brooks,Texas,House,B000880,103,390
+Butler Derrick,South Carolina,House,D000267,103,354
+David Boren,Oklahoma,Senate,B000639,103,350
+William D. Ford,Michigan,House,F000270,103,278
+Douglas Applegate,Ohio,House,A000214,103,192
+Romano Mazzoli,Kentucky,House,M000291,103,178
+Timothy Penny,Minnesota,House,P000215,103,161
+Austin J. Murphy,Pennsylvania,House,M001088,103,159
+Jim Slattery,Kansas,House,S000477,103,146
+Alan Wheat,Missouri,House,W000326,103,114
+Richard H. Lehman,California,House,L000225,103,83
+Earl Hutto,Florida,House,H001018,103,80
+Tom Lewis,Florida,House,L000295,103,75
+George Hochbrueckner,New York,House,H000670,103,74
+Buddy Darden,Georgia,House,D000051,103,61
+J. Roy Rowland,Georgia,House,R000481,103,61
+Peter Hoagland,Nebraska,House,H000652,103,59
+Jolene Unsoeld,Washington,House,U000017,103,58
+Paul B. Henry,Michigan,House,H000514,103,53
+Leslie Byrne,Virginia,House,B001213,103,52
+Dean A. Gallo,New Jersey,House,G000025,103,48
+James Bilbray,Nevada,House,B000462,103,39
+Arthur Ravenel Jr.,South Carolina,House,R000072,103,38
+George Sangmeister,Illinois,House,S000056,103,35
+H. Martin Lancaster,North Carolina,House,L000045,103,30
+Mike Kreidler,Washington,House,K000328,103,25
+Bill Sarpalius,Texas,House,S000066,103,21
+Craig Washington,Texas,House,W000177,103,20
+Herbert C. Klein,New Jersey,House,K000262,103,17
+Tom Andrews,Maine,House,A000211,103,17
+Peter Barca,Wisconsin,House,B001226,103,11
+Karan English,Arizona,House,E000186,103,9
+Eric Fingerhut,Ohio,House,F000128,103,7
+Don Johnson Jr.,Georgia,House,J000120,103,2
+Charles Edward Bennett,Florida,House,B000371,102,757
+Silvio Conte,Massachusetts,House,C000709,102,609
+Glenn M. Anderson,California,House,A000189,102,520
+Bob Kasten,Wisconsin,Senate,K000019,102,434
+Dante Fascell,Florida,House,F000041,102,423
+Stephen Solarz,New York,House,S000673,102,387
+Matthew J. Rinaldo,New Jersey,House,R000262,102,354
+Robert J. Lagomarsino,California,House,L000020,102,350
+Norman F. Lent,New York,House,L000243,102,342
+Alan J. Dixon,Illinois,Senate,D000366,102,341
+Joseph M. Gaydos,Pennsylvania,House,G000105,102,312
+Guy Vander Jagt,Michigan,House,V000027,102,300
+William Broomfield,Michigan,House,B000890,102,291
+Frank J. Guarini,New Jersey,House,G000511,102,257
+Gus Yatron,Pennsylvania,House,Y000014,102,227
+Les AuCoin,Oregon,House,A000337,102,213
+William Dannemeyer,California,House,D000044,102,213
+Brian Donnelly,Massachusetts,House,D000416,102,209
+Mervyn Dymally,California,House,D000592,102,207
+Bob Traxler,Michigan,House,T000356,102,201
+Bob Davis,Michigan,House,D000131,102,157
+Mel Levine,California,House,L000264,102,133
+Dennis Hertel,Michigan,House,H000547,102,130
+Terry Sanford,North Carolina,Senate,S000055,102,120
+E. Thomas Coleman,Missouri,House,C000618,102,109
+Lawrence J. Smith,Florida,House,S000586,102,105
+Raymond J. McGrath,New York,House,M000458,102,90
+John Seymour,California,Senate,S000269,102,88
+Carroll Hubbard,Kentucky,House,H000878,102,79
+Ben Erdreich,Alabama,House,E000201,102,76
+Carl Pursell,Michigan,House,P000574,102,73
+Howard Wolpe,Michigan,House,W000682,102,65
+Rod Chandler,Washington,House,C000293,102,65
+Harley O. Staggers Jr.,West Virginia,House,S000779,102,62
+Sid Morrison,Washington,House,M000999,102,62
+Joseph P. Kolter,Pennsylvania,House,K000307,102,57
+Jim Jontz,Indiana,House,J000265,102,53
+Bernard J. Dwyer,New Jersey,House,D000586,102,50
+Robin Tallon,South Carolina,House,T000034,102,50
+Terry L. Bruce,Illinois,House,B000971,102,49
+Larry Hopkins,Kentucky,House,H000776,102,47
+Chester Atkins,Massachusetts,House,A000226,102,44
+D. French Slaughter Jr.,Virginia,House,S000479,102,32
+Carl Christopher Perkins,Kentucky,House,P000229,102,29
+Joseph D. Early,Massachusetts,House,E000013,102,29
+Charles Hatcher,Georgia,House,H000340,102,23
+Liz Patterson,South Carolina,House,P000112,102,15
+Claude Pepper,Florida,House,P000218,101,1158
+Spark Matsunaga,Hawaii,Senate,M000250,101,796
+James A. McClure,Idaho,Senate,M000346,101,713
+Bill Frenzel,Minnesota,House,F000380,101,520
+William L. Armstrong,Colorado,Senate,A000219,101,483
+Pete Wilson,California,Senate,W000607,101,339
+James Florio,New Jersey,House,F000215,101,273
+Augustus Hawkins,California,House,H000367,101,248
+Stan Parris,Virginia,House,P000080,101,156
+Tom Tauke,Iowa,House,T000053,101,147
+Arlan Stangeland,Minnesota,House,S000795,101,145
+Mickey Leland,Texas,House,L000237,101,141
+Edward Madigan,Illinois,House,M000041,101,128
+Robert Garcia,New York,House,G000047,101,123
+Roy Dyson,Maryland,House,D000593,101,80
+Ronnie Flippo,Alabama,House,F000208,101,63
+Guy Molinari,New York,House,M000842,101,55
+Howard C. Nielson,Utah,House,N000106,101,53
+Lynn M. Martin,Illinois,House,M000195,101,53
+Jack Buechner,Missouri,House,B001036,101,44
+John G. Rowland,Connecticut,House,R000482,101,33
+Pat Saiki,Hawaii,House,S000014,101,30
+Bill Grant,Florida,House,G000382,101,21
+Joseph E. Brennan,Maine,House,B000798,101,18
+Peter P. Smith,Vermont,House,S000601,101,13
+James McClure Clarke,North Carolina,House,C000462,101,12
+"Donald E. ""Buz"" Lukens",Ohio,House,L000509,101,5
+Fernand St Germain,Rhode Island,House,S000762,100,443
+Lawton Chiles,Florida,Senate,C000356,100,433
+Bill Chappell,Florida,House,C000321,100,331
+Tip O'Neill,Massachusetts,House,O000098,100,258
+Daniel J. Evans,Washington,Senate,E000236,100,193
+Edward Boland,Massachusetts,House,B000600,100,190
+John Stennis,Mississippi,Senate,S000852,100,149
+Bill Nichols,Alabama,House,N000095,100,141
+"W.C. ""Dan"" Daniel",Virginia,House,D000038,100,83
+Chic Hecht,Nevada,Senate,H000439,100,78
+Robert Badham,California,House,B000024,100,44
+Buddy MacKay,Florida,House,M000023,100,28
+Jim Wright,Texas,House,W000827,100,14
+Jack Davis,Illinois,House,D000106,100,12
+Ernie Konnyu,California,House,K000309,100,7
+Don Fuqua,Florida,House,F000430,99,463
+James Abdnor,South Dakota,House+Senate,A000009,99,309
+Stewart McKinney,Connecticut,House,M000527,99,205
+Elwood Hillis,Indiana,House,H000624,99,160
+George M. O'Brien,Illinois,House,O000010,99,152
+T. Cooper Evans,Iowa,House,E000259,99,113
+Ken Kramer,Colorado,House,K000322,99,57
+Carroll Campbell Jr.,South Carolina,House,C000079,99,51
+Robert A. Young,Missouri,House,Y000051,99,50
+Thomas F. Hartnett,South Carolina,House,H000302,99,47
+John R. McKernan Jr.,Maine,House,M000512,99,27
+Michael Strang,Colorado,House,S000991,99,12
+John E. Grotberg,Illinois,House,G000499,99,8
+Phillip Burton,California,House,B001156,98,468
+Carl D. Perkins,Kentucky,House,P000230,98,401
+Barber Conable,New York,House,C000666,98,304
+Elliott H. Levitas,Georgia,House,L000265,98,263
+J. Kenneth Robinson,Virginia,House,R000337,98,214
+Edwin B. Forsythe,New Jersey,House,F000286,98,194
+Clement Zablocki,Wisconsin,House,Z000001,98,189
+Walter Huddleston,Kentucky,Senate,H000905,98,179
+Roger Jepsen,Iowa,Senate,J000101,98,164
+Abraham Kazen Jr.,Texas,House,K000025,98,73
+Kent Hance,Texas,House,H000144,98,60
+Raymond Kogovsek,Colorado,House,K000304,98,48
+Jack Hightower,Texas,House,H000582,98,39
+William R. Ratchford,Connecticut,House,R000067,98,25
+James F. McNulty Jr.,Arizona,House,M000589,98,23
+Bill Patman,Texas,House,P000104,98,12
+Katie Hall,Indiana,House,H000058,98,8
+Harold Washington,Illinois,House,W000180,98,6
+Jack Brinkley,Georgia,House,B000839,97,265
+Tom Railsback,Illinois,House,R000012,97,244
+Richard C. White,Texas,House,W000390,97,194
+Donald J. Mitchell,New York,House,M000808,97,190
+John Burton,California,House,B001153,97,171
+Edward Derwinski,Illinois,House,D000269,97,166
+Robert McClory,Illinois,House,M000340,97,150
+Millicent Fenwick,New Jersey,House,F000078,97,139
+Tom Hagedorn,Minnesota,House,H000012,97,113
+Skip Bafalis,Florida,House,B000029,97,95
+Clair Burgener,California,House,B001080,97,82
+David F. Emery,Maine,House,E000175,97,69
+Shirley Chisholm,New York,House,C000371,97,64
+L. H. Fountain,North Carolina,House,F000319,97,61
+M. Caldwell Butler,Virginia,House,B001182,97,56
+Billy Lee Evans,Georgia,House,E000233,97,53
+Harry F. Byrd Jr.,Virginia,Senate,B001209,97,52
+Harold C. Hollenbeck,New Jersey,House,H000722,97,49
+John G. Fary,Illinois,House,F000040,97,45
+Adam Benjamin Jr.,Indiana,House,B000363,97,38
+Arlen Erdahl,Minnesota,House,E000198,97,28
+Jim Mattox,Texas,House,M000260,97,22
+Gary A. Lee,New York,House,L000568,97,17
+Wayne Grisham,California,House,G000480,97,9
+Lawrence J. DeNardis,Connecticut,House,D000231,97,7
+Joel Deckard,Indiana,House,D000183,97,6
+Wendell Bailey,Missouri,House,B000047,97,6
+Warren Magnuson,Washington,Senate,M000053,96,356
+Gaylord Nelson,Wisconsin,Senate,N000033,96,343
+Birch Bayh,Indiana,Senate,B001233,96,314
+Abraham Ribicoff,Connecticut,Senate,R000191,96,233
+Frank Thompson Jr.,New Jersey,House,T000200,96,227
+Ray Roberts,Texas,House,R000312,96,205
+Keith Sebelius,Kansas,House,S000217,96,192
+Mike Gravel,Alaska,Senate,G000388,96,187
+David E. Satterfield III,Virginia,House,S000070,96,163
+Charles H. Wilson,California,House,W000571,96,159
+Mike McCormack,Washington,House,M000365,96,153
+Adlai Stevenson III,Illinois,Senate,S000890,96,148
+Richard Ichord,Missouri,House,I000001,96,109
+Richard (Dick) Stone,Florida,Senate,S000962,96,107
+Edmund Muskie,Maine,Senate,M001121,96,105
+James Cleveland,New Hampshire,House,C000512,96,101
+Bob Eckhardt,Texas,House,E000035,96,99
+Edward Beard,Rhode Island,House,B000279,96,99
+Robert B. Morgan,North Carolina,Senate,M000956,96,74
+John Jenrette,South Carolina,House,J000099,96,67
+Harold L. Runnels,New Mexico,House,R000510,96,66
+Milton Young,North Dakota,Senate,Y000047,96,61
+Robert Bauman,Maryland,House,B000244,96,61
+K. Gunn McKay,Utah,House,M000490,96,57
+Donald W. Stewart,Alabama,Senate,S000907,96,22
+Joseph P. Wyatt Jr.,Texas,House,W000777,96,12
+Buddy Leach,Louisiana,House,L000167,96,1

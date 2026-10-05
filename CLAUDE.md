@@ -62,6 +62,44 @@ deliverable. Ardis plans to finish roughly one table per week in this order.
    official lists (Black, Hispanic, Asian and Pacific Islander Americans in Congress) for
    race/ethnicity; CRS "Membership of the Nth Congress: A Profile" reports for military service.
 
+## Open issues (found 2026-10-04, not yet fixed)
+
+1. **Three wrong Bioguide IDs in the original 910 (namesake errors).**
+
+   | Row | Wrong ID (actually) | Correct ID |
+   |---|---|---|
+   | Birch Bayh (IN, Senate) | B001233 (Evan Bayh, his son) | B000254, not yet in the dataset |
+   | Gary A. Lee (NY, House) | L000568 (Christopher Lee) | L000192, already a row ("Gary Lee", one of the 109 added) |
+   | Jim Wright (TX, House) | W000827 (Ron Wright) | W000763, already a row ("James Wright", one of the 109 added) |
+
+   Their federal bill counts and bill-level rows (e.g. Birch's 314 items are Evan's 106th–111th
+   Congress items) belong to the wrong person. Gary Lee and Jim Wright are each in the dataset twice.
+   **Proposed fix:**
+   - Give Bayh's row B000254.
+   - Delete the L000568 and W000827 rows, keeping the correct-ID rows but merging in any better
+     research notes from the originals.
+   - Remove the wrongly attributed sponsored-legislation rows.
+   - Add Birch Bayh to the federal fetch queue.
+
+   The population will likely become **1017** (107 genuinely new people, not 109), and the counts
+   above need updating.
+
+2. **Undecided rule: does a few days or weeks of service count as serving in a Congress?** This
+   affects `SenateCongresses` for 7 original senators. The source ranges don't match the
+   congress-legislators term records:
+   - Magnuson: 79th–96th; appointed Dec 1944, which falls in the 78th.
+   - Nunn: 93rd–104th; Nov 1972 special election, which falls in the 92nd.
+   - Thurmond: 85th–107th; his 1954–56 term, which falls in the 83rd–84th, is noted but not in the range.
+   - Rubio: 112th–118th; left Jan 20, 2025, 17 days into the 119th.
+   - Pete Wilson: 98th–101st; resigned Jan 7, 1991, 4 days into the 102nd.
+   - Murkowski: 107th–119th; appointed Dec 20, 2002. The term records start her in Jan 2003, so the
+     source is probably right.
+   - Birch Bayh: to be rechecked after his ID fix.
+
+   Separately, **Metzenbaum** is an outright error. The source says "94th (partial 1974)", but 1974
+   is in the 93rd Congress. (The 4 completeness-gap senators who had each 6-year term counted as one
+   Congress were fixed 2026-10-04.)
+
 ## Immediate next steps (these need real internet access, which is why we're in Claude Code)
 
 The earlier cloud sandbox could not reach api.congress.gov or LegiScan; this Mac can.
