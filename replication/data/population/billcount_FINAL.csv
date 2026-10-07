@@ -44,7 +44,7 @@ Paul Simon,Illinois,Senate,S000423,816,API
 Carol Moseley Braun,Illinois,Senate,M001025,141,"API (resolved via targeted search, confidence=HIGH)"
 Peter Fitzgerald,Illinois,Senate,F000442,442,API
 Barack Obama,Illinois,Senate,O000167,282,API
-Birch Bayh,Indiana,Senate,B001233,314,API
+Birch Bayh,Indiana,Senate,B000254,,pending - re-fetch needed; previous count was for wrong ID B001233 (Evan Bayh)
 Mike Braun,Indiana,Senate,B001310,460,API
 Jim Banks,Indiana,Senate,B001299,270,API
 Roger Jepsen,Iowa,Senate,J000101,164,API
@@ -653,7 +653,6 @@ Barber Conable,New York,House,C000666,304,API
 Shirley Chisholm,New York,House,C000371,64,"API (resolved via targeted search, confidence=HIGH)"
 Jerrold Nadler,New York,House,N000002,546,API
 Donald J. Mitchell,New York,House,M000808,190,"API (resolved via targeted search, confidence=HIGH)"
-Gary A. Lee,New York,House,L000568,17,API
 Guy Molinari,New York,House,M000842,55,API
 Major Owens,New York,House,O000159,277,API
 Charles Schumer,New York,House,S000148,2453,API
@@ -836,7 +835,6 @@ Bill Archer,Texas,House,A000215,384,API
 John Culberson,Texas,House,C001048,94,API
 Kevin Brady,Texas,House,B000755,213,API
 Jack Brooks,Texas,House,B000880,390,API
-Jim Wright,Texas,House,W000827,14,API
 Craig Goldman,Texas,House,G000601,14,API
 Bill Patman,Texas,House,P000104,12,API
 Kika de la Garza,Texas,House,D000203,411,"API (resolved via targeted search, confidence=HIGH)"
@@ -976,7 +974,7 @@ George Danielson,California,House,D000043,,pending - Congress.gov not reachable 
 Charles Dougherty,Pennsylvania,House,D000446,,pending - Congress.gov not reachable from sandbox
 Tennyson Guyer,Ohio,House,G000537,,pending - Congress.gov not reachable from sandbox
 Raymond Lederer,Pennsylvania,House,L000187,,pending - Congress.gov not reachable from sandbox
-Gary Lee,New York,House,L000192,,pending - Congress.gov not reachable from sandbox
+Gary A. Lee,New York,House,L000192,,pending - Congress.gov not reachable from sandbox
 Ronald Mottl,Ohio,House,M001044,,pending - Congress.gov not reachable from sandbox
 Clint Roberts,South Dakota,House,R000308,,pending - Congress.gov not reachable from sandbox
 Joseph Smith,Pennsylvania,House,S000579,,pending - Congress.gov not reachable from sandbox
@@ -1057,7 +1055,7 @@ Charles Mathias,Maryland,House,M000241,,pending - Congress.gov not reachable fro
 Charles Mathias,Maryland,Senate,M000241,,pending - Congress.gov not reachable from sandbox
 William Boner,Tennessee,House,B000615,,pending - Congress.gov not reachable from sandbox
 Delbert Latta,Ohio,House,L000116,,pending - Congress.gov not reachable from sandbox
-James Wright,Texas,House,W000763,,pending - Congress.gov not reachable from sandbox
+Jim Wright,Texas,House,W000763,,pending - Congress.gov not reachable from sandbox
 Sedgwick Green,New York,House,G000417,,pending - Congress.gov not reachable from sandbox
 Jim Moody,Wisconsin,House,M000881,,pending - Congress.gov not reachable from sandbox
 Michael Kopetski,Oregon,House,K000312,,pending - Congress.gov not reachable from sandbox
@@ -1069,3 +1067,6 @@ W. Akin,Missouri,House,A000358,,pending - Congress.gov not reachable from sandbo
 Michael Honda,California,House,H001034,,pending - Congress.gov not reachable from sandbox
 Al Lawson,Florida,House,L000586,,pending - Congress.gov not reachable from sandbox
 Chris Jacobs,New York,House,J000020,,pending - Congress.gov not reachable from sandbox
+Tim Hutchinson,Arkansas,Senate,H001015,243,manually corrected (disambiguation); chamber row added 2026-10-06 (same career total)
+Mark Udall,Colorado,Senate,U000038,420,API; chamber row added 2026-10-06 (same career total)
+Gary Peters,Michigan,House,P000595,917,API; chamber row added 2026-10-06 (same career total)

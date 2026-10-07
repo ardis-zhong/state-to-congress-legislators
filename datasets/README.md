@@ -12,7 +12,7 @@ published on Harvard Dataverse (link to come).
 
 | # | File | Status |
 |---|---|---|
-| 1 | `table1_state_to_federal` | Pending |
+| 1 | `table1_state_to_federal` | Built: 1,017 rows |
 | 2 | `table2_demographics` | Pending |
 | 3 | `table3_effectiveness_scores` | Pending |
 | 4 | `table4_state_bill_text` | Pending (Dataverse) |
@@ -23,8 +23,12 @@ published on Harvard Dataverse (link to come).
 ## Columns
 
 **Table 1: Legislators who moved from state to federal office**
-`bioguide_id`, `name`, `state`, `state_leg_years` (years in state legislature),
-`federal_years` (years in Congress), `federal_chamber` (House, Senate, or both)
+One row per legislator. `bioguide_id`, `name`, `state`,
+`state_leg_years` (years in the state legislature, as researched; may include
+notes on chambers or districts), `federal_years` (all years in Congress, from
+the official congress-legislators term records; terms less than 60 days apart
+are merged, e.g. `1963-1981` or `1961-1969 (House); 1969-1987 (Senate)`),
+`federal_chamber` (`House`, `Senate`, or `Both`, over the whole career)
 
 **Table 2: Legislator demographics**
 `bioguide_id`, `name`, `gender`, `veteran`, `party` (political affiliation), `race`

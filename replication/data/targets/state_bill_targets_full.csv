@@ -330,7 +330,7 @@ Leslie Byrne,B001213,Virginia,VA,Virginia House of Delegates (1985-1991); Senate
 Tammy Baldwin,B001230,Wisconsin,WI,Wisconsin State Assembly,1993-1999,1993,1999
 Shelley Berkley,B001231,Nevada,NV,Nevada Assembly,1982-1984,1982,1984
 Judy Biggert,B001232,Illinois,IL,Illinois House of Representatives,1993-1999 (district 81),1993,1999
-Birch Bayh,B001233,Indiana,IN,Indiana House of Representatives (Speaker 1958-1960),1954-1962,1954,1962
+Birch Bayh,B000254,Indiana,IN,Indiana House of Representatives (Speaker 1958-1960),1954-1962,1954,1962
 Joe Baca,B001234,California,CA,CA State Assembly; CA State Senate,Assembly 1992-1998; Senate 1998-1999,1992,1999
 Henry Brown,B001235,South Carolina,SC,South Carolina House of Representatives,1985-2001,1985,2001
 Frank Ballance,B001238,North Carolina,NC,NC House 1983-1986; NC Senate 1989-2003 (non-continuous; gap 1987-1988),1983-2003,1983,2003
@@ -645,7 +645,7 @@ H. Martin Lancaster,L000045,North Carolina,NC,NC House,1979-1987,1979,1987
 Delbert Latta,L000116,Ohio,OH,Ohio Senate,1953-1958,1953,1958
 Buddy Leach,L000167,Louisiana,LA,Louisiana House of Representatives,1968-1979; 1984-1988,1968,1988
 Raymond Lederer,L000187,Pennsylvania,PA,Pennsylvania House of Representatives,1973-1976,1973,1976
-Gary Lee,L000192,New York,NY,New York State Assembly,1975-1978,1975,1978
+Gary A. Lee,L000192,New York,NY,New York State Assembly,1975-1978,1975,1978
 Richard H. Lehman,L000225,California,CA,CA State Assembly (31st district),1976-1982,1976,1982
 Mickey Leland,L000237,Texas,TX,Texas House of Representatives,1973-1979,1973,1979
 Norman F. Lent,L000243,New York,NY,New York State Senate,1963-1970 (2nd/6th/7th districts),1963,1970
@@ -670,7 +670,6 @@ Stephen Lynch,L000562,Massachusetts,MA,Massachusetts House of Representatives (1
 Doug Lamborn,L000564,Colorado,CO,Colorado House of Representatives (1994-1999); Colorado Senate (1998-2006; Senate President Pro Tem 1999),1994-2006,1994,2006
 Robert Latta,L000566,Ohio,OH,Ohio Senate; Ohio House of Representatives,1997-2007,1997,2007
 Leonard Lance,L000567,New Jersey,NJ,New Jersey General Assembly 1991-2002; New Jersey Senate 2002-2009 (Minority Leader 2004-2008),1991-2009,1991,2009
-Gary A. Lee,L000568,New York,NY,New York State Assembly,1975-1978,1975,1978
 Blaine Luetkemeyer,L000569,Missouri,MO,Missouri House of Representatives,1999-2005,1999,2005
 Cynthia Lummis,L000571,Wyoming,WY,Wyoming House of Representatives,1979-1983 and 1985-1993 (two stints; also served as WY State Treasurer 1999-2007 and US Rep 2009-2017 in between),1979,2017
 Alan Lowenthal,L000579,California,CA,California State Assembly; California State Senate,1998-2012,1998,2012
@@ -994,7 +993,7 @@ Charles H. Wilson,W000571,California,CA,CA State Assembly (66th district),1955-1
 Pete Wilson,W000607,California,CA,California State Assembly,1966-1971,1966,1971
 Bob Wise,W000654,West Virginia,WV,West Virginia Senate,1980-1982 (dist 17; 1 term),1980,1982
 Howard Wolpe,W000682,Michigan,MI,Michigan House of Representatives (exact dates not confirmed by source; c. mid-1970s prior to 1979 US House election),c. 1973-1978 (approximate; source did not give exact dates),1973,1978
-James Wright,W000763,Texas,TX,Texas House of Representatives,1947-1949,1947,1949
+Jim Wright,W000763,Texas,TX,Texas House of Representatives,1947-1949,1947,1949
 Joseph P. Wyatt Jr.,W000777,Texas,TX,Texas House of Representatives,1971-1979,1971,1979
 Albert Wynn,W000784,Maryland,MD,Maryland House of Delegates (1983-1987); Maryland Senate (1987-1993),1983-1993,1983,1993
 Greg Walden,W000791,Oregon,OR,OR House 1989-95; OR Senate 1995-97,1989-1997,1989,1997
@@ -1008,7 +1007,6 @@ Charlie Wilson,W000801,Ohio,OH,"Ohio House of Representatives 1997-2006 (99th/96
 Rob Wittman,W000804,Virginia,VA,Virginia House of Delegates,January 2006-December 2007 (dist 99; 1 partial term),2006,2007
 Daniel Webster,W000806,Florida,FL,Florida House of Representatives (Speaker 1996-98); Florida Senate (Majority Leader 2006-08),1980-1998; 1998-2008,1980,2008
 Randy Weber,W000814,Texas,TX,Texas House of Representatives,2009-2013,2009,2013
-Jim Wright,W000827,Texas,TX,Texas House of Representatives,1947-1949,1947,1949
 Gus Yatron,Y000014,Pennsylvania,PA,PA House of Representatives (1956-1960); PA Senate (1961-1968; dist. 11),1956-1968,1956,1968
 C. Young,Y000031,Florida,FL,Florida Senate,1961-1970,1961,1970
 Don Young,Y000033,Alaska,AK,Alaska House of Representatives (1967-1971); Alaska Senate District I (1971-1973),1967-1973,1967,1973

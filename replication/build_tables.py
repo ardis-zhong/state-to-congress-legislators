@@ -16,10 +16,17 @@ A table whose ingredients or design decisions aren't settled yet is reported as
 PENDING with the reason, rather than written out partially.
 """
 
+import csv
+import datetime
+import json
 import os
 import sys
 
 DATASETS_DIR = "datasets"
+PERSON_LEVEL = "replication/data/population/person_level.csv"
+# Official term records from @unitedstates/congress-legislators. Downloaded to the repo
+# root (gitignored) by replication/scripts/population/fetch_legislator_party_gender.py.
+LEGISLATOR_FILES = ["legislators-current.json", "legislators-historical.json"]
 
 # Column names are snake_case so they work as Stata variable names.
 # For state bills, "Congressional Session" is two columns: state_session (the
@@ -49,8 +56,61 @@ class Pending(Exception):
     """Raised by a builder whose inputs or design decisions aren't settled yet."""
 
 
+def load_person_level():
+    with open(PERSON_LEVEL, newline="", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def load_terms():
+    """Bioguide ID -> list of terms from the congress-legislators records."""
+    terms = {}
+    for path in LEGISLATOR_FILES:
+        if not os.path.exists(path):
+            raise Pending(f"{path} not found; run "
+                          "replication/scripts/population/fetch_legislator_party_gender.py first")
+        with open(path, encoding="utf-8") as f:
+            for p in json.load(f):
+                terms[p["id"]["bioguide"]] = p["terms"]
+    return terms
+
+
+def service_spans(terms, today):
+    """Merge consecutive terms into year spans, e.g. '1973-1975, 1981-1991'.
+    Terms less than 60 days apart count as continuous service; a term that
+    hasn't ended yet is shown as '-present'."""
+    spans = []
+    for t in sorted(terms, key=lambda t: t["start"]):
+        start = datetime.date.fromisoformat(t["start"])
+        end = datetime.date.fromisoformat(t["end"])
+        if spans and (start - spans[-1][1]).days <= 60:
+            spans[-1][1] = max(spans[-1][1], end)
+        else:
+            spans.append([start, end])
+    return ", ".join(f"{s.year}-{'present' if e > today else e.year}" for s, e in spans)
+
+
 def build_table1():
-    raise Pending("one row per person; 3 wrong Bioguide IDs to fix first")
+    """One row per person. federal_years comes from the official term records;
+    state_leg_years is the hand-researched text (no official source exists)."""
+    terms = load_terms()
+    today = datetime.date.today()
+    rows = []
+    for p in load_person_level():
+        bg = p["BioguideId"]
+        if bg not in terms:
+            raise Pending(f"{bg} ({p['Name']}) missing from congress-legislators records")
+        by_chamber = {}
+        for t in terms[bg]:
+            by_chamber.setdefault({"rep": "House", "sen": "Senate"}[t["type"]], []).append(t)
+        if len(by_chamber) == 1:
+            chamber = next(iter(by_chamber))
+            years = service_spans(by_chamber[chamber], today)
+        else:
+            chamber = "Both"
+            order = sorted(by_chamber, key=lambda c: min(t["start"] for t in by_chamber[c]))
+            years = "; ".join(f"{service_spans(by_chamber[c], today)} ({c})" for c in order)
+        rows.append([bg, p["Name"], p["State"], p["StateLegYears"], years, chamber])
+    return rows
 
 
 def build_table2():
