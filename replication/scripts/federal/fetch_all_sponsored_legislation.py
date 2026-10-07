@@ -177,7 +177,7 @@ def already_done(output_path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--queue", default="extraction_queue.csv")
+    ap.add_argument("--queue", default="replication/data/targets/extraction_queue.csv")
     ap.add_argument("--output", default="sponsored_legislation_full.csv")
     ap.add_argument("--log", default="fetch_log.csv")
     ap.add_argument("--delay", type=float, default=0.35, help="seconds between API calls")

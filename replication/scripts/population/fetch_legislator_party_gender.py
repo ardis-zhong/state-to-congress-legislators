@@ -20,7 +20,7 @@ INPUT:
     different path as the first argument if needed.
 
 OUTPUT:
-    data/processed/legislator_demographics.csv, columns:
+    replication/data/processed/legislator_demographics.csv, columns:
     BioguideId, Name, Gender, MostRecentParty, PartyChanged, PartyHistory, Matched
 
 USAGE:
@@ -80,9 +80,9 @@ def build_party_history(terms):
 
 
 def main():
-    person_level_path = sys.argv[1] if len(sys.argv) > 1 else "person_level.csv"
+    person_level_path = sys.argv[1] if len(sys.argv) > 1 else "replication/data/population/person_level.csv"
 
-    os.makedirs("data/processed", exist_ok=True)
+    os.makedirs("replication/data/processed", exist_ok=True)
 
     print("Downloading congress-legislators bulk data (public domain, no API key needed)...")
     download(CURRENT_URL, "legislators-current.json")
@@ -134,7 +134,7 @@ def main():
             "Matched": "Yes",
         })
 
-    out_path = "data/processed/legislator_demographics.csv"
+    out_path = "replication/data/processed/legislator_demographics.csv"
     with open(out_path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["BioguideId", "Name", "Gender",
                                            "MostRecentParty", "PartyChanged",

@@ -1,6 +1,6 @@
 # --- Raw API caches: large, regenerate locally with your own API key ---
 # (not the same as the *processed* summary tables below, which ARE published --
-# see data/processed/ and the README's "Data sources and licensing" section)
+# see replication/data/processed/ and the README's "Data sources and licensing" section)
 legiscan_session_cache/
 legiscan_dataset_cache/
 legiscan_billtext_cache/
@@ -13,23 +13,20 @@ data/raw/
 # --- Pipeline working files that live at the project root because the
 # scripts write them there directly (CSVs, JSON, zips). The leading slash
 # anchors these to the repo root ONLY, so it does NOT affect the curated
-# copies you deliberately place in data/processed/ for publishing -- those
+# copies you deliberately place in replication/data/ for publishing -- those
 # stay tracked. Anything landing loose at root is raw/regenerable, not a
 # deliberate publish decision, so it's ignored by default. ---
 /*.csv
 /*.csv.gz
 /*.json
-# ...except these root-level pipeline files, which are small, hand-curated
-# or not cheaply regenerable, and are needed to rerun the build:
-!/billcount_FINAL.csv
-!/extraction_queue.csv
-!/extraction_queue_new109.csv
-!/state_bill_targets_full.csv
 
 # --- Probe/scratch outputs from API exploration ---
 legiscan_probe*_dataset.zip
 legiscan_probe*_sample_bill.json
 legiscan_schema_probe.json
+
+# --- Local-only Claude Code project notes ---
+CLAUDE.md
 
 # --- Never commit credentials ---
 *api_key*
@@ -45,3 +42,8 @@ __pycache__/
 # --- Python environments, if you ever set one up here ---
 venv/
 .venv/
+
+# --- Final tables: the two full-text tables are too large for GitHub and are
+# published on Harvard Dataverse instead (see README). The other five are tracked. ---
+datasets/table4_state_bill_text.*
+datasets/table5_federal_bill_text.*

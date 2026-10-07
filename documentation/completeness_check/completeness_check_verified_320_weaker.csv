@@ -1,0 +1,321 @@
+BioguideId,Name,StateAbbr,Verdict,StateLegChamber,StateLegYears,Notes
+J000288,Henry Johnson,GA,FALSE_POSITIVE,,,Hank Johnson's pre-Congress career was DeKalb County magistrate judge and county commissioner; no GA legislature service found.
+S000606,Robert Smith,NH,FALSE_POSITIVE,,,"Bob Smith (R-NH) was a teacher, Navy officer, and local school board member before Congress; no NH legislature service found."
+S000584,Larkin Smith,MS,FALSE_POSITIVE,,,"Larkin Smith's career was entirely in law enforcement (Gulfport police chief, Harrison County sheriff); no MS legislature service found."
+J000211,Ben Jones,GA,FALSE_POSITIVE,,,Ben Jones was an actor (Dukes of Hazzard) and SAG official before his 1988 GA congressional win; no state legislature service found.
+L000267,David Levy,NY,FALSE_POSITIVE,,,"David A. Levy served on the Hempstead Town Council 1989-1993, not the NY state legislature, before his 1993-1994 House term."
+T000184,Robert Thomas,GA,FALSE_POSITIVE,,,Lindsay Thomas (Robert Lindsay Thomas) went directly from private life to the US House in 1983; no Georgia legislature service found.
+J000216,Ed Jones,TN,FALSE_POSITIVE,,,"Ed Jones was a dairy inspector and TN Commissioner of Agriculture (an appointed post) before Congress, not a state legislator."
+S000514,Albert Smith,AL,FALSE_POSITIVE,,,Albert Lee Smith Jr. was an insurance agent before his 1980 election; no Alabama legislature service found.
+D000096,Danny Davis,IL,FALSE_POSITIVE,,,"Danny K. Davis served on Chicago City Council and Cook County Board, not the Illinois General Assembly, before Congress."
+C001129,Mike Collins,GA,FALSE_POSITIVE,,,Mike Collins was a trucking company owner/businessman before his 2022 election; no Georgia legislature service found.
+D000619,Rodney Davis,IL,FALSE_POSITIVE,,,Rodney Davis actually LOST a 1996 race for the Illinois state legislature and worked as a congressional staffer before winning his own House seat in 2012.
+S000522,Christopher Smith,NJ,FALSE_POSITIVE,,,Chris Smith worked in his family's sporting goods business and NJ Right to Life before his 1980 election; no NJ legislature service found.
+M001098,John Murphy,NY,FALSE_POSITIVE,,,"John M. Murphy (Staten Island, Abscam) came from a US Army/West Point career directly into Congress in 1962; no NY legislature service found."
+H000070,Sam Hall,TX,FALSE_POSITIVE,,,Sam B. Hall Jr. was a private-practice lawyer and local school board chairman before his 1976 special-election win; no TX legislature service found.
+E000063,Thomas Edwards,TX,CONFIRMED,Senate,1983-1990,Chet Edwards (Thomas Edwards) served in the Texas Senate representing District 9 from 1983 to 1990 before winning his US House seat in 1990/1991.
+M001178,Scott Murphy,NY,FALSE_POSITIVE,,,"Scott Murphy came from finance/entrepreneurship (Bankers Trust, Small World Software) and gubernatorial staff work in Missouri, not NY state legislature."
+J000292,Bill Johnson,OH,FALSE_POSITIVE,,,Bill Johnson had a 26-year Air Force career then IT business ventures before his 2011 election; no Ohio legislature service found.
+G000596,Marjorie Greene,GA,FALSE_POSITIVE,,,Marjorie Taylor Greene ran a contracting business and CrossFit gym before entering politics in 2020; no Georgia legislature service found.
+S001149,John Sweeney,NY,FALSE_POSITIVE,,,"John Sweeney worked as NY GOP executive director and Pataki-administration Labor Commissioner/Deputy Secretary, not a state legislator."
+J000284,Stephanie Jones,OH,FALSE_POSITIVE,,,"Stephanie Tubbs Jones was a Cleveland Municipal Court judge, Court of Common Pleas judge, and Cuyahoga County Prosecutor; no Ohio legislature service found."
+J000301,Dusty Johnson,SD,FALSE_POSITIVE,,,Career was SD Public Utilities Commissioner and gubernatorial chief of staff; no state legislature service found (Wikipedia).
+R000080,Richard Ray,GA,FALSE_POSITIVE,,,Was Mayor of Perry GA (1964-1970) then Sen. Sam Nunn's aide before Congress; no Georgia General Assembly service found (Wikipedia).
+M000811,George Mitchell,ME,FALSE_POSITIVE,,,Was US Attorney and federal judge before Senate appointment in 1980; no Maine legislature service found (Wikipedia).
+D000114,James Davis,FL,CONFIRMED,House,1988-1996,Jim Davis served in the Florida House of Representatives 1988-1996 (Majority Leader 1994-1996) before entering Congress in 1997 (Wikipedia).
+G000553,Al Green,TX,FALSE_POSITIVE,,,Was Harris County justice of the peace and NAACP Houston president before Congress; no Texas legislature service found (Wikipedia).
+J000020,Chris Jacobs,NY,CONFIRMED,Senate,2017-2020,Chris Jacobs served in the New York State Senate (60th district) 2017-2020 before winning a 2020 special election to Congress (Wikipedia).
+M000183,James Martin,NC,FALSE_POSITIVE,,,Jim Martin was a chemistry professor and Mecklenburg County commissioner before Congress; no NC General Assembly service found (Wikipedia).
+C000634,Cardiss Collins,IL,FALSE_POSITIVE,,,"Held appointed state accounting/auditor positions in Illinois government, not an elected legislative seat; no Illinois House/Senate service found (Wikipedia)."
+S000527,Dennis Smith,OR,FALSE_POSITIVE,,,"Denny Smith's pre-Congress career was Air Force pilot, newspaper owner, and airline flight engineer; no Oregon legislature service found (Wikipedia)."
+D000625,Daniel Donovan,NY,FALSE_POSITIVE,,,Dan Donovan was Staten Island deputy borough president and Richmond County DA before Congress; no NY Assembly/Senate service found (Wikipedia).
+Y000064,Todd Young,IN,FALSE_POSITIVE,,,"Marine Corps officer, Senate staffer, and county prosecutor before winning a US House seat in 2010; no Indiana legislature service found (Wikipedia)."
+H000241,Herbert Harris,VA,FALSE_POSITIVE,,,Served on Fairfax County Board of Supervisors 1968-1974 before Congress; no Virginia House of Delegates/Senate service found (Wikipedia).
+H000171,George Hansen,ID,FALSE_POSITIVE,,,Was Mayor of Alameda ID and Pocatello city commissioner before his first House term (1965); no Idaho legislature service found (Wikipedia).
+T000326,Edolphus Towns,NY,FALSE_POSITIVE,,,Ran unsuccessfully for NY State Assembly in 1970 and 1972 (lost Democratic primaries both times); never actually served (Wikipedia).
+M000413,Lawrence McDonald,GA,FALSE_POSITIVE,,,Larry McDonald was a urologist and Georgia State Medical Education Board member before Congress; no Georgia General Assembly service found (Wikipedia).
+C000100,Tom Campbell,CA,CONFIRMED,Senate,1993-1995,"Tom Campbell served in the California State Senate (11th district) 1993-1995, between his two stints in the US House (1989-1993 and 1995-2001) (Wikipedia)."
+W000528,Lyle Williams,OH,FALSE_POSITIVE,,,Was a school board member and Trumbull County Commissioner before Congress; no Ohio legislature service found (Wikipedia).
+M000826,Parren Mitchell,MD,FALSE_POSITIVE,,,Civil rights activist and academic who ran directly for Congress in 1968/1970; no Maryland General Assembly service found (Wikipedia).
+G000573,Joe Garcia,FL,FALSE_POSITIVE,,,Was Florida Public Service Commission chair and Cuban American National Foundation executive before Congress; no Florida legislature service found (Wikipedia).
+W000816,Roger Williams,TX,FALSE_POSITIVE,,,"Ran a car dealership and served as Texas Secretary of State (2005-2007, an appointed executive post) before Congress; no Texas legislature service found (Wikipedia)."
+H001102,Mark Harris,NC,FALSE_POSITIVE,,,"Baptist pastor whose entire pre-Congress career was in ministry, not state legislature; distinct from any Klarner NC state legislator named Harris."
+H000374,Paula Hawkins,FL,FALSE_POSITIVE,,,"Served on Florida Public Service Commission (1972-1980) and ran for Lt. Gov, never in the Florida state legislature."
+A000372,Rick Allen,GA,FALSE_POSITIVE,,,Construction company founder/owner before Congress; no Georgia state legislature service found.
+R000579,Patrick Ryan,NY,FALSE_POSITIVE,,,"Army officer, tech entrepreneur, then Ulster County Executive; no New York state legislature service."
+G000417,Sedgwick Green,NY,CONFIRMED,House,1965-1968,Sedgwick 'Bill' Green served in the New York State Assembly 1965-1968 before entering the US House in 1978.
+W000811,Joe Walsh,IL,FALSE_POSITIVE,,,Ran unsuccessfully for Illinois House in 1998 but never served; worked as educator/nonprofit director before Congress.
+M001222,Max Miller,OH,FALSE_POSITIVE,,,Marine Corps Reserve and Trump White House/campaign staffer before Congress; no Ohio state legislature service.
+J000148,James Johnson,CO,FALSE_POSITIVE,,,"James Paul Johnson was a deputy DA, municipal judge, and school board member in Colorado, not a state legislator."
+M000718,Clarence Miller,OH,FALSE_POSITIVE,,,"Electrical engineer and Mayor of Lancaster, Ohio before Congress; no Ohio state legislature service found."
+K000110,Joseph Kennedy,MA,FALSE_POSITIVE,,,Joseph P. Kennedy II ran Citizens Energy Corporation before Congress; never served in the Massachusetts state legislature.
+E000286,John Edwards,NC,FALSE_POSITIVE,,,Trial lawyer before his 1998 Senate win; never served in the North Carolina state legislature.
+K000105,Edward Kennedy,MA,FALSE_POSITIVE,,,Ted Kennedy worked as assistant DA and in his brother's campaigns before the Senate; never a Massachusetts state legislator.
+W000099,James Walsh,NY,FALSE_POSITIVE,,,"Served on Syracuse Common Council (1977-1988), not the New York state legislature, before Congress."
+L000287,John Lewis,GA,FALSE_POSITIVE,,,Civil rights leader who served on Atlanta City Council before Congress; never in the Georgia state legislature.
+K000379,Joseph Kennedy,MA,FALSE_POSITIVE,,,Joe Kennedy III was an Assistant DA in Middlesex County before Congress; never served in the Massachusetts state legislature.
+W000819,Mark Walker,NC,FALSE_POSITIVE,,,Baptist pastor before his 2014 Congress win; no North Carolina state legislature service found.
+C000754,Jim Cooper,TN,FALSE_POSITIVE,,,Nashville lawyer straight out of Harvard Law before his 1982 House win; never in the Tennessee state legislature.
+S001203,Tina Smith,MN,FALSE_POSITIVE,,,"Served as Minnesota Lieutenant Governor (2015-2018) and chief of staff, but never in the state legislature itself."
+B001313,Shontel Brown,OH,FALSE_POSITIVE,,,"Served on Warrensville Heights City Council and Cuyahoga County Council, not the Ohio state legislature, before Congress."
+B000910,Clarence Brown,OH,FALSE_POSITIVE,,,Clarence J. Brown Jr. worked in the family newspaper business and Navy before Congress; no Ohio state legislature service.
+M001162,Mel Martinez,FL,FALSE_POSITIVE,,,Career was attorney/Orange County Mayor/HUD Secretary; no FL legislature service (Wikipedia).
+H000636,Rubén Hinojosa,TX,FALSE_POSITIVE,,,"Served on Texas State Board of Education 1974-1984 and ran H&H Foods, not the Texas legislature (Wikipedia)."
+B000213,Joe Barton,TX,FALSE_POSITIVE,,,"Worked in private industry, White House Fellow, and energy consulting before winning his House seat in 1984; no Texas legislature service (Wikipedia)."
+C001035,Susan Collins,ME,FALSE_POSITIVE,,,"Career was Senate/state agency staff roles and a 1994 gubernatorial run, not a seat in the Maine legislature (Wikipedia)."
+M001101,Morgan Murphy,IL,FALSE_POSITIVE,,,"Chicago lawyer/civic official (Circuit Court clerk's office, Board of Election Commissioners, Liquor Control Commission hearing officer) before winning his House seat in 1970; no Illinois legislature service (Wikipedia)."
+D000018,Alfonse D'Amato,NY,FALSE_POSITIVE,,,"Rose through Hempstead/Nassau County offices (assessor, town supervisor, county presiding supervisor) directly to the U.S. Senate; no NY State Assembly/Senate service (Wikipedia)."
+M001168,Patrick Murphy,PA,FALSE_POSITIVE,,,PA congressman was an Army JAG officer and attorney who worked as an aide to a state representative but never held state legislative office himself (Wikipedia).
+H001051,Richard Hanna,NY,FALSE_POSITIVE,,,Ran a construction business before his first congressional run in 2008; no NY state legislature service found (Wikipedia).
+C000537,James Clyburn,SC,FALSE_POSITIVE,,,Ran unsuccessfully for the SC state assembly but was never elected; instead served as SC Human Affairs Commissioner before Congress (Wikipedia).
+M001211,Mary Miller,IL,FALSE_POSITIVE,,,Grain/cattle farmer with no prior legislative office; her husband Chris Miller is the one who serves in the Illinois House (Wikipedia).
+B000063,Howard Baker,TN,FALSE_POSITIVE,,,Was a lawyer in private practice before his first (losing) 1964 Senate bid and successful 1966 race; no Tennessee legislature service (Wikipedia).
+W000763,James Wright,TX,CONFIRMED,House,1947-1949,Wikipedia: elected unopposed in 1946 and served in the Texas House of Representatives from 1947 to 1949 before later becoming U.S. Speaker of the House.
+L000586,Al Lawson,FL,CONFIRMED,House;Senate,1982-2010,Wikipedia: served in the Florida House of Representatives 1982-2000 and the Florida Senate 2000-2010 (including Senate Minority Leader) before his 2016 election to Congress.
+F000481,Shomari Figures,AL,FALSE_POSITIVE,,,"Klarner hits belong to his mother Vivian Davis Figures (and late father Michael Figures), longtime Alabama state senators; Shomari himself worked at DOJ/White House and never held state legislative office (Wikipedia)."
+K000077,Richard Kelly,FL,FALSE_POSITIVE,,,"Was a Florida circuit judge (1960-1974) and city attorney, not a state legislator, before his 1974 election to Congress (Wikipedia)."
+L000413,Clarence Long,MD,FALSE_POSITIVE,,,Career was as an economics professor (Johns Hopkins) and presidential economic adviser; no Maryland legislature service (Wikipedia).
+B000236,Jim Bates,CA,FALSE_POSITIVE,,,"Served on the San Diego City Council (1971-1975) and San Diego County Board of Supervisors (1976-1982), not the California Assembly or Senate (Wikipedia)."
+D000626,Warren Davidson,OH,FALSE_POSITIVE,,,"Army veteran and manufacturing businessman whose only prior elected post was Concord Township Trustee (2004-2005), not the Ohio legislature (Wikipedia)."
+H001096,Harriet Hageman,WY,FALSE_POSITIVE,,,"Attorney and RNC committeewoman; the Klarner hits track her father James Hageman, a longtime Wyoming House member, not Harriet herself (Wikipedia)."
+H000719,Kenneth Holland,SC,FALSE_POSITIVE,,,"Was a lawyer and state Highway Commission member/party official before Congress, not a member of the SC House or Senate (Wikipedia)."
+L000428,Russell Long,LA,FALSE_POSITIVE,,,"Wikipedia shows Navy service, law practice, executive counsel to Gov. Earl Long, then elected directly to US Senate in 1948; no LA state legislature service."
+L000411,Catherine Long,LA,FALSE_POSITIVE,,,"Wikipedia bio of Catherine Small Long shows Navy service, Senate staff jobs, then House seat via 1985 special election after husband's death; no state legislature service."
+L000417,Gillis Long,LA,FALSE_POSITIVE,,,"Wikipedia shows Army service, law degree, then directly elected to US House in 1962; no LA state legislature service found."
+J000083,Edgar Jenkins,GA,FALSE_POSITIVE,,,Wikipedia shows Coast Guard service and work as AA to Rep. Phillip Landrum before winning US House seat in 1976; no Georgia state legislature service.
+H001014,Asa Hutchinson,AR,FALSE_POSITIVE,,,"Wikipedia states he considered running for Arkansas House but never did; career was attorney, US Attorney, and AR GOP chair before House election in 1996."
+M000720,Dan Miller,FL,FALSE_POSITIVE,,,"Wikipedia shows academic (professor, PhD) and family business career before 1992 House win; no Florida legislature service mentioned."
+L000293,Ron Lewis,KY,FALSE_POSITIVE,,,"Wikipedia says he ran for Kentucky House in 1971 but lost; otherwise worked in campaigns, sales, teaching, and ministry before winning US House in 1994; never served in KY legislature."
+M001150,Candice Miller,MI,FALSE_POSITIVE,,,"Wikipedia shows career as Harrison Township Supervisor, Macomb County Treasurer, and Michigan Secretary of State before US House in 2002; no state legislature service."
+J000293,Ron Johnson,WI,FALSE_POSITIVE,,,Wikipedia shows entirely private-sector business career (Pacur) with no prior elected office before 2010 Senate win; no Wisconsin legislature service.
+R000277,Donald Ritter,PA,FALSE_POSITIVE,,,Wikipedia shows academic/engineering career at Lehigh and MIT before 1978 House win; no Pennsylvania legislature service.
+H000151,Melton Hancock,MO,FALSE_POSITIVE,,,"Wikipedia shows Air Force service, business career, and tax-limitation activism (Hancock Amendment) before 1988 House win; no Missouri legislature service."
+T000405,Walter Tucker,CA,FALSE_POSITIVE,,,Wikipedia shows deputy DA and Mayor of Compton (1991-1992) before 1992 House win; no California state legislature service.
+J000149,Jay Johnson,WI,FALSE_POSITIVE,,,Wikipedia shows Army service and long TV news anchor career in Green Bay before 1996 House win; no Wisconsin legislature service.
+M001140,Dennis Moore,KS,FALSE_POSITIVE,,,Wikipedia shows Assistant KS Attorney General and Johnson County District Attorney (1977-1989) then private law practice before 1998 House win; no Kansas legislature service.
+E000290,Donna Edwards,MD,FALSE_POSITIVE,,,"Wikipedia shows nonprofit/advocacy leadership career (NNEDV, Public Citizen, Arca Foundation) before 2008 House win; no Maryland legislature service (she once clerked for a MD delegate, not the same as serving)."
+F000461,Bill Flores,TX,FALSE_POSITIVE,,,Wikipedia shows energy-industry executive career (CFO/CEO roles) and a Texas Real Estate Commission appointment before 2010 House win; no Texas legislature service.
+F000473,Mayra Flores,TX,FALSE_POSITIVE,,,Wikipedia shows respiratory therapist and GOP county outreach chair before 2022 special election win; no Texas legislature service.
+A000376,Colin Allred,TX,FALSE_POSITIVE,,,"Wikipedia shows NFL career, law school, civil rights attorney, and HUD role before 2018 House win; no Texas legislature service."
+W000809,Steve Womack,AR,FALSE_POSITIVE,,,"Wikipedia shows National Guard career, radio station manager, and Mayor of Rogers AR (1998-2011) before 2010 House win; no Arkansas legislature service."
+D000259,Jeremiah Denton,AL,FALSE_POSITIVE,,,"Wikipedia shows 34-year Navy career, Vietnam POW, and CBN consultant before 1980 Senate win; no Alabama legislature service."
+S000818,David Staton,WV,FALSE_POSITIVE,,,"Mick Staton (David Michael Staton) was a WV banker/Chamber of Commerce official, never in the WV legislature (Wikipedia)."
+N000094,Richard Nichols,KS,FALSE_POSITIVE,,,Dick Nichols was a Kansas banker and ag-media figure with no Kansas legislature service (Wikipedia).
+S000596,Neal Smith,IA,FALSE_POSITIVE,,,Neal Smith was a Polk County assistant attorney before Congress; no Iowa legislature service found (Wikipedia).
+K000210,Peter King,NY,FALSE_POSITIVE,,,"Peter King served on Hempstead town council and as Nassau County Comptroller, never in the NY Assembly/Senate (Wikipedia)."
+R000597,Tom Rice,SC,FALSE_POSITIVE,,,Tom Rice was a tax CPA/attorney and Horry County Council chair before Congress; no SC legislature service (Wikipedia).
+G000594,Ernest Gonzales,TX,FALSE_POSITIVE,,,This is Tony Gonzales (Ernest Anthony Gonzales II); prior career was Navy/academia with no Texas legislature service (Wikipedia).
+S001205,Mary Scanlon,PA,FALSE_POSITIVE,,,"Mary Gay Scanlon was a public-interest lawyer and school board member, never in the PA legislature (Wikipedia)."
+G000598,Robert Garcia,CA,FALSE_POSITIVE,,,"Robert Garcia served on Long Beach City Council and as Long Beach mayor, never in the CA legislature (Wikipedia)."
+F000485,Clay Fuller,GA,FALSE_POSITIVE,,,Clay Fuller was an Air Force JAG officer and district attorney before winning his 2026 GA-14 seat; no GA legislature service (Wikipedia).
+B001158,Sala Burton,CA,FALSE_POSITIVE,,,"Sala Burton's pre-Congress record is Democratic Party organizing roles; she entered via special election after husband Phillip Burton's death, no CA legislature service (Wikipedia)."
+L000226,William Lehman,FL,FALSE_POSITIVE,,,"William Lehman was a teacher/auto dealer and Miami-Dade school board member, never in the FL legislature (Wikipedia)."
+T000316,Esteban Torres,CA,FALSE_POSITIVE,,,"Esteban Torres's career was UAW official, UNESCO ambassador, and Carter aide; no CA legislature service found (Wikipedia)."
+G000561,Carte Goodwin,WV,FALSE_POSITIVE,,,"Carte Goodwin was Gov. Manchin's counsel and a lawyer, appointed to fill a Senate vacancy; no WV legislature service (Wikipedia)."
+F000444,Jeff Flake,AZ,FALSE_POSITIVE,,,"Jeff Flake worked in nonprofit/policy roles (Goldwater Institute); it was his uncle Jake Flake, not Jeff, who served in the AZ legislature (Wikipedia)."
+G000061,Mike Garcia,CA,FALSE_POSITIVE,,,Mike Garcia was a Navy F/A-18 pilot then defense-industry manager before his 2020 election; no CA legislature service (Wikipedia).
+K000376,Mike Kelly,PA,FALSE_POSITIVE,,,Mike Kelly ran his family's car dealership before Congress; no PA legislature service (Wikipedia).
+T000463,Michael Turner,OH,FALSE_POSITIVE,,,Mike Turner practiced law and served as Mayor of Dayton (1994-2002) before Congress; no Ohio legislature service (Wikipedia).
+S001217,Rick Scott,FL,FALSE_POSITIVE,,,Rick Scott built the Columbia/HCA hospital business before entering politics as governor; no FL legislature service (Wikipedia).
+H001013,John Hutchinson,WV,FALSE_POSITIVE,,,John G. Hutchinson was Charleston treasurer then mayor before a brief 1980 House term; no WV legislature service (Wikipedia).
+S000286,James Shannon,MA,FALSE_POSITIVE,,,James Shannon ran for MA State Senate in 1976 but lost the primary by 8 votes and never held state legislative office (Wikipedia).
+J000232,James Jones,OK,FALSE_POSITIVE,,,James R. Jones was LBJ White House aide and Tulsa lawyer before Congress; no OK state legislature service found (Wikipedia).
+G000072,Edwin Garn,UT,FALSE_POSITIVE,,,"Jake Garn served on Salt Lake City Commission and as Mayor of Salt Lake City before the Senate, not the Utah legislature (Wikipedia)."
+B000153,Druie Barnard,GA,FALSE_POSITIVE,,,Doug Barnard Jr. was a banker and Georgia DOT board member/gubernatorial aide before Congress; no state legislature service found (Wikipedia).
+M000473,Matthew McHugh,NY,FALSE_POSITIVE,,,Matthew F. McHugh was Tompkins County DA before Congress; no NY state legislature service found (Wikipedia).
+D000136,Thomas Davis,VA,FALSE_POSITIVE,,,"Tom Davis served on the Fairfax County Board of Supervisors (1980-1994), not the Virginia General Assembly, before Congress (Wikipedia)."
+J000300,Doug Jones,AL,FALSE_POSITIVE,,,Doug Jones lost a 1994 AL House race and worked as federal prosecutor/US Attorney; never served in the Alabama legislature (Wikipedia).
+B000575,Roy Blunt,MO,FALSE_POSITIVE,,,"Roy Blunt was Greene County Clerk and Missouri Secretary of State before Congress, not a state legislator (Wikipedia)."
+L000576,Billy Long,MO,FALSE_POSITIVE,,,Billy Long was an auctioneer/businessman with no prior elected office before winning Congress in 2010 (Wikipedia).
+R000395,Harold Rogers,KY,FALSE_POSITIVE,,,Hal Rogers was Commonwealth's Attorney for Pulaski/Rockcastle counties before Congress; no KY legislature service found (Wikipedia).
+C001114,John Curtis,UT,FALSE_POSITIVE,,,John Curtis lost a 2000 Utah state senate race and later became Mayor of Provo before Congress; never served in the legislature (Wikipedia).
+C001126,Mike Carey,OH,FALSE_POSITIVE,,,Mike Carey was a coal-industry lobbyist/executive before Congress; no Ohio legislature service found (Wikipedia).
+A000195,John Anderson,IL,FALSE_POSITIVE,,,John B. Anderson was Winnebago County State's Attorney before Congress; no Illinois legislature service found (Wikipedia).
+E000017,John East,NC,FALSE_POSITIVE,,,"John P. East was a political science professor at East Carolina University and 1968 NC Secretary of State nominee, never a state legislator (Wikipedia)."
+B000615,William Boner,TN,CONFIRMED,House;Senate,1971-1979,"Bill Boner served in the TN House (1971-1973, 1975-1977) and TN Senate (1977-1979) before his 1979 election to Congress (Wikipedia)."
+P000259,Douglas Peterson,FL,FALSE_POSITIVE,,,Douglas 'Pete' Peterson was an Air Force pilot/POW and businessman before Congress; no Florida legislature service found (Wikipedia).
+C000116,Christopher Cannon,UT,FALSE_POSITIVE,,,"Chris Cannon was a lawyer/venture capitalist and Utah GOP finance chairman before Congress, never a state legislator (Wikipedia)."
+D000602,Artur Davis,AL,FALSE_POSITIVE,,,Artur Davis was a civil rights lawyer and Assistant US Attorney before Congress; no Alabama legislature service found (Wikipedia).
+A000358,W. Akin,MO,CONFIRMED,House,1989-2001,Todd Akin served in the Missouri House of Representatives from 1989 to 2001 before entering Congress in 2001 (Wikipedia).
+L000574,Jeff Landry,LA,FALSE_POSITIVE,,,Jeff Landry lost a 2007 Louisiana State Senate race and worked as a police officer/attorney; never served in the legislature (Wikipedia).
+R000170,Silvestre Reyes,TX,FALSE_POSITIVE,,,Silvestre Reyes was a US Border Patrol sector chief before Congress; no Texas legislature service found (Wikipedia).
+M001142,Jim Matheson,UT,FALSE_POSITIVE,,,Worked in energy consulting before Congress; no Utah legislature service (Wikipedia).
+M000933,James Moran,VA,FALSE_POSITIVE,,,Alexandria council member/mayor before Congress; never served in Virginia General Assembly (Ballotpedia).
+O000169,William Owens,NY,FALSE_POSITIVE,,,Attorney/law professor before Congress; no NY State Legislature service (Wikipedia).
+G000575,Gwen Graham,FL,FALSE_POSITIVE,,,Lawyer and school administrator before Congress; no Florida Legislature service (Wikipedia).
+H001087,Katie Hill,CA,FALSE_POSITIVE,,,Nonprofit executive (PATH) before Congress; no California Legislature service (Wikipedia).
+C001072,Andre Carson,IN,FALSE_POSITIVE,,,Indianapolis/Marion City-County Council member before Congress; no Indiana legislature service (Wikipedia).
+M000312,James McGovern,MA,FALSE_POSITIVE,,,Long-time congressional staffer (aide to Rep. Moakley) before Congress; no MA legislature service (Wikipedia).
+H001072,J. Hill,AR,FALSE_POSITIVE,,,Banker (founder of Delta Trust) and Treasury/Bush administration aide before Congress; no Arkansas legislature service (Wikipedia).
+S001190,Bradley Schneider,IL,FALSE_POSITIVE,,,Businessman/management consultant before Congress; no Illinois legislature service (Wikipedia).
+M001216,Cory Mills,FL,FALSE_POSITIVE,,,Army veteran and defense contractor/businessman before Congress; no Florida legislature service (Wikipedia).
+F000088,Geraldine Ferraro,NY,FALSE_POSITIVE,,,Teacher then Queens County Assistant DA before Congress; no NY State Legislature service (Wikipedia).
+R000442,Benjamin Rosenthal,NY,FALSE_POSITIVE,,,Attorney in NYC practice before Congress; no mention of NY State Legislature service (Wikipedia).
+W000636,Edward Winn,KS,FALSE_POSITIVE,,,"Actually Larry (Edward Lawrence) Winn Jr.; home-building executive before Congress, no Kansas legislature service (Wikipedia)."
+A000031,Brockman Adams,WA,FALSE_POSITIVE,,,Attorney and U.S. Attorney for Western District of Washington before Congress; no WA state legislature service (Wikipedia).
+T000075,Gene Taylor,MO,FALSE_POSITIVE,,,"Missouri Republican; mayor of Sarcoxie and auto dealer before Congress, no Missouri legislature service (Wikipedia)."
+I000029,Andrew Ireland,FL,FALSE_POSITIVE,,,Banking executive and Winter Haven city commissioner before Congress; no Florida legislature service (Wikipedia/bioguideretro).
+M000736,John Miller,WA,FALSE_POSITIVE,,,Seattle City Councilman 1972-1979 before Congress; no Washington state legislature service (Wikipedia).
+G000134,Preston Geren,TX,FALSE_POSITIVE,,,Attorney/businessman and aide to Sen. Lloyd Bentsen before Congress; no Texas legislature service (Wikipedia).
+K000118,Barbara Kennelly,CT,FALSE_POSITIVE,,,"Hartford council member and CT Secretary of State before Congress; the CT House Speaker Kennelly (1975-79) was her husband James, not her (Wikipedia)."
+M000843,Susan Molinari,NY,FALSE_POSITIVE,,,NYC Council member (Minority Leader) before Congress; no NY State Legislature service (Wikipedia).
+K000078,Sue Kelly,NY,FALSE_POSITIVE,,,Career was business owner/patient advocate/campaign manager before Congress; no NY state legislature service found (Wikipedia).
+M000309,Carolyn McCarthy,NY,FALSE_POSITIVE,,,Was a nurse and gun-control activist before Congress; no NY state legislature service (Wikipedia).
+J000303,Brenda Jones,MI,FALSE_POSITIVE,,,Served on Detroit City Council (2006-2022); no Michigan state legislature service found (Wikipedia).
+O000168,Pete Olson,TX,FALSE_POSITIVE,,,"Career was Navy pilot then Senate staffer (Gramm, Cornyn); no Texas state legislature service (Wikipedia)."
+P000612,David Perdue,GA,FALSE_POSITIVE,,,"Entire pre-Senate career was private-sector corporate (Reebok, Dollar General, etc.); no Georgia legislature service (Wikipedia)."
+H001075,Kamala Harris,CA,FALSE_POSITIVE,,,"Career was prosecutor, DA, and CA Attorney General; never served in California State Legislature (Wikipedia)."
+C001066,Kathy Castor,FL,FALSE_POSITIVE,,,Ran unsuccessfully for Florida Senate in 2000 but never served; was Hillsborough County Commissioner instead (Wikipedia).
+C001098,Ted Cruz,TX,FALSE_POSITIVE,,,Career was DOJ/FTC official and Texas Solicitor General; no Texas state legislature service (Wikipedia).
+D000628,Neal Dunn,FL,FALSE_POSITIVE,,,Career was Army physician and surgeon in Panama City; no Florida state legislature service (Wikipedia).
+L000590,Susie Lee,NV,FALSE_POSITIVE,,,"Career was nonprofit/community education leadership; no Nevada state legislature service, first ran for office in 2016 (Wikipedia)."
+M001210,Gregory Murphy,NC,CONFIRMED,House,2015-2019,Wikipedia confirms he served in the NC House of Representatives (9th district) 2015-2019 before winning a 2019 special election to Congress.
+T000490,David Taylor,OH,FALSE_POSITIVE,,,Career was assistant county prosecutor and family concrete-business owner; no Ohio state legislature service found (Wikipedia).
+W000610,Robert Wilson,CA,FALSE_POSITIVE,,,"This is Bob (Robert C.) Wilson of San Diego; Wikipedia's career summary (WWII service, advertising) shows no California State Legislature service."
+D000534,John Duncan,TN,FALSE_POSITIVE,,,This is John J. Duncan Sr.; career was Knox County assistant attorney general then Mayor of Knoxville (1959-1964); no Tennessee state legislature service (Wikipedia).
+L000116,Delbert Latta,OH,CONFIRMED,Senate,1953-1958,Wikipedia confirms Delbert Latta served three terms in the Ohio Senate from 1953 to 1958 before entering Congress in 1959.
+S000622,Virginia Smith,NE,FALSE_POSITIVE,,,Prior role was chairing the American Farm Bureau Women for 20 years; no Nebraska Legislature service found (Wikipedia).
+A000103,William Alexander,AR,FALSE_POSITIVE,,,Career was attorney and Arkansas Waterways Commission member; no Arkansas state legislature service found (Wikipedia).
+G000153,Sam Gibbons,FL,CONFIRMED,House;Senate,1953-1962,Wikipedia confirms Sam Gibbons served in the Florida House 1953-1958 and Florida Senate 1959-1962 before entering Congress in 1963.
+H000463,Jesse Helms,NC,FALSE_POSITIVE,,,Career was journalism/broadcasting and two terms on Raleigh City Council; no NC state legislature service (Wikipedia).
+B000780,John Breaux,LA,FALSE_POSITIVE,,,Practiced law and served as aide to Rep. Edwin Edwards before winning a special House election in 1972; no Louisiana state legislature service (Wikipedia).
+S000106,Joe Scarborough,FL,FALSE_POSITIVE,,,"Career was law practice, teaching, and music in Pensacola before winning US House in 1994; no FL legislature service (Klarner years 1968-1976 predate his adulthood)."
+D000549,Jennifer Dunn,WA,FALSE_POSITIVE,,,"Was WA state GOP party chair 1981-1992 and a systems engineer, never a WA state legislator."
+B000382,Robert Bennett,UT,FALSE_POSITIVE,,,"Career was business (Franklin Quest, American Computer Corp) and federal appointments; no UT legislature service."
+C000830,C. Cox,CA,FALSE_POSITIVE,,,"Christopher Cox was a lawyer, Harvard Business School instructor, and Reagan White House counsel before Congress; no CA legislature service."
+A000357,Thomas Allen,ME,FALSE_POSITIVE,,,Tom Allen was Portland ME city councilor and mayor (1989-1992) plus gubernatorial staffer/lawyer; never in Maine legislature.
+W000789,Heather Wilson,NM,FALSE_POSITIVE,,,"Air Force officer, NSC staffer, and NM Cabinet Secretary for Children Youth and Families before Congress; no NM legislature service."
+P000149,Donald Payne,NJ,FALSE_POSITIVE,,,"Donald M. Payne Sr. served on Essex County Freeholders and Newark Municipal Council, never in the NJ Assembly or Senate."
+M001191,Patrick Murphy,FL,FALSE_POSITIVE,,,"Career was in family construction business and accounting (Deloitte) before Congress; Klarner years 1968-1984 predate his birth (1983), confirming unrelated Murphy."
+H000338,Orrin Hatch,UT,FALSE_POSITIVE,,,Attorney in Pittsburgh then Utah before his first-ever election was to the US Senate in 1976; no UT legislature service.
+D000533,John Duncan,TN,FALSE_POSITIVE,,,John J. Duncan Jr. was a Knox County Criminal Court judge (1981-1988) before succeeding his father in Congress; no TN legislature service.
+C001124,TJ Cox,CA,FALSE_POSITIVE,,,Career was as a chemical engineer and nut-processing business owner; no CA legislature service.
+D000482,Michael Doyle,PA,FALSE_POSITIVE,,,"Mike Doyle was Swissvale Borough councilman and chief of staff to a PA state senator, but never himself a PA state legislator."
+M001202,Stephanie Murphy,FL,FALSE_POSITIVE,,,"Career was national security specialist, business professor, and executive; no FL legislature service, and Klarner years predate her political career."
+P000604,Donald Payne,NJ,FALSE_POSITIVE,,,Donald Payne Jr. served on Newark City Council (2006-2012) but never in the NJ Assembly or Senate.
+W000812,Ann Wagner,MO,FALSE_POSITIVE,,,Wagner chaired the Missouri GOP and served as US Ambassador to Luxembourg but never held MO legislative office.
+D000624,Debbie Dingell,MI,FALSE_POSITIVE,,,Career was in GM corporate/foundation roles and party activism; her first elected office was the US House seat she won in 2014.
+F000468,Lizzie Fletcher,TX,FALSE_POSITIVE,,,"Fletcher was a law firm partner (Vinson & Elkins, then AZA) before her first elected office, the US House in 2018; no TX legislature service."
+L000597,Laurel Lee,FL,FALSE_POSITIVE,,,"Lee was a Hillsborough County circuit judge and then FL Secretary of State (2019-2022) before Congress, never a state legislator."
+M001240,Addison McDowell,NC,FALSE_POSITIVE,,,"McDowell (born 1994) worked as congressional campaign/constituent-services staff and a BCBS lobbyist; Klarner years 1978-1984 predate his birth, confirming unrelated McDowell."
+F000151,Joseph Fisher,VA,FALSE_POSITIVE,,,Fisher was an economist (Resources for the Future) before Congress and VA Secretary of Human Resources/GMU professor after; no VA General Assembly service found.
+B000845,Charles Britt,NC,FALSE_POSITIVE,,,"Wikipedia shows Britt was a Greensboro lawyer and Navy Reservist before Congress, later NC Sec. of Human Resources; no state legislature service found."
+M000992,Bruce Morrison,CT,FALSE_POSITIVE,,,Wikipedia shows Morrison was a New Haven Legal Assistance attorney and advocate before Congress; no CT General Assembly service found.
+H000236,Claude Harris,AL,FALSE_POSITIVE,,,Wikipedia shows Harris went from Tuscaloosa County assistant DA to state circuit judge (1977-1985) directly to Congress; no legislature service found.
+H000788,Joan Horn,MO,FALSE_POSITIVE,,,Wikipedia bio has no mention of Missouri legislature service; background is academic (Univ. of Missouri degrees) before her single House term.
+J000047,Craig James,FL,FALSE_POSITIVE,,,Wikipedia shows Craig T. James practiced law in DeLand and served as DeLand Housing Authority commissioner (1971-75); no Florida legislature service found.
+L000431,James Longley,ME,FALSE_POSITIVE,,,Wikipedia shows James B. Longley Jr. was a trial lawyer and small-business manager (and Marine veteran) before Congress; no Maine legislature service found.
+P000066,Michael Parker,MS,FALSE_POSITIVE,,,Wikipedia page covers his US House term and later Assistant Secretary of the Army role; no Mississippi legislature service mentioned.
+C001057,Norm Coleman,MN,FALSE_POSITIVE,,,Wikipedia shows Coleman went from state prosecutor to Mayor of Saint Paul (1994-2002) directly to US Senate; no Minnesota legislature service found.
+B000463,Michael Bilirakis,FL,FALSE_POSITIVE,,,Wikipedia notes it was his son Gus Bilirakis who was a Florida state representative; Michael himself had no state legislature service before his 1982 first run.
+H000948,Kenny Hulshof,MO,FALSE_POSITIVE,,,Wikipedia shows Hulshof worked as a public defender and special prosecutor for the MO AG's office before Congress; no legislature service found.
+H000213,Jane Harman,CA,FALSE_POSITIVE,,,"Wikipedia shows Harman's pre-Congress career was law practice, Senate staff, Carter White House, and UCLA teaching; no California legislature service found."
+N000180,Ben Nelson,NE,FALSE_POSITIVE,,,Wikipedia shows Nelson went from insurance executive/state insurance director to Governor of Nebraska (1991-1999) to US Senate; no unicameral legislature service found.
+D000355,John Dingell,MI,FALSE_POSITIVE,,,Wikipedia shows it was his son Christopher D. Dingell who served in the Michigan State Senate; John Dingell Jr. himself had no state legislature service.
+F000460,Blake Farenthold,TX,FALSE_POSITIVE,,,Wikipedia shows Farenthold was a radio talk show host and lawyer before his first elected office in Congress; no Texas legislature service found.
+H001045,Gregg Harper,MS,FALSE_POSITIVE,,,Wikipedia shows Harper was a private-practice attorney and municipal prosecutor before Congress; no Mississippi legislature service found.
+H001069,Heidi Heitkamp,ND,FALSE_POSITIVE,,,"Wikipedia shows only a 1977 legislative internship, not membership; her offices were ND Tax Commissioner and Attorney General before the Senate."
+H001092,Kwanza Hall,GA,FALSE_POSITIVE,,,Wikipedia shows Hall served on Atlanta Board of Education and Atlanta City Council (2006-2018); no Georgia General Assembly service found.
+B001248,Michael Burgess,TX,FALSE_POSITIVE,,,Wikipedia states Burgess had never held any public office before winning his 2002 US House race; he was an OB/GYN physician.
+K000380,Daniel Kildee,MI,FALSE_POSITIVE,,,"Wikipedia shows Kildee held only local/county offices (Flint school board, Genesee County commissioner and treasurer); no Michigan legislature service found."
+T000467,Glenn Thompson,PA,FALSE_POSITIVE,,,Wikipedia shows Thompson was a rehabilitation therapist/nursing home administrator and county GOP chair before Congress; no PA General Assembly service found.
+M001198,Roger Marshall,KS,FALSE_POSITIVE,,,"Physician from Great Bend KS; went directly from medicine/local business boards to Congress in 2016, no state legislature service."
+T000491,Derek Tran,CA,FALSE_POSITIVE,,,Freshman Rep elected 2024; attorney/pharmacist/veteran with no record of state legislature service.
+B001324,Wesley Bell,MO,FALSE_POSITIVE,,,"Career was Ferguson city council, municipal judge, and St. Louis County prosecuting attorney, not the Missouri legislature."
+D000125,Mendel Davis,SC,FALSE_POSITIVE,,,Was congressional aide to Rep. L. Mendel Rivers then won a 1971 special election directly to the U.S. House; no SC state legislature service found.
+G000515,Vonno Gudger,NC,CONFIRMED,House;Senate,1950-1952 (House); 1970-1977 (Senate),V. Lamar Gudger (full name Vonno Lamar Gudger Jr.) served NC House 1950-1952 and NC Senate 1970-1977 before winning Congress in 1976 (Wikipedia).
+M000058,Gene Maguire,NJ,FALSE_POSITIVE,,,"Gene Andrew Maguire = Andrew Maguire (politician); career was State Dept/urban development/Ford Foundation before defeating Rep. Widnall in 1974, no NJ legislature service."
+M000688,Daniel Mica,FL,FALSE_POSITIVE,,,Dan Mica was chief of staff to Rep. Paul Rogers 1968-1978 then succeeded him in Congress; no Florida legislature service found.
+C000836,John Cox,IL,FALSE_POSITIVE,,,"John W. Cox Jr. was Jo Daviess County State's Attorney and Galena city attorney, not an Illinois legislator; his 1990 opponent (not Cox) was the one in the Illinois House."
+G000402,William Gray,PA,FALSE_POSITIVE,,,William H. Gray III was a Baptist minister in Philadelphia before winning Congress in 1978; no Pennsylvania legislature service found.
+E000218,Albert Espy,MS,FALSE_POSITIVE,,,Mike (Alphonso Michael) Espy worked as an attorney and Assistant Mississippi Attorney General before Congress in 1986; no state legislature service found.
+M000566,John McMillan,NC,FALSE_POSITIVE,,,"Bioguide M000566 is Alex (John Alexander) McMillan III, who went from Mecklenburg County commissioner directly to Congress in 1984; no NC legislature service found."
+S000142,Patricia Schroeder,CO,FALSE_POSITIVE,,,Schroeder was a lawyer and hearing examiner who won her U.S. House seat directly in 1972; no Colorado legislature service.
+M001085,Frank Murkowski,AK,FALSE_POSITIVE,,,Murkowski was a banker and appointed (not elected) state Commissioner of Economic Development before winning the U.S. Senate in 1980; no state legislature service.
+F000392,Jonas Frost,TX,FALSE_POSITIVE,,,"Martin (Jonas Martin III) Frost was a journalist, law clerk, and attorney before winning Congress in 1978; no Texas legislature service found."
+S000303,E. Shaw,FL,FALSE_POSITIVE,,,"E. Clay Shaw Jr. rose through Fort Lauderdale city government (prosecutor, judge, commissioner, mayor) straight into Congress in 1980; no Florida legislature service."
+K000288,Joseph Knollenberg,MI,FALSE_POSITIVE,,,"Joe Knollenberg was an insurance agency owner and Oakland County GOP chair; the actual Michigan state legislator with this surname is his son Marty Knollenberg (elected 2006), a different person."
+L000447,Trent Lott,MS,FALSE_POSITIVE,,,Lott was an aide to Rep. William Colmer and won Colmer's seat directly in 1972; no Mississippi legislature service found.
+B000420,Robert Berry,AR,FALSE_POSITIVE,,,"Marion (Robert Marion) Berry was a pharmacist/farmer, Gillett city alderman, and appointed to the Arkansas Soil and Water Conservation Commission; no state legislature service."
+C001058,Ben Chandler,KY,FALSE_POSITIVE,,,"Chandler held statewide executive offices (State Auditor, then Attorney General) before Congress, never a Kentucky House/Senate seat."
+W000807,Allen West,FL,FALSE_POSITIVE,,,West's pre-Congress career was 22 years in the U.S. Army followed by teaching and defense contracting; no state legislature service.
+W000824,Steven Watkins,KS,FALSE_POSITIVE,,,"Wikipedia shows military/business/Iditarod career, no Kansas legislature service"
+P000618,Katie Porter,CA,FALSE_POSITIVE,,,Career was law professor and consumer advocate; no California legislature service
+W000828,Brandon Williams,NY,FALSE_POSITIVE,,,Navy officer and businessman/farmer; no New York legislature service
+H001067,Richard Hudson,NC,FALSE_POSITIVE,,,Career was congressional staffer and campaign consultant; no NC legislature service
+S001215,Haley Stevens,MI,FALSE_POSITIVE,,,Auto industry task force and manufacturing institute roles; no Michigan legislature service
+E000299,Veronica Escobar,TX,FALSE_POSITIVE,,,"Served as El Paso County Commissioner and County Judge, not Texas state legislature"
+J000309,Jonathan Jackson,IL,FALSE_POSITIVE,,,"Businessman, professor, and Rainbow/PUSH activist; no Illinois legislature service"
+I000058,Glenn Ivey,MD,FALSE_POSITIVE,,,"Served as Prince George's County State's Attorney and on MD Public Service Commission, not the state legislature"
+M001245,Christian Menefee,TX,FALSE_POSITIVE,,,Served as Harris County Attorney; no Texas state legislature service
+B001113,William Burlison,MO,FALSE_POSITIVE,,,"Went from law practice directly to Congress (1969); later unsuccessful MO state house bids in 2008/2010/2014 (lost each time, matching the Klarner surname hits) and served on Anne Arundel County Council in Maryland, but never won a state legislature seat"
+C000201,Tim Carter,KY,FALSE_POSITIVE,,,Physician and Army Medical Corps veteran who went directly from medical practice to Congress in 1964; no evidence of Kentucky state legislature service
+H000287,Gary Hart,CO,FALSE_POSITIVE,,,DOJ/Interior Dept attorney and McGovern 1972 campaign manager before Senate; no Colorado state legislature service
+M000241,Charles Mathias,MD,CONFIRMED,House,1959-1960,Wikipedia confirms he was elected to and served in the Maryland House of Delegates 1959-1960 before later Congress/Senate service
+M000143,David Marriott,UT,FALSE_POSITIVE,,,Utah Air National Guard veteran and insurance/pension consulting business owner before Congress; no Utah state legislature service
+B000160,Michael Barnes,MD,FALSE_POSITIVE,,,"Served on Maryland Public Service Commission and in private/government legal practice, not the state legislature"
+F000329,Wyche Fowler,GA,FALSE_POSITIVE,,,"Served on Atlanta Board of Aldermen and as Atlanta City Council President, not the Georgia state legislature"
+L000508,Thomas Luken,OH,FALSE_POSITIVE,,,"Served as Deer Park solicitor, Cincinnati city council member, and Cincinnati mayor, plus US Attorney; no Ohio state legislature service"
+L000507,Charles Luken,OH,FALSE_POSITIVE,,,Served on Cincinnati city council and as Cincinnati mayor before and after Congress; no Ohio state legislature service
+M000881,Jim Moody,WI,CONFIRMED,House;Senate,1977-1982,Wikipedia and history.house.gov confirm Wisconsin State Assembly 1977-1978 then Wisconsin State Senate 1979-1982 before winning Congress in 1982
+H000930,William Hughes,NJ,FALSE_POSITIVE,,,"Career was township solicitor, county prosecutor, and law firm president; no New Jersey state legislature service"
+K000312,Michael Kopetski,OR,CONFIRMED,House,1985-1988,Served in Oregon House of Representatives 33rd district before winning Congress in 1990 per Wikipedia
+H000390,James Hayes,LA,FALSE_POSITIVE,,,"Jimmy Hayes (James Allison Hayes) went from LA Air National Guard and Commissioner of Financial Institutions directly to Congress, no state legislature service per Wikipedia"
+C000377,Jon Christensen,NE,FALSE_POSITIVE,,,Christensen was an insurance executive before Congress with no Nebraska state legislature service per Wikipedia
+W000391,Richard White,WA,FALSE_POSITIVE,,,"Rick White was a Perkins Coie attorney and Seattle community council member before Congress, no Washington state legislature service per Wikipedia"
+C001043,Jean Carnahan,MO,FALSE_POSITIVE,,,"Jean Carnahan's only prior role was First Lady of Missouri, an unelected position; no state legislature service per Wikipedia"
+C000705,Kent Conrad,ND,FALSE_POSITIVE,,,"Conrad was North Dakota Tax Commissioner before the Senate, not a state legislator per Wikipedia"
+B000208,Roscoe Bartlett,MD,FALSE_POSITIVE,,,Bartlett was a scientist and academic before Congress; his son Joseph R. Bartlett was the one who served in the Maryland House of Delegates per Wikipedia
+F000458,Stephen Fincher,TN,FALSE_POSITIVE,,,Fincher was a farmer and gospel singer before Congress with no Tennessee state legislature service per Wikipedia
+G000564,Christopher Gibson,NY,FALSE_POSITIVE,,,"Gibson was an Army colonel and West Point instructor before Congress, no New York state legislature service per Wikipedia"
+H001034,Michael Honda,CA,CONFIRMED,House,1996-2000,Member of the California State Assembly 23rd district from Dec 1996 to Nov 2000 before winning Congress in 2000 per Wikipedia
+W000799,Timothy Walz,MN,FALSE_POSITIVE,,,"Walz was a teacher, football coach, and National Guard member before Congress; went directly from private life to the U.S. House in 2007 per Wikipedia"
+L000587,Jason Lewis,MN,FALSE_POSITIVE,,,"Lewis was a nationally syndicated conservative talk radio host before Congress, no Minnesota state legislature service per Wikipedia"
+R000307,Pat Roberts,KS,FALSE_POSITIVE,,,"Roberts was a Marine officer, journalist, and congressional staffer before winning his U.S. House seat directly in 1980 per Wikipedia"
+H001088,Jim Hagedorn,MN,FALSE_POSITIVE,,,"Hagedorn was a congressional aide and U.S. Treasury Department official before Congress, no Minnesota state legislature service per Wikipedia"
+B001135,Richard Burr,NC,FALSE_POSITIVE,,,"Burr worked 17 years as a sales manager before running directly for the U.S. House in 1992, no North Carolina state legislature service per Wikipedia"
+J000306,Mondaire Jones,NY,FALSE_POSITIVE,,,"Jones was a DOJ staffer and corporate/county attorney before Congress; Klarner match years (1992-1994) predate his adulthood, no state legislature service per Wikipedia"
+B001236,John Boozman,AR,FALSE_POSITIVE,,,"Boozman was an optometrist and Rogers school board member before Congress, no Arkansas state legislature service per Wikipedia"
+L000577,Mike Lee,UT,FALSE_POSITIVE,,,"Lee was a law clerk, federal prosecutor, and counsel to the Utah governor before the Senate, no Utah state legislature service per Wikipedia"
+T000193,Bennie Thompson,MS,FALSE_POSITIVE,,,"Thompson was Bolton alderman, Bolton mayor, and Hinds County supervisor before Congress, no Mississippi state legislature service per Wikipedia"
+S001198,Dan Sullivan,AK,FALSE_POSITIVE,,,"Sullivan was Alaska Attorney General and DNR Commissioner before the Senate, no Alaska state legislature service per Wikipedia"
+G000581,Vicente Gonzalez,TX,FALSE_POSITIVE,,,Career was law practice then directly to Congress in 2017; no TX state legislature service found on Wikipedia.
+T000482,Lori Trahan,MA,FALSE_POSITIVE,,,Career was congressional staff (chief of staff to Rep. Meehan) then business exec; no MA state legislature service.
+S001220,Dale Strong,AL,FALSE_POSITIVE,,,Served on Madison County Commission (1996-2023) as commissioner then chairman; no Alabama state legislature service.
+S001232,Tim Sheehy,MT,FALSE_POSITIVE,,,"Navy SEAL and businessman (Bridger Aerospace, Ascent Vision) before running directly for US Senate; no MT legislature service."
+B001325,Sheri Biggs,SC,FALSE_POSITIVE,,,Nurse practitioner and Air National Guard officer before Congress; no SC state legislature service found.
+D000537,Robert Duncan,OR,CONFIRMED,House,1956-1962,"Robert B. Duncan served in the Oregon House of Representatives (three terms from 1956) and was Speaker 1959-1962, before winning OR-4 in 1962 (took office 1963)."
+G000151,Robert Giaimo,CT,FALSE_POSITIVE,,,"Held local offices (North Haven school board, selectman, Probate Court clerk) but no CT General Assembly service per Wikipedia."
+S000716,Gladys Spellman,MD,FALSE_POSITIVE,,,"Served on Prince George's County Board of Commissioners and County Council, not the Maryland General Assembly."
+S000902,Bennett Stewart,IL,FALSE_POSITIVE,,,"Served on Chicago City Council (21st ward, 1971-1979) and as ward committeeman; no Illinois General Assembly service."
+C000845,James Coyne,PA,FALSE_POSITIVE,,,"This is James K. Coyne III (PA-8, 1981-1983), a former township supervisor; the PA House/Senate member named James J. Coyne (Allegheny County, 1923-1936, d.1954) is a different, unrelated person."
+F000123,Paul Findley,IL,FALSE_POSITIVE,,,Newspaper publisher and WWII Navy veteran before winning election to Congress in 1960; no Illinois legislature service found.
+G000226,Ronald Ginn,GA,FALSE_POSITIVE,,,"Worked as congressional/Senate staff aide (Hagan, Talmadge) then ran for Congress in 1972; no Georgia legislature service found."
+H000747,Marjorie Holt,MD,FALSE_POSITIVE,,,Practiced law in Anne Arundel County before winning election to Congress in 1972; no Maryland General Assembly service found.
+C000598,William Cohen,ME,FALSE_POSITIVE,,,Served on Bangor City/School Board and as Bangor Mayor (1969-1972); no Maine state legislature service.
+K000017,Nancy Kassebaum,KS,FALSE_POSITIVE,,,"Served on Maize school board and worked as a Senate caseworker; went directly to US Senate in 1978, no Kansas legislature service."
+F000437,Duncan Faircloth,NC,FALSE_POSITIVE,,,This is Lauch Faircloth: NC highway commission chairman and Secretary of Commerce before Senate; no NC General Assembly service found.
+F000239,Thomas Foley,WA,FALSE_POSITIVE,,,"Was a Spokane deputy prosecutor, law professor, and Senator Jackson's aide before winning Congress in 1964; no WA state legislature service."
+L000381,Marilyn Lloyd,TN,FALSE_POSITIVE,,,"Businesswoman (radio station, aviation company) who entered Congress in 1975 after her husband's death; no TN state legislature service."
+O000108,William Orton,UT,FALSE_POSITIVE,,,"IRS employee then private attorney; his 1990 US House race was his first bid for any public office, no Utah legislature service."
+R000295,Charles Robb,VA,FALSE_POSITIVE,,,Was Virginia Lieutenant Governor (1978-1982) and Governor (1982-1986) before US Senate; never served in the House of Delegates or state Senate.
+H000114,Lee Hamilton,IN,FALSE_POSITIVE,,,Went to private law practice then straight to Congress in 1965; no IN state legislature service found.
+H000605,Rick Hill,MT,FALSE_POSITIVE,,,Businessman and state board appointee under Gov. Racicot before Congress; no MT state legislature service.
+C000503,Robert Clement,TN,FALSE_POSITIVE,,,"Served on TN Public Service Commission and TVA board, then Cumberland University president; no TN state legislature service."
+B001241,Chris Bell,TX,FALSE_POSITIVE,,,"Ran for TX House in 1984 and lost; only elected local office was Houston City Council, never won a state legislature seat."
+S001163,Ken Salazar,CO,FALSE_POSITIVE,,,"Career was CO governor's counsel, Dept. of Natural Resources director, and CO Attorney General; no state legislature service."
+H000981,Duncan Hunter,CA,FALSE_POSITIVE,,,Army veteran and lawyer who went directly to Congress in 1981; no CA state legislature service.
+G000544,Charles Gonzalez,TX,FALSE_POSITIVE,,,"Career was municipal/county/district judge before Congress; his father Henry B. Gonzalez was the one with TX Senate service, not Charlie."
+R000583,Thomas Rooney,FL,FALSE_POSITIVE,,,"Army JAG officer, state prosecutor, and nonprofit CEO before Congress; no FL state legislature service."
+L000584,Mia Love,UT,FALSE_POSITIVE,,,Career was Saratoga Springs city council and mayor; never served in UT state legislature.
+H001048,Duncan Hunter,CA,FALSE_POSITIVE,,,Marine Corps veteran and businessman who succeeded his father directly to Congress in 2009; no CA state legislature service.
+A000360,Lamar Alexander,TN,FALSE_POSITIVE,,,Career was law/legislative aide/campaign manager/business before becoming Governor; no TN state legislature service.
+R000582,David Roe,TN,FALSE_POSITIVE,,,Physician and Johnson City vice mayor/mayor before Congress; no TN state legislature service.
+H001073,Will Hurd,TX,FALSE_POSITIVE,,,CIA officer then private-sector consultant before Congress; no TX state legislature service.
+R000607,Francis Rooney,FL,FALSE_POSITIVE,,,Construction-company executive and U.S. Ambassador to the Holy See before Congress; no FL state legislature service.
+P000523,David Price,NC,FALSE_POSITIVE,,,Career was political science professor and NC Democratic Party chair before Congress; no state legislature service.
+L000588,Conor Lamb,PA,FALSE_POSITIVE,,,"Marine JAG officer and federal prosecutor before Congress; no PA state legislature service (grandfather served in PA Senate, not Conor)."
+S001192,Chris Stewart,UT,FALSE_POSITIVE,,,Air Force pilot and businessman/author before Congress; no UT state legislature service.
+B001320,Laphonza Butler,CA,FALSE_POSITIVE,,,Labor union organizer/SEIU president and UC Regent before Senate appointment; no CA state legislature service.
+F000465,A. Ferguson,GA,FALSE_POSITIVE,,,Dentist and West Point GA alderman/mayor before Congress; no GA state legislature service.
+B001224,Cori Bush,MO,FALSE_POSITIVE,,,"Nurse, pastor, and BLM activist before Congress; no MO state legislature service."

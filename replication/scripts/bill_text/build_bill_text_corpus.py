@@ -20,7 +20,7 @@ folder that has all four of these plus the two raw cache folders):
     --state-sponsored    state_legislation_sponsored.csv   (BioguideId <-> DocId/BillId)
 
 OUTPUT:
-    data/processed/bill_text/{BioguideId}.jsonl -- one JSON object per line, e.g.:
+    replication/data/processed/bill_text/{BioguideId}.jsonl -- one JSON object per line, e.g.:
     {"Source": "Federal", "Congress": "116", "BillType": "hr", "BillNumber": "1234",
      "Title": "...", "IntroducedDate": "...", "Url": "...", "TextLength": 1234,
      "Text": "..."}
@@ -105,12 +105,12 @@ def read_text(base_dir, text_path):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--federal-manifest", default="federal_bill_text_manifest.csv")
-    ap.add_argument("--federal-sponsored", default="sponsored_legislation_final.csv")
+    ap.add_argument("--federal-sponsored", default="replication/data/processed/sponsored_legislation_final.csv")
     ap.add_argument("--state-manifest", default="bill_text_manifest.csv")
     ap.add_argument("--state-sponsored", default="state_legislation_sponsored.csv")
     ap.add_argument("--base-dir", default=".",
                      help="directory the manifests' TextPath columns are relative to")
-    ap.add_argument("--out-dir", default="data/processed/bill_text")
+    ap.add_argument("--out-dir", default="replication/data/processed/bill_text")
     ap.add_argument("--dry-run", action="store_true",
                      help="report join/match stats only, don't read text or write files")
     args = ap.parse_args()

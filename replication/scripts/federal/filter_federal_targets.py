@@ -14,7 +14,7 @@ legislators outside this study. This produces a correctly-scoped file
 first, no API calls involved.
 
 USAGE:
-    python3 filter_federal_targets.py sponsored_legislation_full.csv state_bill_targets.csv sponsored_legislation_final.csv
+    python3 replication/scripts/federal/filter_federal_targets.py sponsored_legislation_full.csv replication/data/targets/state_bill_targets.csv replication/data/processed/sponsored_legislation_final.csv
 """
 import csv
 import sys

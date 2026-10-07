@@ -106,7 +106,7 @@ def main():
             most_recent = max(sessions, key=lambda s: s.get("year_start", 0))
             ca_session_id = most_recent.get("session_id")
 
-    with open("legiscan_state_coverage.csv", "w", newline="", encoding="utf-8") as f:
+    with open("replication/data/reference/legiscan_state_coverage.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["State", "EarliestSessionYear", "LatestSessionYear",
                                            "NumSessions", "Status"])
         w.writeheader()

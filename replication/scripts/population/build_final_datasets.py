@@ -6,9 +6,9 @@ the Senate and House biographical source files, joined against
 billcount_FINAL.csv for federal sponsored-bill counts.
 
 INPUTS (relative paths, run from the repo root):
-    data/source/senate/senators_A.csv, senators_B.csv, senators_C.csv,
+    replication/data/source/senate/senators_A.csv, senators_B.csv, senators_C.csv,
         senate_batch2_completeness_gap.csv, senate_batch3_completeness_gap2.csv
-    data/source/house/house_batch1_group1.csv, ... (15 files, see HOUSE_FILES below;
+    replication/data/source/house/house_batch1_group1.csv, ... (15 files, see HOUSE_FILES below;
         the last two are the completeness-gap additions)
     billcount_FINAL.csv
 
@@ -75,10 +75,10 @@ def load_repair(f):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--senate-dir', default='data/source/senate')
-    ap.add_argument('--house-dir', default='data/source/house')
-    ap.add_argument('--billcount', default='billcount_FINAL.csv')
-    ap.add_argument('--out', default='person_level.csv')
+    ap.add_argument('--senate-dir', default='replication/data/source/senate')
+    ap.add_argument('--house-dir', default='replication/data/source/house')
+    ap.add_argument('--billcount', default='replication/data/population/billcount_FINAL.csv')
+    ap.add_argument('--out', default='replication/data/population/person_level.csv')
     args = ap.parse_args()
 
     for path, label in [(args.senate_dir, '--senate-dir'), (args.house_dir, '--house-dir')]:
