@@ -6,6 +6,7 @@ legiscan_dataset_cache/
 legiscan_billtext_cache/
 federal_billtext_cache/
 cdir_cache/
+cel_cache/
 *.zip
 
 # --- Truly raw/intermediate data: never committed ---

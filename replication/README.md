@@ -47,6 +47,16 @@ python3 replication/scripts/population/extract_veterans.py
 Congress.gov). Veteran status is flagged with keyword rules; cases the rules
 flag for review are decided in `replication/data/reference/veteran_review.csv`.
 
+**1b. Legislative effectiveness scores (Table 3; no API key needed)**
+
+```
+python3 replication/scripts/effectiveness/fetch_cel_scores.py      # ~23 MB into cel_cache/
+python3 replication/scripts/effectiveness/match_sles.py
+```
+
+`match_sles.py` links CEL's state scores to Bioguide IDs; cases it can't
+settle by rule are decided in `replication/data/reference/sles_review.csv`.
+
 **2. Federal (Congress.gov)**
 
 ```
@@ -89,7 +99,7 @@ Check each script's own header for options before running it.
 |---|---|
 | 1. State-to-federal legislators | step 1 (`person_level.csv`) |
 | 2. Demographics | step 1 (party, gender, race lists, Congressional Directory veteran status) |
-| 3. Effectiveness scores | Center for Effective Lawmaking downloads (not yet added) |
+| 3. Effectiveness scores | step 1b (Center for Effective Lawmaking LES and SLES) |
 | 4. State bill text | steps 3-4 |
 | 5. Federal bill text | steps 2, 4 |
 | 6. State bill topics | step 3, plus a topic-mapping method (not yet designed) |

@@ -38,7 +38,7 @@ TABLES = {
     2: ("table2_demographics",
         ["bioguide_id", "name", "gender", "veteran", "party", "race"]),
     3: ("table3_effectiveness_scores",  # one row per score; year = first calendar year it covers
-        ["bioguide_id", "name", "session", "year", "les", "level"]),
+        ["bioguide_id", "name", "session", "year", "les", "level", "chamber"]),
     4: ("table4_state_bill_text",
         ["bioguide_id", "name", "bill_id", "bill_name", "state_session", "congress", "year", "state",
          "bill_text"]),
@@ -148,8 +148,46 @@ def build_table2():
     return rows
 
 
+CEL_HOUSE = "cel_cache/CELHouse93to118Reduced-REVISED-06.26.2025.dta"
+CEL_SENATE = "cel_cache/CELSenate93to118Reduced.dta"
+CEL_STATES = "cel_cache/sles_all_50_states_202609.dta"
+SLES_MATCHES = "replication/data/processed/sles_matches.csv"
+
+
 def build_table3():
-    raise Pending("CEL LES/SLES data not downloaded yet (thelawmakers.org/data-download)")
+    """One row per score (decided 2026-10-06/07):
+    federal: Center for Effective Lawmaking LES Classic (1.0), 93rd-118th Congress, whole
+             career, joined on CEL's bioguide_id; session = Congress number,
+             year = first year of the Congress.
+    state:   CEL State Legislative Effectiveness Scores through 2025, linked to Bioguide IDs
+             by replication/scripts/effectiveness/match_sles.py; session = the state's
+             two-year term as CEL labels it (e.g. 2019-2020), year = its first year."""
+    for path in (CEL_HOUSE, CEL_SENATE, CEL_STATES, SLES_MATCHES):
+        if not os.path.exists(path):
+            raise Pending(f"{path} missing; run replication/scripts/effectiveness/ scripts first")
+    import pandas as pd
+
+    people = {p["BioguideId"]: p["Name"] for p in load_person_level()}
+    rows = []
+    for path, chamber in ((CEL_HOUSE, "House"), (CEL_SENATE, "Senate")):
+        les = pd.read_stata(path)
+        les = les[les.bioguide_id.isin(people)]
+        for r in les.itertuples():
+            rows.append([r.bioguide_id, people[r.bioguide_id], str(int(r.congress)), int(r.year),
+                         None if pd.isna(r.lesclassic) else round(float(r.lesclassic), 6), "Federal", chamber])
+
+    sles = pd.read_stata(CEL_STATES)
+    with open(SLES_MATCHES, newline="", encoding="utf-8") as f:
+        matches = [m for m in csv.DictReader(f) if m["status"] == "matched"]
+    for m in matches:
+        ids = [int(i) for i in m["sles_ids"].split(";")]
+        mine = sles[sles.sles_id.isin(ids) & sles.state.isin(m["state"].split(";"))]
+        for r in mine.itertuples():
+            rows.append([m["bioguide_id"], people[m["bioguide_id"]], r.term.replace("_", "-"),
+                         int(r.term[:4]), None if pd.isna(r.sles) else round(float(r.sles), 6), "State",
+                         "Upper" if r.chamber == "upper" else "Lower"])
+    rows.sort(key=lambda r: (r[0], r[3], r[5], r[6]))
+    return rows
 
 
 def build_table4():

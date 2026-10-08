@@ -14,7 +14,7 @@ published on Harvard Dataverse (link to come).
 |---|---|---|
 | 1 | `table1_state_to_federal` | Built: 1,017 rows |
 | 2 | `table2_demographics` | Built: 1,017 rows |
-| 3 | `table3_effectiveness_scores` | Pending |
+| 3 | `table3_effectiveness_scores` | Built: 8,138 scores for 1,014 people |
 | 4 | `table4_state_bill_text` | Pending (Dataverse) |
 | 5 | `table5_federal_bill_text` | Pending (Dataverse) |
 | 6 | `table6_state_bill_topics` | Pending |
@@ -44,10 +44,35 @@ from the Office of the House Historian's official lists; everyone else is
 `Not on House Historian lists`)
 
 **Table 3: Legislative effectiveness scores**
-`bioguide_id`, `name`, `session` (Congress or state legislative session),
-`year` (first calendar year the session covers), `les` (legislative
-effectiveness score), `level` (state or federal).
-One row per score. Source: Center for Effective Lawmaking (thelawmakers.org).
+One row per score. `bioguide_id`, `name`,
+`session` (federal: Congress number, e.g. `117`; state: the two-year term as
+CEL labels it, e.g. `2019-2020`), `year` (first calendar year of the
+session), `les` (the score), `level` (`Federal` or `State`), `chamber`
+(`House`/`Senate` for federal scores, `Upper`/`Lower` for state scores).
+
+Source: Center for Effective Lawmaking (thelawmakers.org).
+- Federal: LES Classic (LES 1.0), 93rd–118th Congress (1973–2024), every
+  Congress each person served in (including before 1979). Members first
+  seated in 2025 have no federal score yet. CEL's files have no score for
+  Sheila Frahm (Senate, June–Nov 1996) or Charles H. Wilson (D-CA, 1963–1981).
+- State: State Legislative Effectiveness Scores (SLES) through 2025. CEL's
+  coverage starts between 1989 and 2007 depending on the state, so 551 people
+  whose state service ended earlier have no state scores. CEL's state file has
+  no Bioguide IDs; scores were linked by state, last name, first name, and
+  years (see `replication/scripts/effectiveness/match_sles.py`), and 465
+  people matched.
+- Both scores are scaled so the average legislator in a chamber and session
+  scores 1, but they are computed separately for each body, so a state and a
+  federal score are not on a common scale.
+
+Please cite CEL's data if you use this table:
+Volden, Craig, and Alan E. Wiseman. 2014. *Legislative Effectiveness in the
+United States Congress: The Lawmakers*. New York: Cambridge University Press;
+updated at www.thelawmakers.org. Volden, Craig, and Alan E. Wiseman. 2018.
+"Legislative Effectiveness in the United States Senate." *Journal of
+Politics* 80(2): 731–735; updated at www.thelawmakers.org. Bucchianeri,
+Peter, Craig Volden, and Alan E. Wiseman. 2026. "State Legislative
+Effectiveness Scores Data set"; updated at www.thelawmakers.org.
 
 **Table 4: State bill text**
 `bioguide_id`, `name`, `bill_id`, `bill_name`, `state_session` (the state

@@ -66,6 +66,10 @@ is published here under that license, with attribution:
 > (https://creativecommons.org/licenses/by/4.0/). Retrieved via
 > https://legiscan.com.
 
+**Legislative effectiveness scores** (Table 3) come from the Center for
+Effective Lawmaking (thelawmakers.org) and are republished here with the
+citations CEL requests; see `datasets/README.md`.
+
 **This project's own code** (everything under `replication/`) is released
 under the MIT License -- see `LICENSE`. See `CITATION.cff` for how to cite
 this project.
