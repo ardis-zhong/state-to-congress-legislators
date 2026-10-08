@@ -61,14 +61,14 @@ settle by rule are decided in `replication/data/reference/sles_review.csv`.
 
 ```
 python3 replication/scripts/federal/fetch_all_sponsored_legislation.py --api-key "$CONGRESS_API_KEY"
+python3 replication/scripts/federal/fetch_all_sponsored_legislation.py --api-key "$CONGRESS_API_KEY" \
+    --queue replication/data/targets/extraction_queue_pending.csv \
+    --output sponsored_legislation_pending.csv --log fetch_log_pending.csv
 python3 replication/scripts/federal/gap_fill_missing_items.py "$CONGRESS_API_KEY"   # re-fetch people whose totals came up short (reads gapfill_targets.csv)
+python3 replication/scripts/federal/merge_sponsored_legislation.py  # combine + de-duplicate on (bioguide_id, url)
 python3 replication/scripts/federal/classify_status.py              # passed / failed status from latest action
 python3 replication/scripts/federal/fetch_federal_bill_text.py "$CONGRESS_API_KEY" replication/data/processed/sponsored_legislation_final.csv
 ```
-
-Not yet scripted: merging the gap-fill results into the main file and
-de-duplicating on `(bioguide_id, url)` to produce
-`sponsored_legislation_full_deduped.csv`, which `classify_status.py` reads.
 
 **3. State (LegiScan)**
 
@@ -103,4 +103,4 @@ Check each script's own header for options before running it.
 | 4. State bill text | steps 3-4 |
 | 5. Federal bill text | steps 2, 4 |
 | 6. State bill topics | step 3, plus a topic-mapping method (not yet designed) |
-| 7. Federal bill topics | step 2 |
+| 7. Federal bill topics | step 2 (all federal steps except the bill-text fetch) |

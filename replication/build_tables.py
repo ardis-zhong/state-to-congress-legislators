@@ -8,7 +8,8 @@ USAGE (run from the repo root):
     python3 replication/build_tables.py            # build every table that is ready
     python3 replication/build_tables.py 1 2        # build only tables 1 and 2
 
-Each table is written as CSV and as Stata .dta. All are keyed on bioguide_id.
+Each table is written as CSV (datasets/csv/) and as Stata .dta (datasets/dta/).
+All are keyed on bioguide_id.
 Tables 4 and 5 (full bill text) are too large for GitHub; they are gitignored
 here and published on Harvard Dataverse.
 
@@ -20,6 +21,7 @@ import csv
 import datetime
 import json
 import os
+import re
 import sys
 
 DATASETS_DIR = "datasets"
@@ -202,8 +204,45 @@ def build_table6():
     raise Pending("method for mapping state bills to Congress.gov topics not designed yet")
 
 
+FEDERAL_STATUS = "sponsored_legislation_full_status.csv"  # local; see replication/README.md step 2
+LAW_STATUSES = {"Became Law", "Became Law (Veto Overridden)"}
+
+
+def federal_passed(bill_type, status, latest_action):
+    """'Yes' if the measure became law or, for resolutions that never go to the President,
+    was adopted (decided 2026-10-07). Simple resolutions need one chamber; concurrent
+    resolutions need both, so an 'agreed to' must be the second chamber's vote."""
+    t = bill_type.upper()
+    if t in ("HR", "S", "HJRES", "SJRES"):
+        return "Yes" if status in LAW_STATUSES else "No"
+    if t in ("HRES", "SRES"):
+        return "Yes" if status == "Agreed To (Resolution)" else "No"
+    if t in ("HCONRES", "SCONRES"):
+        origin, other = ("House", "Senate") if t == "HCONRES" else ("Senate", "House")
+        adopted = status == "Agreed To (Resolution)" and re.search(
+            rf"agreed to in (the )?{other}|{other} agreed to|message on {other} action", latest_action, re.I)
+        return "Yes" if adopted else "No"
+    return "No"
+
+
 def build_table7():
-    raise Pending("federal sponsored-legislation fetch pending for the added people")
+    """One row per sponsored bill or resolution (amendments excluded: Congress.gov gives
+    them no title or policy area). topic = Congress.gov policy area (blank if none);
+    passed = became law / adopted; year = year introduced; congress = Congress number."""
+    if not os.path.exists(FEDERAL_STATUS):
+        raise Pending(f"{FEDERAL_STATUS} missing; run the federal steps in replication/README.md")
+    people = {p["BioguideId"]: p["Name"] for p in load_person_level()}
+    rows = []
+    with open(FEDERAL_STATUS, newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            if r["ItemCategory"] != "Bill/Resolution" or r["BioguideId"] not in people:
+                continue
+            rows.append([r["BioguideId"], people[r["BioguideId"]],
+                         f"{r['Congress']}-{r['Type'].upper()}-{r['Number']}", " ".join(r["Title"].split()),
+                         str(r["Congress"]), int(r["IntroducedDate"][:4]) if r["IntroducedDate"] else None,
+                         r["PolicyArea"], federal_passed(r["Type"], r["BillStatus"], r["LatestActionText"])])
+    rows.sort(key=lambda r: (r[0], int(r[4]), r[2]))
+    return rows
 
 
 BUILDERS = {1: build_table1, 2: build_table2, 3: build_table3, 4: build_table4,
@@ -214,9 +253,14 @@ def write(num, rows):
     import pandas as pd
     fname, cols = TABLES[num]
     df = pd.DataFrame(rows, columns=cols)
-    os.makedirs(DATASETS_DIR, exist_ok=True)
-    df.to_csv(os.path.join(DATASETS_DIR, fname + ".csv"), index=False)
-    df.to_stata(os.path.join(DATASETS_DIR, fname + ".dta"), write_index=False, version=118)
+    for fmt in ("csv", "dta"):
+        os.makedirs(os.path.join(DATASETS_DIR, fmt), exist_ok=True)
+    df.to_csv(os.path.join(DATASETS_DIR, "csv", fname + ".csv"), index=False)
+    # Long text (e.g. bill titles) as Stata strL; fixed-width str columns would pad every row
+    # to the longest value. Fixed timestamp so rebuilding unchanged data gives identical files.
+    long_text = [c for c in df.columns if df[c].dtype == object and df[c].astype(str).str.len().max() > 244]
+    df.to_stata(os.path.join(DATASETS_DIR, "dta", fname + ".dta"), write_index=False, version=118,
+                convert_strl=long_text, time_stamp=datetime.datetime(2026, 1, 1))
     return len(df)
 
 

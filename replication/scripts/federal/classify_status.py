@@ -52,8 +52,10 @@ BILL_RULES = [
         r"^measure passed senate\.?$|^passed senate\b|"
         r"in the senate.{0,60}(read the third time,? and passed|"
         r"considered.{0,10}read the third time.{0,10}passed)", re.I)),
+    # "Disagreed to in Senate" contains "agreed to in Senate": check it first
+    ("Failed/Rejected", re.compile(r"\bdisagreed to\b", re.I)),
     ("Agreed To (Resolution)", re.compile(
-        r"agreed to in (house|senate)|"
+        r"(?<!dis)agreed to in (house|senate)|"
         r"^submitted in the senate, considered, and agreed to", re.I)),
     ("Failed/Rejected", re.compile(
         r"failed of passage|failed by (recorded|yea-nay|voice) vote|"
