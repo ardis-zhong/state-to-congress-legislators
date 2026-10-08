@@ -38,7 +38,14 @@ run can resume without re-fetching.
 ```
 python3 replication/scripts/population/build_final_datasets.py
 python3 replication/scripts/population/fetch_legislator_party_gender.py
+python3 replication/scripts/population/fetch_race_lists.py
+python3 replication/scripts/population/fetch_congressional_directory.py --api-key "$CONGRESS_API_KEY"   # ~1.9 GB into cdir_cache/
+python3 replication/scripts/population/extract_veterans.py
 ```
+
+`fetch_congressional_directory.py` uses an api.data.gov key (the same key as
+Congress.gov). Veteran status is flagged with keyword rules; cases the rules
+flag for review are decided in `replication/data/reference/veteran_review.csv`.
 
 **2. Federal (Congress.gov)**
 
@@ -81,7 +88,7 @@ Check each script's own header for options before running it.
 | Table | Built from |
 |---|---|
 | 1. State-to-federal legislators | step 1 (`person_level.csv`) |
-| 2. Demographics | step 1 (party, gender); veteran and race sources not yet chosen |
+| 2. Demographics | step 1 (party, gender, race lists, Congressional Directory veteran status) |
 | 3. Effectiveness scores | Center for Effective Lawmaking downloads (not yet added) |
 | 4. State bill text | steps 3-4 |
 | 5. Federal bill text | steps 2, 4 |

@@ -13,7 +13,7 @@ published on Harvard Dataverse (link to come).
 | # | File | Status |
 |---|---|---|
 | 1 | `table1_state_to_federal` | Built: 1,017 rows |
-| 2 | `table2_demographics` | Pending |
+| 2 | `table2_demographics` | Built: 1,017 rows |
 | 3 | `table3_effectiveness_scores` | Pending |
 | 4 | `table4_state_bill_text` | Pending (Dataverse) |
 | 5 | `table5_federal_bill_text` | Pending (Dataverse) |
@@ -31,7 +31,17 @@ are merged, e.g. `1963-1981` or `1961-1969 (House); 1969-1987 (Senate)`),
 `federal_chamber` (`House`, `Senate`, or `Both`, over the whole career)
 
 **Table 2: Legislator demographics**
-`bioguide_id`, `name`, `gender`, `veteran`, `party` (political affiliation), `race`
+One row per legislator. `bioguide_id`, `name`,
+`gender` (`Male`/`Female`, from the congress-legislators records),
+`veteran` (`Yes` = any military service, including Reserves and National
+Guard; `No` = biography found, no service mentioned; `Not found` = no
+biography available, mostly members whose service since 1979 ended by 1993.
+Source: member biographies in the official Congressional Directory, every
+edition 1979–2026, via GovInfo),
+`party` (most recent party in Congress, from the congress-legislators records),
+`race` (`Black`, `Hispanic`, `Asian or Pacific Islander`, or a combination,
+from the Office of the House Historian's official lists; everyone else is
+`Not on House Historian lists`)
 
 **Table 3: Legislative effectiveness scores**
 `bioguide_id`, `name`, `session` (Congress or state legislative session),

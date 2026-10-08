@@ -1,0 +1,2404 @@
+list,congress,name,state,party,chamber,bioguide_id
+Black,41,"LONG, Jefferson Franklin",GA,Republican,House,L000419
+Black,41,"RAINEY, Joseph Hayne",SC,Republican,House,R000016
+Black,41,"REVELS, Hiram Rhodes",MS,Republican,Senate,R000166
+Black,42,"DE LARGE, Robert Carlos",SC,Republican,House,D000208
+Black,42,"ELLIOTT, Robert Brown",SC,Republican,House,E000128
+Black,42,"RAINEY, Joseph Hayne",SC,Republican,House,R000016
+Black,42,"TURNER, Benjamin Sterling",AL,Republican,House,T000414
+Black,42,"WALLS, Josiah Thomas",FL,Republican,House,W000093
+Black,43,"CAIN, Richard Harvey",SC,Republican,House,C000022
+Black,43,"ELLIOTT, Robert Brown",SC,Republican,House,E000128
+Black,43,"LYNCH, John Roy",MS,Republican,House,L000533
+Black,43,"RAINEY, Joseph Hayne",SC,Republican,House,R000016
+Black,43,"RANSIER, Alonzo Jacob",SC,Republican,House,R000060
+Black,43,"RAPIER, James Thomas",AL,Republican,House,R000064
+Black,43,"WALLS, Josiah Thomas",FL,Republican,House,W000093
+Black,44,"BRUCE, Blanche Kelso",MS,Republican,Senate,B000968
+Black,44,"HARALSON, Jeremiah",AL,Republican,House,H000179
+Black,44,"HYMAN, John Adams",NC,Republican,House,H001025
+Black,44,"LYNCH, John Roy",MS,Republican,House,L000533
+Black,44,"NASH, Charles Edmund",LA,Republican,House,N000008
+Black,44,"RAINEY, Joseph Hayne",SC,Republican,House,R000016
+Black,44,"SMALLS, Robert",SC,Republican,House,S000502
+Black,44,"WALLS, Josiah Thomas",FL,Republican,House,W000093
+Black,45,"BRUCE, Blanche Kelso",MS,Republican,Senate,B000968
+Black,45,"CAIN, Richard Harvey",SC,Republican,House,C000022
+Black,45,"RAINEY, Joseph Hayne",SC,Republican,House,R000016
+Black,45,"SMALLS, Robert",SC,Republican,House,S000502
+Black,46,"BRUCE, Blanche Kelso",MS,Republican,Senate,B000968
+Black,47,"LYNCH, John Roy",MS,Republican,House,L000533
+Black,47,"SMALLS, Robert",SC,Republican,House,S000502
+Black,48,"O'HARA, James Edward",NC,Republican,House,O000054
+Black,48,"SMALLS, Robert",SC,Republican,House,S000502
+Black,49,"O'HARA, James Edward",NC,Republican,House,O000054
+Black,49,"SMALLS, Robert",SC,Republican,House,S000502
+Black,51,"CHEATHAM, Henry Plummer",NC,Republican,House,C000340
+Black,51,"LANGSTON, John Mercer",VA,Republican,House,L000074
+Black,51,"MILLER, Thomas Ezekiel",SC,Republican,House,M000757
+Black,52,"CHEATHAM, Henry Plummer",NC,Republican,House,C000340
+Black,53,"MURRAY, George Washington",SC,Republican,House,M001106
+Black,54,"MURRAY, George Washington",SC,Republican,House,M001106
+Black,55,"WHITE, George Henry",NC,Republican,House,W000372
+Black,56,"WHITE, George Henry",NC,Republican,House,W000372
+Black,71,"DE PRIEST, Oscar Stanton",IL,Republican,House,D000263
+Black,72,"DE PRIEST, Oscar Stanton",IL,Republican,House,D000263
+Black,73,"DE PRIEST, Oscar Stanton",IL,Republican,House,D000263
+Black,74,"MITCHELL, Arthur Wergs",IL,Democrat,House,M000805
+Black,75,"MITCHELL, Arthur Wergs",IL,Democrat,House,M000805
+Black,76,"MITCHELL, Arthur Wergs",IL,Democrat,House,M000805
+Black,77,"MITCHELL, Arthur Wergs",IL,Democrat,House,M000805
+Black,78,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,79,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,79,"POWELL, Adam Clayton, Jr.",NY,Democrat,House,P000477
+Black,80,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,80,"POWELL, Adam Clayton, Jr.",NY,Democrat,House,P000477
+Black,81,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,81,"POWELL, Adam Clayton, Jr.",NY,Democrat,House,P000477
+Black,82,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,82,"POWELL, Adam Clayton, Jr.",NY,Democrat,House,P000477
+Black,83,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,83,"POWELL, Adam Clayton, Jr.",NY,Democrat,House,P000477
+Black,84,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,84,"DIGGS, Charles Coles, Jr.",MI,Democrat,House,D000344
+Black,84,"POWELL, Adam Clayton, Jr.",NY,Democrat,House,P000477
+Black,85,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,85,"DIGGS, Charles Coles, Jr.",MI,Democrat,House,D000344
+Black,85,"NIX, Robert Nelson Cornelius, Sr.",PA,Democrat,House,N000113
+Black,85,"POWELL, Adam Clayton, Jr.",NY,Democrat,House,P000477
+Black,86,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,86,"DIGGS, Charles Coles, Jr.",MI,Democrat,House,D000344
+Black,86,"NIX, Robert Nelson Cornelius, Sr.",PA,Democrat,House,N000113
+Black,86,"POWELL, Adam Clayton, Jr.",NY,Democrat,House,P000477
+Black,87,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,87,"DIGGS, Charles Coles, Jr.",MI,Democrat,House,D000344
+Black,87,"NIX, Robert Nelson Cornelius, Sr.",PA,Democrat,House,N000113
+Black,87,"POWELL, Adam Clayton, Jr.",NY,Democrat,House,P000477
+Black,88,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,88,"DIGGS, Charles Coles, Jr.",MI,Democrat,House,D000344
+Black,88,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,88,"NIX, Robert Nelson Cornelius, Sr.",PA,Democrat,House,N000113
+Black,88,"POWELL, Adam Clayton, Jr.",NY,Democrat,House,P000477
+Black,89,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,89,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,89,"DIGGS, Charles Coles, Jr.",MI,Democrat,House,D000344
+Black,89,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,89,"NIX, Robert Nelson Cornelius, Sr.",PA,Democrat,House,N000113
+Black,89,"POWELL, Adam Clayton, Jr.",NY,Democrat,House,P000477
+Black,90,"BROOKE, Edward William, III",MA,Republican,Senate,B000871
+Black,90,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,90,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,90,"DIGGS, Charles Coles, Jr.",MI,Democrat,House,D000344
+Black,90,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,90,"NIX, Robert Nelson Cornelius, Sr.",PA,Democrat,House,N000113
+Black,91,"BROOKE, Edward William, III",MA,Republican,Senate,B000871
+Black,91,"CHISHOLM, Shirley Anita",NY,Democrat,House,C000371
+Black,91,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,91,"COLLINS, George Washington",IL,Democrat,House,C000637
+Black,91,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,91,"DAWSON, William Levi",IL,Democrat,House,D000158
+Black,91,"DIGGS, Charles Coles, Jr.",MI,Democrat,House,D000344
+Black,91,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,91,"NIX, Robert Nelson Cornelius, Sr.",PA,Democrat,House,N000113
+Black,91,"POWELL, Adam Clayton, Jr.",NY,Democrat,House,P000477
+Black,91,"STOKES, Louis",OH,Democrat,House,S000948
+Black,92,"BROOKE, Edward William, III",MA,Republican,Senate,B000871
+Black,92,"CHISHOLM, Shirley Anita",NY,Democrat,House,C000371
+Black,92,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,92,"COLLINS, George Washington",IL,Democrat,House,C000637
+Black,92,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,92,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,92,"DIGGS, Charles Coles, Jr.",MI,Democrat,House,D000344
+Black,92,"FAUNTROY, Walter Edward",DC,Democrat,House,F000046
+Black,92,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,92,"METCALFE, Ralph Harold",IL,Democrat,House,M000675
+Black,92,"MITCHELL, Parren James",MD,Democrat,House,M000826
+Black,92,"NIX, Robert Nelson Cornelius, Sr.",PA,Democrat,House,N000113
+Black,92,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,92,"STOKES, Louis",OH,Democrat,House,S000948
+Black,93,"BROOKE, Edward William, III",MA,Republican,Senate,B000871
+Black,93,"BURKE, Yvonne Brathwaite",CA,Democrat,House,B001102
+Black,93,"CHISHOLM, Shirley Anita",NY,Democrat,House,C000371
+Black,93,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,93,"COLLINS, Cardiss",IL,Democrat,House,C000634
+Black,93,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,93,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,93,"DIGGS, Charles Coles, Jr.",MI,Democrat,House,D000344
+Black,93,"FAUNTROY, Walter Edward",DC,Democrat,House,F000046
+Black,93,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,93,"JORDAN, Barbara Charline",TX,Democrat,House,J000266
+Black,93,"METCALFE, Ralph Harold",IL,Democrat,House,M000675
+Black,93,"MITCHELL, Parren James",MD,Democrat,House,M000826
+Black,93,"NIX, Robert Nelson Cornelius, Sr.",PA,Democrat,House,N000113
+Black,93,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,93,"STOKES, Louis",OH,Democrat,House,S000948
+Black,93,"YOUNG, Andrew Jackson, Jr.",GA,Democrat,House,Y000028
+Black,94,"BROOKE, Edward William, III",MA,Republican,Senate,B000871
+Black,94,"BURKE, Yvonne Brathwaite",CA,Democrat,House,B001102
+Black,94,"CHISHOLM, Shirley Anita",NY,Democrat,House,C000371
+Black,94,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,94,"COLLINS, Cardiss",IL,Democrat,House,C000634
+Black,94,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,94,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,94,"DIGGS, Charles Coles, Jr.",MI,Democrat,House,D000344
+Black,94,"FAUNTROY, Walter Edward",DC,Democrat,House,F000046
+Black,94,"FORD, Harold Eugene",TN,Democrat,House,F000261
+Black,94,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,94,"JORDAN, Barbara Charline",TX,Democrat,House,J000266
+Black,94,"METCALFE, Ralph Harold",IL,Democrat,House,M000675
+Black,94,"MITCHELL, Parren James",MD,Democrat,House,M000826
+Black,94,"NIX, Robert Nelson Cornelius, Sr.",PA,Democrat,House,N000113
+Black,94,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,94,"STOKES, Louis",OH,Democrat,House,S000948
+Black,94,"YOUNG, Andrew Jackson, Jr.",GA,Democrat,House,Y000028
+Black,95,"BROOKE, Edward William, III",MA,Republican,Senate,B000871
+Black,95,"BURKE, Yvonne Brathwaite",CA,Democrat,House,B001102
+Black,95,"CHISHOLM, Shirley Anita",NY,Democrat,House,C000371
+Black,95,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,95,"COLLINS, Cardiss",IL,Democrat,House,C000634
+Black,95,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,95,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,95,"DIGGS, Charles Coles, Jr.",MI,Democrat,House,D000344
+Black,95,"FAUNTROY, Walter Edward",DC,Democrat,House,F000046
+Black,95,"FORD, Harold Eugene",TN,Democrat,House,F000261
+Black,95,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,95,"JORDAN, Barbara Charline",TX,Democrat,House,J000266
+Black,95,"METCALFE, Ralph Harold",IL,Democrat,House,M000675
+Black,95,"MITCHELL, Parren James",MD,Democrat,House,M000826
+Black,95,"NIX, Robert Nelson Cornelius, Sr.",PA,Democrat,House,N000113
+Black,95,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,95,"STOKES, Louis",OH,Democrat,House,S000948
+Black,95,"YOUNG, Andrew Jackson, Jr.",GA,Democrat,House,Y000028
+Black,96,"CHISHOLM, Shirley Anita",NY,Democrat,House,C000371
+Black,96,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,96,"COLLINS, Cardiss",IL,Democrat,House,C000634
+Black,96,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,96,"CROCKETT, George William, Jr.",MI,Democrat,House,C000919
+Black,96,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,96,"DIGGS, Charles Coles, Jr.",MI,Democrat,House,D000344
+Black,96,"DIXON, Julian Carey",CA,Democrat,House,D000373
+Black,96,"EVANS, Melvin Herbert",VI,Republican,House,E000254
+Black,96,"FAUNTROY, Walter Edward",DC,Democrat,House,F000046
+Black,96,"FORD, Harold Eugene",TN,Democrat,House,F000261
+Black,96,"GRAY, William Herbert, III",PA,Democrat,House,G000402
+Black,96,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,96,"LELAND, George Thomas (Mickey)",TX,Democrat,House,L000237
+Black,96,"MITCHELL, Parren James",MD,Democrat,House,M000826
+Black,96,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,96,"STEWART, Bennett McVey",IL,Democrat,House,S000902
+Black,96,"STOKES, Louis",OH,Democrat,House,S000948
+Black,97,"CHISHOLM, Shirley Anita",NY,Democrat,House,C000371
+Black,97,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,97,"COLLINS, Cardiss",IL,Democrat,House,C000634
+Black,97,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,97,"CROCKETT, George William, Jr.",MI,Democrat,House,C000919
+Black,97,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,97,"DIXON, Julian Carey",CA,Democrat,House,D000373
+Black,97,"DYMALLY, Mervyn Malcolm",CA,Democrat,House,D000592
+Black,97,"FAUNTROY, Walter Edward",DC,Democrat,House,F000046
+Black,97,"FORD, Harold Eugene",TN,Democrat,House,F000261
+Black,97,"GRAY, William Herbert, III",PA,Democrat,House,G000402
+Black,97,"HALL, Katie Beatrice",IN,Democrat,House,H000058
+Black,97,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,97,"LELAND, George Thomas (Mickey)",TX,Democrat,House,L000237
+Black,97,"MITCHELL, Parren James",MD,Democrat,House,M000826
+Black,97,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,97,"SAVAGE, Gus",IL,Democrat,House,S000081
+Black,97,"STOKES, Louis",OH,Democrat,House,S000948
+Black,97,"WASHINGTON, Harold",IL,Democrat,House,W000180
+Black,98,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,98,"COLLINS, Cardiss",IL,Democrat,House,C000634
+Black,98,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,98,"CROCKETT, George William, Jr.",MI,Democrat,House,C000919
+Black,98,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,98,"DIXON, Julian Carey",CA,Democrat,House,D000373
+Black,98,"DYMALLY, Mervyn Malcolm",CA,Democrat,House,D000592
+Black,98,"FAUNTROY, Walter Edward",DC,Democrat,House,F000046
+Black,98,"FORD, Harold Eugene",TN,Democrat,House,F000261
+Black,98,"GRAY, William Herbert, III",PA,Democrat,House,G000402
+Black,98,"HALL, Katie Beatrice",IN,Democrat,House,H000058
+Black,98,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,98,"HAYES, Charles Arthur",IL,Democrat,House,H000388
+Black,98,"LELAND, George Thomas (Mickey)",TX,Democrat,House,L000237
+Black,98,"MITCHELL, Parren James",MD,Democrat,House,M000826
+Black,98,"OWENS, Major Robert Odell",NY,Democrat,House,O000159
+Black,98,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,98,"SAVAGE, Gus",IL,Democrat,House,S000081
+Black,98,"STOKES, Louis",OH,Democrat,House,S000948
+Black,98,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,98,"WASHINGTON, Harold",IL,Democrat,House,W000180
+Black,98,"WHEAT, Alan Dupree",MO,Democrat,House,W000326
+Black,99,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,99,"COLLINS, Cardiss",IL,Democrat,House,C000634
+Black,99,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,99,"CROCKETT, George William, Jr.",MI,Democrat,House,C000919
+Black,99,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,99,"DIXON, Julian Carey",CA,Democrat,House,D000373
+Black,99,"DYMALLY, Mervyn Malcolm",CA,Democrat,House,D000592
+Black,99,"FAUNTROY, Walter Edward",DC,Democrat,House,F000046
+Black,99,"FORD, Harold Eugene",TN,Democrat,House,F000261
+Black,99,"GRAY, William Herbert, III",PA,Democrat,House,G000402
+Black,99,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,99,"HAYES, Charles Arthur",IL,Democrat,House,H000388
+Black,99,"LELAND, George Thomas (Mickey)",TX,Democrat,House,L000237
+Black,99,"MITCHELL, Parren James",MD,Democrat,House,M000826
+Black,99,"OWENS, Major Robert Odell",NY,Democrat,House,O000159
+Black,99,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,99,"SAVAGE, Gus",IL,Democrat,House,S000081
+Black,99,"STOKES, Louis",OH,Democrat,House,S000948
+Black,99,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,99,"WALDON, Alton R., Jr.",NY,Democrat,House,W000038
+Black,99,"WHEAT, Alan Dupree",MO,Democrat,House,W000326
+Black,100,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,100,"COLLINS, Cardiss",IL,Democrat,House,C000634
+Black,100,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,100,"CROCKETT, George William, Jr.",MI,Democrat,House,C000919
+Black,100,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,100,"DIXON, Julian Carey",CA,Democrat,House,D000373
+Black,100,"DYMALLY, Mervyn Malcolm",CA,Democrat,House,D000592
+Black,100,"ESPY, Alphonso Michael (Mike)",MS,Democrat,House,E000218
+Black,100,"FAUNTROY, Walter Edward",DC,Democrat,House,F000046
+Black,100,"FLAKE, Floyd Harold",NY,Democrat,House,F000184
+Black,100,"FORD, Harold Eugene",TN,Democrat,House,F000261
+Black,100,"GRAY, William Herbert, III",PA,Democrat,House,G000402
+Black,100,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,100,"HAYES, Charles Arthur",IL,Democrat,House,H000388
+Black,100,"LELAND, George Thomas (Mickey)",TX,Democrat,House,L000237
+Black,100,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,100,"MFUME, Kweisi",MD,Democrat,House,M000687
+Black,100,"OWENS, Major Robert Odell",NY,Democrat,House,O000159
+Black,100,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,100,"SAVAGE, Gus",IL,Democrat,House,S000081
+Black,100,"STOKES, Louis",OH,Democrat,House,S000948
+Black,100,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,100,"WHEAT, Alan Dupree",MO,Democrat,House,W000326
+Black,101,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,101,"COLLINS, Cardiss",IL,Democrat,House,C000634
+Black,101,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,101,"CROCKETT, George William, Jr.",MI,Democrat,House,C000919
+Black,101,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,101,"DIXON, Julian Carey",CA,Democrat,House,D000373
+Black,101,"DYMALLY, Mervyn Malcolm",CA,Democrat,House,D000592
+Black,101,"ESPY, Alphonso Michael (Mike)",MS,Democrat,House,E000218
+Black,101,"FAUNTROY, Walter Edward",DC,Democrat,House,F000046
+Black,101,"FLAKE, Floyd Harold",NY,Democrat,House,F000184
+Black,101,"FORD, Harold Eugene",TN,Democrat,House,F000261
+Black,101,"GRAY, William Herbert, III",PA,Democrat,House,G000402
+Black,101,"HAWKINS, Augustus Freeman (Gus)",CA,Democrat,House,H000367
+Black,101,"HAYES, Charles Arthur",IL,Democrat,House,H000388
+Black,101,"LELAND, George Thomas (Mickey)",TX,Democrat,House,L000237
+Black,101,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,101,"MFUME, Kweisi",MD,Democrat,House,M000687
+Black,101,"OWENS, Major Robert Odell",NY,Democrat,House,O000159
+Black,101,"PAYNE, Donald Milford",NJ,Democrat,House,P000149
+Black,101,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,101,"SAVAGE, Gus",IL,Democrat,House,S000081
+Black,101,"STOKES, Louis",OH,Democrat,House,S000948
+Black,101,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,101,"WASHINGTON, Craig Anthony",TX,Democrat,House,W000177
+Black,101,"WHEAT, Alan Dupree",MO,Democrat,House,W000326
+Black,102,"BLACKWELL, Lucien Edward",PA,Democrat,House,B000517
+Black,102,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,102,"CLAYTON, Eva M.",NC,Democrat,House,C000494
+Black,102,"COLLINS, Barbara-Rose",MI,Democrat,House,C000633
+Black,102,"COLLINS, Cardiss",IL,Democrat,House,C000634
+Black,102,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,102,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,102,"DIXON, Julian Carey",CA,Democrat,House,D000373
+Black,102,"DYMALLY, Mervyn Malcolm",CA,Democrat,House,D000592
+Black,102,"ESPY, Alphonso Michael (Mike)",MS,Democrat,House,E000218
+Black,102,"FLAKE, Floyd Harold",NY,Democrat,House,F000184
+Black,102,"FORD, Harold Eugene",TN,Democrat,House,F000261
+Black,102,"FRANKS, Gary A.",CT,Republican,House,F000348
+Black,102,"GRAY, William Herbert, III",PA,Democrat,House,G000402
+Black,102,"HAYES, Charles Arthur",IL,Democrat,House,H000388
+Black,102,"JEFFERSON, William Jennings",LA,Democrat,House,J000070
+Black,102,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,102,"MFUME, Kweisi",MD,Democrat,House,M000687
+Black,102,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,102,"OWENS, Major Robert Odell",NY,Democrat,House,O000159
+Black,102,"PAYNE, Donald Milford",NJ,Democrat,House,P000149
+Black,102,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,102,"SAVAGE, Gus",IL,Democrat,House,S000081
+Black,102,"STOKES, Louis",OH,Democrat,House,S000948
+Black,102,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,102,"WASHINGTON, Craig Anthony",TX,Democrat,House,W000177
+Black,102,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,102,"WHEAT, Alan Dupree",MO,Democrat,House,W000326
+Black,103,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,103,"BLACKWELL, Lucien Edward",PA,Democrat,House,B000517
+Black,103,"BROWN, Corrine",FL,Democrat,House,B000911
+Black,103,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,103,"CLAYTON, Eva M.",NC,Democrat,House,C000494
+Black,103,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,103,"COLLINS, Barbara-Rose",MI,Democrat,House,C000633
+Black,103,"COLLINS, Cardiss",IL,Democrat,House,C000634
+Black,103,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,103,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,103,"DIXON, Julian Carey",CA,Democrat,House,D000373
+Black,103,"ESPY, Alphonso Michael (Mike)",MS,Democrat,House,E000218
+Black,103,"FIELDS, Cleo",LA,Democrat,House,F000110
+Black,103,"FLAKE, Floyd Harold",NY,Democrat,House,F000184
+Black,103,"FORD, Harold Eugene",TN,Democrat,House,F000261
+Black,103,"FRANKS, Gary A.",CT,Republican,House,F000348
+Black,103,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,103,"HILLIARD, Earl Frederick",AL,Democrat,House,H000621
+Black,103,"JEFFERSON, William Jennings",LA,Democrat,House,J000070
+Black,103,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,103,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,103,"MCKINNEY, Cynthia Ann",GA,Democrat,House,M000523
+Black,103,"MEEK, Carrie P.",FL,Democrat,House,M000628
+Black,103,"MFUME, Kweisi",MD,Democrat,House,M000687
+Black,103,"MOSELEY BRAUN, Carol",IL,Democrat,Senate,M001025
+Black,103,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,103,"OWENS, Major Robert Odell",NY,Democrat,House,O000159
+Black,103,"PAYNE, Donald Milford",NJ,Democrat,House,P000149
+Black,103,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,103,"REYNOLDS, Mel",IL,Democrat,House,R000178
+Black,103,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,103,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,103,"STOKES, Louis",OH,Democrat,House,S000948
+Black,103,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,103,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,103,"TUCKER, Walter R., III",CA,Democrat,House,T000405
+Black,103,"WASHINGTON, Craig Anthony",TX,Democrat,House,W000177
+Black,103,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,103,"WATT, Melvin L.",NC,Democrat,House,W000207
+Black,103,"WHEAT, Alan Dupree",MO,Democrat,House,W000326
+Black,103,"WYNN, Albert Russell",MD,Democrat,House,W000784
+Black,104,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,104,"BROWN, Corrine",FL,Democrat,House,B000911
+Black,104,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,104,"CLAYTON, Eva M.",NC,Democrat,House,C000494
+Black,104,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,104,"COLLINS, Barbara-Rose",MI,Democrat,House,C000633
+Black,104,"COLLINS, Cardiss",IL,Democrat,House,C000634
+Black,104,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,104,"CUMMINGS, Elijah Eugene",MD,Democrat,House,C000984
+Black,104,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,104,"DIXON, Julian Carey",CA,Democrat,House,D000373
+Black,104,"FATTAH, Chaka",PA,Democrat,House,F000043
+Black,104,"FIELDS, Cleo",LA,Democrat,House,F000110
+Black,104,"FLAKE, Floyd Harold",NY,Democrat,House,F000184
+Black,104,"FORD, Harold Eugene",TN,Democrat,House,F000261
+Black,104,"FRANKS, Gary A.",CT,Republican,House,F000348
+Black,104,"FRAZER, Victor O.",VI,Independent,House,F000351
+Black,104,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,104,"HILLIARD, Earl Frederick",AL,Democrat,House,H000621
+Black,104,"JACKSON, Jesse L., Jr.",IL,Democrat,House,J000283
+Black,104,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,104,"JEFFERSON, William Jennings",LA,Democrat,House,J000070
+Black,104,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,104,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,104,"MCKINNEY, Cynthia Ann",GA,Democrat,House,M000523
+Black,104,"MEEK, Carrie P.",FL,Democrat,House,M000628
+Black,104,"MFUME, Kweisi",MD,Democrat,House,M000687
+Black,104,"MILLENDER-MCDONALD, Juanita",CA,Democrat,House,M000714
+Black,104,"MOSELEY BRAUN, Carol",IL,Democrat,Senate,M001025
+Black,104,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,104,"OWENS, Major Robert Odell",NY,Democrat,House,O000159
+Black,104,"PAYNE, Donald Milford",NJ,Democrat,House,P000149
+Black,104,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,104,"REYNOLDS, Mel",IL,Democrat,House,R000178
+Black,104,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,104,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,104,"STOKES, Louis",OH,Democrat,House,S000948
+Black,104,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,104,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,104,"TUCKER, Walter R., III",CA,Democrat,House,T000405
+Black,104,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,104,"WATT, Melvin L.",NC,Democrat,House,W000207
+Black,104,"WATTS, Julius Caesar, Jr. (J. C.)",OK,Republican,House,W000210
+Black,104,"WYNN, Albert Russell",MD,Democrat,House,W000784
+Black,105,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,105,"BROWN, Corrine",FL,Democrat,House,B000911
+Black,105,"CARSON, Julia May",IN,Democrat,House,C000191
+Black,105,"CHRISTENSEN, Donna Marie",VI,Democrat,House,C000380
+Black,105,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,105,"CLAYTON, Eva M.",NC,Democrat,House,C000494
+Black,105,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,105,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,105,"CUMMINGS, Elijah Eugene",MD,Democrat,House,C000984
+Black,105,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,105,"DELLUMS, Ronald V.",CA,Democrat,House,D000222
+Black,105,"DIXON, Julian Carey",CA,Democrat,House,D000373
+Black,105,"FATTAH, Chaka",PA,Democrat,House,F000043
+Black,105,"FLAKE, Floyd Harold",NY,Democrat,House,F000184
+Black,105,"FORD, Harold, Jr.",TN,Democrat,House,F000262
+Black,105,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,105,"HILLIARD, Earl Frederick",AL,Democrat,House,H000621
+Black,105,"JACKSON, Jesse L., Jr.",IL,Democrat,House,J000283
+Black,105,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,105,"JEFFERSON, William Jennings",LA,Democrat,House,J000070
+Black,105,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,105,"KILPATRICK, Carolyn Cheeks",MI,Democrat,House,K000180
+Black,105,"LEE, Barbara",CA,Democrat,House,L000551
+Black,105,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,105,"MCKINNEY, Cynthia Ann",GA,Democrat,House,M000523
+Black,105,"MEEK, Carrie P.",FL,Democrat,House,M000628
+Black,105,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,105,"MILLENDER-MCDONALD, Juanita",CA,Democrat,House,M000714
+Black,105,"MOSELEY BRAUN, Carol",IL,Democrat,Senate,M001025
+Black,105,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,105,"OWENS, Major Robert Odell",NY,Democrat,House,O000159
+Black,105,"PAYNE, Donald Milford",NJ,Democrat,House,P000149
+Black,105,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,105,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,105,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,105,"STOKES, Louis",OH,Democrat,House,S000948
+Black,105,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,105,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,105,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,105,"WATT, Melvin L.",NC,Democrat,House,W000207
+Black,105,"WATTS, Julius Caesar, Jr. (J. C.)",OK,Republican,House,W000210
+Black,105,"WYNN, Albert Russell",MD,Democrat,House,W000784
+Black,106,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,106,"BROWN, Corrine",FL,Democrat,House,B000911
+Black,106,"CARSON, Julia May",IN,Democrat,House,C000191
+Black,106,"CHRISTENSEN, Donna Marie",VI,Democrat,House,C000380
+Black,106,"CLAY, William Lacy, Sr.",MO,Democrat,House,C000488
+Black,106,"CLAYTON, Eva M.",NC,Democrat,House,C000494
+Black,106,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,106,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,106,"CUMMINGS, Elijah Eugene",MD,Democrat,House,C000984
+Black,106,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,106,"DIXON, Julian Carey",CA,Democrat,House,D000373
+Black,106,"FATTAH, Chaka",PA,Democrat,House,F000043
+Black,106,"FORD, Harold, Jr.",TN,Democrat,House,F000262
+Black,106,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,106,"HILLIARD, Earl Frederick",AL,Democrat,House,H000621
+Black,106,"JACKSON, Jesse L., Jr.",IL,Democrat,House,J000283
+Black,106,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,106,"JEFFERSON, William Jennings",LA,Democrat,House,J000070
+Black,106,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,106,"JONES, Stephanie Tubbs",OH,Democrat,House,J000284
+Black,106,"KILPATRICK, Carolyn Cheeks",MI,Democrat,House,K000180
+Black,106,"LEE, Barbara",CA,Democrat,House,L000551
+Black,106,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,106,"MCKINNEY, Cynthia Ann",GA,Democrat,House,M000523
+Black,106,"MEEK, Carrie P.",FL,Democrat,House,M000628
+Black,106,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,106,"MILLENDER-MCDONALD, Juanita",CA,Democrat,House,M000714
+Black,106,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,106,"OWENS, Major Robert Odell",NY,Democrat,House,O000159
+Black,106,"PAYNE, Donald Milford",NJ,Democrat,House,P000149
+Black,106,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,106,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,106,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,106,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,106,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,106,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,106,"WATT, Melvin L.",NC,Democrat,House,W000207
+Black,106,"WATTS, Julius Caesar, Jr. (J. C.)",OK,Republican,House,W000210
+Black,106,"WYNN, Albert Russell",MD,Democrat,House,W000784
+Black,107,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,107,"BROWN, Corrine",FL,Democrat,House,B000911
+Black,107,"CARSON, Julia May",IN,Democrat,House,C000191
+Black,107,"CHRISTENSEN, Donna Marie",VI,Democrat,House,C000380
+Black,107,"CLAY, William Lacy, Jr.",MO,Democrat,House,C001049
+Black,107,"CLAYTON, Eva M.",NC,Democrat,House,C000494
+Black,107,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,107,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,107,"CUMMINGS, Elijah Eugene",MD,Democrat,House,C000984
+Black,107,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,107,"FATTAH, Chaka",PA,Democrat,House,F000043
+Black,107,"FORD, Harold, Jr.",TN,Democrat,House,F000262
+Black,107,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,107,"HILLIARD, Earl Frederick",AL,Democrat,House,H000621
+Black,107,"JACKSON, Jesse L., Jr.",IL,Democrat,House,J000283
+Black,107,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,107,"JEFFERSON, William Jennings",LA,Democrat,House,J000070
+Black,107,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,107,"JONES, Stephanie Tubbs",OH,Democrat,House,J000284
+Black,107,"KILPATRICK, Carolyn Cheeks",MI,Democrat,House,K000180
+Black,107,"LEE, Barbara",CA,Democrat,House,L000551
+Black,107,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,107,"MCKINNEY, Cynthia Ann",GA,Democrat,House,M000523
+Black,107,"MEEK, Carrie P.",FL,Democrat,House,M000628
+Black,107,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,107,"MILLENDER-MCDONALD, Juanita",CA,Democrat,House,M000714
+Black,107,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,107,"OWENS, Major Robert Odell",NY,Democrat,House,O000159
+Black,107,"PAYNE, Donald Milford",NJ,Democrat,House,P000149
+Black,107,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,107,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,107,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,107,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,107,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,107,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,107,"WATSON, Diane Edith",CA,Democrat,House,W000794
+Black,107,"WATT, Melvin L.",NC,Democrat,House,W000207
+Black,107,"WATTS, Julius Caesar, Jr. (J. C.)",OK,Republican,House,W000210
+Black,107,"WYNN, Albert Russell",MD,Democrat,House,W000784
+Black,108,"BALLANCE, Frank W., Jr.",NC,Democrat,House,B001238
+Black,108,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,108,"BROWN, Corrine",FL,Democrat,House,B000911
+Black,108,"BUTTERFIELD, George Kenneth (G.K.), Jr.",NC,Democrat,House,B001251
+Black,108,"CARSON, Julia May",IN,Democrat,House,C000191
+Black,108,"CHRISTENSEN, Donna Marie",VI,Democrat,House,C000380
+Black,108,"CLAY, William Lacy, Jr.",MO,Democrat,House,C001049
+Black,108,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,108,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,108,"CUMMINGS, Elijah Eugene",MD,Democrat,House,C000984
+Black,108,"DAVIS, Artur",AL,Democrat,House,D000602
+Black,108,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,108,"FATTAH, Chaka",PA,Democrat,House,F000043
+Black,108,"FORD, Harold, Jr.",TN,Democrat,House,F000262
+Black,108,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,108,"JACKSON, Jesse L., Jr.",IL,Democrat,House,J000283
+Black,108,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,108,"JEFFERSON, William Jennings",LA,Democrat,House,J000070
+Black,108,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,108,"JONES, Stephanie Tubbs",OH,Democrat,House,J000284
+Black,108,"KILPATRICK, Carolyn Cheeks",MI,Democrat,House,K000180
+Black,108,"LEE, Barbara",CA,Democrat,House,L000551
+Black,108,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,108,"MAJETTE, Denise L.",GA,Democrat,House,M001145
+Black,108,"MEEK, Kendrick B.",FL,Democrat,House,M001148
+Black,108,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,108,"MILLENDER-MCDONALD, Juanita",CA,Democrat,House,M000714
+Black,108,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,108,"OWENS, Major Robert Odell",NY,Democrat,House,O000159
+Black,108,"PAYNE, Donald Milford",NJ,Democrat,House,P000149
+Black,108,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,108,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,108,"SCOTT, David",GA,Democrat,House,S001157
+Black,108,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,108,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,108,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,108,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,108,"WATSON, Diane Edith",CA,Democrat,House,W000794
+Black,108,"WATT, Melvin L.",NC,Democrat,House,W000207
+Black,108,"WYNN, Albert Russell",MD,Democrat,House,W000784
+Black,109,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,109,"BROWN, Corrine",FL,Democrat,House,B000911
+Black,109,"BUTTERFIELD, George Kenneth (G.K.), Jr.",NC,Democrat,House,B001251
+Black,109,"CARSON, Julia May",IN,Democrat,House,C000191
+Black,109,"CHRISTENSEN, Donna Marie",VI,Democrat,House,C000380
+Black,109,"CLAY, William Lacy, Jr.",MO,Democrat,House,C001049
+Black,109,"CLEAVER, Emanuel, II",MO,Democrat,House,C001061
+Black,109,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,109,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,109,"CUMMINGS, Elijah Eugene",MD,Democrat,House,C000984
+Black,109,"DAVIS, Artur",AL,Democrat,House,D000602
+Black,109,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,109,"FATTAH, Chaka",PA,Democrat,House,F000043
+Black,109,"FORD, Harold, Jr.",TN,Democrat,House,F000262
+Black,109,"GREEN, Al",TX,Democrat,House,G000553
+Black,109,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,109,"JACKSON, Jesse L., Jr.",IL,Democrat,House,J000283
+Black,109,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,109,"JEFFERSON, William Jennings",LA,Democrat,House,J000070
+Black,109,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,109,"JONES, Stephanie Tubbs",OH,Democrat,House,J000284
+Black,109,"KILPATRICK, Carolyn Cheeks",MI,Democrat,House,K000180
+Black,109,"LEE, Barbara",CA,Democrat,House,L000551
+Black,109,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,109,"MCKINNEY, Cynthia Ann",GA,Democrat,House,M000523
+Black,109,"MEEK, Kendrick B.",FL,Democrat,House,M001148
+Black,109,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,109,"MILLENDER-MCDONALD, Juanita",CA,Democrat,House,M000714
+Black,109,"MOORE, Gwendolynne S. (Gwen)",WI,Democrat,House,M001160
+Black,109,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,109,"OBAMA, Barack",IL,Democrat,Senate,O000167
+Black,109,"OWENS, Major Robert Odell",NY,Democrat,House,O000159
+Black,109,"PAYNE, Donald Milford",NJ,Democrat,House,P000149
+Black,109,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,109,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,109,"SCOTT, David",GA,Democrat,House,S001157
+Black,109,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,109,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,109,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,109,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,109,"WATSON, Diane Edith",CA,Democrat,House,W000794
+Black,109,"WATT, Melvin L.",NC,Democrat,House,W000207
+Black,109,"WYNN, Albert Russell",MD,Democrat,House,W000784
+Black,110,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,110,"BROWN, Corrine",FL,Democrat,House,B000911
+Black,110,"BUTTERFIELD, George Kenneth (G.K.), Jr.",NC,Democrat,House,B001251
+Black,110,"CARSON, André",IN,Democrat,House,C001072
+Black,110,"CARSON, Julia May",IN,Democrat,House,C000191
+Black,110,"CHRISTENSEN, Donna Marie",VI,Democrat,House,C000380
+Black,110,"CLARKE, Yvette Diane",NY,Democrat,House,C001067
+Black,110,"CLAY, William Lacy, Jr.",MO,Democrat,House,C001049
+Black,110,"CLEAVER, Emanuel, II",MO,Democrat,House,C001061
+Black,110,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,110,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,110,"CUMMINGS, Elijah Eugene",MD,Democrat,House,C000984
+Black,110,"DAVIS, Artur",AL,Democrat,House,D000602
+Black,110,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,110,"EDWARDS, Donna F.",MD,Democrat,House,E000290
+Black,110,"ELLISON, Keith",MN,Democrat,House,E000288
+Black,110,"FATTAH, Chaka",PA,Democrat,House,F000043
+Black,110,"FUDGE, Marcia L.",OH,Democrat,House,F000455
+Black,110,"GREEN, Al",TX,Democrat,House,G000553
+Black,110,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,110,"JACKSON, Jesse L., Jr.",IL,Democrat,House,J000283
+Black,110,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,110,"JEFFERSON, William Jennings",LA,Democrat,House,J000070
+Black,110,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,110,"JOHNSON, Hank",GA,Democrat,House,J000288
+Black,110,"JONES, Stephanie Tubbs",OH,Democrat,House,J000284
+Black,110,"KILPATRICK, Carolyn Cheeks",MI,Democrat,House,K000180
+Black,110,"LEE, Barbara",CA,Democrat,House,L000551
+Black,110,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,110,"MEEK, Kendrick B.",FL,Democrat,House,M001148
+Black,110,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,110,"MILLENDER-MCDONALD, Juanita",CA,Democrat,House,M000714
+Black,110,"MOORE, Gwendolynne S. (Gwen)",WI,Democrat,House,M001160
+Black,110,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,110,"OBAMA, Barack",IL,Democrat,Senate,O000167
+Black,110,"PAYNE, Donald Milford",NJ,Democrat,House,P000149
+Black,110,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,110,"RICHARDSON, Laura",CA,Democrat,House,R000581
+Black,110,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,110,"SCOTT, David",GA,Democrat,House,S001157
+Black,110,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,110,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,110,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,110,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,110,"WATSON, Diane Edith",CA,Democrat,House,W000794
+Black,110,"WATT, Melvin L.",NC,Democrat,House,W000207
+Black,110,"WYNN, Albert Russell",MD,Democrat,House,W000784
+Black,111,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,111,"BROWN, Corrine",FL,Democrat,House,B000911
+Black,111,"BURRIS, Roland",IL,Democrat,Senate,B001266
+Black,111,"BUTTERFIELD, George Kenneth (G.K.), Jr.",NC,Democrat,House,B001251
+Black,111,"CARSON, André",IN,Democrat,House,C001072
+Black,111,"CHRISTENSEN, Donna Marie",VI,Democrat,House,C000380
+Black,111,"CLARKE, Yvette Diane",NY,Democrat,House,C001067
+Black,111,"CLAY, William Lacy, Jr.",MO,Democrat,House,C001049
+Black,111,"CLEAVER, Emanuel, II",MO,Democrat,House,C001061
+Black,111,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,111,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,111,"CUMMINGS, Elijah Eugene",MD,Democrat,House,C000984
+Black,111,"DAVIS, Artur",AL,Democrat,House,D000602
+Black,111,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,111,"EDWARDS, Donna F.",MD,Democrat,House,E000290
+Black,111,"ELLISON, Keith",MN,Democrat,House,E000288
+Black,111,"FATTAH, Chaka",PA,Democrat,House,F000043
+Black,111,"FUDGE, Marcia L.",OH,Democrat,House,F000455
+Black,111,"GREEN, Al",TX,Democrat,House,G000553
+Black,111,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,111,"JACKSON, Jesse L., Jr.",IL,Democrat,House,J000283
+Black,111,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,111,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,111,"JOHNSON, Hank",GA,Democrat,House,J000288
+Black,111,"KILPATRICK, Carolyn Cheeks",MI,Democrat,House,K000180
+Black,111,"LEE, Barbara",CA,Democrat,House,L000551
+Black,111,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,111,"MEEK, Kendrick B.",FL,Democrat,House,M001148
+Black,111,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,111,"MOORE, Gwendolynne S. (Gwen)",WI,Democrat,House,M001160
+Black,111,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,111,"PAYNE, Donald Milford",NJ,Democrat,House,P000149
+Black,111,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,111,"RICHARDSON, Laura",CA,Democrat,House,R000581
+Black,111,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,111,"SCOTT, David",GA,Democrat,House,S001157
+Black,111,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,111,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,111,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,111,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,111,"WATSON, Diane Edith",CA,Democrat,House,W000794
+Black,111,"WATT, Melvin L.",NC,Democrat,House,W000207
+Black,112,"BASS, Karen",CA,Democrat,House,B001270
+Black,112,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,112,"BROWN, Corrine",FL,Democrat,House,B000911
+Black,112,"BUTTERFIELD, George Kenneth (G.K.), Jr.",NC,Democrat,House,B001251
+Black,112,"CARSON, André",IN,Democrat,House,C001072
+Black,112,"CHRISTENSEN, Donna Marie",VI,Democrat,House,C000380
+Black,112,"CLARKE, Hansen",MI,Democrat,House,C001085
+Black,112,"CLARKE, Yvette Diane",NY,Democrat,House,C001067
+Black,112,"CLAY, William Lacy, Jr.",MO,Democrat,House,C001049
+Black,112,"CLEAVER, Emanuel, II",MO,Democrat,House,C001061
+Black,112,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,112,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,112,"CUMMINGS, Elijah Eugene",MD,Democrat,House,C000984
+Black,112,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,112,"EDWARDS, Donna F.",MD,Democrat,House,E000290
+Black,112,"ELLISON, Keith",MN,Democrat,House,E000288
+Black,112,"FATTAH, Chaka",PA,Democrat,House,F000043
+Black,112,"FUDGE, Marcia L.",OH,Democrat,House,F000455
+Black,112,"GREEN, Al",TX,Democrat,House,G000553
+Black,112,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,112,"JACKSON, Jesse L., Jr.",IL,Democrat,House,J000283
+Black,112,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,112,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,112,"JOHNSON, Hank",GA,Democrat,House,J000288
+Black,112,"LEE, Barbara",CA,Democrat,House,L000551
+Black,112,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,112,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,112,"MOORE, Gwendolynne S. (Gwen)",WI,Democrat,House,M001160
+Black,112,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,112,"PAYNE, Donald Milford",NJ,Democrat,House,P000149
+Black,112,"PAYNE, Donald, Jr.",NJ,Democrat,House,P000604
+Black,112,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,112,"RICHARDSON, Laura",CA,Democrat,House,R000581
+Black,112,"RICHMOND, Cedric",LA,Democrat,House,R000588
+Black,112,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,112,"SCOTT, David",GA,Democrat,House,S001157
+Black,112,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,112,"SCOTT, Tim",SC,Republican,Both,S001184
+Black,112,"SEWELL, Terri",AL,Democrat,House,S001185
+Black,112,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,112,"TOWNS, Edolphus",NY,Democrat,House,T000326
+Black,112,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,112,"WATT, Melvin L.",NC,Democrat,House,W000207
+Black,112,"WEST, Allen",FL,Republican,House,W000807
+Black,112,"WILSON, Frederica",FL,Democrat,House,W000808
+Black,113,"ADAMS, Alma",NC,Democrat,House,A000370
+Black,113,"BASS, Karen",CA,Democrat,House,B001270
+Black,113,"BEATTY, Joyce",OH,Democrat,House,B001281
+Black,113,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,113,"BOOKER, Cory Anthony",NJ,Democrat,Senate,B001288
+Black,113,"BROWN, Corrine",FL,Democrat,House,B000911
+Black,113,"BUTTERFIELD, George Kenneth (G.K.), Jr.",NC,Democrat,House,B001251
+Black,113,"CARSON, André",IN,Democrat,House,C001072
+Black,113,"CHRISTENSEN, Donna Marie",VI,Democrat,House,C000380
+Black,113,"CLARKE, Yvette Diane",NY,Democrat,House,C001067
+Black,113,"CLAY, William Lacy, Jr.",MO,Democrat,House,C001049
+Black,113,"CLEAVER, Emanuel, II",MO,Democrat,House,C001061
+Black,113,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,113,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,113,"COWAN, William (Mo)",MA,Democrat,Senate,C001099
+Black,113,"CUMMINGS, Elijah Eugene",MD,Democrat,House,C000984
+Black,113,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,113,"EDWARDS, Donna F.",MD,Democrat,House,E000290
+Black,113,"ELLISON, Keith",MN,Democrat,House,E000288
+Black,113,"FATTAH, Chaka",PA,Democrat,House,F000043
+Black,113,"FUDGE, Marcia L.",OH,Democrat,House,F000455
+Black,113,"GREEN, Al",TX,Democrat,House,G000553
+Black,113,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,113,"HORSFORD, Steven",NV,Democrat,House,H001066
+Black,113,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,113,"JEFFRIES, Hakeem",NY,Democrat,House,J000294
+Black,113,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,113,"JOHNSON, Hank",GA,Democrat,House,J000288
+Black,113,"KELLY, Robin L.",IL,Democrat,House,K000385
+Black,113,"LEE, Barbara",CA,Democrat,House,L000551
+Black,113,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,113,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,113,"MOORE, Gwendolynne S. (Gwen)",WI,Democrat,House,M001160
+Black,113,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,113,"PAYNE, Donald, Jr.",NJ,Democrat,House,P000604
+Black,113,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,113,"RICHMOND, Cedric",LA,Democrat,House,R000588
+Black,113,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,113,"SCOTT, David",GA,Democrat,House,S001157
+Black,113,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,113,"SCOTT, Tim",SC,Republican,Senate,S001184
+Black,113,"SEWELL, Terri",AL,Democrat,House,S001185
+Black,113,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,113,"VEASEY, Marc",TX,Democrat,House,V000131
+Black,113,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,113,"WATT, Melvin L.",NC,Democrat,House,W000207
+Black,113,"WILSON, Frederica",FL,Democrat,House,W000808
+Black,114,"ADAMS, Alma",NC,Democrat,House,A000370
+Black,114,"BASS, Karen",CA,Democrat,House,B001270
+Black,114,"BEATTY, Joyce",OH,Democrat,House,B001281
+Black,114,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,114,"BOOKER, Cory Anthony",NJ,Democrat,Senate,B001288
+Black,114,"BROWN, Corrine",FL,Democrat,House,B000911
+Black,114,"BUTTERFIELD, George Kenneth (G.K.), Jr.",NC,Democrat,House,B001251
+Black,114,"CARSON, André",IN,Democrat,House,C001072
+Black,114,"CLARKE, Yvette Diane",NY,Democrat,House,C001067
+Black,114,"CLAY, William Lacy, Jr.",MO,Democrat,House,C001049
+Black,114,"CLEAVER, Emanuel, II",MO,Democrat,House,C001061
+Black,114,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,114,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,114,"CUMMINGS, Elijah Eugene",MD,Democrat,House,C000984
+Black,114,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,114,"EDWARDS, Donna F.",MD,Democrat,House,E000290
+Black,114,"ELLISON, Keith",MN,Democrat,House,E000288
+Black,114,"EVANS, Dwight",PA,Democrat,House,E000296
+Black,114,"FATTAH, Chaka",PA,Democrat,House,F000043
+Black,114,"FUDGE, Marcia L.",OH,Democrat,House,F000455
+Black,114,"GREEN, Al",TX,Democrat,House,G000553
+Black,114,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,114,"HURD, William Ballard",TX,Republican,House,H001073
+Black,114,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,114,"JEFFRIES, Hakeem",NY,Democrat,House,J000294
+Black,114,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,114,"JOHNSON, Hank",GA,Democrat,House,J000288
+Black,114,"KELLY, Robin L.",IL,Democrat,House,K000385
+Black,114,"LAWRENCE, Brenda L.",MI,Democrat,House,L000581
+Black,114,"LEE, Barbara",CA,Democrat,House,L000551
+Black,114,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,114,"LOVE, Ludmya Bourdeau (Mia)",UT,Republican,House,L000584
+Black,114,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,114,"MOORE, Gwendolynne S. (Gwen)",WI,Democrat,House,M001160
+Black,114,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,114,"PAYNE, Donald, Jr.",NJ,Democrat,House,P000604
+Black,114,"PLASKETT, Stacey E.",VI,Democrat,House,P000610
+Black,114,"RANGEL, Charles B.",NY,Democrat,House,R000053
+Black,114,"RICHMOND, Cedric",LA,Democrat,House,R000588
+Black,114,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,114,"SCOTT, David",GA,Democrat,House,S001157
+Black,114,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,114,"SCOTT, Tim",SC,Republican,Senate,S001184
+Black,114,"SEWELL, Terri",AL,Democrat,House,S001185
+Black,114,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,114,"VEASEY, Marc",TX,Democrat,House,V000131
+Black,114,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,114,"WATSON COLEMAN, Bonnie",NJ,Democrat,House,W000822
+Black,114,"WILSON, Frederica",FL,Democrat,House,W000808
+Black,115,"ADAMS, Alma",NC,Democrat,House,A000370
+Black,115,"BASS, Karen",CA,Democrat,House,B001270
+Black,115,"BEATTY, Joyce",OH,Democrat,House,B001281
+Black,115,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,115,"BLUNT ROCHESTER, Lisa",DE,Democrat,House,B001303
+Black,115,"BOOKER, Cory Anthony",NJ,Democrat,Senate,B001288
+Black,115,"BROWN, Anthony Gregory",MD,Democrat,House,B001304
+Black,115,"BUTTERFIELD, George Kenneth (G.K.), Jr.",NC,Democrat,House,B001251
+Black,115,"CARSON, André",IN,Democrat,House,C001072
+Black,115,"CLARKE, Yvette Diane",NY,Democrat,House,C001067
+Black,115,"CLAY, William Lacy, Jr.",MO,Democrat,House,C001049
+Black,115,"CLEAVER, Emanuel, II",MO,Democrat,House,C001061
+Black,115,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,115,"CONYERS, John, Jr.",MI,Democrat,House,C000714
+Black,115,"CUMMINGS, Elijah Eugene",MD,Democrat,House,C000984
+Black,115,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,115,"DEMINGS, Valdez",FL,Democrat,House,D000627
+Black,115,"ELLISON, Keith",MN,Democrat,House,E000288
+Black,115,"ESPAILLAT, Adriano J.",NY,Democrat,House,E000297
+Black,115,"EVANS, Dwight",PA,Democrat,House,E000296
+Black,115,"FUDGE, Marcia L.",OH,Democrat,House,F000455
+Black,115,"GREEN, Al",TX,Democrat,House,G000553
+Black,115,"HARRIS, Kamala Devi",CA,Democrat,Senate,H001075
+Black,115,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,115,"HURD, William Ballard",TX,Republican,House,H001073
+Black,115,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,115,"JEFFRIES, Hakeem",NY,Democrat,House,J000294
+Black,115,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,115,"JOHNSON, Hank",GA,Democrat,House,J000288
+Black,115,"JONES, Brenda",MI,Democrat,House,J000303
+Black,115,"KELLY, Robin L.",IL,Democrat,House,K000385
+Black,115,"LAWRENCE, Brenda L.",MI,Democrat,House,L000581
+Black,115,"LAWSON, Alfred, Jr.",FL,Democrat,House,L000586
+Black,115,"LEE, Barbara",CA,Democrat,House,L000551
+Black,115,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,115,"LOVE, Ludmya Bourdeau (Mia)",UT,Republican,House,L000584
+Black,115,"MCEACHIN, Aston Donald",VA,Democrat,House,M001200
+Black,115,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,115,"MOORE, Gwendolynne S. (Gwen)",WI,Democrat,House,M001160
+Black,115,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,115,"PAYNE, Donald, Jr.",NJ,Democrat,House,P000604
+Black,115,"PLASKETT, Stacey E.",VI,Democrat,House,P000610
+Black,115,"RICHMOND, Cedric",LA,Democrat,House,R000588
+Black,115,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,115,"SCOTT, David",GA,Democrat,House,S001157
+Black,115,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,115,"SCOTT, Tim",SC,Republican,Senate,S001184
+Black,115,"SEWELL, Terri",AL,Democrat,House,S001185
+Black,115,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,115,"VEASEY, Marc",TX,Democrat,House,V000131
+Black,115,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,115,"WATSON COLEMAN, Bonnie",NJ,Democrat,House,W000822
+Black,115,"WILSON, Frederica",FL,Democrat,House,W000808
+Black,116,"ADAMS, Alma",NC,Democrat,House,A000370
+Black,116,"ALLRED, Colin",TX,Democrat,House,A000376
+Black,116,"BASS, Karen",CA,Democrat,House,B001270
+Black,116,"BEATTY, Joyce",OH,Democrat,House,B001281
+Black,116,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,116,"BLUNT ROCHESTER, Lisa",DE,Democrat,House,B001303
+Black,116,"BOOKER, Cory Anthony",NJ,Democrat,Senate,B001288
+Black,116,"BROWN, Anthony Gregory",MD,Democrat,House,B001304
+Black,116,"BUTTERFIELD, George Kenneth (G.K.), Jr.",NC,Democrat,House,B001251
+Black,116,"CARSON, André",IN,Democrat,House,C001072
+Black,116,"CLARKE, Yvette Diane",NY,Democrat,House,C001067
+Black,116,"CLAY, William Lacy, Jr.",MO,Democrat,House,C001049
+Black,116,"CLEAVER, Emanuel, II",MO,Democrat,House,C001061
+Black,116,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,116,"CUMMINGS, Elijah Eugene",MD,Democrat,House,C000984
+Black,116,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,116,"DELGADO, Antonio",NY,Democrat,House,D000630
+Black,116,"DEMINGS, Valdez",FL,Democrat,House,D000627
+Black,116,"ESPAILLAT, Adriano J.",NY,Democrat,House,E000297
+Black,116,"EVANS, Dwight",PA,Democrat,House,E000296
+Black,116,"FUDGE, Marcia L.",OH,Democrat,House,F000455
+Black,116,"GREEN, Al",TX,Democrat,House,G000553
+Black,116,"HALL, Kwanza",GA,Democrat,House,H001092
+Black,116,"HARRIS, Kamala Devi",CA,Democrat,Senate,H001075
+Black,116,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,116,"HAYES, Jahana",CT,Democrat,House,H001081
+Black,116,"HORSFORD, Steven",NV,Democrat,House,H001066
+Black,116,"HURD, William Ballard",TX,Republican,House,H001073
+Black,116,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,116,"JEFFRIES, Hakeem",NY,Democrat,House,J000294
+Black,116,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,116,"JOHNSON, Hank",GA,Democrat,House,J000288
+Black,116,"KELLY, Robin L.",IL,Democrat,House,K000385
+Black,116,"LAWRENCE, Brenda L.",MI,Democrat,House,L000581
+Black,116,"LAWSON, Alfred, Jr.",FL,Democrat,House,L000586
+Black,116,"LEE, Barbara",CA,Democrat,House,L000551
+Black,116,"LEWIS, John R.",GA,Democrat,House,L000287
+Black,116,"MCBATH, Lucy",GA,Democrat,House,M001208
+Black,116,"MCEACHIN, Aston Donald",VA,Democrat,House,M001200
+Black,116,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,116,"MFUME, Kweisi",MD,Democrat,House,M000687
+Black,116,"MOORE, Gwendolynne S. (Gwen)",WI,Democrat,House,M001160
+Black,116,"NEGUSE, Joseph",CO,Democrat,House,N000191
+Black,116,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,116,"OMAR, Ilhan",MN,Democrat,House,O000173
+Black,116,"PAYNE, Donald, Jr.",NJ,Democrat,House,P000604
+Black,116,"PLASKETT, Stacey E.",VI,Democrat,House,P000610
+Black,116,"PRESSLEY, Ayanna",MA,Democrat,House,P000617
+Black,116,"RICHMOND, Cedric",LA,Democrat,House,R000588
+Black,116,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,116,"SCOTT, David",GA,Democrat,House,S001157
+Black,116,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,116,"SCOTT, Tim",SC,Republican,Senate,S001184
+Black,116,"SEWELL, Terri",AL,Democrat,House,S001185
+Black,116,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,116,"UNDERWOOD, Lauren",IL,Democrat,House,U000040
+Black,116,"VEASEY, Marc",TX,Democrat,House,V000131
+Black,116,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,116,"WATSON COLEMAN, Bonnie",NJ,Democrat,House,W000822
+Black,116,"WILSON, Frederica",FL,Democrat,House,W000808
+Black,117,"ADAMS, Alma",NC,Democrat,House,A000370
+Black,117,"ALLRED, Colin",TX,Democrat,House,A000376
+Black,117,"BASS, Karen",CA,Democrat,House,B001270
+Black,117,"BEATTY, Joyce",OH,Democrat,House,B001281
+Black,117,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,117,"BLUNT ROCHESTER, Lisa",DE,Democrat,House,B001303
+Black,117,"BOOKER, Cory Anthony",NJ,Democrat,Senate,B001288
+Black,117,"BOWMAN, Jamaal",NY,Democrat,House,B001223
+Black,117,"BROWN, Anthony Gregory",MD,Democrat,House,B001304
+Black,117,"BROWN, Shontel M.",OH,Democrat,House,B001313
+Black,117,"BUSH, Cori",MO,Democrat,House,B001224
+Black,117,"BUTTERFIELD, George Kenneth (G.K.), Jr.",NC,Democrat,House,B001251
+Black,117,"CARSON, André",IN,Democrat,House,C001072
+Black,117,"CARTER, Troy",LA,Democrat,House,C001125
+Black,117,"CHERFILUS-MCCORMICK, Sheila",FL,Democrat,House,C001127
+Black,117,"CLARKE, Yvette Diane",NY,Democrat,House,C001067
+Black,117,"CLEAVER, Emanuel, II",MO,Democrat,House,C001061
+Black,117,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,117,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,117,"DELGADO, Antonio",NY,Democrat,House,D000630
+Black,117,"DEMINGS, Valdez",FL,Democrat,House,D000627
+Black,117,"DONALDS, Byron",FL,Republican,House,D000032
+Black,117,"ESPAILLAT, Adriano J.",NY,Democrat,House,E000297
+Black,117,"EVANS, Dwight",PA,Democrat,House,E000296
+Black,117,"FUDGE, Marcia L.",OH,Democrat,House,F000455
+Black,117,"GREEN, Al",TX,Democrat,House,G000553
+Black,117,"HARRIS, Kamala Devi",CA,Democrat,Senate,H001075
+Black,117,"HASTINGS, Alcee Lamar",FL,Democrat,House,H000324
+Black,117,"HAYES, Jahana",CT,Democrat,House,H001081
+Black,117,"HORSFORD, Steven",NV,Democrat,House,H001066
+Black,117,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,117,"JEFFRIES, Hakeem",NY,Democrat,House,J000294
+Black,117,"JOHNSON, Eddie Bernice",TX,Democrat,House,J000126
+Black,117,"JOHNSON, Hank",GA,Democrat,House,J000288
+Black,117,"JONES, Mondaire",NY,Democrat,House,J000306
+Black,117,"KELLY, Robin L.",IL,Democrat,House,K000385
+Black,117,"LAWRENCE, Brenda L.",MI,Democrat,House,L000581
+Black,117,"LAWSON, Alfred, Jr.",FL,Democrat,House,L000586
+Black,117,"LEE, Barbara",CA,Democrat,House,L000551
+Black,117,"MCBATH, Lucy",GA,Democrat,House,M001208
+Black,117,"MCEACHIN, Aston Donald",VA,Democrat,House,M001200
+Black,117,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,117,"MFUME, Kweisi",MD,Democrat,House,M000687
+Black,117,"MOORE, Gwendolynne S. (Gwen)",WI,Democrat,House,M001160
+Black,117,"NEGUSE, Joseph",CO,Democrat,House,N000191
+Black,117,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,117,"OMAR, Ilhan",MN,Democrat,House,O000173
+Black,117,"OWENS, Burgess",UT,Republican,House,O000086
+Black,117,"PAYNE, Donald, Jr.",NJ,Democrat,House,P000604
+Black,117,"PLASKETT, Stacey E.",VI,Democrat,House,P000610
+Black,117,"PRESSLEY, Ayanna",MA,Democrat,House,P000617
+Black,117,"RICHMOND, Cedric",LA,Democrat,House,R000588
+Black,117,"RUSH, Bobby L.",IL,Democrat,House,R000515
+Black,117,"SCOTT, David",GA,Democrat,House,S001157
+Black,117,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,117,"SCOTT, Tim",SC,Republican,Senate,S001184
+Black,117,"SEWELL, Terri",AL,Democrat,House,S001185
+Black,117,"STRICKLAND, Marilyn",WA,Democrat,House,S001159
+Black,117,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,117,"TORRES, Ritchie",NY,Democrat,House,T000486
+Black,117,"UNDERWOOD, Lauren",IL,Democrat,House,U000040
+Black,117,"VEASEY, Marc",TX,Democrat,House,V000131
+Black,117,"WARNOCK, Raphael Gamaliel",GA,Democrat,Senate,W000790
+Black,117,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,117,"WATSON COLEMAN, Bonnie",NJ,Democrat,House,W000822
+Black,117,"WILLIAMS, Nikema",GA,Democrat,House,W000788
+Black,117,"WILSON, Frederica",FL,Democrat,House,W000808
+Black,118,"ADAMS, Alma",NC,Democrat,House,A000370
+Black,118,"ALLRED, Colin",TX,Democrat,House,A000376
+Black,118,"AMO, Gabe",RI,Democrat,House,A000380
+Black,118,"BEATTY, Joyce",OH,Democrat,House,B001281
+Black,118,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,118,"BLUNT ROCHESTER, Lisa",DE,Democrat,House,B001303
+Black,118,"BOOKER, Cory Anthony",NJ,Democrat,Senate,B001288
+Black,118,"BOWMAN, Jamaal",NY,Democrat,House,B001223
+Black,118,"BROWN, Shontel M.",OH,Democrat,House,B001313
+Black,118,"BUSH, Cori",MO,Democrat,House,B001224
+Black,118,"BUTLER, Laphonza Romanique",CA,Democrat,Senate,B001320
+Black,118,"CARSON, André",IN,Democrat,House,C001072
+Black,118,"CARTER, Troy",LA,Democrat,House,C001125
+Black,118,"CHERFILUS-MCCORMICK, Sheila",FL,Democrat,House,C001127
+Black,118,"CLARKE, Yvette Diane",NY,Democrat,House,C001067
+Black,118,"CLEAVER, Emanuel, II",MO,Democrat,House,C001061
+Black,118,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,118,"CROCKETT, Jasmine",TX,Democrat,House,C001130
+Black,118,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,118,"DAVIS, Don",NC,Democrat,House,D000230
+Black,118,"DONALDS, Byron",FL,Republican,House,D000032
+Black,118,"ESPAILLAT, Adriano J.",NY,Democrat,House,E000297
+Black,118,"EVANS, Dwight",PA,Democrat,House,E000296
+Black,118,"FOUSHEE, Valerie",NC,Democrat,House,F000477
+Black,118,"FROST, Maxwell",FL,Democrat,House,F000476
+Black,118,"GREEN, Al",TX,Democrat,House,G000553
+Black,118,"HAYES, Jahana",CT,Democrat,House,H001081
+Black,118,"HORSFORD, Steven",NV,Democrat,House,H001066
+Black,118,"HUNT, Wesley",TX,Republican,House,H001095
+Black,118,"IVEY, Glenn",MD,Democrat,House,I000058
+Black,118,"JACKSON, Jonathan",IL,Democrat,House,J000309
+Black,118,"JACKSON LEE, Sheila",TX,Democrat,House,J000032
+Black,118,"JAMES, John",MI,Republican,House,J000307
+Black,118,"JEFFRIES, Hakeem",NY,Democrat,House,J000294
+Black,118,"JOHNSON, Hank",GA,Democrat,House,J000288
+Black,118,"KAMLAGER-DOVE, Sydney",CA,Democrat,House,K000400
+Black,118,"KELLY, Robin L.",IL,Democrat,House,K000385
+Black,118,"LEE, Barbara",CA,Democrat,House,L000551
+Black,118,"LEE, Summer",PA,Democrat,House,L000602
+Black,118,"LEE CARTER, Erica",TX,Democrat,House,L000605
+Black,118,"MCBATH, Lucy",GA,Democrat,House,M001208
+Black,118,"MCCLELLAN, Jennifer",VA,Democrat,House,M001227
+Black,118,"MCIVER, LaMonica",NJ,Democrat,House,M001229
+Black,118,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,118,"MFUME, Kweisi",MD,Democrat,House,M000687
+Black,118,"MOORE, Gwendolynne S. (Gwen)",WI,Democrat,House,M001160
+Black,118,"NEGUSE, Joseph",CO,Democrat,House,N000191
+Black,118,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,118,"OMAR, Ilhan",MN,Democrat,House,O000173
+Black,118,"OWENS, Burgess",UT,Republican,House,O000086
+Black,118,"PAYNE, Donald, Jr.",NJ,Democrat,House,P000604
+Black,118,"PLASKETT, Stacey E.",VI,Democrat,House,P000610
+Black,118,"PRESSLEY, Ayanna",MA,Democrat,House,P000617
+Black,118,"SCOTT, David",GA,Democrat,House,S001157
+Black,118,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,118,"SCOTT, Tim",SC,Republican,Senate,S001184
+Black,118,"SEWELL, Terri",AL,Democrat,House,S001185
+Black,118,"STRICKLAND, Marilyn",WA,Democrat,House,S001159
+Black,118,"SYKES, Emilia Strong",OH,Democrat,House,S001223
+Black,118,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,118,"TORRES, Ritchie",NY,Democrat,House,T000486
+Black,118,"UNDERWOOD, Lauren",IL,Democrat,House,U000040
+Black,118,"VEASEY, Marc",TX,Democrat,House,V000131
+Black,118,"WARNOCK, Raphael Gamaliel",GA,Democrat,Senate,W000790
+Black,118,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,118,"WATSON COLEMAN, Bonnie",NJ,Democrat,House,W000822
+Black,118,"WILLIAMS, Nikema",GA,Democrat,House,W000788
+Black,118,"WILSON, Frederica",FL,Democrat,House,W000808
+Black,119,"ADAMS, Alma",NC,Democrat,House,A000370
+Black,119,"ALSOBROOKS, Angela Deneece",MD,Democrat,Senate,A000382
+Black,119,"AMO, Gabe",RI,Democrat,House,A000380
+Black,119,"BEATTY, Joyce",OH,Democrat,House,B001281
+Black,119,"BELL, Wesley",MO,Democrat,House,B001324
+Black,119,"BISHOP, Sanford Dixon, Jr.",GA,Democrat,House,B000490
+Black,119,"BLAIR, Everton, Jr.",GA,Democrat,House,B001328
+Black,119,"BLUNT ROCHESTER, Lisa",DE,Democrat,Senate,B001303
+Black,119,"BOOKER, Cory Anthony",NJ,Democrat,Senate,B001288
+Black,119,"BROWN, Shontel M.",OH,Democrat,House,B001313
+Black,119,"BYNUM, Janelle S.",OR,Democrat,House,B001326
+Black,119,"CARSON, André",IN,Democrat,House,C001072
+Black,119,"CARTER, Troy",LA,Democrat,House,C001125
+Black,119,"CHERFILUS-MCCORMICK, Sheila",FL,Democrat,House,C001127
+Black,119,"CLARKE, Yvette Diane",NY,Democrat,House,C001067
+Black,119,"CLEAVER, Emanuel, II",MO,Democrat,House,C001061
+Black,119,"CLYBURN, James Enos",SC,Democrat,House,C000537
+Black,119,"CONAWAY, Herbert C., Jr.",NJ,Democrat,House,C001136
+Black,119,"CROCKETT, Jasmine",TX,Democrat,House,C001130
+Black,119,"DAVIS, Danny K.",IL,Democrat,House,D000096
+Black,119,"DAVIS, Don",NC,Democrat,House,D000230
+Black,119,"DONALDS, Byron",FL,Republican,House,D000032
+Black,119,"ESPAILLAT, Adriano J.",NY,Democrat,House,E000297
+Black,119,"EVANS, Dwight",PA,Democrat,House,E000296
+Black,119,"FIELDS, Cleo",LA,Democrat,House,F000110
+Black,119,"FIGURES, Shomari C.",AL,Democrat,House,F000481
+Black,119,"FOUSHEE, Valerie",NC,Democrat,House,F000477
+Black,119,"FROST, Maxwell",FL,Democrat,House,F000476
+Black,119,"GREEN, Al",TX,Democrat,House,G000553
+Black,119,"HAYES, Jahana",CT,Democrat,House,H001081
+Black,119,"HORSFORD, Steven",NV,Democrat,House,H001066
+Black,119,"HUNT, Wesley",TX,Republican,House,H001095
+Black,119,"IVEY, Glenn",MD,Democrat,House,I000058
+Black,119,"JACKSON, Jonathan",IL,Democrat,House,J000309
+Black,119,"JAMES, John",MI,Republican,House,J000307
+Black,119,"JEFFRIES, Hakeem",NY,Democrat,House,J000294
+Black,119,"JOHNSON, Hank",GA,Democrat,House,J000288
+Black,119,"KAMLAGER-DOVE, Sydney",CA,Democrat,House,K000400
+Black,119,"KELLY, Robin L.",IL,Democrat,House,K000385
+Black,119,"LEE, Summer",PA,Democrat,House,L000602
+Black,119,"MCBATH, Lucy",GA,Democrat,House,M001208
+Black,119,"MCCLELLAN, Jennifer",VA,Democrat,House,M001227
+Black,119,"MCIVER, LaMonica",NJ,Democrat,House,M001229
+Black,119,"MEEKS, Gregory W.",NY,Democrat,House,M001137
+Black,119,"MEJIA, Analilia",NJ,Democrat,House,M001246
+Black,119,"MENEFEE, Christian D.",TX,Democrat,House,M001245
+Black,119,"MFUME, Kweisi",MD,Democrat,House,M000687
+Black,119,"MOORE, Gwendolynne S. (Gwen)",WI,Democrat,House,M001160
+Black,119,"NEGUSE, Joseph",CO,Democrat,House,N000191
+Black,119,"NORTON, Eleanor Holmes",DC,Democrat,House,N000147
+Black,119,"OMAR, Ilhan",MN,Democrat,House,O000173
+Black,119,"OWENS, Burgess",UT,Republican,House,O000086
+Black,119,"PLASKETT, Stacey E.",VI,Democrat,House,P000610
+Black,119,"PRESSLEY, Ayanna",MA,Democrat,House,P000617
+Black,119,"SCOTT, David",GA,Democrat,House,S001157
+Black,119,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Black,119,"SCOTT, Tim",SC,Republican,Senate,S001184
+Black,119,"SEWELL, Terri",AL,Democrat,House,S001185
+Black,119,"SIMON, Lateefah",CA,Democrat,House,S001231
+Black,119,"STRICKLAND, Marilyn",WA,Democrat,House,S001159
+Black,119,"SYKES, Emilia Strong",OH,Democrat,House,S001223
+Black,119,"THOMPSON, Bennie",MS,Democrat,House,T000193
+Black,119,"TORRES, Ritchie",NY,Democrat,House,T000486
+Black,119,"TURNER, Sylvester",TX,Democrat,House,T000489
+Black,119,"UNDERWOOD, Lauren",IL,Democrat,House,U000040
+Black,119,"VEASEY, Marc",TX,Democrat,House,V000131
+Black,119,"WARNOCK, Raphael Gamaliel",GA,Democrat,Senate,W000790
+Black,119,"WATERS, Maxine",CA,Democrat,House,W000187
+Black,119,"WATSON COLEMAN, Bonnie",NJ,Democrat,House,W000822
+Black,119,"WILLIAMS, Nikema",GA,Democrat,House,W000788
+Black,119,"WILSON, Frederica",FL,Democrat,House,W000808
+Hispanic,17,"HERNÁNDEZ, Joseph Marion",FL,,House,H000533
+Hispanic,18,"BOULIGNY, Charles Dominique Joseph",LA,Adams-Clay Republican,Senate,B000664
+Hispanic,19,"BOULIGNY, Charles Dominique Joseph",LA,Adams-Clay Republican,Senate,B000664
+Hispanic,20,"BOULIGNY, Charles Dominique Joseph",LA,Adams-Clay Republican,Senate,B000664
+Hispanic,33,"GALLEGOS, José Manuel",NM,Democrat,House,G000022
+Hispanic,34,"GALLEGOS, José Manuel",NM,Democrat,House,G000022
+Hispanic,34,"OTERO, Miguel Antonio",NM,Democrat,House,O000125
+Hispanic,35,"OTERO, Miguel Antonio",NM,Democrat,House,O000125
+Hispanic,36,"OTERO, Miguel Antonio",NM,Democrat,House,O000125
+Hispanic,38,"PEREA, Francisco",NM,Republican,House,P000224
+Hispanic,39,"CHAVES, José Francisco",NM,Republican,House,C000337
+Hispanic,40,"CHAVES, José Francisco",NM,Republican,House,C000337
+Hispanic,41,"CHAVES, José Francisco",NM,Republican,House,C000337
+Hispanic,42,"GALLEGOS, José Manuel",NM,Democrat,House,G000022
+Hispanic,45,"PACHECO, Romualdo",CA,Republican,House,P000003
+Hispanic,45,"ROMERO, Trinidad",NM,Republican,House,R000416
+Hispanic,46,"OTERO, Mariano Sabino",NM,Republican,House,O000124
+Hispanic,46,"PACHECO, Romualdo",CA,Republican,House,P000003
+Hispanic,47,"LUNA, Tranquilino",NM,Republican,House,L000513
+Hispanic,47,"PACHECO, Romualdo",CA,Republican,House,P000003
+Hispanic,48,"LUNA, Tranquilino",NM,Republican,House,L000513
+Hispanic,48,"MANZANARES, Francisco Antonio",NM,Democrat,House,M000118
+Hispanic,49,"JOSEPH, Antonio",NM,Democrat,House,J000272
+Hispanic,50,"JOSEPH, Antonio",NM,Democrat,House,J000272
+Hispanic,51,"JOSEPH, Antonio",NM,Democrat,House,J000272
+Hispanic,52,"JOSEPH, Antonio",NM,Democrat,House,J000272
+Hispanic,53,"JOSEPH, Antonio",NM,Democrat,House,J000272
+Hispanic,56,"PEREA, Pedro",NM,Republican,House,P000225
+Hispanic,57,"DEGETAU, Federico",PR,Republican,House,D000196
+Hispanic,58,"DEGETAU, Federico",PR,Republican,House,D000196
+Hispanic,59,"LARRÍNAGA, Tulio",PR,Unionist,House,L000102
+Hispanic,60,"LARRÍNAGA, Tulio",PR,Unionist,House,L000102
+Hispanic,61,"LARRÍNAGA, Tulio",PR,Unionist,House,L000102
+Hispanic,62,"MUÑOZ RIVERA, Luis",PR,Unionist,House,R000279
+Hispanic,63,"LAZARO, Ladislas",LA,Democrat,House,L000153
+Hispanic,63,"MUÑOZ RIVERA, Luis",PR,Unionist,House,R000279
+Hispanic,64,"HERNÁNDEZ, Benigno Cárdenas",NM,Republican,House,H000532
+Hispanic,64,"LAZARO, Ladislas",LA,Democrat,House,L000153
+Hispanic,64,"MUÑOZ RIVERA, Luis",PR,Unionist,House,R000279
+Hispanic,65,"DÁVILA, Félix Córdova",PR,Unionist,House,D000090
+Hispanic,65,"LAZARO, Ladislas",LA,Democrat,House,L000153
+Hispanic,66,"DÁVILA, Félix Córdova",PR,Unionist,House,D000090
+Hispanic,66,"HERNÁNDEZ, Benigno Cárdenas",NM,Republican,House,H000532
+Hispanic,66,"LAZARO, Ladislas",LA,Democrat,House,L000153
+Hispanic,67,"DÁVILA, Félix Córdova",PR,Unionist,House,D000090
+Hispanic,67,"LAZARO, Ladislas",LA,Democrat,House,L000153
+Hispanic,67,"MONTOYA, Néstor",NM,Republican,House,M000877
+Hispanic,68,"DÁVILA, Félix Córdova",PR,Unionist,House,D000090
+Hispanic,68,"LAZARO, Ladislas",LA,Democrat,House,L000153
+Hispanic,69,"DÁVILA, Félix Córdova",PR,Alliance,House,D000090
+Hispanic,69,"LAZARO, Ladislas",LA,Democrat,House,L000153
+Hispanic,70,"DÁVILA, Félix Córdova",PR,Alliance,House,D000090
+Hispanic,70,"LARRAZOLO, Octaviano Ambrosio",NM,Republican,Senate,L000101
+Hispanic,70,"LAZARO, Ladislas",LA,Democrat,House,L000153
+Hispanic,71,"DÁVILA, Félix Córdova",PR,Alliance,House,D000090
+Hispanic,72,"CHAVEZ, Dennis",NM,Democrat,House,C000338
+Hispanic,72,"DÁVILA, Félix Córdova",PR,Alliance,House,D000090
+Hispanic,72,"FERNÁNDEZ, Joachim Octave",LA,Democrat,House,F000086
+Hispanic,72,"PESQUERA, José Lorenzo",PR,Nonpartisan,House,P000249
+Hispanic,73,"CHAVEZ, Dennis",NM,Democrat,House,C000338
+Hispanic,73,"FERNÁNDEZ, Joachim Octave",LA,Democrat,House,F000086
+Hispanic,73,"IGLESIAS, Santiago",PR,Coalitionist,House,I000002
+Hispanic,74,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,74,"FERNÁNDEZ, Joachim Octave",LA,Democrat,House,F000086
+Hispanic,74,"IGLESIAS, Santiago",PR,Coalitionist,House,I000002
+Hispanic,75,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,75,"FERNÁNDEZ, Joachim Octave",LA,Democrat,House,F000086
+Hispanic,75,"IGLESIAS, Santiago",PR,Coalitionist,House,I000002
+Hispanic,76,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,76,"FERNÁNDEZ, Joachim Octave",LA,Democrat,House,F000086
+Hispanic,76,"IGLESIAS, Santiago",PR,Coalitionist,House,I000002
+Hispanic,76,"PAGÁN, Bolívar",PR,Coalitionist,House,P000013
+Hispanic,77,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,77,"PAGÁN, Bolívar",PR,Coalitionist,House,P000013
+Hispanic,78,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,78,"FERNÁNDEZ, Antonio M.",NM,Democrat,House,F000085
+Hispanic,78,"PAGÁN, Bolívar",PR,Coalitionist,House,P000013
+Hispanic,79,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,79,"FERNÁNDEZ, Antonio M.",NM,Democrat,House,F000085
+Hispanic,79,"FERNÓS-ISERN, Antonio",PR,Popular Democrat,House,F000087
+Hispanic,79,"PIÑERO, Jesús T.",PR,Popular Democrat,House,P000361
+Hispanic,80,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,80,"FERNÁNDEZ, Antonio M.",NM,Democrat,House,F000085
+Hispanic,80,"FERNÓS-ISERN, Antonio",PR,Popular Democrat,House,F000087
+Hispanic,81,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,81,"FERNÁNDEZ, Antonio M.",NM,Democrat,House,F000085
+Hispanic,81,"FERNÓS-ISERN, Antonio",PR,Popular Democrat,House,F000087
+Hispanic,82,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,82,"FERNÁNDEZ, Antonio M.",NM,Democrat,House,F000085
+Hispanic,82,"FERNÓS-ISERN, Antonio",PR,Popular Democrat,House,F000087
+Hispanic,83,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,83,"FERNÁNDEZ, Antonio M.",NM,Democrat,House,F000085
+Hispanic,83,"FERNÓS-ISERN, Antonio",PR,Popular Democrat,House,F000087
+Hispanic,84,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,84,"FERNÁNDEZ, Antonio M.",NM,Democrat,House,F000085
+Hispanic,84,"FERNÓS-ISERN, Antonio",PR,Popular Democrat,House,F000087
+Hispanic,85,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,85,"FERNÓS-ISERN, Antonio",PR,Popular Democrat,House,F000087
+Hispanic,85,"MONTOYA, Joseph Manuel",NM,Democrat,House,M000876
+Hispanic,86,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,86,"FERNÓS-ISERN, Antonio",PR,Popular Democrat,House,F000087
+Hispanic,86,"MONTOYA, Joseph Manuel",NM,Democrat,House,M000876
+Hispanic,87,"CHAVEZ, Dennis",NM,Democrat,Senate,C000338
+Hispanic,87,"FERNÓS-ISERN, Antonio",PR,Popular Democrat,House,F000087
+Hispanic,87,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,87,"MONTOYA, Joseph Manuel",NM,Democrat,House,M000876
+Hispanic,88,"FERNÓS-ISERN, Antonio",PR,Popular Democrat,House,F000087
+Hispanic,88,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,88,"MONTOYA, Joseph Manuel",NM,Democrat,Both,M000876
+Hispanic,88,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,89,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,89,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,89,"MONTOYA, Joseph Manuel",NM,Democrat,Senate,M000876
+Hispanic,89,"POLANCO-ABREU, Santiago",PR,Popular Democrat,House,P000405
+Hispanic,89,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,90,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,90,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,90,"MONTOYA, Joseph Manuel",NM,Democrat,Senate,M000876
+Hispanic,90,"POLANCO-ABREU, Santiago",PR,Popular Democrat,House,P000405
+Hispanic,90,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,91,"CÓRDOVA DÍAZ, Jorge Luis",PR,New Progressive,House,C000775
+Hispanic,91,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,91,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,91,"LUJÁN, Manuel, Jr.",NM,Republican,House,L000506
+Hispanic,91,"MONTOYA, Joseph Manuel",NM,Democrat,Senate,M000876
+Hispanic,91,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,92,"BADILLO, Herman",NY,Democrat,House,B000025
+Hispanic,92,"CÓRDOVA DÍAZ, Jorge Luis",PR,New Progressive,House,C000775
+Hispanic,92,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,92,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,92,"LUJÁN, Manuel, Jr.",NM,Republican,House,L000506
+Hispanic,92,"MONTOYA, Joseph Manuel",NM,Democrat,Senate,M000876
+Hispanic,92,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,93,"BADILLO, Herman",NY,Democrat,House,B000025
+Hispanic,93,"BENÍTEZ, Jaime",PR,Popular Democrat,House,B000362
+Hispanic,93,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,93,"DE LUGO, Ron",VI,Democrat,House,D000209
+Hispanic,93,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,93,"LUJÁN, Manuel, Jr.",NM,Republican,House,L000506
+Hispanic,93,"MONTOYA, Joseph Manuel",NM,Democrat,Senate,M000876
+Hispanic,93,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,94,"BADILLO, Herman",NY,Democrat,House,B000025
+Hispanic,94,"BENÍTEZ, Jaime",PR,Popular Democrat,House,B000362
+Hispanic,94,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,94,"DE LUGO, Ron",VI,Democrat,House,D000209
+Hispanic,94,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,94,"LUJÁN, Manuel, Jr.",NM,Republican,House,L000506
+Hispanic,94,"MONTOYA, Joseph Manuel",NM,Democrat,Senate,M000876
+Hispanic,94,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,95,"BADILLO, Herman",NY,Democrat,House,B000025
+Hispanic,95,"CORRADA-DEL RÍO, Baltasar",PR,New Progressive,House,C000788
+Hispanic,95,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,95,"DE LUGO, Ron",VI,Democrat,House,D000209
+Hispanic,95,"GARCIA, Robert",NY,Democrat,House,G000047
+Hispanic,95,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,95,"LUJÁN, Manuel, Jr.",NM,Republican,House,L000506
+Hispanic,95,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,96,"COELHO, Tony",CA,Democrat,House,C000581
+Hispanic,96,"CORRADA-DEL RÍO, Baltasar",PR,New Progressive,House,C000788
+Hispanic,96,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,96,"GARCIA, Robert",NY,Democrat,House,G000047
+Hispanic,96,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,96,"LUJÁN, Manuel, Jr.",NM,Republican,House,L000506
+Hispanic,96,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,97,"COELHO, Tony",CA,Democrat,House,C000581
+Hispanic,97,"CORRADA-DEL RÍO, Baltasar",PR,New Progressive,House,C000788
+Hispanic,97,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,97,"DE LUGO, Ron",VI,Democrat,House,D000209
+Hispanic,97,"GARCIA, Robert",NY,Democrat,House,G000047
+Hispanic,97,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,97,"LUJÁN, Manuel, Jr.",NM,Republican,House,L000506
+Hispanic,97,"MARTÍNEZ, Matthew G.",CA,Democrat,House,M000206
+Hispanic,97,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,98,"COELHO, Tony",CA,Democrat,House,C000581
+Hispanic,98,"CORRADA-DEL RÍO, Baltasar",PR,New Progressive,House,C000788
+Hispanic,98,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,98,"DE LUGO, Ron",VI,Democrat,House,D000209
+Hispanic,98,"GARCIA, Robert",NY,Democrat,House,G000047
+Hispanic,98,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,98,"LUJÁN, Manuel, Jr.",NM,Republican,House,L000506
+Hispanic,98,"MARTÍNEZ, Matthew G.",CA,Democrat,House,M000206
+Hispanic,98,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,98,"RICHARDSON, Bill",NM,Democrat,House,R000229
+Hispanic,98,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,98,"TORRES, Esteban Edward",CA,Democrat,House,T000316
+Hispanic,99,"BLAZ, Ben Garrido",GU,Republican,House,B000551
+Hispanic,99,"BUSTAMANTE, Albert G.",TX,Democrat,House,B001172
+Hispanic,99,"COELHO, Tony",CA,Democrat,House,C000581
+Hispanic,99,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,99,"DE LUGO, Ron",VI,Democrat,House,D000209
+Hispanic,99,"FUSTER, Jaime B.",PR,Popular Democrat,House,F000435
+Hispanic,99,"GARCIA, Robert",NY,Democrat,House,G000047
+Hispanic,99,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,99,"LUJÁN, Manuel, Jr.",NM,Republican,House,L000506
+Hispanic,99,"MARTÍNEZ, Matthew G.",CA,Democrat,House,M000206
+Hispanic,99,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,99,"RICHARDSON, Bill",NM,Democrat,House,R000229
+Hispanic,99,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,99,"TORRES, Esteban Edward",CA,Democrat,House,T000316
+Hispanic,100,"BLAZ, Ben Garrido",GU,Republican,House,B000551
+Hispanic,100,"BUSTAMANTE, Albert G.",TX,Democrat,House,B001172
+Hispanic,100,"COELHO, Tony",CA,Democrat,House,C000581
+Hispanic,100,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,100,"DE LUGO, Ron",VI,Democrat,House,D000209
+Hispanic,100,"FUSTER, Jaime B.",PR,Popular Democrat,House,F000435
+Hispanic,100,"GARCIA, Robert",NY,Democrat,House,G000047
+Hispanic,100,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,100,"LUJÁN, Manuel, Jr.",NM,Republican,House,L000506
+Hispanic,100,"MARTÍNEZ, Matthew G.",CA,Democrat,House,M000206
+Hispanic,100,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,100,"RICHARDSON, Bill",NM,Democrat,House,R000229
+Hispanic,100,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,100,"TORRES, Esteban Edward",CA,Democrat,House,T000316
+Hispanic,101,"BLAZ, Ben Garrido",GU,Republican,House,B000551
+Hispanic,101,"BUSTAMANTE, Albert G.",TX,Democrat,House,B001172
+Hispanic,101,"COELHO, Tony",CA,Democrat,House,C000581
+Hispanic,101,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,101,"DE LUGO, Ron",VI,Democrat,House,D000209
+Hispanic,101,"FUSTER, Jaime B.",PR,Popular Democrat,House,F000435
+Hispanic,101,"GARCIA, Robert",NY,Democrat,House,G000047
+Hispanic,101,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,101,"MARTÍNEZ, Matthew G.",CA,Democrat,House,M000206
+Hispanic,101,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,101,"RICHARDSON, Bill",NM,Democrat,House,R000229
+Hispanic,101,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,101,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,101,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,101,"TORRES, Esteban Edward",CA,Democrat,House,T000316
+Hispanic,102,"BLAZ, Ben Garrido",GU,Republican,House,B000551
+Hispanic,102,"BUSTAMANTE, Albert G.",TX,Democrat,House,B001172
+Hispanic,102,"COLORADO, Antonio J.",PR,Popular Democrat,House,C000646
+Hispanic,102,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,102,"DE LUGO, Ron",VI,Democrat,House,D000209
+Hispanic,102,"FUSTER, Jaime B.",PR,Popular Democrat,House,F000435
+Hispanic,102,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,102,"MARTÍNEZ, Matthew G.",CA,Democrat,House,M000206
+Hispanic,102,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,102,"PASTOR, Ed",AZ,Democrat,House,P000099
+Hispanic,102,"RICHARDSON, Bill",NM,Democrat,House,R000229
+Hispanic,102,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,102,"ROYBAL, Edward R.",CA,Democrat,House,R000485
+Hispanic,102,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,102,"TORRES, Esteban Edward",CA,Democrat,House,T000316
+Hispanic,103,"BECERRA, Xavier",CA,Democrat,House,B000287
+Hispanic,103,"BONILLA, Henry",TX,Republican,House,B000617
+Hispanic,103,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,103,"DE LUGO, Ron",VI,Democrat,House,D000209
+Hispanic,103,"DIAZ-BALART, Lincoln",FL,Republican,House,D000299
+Hispanic,103,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,103,"GUTIÉRREZ, Luis V.",IL,Democrat,House,G000535
+Hispanic,103,"MARTÍNEZ, Matthew G.",CA,Democrat,House,M000206
+Hispanic,103,"MENENDEZ, Robert",NJ,Democrat,House,M000639
+Hispanic,103,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,103,"PASTOR, Ed",AZ,Democrat,House,P000099
+Hispanic,103,"POMBO, Richard William",CA,Republican,House,P000419
+Hispanic,103,"RICHARDSON, Bill",NM,Democrat,House,R000229
+Hispanic,103,"ROMERO-BARCELÓ, Carlos A.",PR,New Progressive,House,R000417
+Hispanic,103,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,103,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,103,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,103,"TEJEDA, Frank",TX,Democrat,House,T000113
+Hispanic,103,"TORRES, Esteban Edward",CA,Democrat,House,T000316
+Hispanic,103,"UNDERWOOD, Robert A.",GU,Democrat,House,U000014
+Hispanic,103,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,104,"BECERRA, Xavier",CA,Democrat,House,B000287
+Hispanic,104,"BONILLA, Henry",TX,Republican,House,B000617
+Hispanic,104,"DE LA GARZA, Eligio (Kika), II",TX,Democrat,House,D000203
+Hispanic,104,"DIAZ-BALART, Lincoln",FL,Republican,House,D000299
+Hispanic,104,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,104,"GUTIÉRREZ, Luis V.",IL,Democrat,House,G000535
+Hispanic,104,"MARTÍNEZ, Matthew G.",CA,Democrat,House,M000206
+Hispanic,104,"MENENDEZ, Robert",NJ,Democrat,House,M000639
+Hispanic,104,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,104,"PASTOR, Ed",AZ,Democrat,House,P000099
+Hispanic,104,"POMBO, Richard William",CA,Republican,House,P000419
+Hispanic,104,"RICHARDSON, Bill",NM,Democrat,House,R000229
+Hispanic,104,"ROMERO-BARCELÓ, Carlos A.",PR,New Progressive,House,R000417
+Hispanic,104,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,104,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,104,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,104,"TEJEDA, Frank",TX,Democrat,House,T000113
+Hispanic,104,"TORRES, Esteban Edward",CA,Democrat,House,T000316
+Hispanic,104,"UNDERWOOD, Robert A.",GU,Democrat,House,U000014
+Hispanic,104,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,105,"BECERRA, Xavier",CA,Democrat,House,B000287
+Hispanic,105,"BONILLA, Henry",TX,Republican,House,B000617
+Hispanic,105,"DIAZ-BALART, Lincoln",FL,Republican,House,D000299
+Hispanic,105,"GONZÁLEZ, Henry B.",TX,Democrat,House,G000272
+Hispanic,105,"GUTIÉRREZ, Luis V.",IL,Democrat,House,G000535
+Hispanic,105,"HINOJOSA, Rubén",TX,Democrat,House,H000636
+Hispanic,105,"MARTÍNEZ, Matthew G.",CA,Democrat,House,M000206
+Hispanic,105,"MENENDEZ, Robert",NJ,Democrat,House,M000639
+Hispanic,105,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,105,"PASTOR, Ed",AZ,Democrat,House,P000099
+Hispanic,105,"POMBO, Richard William",CA,Republican,House,P000419
+Hispanic,105,"REYES, Silvestre",TX,Democrat,House,R000170
+Hispanic,105,"RICHARDSON, Bill",NM,Democrat,House,R000229
+Hispanic,105,"RODRIGUEZ, Ciro D.",TX,Democrat,House,R000568
+Hispanic,105,"ROMERO-BARCELÓ, Carlos A.",PR,New Progressive,House,R000417
+Hispanic,105,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,105,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,105,"SANCHEZ, Loretta",CA,Democrat,House,S000030
+Hispanic,105,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,105,"TEJEDA, Frank",TX,Democrat,House,T000113
+Hispanic,105,"TORRES, Esteban Edward",CA,Democrat,House,T000316
+Hispanic,105,"UNDERWOOD, Robert A.",GU,Democrat,House,U000014
+Hispanic,105,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,106,"BACA, Joe",CA,Democrat,House,B001234
+Hispanic,106,"BECERRA, Xavier",CA,Democrat,House,B000287
+Hispanic,106,"BONILLA, Henry",TX,Republican,House,B000617
+Hispanic,106,"DIAZ-BALART, Lincoln",FL,Republican,House,D000299
+Hispanic,106,"GONZALEZ, Charles A.",TX,Democrat,House,G000544
+Hispanic,106,"GUTIÉRREZ, Luis V.",IL,Democrat,House,G000535
+Hispanic,106,"HINOJOSA, Rubén",TX,Democrat,House,H000636
+Hispanic,106,"MARTÍNEZ, Matthew G.",CA,Democrat,House,M000206
+Hispanic,106,"MENENDEZ, Robert",NJ,Democrat,House,M000639
+Hispanic,106,"NAPOLITANO, Grace Flores",CA,Democrat,House,N000179
+Hispanic,106,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,106,"PASTOR, Ed",AZ,Democrat,House,P000099
+Hispanic,106,"POMBO, Richard William",CA,Republican,House,P000419
+Hispanic,106,"REYES, Silvestre",TX,Democrat,House,R000170
+Hispanic,106,"RODRIGUEZ, Ciro D.",TX,Democrat,House,R000568
+Hispanic,106,"ROMERO-BARCELÓ, Carlos A.",PR,New Progressive,House,R000417
+Hispanic,106,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,106,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,106,"SANCHEZ, Loretta",CA,Democrat,House,S000030
+Hispanic,106,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,106,"TOOMEY, Patrick Joseph",PA,Republican,House,T000461
+Hispanic,106,"UNDERWOOD, Robert A.",GU,Democrat,House,U000014
+Hispanic,106,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,107,"ACEVEDO VILÁ, Aníbal",PR,Popular Democrat,House,A000359
+Hispanic,107,"BACA, Joe",CA,Democrat,House,B001234
+Hispanic,107,"BECERRA, Xavier",CA,Democrat,House,B000287
+Hispanic,107,"BONILLA, Henry",TX,Republican,House,B000617
+Hispanic,107,"DIAZ-BALART, Lincoln",FL,Republican,House,D000299
+Hispanic,107,"GONZALEZ, Charles A.",TX,Democrat,House,G000544
+Hispanic,107,"GUTIÉRREZ, Luis V.",IL,Democrat,House,G000535
+Hispanic,107,"HINOJOSA, Rubén",TX,Democrat,House,H000636
+Hispanic,107,"MENENDEZ, Robert",NJ,Democrat,House,M000639
+Hispanic,107,"NAPOLITANO, Grace Flores",CA,Democrat,House,N000179
+Hispanic,107,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,107,"PASTOR, Ed",AZ,Democrat,House,P000099
+Hispanic,107,"POMBO, Richard William",CA,Republican,House,P000419
+Hispanic,107,"REYES, Silvestre",TX,Democrat,House,R000170
+Hispanic,107,"RODRIGUEZ, Ciro D.",TX,Democrat,House,R000568
+Hispanic,107,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,107,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,107,"SANCHEZ, Loretta",CA,Democrat,House,S000030
+Hispanic,107,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,107,"SOLIS, Hilda L.",CA,Democrat,House,S001153
+Hispanic,107,"TOOMEY, Patrick Joseph",PA,Republican,House,T000461
+Hispanic,107,"UNDERWOOD, Robert A.",GU,Democrat,House,U000014
+Hispanic,107,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,108,"ACEVEDO VILÁ, Aníbal",PR,Popular Democrat,House,A000359
+Hispanic,108,"BACA, Joe",CA,Democrat,House,B001234
+Hispanic,108,"BECERRA, Xavier",CA,Democrat,House,B000287
+Hispanic,108,"BONILLA, Henry",TX,Republican,House,B000617
+Hispanic,108,"CARDOZA, Dennis A.",CA,Democrat,House,C001050
+Hispanic,108,"DIAZ-BALART, Lincoln",FL,Republican,House,D000299
+Hispanic,108,"DIAZ-BALART, Mario",FL,Republican,House,D000600
+Hispanic,108,"GONZALEZ, Charles A.",TX,Democrat,House,G000544
+Hispanic,108,"GRIJALVA, Raúl M.",AZ,Democrat,House,G000551
+Hispanic,108,"GUTIÉRREZ, Luis V.",IL,Democrat,House,G000535
+Hispanic,108,"HINOJOSA, Rubén",TX,Democrat,House,H000636
+Hispanic,108,"MENENDEZ, Robert",NJ,Democrat,House,M000639
+Hispanic,108,"NAPOLITANO, Grace Flores",CA,Democrat,House,N000179
+Hispanic,108,"NUNES, Devin",CA,Republican,House,N000181
+Hispanic,108,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,108,"PASTOR, Ed",AZ,Democrat,House,P000099
+Hispanic,108,"POMBO, Richard William",CA,Republican,House,P000419
+Hispanic,108,"REYES, Silvestre",TX,Democrat,House,R000170
+Hispanic,108,"RODRIGUEZ, Ciro D.",TX,Democrat,House,R000568
+Hispanic,108,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,108,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,108,"SANCHEZ, Loretta",CA,Democrat,House,S000030
+Hispanic,108,"SÁNCHEZ, Linda T.",CA,Democrat,House,S001156
+Hispanic,108,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,108,"SOLIS, Hilda L.",CA,Democrat,House,S001153
+Hispanic,108,"TOOMEY, Patrick Joseph",PA,Republican,House,T000461
+Hispanic,108,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,109,"BACA, Joe",CA,Democrat,House,B001234
+Hispanic,109,"BECERRA, Xavier",CA,Democrat,House,B000287
+Hispanic,109,"BONILLA, Henry",TX,Republican,House,B000617
+Hispanic,109,"CARDOZA, Dennis A.",CA,Democrat,House,C001050
+Hispanic,109,"COSTA, Jim",CA,Democrat,House,C001059
+Hispanic,109,"CUELLAR, Henry",TX,Democrat,House,C001063
+Hispanic,109,"DIAZ-BALART, Lincoln",FL,Republican,House,D000299
+Hispanic,109,"DIAZ-BALART, Mario",FL,Republican,House,D000600
+Hispanic,109,"FORTUÑO, Luis G.",PR,New Progressive,House,F000452
+Hispanic,109,"GONZALEZ, Charles A.",TX,Democrat,House,G000544
+Hispanic,109,"GRIJALVA, Raúl M.",AZ,Democrat,House,G000551
+Hispanic,109,"GUTIÉRREZ, Luis V.",IL,Democrat,House,G000535
+Hispanic,109,"HINOJOSA, Rubén",TX,Democrat,House,H000636
+Hispanic,109,"MARTINEZ, Melquiades R. (Mel)",FL,Republican,Senate,M001162
+Hispanic,109,"MENENDEZ, Robert",NJ,Democrat,Both,M000639
+Hispanic,109,"NAPOLITANO, Grace Flores",CA,Democrat,House,N000179
+Hispanic,109,"NUNES, Devin",CA,Republican,House,N000181
+Hispanic,109,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,109,"PASTOR, Ed",AZ,Democrat,House,P000099
+Hispanic,109,"POMBO, Richard William",CA,Republican,House,P000419
+Hispanic,109,"REYES, Silvestre",TX,Democrat,House,R000170
+Hispanic,109,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,109,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,109,"SALAZAR, John",CO,Democrat,House,S001158
+Hispanic,109,"SALAZAR, Kenneth Lee",CO,Democrat,Senate,S001163
+Hispanic,109,"SANCHEZ, Loretta",CA,Democrat,House,S000030
+Hispanic,109,"SÁNCHEZ, Linda T.",CA,Democrat,House,S001156
+Hispanic,109,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,109,"SIRES, Albio",NJ,Democrat,House,S001165
+Hispanic,109,"SOLIS, Hilda L.",CA,Democrat,House,S001153
+Hispanic,109,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,110,"BACA, Joe",CA,Democrat,House,B001234
+Hispanic,110,"BECERRA, Xavier",CA,Democrat,House,B000287
+Hispanic,110,"CARDOZA, Dennis A.",CA,Democrat,House,C001050
+Hispanic,110,"COSTA, Jim",CA,Democrat,House,C001059
+Hispanic,110,"CUELLAR, Henry",TX,Democrat,House,C001063
+Hispanic,110,"DIAZ-BALART, Lincoln",FL,Republican,House,D000299
+Hispanic,110,"DIAZ-BALART, Mario",FL,Republican,House,D000600
+Hispanic,110,"FORTUÑO, Luis G.",PR,New Progressive,House,F000452
+Hispanic,110,"GONZALEZ, Charles A.",TX,Democrat,House,G000544
+Hispanic,110,"GRIJALVA, Raúl M.",AZ,Democrat,House,G000551
+Hispanic,110,"GUTIÉRREZ, Luis V.",IL,Democrat,House,G000535
+Hispanic,110,"HINOJOSA, Rubén",TX,Democrat,House,H000636
+Hispanic,110,"MARTINEZ, Melquiades R. (Mel)",FL,Republican,Senate,M001162
+Hispanic,110,"MENENDEZ, Robert",NJ,Democrat,Senate,M000639
+Hispanic,110,"NAPOLITANO, Grace Flores",CA,Democrat,House,N000179
+Hispanic,110,"NUNES, Devin",CA,Republican,House,N000181
+Hispanic,110,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,110,"PASTOR, Ed",AZ,Democrat,House,P000099
+Hispanic,110,"REYES, Silvestre",TX,Democrat,House,R000170
+Hispanic,110,"RODRIGUEZ, Ciro D.",TX,Democrat,House,R000568
+Hispanic,110,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,110,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,110,"SALAZAR, John",CO,Democrat,House,S001158
+Hispanic,110,"SALAZAR, Kenneth Lee",CO,Democrat,Senate,S001163
+Hispanic,110,"SANCHEZ, Loretta",CA,Democrat,House,S000030
+Hispanic,110,"SÁNCHEZ, Linda T.",CA,Democrat,House,S001156
+Hispanic,110,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,110,"SIRES, Albio",NJ,Democrat,House,S001165
+Hispanic,110,"SOLIS, Hilda L.",CA,Democrat,House,S001153
+Hispanic,110,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,111,"BACA, Joe",CA,Democrat,House,B001234
+Hispanic,111,"BECERRA, Xavier",CA,Democrat,House,B000287
+Hispanic,111,"CARDOZA, Dennis A.",CA,Democrat,House,C001050
+Hispanic,111,"COSTA, Jim",CA,Democrat,House,C001059
+Hispanic,111,"CUELLAR, Henry",TX,Democrat,House,C001063
+Hispanic,111,"DIAZ-BALART, Lincoln",FL,Republican,House,D000299
+Hispanic,111,"DIAZ-BALART, Mario",FL,Republican,House,D000600
+Hispanic,111,"GONZALEZ, Charles A.",TX,Democrat,House,G000544
+Hispanic,111,"GRIJALVA, Raúl M.",AZ,Democrat,House,G000551
+Hispanic,111,"GUTIÉRREZ, Luis V.",IL,Democrat,House,G000535
+Hispanic,111,"HINOJOSA, Rubén",TX,Democrat,House,H000636
+Hispanic,111,"LUJÁN, Ben Ray",NM,Democrat,House,L000570
+Hispanic,111,"MARTINEZ, Melquiades R. (Mel)",FL,Republican,Senate,M001162
+Hispanic,111,"MENENDEZ, Robert",NJ,Democrat,Senate,M000639
+Hispanic,111,"NAPOLITANO, Grace Flores",CA,Democrat,House,N000179
+Hispanic,111,"NUNES, Devin",CA,Republican,House,N000181
+Hispanic,111,"ORTIZ, Solomon P.",TX,Democrat,House,O000107
+Hispanic,111,"PASTOR, Ed",AZ,Democrat,House,P000099
+Hispanic,111,"PIERLUISI, Pedro",PR,New Progressive,House,P000596
+Hispanic,111,"REYES, Silvestre",TX,Democrat,House,R000170
+Hispanic,111,"RODRIGUEZ, Ciro D.",TX,Democrat,House,R000568
+Hispanic,111,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,111,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,111,"SABLAN, Gregorio Kilili Camacho",MP,Independent,House,S001177
+Hispanic,111,"SALAZAR, John",CO,Democrat,House,S001158
+Hispanic,111,"SALAZAR, Kenneth Lee",CO,Democrat,Senate,S001163
+Hispanic,111,"SANCHEZ, Loretta",CA,Democrat,House,S000030
+Hispanic,111,"SÁNCHEZ, Linda T.",CA,Democrat,House,S001156
+Hispanic,111,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,111,"SIRES, Albio",NJ,Democrat,House,S001165
+Hispanic,111,"SOLIS, Hilda L.",CA,Democrat,House,S001153
+Hispanic,111,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,112,"BACA, Joe",CA,Democrat,House,B001234
+Hispanic,112,"BECERRA, Xavier",CA,Democrat,House,B000287
+Hispanic,112,"CANSECO, Francisco Raul (Quico)",TX,Republican,House,C001082
+Hispanic,112,"CARDOZA, Dennis A.",CA,Democrat,House,C001050
+Hispanic,112,"COSTA, Jim",CA,Democrat,House,C001059
+Hispanic,112,"CUELLAR, Henry",TX,Democrat,House,C001063
+Hispanic,112,"DIAZ-BALART, Mario",FL,Republican,House,D000600
+Hispanic,112,"FLORES, Bill",TX,Republican,House,F000461
+Hispanic,112,"GONZALEZ, Charles A.",TX,Democrat,House,G000544
+Hispanic,112,"GRIJALVA, Raúl M.",AZ,Democrat,House,G000551
+Hispanic,112,"GUTIÉRREZ, Luis V.",IL,Democrat,House,G000535
+Hispanic,112,"HERRERA BEUTLER, Jaime",WA,Republican,House,H001056
+Hispanic,112,"HINOJOSA, Rubén",TX,Democrat,House,H000636
+Hispanic,112,"LABRADOR, Raúl R.",ID,Republican,House,L000573
+Hispanic,112,"LUJÁN, Ben Ray",NM,Democrat,House,L000570
+Hispanic,112,"MENENDEZ, Robert",NJ,Democrat,Senate,M000639
+Hispanic,112,"NAPOLITANO, Grace Flores",CA,Democrat,House,N000179
+Hispanic,112,"NUNES, Devin",CA,Republican,House,N000181
+Hispanic,112,"PASTOR, Ed",AZ,Democrat,House,P000099
+Hispanic,112,"PIERLUISI, Pedro",PR,New Progressive,House,P000596
+Hispanic,112,"REYES, Silvestre",TX,Democrat,House,R000170
+Hispanic,112,"RIVERA, David",FL,Republican,House,R000590
+Hispanic,112,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,112,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,112,"RUBIO, Marco",FL,Republican,Senate,R000595
+Hispanic,112,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Hispanic,112,"SANCHEZ, Loretta",CA,Democrat,House,S000030
+Hispanic,112,"SÁNCHEZ, Linda T.",CA,Democrat,House,S001156
+Hispanic,112,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,112,"SIRES, Albio",NJ,Democrat,House,S001165
+Hispanic,112,"TOOMEY, Patrick Joseph",PA,Republican,Senate,T000461
+Hispanic,112,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,113,"BECERRA, Xavier",CA,Democrat,House,B000287
+Hispanic,113,"CÁRDENAS, Tony",CA,Democrat,House,C001097
+Hispanic,113,"CASTRO, Joaquin",TX,Democrat,House,C001091
+Hispanic,113,"COSTA, Jim",CA,Democrat,House,C001059
+Hispanic,113,"CRUZ, Rafael Edward (Ted)",TX,Republican,Senate,C001098
+Hispanic,113,"CUELLAR, Henry",TX,Democrat,House,C001063
+Hispanic,113,"DIAZ-BALART, Mario",FL,Republican,House,D000600
+Hispanic,113,"FLORES, Bill",TX,Republican,House,F000461
+Hispanic,113,"GALLEGO, Pete P.",TX,Democrat,House,G000572
+Hispanic,113,"GARCIA, Joe",FL,Democrat,House,G000573
+Hispanic,113,"GRIJALVA, Raúl M.",AZ,Democrat,House,G000551
+Hispanic,113,"GUTIÉRREZ, Luis V.",IL,Democrat,House,G000535
+Hispanic,113,"HERRERA BEUTLER, Jaime",WA,Republican,House,H001056
+Hispanic,113,"HINOJOSA, Rubén",TX,Democrat,House,H000636
+Hispanic,113,"LABRADOR, Raúl R.",ID,Republican,House,L000573
+Hispanic,113,"LUJÁN, Ben Ray",NM,Democrat,House,L000570
+Hispanic,113,"LUJAN GRISHAM, Michelle",NM,Democrat,House,L000580
+Hispanic,113,"MENENDEZ, Robert",NJ,Democrat,Senate,M000639
+Hispanic,113,"NAPOLITANO, Grace Flores",CA,Democrat,House,N000179
+Hispanic,113,"NEGRETE MCLEOD, Gloria",CA,Democrat,House,N000187
+Hispanic,113,"NUNES, Devin",CA,Republican,House,N000181
+Hispanic,113,"PASTOR, Ed",AZ,Democrat,House,P000099
+Hispanic,113,"PIERLUISI, Pedro",PR,New Progressive,House,P000596
+Hispanic,113,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,113,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,113,"RUBIO, Marco",FL,Republican,Senate,R000595
+Hispanic,113,"RUIZ, Raul",CA,Democrat,House,R000599
+Hispanic,113,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Hispanic,113,"SANCHEZ, Loretta",CA,Democrat,House,S000030
+Hispanic,113,"SÁNCHEZ, Linda T.",CA,Democrat,House,S001156
+Hispanic,113,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,113,"SIRES, Albio",NJ,Democrat,House,S001165
+Hispanic,113,"TOOMEY, Patrick Joseph",PA,Republican,Senate,T000461
+Hispanic,113,"VALADAO, David G.",CA,Republican,House,V000129
+Hispanic,113,"VARGAS, Juan",CA,Democrat,House,V000130
+Hispanic,113,"VELA, Filemon",TX,Democrat,House,V000132
+Hispanic,113,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,114,"AGUILAR, Peter Rey",CA,Democrat,House,A000371
+Hispanic,114,"BECERRA, Xavier",CA,Democrat,House,B000287
+Hispanic,114,"CÁRDENAS, Tony",CA,Democrat,House,C001097
+Hispanic,114,"CASTRO, Joaquin",TX,Democrat,House,C001091
+Hispanic,114,"COSTA, Jim",CA,Democrat,House,C001059
+Hispanic,114,"CRUZ, Rafael Edward (Ted)",TX,Republican,Senate,C001098
+Hispanic,114,"CUELLAR, Henry",TX,Democrat,House,C001063
+Hispanic,114,"CURBELO, Carlos",FL,Republican,House,C001107
+Hispanic,114,"DIAZ-BALART, Mario",FL,Republican,House,D000600
+Hispanic,114,"FLORES, Bill",TX,Republican,House,F000461
+Hispanic,114,"GALLEGO, Ruben",AZ,Democrat,House,G000574
+Hispanic,114,"GRIJALVA, Raúl M.",AZ,Democrat,House,G000551
+Hispanic,114,"GUTIÉRREZ, Luis V.",IL,Democrat,House,G000535
+Hispanic,114,"HERRERA BEUTLER, Jaime",WA,Republican,House,H001056
+Hispanic,114,"HINOJOSA, Rubén",TX,Democrat,House,H000636
+Hispanic,114,"LABRADOR, Raúl R.",ID,Republican,House,L000573
+Hispanic,114,"LUJÁN, Ben Ray",NM,Democrat,House,L000570
+Hispanic,114,"LUJAN GRISHAM, Michelle",NM,Democrat,House,L000580
+Hispanic,114,"MENENDEZ, Robert",NJ,Democrat,Senate,M000639
+Hispanic,114,"MOONEY, Alex X.",WV,Republican,House,M001195
+Hispanic,114,"NAPOLITANO, Grace Flores",CA,Democrat,House,N000179
+Hispanic,114,"NUNES, Devin",CA,Republican,House,N000181
+Hispanic,114,"PIERLUISI, Pedro",PR,New Progressive,House,P000596
+Hispanic,114,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,114,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,114,"RUBIO, Marco",FL,Republican,Senate,R000595
+Hispanic,114,"RUIZ, Raul",CA,Democrat,House,R000599
+Hispanic,114,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Hispanic,114,"SANCHEZ, Loretta",CA,Democrat,House,S000030
+Hispanic,114,"SÁNCHEZ, Linda T.",CA,Democrat,House,S001156
+Hispanic,114,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,114,"SIRES, Albio",NJ,Democrat,House,S001165
+Hispanic,114,"TOOMEY, Patrick Joseph",PA,Republican,Senate,T000461
+Hispanic,114,"TORRES, Norma Judith",CA,Democrat,House,T000474
+Hispanic,114,"VALADAO, David G.",CA,Republican,House,V000129
+Hispanic,114,"VARGAS, Juan",CA,Democrat,House,V000130
+Hispanic,114,"VELA, Filemon",TX,Democrat,House,V000132
+Hispanic,114,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,115,"AGUILAR, Peter Rey",CA,Democrat,House,A000371
+Hispanic,115,"BARRAGÁN, Nanette",CA,Democrat,House,B001300
+Hispanic,115,"BECERRA, Xavier",CA,Democrat,House,B000287
+Hispanic,115,"CARBAJAL, Salud",CA,Democrat,House,C001112
+Hispanic,115,"CÁRDENAS, Tony",CA,Democrat,House,C001097
+Hispanic,115,"CASTRO, Joaquin",TX,Democrat,House,C001091
+Hispanic,115,"CORREA, Jose Luis",CA,Democrat,House,C001110
+Hispanic,115,"CORTEZ MASTO, Catherine Marie",NV,Democrat,Senate,C001113
+Hispanic,115,"COSTA, Jim",CA,Democrat,House,C001059
+Hispanic,115,"CRUZ, Rafael Edward (Ted)",TX,Republican,Senate,C001098
+Hispanic,115,"CUELLAR, Henry",TX,Democrat,House,C001063
+Hispanic,115,"CURBELO, Carlos",FL,Republican,House,C001107
+Hispanic,115,"DIAZ-BALART, Mario",FL,Republican,House,D000600
+Hispanic,115,"ESPAILLAT, Adriano J.",NY,Democrat,House,E000297
+Hispanic,115,"FLORES, Bill",TX,Republican,House,F000461
+Hispanic,115,"GALLEGO, Ruben",AZ,Democrat,House,G000574
+Hispanic,115,"GOMEZ, Jimmy",CA,Democrat,House,G000585
+Hispanic,115,"GONZALEZ, Vicente, Jr.",TX,Democrat,House,G000581
+Hispanic,115,"GONZÁLEZ-COLÓN, Jenniffer",PR,New Progressive,House,G000582
+Hispanic,115,"GRIJALVA, Raúl M.",AZ,Democrat,House,G000551
+Hispanic,115,"GUTIÉRREZ, Luis V.",IL,Democrat,House,G000535
+Hispanic,115,"HERRERA BEUTLER, Jaime",WA,Republican,House,H001056
+Hispanic,115,"KIHUEN, Ruben J.",NV,Democrat,House,K000390
+Hispanic,115,"LABRADOR, Raúl R.",ID,Republican,House,L000573
+Hispanic,115,"LUJÁN, Ben Ray",NM,Democrat,House,L000570
+Hispanic,115,"LUJAN GRISHAM, Michelle",NM,Democrat,House,L000580
+Hispanic,115,"MAST, Brian Jeffrey",FL,Republican,House,M001199
+Hispanic,115,"MENENDEZ, Robert",NJ,Democrat,Senate,M000639
+Hispanic,115,"MOONEY, Alex X.",WV,Republican,House,M001195
+Hispanic,115,"NAPOLITANO, Grace Flores",CA,Democrat,House,N000179
+Hispanic,115,"NUNES, Devin",CA,Republican,House,N000181
+Hispanic,115,"ROS-LEHTINEN, Ileana",FL,Republican,House,R000435
+Hispanic,115,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,115,"RUBIO, Marco",FL,Republican,Senate,R000595
+Hispanic,115,"RUIZ, Raul",CA,Democrat,House,R000599
+Hispanic,115,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Hispanic,115,"SÁNCHEZ, Linda T.",CA,Democrat,House,S001156
+Hispanic,115,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,115,"SIRES, Albio",NJ,Democrat,House,S001165
+Hispanic,115,"SOTO, Darren Michael",FL,Democrat,House,S001200
+Hispanic,115,"TOOMEY, Patrick Joseph",PA,Republican,Senate,T000461
+Hispanic,115,"TORRES, Norma Judith",CA,Democrat,House,T000474
+Hispanic,115,"VALADAO, David G.",CA,Republican,House,V000129
+Hispanic,115,"VARGAS, Juan",CA,Democrat,House,V000130
+Hispanic,115,"VELA, Filemon",TX,Democrat,House,V000132
+Hispanic,115,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,116,"AGUILAR, Peter Rey",CA,Democrat,House,A000371
+Hispanic,116,"BARRAGÁN, Nanette",CA,Democrat,House,B001300
+Hispanic,116,"CARBAJAL, Salud",CA,Democrat,House,C001112
+Hispanic,116,"CÁRDENAS, Tony",CA,Democrat,House,C001097
+Hispanic,116,"CASTRO, Joaquin",TX,Democrat,House,C001091
+Hispanic,116,"CISNEROS, Gilbert Ray, Jr.",CA,Democrat,House,C001123
+Hispanic,116,"CORREA, Jose Luis",CA,Democrat,House,C001110
+Hispanic,116,"CORTEZ MASTO, Catherine Marie",NV,Democrat,Senate,C001113
+Hispanic,116,"COSTA, Jim",CA,Democrat,House,C001059
+Hispanic,116,"CRUZ, Rafael Edward (Ted)",TX,Republican,Senate,C001098
+Hispanic,116,"CUELLAR, Henry",TX,Democrat,House,C001063
+Hispanic,116,"DELGADO, Antonio",NY,Democrat,House,D000630
+Hispanic,116,"DIAZ-BALART, Mario",FL,Republican,House,D000600
+Hispanic,116,"ESCOBAR, Veronica",TX,Democrat,House,E000299
+Hispanic,116,"ESPAILLAT, Adriano J.",NY,Democrat,House,E000297
+Hispanic,116,"FLORES, Bill",TX,Republican,House,F000461
+Hispanic,116,"GALLEGO, Ruben",AZ,Democrat,House,G000574
+Hispanic,116,"GARCIA, Mike",CA,Republican,House,G000061
+Hispanic,116,"GARCIA, Sylvia",TX,Democrat,House,G000587
+Hispanic,116,"GARCÍA, Jesús",IL,Democrat,House,G000586
+Hispanic,116,"GOMEZ, Jimmy",CA,Democrat,House,G000585
+Hispanic,116,"GONZALEZ, Anthony",OH,Republican,House,G000588
+Hispanic,116,"GONZALEZ, Vicente, Jr.",TX,Democrat,House,G000581
+Hispanic,116,"GONZÁLEZ-COLÓN, Jenniffer",PR,New Progressive,House,G000582
+Hispanic,116,"GRIJALVA, Raúl M.",AZ,Democrat,House,G000551
+Hispanic,116,"HERRERA BEUTLER, Jaime",WA,Republican,House,H001056
+Hispanic,116,"LEVIN, Mike",CA,Democrat,House,L000593
+Hispanic,116,"LUJÁN, Ben Ray",NM,Democrat,House,L000570
+Hispanic,116,"MAST, Brian Jeffrey",FL,Republican,House,M001199
+Hispanic,116,"MENENDEZ, Robert",NJ,Democrat,Senate,M000639
+Hispanic,116,"MOONEY, Alex X.",WV,Republican,House,M001195
+Hispanic,116,"MUCARSEL-POWELL, Debbie",FL,Democrat,House,M001207
+Hispanic,116,"NAPOLITANO, Grace Flores",CA,Democrat,House,N000179
+Hispanic,116,"NUNES, Devin",CA,Republican,House,N000181
+Hispanic,116,"OCASIO-CORTEZ, Alexandria",NY,Democrat,House,O000172
+Hispanic,116,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,116,"RUBIO, Marco",FL,Republican,Senate,R000595
+Hispanic,116,"RUIZ, Raul",CA,Democrat,House,R000599
+Hispanic,116,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Hispanic,116,"SAN NICOLAS, Michael",GU,Democrat,House,S001204
+Hispanic,116,"SÁNCHEZ, Linda T.",CA,Democrat,House,S001156
+Hispanic,116,"SERRANO, José E.",NY,Democrat,House,S000248
+Hispanic,116,"SIRES, Albio",NJ,Democrat,House,S001165
+Hispanic,116,"SOTO, Darren Michael",FL,Democrat,House,S001200
+Hispanic,116,"TOOMEY, Patrick Joseph",PA,Republican,Senate,T000461
+Hispanic,116,"TORRES, Norma Judith",CA,Democrat,House,T000474
+Hispanic,116,"TORRES SMALL, Xochitl",NM,Democrat,House,T000484
+Hispanic,116,"TRAHAN, Lori",MA,Democrat,House,T000482
+Hispanic,116,"VARGAS, Juan",CA,Democrat,House,V000130
+Hispanic,116,"VELA, Filemon",TX,Democrat,House,V000132
+Hispanic,116,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,117,"AGUILAR, Peter Rey",CA,Democrat,House,A000371
+Hispanic,117,"BARRAGÁN, Nanette",CA,Democrat,House,B001300
+Hispanic,117,"CARBAJAL, Salud",CA,Democrat,House,C001112
+Hispanic,117,"CÁRDENAS, Tony",CA,Democrat,House,C001097
+Hispanic,117,"CASTRO, Joaquin",TX,Democrat,House,C001091
+Hispanic,117,"CORREA, Jose Luis",CA,Democrat,House,C001110
+Hispanic,117,"CORTEZ MASTO, Catherine Marie",NV,Democrat,Senate,C001113
+Hispanic,117,"COSTA, Jim",CA,Democrat,House,C001059
+Hispanic,117,"CRUZ, Rafael Edward (Ted)",TX,Republican,Senate,C001098
+Hispanic,117,"CUELLAR, Henry",TX,Democrat,House,C001063
+Hispanic,117,"DELGADO, Antonio",NY,Democrat,House,D000630
+Hispanic,117,"DIAZ-BALART, Mario",FL,Republican,House,D000600
+Hispanic,117,"ESCOBAR, Veronica",TX,Democrat,House,E000299
+Hispanic,117,"ESPAILLAT, Adriano J.",NY,Democrat,House,E000297
+Hispanic,117,"FLORES, Mayra",TX,Republican,House,F000473
+Hispanic,117,"GALLEGO, Ruben",AZ,Democrat,House,G000574
+Hispanic,117,"GARCIA, Mike",CA,Republican,House,G000061
+Hispanic,117,"GARCIA, Sylvia",TX,Democrat,House,G000587
+Hispanic,117,"GARCÍA, Jesús",IL,Democrat,House,G000586
+Hispanic,117,"GIMENEZ, Carlos A.",FL,Republican,House,G000593
+Hispanic,117,"GOMEZ, Jimmy",CA,Democrat,House,G000585
+Hispanic,117,"GONZALES, Tony",TX,Republican,House,G000594
+Hispanic,117,"GONZALEZ, Anthony",OH,Republican,House,G000588
+Hispanic,117,"GONZALEZ, Vicente, Jr.",TX,Democrat,House,G000581
+Hispanic,117,"GONZÁLEZ-COLÓN, Jenniffer",PR,New Progressive,House,G000582
+Hispanic,117,"GRIJALVA, Raúl M.",AZ,Democrat,House,G000551
+Hispanic,117,"HERRERA BEUTLER, Jaime",WA,Republican,House,H001056
+Hispanic,117,"LEGER FERNANDEZ, Teresa",NM,Democrat,House,L000273
+Hispanic,117,"LEVIN, Mike",CA,Democrat,House,L000593
+Hispanic,117,"LUJÁN, Ben Ray",NM,Democrat,Senate,L000570
+Hispanic,117,"MALLIOTAKIS, Nicole",NY,Republican,House,M000317
+Hispanic,117,"MAST, Brian Jeffrey",FL,Republican,House,M001199
+Hispanic,117,"MENENDEZ, Robert",NJ,Democrat,Senate,M000639
+Hispanic,117,"MOONEY, Alex X.",WV,Republican,House,M001195
+Hispanic,117,"NAPOLITANO, Grace Flores",CA,Democrat,House,N000179
+Hispanic,117,"NUNES, Devin",CA,Republican,House,N000181
+Hispanic,117,"OCASIO-CORTEZ, Alexandria",NY,Democrat,House,O000172
+Hispanic,117,"PADILLA, Alejandro (Alex)",CA,Democrat,Senate,P000145
+Hispanic,117,"ROYBAL-ALLARD, Lucille",CA,Democrat,House,R000486
+Hispanic,117,"RUBIO, Marco",FL,Republican,Senate,R000595
+Hispanic,117,"RUIZ, Raul",CA,Democrat,House,R000599
+Hispanic,117,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Hispanic,117,"SALAZAR, Maria Elvira",FL,Republican,House,S000168
+Hispanic,117,"SAN NICOLAS, Michael",GU,Democrat,House,S001204
+Hispanic,117,"SÁNCHEZ, Linda T.",CA,Democrat,House,S001156
+Hispanic,117,"SIRES, Albio",NJ,Democrat,House,S001165
+Hispanic,117,"SOTO, Darren Michael",FL,Democrat,House,S001200
+Hispanic,117,"TOOMEY, Patrick Joseph",PA,Republican,Senate,T000461
+Hispanic,117,"TORRES, Norma Judith",CA,Democrat,House,T000474
+Hispanic,117,"TORRES, Ritchie",NY,Democrat,House,T000486
+Hispanic,117,"TRAHAN, Lori",MA,Democrat,House,T000482
+Hispanic,117,"VALADAO, David G.",CA,Republican,House,V000129
+Hispanic,117,"VARGAS, Juan",CA,Democrat,House,V000130
+Hispanic,117,"VELA, Filemon",TX,Democrat,House,V000132
+Hispanic,117,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,118,"AGUILAR, Peter Rey",CA,Democrat,House,A000371
+Hispanic,118,"BARRAGÁN, Nanette",CA,Democrat,House,B001300
+Hispanic,118,"CARAVEO, Yadira",CO,Democrat,House,C001134
+Hispanic,118,"CARBAJAL, Salud",CA,Democrat,House,C001112
+Hispanic,118,"CÁRDENAS, Tony",CA,Democrat,House,C001097
+Hispanic,118,"CASAR, Greg",TX,Democrat,House,C001131
+Hispanic,118,"CASTRO, Joaquin",TX,Democrat,House,C001091
+Hispanic,118,"CHAVEZ-DEREMER, Lori",OR,Republican,House,C001135
+Hispanic,118,"CISCOMANI, Juan",AZ,Republican,House,C001133
+Hispanic,118,"CORREA, Jose Luis",CA,Democrat,House,C001110
+Hispanic,118,"CORTEZ MASTO, Catherine Marie",NV,Democrat,Senate,C001113
+Hispanic,118,"COSTA, Jim",CA,Democrat,House,C001059
+Hispanic,118,"CRUZ, Rafael Edward (Ted)",TX,Republican,Senate,C001098
+Hispanic,118,"CUELLAR, Henry",TX,Democrat,House,C001063
+Hispanic,118,"DE LA CRUZ, Monica",TX,Republican,House,D000594
+Hispanic,118,"D'ESPOSITO, Anthony",NY,Republican,House,D000632
+Hispanic,118,"DIAZ-BALART, Mario",FL,Republican,House,D000600
+Hispanic,118,"DUARTE, John",CA,Republican,House,D000633
+Hispanic,118,"ESCOBAR, Veronica",TX,Democrat,House,E000299
+Hispanic,118,"ESPAILLAT, Adriano J.",NY,Democrat,House,E000297
+Hispanic,118,"FROST, Maxwell",FL,Democrat,House,F000476
+Hispanic,118,"GALLEGO, Ruben",AZ,Democrat,House,G000574
+Hispanic,118,"GARCIA, Mike",CA,Republican,House,G000061
+Hispanic,118,"GARCIA, Robert",CA,Democrat,House,G000598
+Hispanic,118,"GARCIA, Sylvia",TX,Democrat,House,G000587
+Hispanic,118,"GARCÍA, Jesús",IL,Democrat,House,G000586
+Hispanic,118,"GIMENEZ, Carlos A.",FL,Republican,House,G000593
+Hispanic,118,"GOMEZ, Jimmy",CA,Democrat,House,G000585
+Hispanic,118,"GONZALES, Tony",TX,Republican,House,G000594
+Hispanic,118,"GONZALEZ, Vicente, Jr.",TX,Democrat,House,G000581
+Hispanic,118,"GONZÁLEZ-COLÓN, Jenniffer",PR,New Progressive,House,G000582
+Hispanic,118,"GRIJALVA, Raúl M.",AZ,Democrat,House,G000551
+Hispanic,118,"LEGER FERNANDEZ, Teresa",NM,Democrat,House,L000273
+Hispanic,118,"LEVIN, Mike",CA,Democrat,House,L000593
+Hispanic,118,"LOPEZ, Greg",CO,Republican,House,L000604
+Hispanic,118,"LUJÁN, Ben Ray",NM,Democrat,Senate,L000570
+Hispanic,118,"LUNA, Anna",FL,Republican,House,L000596
+Hispanic,118,"MALLIOTAKIS, Nicole",NY,Republican,House,M000317
+Hispanic,118,"MAST, Brian Jeffrey",FL,Republican,House,M001199
+Hispanic,118,"MENENDEZ, Robert",NJ,Democrat,Senate,M000639
+Hispanic,118,"MENENDEZ, Robert",NJ,Democrat,House,M001226
+Hispanic,118,"MOONEY, Alex X.",WV,Republican,House,M001195
+Hispanic,118,"MOYLAN, James",GU,Republican,House,M001219
+Hispanic,118,"NAPOLITANO, Grace Flores",CA,Democrat,House,N000179
+Hispanic,118,"OCASIO-CORTEZ, Alexandria",NY,Democrat,House,O000172
+Hispanic,118,"PADILLA, Alejandro (Alex)",CA,Democrat,Senate,P000145
+Hispanic,118,"PEREZ, Marie Gluesenkamp",WA,Democrat,House,G000600
+Hispanic,118,"RAMIREZ, Delia",IL,Democrat,House,R000617
+Hispanic,118,"RUBIO, Marco",FL,Republican,Senate,R000595
+Hispanic,118,"RUIZ, Raul",CA,Democrat,House,R000599
+Hispanic,118,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Hispanic,118,"SALAZAR, Maria Elvira",FL,Republican,House,S000168
+Hispanic,118,"SALINAS, Andrea",OR,Democrat,House,S001226
+Hispanic,118,"SÁNCHEZ, Linda T.",CA,Democrat,House,S001156
+Hispanic,118,"SANTOS, George",NY,Republican,House,S001222
+Hispanic,118,"SOTO, Darren Michael",FL,Democrat,House,S001200
+Hispanic,118,"TORRES, Norma Judith",CA,Democrat,House,T000474
+Hispanic,118,"TORRES, Ritchie",NY,Democrat,House,T000486
+Hispanic,118,"TRAHAN, Lori",MA,Democrat,House,T000482
+Hispanic,118,"VALADAO, David G.",CA,Republican,House,V000129
+Hispanic,118,"VARGAS, Juan",CA,Democrat,House,V000130
+Hispanic,118,"VASQUEZ, Gabriel",NM,Democrat,House,V000136
+Hispanic,118,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Hispanic,119,"AGUILAR, Peter Rey",CA,Democrat,House,A000371
+Hispanic,119,"BARRAGÁN, Nanette",CA,Democrat,House,B001300
+Hispanic,119,"CARBAJAL, Salud",CA,Democrat,House,C001112
+Hispanic,119,"CASAR, Greg",TX,Democrat,House,C001131
+Hispanic,119,"CASTRO, Joaquin",TX,Democrat,House,C001091
+Hispanic,119,"CISCOMANI, Juan",AZ,Republican,House,C001133
+Hispanic,119,"CISNEROS, Gilbert Ray, Jr.",CA,Democrat,House,C001123
+Hispanic,119,"CORREA, Jose Luis",CA,Democrat,House,C001110
+Hispanic,119,"CORTEZ MASTO, Catherine Marie",NV,Democrat,Senate,C001113
+Hispanic,119,"COSTA, Jim",CA,Democrat,House,C001059
+Hispanic,119,"CRUZ, Rafael Edward (Ted)",TX,Republican,Senate,C001098
+Hispanic,119,"CUELLAR, Henry",TX,Democrat,House,C001063
+Hispanic,119,"DE LA CRUZ, Monica",TX,Republican,House,D000594
+Hispanic,119,"DIAZ-BALART, Mario",FL,Republican,House,D000600
+Hispanic,119,"ESCOBAR, Veronica",TX,Democrat,House,E000299
+Hispanic,119,"ESPAILLAT, Adriano J.",NY,Democrat,House,E000297
+Hispanic,119,"EVANS, Gabe",CO,Republican,House,E000300
+Hispanic,119,"FROST, Maxwell",FL,Democrat,House,F000476
+Hispanic,119,"GALLEGO, Ruben",AZ,Democrat,Senate,G000574
+Hispanic,119,"GARCIA, Robert",CA,Democrat,House,G000598
+Hispanic,119,"GARCIA, Sylvia",TX,Democrat,House,G000587
+Hispanic,119,"GARCÍA, Jesús",IL,Democrat,House,G000586
+Hispanic,119,"GIMENEZ, Carlos A.",FL,Republican,House,G000593
+Hispanic,119,"GOMEZ, Jimmy",CA,Democrat,House,G000585
+Hispanic,119,"GONZALES, Tony",TX,Republican,House,G000594
+Hispanic,119,"GONZALEZ, Vicente, Jr.",TX,Democrat,House,G000581
+Hispanic,119,"GRIJALVA, Adelita S.",AZ,Democrat,House,G000606
+Hispanic,119,"GRIJALVA, Raúl M.",AZ,Democrat,House,G000551
+Hispanic,119,"HERNÁNDEZ, Pablo José",PR,Popular Democrat,House,H001103
+Hispanic,119,"LEGER FERNANDEZ, Teresa",NM,Democrat,House,L000273
+Hispanic,119,"LEVIN, Mike",CA,Democrat,House,L000593
+Hispanic,119,"LICCARDO, Sam T.",CA,Democrat,House,L000607
+Hispanic,119,"LUJÁN, Ben Ray",NM,Democrat,Senate,L000570
+Hispanic,119,"LUNA, Anna",FL,Republican,House,L000596
+Hispanic,119,"MALLIOTAKIS, Nicole",NY,Republican,House,M000317
+Hispanic,119,"MAST, Brian Jeffrey",FL,Republican,House,M001199
+Hispanic,119,"MEJIA, Analilia",NJ,Democrat,House,M001246
+Hispanic,119,"MENENDEZ, Robert",NJ,Democrat,House,M001226
+Hispanic,119,"MORENO, Bernardo (Bernie)",OH,Republican,Senate,M001242
+Hispanic,119,"MOYLAN, James",GU,Republican,House,M001219
+Hispanic,119,"OCASIO-CORTEZ, Alexandria",NY,Democrat,House,O000172
+Hispanic,119,"PADILLA, Alejandro (Alex)",CA,Democrat,Senate,P000145
+Hispanic,119,"PEREZ, Marie Gluesenkamp",WA,Democrat,House,G000600
+Hispanic,119,"POU, Nellie",NJ,Democrat,House,P000621
+Hispanic,119,"RAMIREZ, Delia",IL,Democrat,House,R000617
+Hispanic,119,"RANDALL, Emily",WA,Democrat,House,R000621
+Hispanic,119,"RIVAS, Luz M.",CA,Democrat,House,R000620
+Hispanic,119,"RUBIO, Marco",FL,Republican,Senate,R000595
+Hispanic,119,"RUIZ, Raul",CA,Democrat,House,R000599
+Hispanic,119,"SALAZAR, Maria Elvira",FL,Republican,House,S000168
+Hispanic,119,"SALINAS, Andrea",OR,Democrat,House,S001226
+Hispanic,119,"SÁNCHEZ, Linda T.",CA,Democrat,House,S001156
+Hispanic,119,"SOTO, Darren Michael",FL,Democrat,House,S001200
+Hispanic,119,"TORRES, Norma Judith",CA,Democrat,House,T000474
+Hispanic,119,"TORRES, Ritchie",NY,Democrat,House,T000486
+Hispanic,119,"TRAHAN, Lori",MA,Democrat,House,T000482
+Hispanic,119,"VALADAO, David G.",CA,Republican,House,V000129
+Hispanic,119,"VARGAS, Juan",CA,Democrat,House,V000130
+Hispanic,119,"VASQUEZ, Gabriel",NM,Democrat,House,V000136
+Hispanic,119,"VELÁZQUEZ, Nydia M.",NY,Democrat,House,V000081
+Asian or Pacific Islander,56,"WILCOX, Robert W.",HI,Home Rule,House,W000459
+Asian or Pacific Islander,57,"WILCOX, Robert W.",HI,Home Rule,House,W000459
+Asian or Pacific Islander,58,"KALANIANAʻOLE, Jonah Kuhio",HI,Republican,House,K000004
+Asian or Pacific Islander,59,"KALANIANAʻOLE, Jonah Kuhio",HI,Republican,House,K000004
+Asian or Pacific Islander,60,"KALANIANAʻOLE, Jonah Kuhio",HI,Republican,House,K000004
+Asian or Pacific Islander,60,"LEGARDA, Benito",PI,Progresista,House,L000218
+Asian or Pacific Islander,60,"OCAMPO, Pablo",PI,Nacionalista,House,O000020
+Asian or Pacific Islander,61,"KALANIANAʻOLE, Jonah Kuhio",HI,Republican,House,K000004
+Asian or Pacific Islander,61,"LEGARDA, Benito",PI,Progresista,House,L000218
+Asian or Pacific Islander,61,"OCAMPO, Pablo",PI,Nacionalista,House,O000020
+Asian or Pacific Islander,61,"QUEZON, Manuel L.",PI,Nacionalista,House,Q000009
+Asian or Pacific Islander,62,"KALANIANAʻOLE, Jonah Kuhio",HI,Republican,House,K000004
+Asian or Pacific Islander,62,"LEGARDA, Benito",PI,Progresista,House,L000218
+Asian or Pacific Islander,62,"QUEZON, Manuel L.",PI,Nacionalista,House,Q000009
+Asian or Pacific Islander,63,"EARNSHAW, Manuel",PI,Independent,House,E000015
+Asian or Pacific Islander,63,"KALANIANAʻOLE, Jonah Kuhio",HI,Republican,House,K000004
+Asian or Pacific Islander,63,"QUEZON, Manuel L.",PI,Nacionalista,House,Q000009
+Asian or Pacific Islander,64,"EARNSHAW, Manuel",PI,Independent,House,E000015
+Asian or Pacific Islander,64,"KALANIANAʻOLE, Jonah Kuhio",HI,Republican,House,K000004
+Asian or Pacific Islander,64,"QUEZON, Manuel L.",PI,Nacionalista,House,Q000009
+Asian or Pacific Islander,65,"DE VEYRA, Jaime C.",PI,Nacionalista,House,D000276
+Asian or Pacific Islander,65,"KALANIANAʻOLE, Jonah Kuhio",HI,Republican,House,K000004
+Asian or Pacific Islander,65,"YANGCO, Teodoro R.",PI,Nacionalista,House,Y000004
+Asian or Pacific Islander,66,"DE VEYRA, Jaime C.",PI,Nacionalista,House,D000276
+Asian or Pacific Islander,66,"GABALDON, Isauro",PI,Nacionalista,House,G000001
+Asian or Pacific Islander,66,"KALANIANAʻOLE, Jonah Kuhio",HI,Republican,House,K000004
+Asian or Pacific Islander,66,"YANGCO, Teodoro R.",PI,Nacionalista,House,Y000004
+Asian or Pacific Islander,67,"DE VEYRA, Jaime C.",PI,Nacionalista,House,D000276
+Asian or Pacific Islander,67,"GABALDON, Isauro",PI,Nacionalista,House,G000001
+Asian or Pacific Islander,67,"KALANIANAʻOLE, Jonah Kuhio",HI,Republican,House,K000004
+Asian or Pacific Islander,68,"GABALDON, Isauro",PI,Nacionalista,House,G000001
+Asian or Pacific Islander,68,"GUEVARA, Pedro",PI,Nacionalista,House,G000518
+Asian or Pacific Islander,68,"JARRETT, William P.",HI,Democrat,House,J000061
+Asian or Pacific Islander,69,"GABALDON, Isauro",PI,Nacionalista,House,G000001
+Asian or Pacific Islander,69,"GUEVARA, Pedro",PI,Nacionalista,House,G000518
+Asian or Pacific Islander,69,"JARRETT, William P.",HI,Democrat,House,J000061
+Asian or Pacific Islander,70,"GABALDON, Isauro",PI,Nacionalista,House,G000001
+Asian or Pacific Islander,70,"GUEVARA, Pedro",PI,Nacionalista,House,G000518
+Asian or Pacific Islander,70,"HOUSTON, Victor S.K.",HI,Republican,House,H000828
+Asian or Pacific Islander,71,"GUEVARA, Pedro",PI,Nacionalista,House,G000518
+Asian or Pacific Islander,71,"HOUSTON, Victor S.K.",HI,Republican,House,H000828
+Asian or Pacific Islander,71,"OSIAS, Camilo",PI,Nacionalista,House,O000118
+Asian or Pacific Islander,72,"GUEVARA, Pedro",PI,Nacionalista,House,G000518
+Asian or Pacific Islander,72,"HOUSTON, Victor S.K.",HI,Republican,House,H000828
+Asian or Pacific Islander,72,"OSIAS, Camilo",PI,Nacionalista,House,O000118
+Asian or Pacific Islander,73,"GUEVARA, Pedro",PI,Nacionalista,House,G000518
+Asian or Pacific Islander,73,"OSIAS, Camilo",PI,Nacionalista,House,O000118
+Asian or Pacific Islander,74,"DELGADO, Francisco A.",PI,Nacionalista,House,D000218
+Asian or Pacific Islander,74,"GUEVARA, Pedro",PI,Nacionalista,House,G000518
+Asian or Pacific Islander,74,"KING, Samuel Wilder",HI,Republican,House,K000214
+Asian or Pacific Islander,74,"PAREDES, Quintin",PI,Nacionalista,House,P000050
+Asian or Pacific Islander,75,"ELIZALDE, Joaquin Miguel",PI,,House,E000108
+Asian or Pacific Islander,75,"KING, Samuel Wilder",HI,Republican,House,K000214
+Asian or Pacific Islander,75,"PAREDES, Quintin",PI,Nacionalista,House,P000050
+Asian or Pacific Islander,76,"ELIZALDE, Joaquin Miguel",PI,,House,E000108
+Asian or Pacific Islander,76,"KING, Samuel Wilder",HI,Republican,House,K000214
+Asian or Pacific Islander,77,"ELIZALDE, Joaquin Miguel",PI,,House,E000108
+Asian or Pacific Islander,77,"KING, Samuel Wilder",HI,Republican,House,K000214
+Asian or Pacific Islander,78,"ELIZALDE, Joaquin Miguel",PI,,House,E000108
+Asian or Pacific Islander,78,"ROMULO, Carlos Peña",PI,,House,R000419
+Asian or Pacific Islander,79,"ROMULO, Carlos Peña",PI,,House,R000419
+Asian or Pacific Islander,85,"SAUND, Dalip Singh (Judge)",CA,Democrat,House,S000075
+Asian or Pacific Islander,86,"FONG, Hiram Leong",HI,Republican,Senate,F000245
+Asian or Pacific Islander,86,"INOUYE, Daniel Ken",HI,Democrat,House,I000025
+Asian or Pacific Islander,86,"SAUND, Dalip Singh (Judge)",CA,Democrat,House,S000075
+Asian or Pacific Islander,87,"FONG, Hiram Leong",HI,Republican,Senate,F000245
+Asian or Pacific Islander,87,"INOUYE, Daniel Ken",HI,Democrat,House,I000025
+Asian or Pacific Islander,87,"SAUND, Dalip Singh (Judge)",CA,Democrat,House,S000075
+Asian or Pacific Islander,88,"FONG, Hiram Leong",HI,Republican,Senate,F000245
+Asian or Pacific Islander,88,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,88,"MATSUNAGA, Spark Masayuki",HI,Democrat,House,M000250
+Asian or Pacific Islander,89,"FONG, Hiram Leong",HI,Republican,Senate,F000245
+Asian or Pacific Islander,89,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,89,"MATSUNAGA, Spark Masayuki",HI,Democrat,House,M000250
+Asian or Pacific Islander,89,"MINK, Patsy Takemoto",HI,Democrat,House,M000797
+Asian or Pacific Islander,90,"FONG, Hiram Leong",HI,Republican,Senate,F000245
+Asian or Pacific Islander,90,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,90,"MATSUNAGA, Spark Masayuki",HI,Democrat,House,M000250
+Asian or Pacific Islander,90,"MINK, Patsy Takemoto",HI,Democrat,House,M000797
+Asian or Pacific Islander,91,"FONG, Hiram Leong",HI,Republican,Senate,F000245
+Asian or Pacific Islander,91,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,91,"MATSUNAGA, Spark Masayuki",HI,Democrat,House,M000250
+Asian or Pacific Islander,91,"MINK, Patsy Takemoto",HI,Democrat,House,M000797
+Asian or Pacific Islander,92,"FONG, Hiram Leong",HI,Republican,Senate,F000245
+Asian or Pacific Islander,92,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,92,"MATSUNAGA, Spark Masayuki",HI,Democrat,House,M000250
+Asian or Pacific Islander,92,"MINK, Patsy Takemoto",HI,Democrat,House,M000797
+Asian or Pacific Islander,93,"FONG, Hiram Leong",HI,Republican,Senate,F000245
+Asian or Pacific Islander,93,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,93,"MATSUNAGA, Spark Masayuki",HI,Democrat,House,M000250
+Asian or Pacific Islander,93,"MINK, Patsy Takemoto",HI,Democrat,House,M000797
+Asian or Pacific Islander,93,"WON PAT, Antonio Borja",GU,Democrat,House,W000686
+Asian or Pacific Islander,94,"FONG, Hiram Leong",HI,Republican,Senate,F000245
+Asian or Pacific Islander,94,"HAYAKAWA, Samuel Ichiye",CA,Republican,Senate,
+Asian or Pacific Islander,94,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,94,"MATSUNAGA, Spark Masayuki",HI,Democrat,House,M000250
+Asian or Pacific Islander,94,"MINETA, Norman Y.",CA,Democrat,House,M000794
+Asian or Pacific Islander,94,"MINK, Patsy Takemoto",HI,Democrat,House,M000797
+Asian or Pacific Islander,94,"WON PAT, Antonio Borja",GU,Democrat,House,W000686
+Asian or Pacific Islander,95,"AKAKA, Daniel Kahikina",HI,Democrat,House,A000069
+Asian or Pacific Islander,95,"HAYAKAWA, Samuel Ichiye",CA,Republican,Senate,H000384
+Asian or Pacific Islander,95,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,95,"MATSUNAGA, Spark Masayuki",HI,Democrat,Senate,M000250
+Asian or Pacific Islander,95,"MINETA, Norman Y.",CA,Democrat,House,M000794
+Asian or Pacific Islander,95,"WON PAT, Antonio Borja",GU,Democrat,House,W000686
+Asian or Pacific Islander,96,"AKAKA, Daniel Kahikina",HI,Democrat,House,A000069
+Asian or Pacific Islander,96,"HAYAKAWA, Samuel Ichiye",CA,Republican,Senate,H000384
+Asian or Pacific Islander,96,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,96,"MATSUI, Robert T.",CA,Democrat,House,M000249
+Asian or Pacific Islander,96,"MATSUNAGA, Spark Masayuki",HI,Democrat,Senate,M000250
+Asian or Pacific Islander,96,"MINETA, Norman Y.",CA,Democrat,House,M000794
+Asian or Pacific Islander,96,"WON PAT, Antonio Borja",GU,Democrat,House,W000686
+Asian or Pacific Islander,97,"AKAKA, Daniel Kahikina",HI,Democrat,House,A000069
+Asian or Pacific Islander,97,"HAYAKAWA, Samuel Ichiye",CA,Republican,Senate,H000384
+Asian or Pacific Islander,97,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,97,"MATSUI, Robert T.",CA,Democrat,House,M000249
+Asian or Pacific Islander,97,"MATSUNAGA, Spark Masayuki",HI,Democrat,Senate,M000250
+Asian or Pacific Islander,97,"MINETA, Norman Y.",CA,Democrat,House,M000794
+Asian or Pacific Islander,97,"SUNIA, Fofó Iosefa",AS,Democrat,House,S001077
+Asian or Pacific Islander,97,"WON PAT, Antonio Borja",GU,Democrat,House,W000686
+Asian or Pacific Islander,98,"AKAKA, Daniel Kahikina",HI,Democrat,House,A000069
+Asian or Pacific Islander,98,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,98,"MATSUI, Robert T.",CA,Democrat,House,M000249
+Asian or Pacific Islander,98,"MATSUNAGA, Spark Masayuki",HI,Democrat,Senate,M000250
+Asian or Pacific Islander,98,"MINETA, Norman Y.",CA,Democrat,House,M000794
+Asian or Pacific Islander,98,"SUNIA, Fofó Iosefa",AS,Democrat,House,S001077
+Asian or Pacific Islander,98,"WON PAT, Antonio Borja",GU,Democrat,House,W000686
+Asian or Pacific Islander,99,"AKAKA, Daniel Kahikina",HI,Democrat,House,A000069
+Asian or Pacific Islander,99,"BLAZ, Ben Garrido",GU,Republican,House,B000551
+Asian or Pacific Islander,99,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,99,"MATSUI, Robert T.",CA,Democrat,House,M000249
+Asian or Pacific Islander,99,"MATSUNAGA, Spark Masayuki",HI,Democrat,Senate,M000250
+Asian or Pacific Islander,99,"MINETA, Norman Y.",CA,Democrat,House,M000794
+Asian or Pacific Islander,99,"SUNIA, Fofó Iosefa",AS,Democrat,House,S001077
+Asian or Pacific Islander,100,"AKAKA, Daniel Kahikina",HI,Democrat,House,A000069
+Asian or Pacific Islander,100,"BLAZ, Ben Garrido",GU,Republican,House,B000551
+Asian or Pacific Islander,100,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,100,"MATSUI, Robert T.",CA,Democrat,House,M000249
+Asian or Pacific Islander,100,"MATSUNAGA, Spark Masayuki",HI,Democrat,Senate,M000250
+Asian or Pacific Islander,100,"MINETA, Norman Y.",CA,Democrat,House,M000794
+Asian or Pacific Islander,100,"SAIKI, Patricia",HI,Republican,House,S000014
+Asian or Pacific Islander,100,"SUNIA, Fofó Iosefa",AS,Democrat,House,S001077
+Asian or Pacific Islander,101,"AKAKA, Daniel Kahikina",HI,Democrat,Both,A000069
+Asian or Pacific Islander,101,"BLAZ, Ben Garrido",GU,Republican,House,B000551
+Asian or Pacific Islander,101,"FALEOMAVAEGA, Eni F. H.",AS,Democrat,House,F000010
+Asian or Pacific Islander,101,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,101,"MATSUI, Robert T.",CA,Democrat,House,M000249
+Asian or Pacific Islander,101,"MATSUNAGA, Spark Masayuki",HI,Democrat,Senate,M000250
+Asian or Pacific Islander,101,"MINETA, Norman Y.",CA,Democrat,House,M000794
+Asian or Pacific Islander,101,"MINK, Patsy Takemoto",HI,Democrat,House,M000797
+Asian or Pacific Islander,101,"SAIKI, Patricia",HI,Republican,House,S000014
+Asian or Pacific Islander,102,"AKAKA, Daniel Kahikina",HI,Democrat,Senate,A000069
+Asian or Pacific Islander,102,"BLAZ, Ben Garrido",GU,Republican,House,B000551
+Asian or Pacific Islander,102,"FALEOMAVAEGA, Eni F. H.",AS,Democrat,House,F000010
+Asian or Pacific Islander,102,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,102,"MATSUI, Robert T.",CA,Democrat,House,M000249
+Asian or Pacific Islander,102,"MINETA, Norman Y.",CA,Democrat,House,M000794
+Asian or Pacific Islander,102,"MINK, Patsy Takemoto",HI,Democrat,House,M000797
+Asian or Pacific Islander,103,"AKAKA, Daniel Kahikina",HI,Democrat,Senate,A000069
+Asian or Pacific Islander,103,"FALEOMAVAEGA, Eni F. H.",AS,Democrat,House,F000010
+Asian or Pacific Islander,103,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,103,"KIM, Jay C.",CA,Republican,House,K000181
+Asian or Pacific Islander,103,"MATSUI, Robert T.",CA,Democrat,House,M000249
+Asian or Pacific Islander,103,"MINETA, Norman Y.",CA,Democrat,House,M000794
+Asian or Pacific Islander,103,"MINK, Patsy Takemoto",HI,Democrat,House,M000797
+Asian or Pacific Islander,103,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,103,"UNDERWOOD, Robert A.",GU,Democrat,House,U000014
+Asian or Pacific Islander,104,"AKAKA, Daniel Kahikina",HI,Democrat,Senate,A000069
+Asian or Pacific Islander,104,"FALEOMAVAEGA, Eni F. H.",AS,Democrat,House,F000010
+Asian or Pacific Islander,104,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,104,"KIM, Jay C.",CA,Republican,House,K000181
+Asian or Pacific Islander,104,"MATSUI, Robert T.",CA,Democrat,House,M000249
+Asian or Pacific Islander,104,"MINETA, Norman Y.",CA,Democrat,House,M000794
+Asian or Pacific Islander,104,"MINK, Patsy Takemoto",HI,Democrat,House,M000797
+Asian or Pacific Islander,104,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,104,"UNDERWOOD, Robert A.",GU,Democrat,House,U000014
+Asian or Pacific Islander,105,"AKAKA, Daniel Kahikina",HI,Democrat,Senate,A000069
+Asian or Pacific Islander,105,"FALEOMAVAEGA, Eni F. H.",AS,Democrat,House,F000010
+Asian or Pacific Islander,105,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,105,"KIM, Jay C.",CA,Republican,House,K000181
+Asian or Pacific Islander,105,"MATSUI, Robert T.",CA,Democrat,House,M000249
+Asian or Pacific Islander,105,"MINK, Patsy Takemoto",HI,Democrat,House,M000797
+Asian or Pacific Islander,105,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,105,"UNDERWOOD, Robert A.",GU,Democrat,House,U000014
+Asian or Pacific Islander,106,"AKAKA, Daniel Kahikina",HI,Democrat,Senate,A000069
+Asian or Pacific Islander,106,"FALEOMAVAEGA, Eni F. H.",AS,Democrat,House,F000010
+Asian or Pacific Islander,106,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,106,"MATSUI, Robert T.",CA,Democrat,House,M000249
+Asian or Pacific Islander,106,"MINK, Patsy Takemoto",HI,Democrat,House,M000797
+Asian or Pacific Islander,106,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,106,"UNDERWOOD, Robert A.",GU,Democrat,House,U000014
+Asian or Pacific Islander,106,"WU, David",OR,Democrat,House,W000793
+Asian or Pacific Islander,107,"AKAKA, Daniel Kahikina",HI,Democrat,Senate,A000069
+Asian or Pacific Islander,107,"FALEOMAVAEGA, Eni F. H.",AS,Democrat,House,F000010
+Asian or Pacific Islander,107,"HONDA, Mike",CA,Democrat,House,H001034
+Asian or Pacific Islander,107,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,107,"MATSUI, Robert T.",CA,Democrat,House,M000249
+Asian or Pacific Islander,107,"MINK, Patsy Takemoto",HI,Democrat,House,M000797
+Asian or Pacific Islander,107,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,107,"UNDERWOOD, Robert A.",GU,Democrat,House,U000014
+Asian or Pacific Islander,107,"WU, David",OR,Democrat,House,W000793
+Asian or Pacific Islander,108,"AKAKA, Daniel Kahikina",HI,Democrat,Senate,A000069
+Asian or Pacific Islander,108,"FALEOMAVAEGA, Eni F. H.",AS,Democrat,House,F000010
+Asian or Pacific Islander,108,"HONDA, Mike",CA,Democrat,House,H001034
+Asian or Pacific Islander,108,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,108,"MATSUI, Robert T.",CA,Democrat,House,M000249
+Asian or Pacific Islander,108,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,108,"WU, David",OR,Democrat,House,W000793
+Asian or Pacific Islander,109,"AKAKA, Daniel Kahikina",HI,Democrat,Senate,A000069
+Asian or Pacific Islander,109,"FALEOMAVAEGA, Eni F. H.",AS,Democrat,House,F000010
+Asian or Pacific Islander,109,"HONDA, Mike",CA,Democrat,House,H001034
+Asian or Pacific Islander,109,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,109,"JINDAL, Bobby",LA,Republican,House,J000287
+Asian or Pacific Islander,109,"MATSUI, Doris",CA,Democrat,House,M001163
+Asian or Pacific Islander,109,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,109,"WU, David",OR,Democrat,House,W000793
+Asian or Pacific Islander,110,"AKAKA, Daniel Kahikina",HI,Democrat,Senate,A000069
+Asian or Pacific Islander,110,"FALEOMAVAEGA, Eni F. H.",AS,Democrat,House,F000010
+Asian or Pacific Islander,110,"HIRONO, Mazie",HI,Democrat,House,H001042
+Asian or Pacific Islander,110,"HONDA, Mike",CA,Democrat,House,H001034
+Asian or Pacific Islander,110,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,110,"JINDAL, Bobby",LA,Republican,House,J000287
+Asian or Pacific Islander,110,"MATSUI, Doris",CA,Democrat,House,M001163
+Asian or Pacific Islander,110,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,110,"WU, David",OR,Democrat,House,W000793
+Asian or Pacific Islander,111,"AKAKA, Daniel Kahikina",HI,Democrat,Senate,A000069
+Asian or Pacific Islander,111,"AUSTRIA, Steve",OH,Republican,House,A000365
+Asian or Pacific Islander,111,"CAO, Anh (Joseph)",LA,Republican,House,C001079
+Asian or Pacific Islander,111,"CHU, Judy",CA,Democrat,House,C001080
+Asian or Pacific Islander,111,"DJOU, Charles",HI,Republican,House,D000611
+Asian or Pacific Islander,111,"FALEOMAVAEGA, Eni F. H.",AS,Democrat,House,F000010
+Asian or Pacific Islander,111,"HIRONO, Mazie",HI,Democrat,House,H001042
+Asian or Pacific Islander,111,"HONDA, Mike",CA,Democrat,House,H001034
+Asian or Pacific Islander,111,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,111,"MATSUI, Doris",CA,Democrat,House,M001163
+Asian or Pacific Islander,111,"SABLAN, Gregorio Kilili Camacho",MP,Independent,House,S001177
+Asian or Pacific Islander,111,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,111,"WU, David",OR,Democrat,House,W000793
+Asian or Pacific Islander,112,"AKAKA, Daniel Kahikina",HI,Democrat,Senate,A000069
+Asian or Pacific Islander,112,"AUSTRIA, Steve",OH,Republican,House,A000365
+Asian or Pacific Islander,112,"CHU, Judy",CA,Democrat,House,C001080
+Asian or Pacific Islander,112,"CLARKE, Hansen",MI,Democrat,House,C001085
+Asian or Pacific Islander,112,"FALEOMAVAEGA, Eni F. H.",AS,Democrat,House,F000010
+Asian or Pacific Islander,112,"HANABUSA, Colleen",HI,Democrat,House,H001050
+Asian or Pacific Islander,112,"HIRONO, Mazie",HI,Democrat,House,H001042
+Asian or Pacific Islander,112,"HONDA, Mike",CA,Democrat,House,H001034
+Asian or Pacific Islander,112,"INOUYE, Daniel Ken",HI,Democrat,Senate,I000025
+Asian or Pacific Islander,112,"MATSUI, Doris",CA,Democrat,House,M001163
+Asian or Pacific Islander,112,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Asian or Pacific Islander,112,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,112,"WU, David",OR,Democrat,House,W000793
+Asian or Pacific Islander,113,"BERA, Ami",CA,Democrat,House,B001287
+Asian or Pacific Islander,113,"CHU, Judy",CA,Democrat,House,C001080
+Asian or Pacific Islander,113,"DUCKWORTH, Tammy",IL,Democrat,House,D000622
+Asian or Pacific Islander,113,"FALEOMAVAEGA, Eni F. H.",AS,Democrat,House,F000010
+Asian or Pacific Islander,113,"GABBARD, Tulsi",HI,Democrat,House,G000571
+Asian or Pacific Islander,113,"HANABUSA, Colleen",HI,Democrat,House,H001050
+Asian or Pacific Islander,113,"HIRONO, Mazie",HI,Democrat,Senate,H001042
+Asian or Pacific Islander,113,"HONDA, Mike",CA,Democrat,House,H001034
+Asian or Pacific Islander,113,"MATSUI, Doris",CA,Democrat,House,M001163
+Asian or Pacific Islander,113,"MENG, Grace",NY,Democrat,House,M001188
+Asian or Pacific Islander,113,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Asian or Pacific Islander,113,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,113,"TAKANO, Mark",CA,Democrat,House,T000472
+Asian or Pacific Islander,114,"BERA, Ami",CA,Democrat,House,B001287
+Asian or Pacific Islander,114,"CHU, Judy",CA,Democrat,House,C001080
+Asian or Pacific Islander,114,"DUCKWORTH, Tammy",IL,Democrat,House,D000622
+Asian or Pacific Islander,114,"GABBARD, Tulsi",HI,Democrat,House,G000571
+Asian or Pacific Islander,114,"HANABUSA, Colleen",HI,Democrat,House,H001050
+Asian or Pacific Islander,114,"HIRONO, Mazie",HI,Democrat,Senate,H001042
+Asian or Pacific Islander,114,"HONDA, Mike",CA,Democrat,House,H001034
+Asian or Pacific Islander,114,"LIEU, Ted",CA,Democrat,House,L000582
+Asian or Pacific Islander,114,"MATSUI, Doris",CA,Democrat,House,M001163
+Asian or Pacific Islander,114,"MENG, Grace",NY,Democrat,House,M001188
+Asian or Pacific Islander,114,"RADEWAGEN, Aumua Amata Coleman",AS,Republican,House,R000600
+Asian or Pacific Islander,114,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Asian or Pacific Islander,114,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,114,"TAKAI, Mark",HI,Democrat,House,T000473
+Asian or Pacific Islander,114,"TAKANO, Mark",CA,Democrat,House,T000472
+Asian or Pacific Islander,115,"BERA, Ami",CA,Democrat,House,B001287
+Asian or Pacific Islander,115,"CHU, Judy",CA,Democrat,House,C001080
+Asian or Pacific Islander,115,"DUCKWORTH, Tammy",IL,Democrat,Senate,D000622
+Asian or Pacific Islander,115,"GABBARD, Tulsi",HI,Democrat,House,G000571
+Asian or Pacific Islander,115,"HANABUSA, Colleen",HI,Democrat,House,H001050
+Asian or Pacific Islander,115,"HARRIS, Kamala Devi",CA,Democrat,Senate,H001075
+Asian or Pacific Islander,115,"HIRONO, Mazie",HI,Democrat,Senate,H001042
+Asian or Pacific Islander,115,"JAYAPAL, Pramila",WA,Democrat,House,J000298
+Asian or Pacific Islander,115,"KHANNA, Ro",CA,Democrat,House,K000389
+Asian or Pacific Islander,115,"KRISHNAMOORTHI, S. Raja",IL,Democrat,House,K000391
+Asian or Pacific Islander,115,"LIEU, Ted",CA,Democrat,House,L000582
+Asian or Pacific Islander,115,"MATSUI, Doris",CA,Democrat,House,M001163
+Asian or Pacific Islander,115,"MENG, Grace",NY,Democrat,House,M001188
+Asian or Pacific Islander,115,"MURPHY, Stephanie",FL,Democrat,House,M001202
+Asian or Pacific Islander,115,"RADEWAGEN, Aumua Amata Coleman",AS,Republican,House,R000600
+Asian or Pacific Islander,115,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Asian or Pacific Islander,115,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,115,"TAKANO, Mark",CA,Democrat,House,T000472
+Asian or Pacific Islander,116,"BERA, Ami",CA,Democrat,House,B001287
+Asian or Pacific Islander,116,"CHU, Judy",CA,Democrat,House,C001080
+Asian or Pacific Islander,116,"COX, TJ",CA,Democrat,House,C001124
+Asian or Pacific Islander,116,"DUCKWORTH, Tammy",IL,Democrat,Senate,D000622
+Asian or Pacific Islander,116,"GABBARD, Tulsi",HI,Democrat,House,G000571
+Asian or Pacific Islander,116,"HARRIS, Kamala Devi",CA,Democrat,Senate,H001075
+Asian or Pacific Islander,116,"HIRONO, Mazie",HI,Democrat,Senate,H001042
+Asian or Pacific Islander,116,"JAYAPAL, Pramila",WA,Democrat,House,J000298
+Asian or Pacific Islander,116,"KHANNA, Ro",CA,Democrat,House,K000389
+Asian or Pacific Islander,116,"KIM, Andy",NJ,Democrat,House,K000394
+Asian or Pacific Islander,116,"KRISHNAMOORTHI, S. Raja",IL,Democrat,House,K000391
+Asian or Pacific Islander,116,"LIEU, Ted",CA,Democrat,House,L000582
+Asian or Pacific Islander,116,"MATSUI, Doris",CA,Democrat,House,M001163
+Asian or Pacific Islander,116,"MENG, Grace",NY,Democrat,House,M001188
+Asian or Pacific Islander,116,"MURPHY, Stephanie",FL,Democrat,House,M001202
+Asian or Pacific Islander,116,"RADEWAGEN, Aumua Amata Coleman",AS,Republican,House,R000600
+Asian or Pacific Islander,116,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Asian or Pacific Islander,116,"SAN NICOLAS, Michael",GU,Democrat,House,S001204
+Asian or Pacific Islander,116,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,116,"TAKANO, Mark",CA,Democrat,House,T000472
+Asian or Pacific Islander,117,"BERA, Ami",CA,Democrat,House,B001287
+Asian or Pacific Islander,117,"CHU, Judy",CA,Democrat,House,C001080
+Asian or Pacific Islander,117,"DUCKWORTH, Tammy",IL,Democrat,Senate,D000622
+Asian or Pacific Islander,117,"HARRIS, Kamala Devi",CA,Democrat,Senate,H001075
+Asian or Pacific Islander,117,"HIRONO, Mazie",HI,Democrat,Senate,H001042
+Asian or Pacific Islander,117,"JAYAPAL, Pramila",WA,Democrat,House,J000298
+Asian or Pacific Islander,117,"KAHELE, Kaialiʻi",HI,Democrat,House,K000396
+Asian or Pacific Islander,117,"KHANNA, Ro",CA,Democrat,House,K000389
+Asian or Pacific Islander,117,"KIM, Andy",NJ,Democrat,House,K000394
+Asian or Pacific Islander,117,"KIM, Young",CA,Republican,House,K000397
+Asian or Pacific Islander,117,"KRISHNAMOORTHI, S. Raja",IL,Democrat,House,K000391
+Asian or Pacific Islander,117,"LIEU, Ted",CA,Democrat,House,L000582
+Asian or Pacific Islander,117,"MATSUI, Doris",CA,Democrat,House,M001163
+Asian or Pacific Islander,117,"MENG, Grace",NY,Democrat,House,M001188
+Asian or Pacific Islander,117,"MURPHY, Stephanie",FL,Democrat,House,M001202
+Asian or Pacific Islander,117,"RADEWAGEN, Aumua Amata Coleman",AS,Republican,House,R000600
+Asian or Pacific Islander,117,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Asian or Pacific Islander,117,"SAN NICOLAS, Michael",GU,Democrat,House,S001204
+Asian or Pacific Islander,117,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,117,"STEEL, Michelle",CA,Republican,House,S001135
+Asian or Pacific Islander,117,"STRICKLAND, Marilyn",WA,Democrat,House,S001159
+Asian or Pacific Islander,117,"TAKANO, Mark",CA,Democrat,House,T000472
+Asian or Pacific Islander,118,"BERA, Ami",CA,Democrat,House,B001287
+Asian or Pacific Islander,118,"CHU, Judy",CA,Democrat,House,C001080
+Asian or Pacific Islander,118,"DUCKWORTH, Tammy",IL,Democrat,Senate,D000622
+Asian or Pacific Islander,118,"FONG, Vince",CA,Republican,House,F000480
+Asian or Pacific Islander,118,"HIRONO, Mazie",HI,Democrat,Senate,H001042
+Asian or Pacific Islander,118,"JAYAPAL, Pramila",WA,Democrat,House,J000298
+Asian or Pacific Islander,118,"KHANNA, Ro",CA,Democrat,House,K000389
+Asian or Pacific Islander,118,"KIM, Andy",NJ,Democrat,Both,K000394
+Asian or Pacific Islander,118,"KIM, Young",CA,Republican,House,K000397
+Asian or Pacific Islander,118,"KRISHNAMOORTHI, S. Raja",IL,Democrat,House,K000391
+Asian or Pacific Islander,118,"LIEU, Ted",CA,Democrat,House,L000582
+Asian or Pacific Islander,118,"MATSUI, Doris",CA,Democrat,House,M001163
+Asian or Pacific Islander,118,"MENG, Grace",NY,Democrat,House,M001188
+Asian or Pacific Islander,118,"MOYLAN, James",GU,Republican,House,M001219
+Asian or Pacific Islander,118,"RADEWAGEN, Aumua Amata Coleman",AS,Republican,House,R000600
+Asian or Pacific Islander,118,"SABLAN, Gregorio Kilili Camacho",MP,Democrat,House,S001177
+Asian or Pacific Islander,118,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,118,"STEEL, Michelle",CA,Republican,House,S001135
+Asian or Pacific Islander,118,"STRICKLAND, Marilyn",WA,Democrat,House,S001159
+Asian or Pacific Islander,118,"TAKANO, Mark",CA,Democrat,House,T000472
+Asian or Pacific Islander,118,"THANEDAR, Shri",MI,Democrat,House,T000488
+Asian or Pacific Islander,118,"TOKUDA, Jill",HI,Democrat,House,T000487
+Asian or Pacific Islander,119,"BERA, Ami",CA,Democrat,House,B001287
+Asian or Pacific Islander,119,"CHU, Judy",CA,Democrat,House,C001080
+Asian or Pacific Islander,119,"DUCKWORTH, Tammy",IL,Democrat,Senate,D000622
+Asian or Pacific Islander,119,"FONG, Vince",CA,Republican,House,F000480
+Asian or Pacific Islander,119,"HIRONO, Mazie",HI,Democrat,Senate,H001042
+Asian or Pacific Islander,119,"JAYAPAL, Pramila",WA,Democrat,House,J000298
+Asian or Pacific Islander,119,"KHANNA, Ro",CA,Democrat,House,K000389
+Asian or Pacific Islander,119,"KIM, Andy",NJ,Democrat,Senate,K000394
+Asian or Pacific Islander,119,"KIM, Young",CA,Republican,House,K000397
+Asian or Pacific Islander,119,"KING-HINDS, Kimberlyn",MP,Republican,House,K000404
+Asian or Pacific Islander,119,"KRISHNAMOORTHI, S. Raja",IL,Democrat,House,K000391
+Asian or Pacific Islander,119,"LIEU, Ted",CA,Democrat,House,L000582
+Asian or Pacific Islander,119,"MATSUI, Doris",CA,Democrat,House,M001163
+Asian or Pacific Islander,119,"MENG, Grace",NY,Democrat,House,M001188
+Asian or Pacific Islander,119,"MIN, Dave",CA,Democrat,House,M001241
+Asian or Pacific Islander,119,"MOYLAN, James",GU,Republican,House,M001219
+Asian or Pacific Islander,119,"RADEWAGEN, Aumua Amata Coleman",AS,Republican,House,R000600
+Asian or Pacific Islander,119,"SCOTT, Robert C.",VA,Democrat,House,S000185
+Asian or Pacific Islander,119,"STRICKLAND, Marilyn",WA,Democrat,House,S001159
+Asian or Pacific Islander,119,"SUBRAMANYAM, Suhas",VA,Democrat,House,S001230
+Asian or Pacific Islander,119,"TAKANO, Mark",CA,Democrat,House,T000472
+Asian or Pacific Islander,119,"THANEDAR, Shri",MI,Democrat,House,T000488
+Asian or Pacific Islander,119,"TOKUDA, Jill",HI,Democrat,House,T000487
+Asian or Pacific Islander,119,"TRAN, Derek",CA,Democrat,House,T000491

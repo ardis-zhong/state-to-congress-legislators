@@ -113,8 +113,39 @@ def build_table1():
     return rows
 
 
+DEMOGRAPHICS = "replication/data/processed/legislator_demographics.csv"
+RACE = "replication/data/processed/race_by_bioguide.csv"
+VETERANS = "replication/data/processed/veterans_by_bioguide.csv"
+GENDER = {"M": "Male", "F": "Female"}
+
+
 def build_table2():
-    raise Pending("gender + party exist for the original 910 only; veteran and race have no source yet")
+    """One row per person.
+    gender, party: congress-legislators records (party = most recent party in Congress).
+    race: Office of the House Historian lists of Black, Hispanic, and Asian and Pacific
+          Islander members; anyone on none of them is "Not on House Historian lists".
+    veteran: any military service per Congressional Directory biographies
+             (Yes / No / Not found -- "Not found" = no biography located)."""
+    for path in (DEMOGRAPHICS, RACE, VETERANS):
+        if not os.path.exists(path):
+            raise Pending(f"{path} missing; see replication/README.md step 1")
+
+    def by_id(path, key):
+        with open(path, newline="", encoding="utf-8") as f:
+            return {r[key]: r for r in csv.DictReader(f)}
+
+    demo = by_id(DEMOGRAPHICS, "BioguideId")
+    race = by_id(RACE, "bioguide_id")
+    vets = by_id(VETERANS, "bioguide_id")
+    rows = []
+    for p in load_person_level():
+        bg = p["BioguideId"]
+        if bg not in demo or bg not in vets:
+            raise Pending(f"{bg} ({p['Name']}) missing from demographics or veteran file; rerun step 1")
+        rows.append([bg, p["Name"], GENDER[demo[bg]["Gender"]], vets[bg]["veteran"],
+                     demo[bg]["MostRecentParty"],
+                     race[bg]["race"] if bg in race else "Not on House Historian lists"])
+    return rows
 
 
 def build_table3():
