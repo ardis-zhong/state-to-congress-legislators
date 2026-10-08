@@ -67,7 +67,8 @@ python3 replication/scripts/federal/fetch_all_sponsored_legislation.py --api-key
 python3 replication/scripts/federal/gap_fill_missing_items.py "$CONGRESS_API_KEY"   # re-fetch people whose totals came up short (reads gapfill_targets.csv)
 python3 replication/scripts/federal/merge_sponsored_legislation.py  # combine + de-duplicate on (bioguide_id, url)
 python3 replication/scripts/federal/classify_status.py              # passed / failed status from latest action
-python3 replication/scripts/federal/fetch_federal_bill_text.py "$CONGRESS_API_KEY" replication/data/processed/sponsored_legislation_final.csv
+python3 replication/scripts/federal/fetch_federal_bill_text.py "$CONGRESS_API_KEY" sponsored_legislation_full_status.csv \
+    --min-congress 111 --delay 0.8   # ~15 h for the 111th Congress on; resumable
 ```
 
 **3. State (LegiScan)**
@@ -101,6 +102,6 @@ Check each script's own header for options before running it.
 | 2. Demographics | step 1 (party, gender, race lists, Congressional Directory veteran status) |
 | 3. Effectiveness scores | step 1b (Center for Effective Lawmaking LES and SLES) |
 | 4. State bill text | steps 3-4 |
-| 5. Federal bill text | steps 2, 4 |
+| 5. Federal bill text | step 2 (bill-text fetch) |
 | 6. State bill topics | step 3, plus a topic-mapping method (not yet designed) |
 | 7. Federal bill topics | step 2 (all federal steps except the bill-text fetch) |

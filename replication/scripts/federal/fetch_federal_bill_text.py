@@ -34,8 +34,10 @@ OUTPUT: federal_billtext_cache/<congress>-<billtype>-<billnumber>.raw.<ext>
         federal_billtext_cache/<congress>-<billtype>-<billnumber>.txt
         federal_bill_text_manifest.csv
 
-USAGE:
-    python3 fetch_federal_bill_text.py YOUR_CONGRESS_API_KEY path/to/federal_dataset.csv
+USAGE (from the repo root):
+    python3 replication/scripts/federal/fetch_federal_bill_text.py "$CONGRESS_API_KEY" \
+        sponsored_legislation_full_status.csv [--min-congress N] [--max-congress N] [--delay SECONDS]
+    The manifest is appended after every bill; re-running skips finished bills.
 """
 
 import csv
@@ -238,85 +240,111 @@ def pick_format(formats):
     return None, None
 
 
+MANIFEST = "federal_bill_text_manifest.csv"
+MANIFEST_FIELDS = ["Congress", "BillType", "BillNumber", "VersionType", "SourceUrl", "Format",
+                   "TextPath", "TextLength", "Error"]
+# Outcomes that won't change on a retry; anything else (network/API errors) is retried.
+FINAL_ERRORS = ("no textVersions available", "no formats available")
+
+
 def main():
-    if len(sys.argv) != 3:
-        print("Usage: python3 fetch_federal_bill_text.py YOUR_CONGRESS_API_KEY path/to/federal_dataset.csv")
-        sys.exit(1)
-    key, csv_path = sys.argv[1], sys.argv[2]
+    import argparse
+    global MIN_SECONDS_BETWEEN_CALLS
+    ap = argparse.ArgumentParser()
+    ap.add_argument("api_key")
+    ap.add_argument("csv_path", help="federal dataset with Congress/Type/Number columns")
+    ap.add_argument("--min-congress", type=int, default=0)
+    ap.add_argument("--max-congress", type=int, default=999)
+    ap.add_argument("--delay", type=float, default=MIN_SECONDS_BETWEEN_CALLS,
+                    help="seconds between metered api.congress.gov calls (default %(default)s)")
+    args = ap.parse_args()
+    key = args.api_key
+    MIN_SECONDS_BETWEEN_CALLS = args.delay
 
-    print(f"Loading unique bills from {csv_path}...")
-    bills = load_unique_bills(csv_path)
-    print(f"  {len(bills)} unique bill(s) to fetch text for.")
-    print(f"  At ~900 metadata calls/hour, this will take roughly "
-          f"{len(bills) / 900:.1f} hour(s) if run start to finish.")
-    print("  Safe to leave running in the background; already-cached bills are")
-    print("  skipped on a re-run, so interruptions cost nothing.\n")
-
+    print(f"Loading unique bills from {args.csv_path}...")
+    bills = {k: v for k, v in load_unique_bills(args.csv_path).items()
+             if args.min_congress <= int(k[0]) <= args.max_congress}
     os.makedirs(CACHE_DIR, exist_ok=True)
-    manifest = []
+
+    # The manifest is appended to after every bill, so an interrupted run loses nothing and
+    # a re-run skips every bill already settled (text saved, or no text exists).
+    done = set()
+    if os.path.exists(MANIFEST):
+        with open(MANIFEST, newline="", encoding="utf-8") as f:
+            for m in csv.DictReader(f):
+                if int(m["TextLength"] or 0) > 0 or m["Error"] in FINAL_ERRORS:
+                    done.add((m["Congress"], m["BillType"].lower(), m["BillNumber"]))
+    todo = sorted(k for k in bills if k not in done)
+    print(f"  {len(bills)} unique bill(s) in Congresses {args.min_congress}-{args.max_congress}; "
+          f"{len(todo)} still to fetch.")
+    print(f"  At one metered call per {MIN_SECONDS_BETWEEN_CALLS:g}s, roughly "
+          f"{len(todo) * (MIN_SECONDS_BETWEEN_CALLS + 0.4) / 3600:.1f} hour(s).\n")
+
+    cached = set(os.listdir(CACHE_DIR))  # listed once, not once per bill
+    new_file = not os.path.exists(MANIFEST)
+    mf = open(MANIFEST, "a", newline="", encoding="utf-8")
+    writer = csv.DictWriter(mf, fieldnames=MANIFEST_FIELDS)
+    if new_file:
+        writer.writeheader()
+
+    def record(congress, billtype, billnumber, **kw):
+        row = {"Congress": congress, "BillType": billtype, "BillNumber": billnumber, "VersionType": "",
+               "SourceUrl": "", "Format": "", "TextPath": "", "TextLength": 0, "Error": ""}
+        row.update(kw)
+        writer.writerow(row)
+        mf.flush()
+        return row
+
+    n_ok = n_err = 0
     consecutive_failures = 0
     STOP_AFTER_CONSECUTIVE_FAILURES = 10
 
-    for i, ((congress, billtype, billnumber), rows) in enumerate(sorted(bills.items()), 1):
+    for i, (congress, billtype, billnumber) in enumerate(todo, 1):
         bill_key = f"{congress}-{billtype}-{billnumber}"
-        if i % 25 == 0 or i == len(bills):
-            print(f"  ...{i}/{len(bills)} bill(s) processed")
+        if i % 250 == 0 or i == len(todo):
+            print(f"  ...{i}/{len(todo)} bill(s) processed ({n_ok} with text)", flush=True)
 
         text_path = os.path.join(CACHE_DIR, f"{bill_key}.txt")
-        existing_raw = [f for f in os.listdir(CACHE_DIR) if f.startswith(f"{bill_key}.raw.")]
-        if os.path.exists(text_path) or existing_raw:
-            manifest.append({"Congress": congress, "BillType": billtype, "BillNumber": billnumber,
-                              "VersionType": "(cached)", "SourceUrl": "", "Format": "",
-                              "TextPath": text_path if os.path.exists(text_path) else "",
-                              "TextLength": os.path.getsize(text_path) if os.path.exists(text_path) else 0,
-                              "Error": ""})
+        if f"{bill_key}.txt" in cached:
+            record(congress, billtype, billnumber, VersionType="(cached)", TextPath=text_path,
+                   TextLength=os.path.getsize(text_path))
+            n_ok += 1
             continue
 
         try:
             resp = api_call(f"/bill/{congress}/{billtype}/{billnumber}/text", key)
         except RuntimeError as e:
             consecutive_failures += 1
-            manifest.append({"Congress": congress, "BillType": billtype, "BillNumber": billnumber,
-                              "VersionType": "", "SourceUrl": "", "Format": "", "TextPath": "",
-                              "TextLength": 0, "Error": str(e)})
+            n_err += 1
+            record(congress, billtype, billnumber, Error=str(e))
             if consecutive_failures >= STOP_AFTER_CONSECUTIVE_FAILURES:
                 print(f"\n{consecutive_failures} consecutive failures -- stopping. "
-                      f"Re-run the same command later; cached bills are skipped.")
+                      f"Re-run the same command later; finished bills are skipped.")
                 break
             continue
+        consecutive_failures = 0
 
-        text_versions = resp.get("textVersions", [])
-        version = pick_introduced_version(text_versions)
+        version = pick_introduced_version(resp.get("textVersions", []))
         if not version:
-            manifest.append({"Congress": congress, "BillType": billtype, "BillNumber": billnumber,
-                              "VersionType": "", "SourceUrl": "", "Format": "", "TextPath": "",
-                              "TextLength": 0, "Error": "no textVersions available"})
-            consecutive_failures = 0
+            record(congress, billtype, billnumber, Error="no textVersions available")
             continue
-
         fmt_type, doc_url = pick_format(version.get("formats", []))
         if not doc_url:
-            manifest.append({"Congress": congress, "BillType": billtype, "BillNumber": billnumber,
-                              "VersionType": version.get("type", ""), "SourceUrl": "", "Format": "",
-                              "TextPath": "", "TextLength": 0, "Error": "no formats available"})
-            consecutive_failures = 0
+            record(congress, billtype, billnumber, VersionType=version.get("type", ""),
+                   Error="no formats available")
             continue
-
         try:
             raw_bytes = fetch_document(doc_url)
         except Exception as e:  # noqa: BLE001
-            manifest.append({"Congress": congress, "BillType": billtype, "BillNumber": billnumber,
-                              "VersionType": version.get("type", ""), "SourceUrl": doc_url,
-                              "Format": fmt_type, "TextPath": "", "TextLength": 0,
-                              "Error": f"document fetch failed: {e}"})
-            consecutive_failures = 0
+            n_err += 1
+            record(congress, billtype, billnumber, VersionType=version.get("type", ""), SourceUrl=doc_url,
+                   Format=fmt_type, Error=f"document fetch failed: {e}")
             continue
 
         ext = {"Formatted Text": "html", "Formatted XML": "xml", "PDF": "pdf"}.get(fmt_type, "bin")
         raw_path = os.path.join(CACHE_DIR, f"{bill_key}.raw.{ext}")
         with open(raw_path, "wb") as f:
             f.write(raw_bytes)
-
         error = None
         if fmt_type in ("Formatted Text", "Formatted XML"):
             extracted = strip_markup(raw_bytes)
@@ -324,28 +352,17 @@ def main():
             extracted, error = extract_pdf(raw_path)
         else:
             extracted, error = None, f"no extractor for format {fmt_type!r} -- raw file saved"
-
         if extracted:
             with open(text_path, "w", encoding="utf-8") as f:
                 f.write(extracted)
+            n_ok += 1
+        record(congress, billtype, billnumber, VersionType=version.get("type", ""), SourceUrl=doc_url,
+               Format=fmt_type, TextPath=text_path if extracted else "",
+               TextLength=len(extracted) if extracted else 0, Error=error or "")
 
-        manifest.append({"Congress": congress, "BillType": billtype, "BillNumber": billnumber,
-                          "VersionType": version.get("type", ""), "SourceUrl": doc_url,
-                          "Format": fmt_type, "TextPath": text_path if extracted else "",
-                          "TextLength": len(extracted) if extracted else 0, "Error": error or ""})
-        consecutive_failures = 0
-
-    with open("federal_bill_text_manifest.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=["Congress", "BillType", "BillNumber", "VersionType",
-                                           "SourceUrl", "Format", "TextPath", "TextLength", "Error"])
-        w.writeheader()
-        w.writerows(manifest)
-
-    n_ok = sum(1 for m in manifest if m["TextLength"] > 0)
-    n_err = sum(1 for m in manifest if m["Error"])
-    print(f"\n=== Done ===")
-    print(f"  {n_ok}/{len(manifest)} bill(s) got extracted plain text.")
-    print(f"  {n_err} bill(s) had an issue (see Error column in federal_bill_text_manifest.csv).")
+    mf.close()
+    print(f"\n=== Done ===\n  {n_ok} bill(s) with extracted text this run; {n_err} error(s) to retry "
+          f"(re-run the same command). See {MANIFEST}.")
 
 
 if __name__ == "__main__":

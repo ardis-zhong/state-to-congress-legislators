@@ -196,8 +196,38 @@ def build_table4():
     raise Pending("full-population LegiScan fetch + bill-text fetch not run yet")
 
 
+FEDERAL_TEXT_MANIFEST = "federal_bill_text_manifest.csv"  # local; written by fetch_federal_bill_text.py
+
+
 def build_table5():
-    raise Pending("federal bill text exists for the 247-person LegiScan scope only")
+    """One row per sponsored bill or resolution that has digital text (the Introduced
+    version, or the earliest version Congress.gov has). Same bills as Table 7; Congress.gov
+    has almost no digital text before the 101st Congress (1989). chamber = chamber of origin."""
+    for path in (FEDERAL_STATUS, FEDERAL_TEXT_MANIFEST):
+        if not os.path.exists(path):
+            raise Pending(f"{path} missing; run the federal steps in replication/README.md")
+    text_path = {}
+    with open(FEDERAL_TEXT_MANIFEST, newline="", encoding="utf-8") as f:
+        for m in csv.DictReader(f):
+            if int(m["TextLength"] or 0) > 0 and m["TextPath"]:
+                text_path[(m["Congress"], m["BillType"].lower(), m["BillNumber"])] = m["TextPath"]
+    people = {p["BioguideId"]: p["Name"] for p in load_person_level()}
+    rows = []
+    with open(FEDERAL_STATUS, newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            if r["ItemCategory"] != "Bill/Resolution" or r["BioguideId"] not in people:
+                continue
+            path = text_path.get((r["Congress"], r["Type"].lower(), r["Number"]))
+            if not path or not os.path.exists(path):
+                continue
+            with open(path, encoding="utf-8", errors="replace") as tf:
+                text = tf.read()
+            rows.append([r["BioguideId"], people[r["BioguideId"]],
+                         f"{r['Congress']}-{r['Type'].upper()}-{r['Number']}", " ".join(r["Title"].split()),
+                         str(r["Congress"]), int(r["IntroducedDate"][:4]) if r["IntroducedDate"] else None,
+                         "House" if r["Type"].upper().startswith("H") else "Senate", text])
+    rows.sort(key=lambda r: (r[0], int(r[4]), r[2]))
+    return rows
 
 
 def build_table6():
