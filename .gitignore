@@ -55,3 +55,6 @@ datasets/*/table5_federal_bill_text.*
 
 # --- Logs from long-running fetches ---
 /*.log
+
+# --- Files prepared for the Harvard Dataverse deposit (too large for GitHub) ---
+/dataverse_upload/

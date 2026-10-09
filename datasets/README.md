@@ -109,3 +109,8 @@ Covers every Congress each person sponsored legislation in (93rd Congress
 on). Source: Congress.gov API, fetched 2026-08 to 2026-10. For 36 prolific
 sponsors, Congress.gov's item list is slightly shorter than its own reported
 total (largest gap: 45 of 3,329); this is a known quirk of the API.
+
+A bill normally has one sponsor, but Congress.gov lists two to five sponsors
+for H.R. 1, 3, 7, 8, 9, 10, and 11 of the 104th Congress (the January 1995
+"Contract with America" bills), so those 7 bills appear once per sponsor in
+the population (19 rows here, 19 in Table 5).
