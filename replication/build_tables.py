@@ -192,8 +192,66 @@ def build_table3():
     return rows
 
 
+STATE_SPONSORED = "state_legislation_sponsored.csv"  # local; see replication/README.md step 3
+STATE_TEXT_MANIFEST = "bill_text_manifest.csv"       # local; written by legiscan_fetch_bill_text.py
+
+
+def congress_on(date_str):
+    """U.S. Congress in session on a YYYY-MM-DD date (each starts Jan 3 of an odd year)."""
+    y, m, d = (int(x) for x in date_str.split("-"))
+    if (m, d) < (1, 3):
+        y -= 1
+    return (y - 1787) // 2
+
+
+def state_bill_rows():
+    """Sponsor rows for state bills (decided 2026-10-09): 'Primary Sponsor' everywhere, plus
+    'Sponsor' in states whose LegiScan data never uses 'Primary Sponsor' (CT, MS, SD)."""
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "scripts", "state"))
+    from legiscan_fetch_bill_text import sponsor_rows_in_scope
+    rows, _ = sponsor_rows_in_scope(STATE_SPONSORED)
+    return rows
+
+
+def state_bill_dates(r):
+    """(year, congress) from the introduced-text date, else the status date, else the session's
+    first year. A date counts only if it is plausible for the bill's session: from two years
+    before the session starts (bills prefiled for a two-year legislature and listed again in its
+    second session) to one year after it ends. LegiScan records some impossible dates, e.g.
+    0000-00-00, or 1969 for 2,396 New York bills from 2013-2014."""
+    years = [int(y) for y in re.findall(r"(?:19|20)\d\d", r["SessionTitle"])]
+    lo, hi = min(years), max(years)
+    for d in (r["IntroducedDocDate"], r["StatusDate"]):
+        if re.fullmatch(r"(19|20)\d\d-\d\d-\d\d", d or "") and lo - 2 <= int(d[:4]) <= hi + 1:
+            return int(d[:4]), congress_on(d)
+    return lo, (lo - 1787) // 2
+
+
 def build_table4():
-    raise Pending("full-population LegiScan fetch + bill-text fetch not run yet")
+    """One row per state bill sponsored by a population member that has text (the version as
+    introduced, from LegiScan). bill_id = state-LegiScan session id-bill number."""
+    for path in (STATE_SPONSORED, STATE_TEXT_MANIFEST):
+        if not os.path.exists(path):
+            raise Pending(f"{path} missing; run the LegiScan steps in replication/README.md")
+    text_path = {}
+    with open(STATE_TEXT_MANIFEST, newline="", encoding="utf-8") as f:
+        for m in csv.DictReader(f):
+            if int(m["TextLength"] or 0) > 0 and m["TextPath"]:
+                text_path[m["DocId"]] = m["TextPath"]
+    people = {p["BioguideId"]: (p["Name"], p["State"]) for p in load_person_level()}
+    out = []
+    for r in state_bill_rows():
+        path = text_path.get(r["IntroducedDocId"])
+        if r["BioguideId"] not in people or not path or not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8", errors="replace") as tf:
+            text = tf.read()
+        year, congress = state_bill_dates(r)
+        out.append([r["BioguideId"], people[r["BioguideId"]][0],
+                    f"{r['StateAbbr']}-{r['SessionId']}-{r['BillNumber']}", " ".join(r["Title"].split()),
+                    r["SessionTitle"], str(congress), year, r["StateAbbr"], text])
+    out.sort(key=lambda x: (x[0], x[6], x[2]))
+    return out
 
 
 FEDERAL_TEXT_MANIFEST = "federal_bill_text_manifest.csv"  # local; written by fetch_federal_bill_text.py

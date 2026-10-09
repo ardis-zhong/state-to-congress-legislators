@@ -129,6 +129,11 @@ NAME_OVERRIDES = {
     # record parses as first="doug", last="malfa" -- not "lamalfa" as his
     # target Name column parses. This override tries that exact variant.
     "L000578": [("doug", "malfa")],  # Doug LaMalfa
+    # Rep. Al Lawson's legal name is Alfred J. Lawson Jr.; LegiScan's FL Senate
+    # rosters (2009-2010, the end of his 2000-2010 Senate service) list him as
+    # "Alfred Lawson". The 2026-10-09 run found that record as the only Lawson
+    # in his candidate sessions.
+    "L000586": [("alfred", "lawson")],  # Al Lawson
 }
 
 

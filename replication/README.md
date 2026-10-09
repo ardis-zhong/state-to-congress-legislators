@@ -77,7 +77,7 @@ python3 replication/scripts/federal/fetch_federal_bill_text.py "$CONGRESS_API_KE
 python3 replication/scripts/state/legiscan_coverage_check.py "$LEGISCAN_API_KEY"
 python3 replication/scripts/state/legiscan_match_people.py "$LEGISCAN_API_KEY" replication/data/targets/state_bill_targets_full.csv
 python3 replication/scripts/state/legiscan_fetch_state_bills.py "$LEGISCAN_API_KEY" replication/data/targets/state_bill_targets_full.csv
-python3 replication/scripts/state/legiscan_fetch_bill_text.py "$LEGISCAN_API_KEY"   # add --all-sponsor-types to go beyond primary sponsors
+python3 replication/scripts/state/legiscan_fetch_bill_text.py "$LEGISCAN_API_KEY"   # sponsors only by default; --all-sponsor-types adds co-sponsors
 ```
 
 **4. Bill text corpus**
@@ -101,7 +101,7 @@ Check each script's own header for options before running it.
 | 1. State-to-federal legislators | step 1 (`person_level.csv`) |
 | 2. Demographics | step 1 (party, gender, race lists, Congressional Directory veteran status) |
 | 3. Effectiveness scores | step 1b (Center for Effective Lawmaking LES and SLES) |
-| 4. State bill text | steps 3-4 |
+| 4. State bill text | step 3 |
 | 5. Federal bill text | step 2 (bill-text fetch) |
 | 6. State bill topics | step 3, plus a topic-mapping method (not yet designed) |
 | 7. Federal bill topics | step 2 (all federal steps except the bill-text fetch) |

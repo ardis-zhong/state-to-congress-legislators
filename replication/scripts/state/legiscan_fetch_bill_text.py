@@ -167,8 +167,22 @@ def extract_pdf(path):
         return None, f"pdfplumber error: {e}"
 
 
-def load_unique_docs(path, sponsor_types=None):
-    """Returns doc_id -> {bill_ids: set(), mime: str}.
+def sponsor_rows_in_scope(path):
+    """Default scope (decided 2026-10-09): rows where the person is the bill's sponsor --
+    "Primary Sponsor" in every state, plus "Sponsor" in states whose LegiScan data never uses
+    "Primary Sponsor" (CT, MS, SD as of 2026-10). Co-sponsors and joint sponsors are excluded,
+    matching the sponsor-only federal tables."""
+    with open(path, newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    uses_primary = {r["StateAbbr"] for r in rows if r.get("SponsorType") == "Primary Sponsor"}
+    sponsor_only = sorted({r["StateAbbr"] for r in rows} - uses_primary)
+    keep = [r for r in rows if r.get("SponsorType") == "Primary Sponsor"
+            or (r.get("SponsorType") == "Sponsor" and r["StateAbbr"] in sponsor_only)]
+    return keep, sponsor_only
+
+
+def load_unique_docs(path, sponsor_types=None, rows=None):
+    """Returns doc_id -> {bill_ids: set(), mime: str}. Pass `rows` to use pre-filtered rows.
 
     sponsor_types: if given, only rows whose SponsorType is in this set are
     included. Use this to scope a fetch down (e.g. Primary Sponsor bills
@@ -177,33 +191,38 @@ def load_unique_docs(path, sponsor_types=None):
     available; already-fetched doc_ids are cached and won't be re-fetched.
     """
     docs = {}
-    with open(path, newline="", encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            if sponsor_types and row.get("SponsorType") not in sponsor_types:
-                continue
-            did = (row.get("IntroducedDocId") or "").strip()
-            if not did:
-                continue
-            entry = docs.setdefault(did, {"bill_ids": set(), "mime": row.get("IntroducedMime", "")})
-            entry["bill_ids"].add(row.get("BillId", ""))
+    if rows is None:
+        with open(path, newline="", encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+    for row in rows:
+        if sponsor_types and row.get("SponsorType") not in sponsor_types:
+            continue
+        did = (row.get("IntroducedDocId") or "").strip()
+        if not did:
+            continue
+        entry = docs.setdefault(did, {"bill_ids": set(), "mime": row.get("IntroducedMime", "")})
+        entry["bill_ids"].add(row.get("BillId", ""))
     return docs
 
 
 def main():
     if len(sys.argv) not in (2, 3):
         print("Usage: python3 legiscan_fetch_bill_text.py YOUR_LEGISCAN_API_KEY [--all-sponsor-types]")
-        print("  By default this only fetches text for bills where one of our 246 people was the")
-        print("  PRIMARY sponsor (~32,824 unique bills) -- this alone is close to LegiScan's free")
-        print("  30,000-query/month cap. Pass --all-sponsor-types to also include Co-Sponsor/")
-        print("  Sponsor/Joint Sponsor bills (~97,033 unique bills total, several months of free quota).")
+        print("  By default this fetches text for bills our people SPONSORED: 'Primary Sponsor' rows,")
+        print("  plus 'Sponsor' rows in states whose LegiScan data never uses 'Primary Sponsor'.")
+        print("  LegiScan's free tier allows 30,000 queries/month; cached doc_ids cost nothing.")
+        print("  Pass --all-sponsor-types to also include co-sponsors and joint sponsors.")
         sys.exit(1)
     key = sys.argv[1]
     scope_all = len(sys.argv) == 3 and sys.argv[2] == "--all-sponsor-types"
-    sponsor_types = None if scope_all else {"Primary Sponsor"}
-
-    print("Loading unique Introduced doc_ids from state_legislation_sponsored.csv "
-          + ("(all sponsor types)..." if scope_all else "(Primary Sponsor bills only)..."))
-    docs = load_unique_docs("state_legislation_sponsored.csv", sponsor_types)
+    if scope_all:
+        print("Loading unique Introduced doc_ids from state_legislation_sponsored.csv (all sponsor types)...")
+        docs = load_unique_docs("state_legislation_sponsored.csv")
+    else:
+        rows, sponsor_only = sponsor_rows_in_scope("state_legislation_sponsored.csv")
+        print("Loading unique Introduced doc_ids (Primary Sponsor bills, plus 'Sponsor' bills in "
+              f"states that never use 'Primary Sponsor': {', '.join(sponsor_only)})...")
+        docs = load_unique_docs("state_legislation_sponsored.csv", rows=rows)
     print(f"  {len(docs)} unique doc_id(s) to fetch.")
     if len(docs) > 30000:
         print(f"  NOTE: this exceeds LegiScan's free 30,000/month cap -- the script will keep "
