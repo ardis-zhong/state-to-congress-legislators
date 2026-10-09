@@ -18,7 +18,7 @@ published on Harvard Dataverse (link to come).
 | 2 | `table2_demographics` | Built: 1,017 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,138 scores for 1,014 people |
 | 4 | `table4_state_bill_text` | Pending (Dataverse) |
-| 5 | `table5_federal_bill_text` | In progress: 111th Congress (2009) on complete; to be published on Dataverse |
+| 5 | `table5_federal_bill_text` | Built: 114,745 bills, 889 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 161,087 bills and resolutions, 1,015 people |
 
@@ -86,10 +86,10 @@ One row per sponsored bill or resolution with digital text (same bills as
 Table 7). `bioguide_id`, `name`, `bill_id`, `bill_name`, `congress`, `year`,
 `chamber` (chamber of origin: `House` or `Senate`), `bill_text` (plain text of
 the version as introduced, or the earliest version Congress.gov has).
-Source: Congress.gov bill text (Government Publishing Office). Coverage so
-far: 64,071 of 64,101 bills from the 111th Congress (2009) on; the 101st–110th
-Congresses are being added. Congress.gov has almost no digital text before
-the 101st Congress (1989).
+Source: Congress.gov bill text (Government Publishing Office). Coverage:
+114,740 of 114,798 bills from the 101st Congress (1989) on; Congress.gov has
+almost no digital text before 1989, so the 126 people whose bills all predate
+1989 have no rows here (their bills are in Table 7).
 
 **Table 6: State bill topics**
 `bioguide_id`, `name`, `bill_id`, `bill_name`, `state_session`, `congress`,

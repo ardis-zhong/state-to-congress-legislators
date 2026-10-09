@@ -68,7 +68,7 @@ python3 replication/scripts/federal/gap_fill_missing_items.py "$CONGRESS_API_KEY
 python3 replication/scripts/federal/merge_sponsored_legislation.py  # combine + de-duplicate on (bioguide_id, url)
 python3 replication/scripts/federal/classify_status.py              # passed / failed status from latest action
 python3 replication/scripts/federal/fetch_federal_bill_text.py "$CONGRESS_API_KEY" sponsored_legislation_full_status.csv \
-    --min-congress 111 --delay 0.8   # ~15 h for the 111th Congress on; resumable
+    --min-congress 101 --delay 0.8   # ~33 h for the 101st Congress (1989) on; resumable
 ```
 
 **3. State (LegiScan)**
