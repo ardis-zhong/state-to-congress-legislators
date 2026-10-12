@@ -37,6 +37,7 @@ OUTPUT: federal_billtext_cache/<congress>-<billtype>-<billnumber>.raw.<ext>
 USAGE (from the repo root):
     python3 replication/scripts/federal/fetch_federal_bill_text.py "$CONGRESS_API_KEY" \
         sponsored_legislation_full_status.csv [--min-congress N] [--max-congress N] [--delay SECONDS]
+        [--retry-no-text]   # re-check bills that had no text yet (e.g. a few months later)
     The manifest is appended after every bill; re-running skips finished bills.
 """
 
@@ -255,6 +256,8 @@ def main():
     ap.add_argument("csv_path", help="federal dataset with Congress/Type/Number columns")
     ap.add_argument("--min-congress", type=int, default=0)
     ap.add_argument("--max-congress", type=int, default=999)
+    ap.add_argument("--retry-no-text", action="store_true",
+                    help="re-ask about bills that had no text yet (new bills get text from GPO later)")
     ap.add_argument("--delay", type=float, default=MIN_SECONDS_BETWEEN_CALLS,
                     help="seconds between metered api.congress.gov calls (default %(default)s)")
     args = ap.parse_args()
@@ -272,7 +275,7 @@ def main():
     if os.path.exists(MANIFEST):
         with open(MANIFEST, newline="", encoding="utf-8") as f:
             for m in csv.DictReader(f):
-                if int(m["TextLength"] or 0) > 0 or m["Error"] in FINAL_ERRORS:
+                if int(m["TextLength"] or 0) > 0 or (m["Error"] in FINAL_ERRORS and not args.retry_no_text):
                     done.add((m["Congress"], m["BillType"].lower(), m["BillNumber"]))
     todo = sorted(k for k in bills if k not in done)
     print(f"  {len(bills)} unique bill(s) in Congresses {args.min_congress}-{args.max_congress}; "
