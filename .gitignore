@@ -58,3 +58,6 @@ datasets/*/table5_federal_bill_text.*
 
 # --- Files prepared for the Harvard Dataverse deposit (too large for GitHub) ---
 /dataverse_upload/
+
+# --- Written by replication/validate_tables.py ---
+/validation_sample.tsv

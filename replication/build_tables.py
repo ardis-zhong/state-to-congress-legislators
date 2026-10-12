@@ -192,6 +192,15 @@ def build_table3():
     return rows
 
 
+# Bill texts removed after validation (garbled scans, wrong documents), with reasons.
+EXCLUDED_TEXTS = "replication/data/reference/excluded_bill_texts.csv"
+
+
+def excluded_texts(table):
+    with open(EXCLUDED_TEXTS, newline="", encoding="utf-8") as f:
+        return {r["bill_id"] for r in csv.DictReader(f) if r["table"] == str(table)}
+
+
 STATE_SPONSORED = "state_legislation_sponsored.csv"  # local; see replication/README.md step 3
 STATE_TEXT_MANIFEST = "bill_text_manifest.csv"       # local; written by legiscan_fetch_bill_text.py
 
@@ -239,8 +248,11 @@ def build_table4():
             if int(m["TextLength"] or 0) > 0 and m["TextPath"]:
                 text_path[m["DocId"]] = m["TextPath"]
     people = {p["BioguideId"]: (p["Name"], p["State"]) for p in load_person_level()}
+    skip = excluded_texts(4)
     out = []
     for r in state_bill_rows():
+        if f"{r['StateAbbr']}-{r['SessionId']}-{r['BillNumber']}" in skip:
+            continue
         path = text_path.get(r["IntroducedDocId"])
         if r["BioguideId"] not in people or not path or not os.path.exists(path):
             continue
@@ -270,10 +282,13 @@ def build_table5():
             if int(m["TextLength"] or 0) > 0 and m["TextPath"]:
                 text_path[(m["Congress"], m["BillType"].lower(), m["BillNumber"])] = m["TextPath"]
     people = {p["BioguideId"]: p["Name"] for p in load_person_level()}
+    skip = excluded_texts(5)
     rows = []
     with open(FEDERAL_STATUS, newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f):
             if r["ItemCategory"] != "Bill/Resolution" or r["BioguideId"] not in people:
+                continue
+            if f"{r['Congress']}-{r['Type'].upper()}-{r['Number']}" in skip:
                 continue
             path = text_path.get((r["Congress"], r["Type"].lower(), r["Number"]))
             if not path or not os.path.exists(path):

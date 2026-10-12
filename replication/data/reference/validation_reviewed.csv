@@ -1,0 +1,10 @@
+table,bill_id,check,reason
+5,101-HR-3746,bill_number_in_text,"Only the enacted Public Law 101-168 text exists; the bill number appears later in the document"
+5,101-S-2533,bill_number_in_text,"Only the enacted Public Law 101-281 text exists; the bill number appears later in the document"
+5,101-S-978,bill_number_in_text,"Only the enacted Public Law 101-185 text exists; the bill number appears later in the document"
+5,101-SRES-166,bill_number_in_text,"Text calls it 'S. Executive Res. 166', a variant name for the same measure"
+5,102-S-2719,bill_number_in_text,"Text writes the number as 'S 2719' without a period"
+5,102-S-2714,bill_number_in_text,"Text writes the number as 'S 2714' without a period"
+5,101-HR-685,bill_number_in_text,"Correct document (title, sponsor Gilman, and 'HR 685 IH' header match); GPO's 1989 header misprints 'H. R. 615'"
+5,101-HR-1262,bill_number_in_text,"Correct document (title, sponsor Penny, and 'HR 1262 IH' header match); GPO's header misprints 'H. R. 805'"
+5,101-HCONRES-28,bill_number_in_text,"Correct document (title, sponsor Rangel, and 'HCON 28 IH' header match); GPO's header misprints 'H. CON. RES. 8'"
