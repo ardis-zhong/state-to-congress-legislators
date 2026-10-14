@@ -220,6 +220,19 @@ def main():
 
             zf = zipfile.ZipFile(io.BytesIO(zip_bytes))
             bill_files = [nm for nm in zf.namelist() if "/bill/" in nm and nm.endswith(".json")]
+            # Early sessions in most states (roughly 2007-2012) record no sponsor roles at all:
+            # every sponsor is sponsor_type_id 0 ("Sponsor") with sponsor_order 0. Flag those
+            # sessions, and record each bill's sponsor count, so the text phase can keep bills
+            # whose sole listed sponsor is our person (decided by Ardis 2026-10-13).
+            session_has_roles = False
+            for bf in bill_files:
+                try:
+                    sps = json.loads(zf.read(bf).decode("utf-8")).get("bill", {}).get("sponsors", [])
+                except (json.JSONDecodeError, KeyError):
+                    continue
+                if any(sp.get("sponsor_type_id") not in (0, None) for sp in sps):
+                    session_has_roles = True
+                    break
             for bf in bill_files:
                 try:
                     bill = json.loads(zf.read(bf).decode("utf-8")).get("bill", {})
@@ -256,6 +269,8 @@ def main():
                         "SponsorType": SPONSOR_TYPE_MAP.get(sp.get("sponsor_type_id"),
                                                              sp.get("sponsor_type_id")),
                         "SponsorOrder": sp.get("sponsor_order"),
+                        "NumSponsors": len(bill.get("sponsors", [])),
+                        "SessionHasRoles": "Yes" if session_has_roles else "No",
                         "DocIds": doc_ids,
                         "IntroducedDocId": intro.get("doc_id") if intro else "",
                         "IntroducedDocType": intro.get("type") if intro else "",
@@ -267,7 +282,8 @@ def main():
 
     fieldnames = ["Name", "BioguideId", "State", "StateAbbr", "PeopleId", "SessionId",
                   "SessionTitle", "BillId", "BillNumber", "Title", "Description", "Status",
-                  "StatusDate", "CurrentBody", "SponsorType", "SponsorOrder", "DocIds",
+                  "StatusDate", "CurrentBody", "SponsorType", "SponsorOrder", "NumSponsors",
+                  "SessionHasRoles", "DocIds",
                   "IntroducedDocId", "IntroducedDocType", "IntroducedDocDate", "IntroducedMime",
                   "IntroducedTextSize", "Url", "StateLink"]
     with open("state_legislation_sponsored.csv", "w", newline="", encoding="utf-8") as f:

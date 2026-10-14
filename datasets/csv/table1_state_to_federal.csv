@@ -11,6 +11,7 @@ A000211,Tom Andrews,Maine,1983-1985 (House); 1985-1990 (Senate),1991-1995,House
 A000214,Douglas Applegate,Ohio,1961-1974,1977-1995,House
 A000215,Bill Archer,Texas,1967-1971,1971-2001,House
 A000219,William L. Armstrong,Colorado,House 1963-1964 (1 term); Senate 1964-1972,1973-1979 (House); 1979-1991 (Senate),Both
+A000221,John Ashbrook,Ohio,1957-1961,1961-1983,House
 A000226,Chester Atkins,Massachusetts,1970-1984,1985-1993,House
 A000337,Les AuCoin,Oregon,1971-1974,1975-1993,House
 A000358,W. Akin,Missouri,1989-2001,2001-2013,House
@@ -43,6 +44,7 @@ B000254,Birch Bayh,Indiana,1954-1962,1963-1981,Senate
 B000279,Edward Beard,Rhode Island,1973-1975,1975-1981,House
 B000287,Xavier Becerra,California,1990-1992,1993-2017,House
 B000318,Anthony Beilenson,California,Assembly 1963-1967; Senate 1967-1977,1977-1997,House
+B000351,Henry Bellmon,Oklahoma,1947-1949,1969-1981,Senate
 B000363,Adam Benjamin Jr.,Indiana,1967-1971; 1971-1977,1977-1983,House
 B000371,Charles Edward Bennett,Florida,1941-1942,1949-1993,House
 B000403,Doug Bereuter,Nebraska,1975-1979,1979-2004,House
@@ -120,7 +122,7 @@ B001278,Suzanne Bonamici,Oregon,2007-2012,2012-present,House
 B001281,Joyce Beatty,Ohio,1999-2008,2013-present,House
 B001285,Julia Brownley,California,2006-2012,2013-present,House
 B001289,Bradley Byrne,Alabama,2002-2007 (partial term plus one term),2014-2021,House
-B001293,Mike Bishop,Michigan,2003-2011,2015-2019,House
+B001293,Mike Bishop,Michigan,1999-2011,2015-2019,House
 B001295,Mike Bost,Illinois,1995-2015 (district 115),2015-present,House
 B001296,Brendan Boyle,Pennsylvania,2009-2015,2015-present,House
 B001299,Jim Banks,Indiana,2010-2016,2017-2025 (House); 2025-present (Senate),Both
@@ -128,6 +130,7 @@ B001302,Andy Biggs,Arizona,2003-2011; 2011-2017,2017-present,House
 B001304,Anthony Brown,Maryland,1999-2007,2017-2023,House
 B001306,Troy Balderson,Ohio,2009-2018,2018-present,House
 B001307,Jim Baird,Indiana,2010-2018,2019-present,House
+B001308,Anthony Brindisi,New York,2011-2018,2019-2021,House
 B001309,Tim Burchett,Tennessee,TN House dist 18 1995-1998 (2 terms); TN Senate dist 7 1999-2010 (3 terms),2019-present,House
 B001310,Mike Braun,Indiana,2014-2017,2019-2025,Senate
 B001311,Dan Bishop,North Carolina,2015-2019,2019-2025,House
@@ -149,6 +152,7 @@ C000141,Ben Cardin,Maryland,1967-1987,1987-2007 (House); 2007-2025 (Senate),Both
 C000191,Julia Carson,Indiana,1972-1976; 1976-1990,1997-2007,House
 C000243,Michael N. Castle,Delaware,1967-1977,1993-2011,House
 C000261,John Cavanaugh,Nebraska,1973-1977,1977-1981,House
+C000269,John Chafee,Rhode Island,1957-1963,1976-1999,Senate
 C000293,Rod Chandler,Washington,January 1975-January 1983; dist 45 (~4 terms),1983-1993,House
 C000321,Bill Chappell,Florida,1954-1964; 1966-1968,1969-1989,House
 C000322,Eugene Chappie,California,1964-1980,1981-1987,House
@@ -165,6 +169,7 @@ C000666,Barber Conable,New York,1963-1964,1965-1985,House
 C000670,Gary Condit,California,1982-1989,1989-2003,House
 C000709,Silvio Conte,Massachusetts,1951-1958,1959-1991,House
 C000737,Wes Cooley,Oregon,1993-1995,1995-1997,House
+C000807,Lawrence Coughlin,Pennsylvania,1965-1969,1969-1993,House
 C000813,Paul Coverdell,Georgia,1971-1989,1993-2000,Senate
 C000846,William Coyne,Pennsylvania,1970-1972,1981-2003,House
 C000858,Larry Craig,Idaho,1974-1980,1981-1991 (House); 1991-2009 (Senate),Both
@@ -229,8 +234,10 @@ D000231,Lawrence J. DeNardis,Connecticut,1971-1979,1981-1983,House
 D000267,Butler Derrick,South Carolina,1969-1974,1975-1995,House
 D000269,Edward Derwinski,Illinois,1957-1959,1959-1983,House
 D000275,Peter Deutsch,Florida,1982-1992,1993-2005,House
+D000279,Samuel Devine,Ohio,1951-1955,1959-1981,House
 D000294,Mike DeWine,Ohio,1981-1982,1983-1991 (House); 1995-2007 (Senate),Both
 D000299,Lincoln Diaz-Balart,Florida,1986-1989; 1989-1992,1993-2011,House
+D000344,Charles Diggs,Michigan,1951-1954,1955-1981,House
 D000366,Alan J. Dixon,Illinois,House 1951-1963; Senate 1963-1971,1981-1993,Senate
 D000373,Julian Dixon,California,1973-1978,1979-2001,House
 D000399,Lloyd Doggett,Texas,1973-1985,1995-present,House
@@ -270,6 +277,7 @@ E000179,Eliot Engel,New York,1977-1988,1989-2021,House
 E000186,Karan English,Arizona,1987-1991; 1991-1993,1993-1995,House
 E000198,Arlen Erdahl,Minnesota,1963-1970,1979-1983,House
 E000201,Ben Erdreich,Alabama,1970-1974,1983-1993,House
+E000204,John Erlenborn,Illinois,1957-1965,1965-1985,House
 E000226,Bob Etheridge,North Carolina,1979-1989,1997-2011,House
 E000233,Billy Lee Evans,Georgia,1969-1976,1977-1983,House
 E000236,Daniel J. Evans,Washington,1957-1965,1983-1989,Senate
@@ -330,6 +338,7 @@ F000470,Michelle Fischbach,Minnesota,1996-2018,2021-present,House
 F000471,Scott Fitzgerald,Wisconsin,1995-2021 (dist 13),2021-present,House
 F000474,Mike Flood,Nebraska,2005-2013; 2021-2022,2022-present,House
 F000475,Brad Finstad,Minnesota,2003-2009,2022-present,House
+F000477,Valerie P. Foushee,North Carolina,2012-2022,2023-present,House
 F000478,Russell Fry,South Carolina,2015-2022 (106th district),2023-present,House
 F000480,Vince Fong,California,2016-2024,2024-present,House
 F000483,Laura Friedman,California,2016-2024,2025-present,House
@@ -390,6 +399,7 @@ G000592,Jared Golden,Maine,2014-2018 (District 60; Asst. House Majority Leader),
 G000597,Andrew Garbarino,New York,2013-2020,2021-present,House
 G000601,Craig Goldman,Texas,2013-2025,2025-present,House
 G000605,Adam Gray,California,2012-2022,2025-present,House
+G000607,James Gallagher,California,2014-2026,2026-present,House
 H000012,Tom Hagedorn,Minnesota,1971-1975,1975-1983,House
 H000058,Katie Hall,Indiana,1974-1976; 1976-1982,1981-1985,House
 H000067,Ralph Hall,Texas,1963-1973,1981-2015,House
@@ -594,6 +604,7 @@ M000346,James A. McClure,Idaho,1961-1966,1967-1973 (House); 1973-1991 (Senate),B
 M000365,Mike McCormack,Washington,WA House 1957-1961 (2 terms); WA Senate 1961-1970 (3 terms),1971-1981,House
 M000404,Jim McDermott,Washington,WA House dist 43 1971-1973 (1 term); WA Senate 1974-1987 (3 terms),1989-2017,House
 M000432,Bob McEwen,Ohio,1975-1980,1981-1993,House
+M000433,Robert McEwen,New York,1954-1964,1965-1981,House
 M000458,Raymond J. McGrath,New York,1977-1980,1981-1993,House
 M000466,Paul McHale,Pennsylvania,1983-1991,1993-1999,House
 M000472,John M. McHugh,New York,1985-1992,1993-2009,House
@@ -611,7 +622,9 @@ M000669,Jack Metcalf,Washington,WA House dist 38 1961-1965 (1 term); WA Senate t
 M000678,Howard Metzenbaum,Ohio,1943-1947 (House); 1947-1951 (Senate),"1974-1974, 1976-1995",Senate
 M000684,Jan Meyers,Kansas,1972-1984,1985-1997,House
 M000689,John Mica,Florida,1976-1980,1993-2017,House
+M000703,Abner Mikva,Illinois,1956-1966,"1969-1973, 1975-1981",House
 M000714,Juanita Millender-McDonald,California,1992-1996,1996-2007,House
+M000797,Patsy Mink,Hawaii,1956-1959 (territorial); 1962-1964 (state),"1965-1977, 1990-2002",House
 M000808,Donald J. Mitchell,New York,1965-1972,1973-1983,House
 M000834,Joseph Moakley,Massachusetts,1953-1970,1973-2001,House
 M000842,Guy Molinari,New York,1975-1980,1981-1989,House
@@ -649,7 +662,8 @@ M001159,Cathy McMorris Rodgers,Washington,1994-2005; dist 7 (House Minority Lead
 M001160,Gwen Moore,Wisconsin,WI Assembly 1989-1993 (2 terms); WI Senate 1993-2005 (3 terms),2005-present,House
 M001161,Charlie Melancon,Louisiana,1987-1993,2005-2011,House
 M001165,Kevin McCarthy,California,2002-2006,2007-2023,House
-M001167,Harry Mitchell,Arizona,1999-2003,2007-2011,House
+M001166,Jerry McNerney,California,2024-present,2007-2023,House
+M001167,Harry Mitchell,Arizona,1999-2006,2007-2011,House
 M001169,Chris Murphy,Connecticut,House 1999-2003; Senate 2003-2007,2007-2013 (House); 2013-present (Senate),Both
 M001170,Claire McCaskill,Missouri,1983-1989,2007-2019,Senate
 M001176,Jeff Merkley,Oregon,1999-2009 (Speaker 2007-2009),2009-present,Senate
@@ -696,6 +710,7 @@ N000171,Sam Nunn,Georgia,1969-1972,1972-1997,Senate
 N000179,Grace Napolitano,California,1992-1998,1999-2025,House
 N000184,Kristi Noem,South Dakota,2007-2010 (dist 6),2011-2019,House
 N000186,Alan Nunnelee,Mississippi,1995-2011,2011-2015,House
+N000187,Gloria Negrete McLeod,California,2000-2012,2013-2015,House
 N000188,Donald Norcross,New Jersey,2010-2014,2014-present,House
 N000189,Dan Newhouse,Washington,2003-2009; dist 15 (4 terms),2015-present,House
 N000190,Ralph Norman,South Carolina,2005-2007; 2009-2017 (48th district; non-continuous),2017-present,House
@@ -737,6 +752,8 @@ P000373,Joseph Pitts,Pennsylvania,1973-1996,1997-2017,House
 P000422,Earl Pomeroy,North Dakota,1980-1985,1993-2011,House
 P000444,John Edward Porter,Illinois,1973-1979 (district 1),1979-2001,House
 P000452,Glenn Poshard,Illinois,1984-1989 (district 59),1989-1999,House
+P000546,Joel Pritchard,Washington,1959-1971,1973-1985,House
+P000553,William Proxmire,Wisconsin,1951-1953,1957-1989,Senate
 P000556,David Pryor,Arkansas,1961-1966,1965-1973 (House); 1979-1997 (Senate),Both
 P000574,Carl Pursell,Michigan,1971-1977,1977-1993,House
 P000584,David D. Phelps,Illinois,1984-1998,1999-2003,House
@@ -807,6 +824,7 @@ R000605,Mike Rounds,South Dakota,1991-2001 (Majority Leader from 1995),2015-pres
 R000606,Jamie Raskin,Maryland,2007-2016,2017-present,House
 R000610,Guy Reschenthaler,Pennsylvania,2015-2019,2019-present,House
 R000617,Delia Ramirez,Illinois,2018-2022 (district 4; first Guatemalan-American in IL General Assembly),2023-present,House
+R000619,Michael A. Rulli,Ohio,2019-2024,2024-present,House
 R000620,Luz Rivas,California,2018-2024,2025-present,House
 R000621,Emily Randall,Washington,January 2019-December 2024 (2 terms),2025-present,House
 S000005,Martin Olav Sabo,Minnesota,1961-1979,1979-2007,House
@@ -838,6 +856,7 @@ S000423,Paul Simon,Illinois,House 1955-1963; Senate 1963-1969,1975-1985 (House);
 S000429,Alan Simpson,Wyoming,1965-1977 (Speaker Pro Tempore),1979-1997,Senate
 S000453,Norman Sisisky,Virginia,1974-1983 (5 terms),1983-2001,House
 S000462,David Skaggs,Colorado,1981-1987,1987-1999,House
+S000463,Joe Skeen,New Mexico,1960-1970,1981-2003,House
 S000465,Ike Skelton,Missouri,1971-1977,1977-2011,House
 S000477,Jim Slattery,Kansas,1973-1979,1983-1995,House
 S000479,D. French Slaughter Jr.,Virginia,January 1958-January 1978 (20 years),1985-1991,House
@@ -883,7 +902,7 @@ S001157,David Scott,Georgia,1975-1983; 1983-2003,2003-2026,House
 S001158,John Salazar,Colorado,2003-2004,2005-2011,House
 S001161,John Schwarz,Michigan,1987-2002,2005-2007,House
 S001162,Allyson Schwartz,Pennsylvania,1991-2005,2005-2015,House
-S001164,Jean Schmidt,Ohio,2001-2004; 2021-2022,2005-2013,House
+S001164,Jean Schmidt,Ohio,2001-2004; 2021-present,2005-2013,House
 S001165,Albio Sires,New Jersey,2000-2006,2006-2023,House
 S001167,Bill Sali,Idaho,1990-2006,2007-2009,House
 S001172,Adrian Smith,Nebraska,1999-2007,2007-present,House
@@ -904,8 +923,10 @@ S001194,Brian Schatz,Hawaii,1998-2006,2012-present,Senate
 S001195,Jason Smith,Missouri,2005-2013,2013-present,House
 S001199,Lloyd Smucker,Pennsylvania,2009-2016,2017-present,House
 S001200,Darren Soto,Florida,2007-2012; 2012-2016,2017-present,House
+S001210,Ross Spano,Florida,2012-2018,2019-2021,House
 S001214,Greg Steube,Florida,2010-2016; 2016-2018,2019-present,House
 S001218,Melanie Stansbury,New Mexico,2019-2021,2021-present,House
+S001219,Joe Sempolinski,New York,2025-present,2022-2023,House
 S001223,Emilia Sykes,Ohio,2015-2022,2023-present,House
 S001226,Andrea Salinas,Oregon,2017-2023,2023-present,House
 S001227,Eric Schmitt,Missouri,2009-2017,2023-present,Senate
@@ -950,7 +971,9 @@ T000488,Shri Thanedar,Michigan,2021-2023,2023-present,House
 T000489,Sylvester Turner,Texas,1989-2016,2025-2025,House
 U000017,Jolene Unsoeld,Washington,January 1985-January 1989 (2 terms),1989-1995,House
 U000038,Mark Udall,Colorado,1996-1998,1999-2009 (House); 2009-2015 (Senate),Both
+V000006,Tim Valentine,North Carolina,1955-1960,1983-1995,House
 V000027,Guy Vander Jagt,Michigan,1965-1966,1966-1993,House
+V000047,Charles Vanik,Ohio,1940-1942,1955-1981,House
 V000087,Bruce Vento,Minnesota,1971-1976,1977-2001,House
 V000112,Harold Volkmer,Missouri,1967-1977,1977-1997,House
 V000126,George Voinovich,Ohio,1967-1971,1999-2011,Senate
@@ -969,6 +992,7 @@ W000187,Maxine Waters,California,1976-1990,1991-present,House
 W000194,Wes Watkins,Oklahoma,1974-1976,"1977-1991, 1997-2003",House
 W000207,Melvin Watt,North Carolina,1985-1987,1993-2014,House
 W000215,Henry Waxman,California,1969-1974,1975-2015,House
+W000253,Lowell Weicker,Connecticut,1963-1969,1969-1971 (House); 1971-1989 (Senate),Both
 W000273,Jerry Weller,Illinois,1987 (brief; unseated); 1989-1995 (districts 85 then 75),1995-2009,House
 W000314,Robert Wexler,Florida,1990-1996,1997-2010,House
 W000315,Robert Weygand,Rhode Island,1985-1993,1997-2001,House
@@ -986,6 +1010,7 @@ W000654,Bob Wise,West Virginia,1980-1982 (dist 17; 1 term),1983-2001,House
 W000682,Howard Wolpe,Michigan,c. 1973-1978 (approximate; source did not give exact dates),1979-1993,House
 W000763,Jim Wright,Texas,1947-1949,1955-1989,House
 W000777,Joseph P. Wyatt Jr.,Texas,1971-1979,1979-1981,House
+W000781,Chalmers Wylie,Ohio,1961-1967,1967-1993,House
 W000784,Albert Wynn,Maryland,1983-1993,1993-2008,House
 W000788,Nikema Williams,Georgia,Dec 2017-Jan 2021,2021-present,House
 W000791,Greg Walden,Oregon,1989-1997,1999-2021,House

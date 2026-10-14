@@ -183,7 +183,8 @@ def build_table3():
         matches = [m for m in csv.DictReader(f) if m["status"] == "matched"]
     for m in matches:
         ids = [int(i) for i in m["sles_ids"].split(";")]
-        mine = sles[sles.sles_id.isin(ids) & sles.state.isin(m["state"].split(";"))]
+        mine = sles[sles.sles_id.isin(ids) & sles.state.isin(m["state"].split(";"))
+                    & ~sles.term.isin(m.get("exclude_terms", "").split(";"))]  # CEL errors, see sles_review.csv
         for r in mine.itertuples():
             rows.append([m["bioguide_id"], people[m["bioguide_id"]], r.term.replace("_", "-"),
                          int(r.term[:4]), None if pd.isna(r.sles) else round(float(r.sles), 6), "State",
@@ -214,8 +215,9 @@ def congress_on(date_str):
 
 
 def state_bill_rows():
-    """Sponsor rows for state bills (decided 2026-10-09): 'Primary Sponsor' everywhere, plus
-    'Sponsor' in states whose LegiScan data never uses 'Primary Sponsor' (CT, MS, SD)."""
+    """Sponsor rows for state bills (decided 2026-10-09, widened 2026-10-13): 'Primary Sponsor'
+    everywhere, 'Sponsor' in states whose LegiScan data never uses 'Primary Sponsor' (CT, MS, SD),
+    and, in sessions that record no sponsor roles, bills whose sole listed sponsor is the person."""
     sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "scripts", "state"))
     from legiscan_fetch_bill_text import sponsor_rows_in_scope
     rows, _ = sponsor_rows_in_scope(STATE_SPONSORED)

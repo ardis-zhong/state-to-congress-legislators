@@ -100,6 +100,11 @@ A000219,William L. Armstrong,98,1982,0.808252,Federal,Senate
 A000219,William L. Armstrong,99,1984,0.474444,Federal,Senate
 A000219,William L. Armstrong,100,1986,0.629305,Federal,Senate
 A000219,William L. Armstrong,101,1988,0.555083,Federal,Senate
+A000221,John Ashbrook,93,1973,0.171591,Federal,House
+A000221,John Ashbrook,94,1975,0.294643,Federal,House
+A000221,John Ashbrook,95,1977,0.316496,Federal,House
+A000221,John Ashbrook,96,1979,0.468399,Federal,House
+A000221,John Ashbrook,97,1981,0.91788,Federal,House
 A000226,Chester Atkins,99,1985,0.015369,Federal,House
 A000226,Chester Atkins,100,1987,0.559019,Federal,House
 A000226,Chester Atkins,101,1989,0.197671,Federal,House
@@ -345,6 +350,10 @@ B000318,Anthony Beilenson,101,1989,1.609693,Federal,House
 B000318,Anthony Beilenson,102,1991,0.081495,Federal,House
 B000318,Anthony Beilenson,103,1993,0.141015,Federal,House
 B000318,Anthony Beilenson,104,1995,0.076523,Federal,House
+B000351,Henry Bellmon,93,1972,0.960335,Federal,Senate
+B000351,Henry Bellmon,94,1974,0.35606,Federal,Senate
+B000351,Henry Bellmon,95,1976,0.702611,Federal,Senate
+B000351,Henry Bellmon,96,1978,0.263653,Federal,Senate
 B000363,Adam Benjamin Jr.,95,1977,0.152788,Federal,House
 B000363,Adam Benjamin Jr.,96,1979,1.252026,Federal,House
 B000363,Adam Benjamin Jr.,97,1981,2.744725,Federal,House
@@ -1057,6 +1066,11 @@ B001307,Jim Baird,2017-2018,2017,1.239792,State,Lower
 B001307,Jim Baird,116,2019,0.039761,Federal,House
 B001307,Jim Baird,117,2021,0.056563,Federal,House
 B001307,Jim Baird,118,2023,0.86922,Federal,House
+B001308,Anthony Brindisi,2011-2012,2011,1.064069,State,Lower
+B001308,Anthony Brindisi,2013-2014,2013,1.130569,State,Lower
+B001308,Anthony Brindisi,2015-2016,2015,1.18982,State,Lower
+B001308,Anthony Brindisi,2017-2018,2017,1.081116,State,Lower
+B001308,Anthony Brindisi,116,2019,2.034342,Federal,House
 B001309,Tim Burchett,1995-1996,1995,0.401951,State,Lower
 B001309,Tim Burchett,1997-1998,1997,1.338923,State,Lower
 B001309,Tim Burchett,1999-2000,1999,0.832555,State,Upper
@@ -1213,6 +1227,18 @@ C000243,Michael N. Castle,110,2007,1.286839,Federal,House
 C000243,Michael N. Castle,111,2009,0.265747,Federal,House
 C000261,John Cavanaugh,95,1977,0.336079,Federal,House
 C000261,John Cavanaugh,96,1979,0.265498,Federal,House
+C000269,John Chafee,95,1976,0.083086,Federal,Senate
+C000269,John Chafee,96,1978,0.928307,Federal,Senate
+C000269,John Chafee,97,1980,2.607824,Federal,Senate
+C000269,John Chafee,98,1982,1.256092,Federal,Senate
+C000269,John Chafee,99,1984,1.73464,Federal,Senate
+C000269,John Chafee,100,1986,0.555848,Federal,Senate
+C000269,John Chafee,101,1988,0.637985,Federal,Senate
+C000269,John Chafee,102,1990,0.485531,Federal,Senate
+C000269,John Chafee,103,1992,0.690533,Federal,Senate
+C000269,John Chafee,104,1994,1.541147,Federal,Senate
+C000269,John Chafee,105,1996,2.343899,Federal,Senate
+C000269,John Chafee,106,1998,1.395781,Federal,Senate
 C000293,Rod Chandler,98,1983,0.016372,Federal,House
 C000293,Rod Chandler,99,1985,0.076846,Federal,House
 C000293,Rod Chandler,100,1987,0.622373,Federal,House
@@ -1312,6 +1338,16 @@ C000709,Silvio Conte,100,1987,0.502581,Federal,House
 C000709,Silvio Conte,101,1989,3.254427,Federal,House
 C000709,Silvio Conte,102,1991,0.766264,Federal,House
 C000737,Wes Cooley,104,1995,2.004414,Federal,House
+C000807,Lawrence Coughlin,93,1973,0.106469,Federal,House
+C000807,Lawrence Coughlin,94,1975,0.126112,Federal,House
+C000807,Lawrence Coughlin,95,1977,0.113485,Federal,House
+C000807,Lawrence Coughlin,96,1979,0.064756,Federal,House
+C000807,Lawrence Coughlin,97,1981,0.10393,Federal,House
+C000807,Lawrence Coughlin,98,1983,0.100176,Federal,House
+C000807,Lawrence Coughlin,99,1985,0.049181,Federal,House
+C000807,Lawrence Coughlin,100,1987,0.018602,Federal,House
+C000807,Lawrence Coughlin,101,1989,0.173039,Federal,House
+C000807,Lawrence Coughlin,102,1991,0.179289,Federal,House
 C000813,Paul Coverdell,103,1992,0.043021,Federal,Senate
 C000813,Paul Coverdell,104,1994,0.224329,Federal,Senate
 C000813,Paul Coverdell,105,1996,2.684686,Federal,Senate
@@ -1421,7 +1457,6 @@ C001047,Shelley Moore Capito,112,2011,0.982674,Federal,House
 C001047,Shelley Moore Capito,113,2013,1.057961,Federal,House
 C001047,Shelley Moore Capito,114,2014,0.261925,Federal,Senate
 C001047,Shelley Moore Capito,115,2016,0.523104,Federal,Senate
-C001047,Shelley Moore Capito,2017-2018,2017,0.232903,State,Lower
 C001047,Shelley Moore Capito,116,2018,0.890127,Federal,Senate
 C001047,Shelley Moore Capito,117,2020,0.319558,Federal,Senate
 C001047,Shelley Moore Capito,118,2022,0.68243,Federal,Senate
@@ -1845,6 +1880,10 @@ D000275,Peter Deutsch,105,1997,0.490646,Federal,House
 D000275,Peter Deutsch,106,1999,0.349738,Federal,House
 D000275,Peter Deutsch,107,2001,0.124856,Federal,House
 D000275,Peter Deutsch,108,2003,0.149422,Federal,House
+D000279,Samuel Devine,93,1973,0.099233,Federal,House
+D000279,Samuel Devine,94,1975,0.149041,Federal,House
+D000279,Samuel Devine,95,1977,0.113485,Federal,House
+D000279,Samuel Devine,96,1979,1.033161,Federal,House
 D000294,Mike DeWine,98,1983,0.0,Federal,House
 D000294,Mike DeWine,99,1985,0.07471,Federal,House
 D000294,Mike DeWine,100,1987,0.068208,Federal,House
@@ -1864,6 +1903,10 @@ D000299,Lincoln Diaz-Balart,108,2003,0.033205,Federal,House
 D000299,Lincoln Diaz-Balart,109,2005,0.147627,Federal,House
 D000299,Lincoln Diaz-Balart,110,2007,0.017547,Federal,House
 D000299,Lincoln Diaz-Balart,111,2009,0.3791,Federal,House
+D000344,Charles Diggs,93,1973,5.520432,Federal,House
+D000344,Charles Diggs,94,1975,3.361123,Federal,House
+D000344,Charles Diggs,95,1977,1.431084,Federal,House
+D000344,Charles Diggs,96,1979,0.0,Federal,House
 D000366,Alan J. Dixon,97,1980,0.154263,Federal,Senate
 D000366,Alan J. Dixon,98,1982,0.143363,Federal,Senate
 D000366,Alan J. Dixon,99,1984,0.58302,Federal,Senate
@@ -2147,6 +2190,12 @@ E000201,Ben Erdreich,99,1985,0.303111,Federal,House
 E000201,Ben Erdreich,100,1987,0.264889,Federal,House
 E000201,Ben Erdreich,101,1989,1.491553,Federal,House
 E000201,Ben Erdreich,102,1991,1.274804,Federal,House
+E000204,John Erlenborn,93,1973,0.612405,Federal,House
+E000204,John Erlenborn,94,1975,0.063056,Federal,House
+E000204,John Erlenborn,95,1977,0.089527,Federal,House
+E000204,John Erlenborn,96,1979,0.207788,Federal,House
+E000204,John Erlenborn,97,1981,0.652287,Federal,House
+E000204,John Erlenborn,98,1983,0.971451,Federal,House
 E000226,Bob Etheridge,105,1997,0.149275,Federal,House
 E000226,Bob Etheridge,106,1999,0.172473,Federal,House
 E000226,Bob Etheridge,107,2001,1.264462,Federal,House
@@ -2582,6 +2631,13 @@ F000475,Brad Finstad,2005-2006,2005,1.177501,State,Lower
 F000475,Brad Finstad,2007-2008,2007,0.09076,State,Lower
 F000475,Brad Finstad,117,2021,0.0,Federal,House
 F000475,Brad Finstad,118,2023,0.701038,Federal,House
+F000477,Valerie P. Foushee,2013-2014,2013,0.292929,State,Lower
+F000477,Valerie P. Foushee,2013-2014,2013,0.02167,State,Upper
+F000477,Valerie P. Foushee,2015-2016,2015,0.083822,State,Upper
+F000477,Valerie P. Foushee,2017-2018,2017,0.140779,State,Upper
+F000477,Valerie P. Foushee,2019-2020,2019,0.089932,State,Upper
+F000477,Valerie P. Foushee,2021-2022,2021,0.284681,State,Upper
+F000477,Valerie P. Foushee,118,2023,0.160593,Federal,House
 F000478,Russell Fry,2015-2016,2015,0.857945,State,Lower
 F000478,Russell Fry,2017-2018,2017,2.591534,State,Lower
 F000478,Russell Fry,2019-2020,2019,3.378966,State,Lower
@@ -3062,6 +3118,11 @@ G000605,Adam Gray,2015-2016,2015,0.972934,State,Lower
 G000605,Adam Gray,2017-2018,2017,0.865381,State,Lower
 G000605,Adam Gray,2019-2020,2019,0.780038,State,Lower
 G000605,Adam Gray,2021-2022,2021,0.526278,State,Lower
+G000607,James Gallagher,2015-2016,2015,0.924116,State,Lower
+G000607,James Gallagher,2017-2018,2017,0.924257,State,Lower
+G000607,James Gallagher,2019-2020,2019,0.786341,State,Lower
+G000607,James Gallagher,2021-2022,2021,0.665916,State,Lower
+G000607,James Gallagher,2023-2024,2023,0.48558,State,Lower
 H000012,Tom Hagedorn,94,1975,0.083692,Federal,House
 H000012,Tom Hagedorn,95,1977,0.248405,Federal,House
 H000012,Tom Hagedorn,96,1979,0.15973,Federal,House
@@ -4258,13 +4319,9 @@ L000491,Frank D. Lucas,118,2023,2.508031,Federal,House
 L000509,"Donald E. ""Buz"" Lukens",100,1987,0.0,Federal,House
 L000509,"Donald E. ""Buz"" Lukens",101,1989,0.0,Federal,House
 L000521,William Luther,104,1995,0.038261,Federal,House
-L000521,William Luther,1995-1996,1995,1.033403,State,Lower
 L000521,William Luther,105,1997,0.108485,Federal,House
-L000521,William Luther,1997-1998,1997,0.646347,State,Lower
 L000521,William Luther,106,1999,0.107948,Federal,House
-L000521,William Luther,1999-2000,1999,0.768009,State,Lower
 L000521,William Luther,107,2001,0.124856,Federal,House
-L000521,William Luther,2001-2002,2001,0.09388,State,Lower
 L000550,Mary Landrieu,105,1996,0.265012,Federal,Senate
 L000550,Mary Landrieu,106,1998,0.211636,Federal,Senate
 L000550,Mary Landrieu,107,2000,0.81187,Federal,Senate
@@ -4652,6 +4709,10 @@ M000432,Bob McEwen,99,1985,0.610921,Federal,House
 M000432,Bob McEwen,100,1987,0.431139,Federal,House
 M000432,Bob McEwen,101,1989,0.40444,Federal,House
 M000432,Bob McEwen,102,1991,0.736157,Federal,House
+M000433,Robert McEwen,93,1973,0.03101,Federal,House
+M000433,Robert McEwen,94,1975,0.057324,Federal,House
+M000433,Robert McEwen,95,1977,0.958535,Federal,House
+M000433,Robert McEwen,96,1979,0.010793,Federal,House
 M000458,Raymond J. McGrath,97,1981,0.202258,Federal,House
 M000458,Raymond J. McGrath,98,1983,0.105633,Federal,House
 M000458,Raymond J. McGrath,99,1985,0.070698,Federal,House
@@ -4770,6 +4831,9 @@ M000689,John Mica,111,2009,0.2091,Federal,House
 M000689,John Mica,112,2011,14.369591,Federal,House
 M000689,John Mica,113,2013,0.030463,Federal,House
 M000689,John Mica,114,2015,1.039508,Federal,House
+M000703,Abner Mikva,94,1975,1.221354,Federal,House
+M000703,Abner Mikva,95,1977,0.774886,Federal,House
+M000703,Abner Mikva,96,1979,0.099292,Federal,House
 M000714,Juanita Millender-McDonald,1993-1994,1993,1.163766,State,Lower
 M000714,Juanita Millender-McDonald,104,1995,0.0,Federal,House
 M000714,Juanita Millender-McDonald,1995-1996,1995,0.926759,State,Lower
@@ -4779,6 +4843,15 @@ M000714,Juanita Millender-McDonald,107,2001,0.265319,Federal,House
 M000714,Juanita Millender-McDonald,108,2003,0.771762,Federal,House
 M000714,Juanita Millender-McDonald,109,2005,1.211181,Federal,House
 M000714,Juanita Millender-McDonald,110,2007,0.025067,Federal,House
+M000797,Patsy Mink,93,1973,1.547191,Federal,House
+M000797,Patsy Mink,94,1975,1.274896,Federal,House
+M000797,Patsy Mink,101,1989,0.014342,Federal,House
+M000797,Patsy Mink,102,1991,0.503078,Federal,House
+M000797,Patsy Mink,103,1993,0.662373,Federal,House
+M000797,Patsy Mink,104,1995,1.137249,Federal,House
+M000797,Patsy Mink,105,1997,0.727393,Federal,House
+M000797,Patsy Mink,106,1999,1.003593,Federal,House
+M000797,Patsy Mink,107,2001,1.639762,Federal,House
 M000808,Donald J. Mitchell,93,1973,0.077526,Federal,House
 M000808,Donald J. Mitchell,94,1975,0.069935,Federal,House
 M000808,Donald J. Mitchell,95,1977,0.27636,Federal,House
@@ -5128,6 +5201,14 @@ M001165,Kevin McCarthy,115,2017,1.833663,Federal,House
 M001165,Kevin McCarthy,116,2019,0.39921,Federal,House
 M001165,Kevin McCarthy,117,2021,0.028281,Federal,House
 M001165,Kevin McCarthy,118,2023,0.269265,Federal,House
+M001166,Jerry McNerney,110,2007,0.561073,Federal,House
+M001166,Jerry McNerney,111,2009,1.008083,Federal,House
+M001166,Jerry McNerney,112,2011,0.430965,Federal,House
+M001166,Jerry McNerney,113,2013,0.368603,Federal,House
+M001166,Jerry McNerney,114,2015,1.2011,Federal,House
+M001166,Jerry McNerney,115,2017,0.628968,Federal,House
+M001166,Jerry McNerney,116,2019,1.791501,Federal,House
+M001166,Jerry McNerney,117,2021,0.756667,Federal,House
 M001167,Harry Mitchell,1999-2000,1999,0.0,State,Upper
 M001167,Harry Mitchell,2001-2002,2001,1.314962,State,Upper
 M001167,Harry Mitchell,2003-2004,2003,0.621063,State,Upper
@@ -5467,6 +5548,13 @@ N000186,Alan Nunnelee,2004-2007,2004,3.422874,State,Upper
 N000186,Alan Nunnelee,2008-2011,2008,8.132084,State,Upper
 N000186,Alan Nunnelee,112,2011,0.228168,Federal,House
 N000186,Alan Nunnelee,113,2013,1.122579,Federal,House
+N000187,Gloria Negrete McLeod,2001-2002,2001,1.119635,State,Lower
+N000187,Gloria Negrete McLeod,2003-2004,2003,1.438847,State,Lower
+N000187,Gloria Negrete McLeod,2005-2006,2005,1.220727,State,Lower
+N000187,Gloria Negrete McLeod,2007-2008,2007,1.164657,State,Upper
+N000187,Gloria Negrete McLeod,2009-2010,2009,0.923651,State,Upper
+N000187,Gloria Negrete McLeod,2011-2012,2011,1.349694,State,Upper
+N000187,Gloria Negrete McLeod,113,2013,0.224686,Federal,House
 N000188,Donald Norcross,2010-2011,2010,1.43399,State,Upper
 N000188,Donald Norcross,2012-2013,2012,2.060019,State,Upper
 N000188,Donald Norcross,113,2013,0.0,Federal,House
@@ -5804,6 +5892,20 @@ P000452,Glenn Poshard,102,1991,0.027165,Federal,House
 P000452,Glenn Poshard,103,1993,0.121422,Federal,House
 P000452,Glenn Poshard,104,1995,0.101804,Federal,House
 P000452,Glenn Poshard,105,1997,0.109498,Federal,House
+P000546,Joel Pritchard,93,1973,0.165997,Federal,House
+P000546,Joel Pritchard,94,1975,0.144584,Federal,House
+P000546,Joel Pritchard,95,1977,0.154435,Federal,House
+P000546,Joel Pritchard,96,1979,0.701575,Federal,House
+P000546,Joel Pritchard,97,1981,0.130198,Federal,House
+P000546,Joel Pritchard,98,1983,0.016372,Federal,House
+P000553,William Proxmire,93,1972,0.717876,Federal,Senate
+P000553,William Proxmire,94,1974,3.338545,Federal,Senate
+P000553,William Proxmire,95,1976,2.64634,Federal,Senate
+P000553,William Proxmire,96,1978,2.110163,Federal,Senate
+P000553,William Proxmire,97,1980,0.307442,Federal,Senate
+P000553,William Proxmire,98,1982,0.336614,Federal,Senate
+P000553,William Proxmire,99,1984,0.543416,Federal,Senate
+P000553,William Proxmire,100,1986,1.536886,Federal,Senate
 P000556,David Pryor,96,1978,0.404162,Federal,Senate
 P000556,David Pryor,97,1980,0.335089,Federal,Senate
 P000556,David Pryor,98,1982,0.656455,Federal,Senate
@@ -6402,6 +6504,9 @@ R000610,Guy Reschenthaler,118,2023,0.146411,Federal,House
 R000617,Delia Ramirez,2019-2020,2019,1.179483,State,Lower
 R000617,Delia Ramirez,2021-2022,2021,0.897723,State,Lower
 R000617,Delia Ramirez,118,2023,0.51585,Federal,House
+R000619,Michael A. Rulli,2019-2020,2019,0.9924,State,Upper
+R000619,Michael A. Rulli,2021-2022,2021,0.926503,State,Upper
+R000619,Michael A. Rulli,2023-2024,2023,1.743726,State,Upper
 R000620,Luz Rivas,2019-2020,2019,0.609686,State,Lower
 R000620,Luz Rivas,2021-2022,2021,1.451874,State,Lower
 R000620,Luz Rivas,2023-2024,2023,0.679648,State,Lower
@@ -6655,6 +6760,17 @@ S000462,David Skaggs,102,1991,0.418176,Federal,House
 S000462,David Skaggs,103,1993,1.985116,Federal,House
 S000462,David Skaggs,104,1995,0.325996,Federal,House
 S000462,David Skaggs,105,1997,0.660135,Federal,House
+S000463,Joe Skeen,97,1981,1.746478,Federal,House
+S000463,Joe Skeen,98,1983,0.11958,Federal,House
+S000463,Joe Skeen,99,1985,0.033812,Federal,House
+S000463,Joe Skeen,100,1987,0.168856,Federal,House
+S000463,Joe Skeen,101,1989,0.158697,Federal,House
+S000463,Joe Skeen,102,1991,0.166382,Federal,House
+S000463,Joe Skeen,103,1993,0.047005,Federal,House
+S000463,Joe Skeen,104,1995,3.704899,Federal,House
+S000463,Joe Skeen,105,1997,4.486018,Federal,House
+S000463,Joe Skeen,106,1999,2.643654,Federal,House
+S000463,Joe Skeen,107,2001,3.562679,Federal,House
 S000465,Ike Skelton,95,1977,0.012609,Federal,House
 S000465,Ike Skelton,96,1979,0.574861,Federal,House
 S000465,Ike Skelton,97,1981,0.355352,Federal,House
@@ -7222,6 +7338,10 @@ S001200,Darren Soto,115,2017,1.539437,Federal,House
 S001200,Darren Soto,116,2019,1.462057,Federal,House
 S001200,Darren Soto,117,2021,2.023558,Federal,House
 S001200,Darren Soto,118,2023,0.779586,Federal,House
+S001210,Ross Spano,2013-2014,2013,2.538839,State,Lower
+S001210,Ross Spano,2015-2016,2015,2.545888,State,Lower
+S001210,Ross Spano,2017-2018,2017,1.311225,State,Lower
+S001210,Ross Spano,116,2019,0.093437,Federal,House
 S001214,Greg Steube,2011-2012,2011,1.631123,State,Lower
 S001214,Greg Steube,2013-2014,2013,2.538797,State,Lower
 S001214,Greg Steube,2015-2016,2015,2.638008,State,Lower
@@ -7233,6 +7353,7 @@ S001218,Melanie Stansbury,2019-2020,2019,0.881084,State,Lower
 S001218,Melanie Stansbury,117,2021,0.45367,Federal,House
 S001218,Melanie Stansbury,2021-2022,2021,0.378156,State,Lower
 S001218,Melanie Stansbury,118,2023,0.273091,Federal,House
+S001219,Joe Sempolinski,117,2021,0.009427,Federal,House
 S001223,Emilia Sykes,2015-2016,2015,0.349363,State,Lower
 S001223,Emilia Sykes,2017-2018,2017,1.456821,State,Lower
 S001223,Emilia Sykes,2019-2020,2019,0.028389,State,Lower
@@ -7565,6 +7686,12 @@ U000038,Mark Udall,110,2007,2.934508,Federal,House
 U000038,Mark Udall,111,2008,0.775644,Federal,Senate
 U000038,Mark Udall,112,2010,1.160748,Federal,Senate
 U000038,Mark Udall,113,2012,0.651815,Federal,Senate
+V000006,Tim Valentine,98,1983,0.040929,Federal,House
+V000006,Tim Valentine,99,1985,0.117743,Federal,House
+V000006,Tim Valentine,100,1987,0.031003,Federal,House
+V000006,Tim Valentine,101,1989,0.410935,Federal,House
+V000006,Tim Valentine,102,1991,2.529271,Federal,House
+V000006,Tim Valentine,103,1993,1.437036,Federal,House
 V000027,Guy Vander Jagt,93,1973,0.211905,Federal,House
 V000027,Guy Vander Jagt,94,1975,0.132991,Federal,House
 V000027,Guy Vander Jagt,95,1977,0.594974,Federal,House
@@ -7575,6 +7702,10 @@ V000027,Guy Vander Jagt,99,1985,0.395326,Federal,House
 V000027,Guy Vander Jagt,100,1987,0.26973,Federal,House
 V000027,Guy Vander Jagt,101,1989,0.42165,Federal,House
 V000027,Guy Vander Jagt,102,1991,0.948074,Federal,House
+V000047,Charles Vanik,93,1973,0.341115,Federal,House
+V000047,Charles Vanik,94,1975,0.2763,Federal,House
+V000047,Charles Vanik,95,1977,2.160166,Federal,House
+V000047,Charles Vanik,96,1979,2.780037,Federal,House
 V000087,Bruce Vento,95,1977,0.222312,Federal,House
 V000087,Bruce Vento,96,1979,0.187985,Federal,House
 V000087,Bruce Vento,97,1981,0.165385,Federal,House
@@ -7739,6 +7870,14 @@ W000215,Henry Waxman,110,2007,4.712117,Federal,House
 W000215,Henry Waxman,111,2009,4.172421,Federal,House
 W000215,Henry Waxman,112,2011,0.110435,Federal,House
 W000215,Henry Waxman,113,2013,0.109667,Federal,House
+W000253,Lowell Weicker,93,1972,0.123617,Federal,Senate
+W000253,Lowell Weicker,94,1974,0.466546,Federal,Senate
+W000253,Lowell Weicker,95,1976,0.15934,Federal,Senate
+W000253,Lowell Weicker,96,1978,0.225453,Federal,Senate
+W000253,Lowell Weicker,97,1980,0.805038,Federal,Senate
+W000253,Lowell Weicker,98,1982,1.605276,Federal,Senate
+W000253,Lowell Weicker,99,1984,2.914315,Federal,Senate
+W000253,Lowell Weicker,100,1986,0.601124,Federal,Senate
 W000273,Jerry Weller,104,1995,0.586316,Federal,House
 W000273,Jerry Weller,105,1997,0.500122,Federal,House
 W000273,Jerry Weller,106,1999,1.72787,Federal,House
@@ -7861,6 +8000,16 @@ W000763,Jim Wright,99,1985,2.778964,Federal,House
 W000763,Jim Wright,100,1987,0.0,Federal,House
 W000763,Jim Wright,101,1989,0.0,Federal,House
 W000777,Joseph P. Wyatt Jr.,96,1979,0.251998,Federal,House
+W000781,Chalmers Wylie,93,1973,0.087863,Federal,House
+W000781,Chalmers Wylie,94,1975,0.094011,Federal,House
+W000781,Chalmers Wylie,95,1977,0.06683,Federal,House
+W000781,Chalmers Wylie,96,1979,0.226645,Federal,House
+W000781,Chalmers Wylie,97,1981,0.280129,Federal,House
+W000781,Chalmers Wylie,98,1983,0.081858,Federal,House
+W000781,Chalmers Wylie,99,1985,0.826764,Federal,House
+W000781,Chalmers Wylie,100,1987,0.080609,Federal,House
+W000781,Chalmers Wylie,101,1989,0.191186,Federal,House
+W000781,Chalmers Wylie,102,1991,0.823159,Federal,House
 W000784,Albert Wynn,103,1993,0.109679,Federal,House
 W000784,Albert Wynn,104,1995,0.261,Federal,House
 W000784,Albert Wynn,105,1997,0.327192,Federal,House

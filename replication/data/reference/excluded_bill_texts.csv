@@ -14,3 +14,6 @@ table,bill_id,reason
 5,101-HR-2230,"Congress.gov text is garbled (scrambled characters from the 1989 scan); found by validate_tables.py 2026-10-11"
 4,MA-1006-S1819,"LegiScan's document for this bill is a floor amendment, not the bill text; found by validate_tables.py 2026-10-11"
 4,MA-1006-S1834,"LegiScan's document for this bill is a floor amendment, not the bill text; found by validate_tables.py 2026-10-11"
+4,HI-63-SB200,"LegiScan's document is a placeholder page (""only the PDF version of this document is available""), not the bill text; found 2026-10-13"
+4,HI-63-SB888,"LegiScan's document is a placeholder page (""only the PDF version of this document is available""), not the bill text; found 2026-10-13"
+4,HI-63-SB2200,"LegiScan's document is a placeholder page (""only the PDF version of this document is available""), not the bill text; found 2026-10-13"

@@ -204,7 +204,7 @@ Delia Ramirez,R000617,Illinois,IL,Illinois House of Representatives,2018-2022 (d
 Luz Rivas,R000620,California,CA,CA State Assembly (39th then 43rd district),2018-2024,2018,2024
 Emily Randall,R000621,Washington,WA,Washington State Senate,January 2019-December 2024 (2 terms),2019,2024
 Victoria Spartz,S000929,Indiana,IN,Indiana Senate (20th district),2017-2020 (appointed 2017; elected 2018),2017,2020
-Jean Schmidt,S001164,Ohio,OH,Ohio House of Representatives (two separate stints: ~2001-2004 and 2021-2022),2001-2004; 2021-2022,2001,2022
+Jean Schmidt,S001164,Ohio,OH,Ohio House of Representatives (two separate stints: ~2001-2004 and 2021-present),2001-2004; 2021-present,2001,2026
 Aaron Schock,S001179,Illinois,IL,Illinois House of Representatives,2005-2009 (district 92),2005,2009
 Tim Scott,S001184,South Carolina,SC,South Carolina House of Representatives,2009-2011,2009,2011
 Steve Stivers,S001187,Ohio,OH,Ohio State Senate,2003-2008,2003,2008
@@ -345,7 +345,7 @@ John Barrasso,B001261,Wyoming,WY,Wyoming State Senate,2003-2007,2003,2007
 Mo Brooks,B001274,Alabama,AL,Alabama House of Representatives districts 18 (1982-1984) and 10 (1984-1992),1982-1992,1982,1992
 Richard Blumenthal,B001277,Connecticut,CT,Connecticut House of Representatives; Connecticut State Senate,House 1984-1987; Senate 1987-1991,1984,1991
 Bradley Byrne,B001289,Alabama,AL,Alabama Senate district 32,2002-2007 (partial term plus one term),2002,2007
-Mike Bishop,B001293,Michigan,MI,Michigan Senate,2003-2011,2003,2011
+Mike Bishop,B001293,Michigan,MI,Michigan House of Representatives; Michigan Senate,1999-2011,1999,2011
 Anthony Brown,B001304,Maryland,MD,Maryland House of Delegates (25th district),1999-2007,1999,2007
 Sonny Callahan,C000052,Alabama,AL,Alabama House of Representatives (1970-1978); Alabama Senate district 34 (1978-1982),1970-1982,1970,1982
 Dave Camp,C000071,Michigan,MI,Michigan House of Representatives,1989-1991,1989,1991
@@ -747,7 +747,7 @@ Cathy McMorris Rodgers,M001159,Washington,WA,Washington House of Representatives
 Gwen Moore,M001160,Wisconsin,WI,Wisconsin State Assembly (1989-1993; dist 7); Wisconsin Senate (1993-2005; dist 4),WI Assembly 1989-1993 (2 terms); WI Senate 1993-2005 (3 terms),1989,2005
 Charlie Melancon,M001161,Louisiana,LA,Louisiana House of Representatives,1987-1993,1987,1993
 Kevin McCarthy,M001165,California,CA,CA State Assembly (32nd district),2002-2006,2002,2006
-Harry Mitchell,M001167,Arizona,AZ,Arizona State Senate,1999-2003,1999,2003
+Harry Mitchell,M001167,Arizona,AZ,Arizona State Senate,1999-2006,1999,2006
 Chris Murphy,M001169,Connecticut,CT,Connecticut House of Representatives; Connecticut State Senate,House 1999-2003; Senate 2003-2007,1999,2007
 Claire McCaskill,M001170,Missouri,MO,Missouri House of Representatives,1983-1989,1983,1989
 Jeff Merkley,M001176,Oregon,OR,Oregon House of Representatives,1999-2009 (Speaker 2007-2009),1999,2009
@@ -1016,3 +1016,28 @@ Kevin Yoder,Y000063,Kansas,KS,Kansas House of Representatives,2003-2011,2003,201
 Clement Zablocki,Z000001,Wisconsin,WI,Wisconsin Senate,c.1942-1949 (elected 1942; served until election to Congress),1942,1949
 Dick Zimmer,Z000008,New Jersey,NJ,New Jersey General Assembly 1982-1987; New Jersey Senate 1987-1991,1982-1991,1982,1991
 Lee Zeldin,Z000017,New York,NY,New York State Senate,2011-2014,2011,2014
+Anthony Brindisi,B001308,New York,NY,New York State Assembly,2011-2018,2011,2018
+Ross Spano,S001210,Florida,FL,Florida House of Representatives,2012-2018,2012,2018
+Valerie P. Foushee,F000477,North Carolina,NC,North Carolina House of Representatives; North Carolina Senate,2012-2022,2012,2022
+Gloria Negrete McLeod,N000187,California,CA,California State Assembly; California State Senate,2000-2012,2000,2012
+Michael A. Rulli,R000619,Ohio,OH,Ohio Senate,2019-2024,2019,2024
+James Gallagher,G000607,California,CA,California State Assembly,2014-2026,2014,2026
+Jerry McNerney,M001166,California,CA,California State Senate,2024-present,2024,2026
+Joe Sempolinski,S001219,New York,NY,New York State Assembly,2025-present,2025,2026
+Chalmers Wylie,W000781,Ohio,OH,Ohio House of Representatives,1961-1967,1961,1967
+Joel Pritchard,P000546,Washington,WA,Washington House of Representatives; Washington State Senate,1959-1971,1959,1971
+John Chafee,C000269,Rhode Island,RI,Rhode Island House of Representatives,1957-1963,1957,1963
+John Erlenborn,E000204,Illinois,IL,Illinois House of Representatives,1957-1965,1957,1965
+Joe Skeen,S000463,New Mexico,NM,New Mexico Senate,1960-1970,1960,1970
+Lowell Weicker,W000253,Connecticut,CT,Connecticut House of Representatives,1963-1969,1963,1969
+Patsy Mink,M000797,Hawaii,HI,Hawaii Territorial House of Representatives; Hawaii Territorial Senate; Hawaii Senate,1956-1959 (territorial); 1962-1964 (state),1956,1964
+Lawrence Coughlin,C000807,Pennsylvania,PA,Pennsylvania House of Representatives; Pennsylvania Senate,1965-1969,1965,1969
+Abner Mikva,M000703,Illinois,IL,Illinois House of Representatives,1956-1966,1956,1966
+Charles Diggs,D000344,Michigan,MI,Michigan Senate,1951-1954,1951,1954
+Charles Vanik,V000047,Ohio,OH,Ohio Senate,1940-1942,1940,1942
+Henry Bellmon,B000351,Oklahoma,OK,Oklahoma House of Representatives,1947-1949,1947,1949
+Tim Valentine,V000006,North Carolina,NC,North Carolina House of Representatives,1955-1960,1955,1960
+John Ashbrook,A000221,Ohio,OH,Ohio House of Representatives,1957-1961,1957,1961
+Samuel Devine,D000279,Ohio,OH,Ohio House of Representatives,1951-1955,1951,1955
+William Proxmire,P000553,Wisconsin,WI,Wisconsin State Assembly,1951-1953,1951,1953
+Robert McEwen,M000433,New York,NY,New York State Senate,1954-1964,1954,1964

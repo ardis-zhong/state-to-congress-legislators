@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
 """
-Build person_level.csv -- the canonical 1019-person population (910 original
-hand-researched people + 109 added by the 2026-09 completeness check) -- from
+Build person_level.csv -- the canonical population (910 original hand-researched
+people + 109 added by the 2026-09 completeness check - 2 duplicate IDs merged
+2026-10-06 + 25 added by the 2026-10-12 recheck = 1042) -- from
 the Senate and House biographical source files, joined against
 billcount_FINAL.csv for federal sponsored-bill counts.
 
 INPUTS (relative paths, run from the repo root):
     replication/data/source/senate/senators_A.csv, senators_B.csv, senators_C.csv,
         senate_batch2_completeness_gap.csv, senate_batch3_completeness_gap2.csv,
-        senate_batch4_chamber_gap.csv (chamber service missing from the original research)
+        senate_batch4_chamber_gap.csv (chamber service missing from the original research),
+        senate_batch5_recheck.csv (2026-10-12 population recheck)
     replication/data/source/house/house_batch1_group1.csv, ... (16 files, see HOUSE_FILES below;
-        batch6-7 are the completeness-gap additions, batch8 adds missing chamber service)
+        batch6-7 are the completeness-gap additions, batch8 adds missing chamber service,
+        batch9 the 2026-10-12 population recheck)
     billcount_FINAL.csv
 
 These are original research data (Wikipedia-verified biographical records),
@@ -49,7 +52,7 @@ HOUSE_FILES = [
     'house_batch4_FINAL.csv',
     'house_batch5_texas.csv', 'house_batch5_groupB.csv', 'house_batch5_groupC.csv',
     'house_batch6_completeness_gap.csv', 'house_batch7_completeness_gap2.csv',
-    'house_batch8_chamber_gap.csv',
+    'house_batch8_chamber_gap.csv', 'house_batch9_recheck.csv',
 ]
 
 STATE_FIX = {'OH': 'Ohio', 'PA': 'Pennsylvania', 'RI': 'Rhode Island',
@@ -100,7 +103,7 @@ def main():
     # ---------- Load Senate ----------
     sen_rows = []
     for fname in ['senators_A.csv', 'senators_B.csv', 'senators_C.csv', 'senate_batch2_completeness_gap.csv', 'senate_batch3_completeness_gap2.csv',
-                  'senate_batch4_chamber_gap.csv']:
+                  'senate_batch4_chamber_gap.csv', 'senate_batch5_recheck.csv']:
         sen_rows.extend(load(os.path.join(args.senate_dir, fname)))
     for r in sen_rows:
         r['BioguideId'] = bg_lookup.get((r['Name'], r['State'], 'Senate'), '')

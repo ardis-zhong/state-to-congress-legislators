@@ -13,7 +13,8 @@ Number), because House and Senate amendments share numbering.
 INPUTS (repo root, gitignored):
     sponsored_legislation_full.csv      the original 907-person fetch (gap-fill merged in)
     sponsored_legislation_pending.csv   the fetch for extraction_queue_pending.csv
-    fetch_log.csv, fetch_log_pending.csv   per-person API-reported totals
+    sponsored_legislation_recheck.csv   the fetch for extraction_queue_recheck.csv (2026-10-12 additions)
+    fetch_log.csv, fetch_log_pending.csv, fetch_log_recheck.csv   per-person API-reported totals
 OUTPUT:
     sponsored_legislation_full_deduped.csv   only population members, one row per item
 
@@ -29,8 +30,8 @@ import csv
 import os
 from collections import Counter
 
-INPUTS = ["sponsored_legislation_full.csv", "sponsored_legislation_pending.csv"]
-LOGS = ["fetch_log.csv", "fetch_log_pending.csv"]
+INPUTS = ["sponsored_legislation_full.csv", "sponsored_legislation_pending.csv", "sponsored_legislation_recheck.csv"]
+LOGS = ["fetch_log.csv", "fetch_log_pending.csv", "fetch_log_recheck.csv"]
 PERSON_LEVEL = "replication/data/population/person_level.csv"
 OUT = "sponsored_legislation_full_deduped.csv"
 

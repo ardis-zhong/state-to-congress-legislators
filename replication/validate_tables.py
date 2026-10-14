@@ -15,7 +15,8 @@ congress-legislators term records at the repo root):
   Table 5, 7    every bill introduced while its sponsor served in that chamber
                 (official term records); year consistent with Congress;
                 Table 5's bills are all in Table 7.
-  Table 4, 5    the bill text names its own bill number (flags mismatched text).
+  Table 4, 5    the bill text names its own bill number (flags mismatched text);
+                the text is not a placeholder page.
 
 Also writes a random spot-check sample, with links to the original source
 pages, to validation_sample.tsv for checking by hand.
@@ -191,6 +192,13 @@ def main():
             report(n, "bill year within researched state-legislature years (+/-1)", len(bad), len(df), bad)
 
         if n in (4, 5):
+            # placeholder pages served instead of the document (e.g. Hawaii's "only the PDF
+            # version of this document is available")
+            stub = [(r.bill_id, r.bill_text[:80]) for r in df.itertuples()
+                    if re.search(r"only the pdf version of this document is available|"
+                                 r"document (is )?not (yet )?available", r.bill_text[:500], re.I)]
+            report(n, "text is not a placeholder page", len(stub), len(df), stub)
+
             miss = []
             for r in df.itertuples():
                 text = re.sub(r"\s+", " ", r.bill_text.replace("\xa0", " ")).upper()

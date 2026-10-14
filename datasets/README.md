@@ -14,13 +14,13 @@ published on Harvard Dataverse (link to come).
 
 | # | File | Status |
 |---|---|---|
-| 1 | `table1_state_to_federal` | Built: 1,017 rows |
-| 2 | `table2_demographics` | Built: 1,017 rows |
-| 3 | `table3_effectiveness_scores` | Built: 8,138 scores for 1,014 people |
-| 4 | `table4_state_bill_text` | Pending (Dataverse) |
-| 5 | `table5_federal_bill_text` | Built: 114,745 bills, 889 people (1989 on); to be published on Dataverse |
+| 1 | `table1_state_to_federal` | Built: 1,042 rows |
+| 2 | `table2_demographics` | Built: 1,042 rows |
+| 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
+| 4 | `table4_state_bill_text` | Built: 41,453 bills, 243 people (2008 on); to be published on Dataverse |
+| 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
-| 7 | `table7_federal_bill_topics` | Built: 161,087 bills and resolutions, 1,015 people |
+| 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
 
 ## Columns
 
@@ -58,11 +58,15 @@ Source: Center for Effective Lawmaking (thelawmakers.org).
   seated in 2025 have no federal score yet. CEL's files have no score for
   Sheila Frahm (Senate, June–Nov 1996) or Charles H. Wilson (D-CA, 1963–1981).
 - State: State Legislative Effectiveness Scores (SLES) through 2025. CEL's
-  coverage starts between 1989 and 2007 depending on the state, so 551 people
+  coverage starts between 1989 and 2007 depending on the state, so 569 people
   whose state service ended earlier have no state scores. CEL's state file has
   no Bioguide IDs; scores were linked by state, last name, first name, and
-  years (see `replication/scripts/effectiveness/match_sles.py`), and 465
-  people matched.
+  years (see `replication/scripts/effectiveness/match_sles.py`), and 470
+  people matched. Two people whose state service began in 2025, after they
+  left Congress (Jerry McNerney, Joe Sempolinski), have no state scores yet.
+  Reviewed matches and corrections (e.g. a CEL term recorded under Shelley
+  Moore Capito's ID while she was in the U.S. Senate) are listed in
+  `replication/data/reference/sles_review.csv`.
 - Both scores are scaled so the average legislator in a chamber and session
   scores 1, but they are computed separately for each body, so a state and a
   federal score are not on a common scale.
@@ -77,9 +81,29 @@ Peter, Craig Volden, and Alan E. Wiseman. 2026. "State Legislative
 Effectiveness Scores Data set"; updated at www.thelawmakers.org.
 
 **Table 4: State bill text**
-`bioguide_id`, `name`, `bill_id`, `bill_name`, `state_session` (the state
-legislature's session), `congress` (the U.S. Congress in session when the
-bill was introduced), `year`, `state`, `bill_text`
+One row per state bill or resolution the person sponsored, with text
+available: "Primary Sponsor" in LegiScan; "Sponsor" in CT, MS, and SD, which
+never use "Primary Sponsor"; and, in sessions where LegiScan records no
+sponsor roles at all (most states' sessions from about 2007 to 2012), bills
+on which the person is the only listed sponsor. Co-sponsors are excluded, as
+are bills from those role-less sessions with more than one listed sponsor,
+since the primary sponsor can't be told apart. `bioguide_id`, `name`,
+`bill_id` (state-LegiScan session ID-bill number, e.g. `OH-1145-HB144`),
+`bill_name`, `state_session` (the state legislature's session as LegiScan
+names it), `congress` (the U.S. Congress in session when the bill was
+introduced), `year` (year introduced), `state`, `bill_text` (the version as
+introduced, or the earliest version LegiScan has).
+Source: LegiScan API (CC BY 4.0). LegiScan's archive starts between 2007 and
+2013 depending on the state, so only 243 people have rows (2008–2026), and
+for those whose state service began earlier these are bills from the covered
+years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
+York bills); `year`/`congress` then fall back to the bill's status date or
+its session's first year. Two Massachusetts documents that are floor
+amendments rather than bills, and three Hawaii placeholder pages, were removed
+(see `replication/data/reference/excluded_bill_texts.csv`). LegiScan records a
+bill's current author, so in a few bills whose author changed after
+introduction (e.g. California budget bills rewritten later in the session)
+the introduced text names a different legislator.
 
 **Table 5: Federal bill text**
 One row per sponsored bill or resolution with digital text (same bills as
@@ -87,8 +111,10 @@ Table 7). `bioguide_id`, `name`, `bill_id`, `bill_name`, `congress`, `year`,
 `chamber` (chamber of origin: `House` or `Senate`), `bill_text` (plain text of
 the version as introduced, or the earliest version Congress.gov has).
 Source: Congress.gov bill text (Government Publishing Office). Coverage:
-114,740 of 114,798 bills from the 101st Congress (1989) on; Congress.gov has
-almost no digital text before 1989, so the 126 people whose bills all predate
+115,612 of 115,682 bills from the 101st Congress (1989) on (57 have no digital
+text; 13 garbled 1989 scans were removed, see
+`replication/data/reference/excluded_bill_texts.csv`); Congress.gov has
+almost no digital text before 1989, so the 137 people whose bills all predate
 1989 have no rows here (their bills are in Table 7).
 
 **Table 6: State bill topics**
@@ -100,7 +126,7 @@ One row per bill or resolution sponsored (amendments excluded: Congress.gov
 gives them no title or topic). `bioguide_id`, `name`,
 `bill_id` (Congress-type-number, e.g. `117-HR-1234`), `bill_name` (title),
 `congress`, `year` (year introduced), `topic` (Congress.gov policy area; blank
-for 741 items with none; some 93rd–95th Congress items use older subject
+for 800 items with none; some 93rd–95th Congress items use older subject
 terms), `passed` (`Yes` if it became law, including over a veto; for simple
 resolutions, if agreed to; for concurrent resolutions, if agreed to by the
 second chamber. Based on Congress.gov's latest recorded action).
@@ -114,3 +140,10 @@ A bill normally has one sponsor, but Congress.gov lists two to five sponsors
 for H.R. 1, 3, 7, 8, 9, 10, and 11 of the 104th Congress (the January 1995
 "Contract with America" bills), so those 7 bills appear once per sponsor in
 the population (19 rows here, 19 in Table 5).
+
+## Validation
+
+`python3 replication/validate_tables.py` checks every table: structure,
+IDs, duplicates, CSV vs `.dta`, and that every federal bill was introduced
+while its sponsor served in that chamber. Rows flagged and then checked by
+hand are in `replication/data/reference/validation_reviewed.csv`.

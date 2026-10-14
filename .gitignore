@@ -7,6 +7,7 @@ legiscan_billtext_cache/
 legiscan_bill_cache/
 federal_billtext_cache/
 cdir_cache/
+bioguide2005_cache/
 cel_cache/
 *.zip
 

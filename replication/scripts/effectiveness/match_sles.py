@@ -19,7 +19,8 @@ RULES (no model in the loop; anything uncertain goes to review):
   4. Exactly one remaining person (one or more sles_ids with the same name) ->
      matched. Zero or several -> listed for review. Decisions on reviewed
      cases are recorded in replication/data/reference/sles_review.csv and
-     applied here.
+     applied here; its exclude_terms column drops single CEL terms that are
+     data errors (e.g. a term dated while the person was in Congress).
 
 People whose state service ended before CEL's coverage of their state begins
 (1993-2003, varies by state) are "before coverage" and have no state scores.
@@ -150,11 +151,12 @@ def main():
         bg = p["BioguideId"]
         name = people[bg]["name"]
         out = {"bioguide_id": bg, "name": p["Name"], "status": "", "state": "", "sles_ids": "",
-               "sles_name": "", "first_term": "", "last_term": "", "note": ""}
+               "sles_name": "", "first_term": "", "last_term": "", "note": "", "exclude_terms": ""}
         states, span = leg_states(p), leg_years(p)
         if bg in decisions:
             d = decisions[bg]
-            out.update(status=d["status"], state=d["state"], sles_ids=d["sles_ids"], note=d["decision_note"])
+            out.update(status=d["status"], state=d["state"], sles_ids=d["sles_ids"], note=d["decision_note"],
+                       exclude_terms=d.get("exclude_terms", ""))
         elif not span:
             out.update(status="no state years", note="StateLegYears has no year")
         elif all(span[1] < coverage.get(s, 9999) for s in states):
@@ -200,7 +202,8 @@ def main():
                 out.update(status="REVIEW", note="several candidates: " + " | ".join(persons.index))
         if out["status"] == "matched":
             mine = sles[sles.sles_id.isin([int(i) for i in out["sles_ids"].split(";")])
-                        & sles.state.isin(states | ({out["state"]} if out["state"] else set()))]
+                        & sles.state.isin(states | ({out["state"]} if out["state"] else set()))
+                        & ~sles.term.isin(out["exclude_terms"].split(";"))]  # CEL errors, see sles_review.csv
             out.update(state=";".join(sorted(mine.state.unique())), sles_name=out["sles_name"] or mine.name.iloc[0],
                        first_term=mine.term.min(), last_term=mine.term.max())
         rows.append(out)

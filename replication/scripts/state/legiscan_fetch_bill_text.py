@@ -168,16 +168,23 @@ def extract_pdf(path):
 
 
 def sponsor_rows_in_scope(path):
-    """Default scope (decided 2026-10-09): rows where the person is the bill's sponsor --
-    "Primary Sponsor" in every state, plus "Sponsor" in states whose LegiScan data never uses
-    "Primary Sponsor" (CT, MS, SD as of 2026-10). Co-sponsors and joint sponsors are excluded,
-    matching the sponsor-only federal tables."""
+    """Default scope (decided 2026-10-09, widened 2026-10-13): rows where the person is the
+    bill's sponsor --
+      - "Primary Sponsor" in every state;
+      - "Sponsor" in states whose LegiScan data never uses "Primary Sponsor" (CT, MS, SD as of
+        2026-10);
+      - "Sponsor" in sessions that record no sponsor roles at all (most states' sessions from
+        about 2007-2012), but only when the person is the bill's sole listed sponsor, so the
+        sponsor is unambiguous.
+    Co-sponsors and joint sponsors are excluded, matching the sponsor-only federal tables."""
     with open(path, newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     uses_primary = {r["StateAbbr"] for r in rows if r.get("SponsorType") == "Primary Sponsor"}
     sponsor_only = sorted({r["StateAbbr"] for r in rows} - uses_primary)
     keep = [r for r in rows if r.get("SponsorType") == "Primary Sponsor"
-            or (r.get("SponsorType") == "Sponsor" and r["StateAbbr"] in sponsor_only)]
+            or (r.get("SponsorType") == "Sponsor" and r["StateAbbr"] in sponsor_only)
+            or (r.get("SponsorType") == "Sponsor" and r.get("SessionHasRoles") == "No"
+                and r.get("NumSponsors") == "1")]
     return keep, sponsor_only
 
 
@@ -221,7 +228,8 @@ def main():
     else:
         rows, sponsor_only = sponsor_rows_in_scope("state_legislation_sponsored.csv")
         print("Loading unique Introduced doc_ids (Primary Sponsor bills, plus 'Sponsor' bills in "
-              f"states that never use 'Primary Sponsor': {', '.join(sponsor_only)})...")
+              f"states that never use 'Primary Sponsor': {', '.join(sponsor_only)}, plus sole-sponsor "
+              "bills in sessions with no sponsor roles)...")
         docs = load_unique_docs("state_legislation_sponsored.csv", rows=rows)
     print(f"  {len(docs)} unique doc_id(s) to fetch.")
     if len(docs) > 30000:
