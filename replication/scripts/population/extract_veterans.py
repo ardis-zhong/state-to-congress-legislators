@@ -24,7 +24,13 @@ METHOD -- keyword rules only, no model in the loop:
      removed first.
   3. A person is a veteran if any of their biographies, in any edition,
      has a matching clause; that clause is kept as evidence.
-  4. A Yes supported only by text editions while every ID-tagged biography is
+  4. Members with no Directory biography in any edition (their service since
+     1979 ended before the 1981 edition, or they never submitted one) are
+     looked up in the 2005 Biographical Directory of the United States Congress
+     (fetch_biographical_directory.py; matched on last name, state, birth year
+     and first name), with extra rules for its bare "United States Army,
+     1944-1945" style. Added 2026-10-14 at Ardis's request.
+  5. A Yes supported only by text editions while every ID-tagged biography is
      silent is flagged for review; the decision for each flagged case is
      recorded in replication/data/reference/veteran_review.csv and applied here.
 
@@ -38,6 +44,7 @@ USAGE (from the repo root):
 """
 
 import csv
+import glob
 import html
 import io
 import json
@@ -45,6 +52,8 @@ import os
 import re
 import unicodedata
 import zipfile
+
+import biographical_directory  # same folder: the 2005 Biographical Directory parser
 
 CACHE_DIR = "cdir_cache"
 PERSON_LEVEL = "replication/data/population/person_level.csv"
@@ -103,16 +112,29 @@ VET_ORG = re.compile(r"\bmember\b[^;]{0,120}?\b(American Legion|Veterans of Fore
 VET_ORG_NOT = re.compile(r"award|recipient|named|honou?r|medal|auxiliary|National Home|citation", re.I)
 
 
-def military_clause(bio):
+# The 2005 Biographical Directory often lists service as a bare clause with no service word
+# ("United States Army Air Corps, 1944-1945"; "member of the United States Army, Counter
+# Intelligence Corps 1951-1954"; "Rhode Island National Guard, 1960-1966"), or as
+# "Armed Forces of the United States" / "(AUS)". These extra rules are used for that source only.
+DIRECTORY_2005_EXTRA = [
+    re.compile(r"^\s*(member of )?(the )?(United States |U\.S\. )?(Army Air (Corps|Forces)|Army|Navy|"
+               r"Naval (Air Force|Reserve)|Marine Corps|Air Force|Coast Guard)\b(?! (League|Academy))", re.I),
+    re.compile(r"^\s*(the )?[A-Z][a-z]+( [A-Z][a-z]+)? (Army |Air )?National Guard\b"),
+    re.compile(r"\bserved in the Armed Forces\b|\(AUS\)|\bUSAR\b|\bArmy of the United States\b", re.I),
+]
+
+
+def military_clause(bio, directory_2005=False):
     """Return (clause, evidence_type) for the strongest evidence of military service in a
     biography: a service statement beats veterans'-organization membership. ('', '') if none."""
+    rules = POSITIVE + (DIRECTORY_2005_EXTRA if directory_2005 else [])
     org = ""
     for clause in re.split(r";", bio):
         if re.match(r"\s*(born|bom)\b", clause):  # birthplace, e.g. "born at ... Army Medical Center"
             continue
         cleaned = EXCLUDE.sub(" ", clause)
         text = re.sub(r"\s+", " ", clause).strip()
-        if any(p.search(cleaned) for p in POSITIVE):
+        if any(p.search(cleaned) for p in rules):
             return text, "service"
         if not org and VET_ORG.search(cleaned) and not VET_ORG_NOT.search(cleaned):
             org = text
@@ -314,6 +336,20 @@ def main():
                     clause, kind = "", ""
                 found[bg].append((edition, (clause, kind), fname.endswith(".zip")))
         print(f"{edition}: {n} biographies matched")
+
+    # Members with no Directory biography at all (service since 1979 ended before the 1981
+    # edition, or they never submitted one): use the 2005 Biographical Directory instead.
+    no_bio = {bg for bg in population if not found[bg]}
+    if no_bio and glob.glob(biographical_directory.CACHE_GLOB):
+        bios = biographical_directory.match_biographies(people, no_bio)
+        for bg, bio in bios.items():
+            clause, kind = military_clause(bio, directory_2005=True)
+            found[bg].append(("BIOGRAPHICAL-DIRECTORY-2005", (clause, kind), True))
+        print(f"2005 Biographical Directory: {len(bios)} of {len(no_bio)} members without a "
+              f"Directory biography matched")
+    elif no_bio:
+        print("NOTE: bioguide2005_cache/ missing; run fetch_biographical_directory.py to cover "
+              f"{len(no_bio)} members without a Directory biography")
 
     with open(REVIEW_DECISIONS, newline="", encoding="utf-8") as f:
         decisions = {r["bioguide_id"]: r for r in csv.DictReader(f)}

@@ -13,7 +13,7 @@ A000215,Bill Archer,Male,Yes,Republican,Not on House Historian lists
 A000219,William L. Armstrong,Male,Yes,Republican,Not on House Historian lists
 A000221,John Ashbrook,Male,Yes,Republican,Not on House Historian lists
 A000226,Chester Atkins,Male,No,Democrat,Not on House Historian lists
-A000337,Les AuCoin,Male,Not found,Democrat,Not on House Historian lists
+A000337,Les AuCoin,Male,Yes,Democrat,Not on House Historian lists
 A000358,W. Akin,Male,Yes,Republican,Not on House Historian lists
 A000361,Rodney Alexander,Male,Yes,Republican,Not on House Historian lists
 A000364,John Adler,Male,No,Democrat,Not on House Historian lists
@@ -31,7 +31,7 @@ B000047,Wendell Bailey,Male,No,Republican,Not on House Historian lists
 B000072,Richard Baker,Male,No,Republican,Not on House Historian lists
 B000078,Bill Baker,Male,No,Republican,Not on House Historian lists
 B000081,John Baldacci,Male,No,Democrat,Not on House Historian lists
-B000083,Alvin Baldus,Male,Not found,Democrat,Not on House Historian lists
+B000083,Alvin Baldus,Male,Yes,Democrat,Not on House Historian lists
 B000104,Cass Ballenger,Male,Yes,Republican,Not on House Historian lists
 B000134,James Barcia,Male,No,Democrat,Not on House Historian lists
 B000177,Thomas Barrett,Male,No,Democrat,Not on House Historian lists
@@ -39,12 +39,12 @@ B000179,Bill Barrett,Male,Yes,Republican,Not on House Historian lists
 B000220,Charles Bass,Male,No,Republican,Not on House Historian lists
 B000229,Herbert H. Bateman,Male,Yes,Republican,Not on House Historian lists
 B000243,Max Baucus,Male,No,Democrat,Not on House Historian lists
-B000244,Robert Bauman,Male,Not found,Republican,Not on House Historian lists
-B000254,Birch Bayh,Male,Not found,Democrat,Not on House Historian lists
-B000279,Edward Beard,Male,Not found,Democrat,Not on House Historian lists
+B000244,Robert Bauman,Male,No,Republican,Not on House Historian lists
+B000254,Birch Bayh,Male,Yes,Democrat,Not on House Historian lists
+B000279,Edward Beard,Male,Yes,Democrat,Not on House Historian lists
 B000287,Xavier Becerra,Male,No,Democrat,Hispanic
 B000318,Anthony Beilenson,Male,No,Democrat,Not on House Historian lists
-B000351,Henry Bellmon,Male,Not found,Republican,Not on House Historian lists
+B000351,Henry Bellmon,Male,Yes,Republican,Not on House Historian lists
 B000363,Adam Benjamin Jr.,Male,Yes,Democrat,Not on House Historian lists
 B000371,Charles Edward Bennett,Male,Yes,Democrat,Not on House Historian lists
 B000403,Doug Bereuter,Male,Yes,Republican,Not on House Historian lists
@@ -88,7 +88,7 @@ B001063,Jim Bunn,Male,Yes,Republican,Not on House Historian lists
 B001066,Jim Bunning,Male,No,Republican,Not on House Historian lists
 B001080,Clair Burgener,Male,Yes,Republican,Not on House Historian lists
 B001149,Dan Burton,Male,Yes,Republican,Not on House Historian lists
-B001153,John Burton,Male,Not found,Democrat,Not on House Historian lists
+B001153,John Burton,Male,Yes,Democrat,Not on House Historian lists
 B001156,Phillip Burton,Male,Yes,Democrat,Not on House Historian lists
 B001182,M. Caldwell Butler,Male,Yes,Republican,Not on House Historian lists
 B001209,Harry F. Byrd Jr.,Male,Yes,Independent,Not on House Historian lists
@@ -151,7 +151,7 @@ C000127,Maria Cantwell,Female,No,Democrat,Not on House Historian lists
 C000141,Ben Cardin,Male,No,Democrat,Not on House Historian lists
 C000191,Julia Carson,Female,No,Democrat,Black
 C000243,Michael N. Castle,Male,No,Republican,Not on House Historian lists
-C000261,John Cavanaugh,Male,Not found,Democrat,Not on House Historian lists
+C000261,John Cavanaugh,Male,Yes,Democrat,Not on House Historian lists
 C000269,John Chafee,Male,Yes,Republican,Not on House Historian lists
 C000293,Rod Chandler,Male,No,Republican,Not on House Historian lists
 C000321,Bill Chappell,Male,Yes,Democrat,Not on House Historian lists
@@ -159,7 +159,7 @@ C000322,Eugene Chappie,Male,Yes,Republican,Not on House Historian lists
 C000356,Lawton Chiles,Male,Yes,Democrat,Not on House Historian lists
 C000371,Shirley Chisholm,Female,No,Democrat,Black
 C000462,James McClure Clarke,Male,Yes,Democrat,Not on House Historian lists
-C000512,James Cleveland,Male,Not found,Republican,Not on House Historian lists
+C000512,James Cleveland,Male,Yes,Republican,Not on House Historian lists
 C000556,Howard Coble,Male,Yes,Republican,Not on House Historian lists
 C000618,E. Thomas Coleman,Male,No,Republican,Not on House Historian lists
 C000621,Ronald D. Coleman,Male,Yes,Democrat,Not on House Historian lists
@@ -234,10 +234,10 @@ D000231,Lawrence J. DeNardis,Male,Yes,Republican,Not on House Historian lists
 D000267,Butler Derrick,Male,No,Democrat,Not on House Historian lists
 D000269,Edward Derwinski,Male,Yes,Republican,Not on House Historian lists
 D000275,Peter Deutsch,Male,No,Democrat,Not on House Historian lists
-D000279,Samuel Devine,Male,Not found,Republican,Not on House Historian lists
+D000279,Samuel Devine,Male,No,Republican,Not on House Historian lists
 D000294,Mike DeWine,Male,No,Republican,Not on House Historian lists
 D000299,Lincoln Diaz-Balart,Male,No,Republican,Hispanic
-D000344,Charles Diggs,Male,Not found,Democrat,Black
+D000344,Charles Diggs,Male,Yes,Democrat,Black
 D000366,Alan J. Dixon,Male,Yes,Democrat,Not on House Historian lists
 D000373,Julian Dixon,Male,Yes,Democrat,Black
 D000399,Lloyd Doggett,Male,No,Democrat,Not on House Historian lists
@@ -245,7 +245,7 @@ D000401,Bob Dole,Male,Yes,Republican,Not on House Historian lists
 D000416,Brian Donnelly,Male,No,Democrat,Not on House Historian lists
 D000429,John Doolittle,Male,No,Republican,Not on House Historian lists
 D000446,Charles Dougherty,Male,Yes,Republican,Not on House Historian lists
-D000537,Robert Duncan,Male,Not found,Democrat,Not on House Historian lists
+D000537,Robert Duncan,Male,Yes,Democrat,Not on House Historian lists
 D000586,Bernard J. Dwyer,Male,Yes,Democrat,Not on House Historian lists
 D000592,Mervyn Dymally,Male,No,Democrat,Black
 D000593,Roy Dyson,Male,No,Democrat,Not on House Historian lists
@@ -267,7 +267,7 @@ D000635,Maxine Dexter,Female,No,Democrat,Not on House Historian lists
 E000013,Joseph D. Early,Male,Yes,Democrat,Not on House Historian lists
 E000031,Dennis Eckart,Male,No,Democrat,Not on House Historian lists
 E000033,Fred Eckert,Male,Yes,Republican,Not on House Historian lists
-E000035,Bob Eckhardt,Male,Not found,Democrat,Not on House Historian lists
+E000035,Bob Eckhardt,Male,Yes,Democrat,Not on House Historian lists
 E000063,Thomas Edwards,Male,No,Democrat,Not on House Historian lists
 E000071,Jake Ellzey,Male,Yes,Republican,Not on House Historian lists
 E000092,Vernon Ehlers,Male,No,Republican,Not on House Historian lists
@@ -320,7 +320,7 @@ F000372,Rodney Frelinghuysen,Male,Yes,Republican,Not on House Historian lists
 F000380,Bill Frenzel,Male,Yes,Republican,Not on House Historian lists
 F000387,Dan Frisa,Male,No,Republican,Not on House Historian lists
 F000430,Don Fuqua,Male,Yes,Democrat,Not on House Historian lists
-F000438,Sheila Frahm,Female,Not found,Republican,Not on House Historian lists
+F000438,Sheila Frahm,Female,No,Republican,Not on House Historian lists
 F000441,Ernie Fletcher,Male,No,Republican,Not on House Historian lists
 F000442,Peter Fitzgerald,Male,No,Republican,Not on House Historian lists
 F000445,J. Randy Forbes,Male,No,Republican,Not on House Historian lists
@@ -359,17 +359,17 @@ G000352,Bob Graham,Male,No,Democrat,Not on House Historian lists
 G000359,Lindsey Graham,Male,Yes,Republican,Not on House Historian lists
 G000382,Bill Grant,Male,No,Republican,Not on House Historian lists
 G000386,Chuck Grassley,Male,No,Republican,Not on House Historian lists
-G000388,Mike Gravel,Male,Not found,Democrat,Not on House Historian lists
+G000388,Mike Gravel,Male,Yes,Democrat,Not on House Historian lists
 G000410,Gene Green,Male,No,Democrat,Not on House Historian lists
 G000417,Sedgwick Green,Male,Yes,Republican,Not on House Historian lists
 G000439,Jim Greenwood,Male,No,Republican,Not on House Historian lists
 G000480,Wayne Grisham,Male,Yes,Republican,Not on House Historian lists
-G000499,John E. Grotberg,Male,Not found,Republican,Not on House Historian lists
+G000499,John E. Grotberg,Male,No,Republican,Not on House Historian lists
 G000511,Frank J. Guarini,Male,Yes,Democrat,Not on House Historian lists
-G000515,Vonno Gudger,Male,Not found,Democrat,Not on House Historian lists
+G000515,Vonno Gudger,Male,Yes,Democrat,Not on House Historian lists
 G000524,Steve Gunderson,Male,No,Republican,Not on House Historian lists
 G000536,Gil Gutknecht,Male,No,Republican,Not on House Historian lists
-G000537,Tennyson Guyer,Male,Not found,Republican,Not on House Historian lists
+G000537,Tennyson Guyer,Male,No,Republican,Not on House Historian lists
 G000545,Mark Green,Male,No,Republican,Not on House Historian lists
 G000546,Sam Graves,Male,No,Republican,Not on House Historian lists
 G000548,Scott Garrett,Male,No,Republican,Not on House Historian lists
@@ -468,7 +468,7 @@ H001093,Erin Houchin,Female,No,Republican,Not on House Historian lists
 H001094,Val Hoyle,Female,No,Democrat,Not on House Historian lists
 H001099,Mike Haridopolos,Male,No,Republican,Not on House Historian lists
 H001104,Jon Husted,Male,No,Republican,Not on House Historian lists
-I000001,Richard Ichord,Male,Not found,Democrat,Not on House Historian lists
+I000001,Richard Ichord,Male,Yes,Democrat,Not on House Historian lists
 I000024,Jim Inhofe,Male,Yes,Republican,Not on House Historian lists
 I000025,Daniel Inouye,Male,Yes,Democrat,Asian or Pacific Islander
 I000026,Jay Inslee,Male,No,Democrat,Not on House Historian lists
@@ -479,12 +479,12 @@ J000033,Andrew Jacobs Jr.,Male,Yes,Democrat,Not on House Historian lists
 J000070,William J. Jefferson,Male,Yes,Democrat,Black
 J000072,Jim Jeffords,Male,Yes,Independent,Not on House Historian lists
 J000082,Bill Jenkins,Male,Yes,Republican,Not on House Historian lists
-J000099,John Jenrette,Male,Not found,Democrat,Not on House Historian lists
+J000099,John Jenrette,Male,No,Democrat,Not on House Historian lists
 J000101,Roger Jepsen,Male,Yes,Republican,Not on House Historian lists
 J000110,Christopher John,Male,No,Democrat,Not on House Historian lists
 J000120,Don Johnson Jr.,Male,Yes,Democrat,Not on House Historian lists
 J000126,Eddie Bernice Johnson,Female,No,Democrat,Black
-J000135,Harold Johnson,Male,Not found,Democrat,Not on House Historian lists
+J000135,Harold Johnson,Male,No,Democrat,Not on House Historian lists
 J000163,Nancy Johnson,Female,No,Republican,Not on House Historian lists
 J000174,Sam Johnson,Male,Yes,Republican,Not on House Historian lists
 J000177,Tim Johnson,Male,No,Democrat,Not on House Historian lists
@@ -543,7 +543,7 @@ K000403,Mike Kennedy,Male,No,Republican,Not on House Historian lists
 L000020,Robert J. Lagomarsino,Male,Yes,Republican,Not on House Historian lists
 L000045,H. Martin Lancaster,Male,Yes,Democrat,Not on House Historian lists
 L000116,Delbert Latta,Male,No,Republican,Not on House Historian lists
-L000167,Buddy Leach,Male,Not found,Democrat,Not on House Historian lists
+L000167,Buddy Leach,Male,Yes,Democrat,Not on House Historian lists
 L000187,Raymond Lederer,Male,No,Democrat,Not on House Historian lists
 L000192,Gary A. Lee,Male,Yes,Republican,Not on House Historian lists
 L000225,Richard H. Lehman,Male,No,Democrat,Not on House Historian lists
@@ -586,7 +586,7 @@ L000602,Summer Lee,Female,No,Democrat,Black
 L000606,George Latimer,Male,No,Democrat,Not on House Historian lists
 M000023,Buddy MacKay,Male,Yes,Democrat,Not on House Historian lists
 M000041,Edward Madigan,Male,No,Republican,Not on House Historian lists
-M000053,Warren Magnuson,Male,Not found,Democrat,Not on House Historian lists
+M000053,Warren Magnuson,Male,Yes,Democrat,Not on House Historian lists
 M000090,James H. Maloney,Male,No,Democrat,Not on House Historian lists
 M000133,Ed Markey,Male,Yes,Democrat,Not on House Historian lists
 M000174,David Martin,Male,Yes,Republican,Not on House Historian lists
@@ -601,15 +601,15 @@ M000316,Karen McCarthy,Female,No,Democrat,Not on House Historian lists
 M000317,Nicole Malliotakis,Female,No,Republican,Hispanic
 M000340,Robert McClory,Male,Yes,Republican,Not on House Historian lists
 M000346,James A. McClure,Male,Yes,Republican,Not on House Historian lists
-M000365,Mike McCormack,Male,Not found,Democrat,Not on House Historian lists
+M000365,Mike McCormack,Male,Yes,Democrat,Not on House Historian lists
 M000404,Jim McDermott,Male,Yes,Democrat,Not on House Historian lists
 M000432,Bob McEwen,Male,No,Republican,Not on House Historian lists
-M000433,Robert McEwen,Male,Not found,Republican,Not on House Historian lists
+M000433,Robert McEwen,Male,Yes,Republican,Not on House Historian lists
 M000458,Raymond J. McGrath,Male,No,Republican,Not on House Historian lists
 M000466,Paul McHale,Male,Yes,Democrat,Not on House Historian lists
 M000472,John M. McHugh,Male,Yes,Republican,Not on House Historian lists
 M000477,Scott McInnis,Male,No,Republican,Not on House Historian lists
-M000490,K. Gunn McKay,Male,Not found,Democrat,Not on House Historian lists
+M000490,K. Gunn McKay,Male,Yes,Democrat,Not on House Historian lists
 M000512,John R. McKernan Jr.,Male,Yes,Republican,Not on House Historian lists
 M000523,Cynthia McKinney,Female,No,Democrat,Black
 M000527,Stewart McKinney,Male,Yes,Republican,Not on House Historian lists
@@ -622,7 +622,7 @@ M000669,Jack Metcalf,Male,Yes,Republican,Not on House Historian lists
 M000678,Howard Metzenbaum,Male,No,Democrat,Not on House Historian lists
 M000684,Jan Meyers,Female,No,Republican,Not on House Historian lists
 M000689,John Mica,Male,No,Republican,Not on House Historian lists
-M000703,Abner Mikva,Male,Not found,Democrat,Not on House Historian lists
+M000703,Abner Mikva,Male,Yes,Democrat,Not on House Historian lists
 M000714,Juanita Millender-McDonald,Female,No,Democrat,Black
 M000797,Patsy Mink,Female,No,Democrat,Asian or Pacific Islander
 M000808,Donald J. Mitchell,Male,Yes,Republican,Not on House Historian lists
@@ -633,16 +633,16 @@ M000881,Jim Moody,Male,No,Democrat,Not on House Historian lists
 M000926,Carlos J. Moorhead,Male,Yes,Republican,Not on House Historian lists
 M000934,Jerry Moran,Male,No,Republican,Not on House Historian lists
 M000941,Connie Morella,Female,No,Republican,Not on House Historian lists
-M000956,Robert B. Morgan,Male,Not found,Democrat,Not on House Historian lists
+M000956,Robert B. Morgan,Male,Yes,Democrat,Not on House Historian lists
 M000999,Sid Morrison,Male,Yes,Republican,Not on House Historian lists
 M001025,Carol Moseley Braun,Female,No,Democrat,Black
 M001044,Ronald Mottl,Male,Yes,Democrat,Not on House Historian lists
 M001088,Austin J. Murphy,Male,Yes,Democrat,Not on House Historian lists
 M001111,Patty Murray,Female,No,Democrat,Not on House Historian lists
 M001120,John Murtha,Male,Yes,Democrat,Not on House Historian lists
-M001121,Edmund Muskie,Male,Not found,Democrat,Not on House Historian lists
-M001123,Raphael Musto,Male,Not found,Democrat,Not on House Historian lists
-M001132,Michael Myers,Male,Not found,Democrat,Not on House Historian lists
+M001121,Edmund Muskie,Male,Yes,Democrat,Not on House Historian lists
+M001123,Raphael Musto,Male,Yes,Democrat,Not on House Historian lists
+M001132,Michael Myers,Male,No,Democrat,Not on House Historian lists
 M001137,Gregory Meeks,Male,No,Democrat,Black
 M001139,Gary Miller,Male,Yes,Republican,Not on House Historian lists
 M001141,Zell Miller,Male,Yes,Democrat,Not on House Historian lists
@@ -699,7 +699,7 @@ M001239,John McGuire,Male,Yes,Republican,Not on House Historian lists
 M001241,Dave Min,Male,No,Democrat,Asian or Pacific Islander
 N000002,Jerrold Nadler,Male,No,Democrat,Not on House Historian lists
 N000032,Bill Nelson,Male,Yes,Democrat,Not on House Historian lists
-N000033,Gaylord Nelson,Male,Not found,Democrat,Not on House Historian lists
+N000033,Gaylord Nelson,Male,Yes,Democrat,Not on House Historian lists
 N000081,Bob Ney,Male,No,Republican,Not on House Historian lists
 N000095,Bill Nichols,Male,Yes,Democrat,Not on House Historian lists
 N000102,Don Nickles,Male,Yes,Republican,Not on House Historian lists
@@ -753,7 +753,7 @@ P000422,Earl Pomeroy,Male,No,Democrat,Not on House Historian lists
 P000444,John Edward Porter,Male,Yes,Republican,Not on House Historian lists
 P000452,Glenn Poshard,Male,Yes,Democrat,Not on House Historian lists
 P000546,Joel Pritchard,Male,Yes,Republican,Not on House Historian lists
-P000553,William Proxmire,Male,Not found,Democrat,Not on House Historian lists
+P000553,William Proxmire,Male,Yes,Democrat,Not on House Historian lists
 P000556,David Pryor,Male,Yes,Democrat,Not on House Historian lists
 P000574,Carl Pursell,Male,Yes,Republican,Not on House Historian lists
 P000584,David D. Phelps,Male,No,Democrat,Not on House Historian lists
@@ -787,12 +787,12 @@ R000103,Matt Rosendale,Male,No,Republican,Not on House Historian lists
 R000122,Jack Reed,Male,Yes,Democrat,Not on House Historian lists
 R000141,Ralph Regula,Male,Yes,Republican,Not on House Historian lists
 R000146,Harry Reid,Male,No,Democrat,Not on House Historian lists
-R000191,Abraham Ribicoff,Male,Not found,Democrat,Not on House Historian lists
+R000191,Abraham Ribicoff,Male,No,Democrat,Not on House Historian lists
 R000262,Matthew J. Rinaldo,Male,No,Republican,Not on House Historian lists
 R000281,Lynn Rivers,Female,No,Democrat,Not on House Historian lists
 R000305,Deborah Ross,Female,No,Democrat,Not on House Historian lists
 R000308,Clint Roberts,Male,No,Republican,Not on House Historian lists
-R000312,Ray Roberts,Male,Not found,Democrat,Not on House Historian lists
+R000312,Ray Roberts,Male,Yes,Democrat,Not on House Historian lists
 R000337,J. Kenneth Robinson,Male,Yes,Republican,Not on House Historian lists
 R000361,Jay Rockefeller,Male,No,Democrat,Not on House Historian lists
 R000386,James Rogan,Male,No,Republican,Not on House Historian lists
@@ -803,7 +803,7 @@ R000481,J. Roy Rowland,Male,Yes,Democrat,Not on House Historian lists
 R000482,John G. Rowland,Male,No,Republican,Not on House Historian lists
 R000486,Lucille Roybal-Allard,Female,No,Democrat,Hispanic
 R000487,Ed Royce,Male,No,Republican,Not on House Historian lists
-R000510,Harold L. Runnels,Male,Not found,Democrat,Not on House Historian lists
+R000510,Harold L. Runnels,Male,Yes,Democrat,Not on House Historian lists
 R000568,Ciro Rodriguez,Male,No,Democrat,Hispanic
 R000569,Thomas Reynolds,Male,No,Republican,Not on House Historian lists
 R000571,Denny Rehberg,Male,No,Republican,Not on House Historian lists
@@ -834,7 +834,7 @@ S000055,Terry Sanford,Male,Yes,Democrat,Not on House Historian lists
 S000056,George Sangmeister,Male,Yes,Democrat,Not on House Historian lists
 S000064,Paul Sarbanes,Male,No,Democrat,Not on House Historian lists
 S000066,Bill Sarpalius,Male,No,Democrat,Not on House Historian lists
-S000070,David E. Satterfield III,Male,Not found,Democrat,Not on House Historian lists
+S000070,David E. Satterfield III,Male,Yes,Democrat,Not on House Historian lists
 S000094,Thomas Sawyer,Male,No,Democrat,Not on House Historian lists
 S000097,Jim Saxton,Male,Yes,Republican,Not on House Historian lists
 S000109,Daniel Schaefer,Male,No,Republican,Not on House Historian lists
@@ -844,10 +844,10 @@ S000146,Richard Schulze,Male,Yes,Republican,Not on House Historian lists
 S000148,Chuck Schumer,Male,No,Democrat,Not on House Historian lists
 S000185,Bobby Scott,Male,Yes,Democrat,Black; Asian or Pacific Islander
 S000213,Andrea Seastrand,Female,No,Republican,Not on House Historian lists
-S000217,Keith Sebelius,Male,Not found,Republican,Not on House Historian lists
+S000217,Keith Sebelius,Male,Yes,Republican,Not on House Historian lists
 S000244,Jim Sensenbrenner,Male,No,Republican,Not on House Historian lists
 S000248,Jose E. Serrano,Male,Yes,Democrat,Hispanic
-S000269,John Seymour,Male,Not found,Republican,Not on House Historian lists
+S000269,John Seymour,Male,Yes,Republican,Not on House Historian lists
 S000320,Richard Shelby,Male,No,Republican,Not on House Historian lists
 S000332,Karen Shepherd,Female,No,Democrat,Not on House Historian lists
 S000407,Gerald Sikorski,Male,No,Democrat,Not on House Historian lists
@@ -862,7 +862,7 @@ S000477,Jim Slattery,Male,No,Democrat,Not on House Historian lists
 S000479,D. French Slaughter Jr.,Male,Yes,Republican,Not on House Historian lists
 S000480,Louise Slaughter,Female,No,Democrat,Not on House Historian lists
 S000510,Adam Smith,Male,No,Democrat,Not on House Historian lists
-S000579,Joseph Smith,Male,Not found,Democrat,Not on House Historian lists
+S000579,Joseph Smith,Male,Yes,Democrat,Not on House Historian lists
 S000583,Lamar Smith,Male,No,Republican,Not on House Historian lists
 S000586,Lawrence J. Smith,Male,No,Democrat,Not on House Historian lists
 S000587,Linda Smith,Female,No,Republican,Not on House Historian lists
@@ -881,11 +881,11 @@ S000779,Harley O. Staggers Jr.,Male,No,Democrat,Not on House Historian lists
 S000795,Arlan Stangeland,Male,No,Republican,Not on House Historian lists
 S000852,John Stennis,Male,No,Democrat,Not on House Historian lists
 S000888,Ted Stevens,Male,Yes,Republican,Not on House Historian lists
-S000890,Adlai Stevenson III,Male,Not found,Democrat,Not on House Historian lists
-S000907,Donald W. Stewart,Male,Not found,Democrat,Not on House Historian lists
+S000890,Adlai Stevenson III,Male,Yes,Democrat,Not on House Historian lists
+S000907,Donald W. Stewart,Male,Yes,Democrat,Not on House Historian lists
 S000929,Victoria Spartz,Female,No,Republican,Not on House Historian lists
-S000962,Richard (Dick) Stone,Male,Not found,Democrat,Not on House Historian lists
-S000991,Michael Strang,Male,Not found,Republican,Not on House Historian lists
+S000962,Richard (Dick) Stone,Male,No,Democrat,Not on House Historian lists
+S000991,Michael Strang,Male,Yes,Republican,Not on House Historian lists
 S001044,Bob Stump,Male,Yes,Republican,Not on House Historian lists
 S001045,Bart Stupak,Male,No,Democrat,Not on House Historian lists
 S001142,Gordon Smith,Male,No,Republican,Not on House Historian lists
@@ -944,7 +944,7 @@ T000113,Frank Tejeda,Male,Yes,Democrat,Hispanic
 T000162,Craig Thomas,Male,Yes,Republican,Not on House Historian lists
 T000165,Tom Tiffany,Male,No,Republican,Not on House Historian lists
 T000188,Bill Thomas,Male,No,Republican,Not on House Historian lists
-T000200,Frank Thompson Jr.,Male,Not found,Democrat,Not on House Historian lists
+T000200,Frank Thompson Jr.,Male,Yes,Democrat,Not on House Historian lists
 T000253,Karen Thurman,Female,No,Democrat,Not on House Historian lists
 T000254,Strom Thurmond,Male,Yes,Republican,Not on House Historian lists
 T000260,Todd Tiahrt,Male,No,Republican,Not on House Historian lists
@@ -973,7 +973,7 @@ U000017,Jolene Unsoeld,Female,No,Democrat,Not on House Historian lists
 U000038,Mark Udall,Male,No,Democrat,Not on House Historian lists
 V000006,Tim Valentine,Male,Yes,Democrat,Not on House Historian lists
 V000027,Guy Vander Jagt,Male,No,Republican,Not on House Historian lists
-V000047,Charles Vanik,Male,Not found,Democrat,Not on House Historian lists
+V000047,Charles Vanik,Male,Yes,Democrat,Not on House Historian lists
 V000087,Bruce Vento,Male,No,Democrat,Not on House Historian lists
 V000112,Harold Volkmer,Male,Yes,Democrat,Not on House Historian lists
 V000126,George Voinovich,Male,No,Republican,Not on House Historian lists
@@ -983,7 +983,7 @@ V000129,David Valadao,Male,No,Republican,Hispanic
 V000130,Juan Vargas,Male,No,Democrat,Hispanic
 V000131,Marc Veasey,Male,No,Democrat,Black
 V000133,Jeff Van Drew,Male,No,Republican,Not on House Historian lists
-W000038,Alton Waldon,Male,Not found,Democrat,Black
+W000038,Alton Waldon,Male,Yes,Democrat,Black
 W000092,Malcolm Wallop,Male,Yes,Republican,Not on House Historian lists
 W000139,Mike Ward,Male,No,Democrat,Not on House Historian lists
 W000177,Craig Washington,Male,No,Democrat,Black
@@ -1004,12 +1004,12 @@ W000428,Jamie Whitten,Male,No,Democrat,Not on House Historian lists
 W000437,Roger Wicker,Male,Yes,Republican,Not on House Historian lists
 W000520,Pat Williams,Male,Yes,Democrat,Not on House Historian lists
 W000570,Charlie Wilson,Male,Yes,Democrat,Not on House Historian lists
-W000571,Charles H. Wilson,Male,Not found,Democrat,Not on House Historian lists
+W000571,Charles H. Wilson,Male,Yes,Democrat,Not on House Historian lists
 W000607,Pete Wilson,Male,Yes,Republican,Not on House Historian lists
 W000654,Bob Wise,Male,No,Democrat,Not on House Historian lists
 W000682,Howard Wolpe,Male,No,Democrat,Not on House Historian lists
 W000763,Jim Wright,Male,Yes,Democrat,Not on House Historian lists
-W000777,Joseph P. Wyatt Jr.,Male,Not found,Democrat,Not on House Historian lists
+W000777,Joseph P. Wyatt Jr.,Male,Yes,Democrat,Not on House Historian lists
 W000781,Chalmers Wylie,Male,Yes,Republican,Not on House Historian lists
 W000784,Albert Wynn,Male,No,Democrat,Black
 W000788,Nikema Williams,Female,No,Democrat,Black
@@ -1033,7 +1033,7 @@ W000825,Jennifer Wexton,Female,No,Democrat,Not on House Historian lists
 Y000014,Gus Yatron,Male,No,Democrat,Not on House Historian lists
 Y000031,C. Young,Male,No,Republican,Not on House Historian lists
 Y000033,Don Young,Male,Yes,Republican,Not on House Historian lists
-Y000047,Milton Young,Male,Not found,Republican,Not on House Historian lists
+Y000047,Milton Young,Male,No,Republican,Not on House Historian lists
 Y000051,Robert A. Young,Male,Yes,Democrat,Not on House Historian lists
 Y000063,Kevin Yoder,Male,No,Republican,Not on House Historian lists
 Y000066,David Young,Male,No,Republican,Not on House Historian lists

@@ -37,9 +37,12 @@ One row per legislator. `bioguide_id`, `name`,
 `gender` (`Male`/`Female`, from the congress-legislators records),
 `veteran` (`Yes` = any military service, including Reserves and National
 Guard; `No` = biography found, no service mentioned; `Not found` = no
-biography available, mostly members whose service since 1979 ended by 1993.
-Source: member biographies in the official Congressional Directory, every
-edition 1979–2026, via GovInfo),
+biography available: 4 members who arrived after 2005 and whose time in
+Congress fell between Directory editions. Source: member biographies in the
+official Congressional Directory, every edition 1979–2026, via GovInfo; for
+the 50 members with no Directory biography (mostly those whose service since
+1979 ended before 1981), the *Biographical Directory of the United States
+Congress, 1774–2005*, also via GovInfo),
 `party` (most recent party in Congress, from the congress-legislators records),
 `race` (`Black`, `Hispanic`, `Asian or Pacific Islander`, or a combination,
 from the Office of the House Historian's official lists; everyone else is
