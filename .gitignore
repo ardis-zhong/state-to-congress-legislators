@@ -12,6 +12,7 @@ bioguide2005_cache/
 /ca_pubinfo_cache
 /ca_leginfo_cache
 /ca_billtext_cache
+/hathitrust_cache
 cel_cache/
 *.zip
 
