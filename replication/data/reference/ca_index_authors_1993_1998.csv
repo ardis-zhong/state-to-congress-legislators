@@ -1,0 +1,46 @@
+bioguide_id,name,session,house,author_name,note
+B001153,John Burton,93-94,assembly,Burton,Assembly 1988-1996
+B001153,John Burton,95-96,assembly,Burton,Assembly 1988-1996
+B001153,John Burton,97-98,senate,Burton,Senate 1996-2004
+B001234,Joe Baca,93-94,assembly,Baca,Assembly 1992-1998
+B001234,Joe Baca,95-96,assembly,Baca,Assembly 1992-1998
+B001234,Joe Baca,97-98,assembly,Baca,Assembly 1992-1998 (Senate from Dec 1998)
+C000100,Tom Campbell,93-94,senate,Campbell,Senate 1993-1995; the Assembly's Campbell is Robert Campbell
+C000100,Tom Campbell,95-96,senate,Campbell,Senate until Dec 1995
+C001050,Dennis Cardoza,97-98,assembly,Cardoza,Assembly 1996-2002
+C001097,Tony Cardenas,97-98,assembly,Cardenas,Assembly 1996-2002
+C001059,Jim Costa,93-94,assembly,Costa,Assembly to 1994
+C001059,Jim Costa,95-96,senate,Costa,Senate 1994-2002
+C001059,Jim Costa,97-98,senate,Costa,Senate 1994-2002
+D000598,Susan Davis,95-96,assembly,Davis,Assembly 1994-2000
+D000598,Susan Davis,97-98,assembly,Davis,Assembly 1994-2000
+F000030,Sam Farr,93-94,assembly,Farr,Assembly until June 1993
+H001034,Michael Honda,97-98,assembly,Honda,Assembly 1996-2000
+K000357,Steven Kuykendall,95-96,assembly,Kuykendall,Assembly 1994-1998
+K000357,Steven Kuykendall,97-98,assembly,Kuykendall,Assembly 1994-1998
+L000551,Barbara Lee,93-94,assembly,Lee,Assembly 1990-1996
+L000551,Barbara Lee,95-96,assembly,Lee,Assembly 1990-1996
+L000551,Barbara Lee,97-98,senate,Lee,Senate 1996-1998
+M001139,Gary Miller,95-96,assembly,Miller,Assembly 1995-1998
+M001139,Gary Miller,95-96,assembly,Miller.,"index typo ""Miller."""
+M001139,Gary Miller,97-98,assembly,Miller,Assembly 1995-1998
+M001177,Tom McClintock,97-98,assembly,McClintock,Assembly 1996-2000 (second stint)
+M000714,Juanita Millender-McDonald,93-94,assembly,McDonald,"indexed as ""McDonald""; Assembly 1992-1996"
+M000714,Juanita Millender-McDonald,95-96,assembly,McDonald,"indexed as ""McDonald""; Assembly until March 1996"
+N000179,Grace Napolitano,93-94,assembly,Napolitano,Assembly 1992-1998
+N000179,Grace Napolitano,95-96,assembly,Napolitano,Assembly 1992-1998
+N000179,Grace Napolitano,97-98,assembly,Napolitano,Assembly 1992-1998
+R000386,James Rogan,95-96,assembly,Rogan,Assembly 1994-1996
+S000213,Andrea Seastrand,93-94,assembly,Seastrand,Assembly 1990-1994
+S001150,Adam Schiff,97-98,senate,Schiff,Senate 1996-2000
+S001153,Hilda Solis,93-94,assembly,Solis,Assembly 1992-1994
+S001153,Hilda Solis,95-96,senate,Solis,Senate 1994-2000
+S001153,Hilda Solis,97-98,senate,Solis,Senate 1994-2000
+S001175,Jackie Speier,93-94,assembly,Speier,Assembly 1986-1996
+S001175,Jackie Speier,95-96,assembly,Speier,Assembly 1986-1996
+T000460,Mike Thompson,93-94,senate,Thompson,Senate 1990-1998; the Assembly's Thompson is Bruce Thompson
+T000460,Mike Thompson,95-96,senate,Thompson,Senate 1990-1998
+T000460,Mike Thompson,97-98,senate,Thompson,Senate 1990-1998
+W000794,Diane Watson,93-94,senate,Watson,Senate 1978-1998
+W000794,Diane Watson,95-96,senate,Watson,Senate 1978-1998
+W000794,Diane Watson,97-98,senate,Watson,Senate 1978-1998

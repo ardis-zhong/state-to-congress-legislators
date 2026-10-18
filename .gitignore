@@ -1,13 +1,17 @@
 # --- Raw API caches: large, regenerate locally with your own API key ---
+# (no trailing slash: some of these are shortcuts (symlinks) to the external drive)
 # (not the same as the *processed* summary tables below, which ARE published --
 # see replication/data/processed/ and the README's "Data sources and licensing" section)
 legiscan_session_cache/
-legiscan_dataset_cache/
-legiscan_billtext_cache/
+/legiscan_dataset_cache
+/legiscan_billtext_cache
 legiscan_bill_cache/
-federal_billtext_cache/
-cdir_cache/
+/federal_billtext_cache
+/cdir_cache
 bioguide2005_cache/
+/ca_pubinfo_cache
+/ca_leginfo_cache
+/ca_billtext_cache
 cel_cache/
 *.zip
 
@@ -59,7 +63,10 @@ datasets/*/table5_federal_bill_text.*
 /*.log
 
 # --- Files prepared for the Harvard Dataverse deposit (too large for GitHub) ---
-/dataverse_upload/
+/dataverse_upload
 
 # --- Written by replication/validate_tables.py ---
 /validation_sample.tsv
+
+# --- Local guide to this laptop's file layout (mentions the external drive) ---
+/WHERE_THINGS_ARE.md

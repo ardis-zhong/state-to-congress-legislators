@@ -1,0 +1,85 @@
+bioguide_id,name,session,house,author_name,roster_name,district,status
+B001153,John Burton,1999-2000,SENATE,Burton,"Burton, John L.",SD03,matched
+B001234,Joe Baca,1999-2000,SENATE,Baca,"Baca, Joe",SD32,matched
+C001050,Dennis Cardoza,1999-2000,ASSEMBLY,Cardoza,"Cardoza, Dennis",AD26,matched
+C001059,Jim Costa,1999-2000,SENATE,Costa,"Costa, Jim",SD16,matched
+C001064,John Campbell,1999-2000,,,,,not in roster
+C001097,Tony Cardenas,1999-2000,ASSEMBLY,Cardenas,"Cardenas, Tony",AD39,matched
+C001110,Lou Correa,1999-2000,ASSEMBLY,Correa,"Correa, Lou",AD69,matched
+D000598,Susan Davis,1999-2000,ASSEMBLY,Davis,"Davis, Susan",AD76,matched
+H001034,Michael Honda,1999-2000,ASSEMBLY,Honda,"Honda, Mike",AD23,matched
+L000579,Alan Lowenthal,1999-2000,ASSEMBLY,Lowenthal,"Lowenthal, Alan",AD54,matched
+M001177,Tom McClintock,1999-2000,ASSEMBLY,McClintock,"McClintock, Tom",AD38,matched
+N000187,Gloria Negrete McLeod,1999-2000,,,,,not in roster
+S001150,Adam Schiff,1999-2000,SENATE,Schiff,"Schiff, Adam B.",SD21,matched
+S001153,Hilda Solis,1999-2000,SENATE,Solis,"Solis, Hilda L.",SD24,matched
+S001175,Jackie Speier,1999-2000,SENATE,Speier,"Speier, Jackie",SD08,matched
+V000130,Juan Vargas,1999-2000,,,,,not in roster
+B001153,John Burton,2001-2002,SENATE,Burton,"Burton, John L.",SD03,matched
+C001050,Dennis Cardoza,2001-2002,ASSEMBLY,Cardoza,"Cardoza, Dennis",AD26,matched
+C001059,Jim Costa,2001-2002,SENATE,Costa,"Costa, Jim",SD16,matched
+C001064,John Campbell,2001-2002,ASSEMBLY,John Campbell,"Campbell III, John B. T.",AD70,matched
+C001080,Judy Chu,2001-2002,ASSEMBLY,Chu,"Chu, Judy",AD49,matched
+C001097,Tony Cardenas,2001-2002,ASSEMBLY,Cardenas,"Cardenas, Tony",AD39,matched
+C001110,Lou Correa,2001-2002,ASSEMBLY,Correa,"Correa, Lou",AD69,matched
+D000612,Jeff Denham,2001-2002,,,,,not in roster
+L000578,Doug LaMalfa,2001-2002,,,,,not in roster
+L000579,Alan Lowenthal,2001-2002,ASSEMBLY,Lowenthal,"Lowenthal, Alan",AD54,matched
+M001165,Kevin McCarthy,2001-2002,,,,,not in roster
+M001177,Tom McClintock,2001-2002,SENATE,McClintock,"McClintock, Tom",SD19,matched
+N000187,Gloria Negrete McLeod,2001-2002,ASSEMBLY,Negrete McLeod,"Negrete McLeod, Gloria",AD61,matched
+S001175,Jackie Speier,2001-2002,SENATE,Speier,"Speier, Jackie",SD08,matched
+V000130,Juan Vargas,2001-2002,ASSEMBLY,Vargas,"Vargas, Juan",AD79,matched
+B001153,John Burton,2003-2004,SENATE,Burton,"Burton, John L.",SD03,matched
+B001270,Karen Bass,2003-2004,,,,,not in roster
+C001064,John Campbell,2003-2004,ASSEMBLY,Campbell,"Campbell III, John B. T.",AD70,matched
+C001080,Judy Chu,2003-2004,ASSEMBLY,Chu,"Chu, Judy",AD49,matched
+C001110,Lou Correa,2003-2004,ASSEMBLY,Correa,"Correa, Lou",AD69,matched
+D000592,Mervyn Dymally,2003-2004,ASSEMBLY,Dymally,"Dymally, Mervyn M.",AD52,matched
+D000612,Jeff Denham,2003-2004,SENATE,Denham,"Denham, Jeff",SD12,matched
+L000578,Doug LaMalfa,2003-2004,ASSEMBLY,La Malfa,"La Malfa, Doug",AD02,matched
+L000579,Alan Lowenthal,2003-2004,ASSEMBLY,Lowenthal,"Lowenthal, Alan",AD54,matched
+M001165,Kevin McCarthy,2003-2004,ASSEMBLY,McCarthy,"McCarthy, Kevin",AD32,matched
+M001177,Tom McClintock,2003-2004,SENATE,McClintock,"McClintock, Tom",SD19,matched
+N000187,Gloria Negrete McLeod,2003-2004,ASSEMBLY,Negrete McLeod,"Negrete McLeod, Gloria",AD61,matched
+S001175,Jackie Speier,2003-2004,SENATE,Speier,"Speier, Jackie",SD08,matched
+V000130,Juan Vargas,2003-2004,ASSEMBLY,Vargas,"Vargas, Juan",AD79,matched
+B001270,Karen Bass,2005-2006,ASSEMBLY,Bass,"Bass, Karen",AD47,matched
+B001285,Julia Brownley,2005-2006,,,,,not in roster
+C001064,John Campbell,2005-2006,SENATE,Campbell,,,matched by surname (not in end-of-session roster; review)
+C001080,Judy Chu,2005-2006,ASSEMBLY,Chu,"Chu, Judy",AD49,matched
+C001094,Paul Cook,2005-2006,,,,,not in roster
+C001110,Lou Correa,2005-2006,,,,,not in roster
+D000592,Mervyn Dymally,2005-2006,ASSEMBLY,Dymally,"Dymally, Mervyn M.",AD52,matched
+D000612,Jeff Denham,2005-2006,SENATE,Denham,"Denham, Jeff",SD12,matched
+D000623,Mark DeSaulnier,2005-2006,,,,,not in roster
+H001068,Jared Huffman,2005-2006,,,,,not in roster
+L000578,Doug LaMalfa,2005-2006,ASSEMBLY,La Malfa,"La Malfa, Doug",AD02,matched
+L000579,Alan Lowenthal,2005-2006,SENATE,Lowenthal,"Lowenthal, Alan",SD27,matched
+L000582,Ted Lieu,2005-2006,ASSEMBLY,Lieu,"Lieu, Ted",AD53,matched
+M001165,Kevin McCarthy,2005-2006,ASSEMBLY,McCarthy,"McCarthy, Kevin",AD32,matched
+M001177,Tom McClintock,2005-2006,SENATE,McClintock,"McClintock, Tom",SD19,matched
+N000187,Gloria Negrete McLeod,2005-2006,ASSEMBLY,Negrete McLeod,"Negrete McLeod, Gloria",AD61,matched
+P000145,Alex Padilla,2005-2006,,,,,not in roster
+S001175,Jackie Speier,2005-2006,SENATE,Speier,"Speier, Jackie",SD08,matched
+V000130,Juan Vargas,2005-2006,ASSEMBLY,Vargas,"Vargas, Juan",AD79,matched
+W000820,Mimi Walters,2005-2006,ASSEMBLY,Walters,"Walters, Mimi",AD73,matched
+B001270,Karen Bass,2007-2008,ASSEMBLY,Bass,"Bass, Karen",AD47,matched
+B001285,Julia Brownley,2007-2008,ASSEMBLY,Brownley,"Brownley, Julia",AD41,matched
+C001094,Paul Cook,2007-2008,ASSEMBLY,Cook,"Cook, Paul J.",AD65,matched
+C001110,Lou Correa,2007-2008,SENATE,Correa,"Correa, Lou",SD34,matched
+C001128,Connie Conway,2007-2008,,,,,not in roster
+D000592,Mervyn Dymally,2007-2008,ASSEMBLY,Dymally,"Dymally, Mervyn M.",AD52,matched
+D000612,Jeff Denham,2007-2008,SENATE,Denham,"Denham, Jeff",SD12,matched
+D000623,Mark DeSaulnier,2007-2008,ASSEMBLY,DeSaulnier,"DeSaulnier, Mark James",AD11,matched
+H001068,Jared Huffman,2007-2008,ASSEMBLY,Huffman,"Huffman, Jared William",AD06,matched
+K000387,Steve Knight,2007-2008,,,,,not in roster
+L000578,Doug LaMalfa,2007-2008,ASSEMBLY,La Malfa,"La Malfa, Doug",AD02,matched
+L000579,Alan Lowenthal,2007-2008,SENATE,Lowenthal,"Lowenthal, Alan",SD27,matched
+L000582,Ted Lieu,2007-2008,ASSEMBLY,Lieu,"Lieu, Ted",AD53,matched
+M001177,Tom McClintock,2007-2008,SENATE,McClintock,"McClintock, Tom",SD19,matched
+N000187,Gloria Negrete McLeod,2007-2008,SENATE,Negrete McLeod,"Negrete McLeod, Gloria",SD32,matched
+P000145,Alex Padilla,2007-2008,SENATE,Padilla,"Padilla, Alex",SD20,matched
+R000581,Laura Richardson,2007-2008,ASSEMBLY,Richardson,"Richardson, Laura",AD55,matched
+T000474,Norma Torres,2007-2008,,,,,not in roster
+W000820,Mimi Walters,2007-2008,ASSEMBLY,Walters,"Walters, Mimi",AD73,matched

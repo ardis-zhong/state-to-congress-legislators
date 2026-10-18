@@ -43,7 +43,7 @@ TABLES = {
         ["bioguide_id", "name", "session", "year", "les", "level", "chamber"]),
     4: ("table4_state_bill_text",
         ["bioguide_id", "name", "bill_id", "bill_name", "state_session", "congress", "year", "state",
-         "bill_text"]),
+         "text_source", "bill_text"]),
     5: ("table5_federal_bill_text",
         ["bioguide_id", "name", "bill_id", "bill_name", "congress", "year", "chamber", "bill_text"]),
     6: ("table6_state_bill_topics",
@@ -240,7 +240,9 @@ def state_bill_dates(r):
 
 def build_table4():
     """One row per state bill sponsored by a population member that has text (the version as
-    introduced, from LegiScan). bill_id = state-LegiScan session id-bill number."""
+    introduced). From LegiScan (bill_id = state-LegiScan session id-bill number) and, for
+    California before LegiScan's coverage, from the Legislature's own archives (see
+    california_rows)."""
     for path in (STATE_SPONSORED, STATE_TEXT_MANIFEST):
         if not os.path.exists(path):
             raise Pending(f"{path} missing; run the LegiScan steps in replication/README.md")
@@ -263,8 +265,40 @@ def build_table4():
         year, congress = state_bill_dates(r)
         out.append([r["BioguideId"], people[r["BioguideId"]][0],
                     f"{r['StateAbbr']}-{r['SessionId']}-{r['BillNumber']}", " ".join(r["Title"].split()),
-                    r["SessionTitle"], str(congress), year, r["StateAbbr"], text])
+                    r["SessionTitle"], str(congress), year, r["StateAbbr"], "LegiScan", text])
+    out.extend(california_rows(people, skip))
     out.sort(key=lambda x: (x[0], x[6], x[2]))
+    return out
+
+
+# California before LegiScan (decided by Ardis 2026-10-17, California state-text pilot):
+# 1999-2008 from the Legislature's database downloads, 1993-1998 from its older website.
+CA_SOURCES = ["ca_state_legislation_sponsored.csv",          # local; ca_pubinfo_bills.py
+              "ca_leginfo_state_legislation_sponsored.csv"]  # local; ca_leginfo_archive.py
+
+
+def california_rows(people, skip):
+    """Table 4 rows for California bills from the Legislature's own archives. bill_id =
+    CA-<session start year>-<type><number>, plus X<n> for extraordinary sessions."""
+    out = []
+    for path in CA_SOURCES:
+        if not os.path.exists(path):
+            continue
+        with open(path, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                if r["BillId"] in skip or r["BioguideId"] not in people or not r["TextPath"] \
+                        or not os.path.exists(r["TextPath"]) or r.get("IntroducedByMatch") == "No":
+                    continue
+                with open(r["TextPath"], encoding="utf-8", errors="replace") as tf:
+                    text = tf.read()
+                lo = int(r["Session"][:4])
+                d = r["IntroducedDate"]
+                if re.fullmatch(r"(19|20)\d\d-\d\d-\d\d", d or "") and lo - 2 <= int(d[:4]) <= lo + 2:
+                    year, congress = int(d[:4]), congress_on(d)
+                else:
+                    year, congress = lo, (lo - 1787) // 2
+                out.append([r["BioguideId"], people[r["BioguideId"]][0], r["BillId"], " ".join(r["Title"].split()),
+                            r["Session"], str(congress), year, "CA", "California Legislature", text])
     return out
 
 

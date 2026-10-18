@@ -56,6 +56,7 @@ ALLOWED = {
     1: {"federal_chamber": {"House", "Senate", "Both"}},
     2: {"gender": {"Male", "Female"}, "veteran": {"Yes", "No", "Not found"}},
     3: {"level": {"Federal", "State"}, "chamber": {"House", "Senate", "Upper", "Lower"}},
+    4: {"text_source": {"LegiScan", "California Legislature"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
 }
@@ -206,7 +207,10 @@ def main():
                     c, typ, num = r.bill_id.split("-")
                     ok = re.search(TYPE_TEXT[typ] + r"\s*" + num + r"\b", text[:3000]) is not None
                 else:
-                    digits = re.sub(r"\D", "", r.bill_id.split("-", 2)[2]).lstrip("0")
+                    # California archive IDs end in X<n> for extraordinary sessions (CA-1993-SB2X1)
+                    number = re.sub(r"X\d+$", "", r.bill_id.split("-", 2)[2]) if r.text_source != "LegiScan" \
+                        else r.bill_id.split("-", 2)[2]
+                    digits = re.sub(r"\D", "", number).lstrip("0")
                     if not digits:  # lettered numbers (e.g. Michigan "HJR F") can't be checked
                         continue
                     ok = re.search(r"(?<!\d)0*" + digits + r"(?!\d)", text) is not None
@@ -225,7 +229,18 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4:
+                if n == 4 and r.text_source == "California Legislature":
+                    _, yr, num = r.bill_id.split("-", 2)
+                    m = re.match(r"([A-Z]+?)(\d+)(?:X(\d+))?$", num)
+                    if int(yr) >= 1999:
+                        url = ("https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id="
+                               f"{yr}{int(yr) + 1}{m.group(3) or 0}{m.group(1)}{m.group(2)}")
+                    else:
+                        typ = m.group(1).lower() + (f"x{m.group(3)}" if m.group(3) else "")
+                        url = (f"https://www.leginfo.ca.gov/cgi-bin/postquery?bill_number={typ}_{m.group(2)}"
+                               f"&sess={yr[2:]}{int(yr[2:]) + 1:02d}&house=B&author=")
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4:
                     st, sess, num = r.bill_id.split("-", 2)
                     url = f"https://legiscan.com/{st}/bill/{num}/{r.year}"
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
