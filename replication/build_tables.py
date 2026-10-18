@@ -43,7 +43,7 @@ TABLES = {
         ["bioguide_id", "name", "session", "year", "les", "level", "chamber"]),
     4: ("table4_state_bill_text",
         ["bioguide_id", "name", "bill_id", "bill_name", "state_session", "congress", "year", "state",
-         "text_source", "bill_text"]),
+         "text_source", "text_version", "bill_text"]),
     5: ("table5_federal_bill_text",
         ["bioguide_id", "name", "bill_id", "bill_name", "congress", "year", "chamber", "bill_text"]),
     6: ("table6_state_bill_topics",
@@ -265,7 +265,8 @@ def build_table4():
         year, congress = state_bill_dates(r)
         out.append([r["BioguideId"], people[r["BioguideId"]][0],
                     f"{r['StateAbbr']}-{r['SessionId']}-{r['BillNumber']}", " ".join(r["Title"].split()),
-                    r["SessionTitle"], str(congress), year, r["StateAbbr"], "LegiScan", text])
+                    r["SessionTitle"], str(congress), year, r["StateAbbr"], "LegiScan",
+                    r["IntroducedDocType"] or "Introduced", text])
     out.extend(california_rows(people, skip))
     out.sort(key=lambda x: (x[0], x[6], x[2]))
     return out
@@ -279,7 +280,9 @@ CA_SOURCES = ["ca_state_legislation_sponsored.csv",          # local; ca_pubinfo
 
 def california_rows(people, skip):
     """Table 4 rows for California bills from the Legislature's own archives. bill_id =
-    CA-<session start year>-<type><number>, plus X<n> for extraordinary sessions."""
+    CA-<session start year>-<type><number>, plus X<n> for extraordinary sessions. 1989-1992
+    rows are enacted bills only, in their chaptered version (text_version = Chaptered), and
+    their year is the year chaptered (these archives have no introduced date)."""
     out = []
     for path in CA_SOURCES:
         if not os.path.exists(path):
@@ -298,7 +301,8 @@ def california_rows(people, skip):
                 else:
                     year, congress = lo, (lo - 1787) // 2
                 out.append([r["BioguideId"], people[r["BioguideId"]][0], r["BillId"], " ".join(r["Title"].split()),
-                            r["Session"], str(congress), year, "CA", "California Legislature", text])
+                            r["Session"], str(congress), year, "CA", "California Legislature",
+                            r.get("TextVersion") or "Introduced", text])
     return out
 
 

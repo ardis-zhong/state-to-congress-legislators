@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 46,934 bills, 269 people (2008 on; California from 1993); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 47,559 bills, 278 people (2008 on; California from 1989); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -96,9 +96,10 @@ California bills from the Legislature's archives, state-session start
 year-bill number, e.g. `CA-1999-AB2027`, with `X1` etc. for extraordinary
 sessions), `bill_name`, `state_session` (the state legislature's session),
 `congress` (the U.S. Congress in session when the bill was introduced),
-`year` (year introduced), `state`, `text_source` (`LegiScan` or
-`California Legislature`), `bill_text` (the version as introduced, or the
-earliest version available).
+`year` (year introduced; for California 1989–1992, year enacted), `state`,
+`text_source` (`LegiScan` or `California Legislature`), `text_version` (the
+version the text is: `Introduced`, or where that isn't available `Prefiled`,
+`Draft`, `Amended`, `Engrossed`, `Enrolled`, or `Chaptered`), `bill_text`.
 Sources: LegiScan API (CC BY 4.0), whose archive starts between 2007 and 2013
 depending on the state; and, for California before LegiScan's coverage, the
 California Legislature's own archives (public domain under Cal. Gov. Code
@@ -107,7 +108,11 @@ California Legislature's own archives (public domain under Cal. Gov. Code
 (www.leginfo.ca.gov). For California archive bills the sponsor is the
 introduced version's primary author; 97 bills from 1993–1998 whose index
 author did not introduce them (authorship transferred later) are excluded.
-269 people have rows (California from 1993, other states from 2008); for
+For 1989–1992 the Legislature's archives hold only the bills that became law,
+in their final (chaptered) wording, so those 625 rows are enacted bills only
+(`text_version` = `Chaptered`), counted when the person is the sole lead
+author; filter on `text_version` to exclude them.
+278 people have rows (California from 1989, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
 York bills); `year`/`congress` then fall back to the bill's status date or

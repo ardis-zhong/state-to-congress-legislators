@@ -56,7 +56,8 @@ ALLOWED = {
     1: {"federal_chamber": {"House", "Senate", "Both"}},
     2: {"gender": {"Male", "Female"}, "veteran": {"Yes", "No", "Not found"}},
     3: {"level": {"Federal", "State"}, "chamber": {"House", "Senate", "Upper", "Lower"}},
-    4: {"text_source": {"LegiScan", "California Legislature"}},
+    4: {"text_source": {"LegiScan", "California Legislature"},
+        "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Engrossed", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
 }

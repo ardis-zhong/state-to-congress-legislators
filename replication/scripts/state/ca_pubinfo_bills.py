@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-California state bills, 1999-2008, from the Legislature's own database downloads
+California state bills, 1989-1992 and 1999-2008, from the Legislature's own database downloads
 ("pubinfo", https://downloads.leginfo.legislature.ca.gov/), for population members
 who served in the California Legislature before LegiScan's coverage (2009 on).
 Part of the California state-text pilot (Ardis, 2026-10-17).
@@ -8,7 +8,15 @@ Part of the California state-text pilot (Ardis, 2026-10-17).
 Each session archive (pubinfo_1999.zip ... pubinfo_2007.zip, one per two-year
 session) holds every bill, every version's text (CAML XML), the authors of each
 version, and the session's legislator roster. pubinfo_1993/1995/1997.zip hold
-only chaptered bills, so 1993-1998 comes from a separate step.
+only chaptered bills, so 1993-1998 comes from a separate step (ca_leginfo_archive.py).
+
+1989-1992 (decided by Ardis 2026-10-18, option A): pubinfo_1989/1991.zip hold only
+the bills that became law, in their chaptered (final) version, with no roster and no
+primary-author flag. No other digital source has these sessions, so they are included
+as "Chaptered" text: a bill counts when its sole lead author is one of our people, per
+the reviewed list replication/data/reference/ca_chaptered_authors_1989_1992.csv (the
+1989-90 Assembly "Seastrand" is Eric Seastrand, not Andrea). These rows cover enacted
+bills only and the final wording, so they are marked TextVersion = Chaptered.
 
 MATCHING (no model in the loop):
   1. Person -> roster: a population member whose researched California service
@@ -24,6 +32,7 @@ MATCHING (no model in the loop):
   3. Text: the introduced version's CAML XML with markup removed.
 
 INPUT:   ca_pubinfo_cache/pubinfo_<year>.zip   (download with ca_fetch_pubinfo.sh)
+         replication/data/reference/ca_chaptered_authors_1989_1992.csv
 OUTPUT:  ca_state_legislation_sponsored.csv     one row per (person, bill), local
          ca_billtext_cache/<bill_version_id>.txt introduced text, local
          replication/data/reference/ca_author_matches.csv   person -> roster matches
@@ -44,6 +53,8 @@ import zipfile
 CACHE = "ca_pubinfo_cache"
 TEXT_DIR = "ca_billtext_cache"
 SESSIONS = [1999, 2001, 2003, 2005, 2007]
+CHAPTERED_SESSIONS = [1989, 1991]
+CHAPTERED_AUTHORS = "replication/data/reference/ca_chaptered_authors_1989_1992.csv"
 PERSON_LEVEL = "replication/data/population/person_level.csv"
 LEGISLATOR_FILES = ["legislators-current.json", "legislators-historical.json"]
 OUT = "ca_state_legislation_sponsored.csv"
@@ -81,7 +92,7 @@ def rows(z, name):
     return [[c.strip("`") for c in line.split("\t")] for line in data.split("\n") if line.strip()]
 
 
-def caml_header(xml):
+def caml_header(xml, version="Introduced"):
     """A header like the one on California's own plain-text bill versions, built from the
     record's metadata: 'BILL NUMBER: AB 2027 / INTRODUCED BY Assembly Member Correa / date'."""
     def field(tag):
@@ -97,13 +108,14 @@ def caml_header(xml):
             leads.append(f"{title} {html.unescape(name.group(1)) if name else ''}".strip())
     session = field("SessionNum")
     number = f"{field('MeasureType')} {field('MeasureNum')}" + (f" (Extraordinary Session {session})" if session not in ("", "0") else "")
-    return (f"BILL NUMBER: {number}\nINTRODUCED BILL TEXT\n"
-            f"INTRODUCED BY {' and '.join(leads) or 'Committee'}\n{field('ActionDate')}\n\n")
+    by = "INTRODUCED BY" if version == "Introduced" else "AUTHORS:"
+    return (f"BILL NUMBER: {number}\n{version.upper()} BILL TEXT\n"
+            f"{by} {' and '.join(leads) or 'Committee'}\n{field('ActionDate')}\n\n")
 
 
-def caml_text(xml):
+def caml_text(xml, version="Introduced"):
     """CAML XML -> plain text: keep paragraph and line breaks, drop markup."""
-    header = caml_header(xml)
+    header = caml_header(xml, version)
     xml = re.sub(r"<!--.*?-->", "", xml, flags=re.S)
     # drop the record metadata (ID, version, action history, session info, author list); keep the
     # title, the Legislative Counsel's digest, and the bill itself
@@ -113,6 +125,49 @@ def caml_text(xml):
     text = html.unescape(re.sub(r"<[^>]+>", "", xml))
     text = re.sub(r"[ \t]+", " ", text)
     return header + re.sub(r"\n\s*\n+", "\n\n", text).strip()
+
+
+def chaptered_rows(ca):
+    """1989-1992: enacted bills only, chaptered text; sole lead author per the reviewed list."""
+    with open(CHAPTERED_AUTHORS, newline="", encoding="utf-8") as f:
+        authors = {(r["session"], r["house"], r["author_name"]): r["bioguide_id"] for r in csv.DictReader(f)}
+    names = {r["BioguideId"]: r["Name"] for r in ca}
+    out = []
+    for year in CHAPTERED_SESSIONS:
+        z = zipfile.ZipFile(os.path.join(CACHE, f"pubinfo_{year}.zip"))
+        session = f"{year}-{year + 1}"
+        bills = {b[0]: b for b in rows(z, "BILL_TBL.dat")}
+        versions = {v[0]: v for v in rows(z, "BILL_VERSION_TBL.dat") if v[4] == "Chaptered"}
+        leads = {}
+        for a in rows(z, "BILL_VERSION_AUTHORS_TBL.dat"):
+            if a[0] in versions and a[4] == "LEAD_AUTHOR":
+                leads.setdefault(a[0], []).append(a)
+        n = 0
+        for vid, la in leads.items():
+            if len(la) != 1 or la[0][1] != "Legislator":
+                continue  # several lead authors and no primary flag: the sponsor can't be told apart
+            bg = authors.get((session, la[0][2], la[0][3]))
+            v = versions[vid]
+            b = bills.get(v[1])
+            if not bg or not b:
+                continue
+            text_path = os.path.join(TEXT_DIR, vid + ".txt")
+            if v[14].endswith(".lob") and not os.path.exists(text_path):
+                with open(text_path, "w", encoding="utf-8") as f:
+                    f.write(caml_text(z.read(v[14]).decode("utf-8", errors="replace"), "Chaptered"))
+            out.append({
+                "BioguideId": bg, "Name": names[bg],
+                "Session": session + (f" Extraordinary Session {b[2]}" if b[2] != "0" else " Regular Session"),
+                "BillNumber": f"{b[3]}{b[4]}", "MeasureType": b[3], "SessionNum": b[2],
+                "BillId": f"CA-{year}-{b[3]}{b[4]}" + (f"X{b[2]}" if b[2] != "0" else ""),
+                "Title": v[6], "IntroducedDate": v[3][:10],  # the chaptered date: no introduced date in these archives
+                "MeasureState": b[5], "Chaptered": "Yes",
+                "AuthorName": la[0][3], "House": la[0][2], "VersionId": vid, "TextVersion": "Chaptered",
+                "TextPath": text_path if os.path.exists(text_path) else "",
+            })
+            n += 1
+        print(f"{session} (chaptered bills only): {n} sole-lead-authored bills")
+    return out
 
 
 def main():
@@ -191,11 +246,13 @@ def main():
                 "BillId": f"CA-{year}-{b[3]}{b[4]}" + (f"X{b[2]}" if b[2] != "0" else ""),
                 "Title": v[6], "IntroducedDate": v[3][:10], "MeasureState": b[5],
                 "Chaptered": "Yes" if b[5] == "Chaptered" else "No",
-                "AuthorName": a[3], "House": a[2], "VersionId": a[0],
+                "AuthorName": a[3], "House": a[2], "VersionId": a[0], "TextVersion": "Introduced",
                 "TextPath": text_path if os.path.exists(text_path) else "",
             })
         print(f"{session}: {sum(1 for m in match_rows if m[2] == session and m[7] == 'matched')} people matched, "
               f"{sum(1 for o in out if o['Session'].startswith(session))} primary-authored bills")
+
+    out.extend(chaptered_rows(ca))
 
     with open(MATCHES, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f, lineterminator="\n")
