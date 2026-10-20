@@ -1,0 +1,37 @@
+bioguide_id,name,chamber,first_year,last_year,filer_name,text_must_name,note
+B001314,Aaron Bean,House,2000,2008,Bean,,House 2000-2008
+P000586,Adam Putnam,House,1998,2000,Putnam,,House 1996-2000
+L000586,Al Lawson,House,1998,2000,Lawson,,House 1982-2000
+L000586,Al Lawson,Senate,2001,2009,Lawson,,Senate 2000-2010
+P000599,Bill Posey,House,1998,2000,Posey,,House 1992-2000
+P000599,Bill Posey,Senate,2001,2008,Posey,,Senate 2000-2008
+C001111,Charlie Crist,Senate,1998,1999,Crist,,Senate 1993-1999; House and 2000+ Senate 'Crist' is Victor Crist
+M001155,Connie Mack,House,2000,2003,Mack,,House 2000-2003 (Connie Mack IV)
+W000806,Daniel Webster,House,1998,1998,Webster,,House to 1998
+W000806,Daniel Webster,Senate,1999,2008,Webster,,Senate 1998-2008
+S001200,Darren Soto,House,2007,2009,Soto,,House 2007-2012
+R000590,David Rivera,House,2002,2009,Rivera,,House 2002-2010
+W000797,Debbie Wasserman Schultz,House,1998,2000,Wasserman Schultz,,House 1992-2000
+W000797,Debbie Wasserman Schultz,Senate,2001,2004,Wasserman Schultz,,Senate 2000-2004
+R000593,Dennis Ross,House,2000,2008,Ross,,House 2000-2008
+W000808,Frederica Wilson,House,1998,2002,Wilson,,House 1998-2002
+W000808,Frederica Wilson,Senate,2003,2009,Wilson,,Senate 2002-2010
+B001247,Ginny Brown-Waite,Senate,1998,2002,Brown-Waite,,Senate 1993-2003
+B001257,Gus Bilirakis,House,1998,2006,Bilirakis,,House 1998-2006
+M001144,Jeff Miller,House,1999,2000,Miller,J. Miller,"House 1998-2001; Les Miller also in the House 1999-2000, so the filed text must say 'J. Miller'"
+M001144,Jeff Miller,House,2001,2001,Miller,,House 2001: the only House Miller (Les Miller had moved to the Senate)
+P000622,Jimmy Patronis,House,2006,2009,Patronis,,House 2006-2014
+H001035,Katherine Harris,Senate,1998,1998,Harris,,Senate 1994-1998
+M001148,Kendrick Meek,House,1998,1998,Meek,,House 1995-1998
+M001148,Kendrick Meek,Senate,1999,2002,Meek,,Senate 1998-2002
+F000462,Lois Frankel,House,1998,2002,Frankel,,House 1994-2002
+R000595,Marco Rubio,House,2000,2008,Rubio,,House 2000-2008
+D000600,Mario Diaz-Balart,Senate,1998,2000,Diaz-Balart,,Senate 1992-2000
+D000600,Mario Diaz-Balart,House,2001,2002,Diaz-Balart,,House 2000-2002
+H001099,Mike Haridopolos,House,2000,2003,Haridopolos,,House 2000-2003
+H001099,Mike Haridopolos,Senate,2003,2009,Haridopolos,,Senate 2003-2012
+K000366,Ron Klein,Senate,1998,2006,Klein,,Senate 1996-2006
+A000366,Sandy Adams,House,2002,2009,Adams,,House 2002-2010
+K000370,Suzanne Kosmas,House,1998,2004,Kosmas,,House 1996-2004
+D000610,Ted Deutch,Senate,2006,2009,Deutch,,Senate 2006-2010
+F000447,Tom Feeney,House,1998,2002,Feeney,,House 1990-2002

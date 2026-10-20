@@ -56,7 +56,7 @@ ALLOWED = {
     1: {"federal_chamber": {"House", "Senate", "Both"}},
     2: {"gender": {"Male", "Female"}, "veteran": {"Yes", "No", "Not found"}},
     3: {"level": {"Federal", "State"}, "chamber": {"House", "Senate", "Upper", "Lower"}},
-    4: {"text_source": {"LegiScan", "California Legislature"},
+    4: {"text_source": {"LegiScan", "California Legislature", "Florida Legislature"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Engrossed", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -230,7 +230,12 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "California Legislature":
+                if n == 4 and r.text_source == "Florida Legislature":
+                    _, sess, num = r.bill_id.split("-", 2)
+                    digits = re.sub(r"\D", "", num)
+                    url = f"https://www.flsenate.gov/Session/Bill/{sess}/{digits}"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "California Legislature":
                     _, yr, num = r.bill_id.split("-", 2)
                     m = re.match(r"([A-Z]+?)(\d+)(?:X(\d+))?$", num)
                     if int(yr) >= 1999:

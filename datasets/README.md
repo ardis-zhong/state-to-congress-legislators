@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 47,559 bills, 278 people (2008 on; California from 1989); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 50,633 bills, 296 people (2008 on; California from 1989, Florida from 1998); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -92,12 +92,13 @@ on which the person is the only listed sponsor. Co-sponsors are excluded, as
 are bills from those role-less sessions with more than one listed sponsor,
 since the primary sponsor can't be told apart. `bioguide_id`, `name`,
 `bill_id` (state-LegiScan session ID-bill number, e.g. `OH-1145-HB144`; for
-California bills from the Legislature's archives, state-session start
-year-bill number, e.g. `CA-1999-AB2027`, with `X1` etc. for extraordinary
-sessions), `bill_name`, `state_session` (the state legislature's session),
+California and Florida bills from the legislatures' archives, state-session
+-bill number, e.g. `CA-1999-AB2027` (`X1` etc. marks extraordinary sessions)
+or `FL-2003A-HB23` (2003 special session A)), `bill_name`, `state_session` (the state legislature's session),
 `congress` (the U.S. Congress in session when the bill was introduced),
 `year` (year introduced; for California 1989–1992, year enacted), `state`,
-`text_source` (`LegiScan` or `California Legislature`), `text_version` (the
+`text_source` (`LegiScan`, `California Legislature`, or
+`Florida Legislature`), `text_version` (the
 version the text is: `Introduced`, or where that isn't available `Prefiled`,
 `Draft`, `Amended`, `Engrossed`, `Enrolled`, or `Chaptered`), `bill_text`.
 Sources: LegiScan API (CC BY 4.0), whose archive starts between 2007 and 2013
@@ -112,7 +113,14 @@ For 1989–1992 the Legislature's archives hold only the bills that became law,
 in their final (chaptered) wording, so those 625 rows are enacted bills only
 (`text_version` = `Chaptered`), counted when the person is the sole lead
 author; filter on `text_version` to exclude them.
-278 people have rows (California from 1989, other states from 2008); for
+For Florida, 1998–2009 bills come from the Florida Senate's website
+(flsenate.gov), which hosts both chambers' bills: the bill as filed, counted
+when the person is its sole filer and the first member named in the text's
+"By …" line (70 bills whose text names another member first are excluded;
+House bills from 2003–2009 print no "By" line, so their filer comes from the
+session's bill list).
+296 people have rows (California from 1989, Florida from 1998, other states
+from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
 York bills); `year`/`congress` then fall back to the bill's status date or

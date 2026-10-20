@@ -267,24 +267,30 @@ def build_table4():
                     f"{r['StateAbbr']}-{r['SessionId']}-{r['BillNumber']}", " ".join(r["Title"].split()),
                     r["SessionTitle"], str(congress), year, r["StateAbbr"], "LegiScan",
                     r["IntroducedDocType"] or "Introduced", text])
-    out.extend(california_rows(people, skip))
+    out.extend(archive_rows(people, skip))
     out.sort(key=lambda x: (x[0], x[6], x[2]))
     return out
 
 
-# California before LegiScan (decided by Ardis 2026-10-17, California state-text pilot):
-# 1999-2008 from the Legislature's database downloads, 1993-1998 from its older website.
-CA_SOURCES = ["ca_state_legislation_sponsored.csv",          # local; ca_pubinfo_bills.py
-              "ca_leginfo_state_legislation_sponsored.csv"]  # local; ca_leginfo_archive.py
+# State bills from before LegiScan's coverage, from the legislatures' own archives (state-text
+# pilots, decided by Ardis 2026-10-17/18). California: 1989-1992 and 1999-2008 from the
+# Legislature's database downloads, 1993-1998 from its older website. Florida: 1998-2009 from
+# flsenate.gov, which hosts both chambers' bills.
+ARCHIVE_SOURCES = [
+    ("ca_state_legislation_sponsored.csv", "CA", "California Legislature"),          # local; ca_pubinfo_bills.py
+    ("ca_leginfo_state_legislation_sponsored.csv", "CA", "California Legislature"),  # local; ca_leginfo_archive.py
+    ("fl_state_legislation_sponsored.csv", "FL", "Florida Legislature"),             # local; fl_senate_bills.py
+]
 
 
-def california_rows(people, skip):
-    """Table 4 rows for California bills from the Legislature's own archives. bill_id =
-    CA-<session start year>-<type><number>, plus X<n> for extraordinary sessions. 1989-1992
-    rows are enacted bills only, in their chaptered version (text_version = Chaptered), and
-    their year is the year chaptered (these archives have no introduced date)."""
+def archive_rows(people, skip):
+    """Table 4 rows for bills from state legislatures' own archives. bill_id =
+    <state>-<session>-<type><number>: CA-<session start year>-AB2027 (X<n> marks extraordinary
+    sessions), FL-<session code>-HB1705 (e.g. FL-2003A-HB23 for a special session). California
+    1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
+    with the year chaptered as year. Without an introduced date, year = the session's first year."""
     out = []
-    for path in CA_SOURCES:
+    for path, state, source in ARCHIVE_SOURCES:
         if not os.path.exists(path):
             continue
         with open(path, newline="", encoding="utf-8") as f:
@@ -301,7 +307,7 @@ def california_rows(people, skip):
                 else:
                     year, congress = lo, (lo - 1787) // 2
                 out.append([r["BioguideId"], people[r["BioguideId"]][0], r["BillId"], " ".join(r["Title"].split()),
-                            r["Session"], str(congress), year, "CA", "California Legislature",
+                            r["Session"], str(congress), year, state, source,
                             r.get("TextVersion") or "Introduced", text])
     return out
 
