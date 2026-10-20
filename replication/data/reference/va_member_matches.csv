@@ -1,0 +1,150 @@
+bioguide_id,name,year,session_code,member_id,member_name,status
+C001046,Eric Cantor,1994,941,H13,Eric I. Cantor,matched
+F000445,J. Randy Forbes,1994,941,H36,J. Randy Forbes,matched
+G000280,Virgil Goode,1994,941,S11,"Virgil H. Goode, Jr.",matched
+G000568,Morgan Griffith,1994,941,H39,H. Morgan Griffith,matched
+C001046,Eric Cantor,1994,942,H13,Eric I. Cantor,matched
+F000445,J. Randy Forbes,1994,942,H36,J. Randy Forbes,matched
+G000280,Virgil Goode,1994,942,S11,"Virgil H. Goode, Jr.",matched
+G000568,Morgan Griffith,1994,942,H39,H. Morgan Griffith,matched
+C001046,Eric Cantor,1994,943,H13,Eric I. Cantor,matched
+F000445,J. Randy Forbes,1994,943,H36,J. Randy Forbes,matched
+G000280,Virgil Goode,1994,943,S11,"Virgil H. Goode, Jr.",matched
+G000568,Morgan Griffith,1994,943,H39,H. Morgan Griffith,matched
+C001046,Eric Cantor,1995,951,H13,Eric I. Cantor,matched
+F000445,J. Randy Forbes,1995,951,H36,J. Randy Forbes,matched
+G000280,Virgil Goode,1995,951,S11,"Virgil H. Goode, Jr.",matched
+G000568,Morgan Griffith,1995,951,H39,H. Morgan Griffith,matched
+C001046,Eric Cantor,1996,961,H13,Eric I. Cantor,matched
+D000605,Thelma Drake,1996,961,H103,Thelma S. Drake,matched
+F000445,J. Randy Forbes,1996,961,H36,J. Randy Forbes,matched
+G000280,Virgil Goode,1996,961,S11,"Virgil H. Goode, Jr.",matched
+G000568,Morgan Griffith,1996,961,H39,H. Morgan Griffith,matched
+M001200,Donald McEachin,1996,961,H105,A. Donald McEachin,matched
+S001151,Ed Schrock,1996,961,S44,Edward L. Schrock,matched
+C001046,Eric Cantor,1997,971,H13,Eric I. Cantor,matched
+D000605,Thelma Drake,1997,971,H103,Thelma S. Drake,matched
+F000445,J. Randy Forbes,1997,971,H36,J. Randy Forbes,matched
+G000280,Virgil Goode,1997,971,,,not in member list
+G000568,Morgan Griffith,1997,971,H39,H. Morgan Griffith,matched
+M001200,Donald McEachin,1997,971,H105,A. Donald McEachin,matched
+S001151,Ed Schrock,1997,971,S44,Edward L. Schrock,matched
+C001046,Eric Cantor,1998,981,H13,Eric I. Cantor,matched
+D000597,Jo Ann Davis,1998,981,H116,Jo Ann S. Davis,matched
+D000605,Thelma Drake,1998,981,H103,Thelma S. Drake,matched
+F000445,J. Randy Forbes,1998,981,S53,J. Randy Forbes,matched
+G000568,Morgan Griffith,1998,981,H39,H. Morgan Griffith,matched
+M001200,Donald McEachin,1998,981,H105,A. Donald McEachin,matched
+S001151,Ed Schrock,1998,981,S44,Edward L. Schrock,matched
+C001046,Eric Cantor,1998,982,H13,Eric I. Cantor,matched
+D000597,Jo Ann Davis,1998,982,H116,Jo Ann S. Davis,matched
+D000605,Thelma Drake,1998,982,H103,Thelma S. Drake,matched
+F000445,J. Randy Forbes,1998,982,S53,J. Randy Forbes,matched
+G000568,Morgan Griffith,1998,982,H39,H. Morgan Griffith,matched
+M001200,Donald McEachin,1998,982,H105,A. Donald McEachin,matched
+S001151,Ed Schrock,1998,982,S44,Edward L. Schrock,matched
+B001213,Leslie Byrne,1999,991,,,not in member list
+C001046,Eric Cantor,1999,991,H13,Eric I. Cantor,matched
+D000597,Jo Ann Davis,1999,991,H116,Jo Ann S. Davis,matched
+D000605,Thelma Drake,1999,991,H103,Thelma S. Drake,matched
+F000445,J. Randy Forbes,1999,991,S53,J. Randy Forbes,matched
+G000568,Morgan Griffith,1999,991,H39,H. Morgan Griffith,matched
+M001200,Donald McEachin,1999,991,H105,A. Donald McEachin,matched
+S001151,Ed Schrock,1999,991,S44,Edward L. Schrock,matched
+B001213,Leslie Byrne,2000,001,S56,Leslie L. Byrne,matched
+C001046,Eric Cantor,2000,001,H13,Eric I. Cantor,matched
+D000597,Jo Ann Davis,2000,001,H116,Jo Ann S. Davis,matched
+D000605,Thelma Drake,2000,001,H103,Thelma Drake,matched
+F000445,J. Randy Forbes,2000,001,S53,J. Randy Forbes,matched
+G000568,Morgan Griffith,2000,001,H39,H. Morgan Griffith,matched
+M001200,Donald McEachin,2000,001,H105,A. Donald McEachin,matched
+S001151,Ed Schrock,2000,001,S44,Edward L. Schrock,matched
+B001213,Leslie Byrne,2001,011,S56,Leslie L. Byrne,matched
+C001046,Eric Cantor,2001,011,,,not in member list
+D000597,Jo Ann Davis,2001,011,,,not in member list
+D000605,Thelma Drake,2001,011,H103,Thelma Drake,matched
+F000445,J. Randy Forbes,2001,011,S53,J. Randy Forbes,matched
+G000568,Morgan Griffith,2001,011,H39,H. Morgan Griffith,matched
+M001200,Donald McEachin,2001,011,H105,A. Donald McEachin,matched
+S001151,Ed Schrock,2001,011,,,not in member list
+B001213,Leslie Byrne,2001,012,S56,Leslie L. Byrne,matched
+C001046,Eric Cantor,2001,012,,,not in member list
+D000597,Jo Ann Davis,2001,012,,,not in member list
+D000605,Thelma Drake,2001,012,H103,Thelma Drake,matched
+F000445,J. Randy Forbes,2001,012,,,not in member list
+G000568,Morgan Griffith,2001,012,H39,H. Morgan Griffith,matched
+M001200,Donald McEachin,2001,012,H105,A. Donald McEachin,matched
+S001151,Ed Schrock,2001,012,,,not in member list
+B001213,Leslie Byrne,2002,021,S56,Leslie L. Byrne,matched
+C001118,Ben Cline,2002,021,,,not in member list
+D000605,Thelma Drake,2002,021,H103,Thelma Drake,matched
+G000568,Morgan Griffith,2002,021,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2002,021,H146,Robert Hurt,matched
+M001200,Donald McEachin,2002,021,,,not in member list
+B001213,Leslie Byrne,2003,031,S56,Leslie L. Byrne,matched
+C001118,Ben Cline,2003,031,H161,Benjamin L. Cline,matched
+D000605,Thelma Drake,2003,031,H103,Thelma Drake,matched
+G000568,Morgan Griffith,2003,031,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2003,031,H146,Robert Hurt,matched
+B001213,Leslie Byrne,2004,041,,,not in member list
+C001118,Ben Cline,2004,041,H161,Benjamin L. Cline,matched
+D000605,Thelma Drake,2004,041,H103,Thelma Drake,matched
+G000568,Morgan Griffith,2004,041,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2004,041,H146,Robert Hurt,matched
+B001213,Leslie Byrne,2004,042,,,not in member list
+C001118,Ben Cline,2004,042,H161,Benjamin L. Cline,matched
+D000605,Thelma Drake,2004,042,H103,Thelma Drake,matched
+G000568,Morgan Griffith,2004,042,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2004,042,H146,Robert Hurt,matched
+B001213,Leslie Byrne,2004,043,,,not in member list
+C001118,Ben Cline,2004,043,H161,Benjamin L. Cline,matched
+D000605,Thelma Drake,2004,043,H103,Thelma Drake,matched
+G000568,Morgan Griffith,2004,043,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2004,043,H146,Robert Hurt,matched
+C001118,Ben Cline,2005,051,H161,Benjamin L. Cline,matched
+D000605,Thelma Drake,2005,051,,,not in member list
+G000568,Morgan Griffith,2005,051,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2005,051,H146,Robert Hurt,matched
+C001118,Ben Cline,2006,061,H161,Benjamin L. Cline,matched
+G000568,Morgan Griffith,2006,061,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2006,061,H146,Robert Hurt,matched
+M001200,Donald McEachin,2006,061,H186,A. Donald McEachin,matched
+M001227,Jennifer McClellan,2006,061,H185,Jennifer L. McClellan,matched
+W000804,Rob Wittman,2006,061,H191,Robert J. Wittman,matched
+C001118,Ben Cline,2006,062,H161,Benjamin L. Cline,matched
+G000568,Morgan Griffith,2006,062,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2006,062,H146,Robert Hurt,matched
+M001200,Donald McEachin,2006,062,H186,A. Donald McEachin,matched
+M001227,Jennifer McClellan,2006,062,H185,Jennifer L. McClellan,matched
+W000804,Rob Wittman,2006,062,H191,Robert J. Wittman,matched
+C001118,Ben Cline,2007,071,H161,Benjamin L. Cline,matched
+G000568,Morgan Griffith,2007,071,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2007,071,H146,Robert Hurt,matched
+M001200,Donald McEachin,2007,071,H186,A. Donald McEachin,matched
+M001227,Jennifer McClellan,2007,071,H185,Jennifer L. McClellan,matched
+W000804,Rob Wittman,2007,071,H191,Robert J. Wittman,matched
+C001118,Ben Cline,2008,081,H161,Benjamin L. Cline,matched
+G000568,Morgan Griffith,2008,081,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2008,081,S72,Robert Hurt,matched
+M001200,Donald McEachin,2008,081,S73,A. Donald McEachin,matched
+M001227,Jennifer McClellan,2008,081,H185,Jennifer L. McClellan,matched
+C001118,Ben Cline,2008,082,H161,Benjamin L. Cline,matched
+G000568,Morgan Griffith,2008,082,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2008,082,S72,Robert Hurt,matched
+M001200,Donald McEachin,2008,082,S73,A. Donald McEachin,matched
+M001227,Jennifer McClellan,2008,082,H185,Jennifer L. McClellan,matched
+C001118,Ben Cline,2008,083,H161,Benjamin L. Cline,matched
+G000568,Morgan Griffith,2008,083,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2008,083,S72,Robert Hurt,matched
+M001200,Donald McEachin,2008,083,S73,A. Donald McEachin,matched
+M001227,Jennifer McClellan,2008,083,H185,Jennifer L. McClellan,matched
+C001118,Ben Cline,2009,091,H161,Benjamin L. Cline,matched
+G000568,Morgan Griffith,2009,091,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2009,091,S72,Robert Hurt,matched
+M001200,Donald McEachin,2009,091,S73,A. Donald McEachin,matched
+M001227,Jennifer McClellan,2009,091,H185,Jennifer L. McClellan,matched
+C001118,Ben Cline,2009,092,H161,Benjamin L. Cline,matched
+G000568,Morgan Griffith,2009,092,H39,H. Morgan Griffith,matched
+H001060,Robert Hurt,2009,092,S72,Robert Hurt,matched
+M001200,Donald McEachin,2009,092,S73,A. Donald McEachin,matched
+M001227,Jennifer McClellan,2009,092,H185,Jennifer L. McClellan,matched
