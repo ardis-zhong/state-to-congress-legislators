@@ -56,8 +56,9 @@ ALLOWED = {
     1: {"federal_chamber": {"House", "Senate", "Both"}},
     2: {"gender": {"Male", "Female"}, "veteran": {"Yes", "No", "Not found"}},
     3: {"level": {"Federal", "State"}, "chamber": {"House", "Senate", "Upper", "Lower"}},
-    4: {"text_source": {"LegiScan", "California Legislature", "Florida Legislature", "Virginia General Assembly"},
-        "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Engrossed", "Enrolled", "Chaptered"}},
+    4: {"text_source": {"LegiScan", "California Legislature", "Florida Legislature", "Virginia General Assembly",
+                         "Ohio General Assembly"},
+        "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
 }
@@ -230,7 +231,11 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "Virginia General Assembly":
+                if n == 4 and r.text_source == "Ohio General Assembly":
+                    _, ga, num = r.bill_id.split("-", 2)
+                    url = f"https://www.legislature.ohio.gov/legislation/{ga[2:5]}/{num.lower()}"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Virginia General Assembly":
                     _, sess, num = r.bill_id.split("-", 2)
                     url = f"https://legacylis.virginia.gov/cgi-bin/legp604.exe?{sess}+sum+{num}"
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
