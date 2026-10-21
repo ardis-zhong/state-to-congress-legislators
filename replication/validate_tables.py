@@ -57,7 +57,7 @@ ALLOWED = {
     2: {"gender": {"Male", "Female"}, "veteran": {"Yes", "No", "Not found"}},
     3: {"level": {"Federal", "State"}, "chamber": {"House", "Senate", "Upper", "Lower"}},
     4: {"text_source": {"LegiScan", "California Legislature", "Florida Legislature", "Virginia General Assembly",
-                         "Ohio General Assembly"},
+                         "Ohio General Assembly", "Illinois General Assembly"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -231,7 +231,14 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "Ohio General Assembly":
+                if n == 4 and r.text_source == "Illinois General Assembly":
+                    _, ga, num = r.bill_id.split("-", 2)
+                    typ, digits = re.match(r"([A-Z]+)(\d+)", num).groups()
+                    url = (f"https://www.ilga.gov/documents/legislation/legisnet{ga[2:]}/summary/{ga[2:]}0{typ}{int(digits):04d}.html"
+                           if int(ga[2:]) <= 92 else f"https://ftp.ilga.gov/legislation/{ga[2:]}/BillStatus/XML/0{ga[2:]}00"
+                           f"{dict(HJR='HJ', SJR='SJ', HJRCA='HC', SJRCA='SC').get(typ, typ)}{int(digits):04d}.xml")
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Ohio General Assembly":
                     _, ga, num = r.bill_id.split("-", 2)
                     url = f"https://www.legislature.ohio.gov/legislation/{ga[2:5]}/{num.lower()}"
                     detail = f"{r.state_session}; {r.bill_name[:60]}"

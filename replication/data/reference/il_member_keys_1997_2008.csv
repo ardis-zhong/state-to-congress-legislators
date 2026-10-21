@@ -1,0 +1,40 @@
+ga,bioguide_id,name,key,member_id,chamber,page_name,note
+90,B001232,Judy Biggert,BIGGERT,,House,Judy Biggert,
+90,B001295,Mike Bost,BOST,,House,Mike Bost,
+90,F000442,Peter Fitzgerald,FITZGERALD,,Senate,Peter Fitzgerald,
+90,G000586,"Jesus ""Chuy"" Garcia",GARCIA,,Senate,GARCIA,page header prints key only; Senate GARCIA in 1997-98 = Jesus Garcia (IL Senate 1993-99)
+90,H001044,Debbie Halvorson,HALVORSON,,Senate,Debbie Halvorson,
+90,J000285,Tim Johnson,"JOHNSON,TIM",,House,"JOHNSON,TIM","Tim Johnson (not Thomas L. Johnson, who has the key JOHNSON in 2001-02)"
+90,O000167,Barack Obama,OBAMA,,Senate,Barack Obama,
+90,P000584,David D. Phelps,PHELPS,,House,David Phelps,"David Phelps (Brandon W. Phelps, 2003-08 member lists, is a different person)"
+90,R000580,Peter Roskam,ROSKAM,,Senate,Peter J. Roskam,"Legisnet labels him Senator (latest title); House 1993-99, Senate from 2000"
+90,S001145,Janice Schakowsky,SCHAKOWSKY,,House,Janice Schakowsky,
+91,B001295,Mike Bost,BOST,,House,Mike Bost,
+91,H001044,Debbie Halvorson,HALVORSON,,Senate,Debbie Halvorson,
+91,H001059,Randy Hultgren,HULTGREN,,House,Randall M. Hultgren,
+91,J000285,Tim Johnson,"JOHNSON,TIM",,House,Tim Johnson,Tim Johnson (not Thomas L. Johnson)
+91,O000167,Barack Obama,OBAMA,,Senate,Barack Obama,
+91,R000580,Peter Roskam,ROSKAM,,Senate,Peter J. Roskam,"Legisnet labels him Senator (latest title); House 1993-99, Senate from 2000"
+92,B001295,Mike Bost,BOST,,House,Mike Bost,
+92,H001044,Debbie Halvorson,HALVORSON,,Senate,Debbie Halvorson,
+92,H001059,Randy Hultgren,HULTGREN,,House,Randall M. Hultgren,
+92,O000167,Barack Obama,OBAMA,,Senate,Barack Obama,
+92,R000580,Peter Roskam,ROSKAM,,Senate,Peter J. Roskam,
+93,B001295,Mike Bost,,604,House,Mike Bost,
+93,H001059,Randy Hultgren,,643,House,Randall M. Hultgren,
+93,K000385,Robin Kelly,,847,House,Robin Kelly,
+93,H001044,Debbie Halvorson,,727,Senate,Debbie DeFrancesco Halvorson,
+93,O000167,Barack Obama,,747,Senate,Barack Obama,
+93,R000580,Peter Roskam,,757,Senate,Peter J. Roskam,
+94,B001295,Mike Bost,,896,House,Mike Bost,
+94,H001059,Randy Hultgren,,926,House,Randall M. Hultgren,
+94,K000385,Robin Kelly,,1043,House,Robin Kelly,
+94,S001179,Aaron Schock,,1117,House,Aaron Schock,
+94,H001044,Debbie Halvorson,,987,Senate,Debbie DeFrancesco Halvorson,
+94,H001059,Randy Hultgren,,1335,Senate,Randy Hultgren,
+94,R000580,Peter Roskam,,1006,Senate,Peter J. Roskam,
+95,B001295,Mike Bost,,1138,House,Mike Bost,
+95,K000385,Robin Kelly,,1263,House,Robin Kelly,
+95,S001179,Aaron Schock,,1302,House,Aaron Schock,
+95,H001044,Debbie Halvorson,,1214,Senate,Debbie DeFrancesco Halvorson,
+95,H001059,Randy Hultgren,,1330,Senate,Randall M. Hultgren,

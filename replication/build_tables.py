@@ -277,13 +277,15 @@ def build_table4():
 # Legislature's database downloads, 1993-1998 from its older website. Florida: 1998-2009 from
 # flsenate.gov, which hosts both chambers' bills. Virginia: 1994-2009 from the legacy Legislative
 # Information System (members' chief-patron lists). Ohio: 1997-2008 from the Ohio Legislature's
-# public legislation data service (primary sponsors).
+# public legislation data service (primary sponsors). Illinois: 1997-2008 from the General Assembly's
+# legacy Legisnet archive and file repository (chief sponsors who introduced the bill).
 ARCHIVE_SOURCES = [
     ("ca_state_legislation_sponsored.csv", "CA", "California Legislature"),          # local; ca_pubinfo_bills.py
     ("ca_leginfo_state_legislation_sponsored.csv", "CA", "California Legislature"),  # local; ca_leginfo_archive.py
     ("fl_state_legislation_sponsored.csv", "FL", "Florida Legislature"),             # local; fl_senate_bills.py
     ("va_state_legislation_sponsored.csv", "VA", "Virginia General Assembly"),       # local; va_lis_bills.py
     ("oh_state_legislation_sponsored.csv", "OH", "Ohio General Assembly"),           # local; oh_solar_bills.py
+    ("il_state_legislation_sponsored.csv", "IL", "Illinois General Assembly"),       # local; il_ilga_bills.py
 ]
 
 
@@ -292,7 +294,8 @@ def archive_rows(people, skip):
     <state>-<session>-<type><number>: CA-<session start year>-AB2027 (X<n> marks extraordinary
     sessions), FL-<session code>-HB1705 (e.g. FL-2003A-HB23 for a special session),
     VA-<LIS session code>-HB120 (e.g. VA-941-HB120, 1994 regular session), OH-GA<General
-    Assembly>-HB103 (e.g. OH-GA122-HB103, 1997-1998). California
+    Assembly>-HB103 (e.g. OH-GA122-HB103, 1997-1998), IL-GA<General Assembly>-SB84 (e.g.
+    IL-GA90-SB84, 1997-1998). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year. Without an introduced date, year = the session's first year."""
     out = []
