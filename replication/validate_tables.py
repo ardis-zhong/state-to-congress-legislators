@@ -57,7 +57,8 @@ ALLOWED = {
     2: {"gender": {"Male", "Female"}, "veteran": {"Yes", "No", "Not found"}},
     3: {"level": {"Federal", "State"}, "chamber": {"House", "Senate", "Upper", "Lower"}},
     4: {"text_source": {"LegiScan", "California Legislature", "Florida Legislature", "Virginia General Assembly",
-                         "Ohio General Assembly", "Illinois General Assembly", "Michigan Legislature"},
+                         "Ohio General Assembly", "Illinois General Assembly", "Michigan Legislature",
+                         "West Virginia Legislature", "Maryland General Assembly"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -231,7 +232,18 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "Michigan Legislature":
+                if n == 4 and r.text_source == "Maryland General Assembly":
+                    _, yr, num = r.bill_id.split("-", 2)
+                    typ, digits = re.match(r"([A-Z]+)(\d+)", num).groups()
+                    url = f"https://mgaleg.maryland.gov/{yr}rs/billfile/{typ.lower()}{int(digits):04d}.htm"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "West Virginia Legislature":
+                    _, sess, num = r.bill_id.split("-", 2)
+                    st, digits = sess[4:] or "RS", re.sub(r"\D", "", num)
+                    url = (f"https://www.wvlegislature.gov/Bill_Status/Bills_history.cfm?input={digits}"
+                           f"&year={sess[:4]}&sessiontype={st}&btype=bill")
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Michigan Legislature":
                     _, start, num = r.bill_id.split("-", 2)
                     typ, digits = re.match(r"([A-Z]+)(\d+)", num).groups()
                     url = f"https://www.legislature.mi.gov/Bills/Bill?ObjectName={r.year}-{typ}-{int(digits):04d}"
