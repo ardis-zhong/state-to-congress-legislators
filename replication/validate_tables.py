@@ -58,7 +58,8 @@ ALLOWED = {
     3: {"level": {"Federal", "State"}, "chamber": {"House", "Senate", "Upper", "Lower"}},
     4: {"text_source": {"LegiScan", "California Legislature", "Florida Legislature", "Virginia General Assembly",
                          "Ohio General Assembly", "Illinois General Assembly", "Michigan Legislature",
-                         "West Virginia Legislature", "Maryland General Assembly"},
+                         "West Virginia Legislature", "Maryland General Assembly",
+                         "Pennsylvania General Assembly"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -232,7 +233,11 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "Maryland General Assembly":
+                if n == 4 and r.text_source == "Pennsylvania General Assembly":
+                    _, yr, num = r.bill_id.split("-", 2)
+                    url = f"https://www.palegis.us/legislation/bills/{yr}/{num.lower()}"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Maryland General Assembly":
                     _, yr, num = r.bill_id.split("-", 2)
                     typ, digits = re.match(r"([A-Z]+)(\d+)", num).groups()
                     url = f"https://mgaleg.maryland.gov/{yr}rs/billfile/{typ.lower()}{int(digits):04d}.htm"
