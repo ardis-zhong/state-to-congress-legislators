@@ -214,6 +214,20 @@ def crawl_texts(limit=0):
                     "TextPath": text_path})
         if i % 100 == 0:
             print(f"  ...{i}/{len(bills)}", flush=True)
+    # a bill continued from an even-year session to the next year's is on both years' chief-patron lists
+    # with the same text: keep the session it was introduced in
+    texts = {}
+    for o in out:
+        if o["TextPath"]:
+            with open(o["TextPath"], encoding="utf-8") as f:
+                texts[o["BillId"]] = f.read()
+    carried = {o["BillId"] for o in out for p in out
+               if o["TextPath"] and p["TextPath"] and o["BioguideId"] == p["BioguideId"]
+               and o["BillNumber"] == p["BillNumber"] and o["Session"][:4] == str(int(p["Session"][:4]) + 1)
+               and texts[o["BillId"]] == texts[p["BillId"]]}
+    if carried:
+        print(f"  {len(carried)} continued bills listed again the next year dropped: {sorted(carried)}")
+    out = [o for o in out if o["BillId"] not in carried]
     with open(TEXT_OUT, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(out[0]), lineterminator="\n")
         w.writeheader()

@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 62,450 bills, 371 people (2008 on; Pennsylvania from 1969, California and Michigan from 1989, Virginia from 1994, Maryland from 1996, Ohio and Illinois from 1997, Florida from 1998); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 62,955 bills, 374 people (2008 on; Pennsylvania from 1969, California and Michigan from 1989, West Virginia from 1993, Virginia from 1994, Maryland from 1996, Ohio and Illinois from 1997, Florida from 1998); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -98,14 +98,14 @@ extraordinary sessions), `FL-2003A-HB23` (2003 special session A),
 `VA-941-HB120` (Virginia's 1994 regular session), `OH-GA122-HB103` (Ohio's
 122nd General Assembly, 1997–1998), or `IL-GA90-SB84` (Illinois's 90th General
 Assembly, 1997–1998), `MI-1989-HB4001` (Michigan's 1989–1990 session), `MD-1999-SB193`
-(Maryland's 1999 session), or `PA-1969-HB100` (Pennsylvania's 1969–1970
-session)), `bill_name`, `state_session` (the state legislature's session),
+(Maryland's 1999 session), `PA-1969-HB100` (Pennsylvania's 1969–1970
+session), or `WV-1997-HB2234` (West Virginia's 1997 regular session)), `bill_name`, `state_session` (the state legislature's session),
 `congress` (the U.S. Congress in session when the bill was introduced),
 `year` (year introduced; for California 1989–1992, year enacted), `state`,
 `text_source` (`LegiScan`, `California Legislature`, `Florida Legislature`,
 `Virginia General Assembly`, `Ohio General Assembly`, `Illinois General
-Assembly`, `Michigan Legislature`, `Maryland General Assembly`, or
-`Pennsylvania General Assembly`),
+Assembly`, `Michigan Legislature`, `Maryland General Assembly`,
+`Pennsylvania General Assembly`, or `West Virginia Legislature`),
 `text_version` (the
 version the text is: `Introduced`, or where that isn't available `Prefiled`,
 `Draft`, `Amended`, `Reported`, `Engrossed`, `Adopted`, `Enrolled`, or
@@ -131,7 +131,8 @@ session's bill list).
 For Virginia, 1994–2009 bills come from the General Assembly's legacy
 Legislative Information System (legacylis.virginia.gov): each member's
 "Legislation as Chief Patron" list for every session, and each bill's text as
-offered; the text's "Patron--" line names the person first for all 2,219.
+offered; the text's "Patron--" line names the person first for all 2,213 (6 bills continued to the next year's
+session are counted once, in the session they were introduced).
 For Ohio, 1997–2008 bills come from the Ohio Legislature's public legislation
 data service (search-prod.lis.state.oh.us, which serves legislature.ohio.gov):
 every bill and resolution on which the person is a primary sponsor (joint
@@ -175,9 +176,15 @@ Dougherty). Because those records are unreliable, every Senate bill of the
 1971, 1973, 1975 and 1977 sessions (7,097) was read as introduced, and the
 ones whose "Introduced by" line names one of our senators first were added
 (581 bills).
-371 people have rows (Pennsylvania from 1969, California and Michigan from
-1989, Virginia from 1994, Maryland from 1996, Ohio and Illinois from 1997,
-Florida from 1998, other states from 2008); for
+For West Virginia, 1993–2009 bills come from the Legislature's bill status
+archive (wvlegislature.gov): each member's sponsored bills for every session,
+kept when the bill's history names the person lead sponsor, with the bill as
+introduced; its "(By Delegates/Senators ...)" line names the person first for
+all but one (excluded). Bills carried over into the second year of a
+Legislature are counted once, in the year introduced.
+374 people have rows (Pennsylvania from 1969, California and Michigan from
+1989, West Virginia from 1993, Virginia from 1994, Maryland from 1996, Ohio
+and Illinois from 1997, Florida from 1998, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
 York bills); `year`/`congress` then fall back to the bill's status date or
