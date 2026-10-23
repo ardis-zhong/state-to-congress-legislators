@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 61,869 bills, 370 people (2008 on; Pennsylvania from 1969, California and Michigan from 1989, Virginia from 1994, Maryland from 1996, Ohio and Illinois from 1997, Florida from 1998); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 62,450 bills, 371 people (2008 on; Pennsylvania from 1969, California and Michigan from 1989, Virginia from 1994, Maryland from 1996, Ohio and Illinois from 1997, Florida from 1998); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -171,9 +171,11 @@ session, keeping the bills marked "Prime Sponsor", with the bill as introduced
 A bill counts when the text's "Introduced by" line names the person first:
 313 are excluded, most of them 1970s Senate bills that the website credits to
 the wrong senator (e.g. Edward Zemprelli's bills listed under Charles
-Dougherty). Because of those misattributions, some 1970s senators' own bills
-are missing (Charles Dougherty has none).
-370 people have rows (Pennsylvania from 1969, California and Michigan from
+Dougherty). Because those records are unreliable, every Senate bill of the
+1971, 1973, 1975 and 1977 sessions (7,097) was read as introduced, and the
+ones whose "Introduced by" line names one of our senators first were added
+(581 bills).
+371 people have rows (Pennsylvania from 1969, California and Michigan from
 1989, Virginia from 1994, Maryland from 1996, Ohio and Illinois from 1997,
 Florida from 1998, other states from 2008); for
 those whose state service began earlier these are bills from the covered

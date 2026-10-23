@@ -49,6 +49,13 @@ PEOPLE = "replication/data/population/person_level.csv"
 IDS = "replication/data/reference/pa_member_ids_1969_2008.csv"
 CANDIDATES = "pa_member_id_candidates.csv"
 LIST_OUT = "pa_prime_sponsor_bills.csv"
+# 1971-1977 Senate: the website's prime sponsors are wrong for whole member-sessions (e.g. Zemprelli's
+# bills listed under Dougherty), and many bills have no prime sponsor at all (--senate-map samples every
+# senator's listing and shows this). --senate-scan therefore reads every Senate bill of those sessions as
+# introduced and keeps the ones whose "Introduced by" line names one of our senators first.
+SENATE_FIX_SESSIONS = (1971, 1973, 1975, 1977)
+MAP_OUT = "pa_senate_listing_map_1971_1977.csv"
+SCAN_OUT = "pa_senate_scan_1971_1977.csv"
 TEXT_OUT = "pa_state_legislation_sponsored.csv"
 UA = "state-to-congress-legislators/1.0 (research dataset; https://github.com/ardis-zhong/state-to-congress-legislators)"
 DELAY = 4
@@ -186,7 +193,7 @@ def items(page):
 def crawl_lists():
     with open(IDS, newline="", encoding="utf-8") as f:
         ids = list(csv.DictReader(f))
-    out = []
+    out, seen = [], set()
     for k in ids:
         year, mid, body = int(k["session"]), k["member_id"], k["body"].lower()
         first = listing(year, mid, body)
@@ -199,14 +206,84 @@ def crawl_lists():
             print(f"  WARNING {year} {k['name']}: {total} results, {len(found)} parsed")
         prime = [f for f in found if f[2]]
         for typ, num, _, title in prime:
+            if (k["bioguide_id"], year, typ, num) in seen:
+                continue
+            seen.add((k["bioguide_id"], year, typ, num))
             out.append({"session": year, "bioguide_id": k["bioguide_id"], "name": k["name"], "member_id": mid,
                         "body": k["body"], "page_name": k["page_name"], "type": typ, "number": num, "title": title[:300]})
         print(f"{year} {k['name']}: {total} sponsored, {len(prime)} as prime sponsor", flush=True)
+    if os.path.exists(SCAN_OUT):  # 1971-1977 Senate bills found by --senate-scan
+        with open(SCAN_OUT, newline="", encoding="utf-8") as f:
+            for b in csv.DictReader(f):
+                key = (b["bioguide_id"], int(b["session"]), b["type"], int(b["number"]))
+                if key not in seen:
+                    seen.add(key)
+                    out.append({k: b[k] for k in out[0]})
     with open(LIST_OUT, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(out[0]), lineterminator="\n")
         w.writeheader()
         w.writerows(out)
     print(f"Wrote {LIST_OUT}: {len(out)} bills")
+
+
+def senate_map():
+    """For each 1971-1977 senator's listing, the introducers named first in up to three of its
+    prime-sponsored bills: shows whose bills the website files under that senator's id."""
+    rows = []
+    for year in SENATE_FIX_SESSIONS:
+        page = get(f"/legislation/bills?sessYr={year}&sessInd=0", os.path.join(CACHE, "sessions", f"{year}.html"))
+        i = page.find('id="member-select"')
+        opts = re.findall(r'<option value="(\d+)\|S"[^>]*>\s*Senator\s+([^<]+)', page[i:page.find("</select>", i)])
+        for mid, label in opts:
+            prime = [it for it in items(listing(year, mid, "s")) if it[2]][:3]
+            firsts = []
+            for typ, num, _, _ in prime:
+                text, _, _ = introduced_text(year, typ, num)
+                names, _ = introduced_line(text)
+                firsts.append(re.split(r",|AND", names)[0][:20] if names else "?")
+            rows.append({"session": year, "member_id": mid, "label": " ".join(label.split()),
+                         "sampled_bills": " ".join(f"{t}{n}" for t, n, _, _ in prime), "first_named": " ".join(firsts)})
+            print(year, mid, label.strip(), firsts, flush=True)
+    with open(MAP_OUT, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(rows)
+    print(f"Wrote {MAP_OUT}: {len(rows)} senator listings")
+
+
+def senate_scan():
+    """Every Senate bill of the 1971-1977 sessions as introduced (SB 1 upward until 40 numbers in a
+    row have no printing), kept when its "Introduced by" line names one of our senators in that
+    session first (reviewed ids, body S). Writes SCAN_OUT in the LIST_OUT format."""
+    with open(IDS, newline="", encoding="utf-8") as f:
+        senators = [r for r in csv.DictReader(f) if r["body"] == "S" and int(r["session"]) in SENATE_FIX_SESSIONS]
+    out = []
+    for year in SENATE_FIX_SESSIONS:
+        ours = [r for r in senators if int(r["session"]) == year]
+        num, misses = 0, 0
+        while misses < 40:
+            num += 1
+            text, _, pns = introduced_text(year, "SB", num)
+            misses = 0 if pns else misses + 1
+            names, _ = introduced_line(text)
+            for r in ours:
+                surname = re.sub(r"[^A-Z]", "", r["name"].split()[-1].upper())
+                if names and first_named(names, surname):
+                    page = plain(get(f"/legislation/bills/{year}/sb{num}", os.path.join(CACHE, "bills", f"{year}_SB{num}.html")))
+                    title = re.search(r"Meetings\s*\n?\s*((?:An Act|A Joint Resolution|A Resolution|A Concurrent Resolution).*?)\n", page)
+                    out.append({"session": year, "bioguide_id": r["bioguide_id"], "name": r["name"],
+                                "member_id": r["member_id"], "body": "S", "page_name": r["page_name"],
+                                "type": "SB", "number": num, "title": " ".join(title.group(1).split())[:300] if title else "",
+                                "found_by": "senate scan"})
+            if num % 100 == 0:
+                print(f"  {year} SB{num}: {sum(1 for o in out if o['session'] == year)} found", flush=True)
+        print(f"{year}: scanned SB1-SB{num - misses}, {sum(1 for o in out if o['session'] == year)} bills by our senators",
+              flush=True)
+    with open(SCAN_OUT, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=list(out[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(out)
+    print(f"Wrote {SCAN_OUT}: {len(out)} bills")
 
 
 def introduced_line(text):
@@ -236,6 +313,34 @@ def first_named(names, surname):
     return len(surname) >= 5 and difflib.SequenceMatcher(None, first, surname).ratio() >= 0.8
 
 
+def introduced_text(year, typ, num):
+    """(text, txt_path, printer's numbers) for the bill as introduced: its lowest printer's
+    number, as HTM when the bill page links it, else the PDF."""
+    bill_page = get(f"/legislation/bills/{year}/{typ.lower()}{num}", os.path.join(CACHE, "bills", f"{year}_{typ}{num}.html"))
+    pns = sorted({int(p) for p in re.findall(rf"/legislation/bills/text/(?:PDF|HTM)/{year}/0/{typ}{num:04d}/PN(\d+)",
+                                            bill_page)})
+    text, txt_path = "", ""
+    if pns:
+        pn = f"PN{pns[0]:04d}"
+        txt_path = os.path.join(CACHE, "texts", f"{year}_{typ}{num}_{pn}.txt")
+        if os.path.exists(txt_path):
+            with open(txt_path, encoding="utf-8") as f:
+                text = f.read()
+        else:
+            if f"/HTM/{year}/0/{typ}{num:04d}/{pn}" in bill_page:
+                page = get(f"/legislation/bills/text/HTM/{year}/0/{typ}{num:04d}/{pn}",
+                           os.path.join(CACHE, "texts", f"{year}_{typ}{num}_{pn}.htm"))
+                text = plain(page) if page else ""
+            if not text:
+                pdf_path = os.path.join(CACHE, "texts", f"{year}_{typ}{num}_{pn}.pdf")
+                data = get(f"/legislation/bills/text/PDF/{year}/0/{typ}{num:04d}/{pn}", pdf_path, binary=True)
+                text = pdf_text(pdf_path) if data[:4] == b"%PDF" else ""
+            if text:
+                with open(txt_path, "w", encoding="utf-8") as f:
+                    f.write(text)
+    return text, (txt_path if text else ""), pns
+
+
 def crawl_texts(limit=0):
     with open(LIST_OUT, newline="", encoding="utf-8") as f:
         bills = list(csv.DictReader(f))
@@ -245,29 +350,7 @@ def crawl_texts(limit=0):
     out = []
     for i, b in enumerate(bills, 1):
         year, typ, num = b["session"], b["type"], int(b["number"])
-        bill_page = get(f"/legislation/bills/{year}/{typ.lower()}{num}",
-                        os.path.join(CACHE, "bills", f"{year}_{typ}{num}.html"))
-        pns = sorted({int(p) for p in re.findall(rf"/legislation/bills/text/(?:PDF|HTM)/{year}/0/{typ}{num:04d}/PN(\d+)",
-                                                bill_page)})
-        text, txt_path = "", ""
-        if pns:
-            pn = f"PN{pns[0]:04d}"
-            txt_path = os.path.join(CACHE, "texts", f"{year}_{typ}{num}_{pn}.txt")
-            if os.path.exists(txt_path):
-                with open(txt_path, encoding="utf-8") as f:
-                    text = f.read()
-            else:
-                if f"/HTM/{year}/0/{typ}{num:04d}/{pn}" in bill_page:
-                    page = get(f"/legislation/bills/text/HTM/{year}/0/{typ}{num:04d}/{pn}",
-                               os.path.join(CACHE, "texts", f"{year}_{typ}{num}_{pn}.htm"))
-                    text = plain(page) if page else ""
-                if not text:
-                    pdf_path = os.path.join(CACHE, "texts", f"{year}_{typ}{num}_{pn}.pdf")
-                    data = get(f"/legislation/bills/text/PDF/{year}/0/{typ}{num:04d}/{pn}", pdf_path, binary=True)
-                    text = pdf_text(pdf_path) if data[:4] == b"%PDF" else ""
-                if text:
-                    with open(txt_path, "w", encoding="utf-8") as f:
-                        f.write(text)
+        text, txt_path, pns = introduced_text(year, typ, num)
         names, iso = introduced_line(text)
         if iso and not int(year) <= int(iso[:4]) <= int(year) + 1:
             iso = ""  # an OCR misread (e.g. "1363" for 1969)
@@ -279,7 +362,7 @@ def crawl_texts(limit=0):
                     "IntroducedDate": iso, "House": "HOUSE" if typ.startswith("H") else "SENATE",
                     "AuthorName": b["page_name"], "PrintersNumber": f"PN{pns[0]:04d}" if pns else "",
                     "IntroducedBy": names[:200], "IntroducedByMatch": match, "TextVersion": "Introduced",
-                    "TextPath": txt_path if text else ""})
+                    "TextPath": txt_path})
         if i % 100 == 0:
             print(f"  ...{i}/{len(bills)}", flush=True)
     with open(TEXT_OUT, "w", newline="", encoding="utf-8") as f:
@@ -293,12 +376,18 @@ def crawl_texts(limit=0):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--members", action="store_true")
+    ap.add_argument("--senate-map", action="store_true")
+    ap.add_argument("--senate-scan", action="store_true")
     ap.add_argument("--lists", action="store_true")
     ap.add_argument("--texts", action="store_true")
     ap.add_argument("--limit", type=int, default=0, help="--texts: only the first N bills (smoke test)")
     args = ap.parse_args()
     if args.members:
         find_members()
+    if args.senate_map:
+        senate_map()
+    if args.senate_scan:
+        senate_scan()
     if args.lists:
         crawl_lists()
     if args.texts:
