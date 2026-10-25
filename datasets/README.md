@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 62,955 bills, 374 people (2008 on; Pennsylvania from 1969, California and Michigan from 1989, West Virginia from 1993, Virginia from 1994, Maryland from 1996, Ohio and Illinois from 1997, Florida from 1998); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 63,593 bills, 384 people (2008 on; Pennsylvania from 1969, California and Michigan from 1989, Washington from 1991, West Virginia from 1993, Virginia from 1994, Maryland from 1996, Ohio and Illinois from 1997, Florida from 1998); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -99,13 +99,15 @@ extraordinary sessions), `FL-2003A-HB23` (2003 special session A),
 122nd General Assembly, 1997–1998), or `IL-GA90-SB84` (Illinois's 90th General
 Assembly, 1997–1998), `MI-1989-HB4001` (Michigan's 1989–1990 session), `MD-1999-SB193`
 (Maryland's 1999 session), `PA-1969-HB100` (Pennsylvania's 1969–1970
-session), or `WV-1997-HB2234` (West Virginia's 1997 regular session)), `bill_name`, `state_session` (the state legislature's session),
+session), `WV-1997-HB2234` (West Virginia's 1997 regular session), or
+`WA-1991-HB1441` (Washington's 1991–92 biennium)), `bill_name`, `state_session` (the state legislature's session),
 `congress` (the U.S. Congress in session when the bill was introduced),
 `year` (year introduced; for California 1989–1992, year enacted), `state`,
 `text_source` (`LegiScan`, `California Legislature`, `Florida Legislature`,
 `Virginia General Assembly`, `Ohio General Assembly`, `Illinois General
 Assembly`, `Michigan Legislature`, `Maryland General Assembly`,
-`Pennsylvania General Assembly`, or `West Virginia Legislature`),
+`Pennsylvania General Assembly`, `West Virginia Legislature`, or
+`Washington Legislature`),
 `text_version` (the
 version the text is: `Introduced`, or where that isn't available `Prefiled`,
 `Draft`, `Amended`, `Reported`, `Engrossed`, `Adopted`, `Enrolled`, or
@@ -182,8 +184,14 @@ kept when the bill's history names the person lead sponsor, with the bill as
 introduced; its "(By Delegates/Senators ...)" line names the person first for
 all but one (excluded). Bills carried over into the second year of a
 Legislature are counted once, in the year introduced.
-374 people have rows (Pennsylvania from 1969, California and Michigan from
-1989, West Virginia from 1993, Virginia from 1994, Maryland from 1996, Ohio
+For Washington, 1991–2008 bills, memorials and resolutions come from the
+Legislature's website: its "Bills by sponsor" report (primary bills) for each
+biennium, with the bill as introduced from its document archive
+(lawfilesext.leg.wa.gov); the text's "By Representatives/Senators ..." line
+names the person first for all 638 with text.
+384 people have rows (Pennsylvania from 1969, California and Michigan from
+1989, Washington from 1991, West Virginia from 1993, Virginia from 1994,
+Maryland from 1996, Ohio
 and Illinois from 1997, Florida from 1998, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
