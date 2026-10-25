@@ -284,6 +284,7 @@ def build_table4():
 # from the General Assembly's archived session pages (first-named sponsors). Pennsylvania: 1969-2008
 # from palegis.us (prime sponsors; the lowest printer's number is the bill as introduced). Washington:
 # 1991-2008 from the Legislature's Bills by sponsor report and document archive (primary sponsors).
+# North Carolina: 1989-2008 from ncleg.gov (first-named primary sponsor in the introduced text).
 ARCHIVE_SOURCES = [
     ("ca_state_legislation_sponsored.csv", "CA", "California Legislature"),          # local; ca_pubinfo_bills.py
     ("ca_leginfo_state_legislation_sponsored.csv", "CA", "California Legislature"),  # local; ca_leginfo_archive.py
@@ -296,6 +297,7 @@ ARCHIVE_SOURCES = [
     ("md_state_legislation_sponsored.csv", "MD", "Maryland General Assembly"),       # local; md_mga_bills.py
     ("pa_state_legislation_sponsored.csv", "PA", "Pennsylvania General Assembly"),   # local; pa_palegis_bills.py
     ("wa_state_legislation_sponsored.csv", "WA", "Washington Legislature"),          # local; wa_leg_bills.py
+    ("nc_state_legislation_sponsored.csv", "NC", "North Carolina General Assembly"), # local; nc_ncleg_bills.py
 ]
 
 
@@ -308,7 +310,7 @@ def archive_rows(people, skip):
     IL-GA90-SB84, 1997-1998), MI-<session start year>-HB4001 (e.g. MI-1989-HB4001),
     WV-<year>[<special session>]-HB2234 (e.g. WV-1997-HB2234, WV-19951X-SB3), MD-<year>-SB193 (e.g. MD-1999-SB193),
     PA-<session start year>-HB100 (e.g. PA-1969-HB100), WA-<biennium start year>-HB1441 (e.g.
-    WA-1991-HB1441). California
+    WA-1991-HB1441), NC-<session year>-H100 (e.g. NC-1995-H100). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year. Without an introduced date, year = the session's first year."""
     out = []
