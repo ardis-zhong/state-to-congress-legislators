@@ -24,6 +24,9 @@ bioguide2005_cache/
 /wa_leg_cache
 /nc_ncleg_cache
 /wi_legis_cache
+/nj_njleg_cache
+/mn_revisor_cache
+/tx_ftp_cache
 cel_cache/
 *.zip
 

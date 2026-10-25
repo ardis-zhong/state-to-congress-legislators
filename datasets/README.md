@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 65,023 bills, 397 people (2008 on; Pennsylvania from 1969, California, Michigan and North Carolina from 1989, Washington from 1991, West Virginia from 1993, Virginia from 1994, Wisconsin from 1995, Maryland from 1996, Ohio and Illinois from 1997, Florida from 1998); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 68,846 bills, 407 people (2008 on; Pennsylvania from 1969, California, Michigan and North Carolina from 1989, Washington from 1991, West Virginia from 1993, Virginia from 1994, Minnesota and Wisconsin from 1995, Maryland from 1996, Ohio and Illinois from 1997, Florida from 1998, New Jersey from 2000); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -92,7 +92,7 @@ on which the person is the only listed sponsor. Co-sponsors are excluded, as
 are bills from those role-less sessions with more than one listed sponsor,
 since the primary sponsor can't be told apart. `bioguide_id`, `name`,
 `bill_id` (state-LegiScan session ID-bill number, e.g. `OH-1145-HB144`; for
-California, Florida, Virginia, Ohio, Illinois, Michigan, Maryland, and Pennsylvania bills from the legislatures' archives,
+bills from the legislatures' own archives (before LegiScan's coverage),
 state-session-bill number, e.g. `CA-1999-AB2027` (`X1` etc. marks
 extraordinary sessions), `FL-2003A-HB23` (2003 special session A),
 `VA-941-HB120` (Virginia's 1994 regular session), `OH-GA122-HB103` (Ohio's
@@ -101,15 +101,16 @@ Assembly, 1997–1998), `MI-1989-HB4001` (Michigan's 1989–1990 session), `MD-1
 (Maryland's 1999 session), `PA-1969-HB100` (Pennsylvania's 1969–1970
 session), `WV-1997-HB2234` (West Virginia's 1997 regular session), or
 `WA-1991-HB1441` (Washington's 1991–92 biennium), `NC-1995-H100` (North
-Carolina's 1995 session), or `WI-1995-AB80` (Wisconsin's 1995–96 session)), `bill_name`, `state_session` (the state legislature's session),
+Carolina's 1995 session), `WI-1995-AB80` (Wisconsin's 1995–96 session), `NJ-2000-A2261` (New
+Jersey's 2000–01 session), or `MN-79-HF11` (Minnesota's 79th Legislature, 1995–96)), `bill_name`, `state_session` (the state legislature's session),
 `congress` (the U.S. Congress in session when the bill was introduced),
 `year` (year introduced; for California 1989–1992, year enacted), `state`,
 `text_source` (`LegiScan`, `California Legislature`, `Florida Legislature`,
 `Virginia General Assembly`, `Ohio General Assembly`, `Illinois General
 Assembly`, `Michigan Legislature`, `Maryland General Assembly`,
 `Pennsylvania General Assembly`, `West Virginia Legislature`,
-`Washington Legislature`, `North Carolina General Assembly`, or
-`Wisconsin Legislature`),
+`Washington Legislature`, `North Carolina General Assembly`,
+`Wisconsin Legislature`, `New Jersey Legislature`, or `Minnesota Legislature`),
 `text_version` (the
 version the text is: `Introduced`, or where that isn't available `Prefiled`,
 `Draft`, `Amended`, `Reported`, `Engrossed`, `Adopted`, `Enrolled`, or
@@ -200,10 +201,19 @@ For Wisconsin, 1995–2010 bills and resolutions come from the Legislature's
 document site (docs.legis.wisconsin.gov): each member's Author Index to
 Legislation for every session, counted when the introduced text's
 "Introduced by ..." line names the person first.
-397 people have rows (Pennsylvania from 1969, California, Michigan and North
-Carolina from 1989, Washington from 1991, West Virginia from 1993, Virginia from 1994, Wisconsin from 1995,
+For New Jersey, 2000–2009 bills and resolutions come from the Legislature's
+website (njleg.state.nj.us): its sponsor search for each session, keeping
+bills on which the person is the first prime sponsor, with the bill as
+introduced; a bill counts when the text's "Sponsored by:" line names the
+person first.
+For Minnesota, 1995–2008 bills come from the Revisor of Statutes' bill status
+system (revisor.mn.gov): the bills of each member's own house on which they
+are chief author, with the introduction text. Minnesota's texts print no
+authors, so the chief author is the Revisor's record of it.
+407 people have rows (Pennsylvania from 1969, California, Michigan and North
+Carolina from 1989, Washington from 1991, West Virginia from 1993, Virginia from 1994, Minnesota and Wisconsin from 1995,
 Maryland from 1996, Ohio
-and Illinois from 1997, Florida from 1998, other states from 2008); for
+and Illinois from 1997, Florida from 1998, New Jersey from 2000, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
 York bills); `year`/`congress` then fall back to the bill's status date or

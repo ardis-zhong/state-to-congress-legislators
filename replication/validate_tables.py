@@ -60,7 +60,8 @@ ALLOWED = {
                          "Ohio General Assembly", "Illinois General Assembly", "Michigan Legislature",
                          "West Virginia Legislature", "Maryland General Assembly",
                          "Pennsylvania General Assembly", "Washington Legislature",
-                         "North Carolina General Assembly", "Wisconsin Legislature"},
+                         "North Carolina General Assembly", "Wisconsin Legislature", "New Jersey Legislature",
+                         "Minnesota Legislature"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -234,7 +235,16 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "Wisconsin Legislature":
+                if n == 4 and r.text_source == "New Jersey Legislature":
+                    _, yr, num = r.bill_id.split("-", 2)
+                    url = f"https://www.njleg.state.nj.us/bill-search/{yr}/{num}"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Minnesota Legislature":
+                    _, leg, num = r.bill_id.split("-", 2)
+                    typ, digits = re.match(r"([A-Z]+)(\d+)", num).groups()
+                    url = f"https://www.revisor.mn.gov/bills/{leg}/{r.year}/0/{typ}/{digits}"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Wisconsin Legislature":
                     _, yr, num = r.bill_id.split("-", 2)
                     url = f"https://docs.legis.wisconsin.gov/{yr}/proposals/{num.lower()}"
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
