@@ -60,7 +60,7 @@ ALLOWED = {
                          "Ohio General Assembly", "Illinois General Assembly", "Michigan Legislature",
                          "West Virginia Legislature", "Maryland General Assembly",
                          "Pennsylvania General Assembly", "Washington Legislature",
-                         "North Carolina General Assembly"},
+                         "North Carolina General Assembly", "Wisconsin Legislature"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -234,7 +234,11 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "North Carolina General Assembly":
+                if n == 4 and r.text_source == "Wisconsin Legislature":
+                    _, yr, num = r.bill_id.split("-", 2)
+                    url = f"https://docs.legis.wisconsin.gov/{yr}/proposals/{num.lower()}"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "North Carolina General Assembly":
                     _, yr, num = r.bill_id.split("-", 2)
                     url = f"https://www.ncleg.gov/BillLookUp/{yr}/{num}"
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
