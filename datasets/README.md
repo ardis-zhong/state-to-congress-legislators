@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 72,783 bills, 418 people (2008 on; Pennsylvania from 1969, California, Michigan and North Carolina from 1989, Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Minnesota and Wisconsin from 1995, Maryland from 1996, Ohio, Illinois and Louisiana from 1997, Florida from 1998, New Jersey from 2000); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 73,378 bills, 425 people (2008 on; Pennsylvania from 1969, California, Michigan and North Carolina from 1989, Washington from 1991, South Carolina, Texas and West Virginia from 1993, Virginia from 1994, Minnesota and Wisconsin from 1995, Maryland from 1996, Ohio, Illinois and Louisiana from 1997, Florida from 1998, New Jersey from 2000); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -103,8 +103,9 @@ session), `WV-1997-HB2234` (West Virginia's 1997 regular session), or
 `WA-1991-HB1441` (Washington's 1991–92 biennium), `NC-1995-H100` (North
 Carolina's 1995 session), `WI-1995-AB80` (Wisconsin's 1995–96 session), `NJ-2000-A2261` (New
 Jersey's 2000–01 session), `MN-79-HF11` (Minnesota's 79th Legislature, 1995–96), or `TX-73R-HB1801`
-(Texas's 73rd Legislature, regular session, 1993), or `LA-97RS-HB70`
-(Louisiana's 1997 regular session)), `bill_name`, `state_session` (the state legislature's session),
+(Texas's 73rd Legislature, regular session, 1993), `LA-97RS-HB70`
+(Louisiana's 1997 regular session), or `SC-111-H3651` (South Carolina's 1995–96
+session)), `bill_name`, `state_session` (the state legislature's session),
 `congress` (the U.S. Congress in session when the bill was introduced),
 `year` (year introduced; for California 1989–1992, year enacted), `state`,
 `text_source` (`LegiScan`, `California Legislature`, `Florida Legislature`,
@@ -113,7 +114,8 @@ Assembly`, `Michigan Legislature`, `Maryland General Assembly`,
 `Pennsylvania General Assembly`, `West Virginia Legislature`,
 `Washington Legislature`, `North Carolina General Assembly`,
 `Wisconsin Legislature`, `New Jersey Legislature`, `Minnesota Legislature`,
-`Texas Legislature`, or `Louisiana Legislature`),
+`Texas Legislature`, `Louisiana Legislature`, or
+`South Carolina Legislature`),
 `text_version` (the
 version the text is: `Introduced`, or where that isn't available `Prefiled`,
 `Draft`, `Amended`, `Reported`, `Engrossed`, `Adopted`, `Enrolled`, or
@@ -223,8 +225,13 @@ website (legis.la.gov): the site's author search for each member and
 session, keeping instruments on which the person is the primary author,
 with the original (introduced) version; one counts when that text's "BY
 REPRESENTATIVE(S)/SENATOR(S)" line names the person first.
-418 people have rows (Pennsylvania from 1969, California, Michigan and North
-Carolina from 1989, Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Minnesota and Wisconsin from 1995,
+For South Carolina, 1993–2008 bills and resolutions come from the
+Legislature's website (scstatehouse.gov): the sponsor search for each member
+and session, keeping items on which the person is the primary sponsor, with
+the earliest version the site keeps (the introduced bill, or for amended
+bills a later printing, recorded in `text_version`).
+425 people have rows (Pennsylvania from 1969, California, Michigan and North
+Carolina from 1989, Washington from 1991, South Carolina, Texas and West Virginia from 1993, Virginia from 1994, Minnesota and Wisconsin from 1995,
 Maryland from 1996, Ohio,
 Illinois and Louisiana from 1997, Florida from 1998, New Jersey from 2000, other states from 2008); for
 those whose state service began earlier these are bills from the covered

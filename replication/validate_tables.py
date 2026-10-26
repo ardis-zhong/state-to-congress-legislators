@@ -62,7 +62,7 @@ ALLOWED = {
                          "Pennsylvania General Assembly", "Washington Legislature",
                          "North Carolina General Assembly", "Wisconsin Legislature", "New Jersey Legislature",
                          "Minnesota Legislature", "Texas Legislature",
-                         "Louisiana Legislature"},
+                         "Louisiana Legislature", "South Carolina Legislature"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -236,7 +236,12 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "Louisiana Legislature":
+                if n == 4 and r.text_source == "South Carolina Legislature":
+                    _, sess, bill = r.bill_id.split("-", 2)
+                    y0, num = 1993 + 2 * (int(sess) - 110), re.sub(r"\D", "", bill)
+                    url = f"https://www.scstatehouse.gov/sess{sess}_{y0}-{y0 + 1}/bills/{num}.htm"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Louisiana Legislature":
                     _, sess, num = r.bill_id.split("-", 2)
                     url = f"https://legis.la.gov/legis/BillInfo.aspx?s={sess}&b={num}&sbi=y"
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
