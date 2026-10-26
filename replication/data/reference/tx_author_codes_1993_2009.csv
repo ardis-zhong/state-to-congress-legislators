@@ -1,0 +1,81 @@
+session,code,label,bioguide_id,name,state_leg_years,author_label,note
+73R,A2265,Brady (H-A2265),B000755,Kevin Brady,1991-1997,Brady,
+73R,A2645,"Cuellar, Henry (H-A2645)",C001063,Henry Cuellar,1987-2001,"Cuellar, Henry",not Renato Cuellar (A2646)
+73R,A2635,Culberson (H-A2635),C001048,John Culberson,1987-2001,Culberson,
+73R,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+73R,A3750,Marchant (H-A3750),M001158,Kenny Marchant,1987-2004,Marchant,
+73R,A4315,Rodriguez (H-A4315),R000568,Ciro Rodriguez,1987-1997,Rodriguez,
+73R,A4685,"Turner, Sylvester (H-A4685)",T000489,Sylvester Turner,1989-2016,"Turner, Sylvester","A4685; not Bob, Chris or Jim Turner"
+73R,A1590,"Turner, Jim (S-A1590)",T000424,Jim Turner,1981-1984 (House); 1991-1996 (Senate),"Turner, Jim",Senate S-A1590; not Bob/Sylvester Turner
+74R,A2265,Brady (H-A2265),B000755,Kevin Brady,1991-1997,Brady,
+74R,A2645,"Cuellar, Henry (H-A2645)",C001063,Henry Cuellar,1987-2001,"Cuellar, Henry",not Renato Cuellar (A2646)
+74R,A2635,Culberson (H-A2635),C001048,John Culberson,1987-2001,Culberson,
+74R,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+74R,A3750,Marchant (H-A3750),M001158,Kenny Marchant,1987-2004,Marchant,
+74R,A4315,Rodriguez (H-A4315),R000568,Ciro Rodriguez,1987-1997,Rodriguez,
+74R,A4685,"Turner, Sylvester (H-A4685)",T000489,Sylvester Turner,1989-2016,"Turner, Sylvester","A4685; not Bob, Chris or Jim Turner"
+74R,A1590,"Turner, Jim (S-A1590)",T000424,Jim Turner,1981-1984 (House); 1991-1996 (Senate),"Turner, Jim",Senate S-A1590; not Bob/Sylvester Turner
+75R,A2645,Cuellar (H-A2645),C001063,Henry Cuellar,1987-2001,Cuellar,not Renato Cuellar (A2646)
+75R,A2635,Culberson (H-A2635),C001048,John Culberson,1987-2001,Culberson,
+75R,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+75R,A3750,Marchant (H-A3750),M001158,Kenny Marchant,1987-2004,Marchant,
+75R,A4315,Rodriguez (H-A4315),R000568,Ciro Rodriguez,1987-1997,Rodriguez,
+75R,A4685,"Turner, Sylvester (H-A4685)",T000489,Sylvester Turner,1989-2016,"Turner, Sylvester","A4685; not Bob, Chris or Jim Turner"
+76R,A2645,Cuellar (H-A2645),C001063,Henry Cuellar,1987-2001,Cuellar,not Renato Cuellar (A2646)
+76R,A2635,Culberson (H-A2635),C001048,John Culberson,1987-2001,Culberson,
+76R,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+76R,A3750,Marchant (H-A3750),M001158,Kenny Marchant,1987-2004,Marchant,
+76R,A4685,"Turner, Sylvester (H-A4685)",T000489,Sylvester Turner,1989-2016,"Turner, Sylvester","A4685; not Bob, Chris or Jim Turner"
+77R,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+77R,A3750,Marchant (H-A3750),M001158,Kenny Marchant,1987-2004,Marchant,
+77R,A4685,"Turner, Sylvester (H-A4685)",T000489,Sylvester Turner,1989-2016,"Turner, Sylvester","A4685; not Bob, Chris or Jim Turner"
+78R,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+78R,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+78R,A3750,Marchant (H-A3750),M001158,Kenny Marchant,1987-2004,Marchant,
+78R,A4685,Turner (H-A4685),T000489,Sylvester Turner,1989-2016,Turner,"A4685; not Bob, Chris or Jim Turner"
+781,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+781,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+781,A3750,Marchant (H-A3750),M001158,Kenny Marchant,1987-2004,Marchant,
+781,A4685,Turner (H-A4685),T000489,Sylvester Turner,1989-2016,Turner,"A4685; not Bob, Chris or Jim Turner"
+782,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+782,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+782,A3750,Marchant (H-A3750),M001158,Kenny Marchant,1987-2004,Marchant,
+782,A4685,Turner (H-A4685),T000489,Sylvester Turner,1989-2016,Turner,"A4685; not Bob, Chris or Jim Turner"
+783,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+783,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+783,A3750,Marchant (H-A3750),M001158,Kenny Marchant,1987-2004,Marchant,
+783,A4685,Turner (H-A4685),T000489,Sylvester Turner,1989-2016,Turner,"A4685; not Bob, Chris or Jim Turner"
+784,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+784,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+784,A3750,Marchant (H-A3750),M001158,Kenny Marchant,1987-2004,Marchant,
+784,A4685,Turner (H-A4685),T000489,Sylvester Turner,1989-2016,Turner,"A4685; not Bob, Chris or Jim Turner"
+79R,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+79R,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+79R,A4685,Turner (H-A4685),T000489,Sylvester Turner,1989-2016,Turner,"A4685; not Bob, Chris or Jim Turner"
+79R,A4725,Veasey (H-A4725),V000131,Marc Veasey,2005-2013,Veasey,
+791,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+791,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+791,A4685,Turner (H-A4685),T000489,Sylvester Turner,1989-2016,Turner,"A4685; not Bob, Chris or Jim Turner"
+791,A4725,Veasey (H-A4725),V000131,Marc Veasey,2005-2013,Veasey,
+792,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+792,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+792,A4685,Turner (H-A4685),T000489,Sylvester Turner,1989-2016,Turner,"A4685; not Bob, Chris or Jim Turner"
+792,A4725,Veasey (H-A4725),V000131,Marc Veasey,2005-2013,Veasey,
+793,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+793,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+793,A4685,Turner (H-A4685),T000489,Sylvester Turner,1989-2016,Turner,"A4685; not Bob, Chris or Jim Turner"
+793,A4725,Veasey (H-A4725),V000131,Marc Veasey,2005-2013,Veasey,
+80R,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+80R,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+80R,A4685,Turner (H-A4685),T000489,Sylvester Turner,1989-2016,Turner,"A4685; not Bob, Chris or Jim Turner"
+80R,A4725,Veasey (H-A4725),V000131,Marc Veasey,2005-2013,Veasey,
+81R,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+81R,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+81R,A4685,"Turner, Sylvester (H-A4685)",T000489,Sylvester Turner,1989-2016,"Turner, Sylvester","A4685; not Bob, Chris or Jim Turner"
+81R,A4725,Veasey (H-A4725),V000131,Marc Veasey,2005-2013,Veasey,
+81R,A4950,Weber (H-A4950),W000814,Randy Weber,2009-2013,Weber,
+811,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+811,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+811,A4685,"Turner, Sylvester (H-A4685)",T000489,Sylvester Turner,1989-2016,"Turner, Sylvester","A4685; not Bob, Chris or Jim Turner"
+811,A4725,Veasey (H-A4725),V000131,Marc Veasey,2005-2013,Veasey,
+811,A4950,Weber (H-A4950),W000814,Randy Weber,2009-2013,Weber,
