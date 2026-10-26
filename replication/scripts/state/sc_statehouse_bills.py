@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """
-South Carolina state bills, 1993-2008, from the South Carolina Legislature's website
+South Carolina state bills, 1985-2008, from the South Carolina Legislature's website
 (scstatehouse.gov), for population members who served in the General Assembly before LegiScan's
 South Carolina coverage (2009-2010 session on). South Carolina state-text pilot (Ardis, 2026-10-26).
-Sessions 110 (1993-1994) to 117 (2007-2008); robots.txt allows these pages.
+Sessions 109 (1991-1992) to 117 (2007-2008) have every bill; robots.txt allows these pages. Sessions
+106 (1985-1986) to 108 (1989-1990) have text only for the bills that became law, in their ratified
+form (Ardis, 2026-10-26: include them; IntroducedDate then holds the ratification date, so year =
+year enacted).
 
   --members  Each session's sponsor pulldowns (POST /sponsorsearch.php GETMEMBERS=H|S) list the
              members with their permanent sponsor codes; our people's entries are written as
@@ -40,9 +43,10 @@ import urllib.parse
 
 BASE = "https://www.scstatehouse.gov"
 CACHE = "sc_statehouse_cache"
-SESSIONS = {n: f"{1993 + 2 * (n - 110)}-{1994 + 2 * (n - 110)}" for n in range(110, 118)}
+SESSIONS = {n: f"{1993 + 2 * (n - 110)}-{1994 + 2 * (n - 110)}" for n in range(106, 118)}
+FIRST_FULL = 109  # earlier sessions: ratified acts only
 PEOPLE = "replication/data/population/person_level.csv"
-CODES = "replication/data/reference/sc_sponsor_codes_1993_2008.csv"
+CODES = "replication/data/reference/sc_sponsor_codes_1985_2008.csv"
 CANDIDATES = "sc_sponsor_code_candidates.csv"
 LIST_OUT = "sc_primary_sponsored_bills.csv"
 TEXT_OUT = "sc_state_legislation_sponsored.csv"
@@ -109,7 +113,7 @@ def sc_people():
             s, ys = re.sub(r"\bpresent\b", "2026", r["StateLegYears"], flags=re.I), set()
             for a, z in re.findall(r"((?:19|20)\d\d)\s*[-–]\s*(?:[A-Za-z]+\s+)?((?:19|20)\d\d)", s):
                 ys |= set(range(int(a), int(z) + 1))
-            if any(1993 <= y <= 2008 for y in ys):
+            if any(1985 <= y <= 2008 for y in ys):
                 r["years"] = ys
                 out.append(r)
     return out
@@ -172,9 +176,15 @@ def crawl_lists():
             link = re.search(r'HREF="(/sess\d+_[\d-]+/bills/\d+\.htm)"', block)
             title = plain(block[m.end():block.find("<A class") if "<A class" in block else None])
             title = re.sub(r"^(?:Similar \([^)]*\)\s*)+", "", title)
+            hist = sorted(f"{19 if int(y) > 50 else 20}{y}-{m}-{d}"
+                          for m, d, y in re.findall(r"\b(\d\d)/(\d\d)/(\d\d)\b", plain(block)))
+            rat = re.search(r"(\d\d)/(\d\d)/(\d\d)\s+Ratified", plain(block))
+            ratified = f"{19 if int(rat.group(3)) > 50 else 20}{rat.group(3)}-{rat.group(1)}-{rat.group(2)}" if rat else ""
             out.append({"session": sess, "years": c["years"], "bioguide_id": c["bioguide_id"], "name": c["name"],
                         "label": c["label"], "bill": f"{body}{TYPES.get(typ, '')}{num}", "type": typ,
-                        "sponsors": plain(by), "title": title, "url": link.group(1) if link else ""})
+                        "sponsors": plain(by), "title": title, "first_action": hist[0] if hist else "",
+                        "ratified": ratified,
+                        "url": link.group(1) if link else ""})
             n += 1
         print(f"{sess} {chamber} {c['name']}: {n} primary-sponsored", flush=True)
     with open(LIST_OUT, "w", newline="", encoding="utf-8") as f:
@@ -227,7 +237,9 @@ def crawl_texts(limit=0):
                           lambda: fetch(BASE + b["url"])).decode("latin-1")
             dates = re.findall(r"\b((?:19|20)\d\d)(\d\d)(\d\d)\b", page[:(NOTE.search(page) or re.search("$", page)).start()])
             dates = sorted(d for d in dates if 1 <= int(d[1]) <= 12)
-            date = "-".join(dates[0]) if dates else ""
+            date = "-".join(dates[0]) if dates else b["first_action"]
+            if int(sess) < FIRST_FULL:
+                date = b["ratified"]  # enacted-only sessions: year = year ratified
             prev = sorted(set(re.findall(r'href="\.\./prever/(\d+_\d{8})\.htm"', page)), key=lambda p: p[-8:])
             src = page
             if prev:

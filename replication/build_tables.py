@@ -291,8 +291,8 @@ def build_table4():
 # Texas: 1993-2009 from the Legislature's FTP site (first author in the author reports, checked against the
 # introduced text's "By:" line).
 # Louisiana: 1997-2009 from legis.la.gov (primary author, checked against the original version's "BY ..." line).
-# South Carolina: 1993-2008 from scstatehouse.gov (primary sponsors; earliest version online, checked against
-# its "Introduced by" line where printed).
+# South Carolina: 1985-2008 from scstatehouse.gov (primary sponsors; earliest version online, checked against
+# its "Introduced by" line where printed; 1985-1990 ratified acts only).
 ARCHIVE_SOURCES = [
     ("ca_state_legislation_sponsored.csv", "CA", "California Legislature"),          # local; ca_pubinfo_bills.py
     ("ca_leginfo_state_legislation_sponsored.csv", "CA", "California Legislature"),  # local; ca_leginfo_archive.py
@@ -331,7 +331,8 @@ def archive_rows(people, skip):
     LA-051ES-SB1 for the 2005 First Extraordinary Session), SC-<session number>-H3651 (e.g. SC-111-H3651,
     1995-1996; resolutions SC-110-SCR106, joint resolutions SC-111-SJR1040). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
-    with the year chaptered as year. Without an introduced date, year = the session's first year."""
+    with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
+    (ratified acts, text_version = Enrolled), with the year ratified. Without an introduced date, year = the session's first year."""
     out = []
     for path, state, source in ARCHIVE_SOURCES:
         if not os.path.exists(path):
