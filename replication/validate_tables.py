@@ -61,7 +61,8 @@ ALLOWED = {
                          "West Virginia Legislature", "Maryland General Assembly",
                          "Pennsylvania General Assembly", "Washington Legislature",
                          "North Carolina General Assembly", "Wisconsin Legislature", "New Jersey Legislature",
-                         "Minnesota Legislature", "Texas Legislature"},
+                         "Minnesota Legislature", "Texas Legislature",
+                         "Louisiana Legislature"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -235,7 +236,11 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "Texas Legislature":
+                if n == 4 and r.text_source == "Louisiana Legislature":
+                    _, sess, num = r.bill_id.split("-", 2)
+                    url = f"https://legis.la.gov/legis/BillInfo.aspx?s={sess}&b={num}&sbi=y"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Texas Legislature":
                     _, sess, num = r.bill_id.split("-", 2)
                     url = f"https://capitol.texas.gov/BillLookup/History.aspx?LegSess={sess}&Bill={num}"
                     detail = f"{r.state_session}; {r.bill_name[:60]}"

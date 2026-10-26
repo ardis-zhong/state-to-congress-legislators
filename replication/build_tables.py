@@ -290,6 +290,7 @@ def build_table4():
 # text). Minnesota: 1995-2008 from the Revisor's bill status (chief authors; texts print no authors).
 # Texas: 1993-2009 from the Legislature's FTP site (first author in the author reports, checked against the
 # introduced text's "By:" line).
+# Louisiana: 1997-2009 from legis.la.gov (primary author, checked against the original version's "BY ..." line).
 ARCHIVE_SOURCES = [
     ("ca_state_legislation_sponsored.csv", "CA", "California Legislature"),          # local; ca_pubinfo_bills.py
     ("ca_leginfo_state_legislation_sponsored.csv", "CA", "California Legislature"),  # local; ca_leginfo_archive.py
@@ -307,6 +308,7 @@ ARCHIVE_SOURCES = [
     ("nj_state_legislation_sponsored.csv", "NJ", "New Jersey Legislature"),          # local; nj_njleg_bills.py
     ("mn_state_legislation_sponsored.csv", "MN", "Minnesota Legislature"),           # local; mn_revisor_bills.py
     ("tx_state_legislation_sponsored.csv", "TX", "Texas Legislature"),               # local; tx_ftp_bills.py
+    ("la_state_legislation_sponsored.csv", "LA", "Louisiana Legislature"),           # local; la_legis_bills.py
 ]
 
 
@@ -322,7 +324,8 @@ def archive_rows(people, skip):
     WA-1991-HB1441), NC-<session year>-H100 (e.g. NC-1995-H100),
     WI-<session year>-AB80 (e.g. WI-1995-AB80), NJ-<session year>-A42 (e.g. NJ-2000-A42),
     MN-<Legislature>-HF11 (e.g. MN-79-HF11, 1995-1996), TX-<session code>-HB1801 (e.g. TX-73R-HB1801,
-    TX-781-HB3 for the 78th Legislature's first called session). California
+    TX-781-HB3 for the 78th Legislature's first called session), LA-<session code>-HB70 (e.g. LA-97RS-HB70,
+    LA-051ES-SB1 for the 2005 First Extraordinary Session). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year. Without an introduced date, year = the session's first year."""
     out = []
