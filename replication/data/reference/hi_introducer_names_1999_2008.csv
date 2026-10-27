@@ -1,0 +1,39 @@
+year,chamber,name_key,labels,bioguide_id,name,state_leg_years,note
+1999,H,CASE,Case E,C001055,Ed Case,1994-2002 (23rd district),Ed Case (House 1994-2002); no other member named Case
+1999,H,SCHATZ,Schatz B,S001194,Brian Schatz,1998-2006,Brian Schatz (House 1998-2006); no other Schatz
+1999,H,TAKAI,Takai K,T000473,Mark Takai,1994-2014 (districts 34 then 33),Mark Takai (House 1994-2014); no other Takai
+1999,S,HANABUSA,Hanabusa C,H001050,Colleen Hanabusa,1998-2010 (21st District; Senate President 2007),Colleen Hanabusa (Senate 1998-2010); no other Hanabusa
+2000,H,CASE,Case; Case E,C001055,Ed Case,1994-2002 (23rd district),Ed Case (House 1994-2002); no other member named Case
+2000,H,SCHATZ,Schatz; Schatz B,S001194,Brian Schatz,1998-2006,Brian Schatz (House 1998-2006); no other Schatz
+2000,H,TAKAI,Takai; Takai K,T000473,Mark Takai,1994-2014 (districts 34 then 33),Mark Takai (House 1994-2014); no other Takai
+2000,S,HANABUSA,Hanabusa; Hanabusa C,H001050,Colleen Hanabusa,1998-2010 (21st District; Senate President 2007),Colleen Hanabusa (Senate 1998-2010); no other Hanabusa
+2001,H,CASE,CASE,C001055,Ed Case,1994-2002 (23rd district),Ed Case (House 1994-2002); no other member named Case
+2001,H,DJOU,DJOU,D000611,Charles Djou,2000-2002,Charles Djou (House 2000-2002); no other Djou
+2001,H,SCHATZ,SCHATZ,S001194,Brian Schatz,1998-2006,Brian Schatz (House 1998-2006); no other Schatz
+2001,H,TAKAI,TAKAI,T000473,Mark Takai,1994-2014 (districts 34 then 33),Mark Takai (House 1994-2014); no other Takai
+2001,S,HANABUSA,HANABUSA,H001050,Colleen Hanabusa,1998-2010 (21st District; Senate President 2007),Colleen Hanabusa (Senate 1998-2010); no other Hanabusa
+2002,H,CASE,CASE,C001055,Ed Case,1994-2002 (23rd district),Ed Case (House 1994-2002); no other member named Case
+2002,H,DJOU,DJOU,D000611,Charles Djou,2000-2002,Charles Djou (House 2000-2002); no other Djou
+2002,H,SCHATZ,SCHATZ,S001194,Brian Schatz,1998-2006,Brian Schatz (House 1998-2006); no other Schatz
+2002,H,TAKAI,TAKAI,T000473,Mark Takai,1994-2014 (districts 34 then 33),Mark Takai (House 1994-2014); no other Takai
+2002,S,HANABUSA,HANABUSA,H001050,Colleen Hanabusa,1998-2010 (21st District; Senate President 2007),Colleen Hanabusa (Senate 1998-2010); no other Hanabusa
+2003,H,SCHATZ,SCHATZ,S001194,Brian Schatz,1998-2006,Brian Schatz (House 1998-2006); no other Schatz
+2003,H,TAKAI,TAKAI,T000473,Mark Takai,1994-2014 (districts 34 then 33),Mark Takai (House 1994-2014); no other Takai
+2003,H,TAMAYO,TAMAYO,G000571,Tulsi Gabbard,2002-2004 (42nd district),"Tulsi Gabbard served in the House 2003-2004 as Tulsi Gabbard Tamayo (married name); TAMAYO appears only in the 2003-2004 House lists. Senate 'GABBARD' 2007+ is her father Mike Gabbard (not in the population), not listed here."
+2003,S,HANABUSA,HANABUSA,H001050,Colleen Hanabusa,1998-2010 (21st District; Senate President 2007),Colleen Hanabusa (Senate 1998-2010); no other Hanabusa
+2004,H,SCHATZ,SCHATZ,S001194,Brian Schatz,1998-2006,Brian Schatz (House 1998-2006); no other Schatz
+2004,H,TAKAI,TAKAI,T000473,Mark Takai,1994-2014 (districts 34 then 33),Mark Takai (House 1994-2014); no other Takai
+2004,H,TAMAYO,TAMAYO,G000571,Tulsi Gabbard,2002-2004 (42nd district),"Tulsi Gabbard served in the House 2003-2004 as Tulsi Gabbard Tamayo (married name); TAMAYO appears only in the 2003-2004 House lists. Senate 'GABBARD' 2007+ is her father Mike Gabbard (not in the population), not listed here."
+2004,S,HANABUSA,HANABUSA,H001050,Colleen Hanabusa,1998-2010 (21st District; Senate President 2007),Colleen Hanabusa (Senate 1998-2010); no other Hanabusa
+2005,H,SCHATZ,SCHATZ,S001194,Brian Schatz,1998-2006,Brian Schatz (House 1998-2006); no other Schatz
+2005,H,TAKAI,TAKAI,T000473,Mark Takai,1994-2014 (districts 34 then 33),Mark Takai (House 1994-2014); no other Takai
+2005,S,HANABUSA,HANABUSA,H001050,Colleen Hanabusa,1998-2010 (21st District; Senate President 2007),Colleen Hanabusa (Senate 1998-2010); no other Hanabusa
+2006,H,SCHATZ,SCHATZ,S001194,Brian Schatz,1998-2006,Brian Schatz (House 1998-2006); no other Schatz
+2006,H,TAKAI,TAKAI,T000473,Mark Takai,1994-2014 (districts 34 then 33),Mark Takai (House 1994-2014); no other Takai
+2006,S,HANABUSA,HANABUSA,H001050,Colleen Hanabusa,1998-2010 (21st District; Senate President 2007),Colleen Hanabusa (Senate 1998-2010); no other Hanabusa
+2007,H,TAKAI,TAKAI,T000473,Mark Takai,1994-2014 (districts 34 then 33),Mark Takai (House 1994-2014); no other Takai
+2007,S,HANABUSA,HANABUSA,H001050,Colleen Hanabusa,1998-2010 (21st District; Senate President 2007),Colleen Hanabusa (Senate 1998-2010); no other Hanabusa
+2007,S,TOKUDA,TOKUDA,T000487,Jill Tokuda,2006-2018 (24th district),Jill Tokuda (Senate 2006-2018); no other Tokuda
+2008,H,TAKAI,TAKAI,T000473,Mark Takai,1994-2014 (districts 34 then 33),Mark Takai (House 1994-2014); no other Takai
+2008,S,HANABUSA,HANABUSA,H001050,Colleen Hanabusa,1998-2010 (21st District; Senate President 2007),Colleen Hanabusa (Senate 1998-2010); no other Hanabusa
+2008,S,TOKUDA,TOKUDA,T000487,Jill Tokuda,2006-2018 (24th district),Jill Tokuda (Senate 2006-2018); no other Tokuda

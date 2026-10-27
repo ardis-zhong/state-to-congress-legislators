@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 73,583 bills, 428 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan and North Carolina from 1989, Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Ohio, Illinois and Louisiana from 1997, Florida from 1998, New Jersey from 2000); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 76,514 bills, 432 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan and North Carolina from 1989, Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Ohio, Illinois and Louisiana from 1997, Florida from 1998, Hawaii from 1999, New Jersey from 2000); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -105,7 +105,8 @@ Carolina's 1995 session), `WI-1995-AB80` (Wisconsin's 1995–96 session), `NJ-20
 Jersey's 2000–01 session), `MN-79-HF11` (Minnesota's 79th Legislature, 1995–96), or `TX-73R-HB1801`
 (Texas's 73rd Legislature, regular session, 1993), `LA-97RS-HB70`
 (Louisiana's 1997 regular session), or `SC-111-H3651` (South Carolina's 1995–96
-session), or `MO-1999-SB282` (Missouri Senate, 1999 session)), `bill_name`, `state_session` (the state legislature's session),
+session), `MO-1999-SB282` (Missouri Senate, 1999 session), or `HI-1999-HB228`
+(Hawaii's 1999 session)), `bill_name`, `state_session` (the state legislature's session),
 `congress` (the U.S. Congress in session when the bill was introduced),
 `year` (year introduced; for California 1989–1992 and South Carolina
 1985–1990, year enacted), `state`,
@@ -116,7 +117,7 @@ Assembly`, `Michigan Legislature`, `Maryland General Assembly`,
 `Washington Legislature`, `North Carolina General Assembly`,
 `Wisconsin Legislature`, `New Jersey Legislature`, `Minnesota Legislature`,
 `Texas Legislature`, `Louisiana Legislature`,
-`South Carolina Legislature`, or `Missouri Senate`),
+`South Carolina Legislature`, `Missouri Senate`, or `Hawaii State Legislature`),
 `text_version` (the
 version the text is: `Introduced`, or where that isn't available `Prefiled`,
 `Draft`, `Amended`, `Reported`, `Engrossed`, `Adopted`, `Enrolled`, or
@@ -237,10 +238,15 @@ For Missouri, 1996–2009 Senate bills come from the Senate's website
 introduced text; where that text prints "INTRODUCED BY SENATOR ...", the
 person must be named first. The House's archive is closed to crawlers, so
 Missouri House service before 2009 has no rows.
-428 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
+For Hawaii, 1999–2008 bills and resolutions come from the Legislature's
+public data website (data.capitol.hawaii.gov): each year's lists of measures
+introduced name the introducers, and items whose first-named introducer is
+the person are kept, with the introduced text (Hawaii's texts print no
+introducer names).
+432 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
 Michigan and North Carolina from 1989, Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Minnesota and Wisconsin from 1995,
 Maryland and the Missouri Senate from 1996, Ohio,
-Illinois and Louisiana from 1997, Florida from 1998, New Jersey from 2000, other states from 2008); for
+Illinois and Louisiana from 1997, Florida from 1998, Hawaii from 1999, New Jersey from 2000, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
 York bills); `year`/`congress` then fall back to the bill's status date or
