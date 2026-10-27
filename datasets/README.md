@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 78,757 bills, 452 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii and Mississippi from 1999, New Jersey from 2000, Wyoming from 2003, Oregon from 2007); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 79,001 bills, 453 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii, Mississippi and Nebraska from 1999, New Jersey from 2000, Wyoming from 2003, Oregon from 2007); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -112,8 +112,9 @@ session), `MO-1999-SB282` (Missouri Senate, 1999 session), `HI-1999-HB228`
 (New Mexico's 1997 regular session), `NV-69-SB209` (Nevada's 1997 session), `OR-2007R1-HB2871`
 (Oregon's 2007 regular session), `MS-2005-SB2004` (Mississippi's 2005 regular session),
 `WY-2005-SF0143` (Wyoming's 2005 session), `SD-1997-SB111` (South Dakota's
-1997 session), `ND-55-HB1263` (North Dakota's 55th Legislative Assembly, 1997), or
-`RI-1997-H5205` (Rhode Island's 1997 session)), `bill_name`, `state_session` (the state legislature's session),
+1997 session), `ND-55-HB1263` (North Dakota's 55th Legislative Assembly, 1997),
+`RI-1997-H5205` (Rhode Island's 1997 session), or `NE-96-LB621` (Nebraska's 96th
+Legislature, 1999–2000)), `bill_name`, `state_session` (the state legislature's session),
 `congress` (the U.S. Congress in session when the bill was introduced),
 `year` (year introduced; for California 1989–1992 and South Carolina
 1985–1990, year enacted), `state`,
@@ -129,7 +130,7 @@ Assembly`, `Michigan Legislature`, `Maryland General Assembly`,
 `Iowa General Assembly`, `Alaska Legislature`, `New Mexico Legislature`,
 `Nevada Legislature`, `Oregon Legislature`, `Mississippi Legislature`,
 `Wyoming Legislature`, `South Dakota Legislature`, `North Dakota Legislative
-Assembly`, or `Rhode Island General Assembly`),
+Assembly`, `Rhode Island General Assembly`, or `Nebraska Legislature`),
 `text_version` (the
 version the text is: `Introduced`, or where that isn't available `Prefiled`,
 `Draft`, `Amended`, `Reported`, `Engrossed`, `Adopted`, `Enrolled`, or
@@ -302,10 +303,14 @@ him first. For Rhode Island, David Cicilline's 1997–2002 House bills and
 resolutions come from the General Assembly's bill text archive
 (webserver.rilegislature.gov), found through its text search and kept when
 "Introduced By:" names him first.
-451 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
+For Nebraska, 1999–2010 bills come from the Legislature's website
+(nebraskalegislature.gov): every introduced bill text was read by number and
+kept when its "Introduced by" line names the person (surname and district)
+first.
+453 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
 Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Iowa, Minnesota and Wisconsin from 1995,
 Maryland and the Missouri Senate from 1996, New Mexico, Ohio,
-Illinois, Louisiana, Nevada, North Dakota, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii and Mississippi from 1999, New Jersey from 2000, Wyoming from 2003, Oregon from 2007, other states from 2008); for
+Illinois, Louisiana, Nevada, North Dakota, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii, Mississippi and Nebraska from 1999, New Jersey from 2000, Wyoming from 2003, Oregon from 2007, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
 York bills); `year`/`congress` then fall back to the bill's status date or
