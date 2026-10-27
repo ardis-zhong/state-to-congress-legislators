@@ -66,7 +66,9 @@ ALLOWED = {
                          "Missouri Senate", "Hawaii State Legislature", "Kentucky General Assembly",
                          "Arkansas General Assembly", "Iowa General Assembly", "Alaska Legislature",
                          "New Mexico Legislature", "Nevada Legislature", "Oregon Legislature",
-                         "Mississippi Legislature", "Wyoming Legislature", "Nebraska Legislature"},
+                         "Mississippi Legislature", "Wyoming Legislature", "Nebraska Legislature",
+                         "South Dakota Legislature", "North Dakota Legislative Assembly",
+                         "Rhode Island General Assembly"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -244,6 +246,18 @@ def main():
                     _, yr, num = r.bill_id.split("-", 2)
                     url = f"https://wyoleg.gov/{yr}/Introduced/{num}.pdf"
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Rhode Island General Assembly":
+                    _, yr, num = r.bill_id.split("-", 2)
+                    url = f"https://webserver.rilegislature.gov/BillText{yr[2:]}/HouseText{yr[2:]}/{num}.htm"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "South Dakota Legislature":
+                    url = "https://sdlegislature.gov/Session/Archived"
+                    detail = f"{r.state_session}; {r.bill_id.split('-', 2)[2]}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "North Dakota Legislative Assembly":
+                    _, asm, num = r.bill_id.split("-", 2)
+                    url = (f"https://ndlegis.gov/assembly/{asm}-{1997 + 2 * (int(asm) - 55)}/regular/bill-index/"
+                           f"bi{re.sub(r'[^0-9]', '', num)}.html")
+                    detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "Nebraska Legislature":
                     _, leg, num = r.bill_id.split("-", 2)
                     url = f"https://nebraskalegislature.gov/FloorDocs/{leg}/PDF/Intro/{num}.pdf"

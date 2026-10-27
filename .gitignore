@@ -41,6 +41,9 @@ bioguide2005_cache/
 /ms_billstatus_cache
 /wy_wyoleg_cache
 /ne_legislature_cache
+/nd_legis_cache
+/sd_legis_cache
+/ri_rilegislature_cache
 cel_cache/
 *.zip
 
