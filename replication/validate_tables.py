@@ -64,7 +64,7 @@ ALLOWED = {
                          "Minnesota Legislature", "Texas Legislature",
                          "Louisiana Legislature", "South Carolina Legislature",
                          "Missouri Senate", "Hawaii State Legislature", "Kentucky General Assembly",
-                         "Arkansas General Assembly"},
+                         "Arkansas General Assembly", "Iowa General Assembly"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -238,7 +238,11 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "Arkansas General Assembly":
+                if n == 4 and r.text_source == "Iowa General Assembly":
+                    _, ga, num = r.bill_id.split("-", 2)
+                    url = f"https://www.legis.iowa.gov/legislation/BillBook?ga={ga[2:]}&ba={num}"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Arkansas General Assembly":
                     _, sess, num = r.bill_id.split("-", 2)
                     url = f"https://arkleg.state.ar.us/Bills/Detail?id={num}&ddBienniumSession={sess[:4]}%2F{sess[4:]}"
                     detail = f"{r.state_session}; {r.bill_name[:60]}"

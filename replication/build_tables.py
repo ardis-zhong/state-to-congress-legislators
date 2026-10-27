@@ -301,6 +301,8 @@ def build_table4():
 # record's bill page; texts print no sponsor).
 # Arkansas: 1991-2000 from arkleg.state.ar.us (primary sponsor on the member's page, checked against the bill's
 # "By:" line).
+# Iowa: 1995-2002 and 2009-2010 from legis.iowa.gov (bills by sponsor; the Bill Book's jacket PDF up to the first
+# amendment, checked against its "BY ..." line).
 ARCHIVE_SOURCES = [
     ("ca_state_legislation_sponsored.csv", "CA", "California Legislature"),          # local; ca_pubinfo_bills.py
     ("ca_leginfo_state_legislation_sponsored.csv", "CA", "California Legislature"),  # local; ca_leginfo_archive.py
@@ -324,6 +326,7 @@ ARCHIVE_SOURCES = [
     ("hi_state_legislation_sponsored.csv", "HI", "Hawaii State Legislature"),        # local; hi_capitol_bills.py
     ("ky_state_legislation_sponsored.csv", "KY", "Kentucky General Assembly"),       # local; ky_record_bills.py
     ("ar_state_legislation_sponsored.csv", "AR", "Arkansas General Assembly"),       # local; ar_arkleg_bills.py
+    ("ia_state_legislation_sponsored.csv", "IA", "Iowa General Assembly"),           # local; ia_legis_bills.py
 ]
 
 
@@ -344,7 +347,7 @@ def archive_rows(people, skip):
     1995-1996; resolutions SC-110-SCR106, joint resolutions SC-111-SJR1040), MO-<year>-SB282 (Missouri
     Senate, e.g. MO-1999-SB282), HI-<year>-HB228 (e.g. HI-1999-HB228, HI-2003-SCR4),
     KY-<session code>-SB97 (e.g. KY-03RS-SB97, KY-09SS-HR14), AR-<session code>-SB12 (e.g. AR-1995R-SB12,
-    AR-1991S1-SB42). California
+    AR-1991S1-SB42), IA-GA<General Assembly>-SF123 (e.g. IA-GA76-SF123, 1995-1996). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
     (ratified acts, text_version = Enrolled), with the year ratified. Without an introduced date, year = the session's first year."""
