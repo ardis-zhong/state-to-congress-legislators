@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 78,469 bills, 451 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii and Mississippi from 1999, New Jersey from 2000, Wyoming from 2003, Oregon from 2007; Nevada 1997 only); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 78,757 bills, 452 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii and Mississippi from 1999, New Jersey from 2000, Wyoming from 2003, Oregon from 2007); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -276,10 +276,11 @@ the person is the first-named prime sponsor, with the bill as introduced
 For New Mexico, 1997–2000 bills and memorials come from the Legislature's
 website (nmlegis.gov): the legislation Steve Pearce sponsored, with the
 introduced text, whose "INTRODUCED BY" line must name him.
-For Nevada, only the 1997 session is covered: its bill lists in the
-Legislature's archive (archive.leg.state.nv.us) name each item's primary
-sponsor, and the introduced text's heading must name the person first; the
-archive's bill information for other pre-2011 sessions is closed to crawlers.
+For Nevada, 1997–2009 bills and resolutions come from the Legislature's session
+archive (archive.leg.state.nv.us): for 1997 its bill lists name each item's
+primary sponsor; for 1999–2009, whose bill lists are under paths closed to
+crawlers, every introduced text was read by number. Either way the introduced
+text's heading must name the person first.
 For Oregon, 2007–2009 bills and resolutions come from the Legislature's
 public OData service and OLIS: measures whose first chief sponsor is the
 person, with the introduced document, whose "Sponsored by" line must name
@@ -304,7 +305,7 @@ resolutions come from the General Assembly's bill text archive
 451 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
 Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Iowa, Minnesota and Wisconsin from 1995,
 Maryland and the Missouri Senate from 1996, New Mexico, Ohio,
-Illinois, Louisiana, North Dakota, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii and Mississippi from 1999, New Jersey from 2000, Wyoming from 2003, Oregon from 2007, Nevada 1997 only, other states from 2008); for
+Illinois, Louisiana, Nevada, North Dakota, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii and Mississippi from 1999, New Jersey from 2000, Wyoming from 2003, Oregon from 2007, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
 York bills); `year`/`congress` then fall back to the bill's status date or

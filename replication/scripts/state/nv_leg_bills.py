@@ -13,12 +13,21 @@ archive keeps bill information for every pre-2011 session except 1997 (whose tra
              used. Its heading names the sponsors ("Senate Bill No. 209-Senators Titus, Adler, ...");
              the person must be named first (IntroducedByMatch).
 
+  --scan     Sessions 1999-2009 (70th-75th; the archive's bill information for them is under the closed
+             "Reports" paths, but the bill texts are not): every introduced text is read by number
+             (/Session/<n>/bills/<type>/<bill>.html for 1999-2003, .pdf for 2005-2009; AB, SB, AJR, SJR, ACR,
+             SCR, AR, SR, until 25 numbers in a row are missing). An item is kept when the first sponsor
+             in its heading ("Senate Bill No. 10-Senator Cegavske") is a reviewed (session, chamber,
+             name) in replication/data/reference/nv_sponsor_names_1999_2009.csv. Output
+             nv_scan_state_legislation_sponsored.csv. Regular sessions only.
+
 Polite: one request at a time, at least 2 seconds apart, a User-Agent naming the project, every
 response cached under nv_leg_cache/.
 
 USAGE (from the repo root):
     python3 replication/scripts/state/nv_leg_bills.py --lists
     python3 replication/scripts/state/nv_leg_bills.py --texts
+    python3 replication/scripts/state/nv_leg_bills.py --scan
 """
 
 import argparse
@@ -166,11 +175,96 @@ def crawl_texts():
           + ", ".join(f"{k} {sum(1 for o in out if o['IntroducedByMatch'] == k)}" for k in ("Yes", "No", "Unavailable")))
 
 
+SCAN_SESSIONS = {"70th1999": (1999, "htm"), "71st2001": (2001, "htm"), "72nd2003": (2003, "htm"),
+                 "73rd2005": (2005, "pdf"), "74th2007": (2007, "pdf"), "75th2009": (2009, "pdf")}
+SCAN_TYPES = ["AB", "SB", "AJR", "SJR", "ACR", "SCR", "AR", "SR"]
+SCAN_NAMES = "replication/data/reference/nv_sponsor_names_1999_2009.csv"
+SCAN_OUT = "nv_scan_state_legislation_sponsored.csv"
+HEADING = re.compile(r"(?is)(?:BILL|RESOLUTION)\s+NO\.\s*\d+\s*\S\s*(.+?)\s*(?:\(On Behalf|\(by request|Prefiled|"
+                     r"(?:JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)\s+\d|_{3,}|$)")
+
+
+def first_sponsor(text):
+    """('Titus', 'Senators Titus, Adler and ...') from a text's heading; ('', '') if none."""
+    m = HEADING.search(text[:1500])
+    if not m:
+        return "", ""
+    names = " ".join(m.group(1).split())
+    lead = re.sub(r"(?i)^(?:Senators?|Assemblym[ae]n|Assemblywom[ae]n|Assembly\s*members?|Speaker|President)\s+", "", names)
+    return re.split(r",|;| and ", lead)[0].strip(), names
+
+
+def intro_date(text):
+    m = re.search(r"(?i)(JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)\s+(\d{1,2}),\s*((?:19|20)\d\d)",
+                  text[:2000])
+    return time.strftime("%Y-%m-%d", time.strptime(" ".join(m.groups()).title(), "%B %d %Y")) if m else ""
+
+
+def scan():
+    import pdfplumber
+    with open(SCAN_NAMES, newline="", encoding="utf-8") as f:
+        names = {(r["session"], r["chamber"], r["label"].upper()): r for r in csv.DictReader(f) if r["bioguide_id"]}
+    sq = lambda x: re.sub(r"[^A-Z]", "", x.upper())
+    out = []
+    for sess, (year, ext) in SCAN_SESSIONS.items():
+        for typ in SCAN_TYPES:
+            missing, num = 0, 0
+            while missing < 25:
+                num += 1
+                bill = f"{typ}{num}"
+                head_path = os.path.join(CACHE, "scan_heads", sess, f"{bill}.txt")
+                if os.path.exists(head_path):
+                    with open(head_path, encoding="utf-8") as f:
+                        head = f.read()
+                else:
+                    url = f"https://archive.leg.state.nv.us/Session/{sess}/bills/{typ}/{bill}.{'html' if ext == 'htm' else 'pdf'}"
+                    raw = fetch(url)
+                    if raw is None:
+                        continue
+                    head = ""
+                    if ext == "htm" and raw:
+                        head = html_text(raw.decode("cp1252", "replace"))
+                    elif raw[:4] == b"%PDF":
+                        local = os.path.join(CACHE, "scan_pdf", sess, f"{bill}.pdf")
+                        os.makedirs(os.path.dirname(local), exist_ok=True)
+                        with open(local, "wb") as f:
+                            f.write(raw)
+                        with pdfplumber.open(local) as pdf:
+                            head = "\n".join((pg.extract_text(x_tolerance=1.5) or "") for pg in pdf.pages)
+                    os.makedirs(os.path.dirname(head_path), exist_ok=True)
+                    with open(head_path, "w", encoding="utf-8") as f:
+                        f.write(head)  # the whole text (kept for every item; small next to the PDFs)
+                if not head.strip():
+                    missing += 1
+                    continue
+                missing = 0
+                first, all_names = first_sponsor(head)
+                r = names.get((sess, typ[0], sq(first)))
+                if r:
+                    title = re.search(r"SUMMARY\W+(.+?)\(BDR", " ".join(head.split()))
+                    out.append({"BioguideId": r["bioguide_id"], "Name": r["name"],
+                                "Session": f"{year} Regular Session ({sess[:-4]} Session)", "BillNumber": bill,
+                                "BillId": f"NV-{sess[:2]}-{bill}", "Title": title.group(1).strip() if title else "",
+                                "IntroducedDate": intro_date(head), "House": "SENATE" if typ[0] == "S" else "HOUSE",
+                                "AuthorName": first, "IntroducedBy": all_names[:200], "IntroducedByMatch": "Yes",
+                                "TextVersion": "Introduced", "TextPath": head_path})
+            kept = sum(1 for o in out if o["BillId"].split("-")[1] == sess[:2] and re.sub(r"\d", "", o["BillNumber"]) == typ)
+            print(f"{sess} {typ}: up to {num - missing}, {kept} kept", flush=True)
+    with open(SCAN_OUT, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=list(out[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(out)
+    print(f"Wrote {SCAN_OUT}: {len(out)} rows")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--lists", action="store_true")
     ap.add_argument("--texts", action="store_true")
+    ap.add_argument("--scan", action="store_true")
     args = ap.parse_args()
+    if args.scan:
+        scan()
     if args.lists:
         crawl_lists()
     if args.texts:
