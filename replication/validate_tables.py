@@ -65,7 +65,8 @@ ALLOWED = {
                          "Louisiana Legislature", "South Carolina Legislature",
                          "Missouri Senate", "Hawaii State Legislature", "Kentucky General Assembly",
                          "Arkansas General Assembly", "Iowa General Assembly", "Alaska Legislature",
-                         "New Mexico Legislature", "Nevada Legislature", "Oregon Legislature"},
+                         "New Mexico Legislature", "Nevada Legislature", "Oregon Legislature",
+                         "Mississippi Legislature", "Wyoming Legislature", "Nebraska Legislature"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -239,12 +240,25 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "Oregon Legislature":
+                if n == 4 and r.text_source == "Wyoming Legislature":
+                    _, yr, num = r.bill_id.split("-", 2)
+                    url = f"https://wyoleg.gov/{yr}/Introduced/{num}.pdf"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Nebraska Legislature":
+                    _, leg, num = r.bill_id.split("-", 2)
+                    url = f"https://nebraskalegislature.gov/FloorDocs/{leg}/PDF/Intro/{num}.pdf"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Mississippi Legislature":
+                    _, sess, num = r.bill_id.split("-", 2)
+                    url = f"https://billstatus.ls.state.ms.us/{sess}/pdf/mainmenu.htm"
+                    detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Oregon Legislature":
                     _, sess, num = r.bill_id.split("-", 2)
                     url = f"https://olis.oregonlegislature.gov/liz/{sess}/Measures/Overview/{num}"
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "Nevada Legislature":
-                    url = "https://archive.leg.state.nv.us/Session/69th1997/tracking/tracking.html"
+                    url = ("https://archive.leg.state.nv.us/Session/69th1997/tracking/tracking.html"
+                           if r.bill_id.startswith("NV-69-") else "https://archive.leg.state.nv.us/Session/")
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "New Mexico Legislature":
                     url = "https://www.nmlegis.gov/Legislation/BillFinder/Sponsor?SponCode=HPEAR&YearStart=3&YearEnd=12&Type="

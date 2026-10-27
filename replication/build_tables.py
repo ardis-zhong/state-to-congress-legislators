@@ -309,6 +309,11 @@ def build_table4():
 # the introduced text's heading; robots.txt closes the other pre-2011 sessions' bill information).
 # Oregon: 2007-2009 from the Legislature's OData service and OLIS (first chief sponsor, checked against the
 # introduced text's "Sponsored by" line).
+# Nevada 1999-2009: every introduced text in the archive read by number (the bill lists are under closed paths),
+# kept when the heading's first sponsor is the person. Mississippi: 1999-2009 from the Bill Status System
+# (measures by author, checked against the introduced text's "By:" line).
+# Wyoming 2003-2007 (Barrasso) and Nebraska 1999-2010: introduced texts read by number, kept when the first sponsor
+# ("Sponsored by:" / "Introduced by Smith, 48") is the person.
 ARCHIVE_SOURCES = [
     ("ca_state_legislation_sponsored.csv", "CA", "California Legislature"),          # local; ca_pubinfo_bills.py
     ("ca_leginfo_state_legislation_sponsored.csv", "CA", "California Legislature"),  # local; ca_leginfo_archive.py
@@ -337,6 +342,10 @@ ARCHIVE_SOURCES = [
     ("nm_state_legislation_sponsored.csv", "NM", "New Mexico Legislature"),          # local; nm_nmlegis_bills.py
     ("nv_state_legislation_sponsored.csv", "NV", "Nevada Legislature"),              # local; nv_leg_bills.py
     ("or_state_legislation_sponsored.csv", "OR", "Oregon Legislature"),              # local; or_olis_bills.py
+    ("nv_scan_state_legislation_sponsored.csv", "NV", "Nevada Legislature"),         # local; nv_leg_bills.py --scan
+    ("ms_state_legislation_sponsored.csv", "MS", "Mississippi Legislature"),         # local; ms_billstatus_bills.py
+    ("wy_state_legislation_sponsored.csv", "WY", "Wyoming Legislature"),             # local; wy_wyoleg_bills.py
+    ("ne_state_legislation_sponsored.csv", "NE", "Nebraska Legislature"),            # local; ne_nebraskalegislature_bills.py
 ]
 
 
@@ -360,7 +369,9 @@ def archive_rows(people, skip):
     AR-1991S1-SB42), IA-GA<General Assembly>-SF123 (e.g. IA-GA76-SF123, 1995-1996),
     AK-<Legislature>-HB77 (e.g. AK-21-HB77, 1999-2000), NM-<session code>-HB322 (e.g. NM-1997R-HB322,
     NM-2000S2-HB10), NV-69-SB209 (Nevada's 69th Session, 1997), OR-<session key>-HB2871 (e.g.
-    OR-2007R1-HB2871). California
+    OR-2007R1-HB2871), NV-70-SB10 (Nevada's 70th Session, 1999), MS-<session code>-SB2004 (e.g. MS-2005-SB2004,
+    MS-20051E-SB2003 for the 2005 First Extraordinary Session), WY-<year>-SF0001 (e.g. WY-2005-SF0001),
+    NE-<Legislature>-LB100 (e.g. NE-99-LB100, 2005-2006). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
     (ratified acts, text_version = Enrolled), with the year ratified. Without an introduced date, year = the session's first year."""

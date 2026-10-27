@@ -38,6 +38,9 @@ bioguide2005_cache/
 /nm_nmlegis_cache
 /nv_leg_cache
 /or_olis_cache
+/ms_billstatus_cache
+/wy_wyoleg_cache
+/ne_legislature_cache
 cel_cache/
 *.zip
 
