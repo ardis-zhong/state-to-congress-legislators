@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 76,897 bills, 441 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Ohio, Illinois and Louisiana from 1997, Florida and Kentucky from 1998, Alaska and Hawaii from 1999, New Jersey from 2000); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 76,930 bills, 442 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, New Mexico, Ohio, Illinois and Louisiana from 1997, Florida and Kentucky from 1998, Alaska and Hawaii from 1999, New Jersey from 2000); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -108,7 +108,8 @@ Jersey's 2000–01 session), `MN-79-HF11` (Minnesota's 79th Legislature, 1995–
 session), `MO-1999-SB282` (Missouri Senate, 1999 session), `HI-1999-HB228`
 (Hawaii's 1999 session), `KY-03RS-SB97` (Kentucky's 2003 regular session), `AR-1995R-SB12`
 (Arkansas's 1995 regular session), `IA-GA76-SF123` (Iowa's 76th General Assembly,
-1995–96), or `AK-21-HB77` (Alaska's 21st Legislature, 1999–2000)), `bill_name`, `state_session` (the state legislature's session),
+1995–96), `AK-21-HB77` (Alaska's 21st Legislature, 1999–2000), or `NM-1997R-HB322`
+(New Mexico's 1997 regular session)), `bill_name`, `state_session` (the state legislature's session),
 `congress` (the U.S. Congress in session when the bill was introduced),
 `year` (year introduced; for California 1989–1992 and South Carolina
 1985–1990, year enacted), `state`,
@@ -121,7 +122,7 @@ Assembly`, `Michigan Legislature`, `Maryland General Assembly`,
 `Texas Legislature`, `Louisiana Legislature`,
 `South Carolina Legislature`, `Missouri Senate`, `Hawaii State Legislature`,
 `Kentucky General Assembly`, `Arkansas General Assembly`,
-`Iowa General Assembly`, or `Alaska Legislature`),
+`Iowa General Assembly`, `Alaska Legislature`, or `New Mexico Legislature`),
 `text_version` (the
 version the text is: `Introduced`, or where that isn't available `Prefiled`,
 `Draft`, `Amended`, `Reported`, `Engrossed`, `Adopted`, `Enrolled`, or
@@ -265,9 +266,12 @@ For Alaska, 1999–2008 bills and resolutions come from the Legislature's
 BASIS system (akleg.gov/basis): each member's prime sponsorships, kept when
 the person is the first-named prime sponsor, with the bill as introduced
 (version A, plain text). Mary Peltola served as Mary Kapsner and Mary Nelson.
-441 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
+For New Mexico, 1997–2000 bills and memorials come from the Legislature's
+website (nmlegis.gov): the legislation Steve Pearce sponsored, with the
+introduced text, whose "INTRODUCED BY" line must name him.
+442 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
 Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Iowa, Minnesota and Wisconsin from 1995,
-Maryland and the Missouri Senate from 1996, Ohio,
+Maryland and the Missouri Senate from 1996, New Mexico, Ohio,
 Illinois and Louisiana from 1997, Florida and Kentucky from 1998, Alaska and Hawaii from 1999, New Jersey from 2000, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New

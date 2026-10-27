@@ -304,6 +304,7 @@ def build_table4():
 # Iowa: 1995-2002 and 2009-2010 from legis.iowa.gov (bills by sponsor; the Bill Book's jacket PDF up to the first
 # amendment, checked against its "BY ..." line).
 # Alaska: 1999-2008 from akleg.gov BASIS (first-named prime sponsor; introduced version A as plain text).
+# New Mexico: 1997-2000 from nmlegis.gov (Bill Finder by Sponsor; introduced text's "INTRODUCED BY" line).
 ARCHIVE_SOURCES = [
     ("ca_state_legislation_sponsored.csv", "CA", "California Legislature"),          # local; ca_pubinfo_bills.py
     ("ca_leginfo_state_legislation_sponsored.csv", "CA", "California Legislature"),  # local; ca_leginfo_archive.py
@@ -329,6 +330,7 @@ ARCHIVE_SOURCES = [
     ("ar_state_legislation_sponsored.csv", "AR", "Arkansas General Assembly"),       # local; ar_arkleg_bills.py
     ("ia_state_legislation_sponsored.csv", "IA", "Iowa General Assembly"),           # local; ia_legis_bills.py
     ("ak_state_legislation_sponsored.csv", "AK", "Alaska Legislature"),              # local; ak_akleg_bills.py
+    ("nm_state_legislation_sponsored.csv", "NM", "New Mexico Legislature"),          # local; nm_nmlegis_bills.py
 ]
 
 
@@ -350,7 +352,8 @@ def archive_rows(people, skip):
     Senate, e.g. MO-1999-SB282), HI-<year>-HB228 (e.g. HI-1999-HB228, HI-2003-SCR4),
     KY-<session code>-SB97 (e.g. KY-03RS-SB97, KY-09SS-HR14), AR-<session code>-SB12 (e.g. AR-1995R-SB12,
     AR-1991S1-SB42), IA-GA<General Assembly>-SF123 (e.g. IA-GA76-SF123, 1995-1996),
-    AK-<Legislature>-HB77 (e.g. AK-21-HB77, 1999-2000). California
+    AK-<Legislature>-HB77 (e.g. AK-21-HB77, 1999-2000), NM-<session code>-HB322 (e.g. NM-1997R-HB322,
+    NM-2000S2-HB10). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
     (ratified acts, text_version = Enrolled), with the year ratified. Without an introduced date, year = the session's first year."""

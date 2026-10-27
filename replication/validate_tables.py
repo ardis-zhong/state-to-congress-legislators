@@ -64,7 +64,8 @@ ALLOWED = {
                          "Minnesota Legislature", "Texas Legislature",
                          "Louisiana Legislature", "South Carolina Legislature",
                          "Missouri Senate", "Hawaii State Legislature", "Kentucky General Assembly",
-                         "Arkansas General Assembly", "Iowa General Assembly", "Alaska Legislature"},
+                         "Arkansas General Assembly", "Iowa General Assembly", "Alaska Legislature",
+                         "New Mexico Legislature"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -238,7 +239,10 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "Alaska Legislature":
+                if n == 4 and r.text_source == "New Mexico Legislature":
+                    url = "https://www.nmlegis.gov/Legislation/BillFinder/Sponsor?SponCode=HPEAR&YearStart=3&YearEnd=12&Type="
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Alaska Legislature":
                     _, leg, num = r.bill_id.split("-", 2)
                     url = f"https://www.akleg.gov/basis/Bill/Detail/{leg}?Root={num}"
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
