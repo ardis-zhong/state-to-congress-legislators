@@ -65,7 +65,7 @@ ALLOWED = {
                          "Louisiana Legislature", "South Carolina Legislature",
                          "Missouri Senate", "Hawaii State Legislature", "Kentucky General Assembly",
                          "Arkansas General Assembly", "Iowa General Assembly", "Alaska Legislature",
-                         "New Mexico Legislature"},
+                         "New Mexico Legislature", "Nevada Legislature"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -239,7 +239,10 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "New Mexico Legislature":
+                if n == 4 and r.text_source == "Nevada Legislature":
+                    url = "https://archive.leg.state.nv.us/Session/69th1997/tracking/tracking.html"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "New Mexico Legislature":
                     url = "https://www.nmlegis.gov/Legislation/BillFinder/Sponsor?SponCode=HPEAR&YearStart=3&YearEnd=12&Type="
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "Alaska Legislature":
