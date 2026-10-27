@@ -293,6 +293,8 @@ def build_table4():
 # Louisiana: 1997-2009 from legis.la.gov (primary author, checked against the original version's "BY ..." line).
 # South Carolina: 1985-2008 from scstatehouse.gov (primary sponsors; earliest version online, checked against
 # its "Introduced by" line where printed; 1985-1990 ratified acts only).
+# Missouri: 1996-2009 Senate bills from senate.mo.gov (sponsor in the Senate's bill lists, checked against the
+# introduced text's "INTRODUCED BY SENATOR" line where printed). House archive pages are closed to crawlers.
 ARCHIVE_SOURCES = [
     ("ca_state_legislation_sponsored.csv", "CA", "California Legislature"),          # local; ca_pubinfo_bills.py
     ("ca_leginfo_state_legislation_sponsored.csv", "CA", "California Legislature"),  # local; ca_leginfo_archive.py
@@ -312,6 +314,7 @@ ARCHIVE_SOURCES = [
     ("tx_state_legislation_sponsored.csv", "TX", "Texas Legislature"),               # local; tx_ftp_bills.py
     ("la_state_legislation_sponsored.csv", "LA", "Louisiana Legislature"),           # local; la_legis_bills.py
     ("sc_state_legislation_sponsored.csv", "SC", "South Carolina Legislature"),      # local; sc_statehouse_bills.py
+    ("mo_senate_state_legislation_sponsored.csv", "MO", "Missouri Senate"),           # local; mo_senate_bills.py
 ]
 
 
@@ -329,7 +332,8 @@ def archive_rows(people, skip):
     MN-<Legislature>-HF11 (e.g. MN-79-HF11, 1995-1996), TX-<session code>-HB1801 (e.g. TX-73R-HB1801,
     TX-781-HB3 for the 78th Legislature's first called session), LA-<session code>-HB70 (e.g. LA-97RS-HB70,
     LA-051ES-SB1 for the 2005 First Extraordinary Session), SC-<session number>-H3651 (e.g. SC-111-H3651,
-    1995-1996; resolutions SC-110-SCR106, joint resolutions SC-111-SJR1040). California
+    1995-1996; resolutions SC-110-SCR106, joint resolutions SC-111-SJR1040), MO-<year>-SB282 (Missouri
+    Senate, e.g. MO-1999-SB282). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
     (ratified acts, text_version = Enrolled), with the year ratified. Without an introduced date, year = the session's first year."""
