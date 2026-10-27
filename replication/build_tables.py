@@ -297,6 +297,8 @@ def build_table4():
 # introduced text's "INTRODUCED BY SENATOR" line where printed). House archive pages are closed to crawlers.
 # Hawaii: 1999-2008 from data.capitol.hawaii.gov (first-named introducer in the Legislature's measures-introduced
 # lists; Hawaii's introduced texts print no introducer names).
+# Kentucky: 1998-2009 from the Legislative Record (apps.legislature.ky.gov/record; first-named sponsor on the
+# record's bill page; texts print no sponsor).
 ARCHIVE_SOURCES = [
     ("ca_state_legislation_sponsored.csv", "CA", "California Legislature"),          # local; ca_pubinfo_bills.py
     ("ca_leginfo_state_legislation_sponsored.csv", "CA", "California Legislature"),  # local; ca_leginfo_archive.py
@@ -318,6 +320,7 @@ ARCHIVE_SOURCES = [
     ("sc_state_legislation_sponsored.csv", "SC", "South Carolina Legislature"),      # local; sc_statehouse_bills.py
     ("mo_senate_state_legislation_sponsored.csv", "MO", "Missouri Senate"),           # local; mo_senate_bills.py
     ("hi_state_legislation_sponsored.csv", "HI", "Hawaii State Legislature"),        # local; hi_capitol_bills.py
+    ("ky_state_legislation_sponsored.csv", "KY", "Kentucky General Assembly"),       # local; ky_record_bills.py
 ]
 
 
@@ -336,7 +339,8 @@ def archive_rows(people, skip):
     TX-781-HB3 for the 78th Legislature's first called session), LA-<session code>-HB70 (e.g. LA-97RS-HB70,
     LA-051ES-SB1 for the 2005 First Extraordinary Session), SC-<session number>-H3651 (e.g. SC-111-H3651,
     1995-1996; resolutions SC-110-SCR106, joint resolutions SC-111-SJR1040), MO-<year>-SB282 (Missouri
-    Senate, e.g. MO-1999-SB282), HI-<year>-HB228 (e.g. HI-1999-HB228, HI-2003-SCR4). California
+    Senate, e.g. MO-1999-SB282), HI-<year>-HB228 (e.g. HI-1999-HB228, HI-2003-SCR4),
+    KY-<session code>-SB97 (e.g. KY-03RS-SB97, KY-09SS-HR14). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
     (ratified acts, text_version = Enrolled), with the year ratified. Without an introduced date, year = the session's first year."""

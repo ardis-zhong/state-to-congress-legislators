@@ -63,7 +63,7 @@ ALLOWED = {
                          "North Carolina General Assembly", "Wisconsin Legislature", "New Jersey Legislature",
                          "Minnesota Legislature", "Texas Legislature",
                          "Louisiana Legislature", "South Carolina Legislature",
-                         "Missouri Senate", "Hawaii State Legislature"},
+                         "Missouri Senate", "Hawaii State Legislature", "Kentucky General Assembly"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -237,7 +237,11 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "Hawaii State Legislature":
+                if n == 4 and r.text_source == "Kentucky General Assembly":
+                    _, sess, num = r.bill_id.split("-", 2)
+                    url = f"https://apps.legislature.ky.gov/record/{sess.lower()}/record.htm"
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Hawaii State Legislature":
                     _, yr, num = r.bill_id.split("-", 2)
                     url = f"https://data.capitol.hawaii.gov/sessions/session{yr}/Bills/{num}_.htm"
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
