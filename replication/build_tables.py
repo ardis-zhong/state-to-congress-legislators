@@ -307,6 +307,8 @@ def build_table4():
 # New Mexico: 1997-2000 from nmlegis.gov (Bill Finder by Sponsor; introduced text's "INTRODUCED BY" line).
 # Nevada: 1997 session from the Legislature's archive (primary sponsor in the 1997 tracking lists, checked against
 # the introduced text's heading; robots.txt closes the other pre-2011 sessions' bill information).
+# Oregon: 2007-2009 from the Legislature's OData service and OLIS (first chief sponsor, checked against the
+# introduced text's "Sponsored by" line).
 ARCHIVE_SOURCES = [
     ("ca_state_legislation_sponsored.csv", "CA", "California Legislature"),          # local; ca_pubinfo_bills.py
     ("ca_leginfo_state_legislation_sponsored.csv", "CA", "California Legislature"),  # local; ca_leginfo_archive.py
@@ -334,6 +336,7 @@ ARCHIVE_SOURCES = [
     ("ak_state_legislation_sponsored.csv", "AK", "Alaska Legislature"),              # local; ak_akleg_bills.py
     ("nm_state_legislation_sponsored.csv", "NM", "New Mexico Legislature"),          # local; nm_nmlegis_bills.py
     ("nv_state_legislation_sponsored.csv", "NV", "Nevada Legislature"),              # local; nv_leg_bills.py
+    ("or_state_legislation_sponsored.csv", "OR", "Oregon Legislature"),              # local; or_olis_bills.py
 ]
 
 
@@ -356,7 +359,8 @@ def archive_rows(people, skip):
     KY-<session code>-SB97 (e.g. KY-03RS-SB97, KY-09SS-HR14), AR-<session code>-SB12 (e.g. AR-1995R-SB12,
     AR-1991S1-SB42), IA-GA<General Assembly>-SF123 (e.g. IA-GA76-SF123, 1995-1996),
     AK-<Legislature>-HB77 (e.g. AK-21-HB77, 1999-2000), NM-<session code>-HB322 (e.g. NM-1997R-HB322,
-    NM-2000S2-HB10), NV-69-SB209 (Nevada's 69th Session, 1997). California
+    NM-2000S2-HB10), NV-69-SB209 (Nevada's 69th Session, 1997), OR-<session key>-HB2871 (e.g.
+    OR-2007R1-HB2871). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
     (ratified acts, text_version = Enrolled), with the year ratified. Without an introduced date, year = the session's first year."""
