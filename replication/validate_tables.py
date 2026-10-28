@@ -68,7 +68,8 @@ ALLOWED = {
                          "New Mexico Legislature", "Nevada Legislature", "Oregon Legislature",
                          "Mississippi Legislature", "Wyoming Legislature", "Nebraska Legislature",
                          "South Dakota Legislature", "North Dakota Legislative Assembly",
-                         "Rhode Island General Assembly", "Georgia General Assembly (Internet Archive)"},
+                         "Rhode Island General Assembly", "Georgia General Assembly (Internet Archive)",
+                         "Connecticut General Assembly"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -246,6 +247,10 @@ def main():
                     _, yr, num = r.bill_id.split("-", 2)
                     url = (f"https://web.archive.org/web/2010/http://www.legis.state.ga.us/legis/"
                            f"{yr}_{(int(yr) + 1) % 100:02d}/")
+                    detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Connecticut General Assembly":
+                    _, yr, num = r.bill_id.split("-", 2)
+                    url = f"https://www.cga.ct.gov/{yr}/TOB/{num[0]}/{yr}{num[:2]}-{num[2:]}-R00-{num[:2]}.htm"
                     detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "Wyoming Legislature":
                     _, yr, num = r.bill_id.split("-", 2)
