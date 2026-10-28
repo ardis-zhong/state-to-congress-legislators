@@ -204,6 +204,7 @@ def excluded_texts(table):
 
 STATE_SPONSORED = "state_legislation_sponsored.csv"  # local; see replication/README.md step 3
 STATE_TEXT_MANIFEST = "bill_text_manifest.csv"       # local; written by legiscan_fetch_bill_text.py
+LEGISCAN_SPONSOR_CHECK = "replication/data/reference/legiscan_sponsor_check.csv"  # legiscan_sponsor_check.py
 
 
 def congress_on(date_str):
@@ -217,11 +218,17 @@ def congress_on(date_str):
 def state_bill_rows():
     """Sponsor rows for state bills (decided 2026-10-09, widened 2026-10-13): 'Primary Sponsor'
     everywhere, 'Sponsor' in states whose LegiScan data never uses 'Primary Sponsor' (CT, MS, SD),
-    and, in sessions that record no sponsor roles, bills whose sole listed sponsor is the person."""
+    and, in sessions that record no sponsor roles, bills whose sole listed sponsor is the person.
+    CT, MS and SD 'Sponsor' rows are then checked against the legislature's own record of the first
+    sponsor (legiscan_sponsor_check.py, decided 2026-10-28): rows where the person is not the first
+    sponsor (co-sponsors, joint authors) are dropped."""
     sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "scripts", "state"))
     from legiscan_fetch_bill_text import sponsor_rows_in_scope
     rows, _ = sponsor_rows_in_scope(STATE_SPONSORED)
-    return rows
+    with open(LEGISCAN_SPONSOR_CHECK, newline="", encoding="utf-8") as f:
+        not_first = {(c["StateAbbr"], c["BioguideId"], c["SessionId"], c["BillNumber"])
+                     for c in csv.DictReader(f) if c["Verdict"] == "NotFirst"}
+    return [r for r in rows if (r["StateAbbr"], r["BioguideId"], r["SessionId"], r["BillNumber"]) not in not_first]
 
 
 def state_bill_dates(r):

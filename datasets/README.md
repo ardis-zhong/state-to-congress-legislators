@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 79,411 bills, 459 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii, Mississippi and Nebraska from 1999, New Jersey from 2000, Connecticut from 2001, Wyoming from 2003, Oregon from 2007); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 79,036 bills, 459 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii, Mississippi and Nebraska from 1999, New Jersey from 2000, Connecticut from 2001, Wyoming from 2003, Oregon from 2007); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -86,7 +86,9 @@ Effectiveness Scores Data set"; updated at www.thelawmakers.org.
 **Table 4: State bill text**
 One row per state bill or resolution the person sponsored, with text
 available: "Primary Sponsor" in LegiScan; "Sponsor" in CT, MS, and SD, which
-never use "Primary Sponsor"; and, in sessions where LegiScan records no
+never use "Primary Sponsor", when the legislature's own record (Connecticut's
+introducer files, Mississippi's "By:" line, South Dakota's prime sponsor) names
+the person first; and, in sessions where LegiScan records no
 sponsor roles at all (most states' sessions from about 2007 to 2012), bills
 on which the person is the only listed sponsor. Co-sponsors are excluded, as
 are bills from those role-less sessions with more than one listed sponsor,

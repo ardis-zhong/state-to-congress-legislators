@@ -1,0 +1,551 @@
+StateAbbr,BioguideId,Name,SessionId,SessionTitle,BillNumber,NumSponsors,Verdict,Evidence
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05001,5,NotFirst,HB05001: introducer no. 3; first introducer 90
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05002,27,NotFirst,HB05002: co-sponsor; first introducer INS
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05014,17,NotFirst,HB05014: co-sponsor; first introducer INS
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05015,9,NotFirst,HB05015: co-sponsor; first introducer 84
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05024,50,NotFirst,HB05024: co-sponsor; first introducer HED
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05028,24,NotFirst,HB05028: co-sponsor; first introducer HED
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05084,3,NotFirst,HB05084: co-sponsor; first introducer 21
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05105,12,NotFirst,HB05105: co-sponsor; first introducer 42
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05106,13,NotFirst,HB05106: co-sponsor; first introducer 42
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05107,11,NotFirst,HB05107: co-sponsor; first introducer 42
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05110,26,NotFirst,HB05110: co-sponsor; first introducer AGE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05113,19,NotFirst,HB05113: co-sponsor; first introducer AGE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05120,42,NotFirst,HB05120: co-sponsor; first introducer ENV
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05122,34,NotFirst,HB05122: co-sponsor; first introducer ENV
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05126,47,NotFirst,HB05126: co-sponsor; first introducer ENV
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05133,6,NotFirst,HB05133: co-sponsor; first introducer 98
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05163,55,NotFirst,HB05163: co-sponsor; first introducer APP
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05164,19,NotFirst,HB05164: co-sponsor; first introducer PRI
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05169,7,NotFirst,HB05169: co-sponsor; first introducer 42
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05171,3,NotFirst,HB05171: co-sponsor; first introducer 42
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05173,6,NotFirst,HB05173: co-sponsor; first introducer 42
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05202,37,NotFirst,HB05202: co-sponsor; first introducer LAB
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05208,51,NotFirst,HB05208: co-sponsor; first introducer CE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05219,43,NotFirst,HB05219: co-sponsor; first introducer INS
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05225,24,NotFirst,HB05225: co-sponsor; first introducer GL
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05227,16,NotFirst,HB05227: co-sponsor; first introducer GL
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05235,32,NotFirst,HB05235: co-sponsor; first introducer INS
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05246,70,NotFirst,HB05246: co-sponsor; first introducer HS
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05247,5,NotFirst,HB05247: co-sponsor; first introducer JUD
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05248,17,NotFirst,HB05248: co-sponsor; first introducer JUD
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05251,13,NotFirst,HB05251: co-sponsor; first introducer JUD
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05255,59,NotFirst,HB05255: co-sponsor; first introducer PD
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05263,33,NotFirst,HB05263: co-sponsor; first introducer VA
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05265,66,NotFirst,HB05265: co-sponsor; first introducer VA
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05270,34,NotFirst,HB05270: co-sponsor; first introducer BA
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05278,20,NotFirst,HB05278: co-sponsor; first introducer AGE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05282,44,NotFirst,HB05282: co-sponsor; first introducer LAB
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05291,9,NotFirst,HB05291: co-sponsor; first introducer PH
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05295,59,NotFirst,HB05295: co-sponsor; first introducer INS
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05303,15,NotFirst,HB05303: co-sponsor; first introducer INS
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05306,18,NotFirst,HB05306: co-sponsor; first introducer PH
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05314,59,NotFirst,HB05314: co-sponsor; first introducer KID
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05315,81,NotFirst,HB05315: co-sponsor; first introducer ED
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05324,17,NotFirst,HB05324: co-sponsor; first introducer GAE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05336,59,NotFirst,HB05336: co-sponsor; first introducer PD
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05339,36,NotFirst,HB05339: co-sponsor; first introducer PS
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05350,41,NotFirst,HB05350: co-sponsor; first introducer VA
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05351,59,NotFirst,HB05351: co-sponsor; first introducer VA
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05352,102,NotFirst,HB05352: co-sponsor; first introducer VA
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05360,62,NotFirst,HB05360: co-sponsor; first introducer KID
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05388,42,NotFirst,HB05388: co-sponsor; first introducer VA
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05404,38,NotFirst,HB05404: co-sponsor; first introducer GAE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05411,9,NotFirst,HB05411: co-sponsor; first introducer HS
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05419,43,NotFirst,HB05419: co-sponsor; first introducer ENV
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05424,72,NotFirst,HB05424: co-sponsor; first introducer ED
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05427,10,NotFirst,HB05427: co-sponsor; first introducer GAE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05435,101,NotFirst,HB05435: co-sponsor; first introducer CE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05436,34,NotFirst,HB05436: co-sponsor; first introducer CE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05442,43,NotFirst,HB05442: co-sponsor; first introducer GAE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05452,27,NotFirst,HB05452: co-sponsor; first introducer PH
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05497,84,NotFirst,HB05497: co-sponsor; first introducer JUD
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05498,39,NotFirst,HB05498: co-sponsor; first introducer CE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05500,36,NotFirst,HB05500: co-sponsor; first introducer CE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05520,3,NotFirst,HB05520: co-sponsor; first introducer GAE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05533,40,NotFirst,HB05533: co-sponsor; first introducer JUD
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05534,9,NotFirst,HB05534: co-sponsor; first introducer FIN
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,HB05535,11,NotFirst,HB05535: co-sponsor; first introducer FIN
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00025,26,NotFirst,SB00025: co-sponsor; first introducer S28
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00050,66,NotFirst,SB00050: co-sponsor; first introducer INS
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00153,52,NotFirst,SB00153: co-sponsor; first introducer KID
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00175,14,NotFirst,SB00175: co-sponsor; first introducer CE
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00187,35,NotFirst,SB00187: co-sponsor; first introducer GL
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00190,21,NotFirst,SB00190: co-sponsor; first introducer INS
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00215,63,NotFirst,SB00215: co-sponsor; first introducer VA
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00354,19,NotFirst,SB00354: co-sponsor; first introducer APP
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00370,15,NotFirst,SB00370: co-sponsor; first introducer HS
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00379,56,NotFirst,SB00379: co-sponsor; first introducer ED
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00400,25,NotFirst,SB00400: co-sponsor; first introducer PH
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00456,48,NotFirst,SB00456: co-sponsor; first introducer ED
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00462,22,NotFirst,SB00462: co-sponsor; first introducer ET
+CT,E000293,Elizabeth Esty,45,2010 Regular Session,SB00493,11,NotFirst,SB00493: co-sponsor; first introducer S29
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB99,16,NotFirst,"By: Chism, Upshaw, Bennett, Byrd, Carpenter,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB466,81,NotFirst,"By: Peranich,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB648,3,NotFirst,"By: Jones (111th), Palazzo, Brown"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB653,13,NotFirst,"By: Bennett, Palazzo, Upshaw, Ellington,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB654,6,NotFirst,"By: Upshaw, Peranich, Fredericks, Jones"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB743,4,NotFirst,"By: Bennett, DeLano, Ishee, Palazzo"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB883,23,NotFirst,"By: Woods, Akins, Aldridge, Baker (74th),"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB914,7,First,"By: Palazzo, Bennett, Compretta, DeLano,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB939,1,First,By: Palazzo
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB966,1,First,By: Palazzo
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1018,1,First,By: Palazzo
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1070,122,NotFirst,By: The Entire Membership
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1080,1,First,By: Palazzo
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1081,1,First,By: Palazzo
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1117,1,First,By: Palazzo
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1207,39,NotFirst,"By: McBride, Moss, Eaton, Akins, Aldridge,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1243,1,First,By: Palazzo
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1283,1,First,By: Palazzo
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1450,10,NotFirst,"By: Jones (82nd), Peranich, Patterson,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1464,19,First,"By: Palazzo, Aldridge, Bennett, Bondurant,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1484,13,NotFirst,"By: Bounds, Formby, Byrd, Carpenter, Chism,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1493,1,Unavailable,no LegiScan text
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1502,42,NotFirst,"By: McBride, Moss, Eaton, Akins, Aldridge,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1505,21,NotFirst,"By: Turner, Bondurant, Byrd, Carpenter,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1518,18,NotFirst,"By: Bounds, Bennett, Bondurant, Byrd,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1716,4,NotFirst,"By: Frierson, Jones (111th), Palazzo,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1728,10,NotFirst,"By: Fredericks, Bennett, DeLano, Dedeaux,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1737,10,NotFirst,"By: Fredericks, Bennett, DeLano, Dedeaux,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1748,2,First,"By: Palazzo, Moak"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1749,8,NotFirst,"By: DeLano, Fredericks, Bennett, Ishee,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HB1751,9,NotFirst,"By: Fredericks, DeLano, Bennett, Guice,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2015,14,NotFirst,"By: Wilemon, Blount, Brown, Butler, Dawkins,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2034,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2035,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2080,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2113,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2142,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2143,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2144,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2145,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2146,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2147,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2148,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2149,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2150,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2151,1,First,By: Nunnelee
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2153,18,NotFirst,"By: Flowers, Brown, Burton, Carmichael, Clarke,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2154,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2155,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2162,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2165,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2166,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2211,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2229,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2232,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2233,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2234,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2235,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2236,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2237,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2238,14,First,"By: Nunnelee, Browning, Burton, Davis, Dearing,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2239,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2247,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2293,18,NotFirst,"By: Watson, McDaniel, Hewes, Yancey, Lee (35th),"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2297,38,NotFirst,"By: King, Baria, Blount, Browning, Burton,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2297,38,NotFirst,"By: King, Baria, Blount, Browning, Burton,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2298,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2304,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2305,1,First,By: Nunnelee
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2306,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2327,29,NotFirst,"By: Kirby, Gollott, Baria, Blount, Browning,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2338,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2365,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2368,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2371,1,First,By: Hyde-Smith
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2407,11,NotFirst,"By: Dearing, King, Dickerson, Fillingane,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2420,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2453,1,First,By: Hyde-Smith
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2495,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2500,10,NotFirst,"By: Davis,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2505,30,NotFirst,"By: McDaniel, Hudson, Watson, King, Baria, Brown,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2521,14,NotFirst,"By: Frazier, Burton, Butler, Dearing, Fillingane,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2524,51,NotFirst,"By: Burton, Gordon, Harden, Baria, King, Jackson"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2524,51,NotFirst,"By: Burton, Gordon, Harden, Baria, King, Jackson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2568,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2570,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2572,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2589,2,First,"By: Nunnelee, Dearing"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2610,4,First,"By: Nunnelee, Dearing, Jackson (32nd), Watson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2620,3,First,"By: Nunnelee, Flowers, Clarke"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2622,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2625,10,NotFirst,"By: McDaniel, Yancey, Hudson, Watson, Davis,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2637,1,First,By: Hyde-Smith
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2642,52,NotFirst,"By: Blount, Jackson (11th), Dearing"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2642,52,NotFirst,"By: Blount, Jackson (11th), Dearing"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2688,2,First,"By: Nunnelee, Dearing"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2704,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2705,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2706,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2709,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2714,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2715,1,First,By: Hyde-Smith
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2768,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2775,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2776,3,First,"By: Nunnelee, Flowers, Clarke"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2777,3,First,"By: Nunnelee, Flowers, Clarke"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2785,3,NotFirst,"By: Flowers, Nunnelee, Burton"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2795,3,First,"By: Nunnelee, Flowers, Clarke"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2816,17,First,"By: Nunnelee, Davis, Burton, Ward, Dickerson,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2833,2,NotFirst,"By: Lee (35th), Hyde-Smith"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2850,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB2851,1,First,By: Hyde-Smith
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2935,2,NotFirst,"By: Flowers, Nunnelee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB2956,4,NotFirst,"By: Hopson, Nunnelee, Flowers, Clarke"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3027,4,NotFirst,"By: Hewes, Dearing, Nunnelee, Watson"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3064,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3070,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3093,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3107,4,NotFirst,"By: Dearing, Butler, Kirby, Hyde-Smith"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3116,1,First,By: Hyde-Smith
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3121,5,First,"By: Nunnelee, Davis, Dearing, Frazier, Jackson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3122,5,First,"By: Nunnelee, Davis, Dearing, Frazier, Jackson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3123,5,First,"By: Nunnelee, Davis, Dearing, Frazier, Jackson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3124,5,First,"By: Nunnelee, Davis, Dearing, Frazier, Jackson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3125,5,First,"By: Nunnelee, Davis, Dearing, Frazier, Jackson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3126,5,First,"By: Nunnelee, Davis, Dearing, Frazier, Jackson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3127,5,First,"By: Nunnelee, Davis, Dearing, Frazier, Jackson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3128,5,First,"By: Nunnelee, Davis, Dearing, Frazier, Jackson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3129,5,First,"By: Nunnelee, Davis, Dearing, Frazier, Jackson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3130,5,First,"By: Nunnelee, Davis, Dearing, Frazier, Jackson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3131,5,First,"By: Nunnelee, Davis, Dearing, Frazier, Jackson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3132,6,First,"By: Nunnelee, Davis, Lee (35th), Blount,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3133,6,First,"By: Nunnelee, Davis, Lee (35th), Blount,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3134,6,First,"By: Nunnelee, Davis, Lee (35th), Blount,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3135,6,First,"By: Nunnelee, Davis, Lee (35th), Blount,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3136,6,First,"By: Nunnelee, Davis,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3137,6,First,"By: Nunnelee, Davis, Turner, Hopson, Stone,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3138,6,First,"By: Nunnelee, Davis, Turner, Hopson, Stone,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3139,6,First,"By: Nunnelee, Davis, Jackson (15th), Burton,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3140,6,First,"By: Nunnelee, Davis, Jackson (15th), Burton,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3141,6,First,"By: Nunnelee, Davis, Jackson (15th), Burton,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3142,6,First,"By: Nunnelee, Davis, Jackson (15th), Burton,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3143,6,NotFirst,"By: Nunnelee, Davis, Hyde-Smith, Dearing, Hudson,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3143,6,First,"By: Nunnelee, Davis, Hyde-Smith, Dearing, Hudson,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3144,6,First,"By: Nunnelee, Davis, Flowers, Chassaniol,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3145,6,First,"By: Nunnelee, Davis, Flowers, Chassaniol,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3146,6,First,"By: Nunnelee, Davis, Simmons, Hudson, Jackson"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3147,6,First,"By: Nunnelee, Davis, Jackson (32nd), Carmichael,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3148,6,First,"By: Nunnelee, Davis, Jackson (32nd), Carmichael,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3149,6,First,"By: Nunnelee, Davis, Jackson (32nd), Carmichael,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3150,6,First,"By: Nunnelee, Davis, Jackson (32nd), Carmichael,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3151,6,First,"By: Nunnelee, Davis, Jackson (32nd), Carmichael,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3152,6,First,"By: Nunnelee, Davis, Jackson (32nd), Carmichael,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3153,6,First,"By: Nunnelee, Davis, Jackson (32nd), Carmichael,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3154,6,First,"By: Nunnelee, Davis, Gollott, Harden, Lee (47th),"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3155,6,First,"By: Nunnelee, Davis, Gollott, Harden, Lee (47th),"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3156,6,First,"By: Nunnelee, Davis, Gollott, Harden, Lee (47th),"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3157,6,First,"By: Nunnelee, Davis, Gollott, Harden, Lee (47th),"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3158,6,First,"By: Nunnelee, Davis, Gollott, Harden, Lee (47th),"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3159,6,First,"By: Nunnelee, Davis, Moffatt, Gollott, Lee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3160,6,First,"By: Nunnelee, Davis, Moffatt, Gollott, Lee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3161,6,First,"By: Nunnelee, Davis, Moffatt, Gollott, Lee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3162,6,First,"By: Nunnelee, Davis,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3163,6,First,"By: Nunnelee, Davis, Moffatt, Gollott, Lee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3164,6,First,"By: Nunnelee, Davis, Moffatt, Gollott, Lee"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3165,5,NotFirst,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3165,5,First,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3166,5,NotFirst,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3166,5,First,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3167,5,NotFirst,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3167,5,First,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3168,5,NotFirst,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3168,5,First,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3169,5,NotFirst,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3169,5,First,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3170,5,NotFirst,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3170,5,First,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3171,5,NotFirst,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3171,5,First,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SB3172,5,NotFirst,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3172,5,First,"By: Nunnelee, Davis, Gordon, Hyde-Smith, Lee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3181,8,NotFirst,"By: King, Gordon, Mettetal, Montgomery, Nunnelee,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3182,12,First,"By: Nunnelee, Brown, Browning, Bryan, Burton,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3186,2,First,"By: Nunnelee, Dearing"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3211,3,NotFirst,"By: Hewes, Jackson (15th), Nunnelee"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SB3214,2,First,"By: Nunnelee, Hewes"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HR63,122,NotFirst,By: The Entire Membership
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HR86,122,NotFirst,By: The Entire Membership
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HR97,9,NotFirst,"By: DeLano, Bennett, Ellington, Ishee,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HR100,2,NotFirst,"By: Read, Palazzo"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HR104,25,NotFirst,"By: Peranich, McCoy, Akins, Bennett,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HR110,4,NotFirst,"By: Bennett, DeLano, Ishee, Palazzo"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HR125,122,NotFirst,By: The Entire Membership
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SR6,51,NotFirst,"By: Michel, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SR6,51,NotFirst,"By: Michel, Albritton, Baria, Blount, Brown,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC17,51,NotFirst,"By: Monsour, Akins, Aldridge, Baker (74th),"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC49,22,NotFirst,"By: Staples, Baker (74th), Bennett,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC60,122,NotFirst,By: The Entire Membership
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC70,6,NotFirst,"By: Bennett,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC73,50,First,"By: Palazzo, Mims, Horne, Upshaw, Gunn, Akins, Aldridge, Baker (74th), Baker (8th),"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC79,4,NotFirst,"By: Bennett,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC80,15,NotFirst,"By: Patterson, Palazzo, DeLano, Bennett,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC82,122,NotFirst,By: The Entire Membership
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC94,11,NotFirst,"By: Zuber, DeLano, Dedeaux, Guice, Hamilton"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC96,121,First,"By: Palazzo, Bennett, Carpenter, Compretta,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC101,47,NotFirst,"By: Monsour, Palazzo, Akins, Aldridge, Baker"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC111,122,NotFirst,By: The Entire Membership
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC116,54,NotFirst,"By: Ellington, Akins, Aldridge, Baker"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC118,122,NotFirst,By: The Entire Membership
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC126,7,NotFirst,"By: Patterson, Bennett, DeLano, Guice,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC127,7,NotFirst,"By: Patterson, Barker, DeLano, Guice, Jones"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC132,26,NotFirst,"By: Peranich, Akins, Bennett, Bondurant,"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC135,2,NotFirst,"By: Read, Palazzo"
+MS,P000601,Steven Palazzo,44,2010 Regular Session,HC145,54,First,"By: Palazzo, Monsour, Mims, Gunn, Akins,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC503,21,NotFirst,"By: Dearing, Butler, Browning, Carmichael,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC505,30,NotFirst,"By: Burton, Blount, Browning, Butler, Carmichael,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC506,29,NotFirst,"By: Dearing, Butler, Blount, Browning,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC512,29,NotFirst,"By: Dearing, Butler, Blount, Browning,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC515,25,NotFirst,"By: Hewes, Browning, Butler, Carmichael,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC516,31,NotFirst,"By: Hewes, Dawkins, Blount, Browning, Butler,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC517,16,NotFirst,"By: Blount, Browning, Carmichael, Chassaniol,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC519,31,NotFirst,"By: Bryan, Blount, Browning, Butler, Carmichael,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC520,13,NotFirst,"By: Powell, Stone, Browning, Chassaniol, Davis,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC524,27,NotFirst,"By: Hewes, Baria, Browning, Butler, Carmichael,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC525,15,NotFirst,"By: Fillingane, Blount, Browning, Butler,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC526,32,NotFirst,"By: Dearing, Gordon, Simmons, Walls, Clarke,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC535,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC536,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC540,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC542,51,NotFirst,"By: Ward, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC542,51,NotFirst,"By: Ward, Albritton, Baria, Blount, Brown,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC561,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC562,2,First,"By: Nunnelee, Burton"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC565,51,NotFirst,"By: Jackson (11th), Hewes, Albritton, Baria,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC565,51,NotFirst,"By: Jackson (11th), Hewes, Albritton, Baria,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC583,45,NotFirst,"By: Powell, Gordon, Clarke, Harden, Butler,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC583,45,NotFirst,"By: Powell, Gordon, Clarke, Harden, Butler,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC585,2,First,"By: Hyde-Smith, Burton"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC586,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC625,14,NotFirst,"By: Hewes, Dearing, Dickerson, Fillingane,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC632,19,NotFirst,"By: Ward, Gordon, Kirby, Lee (35th), Davis,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC636,51,NotFirst,"By: Powell, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC636,51,NotFirst,"By: Powell, Albritton, Baria, Blount, Brown,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC637,11,NotFirst,"By: Harden, Burton, Butler, Carmichael, Davis,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC669,52,NotFirst,"By: Lee (35th), Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC669,52,NotFirst,"By: Lee (35th), Albritton, Baria, Blount, Brown,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC682,1,First,By: Nunnelee
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC686,27,NotFirst,"By: Fillingane, Gordon, Brown, Yancey, King,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC693,52,NotFirst,"By: King, Blount, Albritton, Baria, Brown,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC693,52,NotFirst,"By: King, Blount, Albritton, Baria, Brown,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC696,6,NotFirst,"By: Bryan, Nunnelee, Gordon, Butler, Fillingane,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC702,9,First,"By: Nunnelee, Hewes, Yancey, Watson, McDaniel,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC706,48,NotFirst,"By: Moffatt, Gordon, Yancey, Hewes, King,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC706,48,NotFirst,"By: Moffatt, Gordon, Yancey, Hewes, King,"
+MS,N000186,Alan Nunnelee,44,2010 Regular Session,SC708,40,NotFirst,"By: Horhn, Kirby, Simmons, Frazier, Butler,"
+MS,H001079,Cindy Hyde-Smith,44,2010 Regular Session,SC713,24,NotFirst,"By: Baria, Dawkins, Butler, Butler (36th), Bryan,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2032,5,NotFirst,By: Tollison
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2059,18,NotFirst,"By: Ward, Chassaniol"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2155,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2226,34,NotFirst,"By: Albritton, Tollison, Wilemon"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2335,3,NotFirst,"By: Dearing, Butler (38th), Hyde-Smith"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2337,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2413,32,NotFirst,By: Blount
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2450,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2469,32,NotFirst,"By: Fillingane, McDaniel, Brown, Albritton,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2472,21,NotFirst,"By: McDaniel, Watson, Yancey, Montgomery,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2501,51,NotFirst,"By: Lee (47th), Hudson"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2615,30,NotFirst,"By: Watson, McDaniel, Yancey, Albritton, Brown,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2632,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2659,33,NotFirst,"By: King, Brown, Browning, Burton, Butler (38th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2680,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2682,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2695,6,First,"By: Hyde-Smith,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2702,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2763,13,NotFirst,"By: Ward, Butler (38th), Dickerson, Dearing,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2766,2,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2772,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2888,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2896,51,NotFirst,"By: Stone, Albritton, Blount, Brown, Browning,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2898,19,NotFirst,"By: Baria, Fillingane, Lee (47th), Lee (35th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2907,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2908,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2909,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2910,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2911,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB2912,1,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3035,7,NotFirst,"By: Davis, Carmichael, Lee (35th), Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3037,7,NotFirst,"By: Davis, Carmichael, Lee (35th), Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3038,7,NotFirst,"By: Davis, Carmichael, Lee (35th), Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3039,7,NotFirst,"By: Davis, Carmichael, Lee (35th), Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3040,7,NotFirst,"By: Davis, Carmichael, Lee (35th), Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3042,7,NotFirst,"By: Davis, Carmichael, Lee (35th), Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3044,7,NotFirst,"By: Davis, Carmichael, Hopson, Blount,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3045,7,NotFirst,"By: Davis, Carmichael, Hopson, Blount,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3046,7,NotFirst,"By: Davis, Carmichael, Hopson, Blount,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3055,6,NotFirst,"By: Davis, Carmichael, Hyde-Smith, Collins,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3056,7,NotFirst,"By: Davis, Carmichael, Flowers, Chassaniol,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3058,7,NotFirst,"By: Davis, Carmichael, Simmons, Hudson, Jackson"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3060,6,NotFirst,"By: Davis, Carmichael, Jackson (32nd), Collins,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3061,6,NotFirst,"By: Davis, Carmichael, Jackson (32nd), Collins,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3063,6,NotFirst,"By: Davis, Carmichael, Jackson (32nd), Collins,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3064,6,NotFirst,"By: Davis, Carmichael, Jackson (32nd), Collins,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3065,6,NotFirst,"By: Davis, Carmichael, Jackson (32nd), Collins,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3066,7,NotFirst,"By: Davis, Carmichael, Gollott, Harden, Lee"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3071,7,NotFirst,"By: Davis, Carmichael, Moffatt, Gollott, Lee"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3072,7,NotFirst,"By: Davis, Carmichael, Moffatt, Gollott, Lee"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3073,7,NotFirst,"By: Davis, Carmichael, Moffatt, Gollott, Lee"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3074,7,NotFirst,"By: Davis, Carmichael, Moffatt, Gollott, Lee"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3075,7,NotFirst,"By: Davis, Carmichael, Moffatt, Gollott, Lee"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3077,6,NotFirst,"By: Davis, Carmichael, Gordon, Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3078,6,NotFirst,"By: Davis, Carmichael, Gordon, Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3079,6,NotFirst,"By: Davis, Carmichael, Gordon, Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3080,6,NotFirst,"By: Davis, Carmichael, Gordon, Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3081,6,NotFirst,"By: Davis, Carmichael, Gordon, Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3082,6,NotFirst,"By: Davis, Carmichael, Gordon, Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3083,6,NotFirst,"By: Davis, Carmichael, Gordon, Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3084,6,NotFirst,"By: Davis, Carmichael, Gordon, Butler (36th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SB3123,4,NotFirst,"By: King, Fillingane, Hudson, Hyde-Smith"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SR15,5,NotFirst,"By: Jones, Fillingane, Hyde-Smith, Jackson"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SR18,51,NotFirst,"By: Hewes, Dearing, Albritton, Baria, Blount,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SR19,51,NotFirst,"By: Hewes, Dearing, Albritton, Baria, Blount,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SR21,51,NotFirst,"By: Hewes, Dearing, Albritton, Baria, Blount,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SR22,51,NotFirst,"By: Dearing, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SR26,52,NotFirst,"By: Kirby, Hewes, Albritton, Baria, Blount,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC510,51,NotFirst,"By: Dickerson, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC512,51,NotFirst,"By: Davis, Flowers, Albritton, Baria, Blount,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC513,51,NotFirst,"By: Jackson (11th), Jones, Albritton, Baria,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC530,50,NotFirst,"By: Stone, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC533,51,NotFirst,"By: Lee (47th), Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC534,51,NotFirst,"By: Stone, Powell, Wilemon, Browning, Albritton,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC545,25,NotFirst,"By: Chassaniol, Fillingane, Lee (35th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC556,4,First,"By: Hyde-Smith, Butler (38th), Dearing,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC568,51,NotFirst,"By: Kirby, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC569,32,First,"By: Hyde-Smith, Gordon, Jackson (15th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC570,7,NotFirst,"By: Dearing, Butler (38th), Hyde-Smith,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC581,10,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC585,8,First,By: Hyde-Smith
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC587,51,NotFirst,"By: Gollott, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC606,11,NotFirst,By: Blount
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC607,4,NotFirst,By: Kirby
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC608,15,NotFirst,By: Hewes
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC609,9,NotFirst,"By: Butler (38th), Albritton"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC638,6,First,"By: Hyde-Smith, Butler (38th), Davis, Dearing,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC642,8,NotFirst,"By: Dearing, Burton, Butler (38th), Clarke,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC643,7,NotFirst,"By: King, Butler (38th), Dearing, Fillingane,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC645,7,NotFirst,"By: Carmichael, Burton, Butler (38th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC646,8,NotFirst,"By: Yancey, Kirby, Lee (35th), Butler (38th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC649,14,NotFirst,"By: Jordan, Jackson (11th), Blount, Burton,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC650,9,NotFirst,"By: Frazier, Horhn,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC651,6,NotFirst,"By: Browning, Butler (38th), Fillingane,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC652,6,NotFirst,"By: Baria, Lee (47th), Dawkins, Butler (38th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC653,52,NotFirst,"By: Hewes, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC654,7,NotFirst,"By: Blount, Horhn, Frazier, Harden, Butler"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC657,6,NotFirst,"By: Dickerson, Butler (38th), Hyde-Smith, Jackson"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC658,11,NotFirst,"By: Dickerson, Burton, Butler (38th), Dearing,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC659,19,NotFirst,"By: Kirby, Lee (35th), Blount, Burton, Butler"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC660,9,NotFirst,"By: Carmichael, Burton, Butler (38th), Dearing,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC661,9,NotFirst,"By: Carmichael, Burton, Butler (38th), Dearing,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC666,9,NotFirst,"By: Lee (35th), Hyde-Smith, Burton, Butler"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC673,6,NotFirst,"By: Albritton, Butler (38th), Hewes, Hyde-Smith,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC674,8,NotFirst,"By: Flowers, Davis, Butler (38th), Hyde-Smith,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC675,12,NotFirst,"By: Horhn, Simmons, Burton, Butler (38th),"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC683,5,NotFirst,"By: Stone, Butler (38th), Fillingane, Hyde-Smith,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC685,6,NotFirst,"By: Powell, Stone, Butler (38th), Fillingane,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC686,7,NotFirst,"By: Powell, Stone, Butler (38th), Fillingane,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC687,6,NotFirst,"By: Powell, Stone, Butler (38th), Fillingane,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC689,6,NotFirst,"By: Tollison, Butler (38th), Fillingane,"
+MS,H001079,Cindy Hyde-Smith,87,2011 Regular Session,SC690,8,First,"By: Hyde-Smith, Butler (38th), Fillingane,"
+MS,P000601,Steven Palazzo,474,2010 2nd Special Session,HB1,13,NotFirst,By: Blackmon
+MS,N000186,Alan Nunnelee,474,2010 2nd Special Session,SB2004,40,NotFirst,"By: Watson, Hewes, Albritton, Gollott, Tollison,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SB2004,40,NotFirst,"By: Watson, Hewes, Albritton, Gollott, Tollison,"
+MS,N000186,Alan Nunnelee,474,2010 2nd Special Session,SC501,52,NotFirst,"By: Dearing, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC501,52,NotFirst,"By: Dearing, Albritton, Baria, Blount, Brown,"
+MS,N000186,Alan Nunnelee,474,2010 2nd Special Session,SC502,52,NotFirst,"By: King, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC502,52,NotFirst,"By: King, Albritton, Baria, Blount, Brown,"
+MS,N000186,Alan Nunnelee,474,2010 2nd Special Session,SC503,52,NotFirst,"By: Mettetal, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC503,52,NotFirst,"By: Mettetal, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC504,20,NotFirst,"By: Kirby, Baria, Burton, Butler, Carmichael,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC506,16,NotFirst,"By: Michel, Butler, Clarke, Dearing, Fillingane,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC507,16,NotFirst,"By: Blount, Bryan, Butler, Carmichael, Clarke,"
+MS,N000186,Alan Nunnelee,474,2010 2nd Special Session,SC509,52,NotFirst,"By: Yancey, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC509,52,NotFirst,"By: Yancey, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC510,12,NotFirst,"By: Stone, Butler, Fillingane, Hyde-Smith,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC512,7,NotFirst,"By: King, Butler, Fillingane, Hyde-Smith, Jackson"
+MS,N000186,Alan Nunnelee,474,2010 2nd Special Session,SC513,52,NotFirst,"By: Blount, Albritton, Baria, Browning, Brown,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC513,52,NotFirst,"By: Blount, Albritton, Baria, Browning, Brown,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC514,17,NotFirst,"By: Lee (35th), Blount, Butler, Carmichael,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC515,18,NotFirst,"By: Dickerson, Butler, Carmichael, Clarke, Davis,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC517,22,NotFirst,"By: Frazier, Harden, Horhn, Michel, Blount, Lee"
+MS,N000186,Alan Nunnelee,474,2010 2nd Special Session,SC519,52,NotFirst,"By: Mettetal, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC519,52,NotFirst,"By: Mettetal, Albritton, Baria, Blount, Brown,"
+MS,H001079,Cindy Hyde-Smith,474,2010 2nd Special Session,SC520,6,NotFirst,"By: Gollott, Butler, Fillingane,"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SR1,28,NotFirst,"By: Hewes, Kirby, Dearing, Blount, Burton, Butler"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SR2,29,NotFirst,"By: Hewes, Kirby, Dearing, Blount, Browning,"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SR3,28,NotFirst,"By: Hewes, Blount, Kirby, Dearing, Burton, Butler"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SR4,28,NotFirst,"By: Hewes, Kirby, Dearing, Blount, Browning,"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SR5,27,NotFirst,"By: Wilemon, Hewes, Bryan, Blount, Browning,"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC501,51,NotFirst,"By: Brown, Dearing, Burton, Albritton, Baria,"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC502,25,NotFirst,"By: Kirby, Burton, Blount, Browning, Butler"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC503,25,NotFirst,"By: Kirby, Blount, Browning, Burton, Butler"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC504,24,NotFirst,"By: Wilemon, Blount, Browning, Burton, Butler"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC505,16,NotFirst,"By: Harden, Dawkins, Blount, Browning, Butler"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC507,11,NotFirst,"By: Butler (38th), Dearing, Browning, Collins,"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC508,10,NotFirst,"By: Blount, Chassaniol, Collins, Dawkins,"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC509,17,NotFirst,"By: Simmons, Horhn, Burton, Butler (38th),"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC510,19,NotFirst,"By: Horhn, Browning, Burton, Butler (38th),"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC514,18,NotFirst,"By: Michel, Dearing, Blount, Browning, Burton,"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC515,7,NotFirst,"By: Michel, Browning, Butler (38th), Dearing,"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC516,11,NotFirst,"By: Michel, Butler (38th), Collins, Davis,"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC517,15,NotFirst,"By: Lee (35th), Blount, Browning, Butler (38th),"
+MS,H001079,Cindy Hyde-Smith,475,2011 1st Special Session,SC519,11,NotFirst,"By: Blount, Frazier, Horhn, Browning, Butler"
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1005,12,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1085,20,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1088,32,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1099,22,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1101,9,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1106,23,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1119,24,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1120,32,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1122,57,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1129,21,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1130,105,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1135,20,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1137,9,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1139,18,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1149,7,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1150,44,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1165,43,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1168,26,First,SponsorType P
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1183,24,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1184,28,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1192,73,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1202,2,First,SponsorType P
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1203,30,First,SponsorType P
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1216,21,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1228,20,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1237,12,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1239,12,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1242,10,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1246,17,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1261,6,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1263,13,First,SponsorType P
+SD,N000184,Kristi Noem,62,2010 Regular Session,HB1274,14,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,SB70,19,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,SB83,20,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,SB88,65,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,SB89,67,NotFirst,prime sponsor in the second chamber; the first chamber's prime sponsor is named first
+SD,N000184,Kristi Noem,62,2010 Regular Session,SB91,24,NotFirst,prime sponsor in the second chamber; the first chamber's prime sponsor is named first
+SD,N000184,Kristi Noem,62,2010 Regular Session,SB96,30,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,SB104,30,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,SB106,47,NotFirst,prime sponsor in the second chamber; the first chamber's prime sponsor is named first
+SD,N000184,Kristi Noem,62,2010 Regular Session,SB107,30,NotFirst,not among the member's sponsored bills
+SD,N000184,Kristi Noem,62,2010 Regular Session,SB140,22,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,SB172,2,NotFirst,prime sponsor in the second chamber; the first chamber's prime sponsor is named first
+SD,N000184,Kristi Noem,62,2010 Regular Session,SB186,25,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,SB187,5,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HCR1008,48,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HCR1012,28,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HCR1013,9,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,SCR3,104,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,SCR5,62,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HJR1006,3,First,SponsorType P
+SD,N000184,Kristi Noem,62,2010 Regular Session,SJR7,32,NotFirst,prime sponsor in the second chamber; the first chamber's prime sponsor is named first
+SD,N000184,Kristi Noem,62,2010 Regular Session,HC1006,23,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HC1007,7,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HC1010,63,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,HC1026,102,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,SC8,37,NotFirst,SponsorType C
+SD,N000184,Kristi Noem,62,2010 Regular Session,SC20,103,NotFirst,SponsorType C
