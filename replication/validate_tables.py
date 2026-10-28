@@ -68,7 +68,7 @@ ALLOWED = {
                          "New Mexico Legislature", "Nevada Legislature", "Oregon Legislature",
                          "Mississippi Legislature", "Wyoming Legislature", "Nebraska Legislature",
                          "South Dakota Legislature", "North Dakota Legislative Assembly",
-                         "Rhode Island General Assembly"},
+                         "Rhode Island General Assembly", "Georgia General Assembly (Internet Archive)"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -242,7 +242,12 @@ def main():
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
-                if n == 4 and r.text_source == "Wyoming Legislature":
+                if n == 4 and r.text_source == "Georgia General Assembly (Internet Archive)":
+                    _, yr, num = r.bill_id.split("-", 2)
+                    url = (f"https://web.archive.org/web/2010/http://www.legis.state.ga.us/legis/"
+                           f"{yr}_{(int(yr) + 1) % 100:02d}/")
+                    detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Wyoming Legislature":
                     _, yr, num = r.bill_id.split("-", 2)
                     url = f"https://wyoleg.gov/{yr}/Introduced/{num}.pdf"
                     detail = f"{r.state_session}; {r.bill_name[:60]}"

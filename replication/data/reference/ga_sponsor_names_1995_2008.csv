@@ -1,0 +1,52 @@
+session,chamber,list_name,bioguide_id,name,surname,district,member_page,note
+1995_96,S,"Isakson, Johnny",I000055,Johnny Isakson,Isakson,,,State Senate 1993-1996
+1995_96,S,"Scott, David",S001157,David Scott,Scott,36,,State Senate 36th district 1983-2002
+1995_96,H,"Westmoreland, Lynn A",W000796,Lynn Westmoreland,Westmoreland,104,,House 104th district (86th from 2003)
+1995_96,H,"Carter, Hanson",,,,,,rejected: Hanson Carter (not Earl 'Buddy' Carter)
+1995_96,H,"Dix, Scott",,,,,,rejected: given name Scott
+1997_98,S,"Price, Thomas E (56)",P000591,Tom Price,Price,56,,State Senate 56th district 1997-2004
+1997_98,S,"Price, Richard J (28)",,,,,,rejected: Richard J. Price
+1997_98,S,"Scott, David (36th)",S001157,David Scott,Scott,36,,
+1997_98,H,"Scott, James A (165th)",S001189,Austin Scott,Scott,165,,James Austin Scott; House 165th district 1997-2002
+1997_98,H,"Westmoreland, Lynn A (104th)",W000796,Lynn Westmoreland,Westmoreland,104,,
+1997_98,H,"Carter, Hanson (166th) (Resigned)",,,,,,rejected: Hanson Carter
+1997_98,H,"Dix, Scott (76th)",,,,,,rejected: given name Scott
+1997_98,H,"Graves, David B (125th)",,,,,,rejected: David Graves
+1997_98,H,"Tolbert, Scott (25th)",,,,,,rejected: given name Scott
+1999_00,S,"Price, Thomas E (56th)",P000591,Tom Price,Price,56,,
+1999_00,S,"Price, Richard J (28th)",,,,,,rejected: Richard J. Price
+1999_00,S,"Scott, David (36th)",S001157,David Scott,Scott,36,,
+1999_00,S,"Ginrey, Phil (37th)",G000550,Phil Gingrey,Gingrey,37,,list misspells Gingrey; State Senate 37th district 1999-2002
+1999_00,H,"Scott, James A (165th)",S001189,Austin Scott,Scott,165,,
+1999_00,H,"Westmoreland, Lynn A (104th)",W000796,Lynn Westmoreland,Westmoreland,104,,
+1999_00,H,"Dix, Scott (76th)",,,,,,rejected: given name Scott
+1999_00,H,"Graves, David B (125th)",,,,,,rejected: David Graves
+1999_00,H,"Tolbert, Scott (25th)",,,,,,rejected: given name Scott
+2001_02,S,"Gingrey, J. Phillip (R-37)",G000550,Phil Gingrey,Gingrey,37,,
+2001_02,S,"Price, Thomas (R-56)",P000591,Tom Price,Price,56,,
+2001_02,S,"Scott, David (D-36)",S001157,David Scott,Scott,36,,
+2001_02,H,"Scott, Austin (R-165)",S001189,Austin Scott,Scott,165,,
+2001_02,H,"Westmoreland, Lynn (R-104)",W000796,Lynn Westmoreland,Westmoreland,104,,
+2001_02,H,"Collins, Ginger (R-029)",,,,,,rejected: Ginger Collins
+2001_02,H,"Dix, Scott (R-076)",,,,,,rejected: given name Scott
+2001_02,H,"Graves, David (R-125)",,,,,,rejected: David Graves
+2003_04,S,"Price,Thomas 56th",P000591,Tom Price,Price,56,mbrs/pricethomas56th.htm,
+2003_04,S,"Collins,Ginger 6th",,,,,,rejected: Ginger Collins
+2003_04,H,"Graves,Tom 10th",G000560,Tom Graves,Graves,10,mbrs/gravestom10th.htm,House 10th district 2003-2004 (12th from 2005)
+2003_04,H,"Scott,Austin 138th",S001189,Austin Scott,Scott,138,mbrs/scottaustin138th.htm,
+2003_04,H,"Westmoreland,Lynn 86th",W000796,Lynn Westmoreland,Westmoreland,86,mbrs/westmorelandlynn86th.htm,
+2003_04,H,"Graves,David 106th",,,,,,rejected: David Graves
+2005_06,H,"Carter,Earl 159th",C001103,Buddy Carter,Carter,159,mbrs/carterearl159th.htm,Earl L. 'Buddy' Carter; House 159th district 2005-2009
+2005_06,H,"Graves,Tom 12th",G000560,Tom Graves,Graves,12,mbrs/gravestom12th.htm,
+2005_06,H,"Loudermilk,Barry 14th",L000583,Barry Loudermilk,Loudermilk,14,mbrs/loudermilkbarry14th.htm,
+2005_06,H,"Scott,Austin 153rd",S001189,Austin Scott,Scott,153,mbrs/scottaustin153rd.htm,
+2005_06,H,"Graves,David 137th",,,,,,rejected: David Graves
+2005_06,H,"Scott,Martin 2nd",,,,,,rejected: Martin Scott
+2005_06,S,"Carter,Joseph 13th",,,,,,rejected: Joseph Carter
+2007_08,H,"Carter,Earl 159th",C001103,Buddy Carter,Carter,159,mbrs/carterearl159th.htm,
+2007_08,H,"Collins,Doug 27th",C001093,Doug Collins,Collins,27,mbrs/collinsdoug27th.htm,House 27th district 2007-2013
+2007_08,H,"Graves,Tom 12th",G000560,Tom Graves,Graves,12,mbrs/gravestom12th.htm,
+2007_08,H,"Loudermilk,Barry 14th",L000583,Barry Loudermilk,Loudermilk,14,mbrs/loudermilkbarry14th.htm,
+2007_08,H,"Scott,Austin 153rd",S001189,Austin Scott,Scott,153,mbrs/scottaustin153rd.htm,
+2007_08,H,"Scott,Martin 2nd",,,,,,rejected: Martin Scott
+2007_08,S,"Carter,Joseph 13th",,,,,,rejected: Joseph Carter
