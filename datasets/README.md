@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 79,036 bills, 459 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii, Mississippi and Nebraska from 1999, New Jersey from 2000, Connecticut from 2001, Wyoming from 2003, Oregon from 2007); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 81,593 bills, 463 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Connecticut from 2001, Wyoming from 2003, Oregon from 2007); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -116,8 +116,9 @@ session), `MO-1999-SB282` (Missouri Senate, 1999 session), `HI-1999-HB228`
 `WY-2005-SF0143` (Wyoming's 2005 session), `SD-1997-SB111` (South Dakota's
 1997 session), `ND-55-HB1263` (North Dakota's 55th Legislative Assembly, 1997),
 `RI-1997-H5205` (Rhode Island's 1997 session), `NE-96-LB621` (Nebraska's 96th
-Legislature, 1999–2000), `GA-1995-HB159` (Georgia's 1995–96 session), or
-`CT-2003-SB00199` (Connecticut's 2003 session)), `bill_name`, `state_session` (the state legislature's session),
+Legislature, 1999–2000), `GA-1995-HB159` (Georgia's 1995–96 session),
+`CT-2003-SB00199` (Connecticut's 2003 session), or `NY-1999-A01285` (New York's
+1999–2000 term)), `bill_name`, `state_session` (the state legislature's session),
 `congress` (the U.S. Congress in session when the bill was introduced),
 `year` (year introduced; for California 1989–1992 and South Carolina
 1985–1990, year enacted), `state`,
@@ -134,7 +135,8 @@ Assembly`, `Michigan Legislature`, `Maryland General Assembly`,
 `Nevada Legislature`, `Oregon Legislature`, `Mississippi Legislature`,
 `Wyoming Legislature`, `South Dakota Legislature`, `North Dakota Legislative
 Assembly`, `Rhode Island General Assembly`, `Nebraska Legislature`,
-`Georgia General Assembly (Internet Archive)`, or `Connecticut General Assembly`),
+`Georgia General Assembly (Internet Archive)`, `Connecticut General Assembly`,
+or `New York State Assembly`),
 `text_version` (the
 version the text is: `Introduced`, or where that isn't available `Prefiled`,
 `Draft`, `Amended`, `Reported`, `Engrossed`, `Adopted`, `Enrolled`, or
@@ -321,10 +323,17 @@ data (ftp.cga.ct.gov: each measure's introducers in order) and its bill text
 files: the person must be the first introducer, and the text's "Introduced by:"
 list must name them first. Most Connecticut bills are raised by committees, so
 few are a member's own.
-459 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
+For New York, 1999–2008 Assembly bills (and Randy Kuhl's 1999–2004 Senate
+bills) come from the Assembly's public bill pages (nyassembly.gov/leg/), read
+by number for every bill of each two-year term: the page's sponsor must be the
+person, and the text's "Introduced by" line for the bill's own chamber must name
+them first. The site shows each bill's latest printing, so amended bills carry
+their amended text (`text_version` = `Amended`). Bills the Rules Committee
+introduced at a member's request are not counted.
+463 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
 Michigan and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995,
 Maryland and the Missouri Senate from 1996, New Mexico, Ohio,
-Illinois, Louisiana, Nevada, North Dakota, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii, Mississippi and Nebraska from 1999, New Jersey from 2000, Connecticut from 2001, Wyoming from 2003, Oregon from 2007, other states from 2008); for
+Illinois, Louisiana, Nevada, North Dakota, Rhode Island and South Dakota from 1997, Florida and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Connecticut from 2001, Wyoming from 2003, Oregon from 2007, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
 York bills); `year`/`congress` then fall back to the bill's status date or

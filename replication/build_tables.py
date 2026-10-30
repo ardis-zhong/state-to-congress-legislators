@@ -362,6 +362,7 @@ ARCHIVE_SOURCES = [
     ("ri_state_legislation_sponsored.csv", "RI", "Rhode Island General Assembly"),   # local; ri_rilegislature_bills.py
     ("ga_state_legislation_sponsored.csv", "GA", "Georgia General Assembly (Internet Archive)"),  # local; ga_wayback_bills.py
     ("ct_state_legislation_sponsored.csv", "CT", "Connecticut General Assembly"),    # local; ct_cga_bills.py
+    ("ny_state_legislation_sponsored.csv", "NY", "New York State Assembly"),         # local; ny_assembly_bills.py
 ]
 
 
@@ -390,7 +391,8 @@ def archive_rows(people, skip):
     NE-<Legislature>-LB100 (e.g. NE-99-LB100, 2005-2006), SD-<year>-SB111 (e.g. SD-1997-SB111, SD-1997s-SB1
     for a special session), ND-<Legislative Assembly>-HB1263 (e.g. ND-55-HB1263, 1997), RI-<year>-H5205
     (e.g. RI-1997-H5205), GA-<session start year>-HB159 (e.g. GA-1995-HB159, 1995-1996),
-    CT-<year>-SB00199 (e.g. CT-2003-SB00199). California
+    CT-<year>-SB00199 (e.g. CT-2003-SB00199), NY-<term start year>-A00614 (e.g. NY-1999-A00614,
+    NY-2003-S06717 for a Senate bill). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
     (ratified acts, text_version = Enrolled), with the year ratified. Without an introduced date, year = the session's first year."""
