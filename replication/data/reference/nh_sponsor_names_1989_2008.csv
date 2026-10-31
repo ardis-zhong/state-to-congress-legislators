@@ -1,0 +1,43 @@
+year,chamber,sponsor,bioguide_id,name,note
+1989,S,Sen. Bass of Dist. 11,B000220,Charles F. Bass,"NH Senate 1989-92, District 11"
+1990,S,Sen. Bass of Dist. 11,B000220,Charles F. Bass,"NH Senate 1989-92, District 11"
+1991,S,Sen. Bass of Dist. 11,B000220,Charles F. Bass,"NH Senate 1989-92, District 11"
+1992,S,Sen. Bass of Dist. 11,B000220,Charles F. Bass,"NH Senate 1989-92, District 11"
+1991,S,Sen. Humphrey of Dist. 17,H000951,Gordon J. Humphrey,NH Senate 1991-92 after leaving the U.S. Senate
+1992,S,Sen. Humphrey of Dist. 17,H000951,Gordon J. Humphrey,NH Senate 1991-92 after leaving the U.S. Senate
+1991,S,Sen. Shaheen of Dist. 21,S001181,Jeanne Shaheen,"NH Senate 1991-96, District 21"
+1992,S,Sen. Shaheen of Dist. 21,S001181,Jeanne Shaheen,"NH Senate 1991-96, District 21"
+1993,S,Sen. Shaheen of Dist. 21,S001181,Jeanne Shaheen,
+1993,S,Sen. Shaheen of Dist 21,S001181,Jeanne Shaheen,
+1994,S,Sen. Shaheen of Dist 21,S001181,Jeanne Shaheen,
+1993,S,Rep. Shaheen of Dist 21,S001181,Jeanne Shaheen,SB 112 prints 'Rep.' but District 21 is Senate numbering (typo)
+1994,S,"Sen. Shaheen, Dist 21",S001181,Jeanne Shaheen,
+1995,S,"Sen. Shaheen, Dist 21",S001181,Jeanne Shaheen,
+1996,S,"Sen. Shaheen, Dist 21",S001181,Jeanne Shaheen,
+1991,H,Rep. Bradley of Carroll Dist. 6,B001246,Jeb Bradley,"Only Bradley in the House then (no initial); Jeb Bradley NH House 1990-2002, Wolfeboro (Carroll)"
+1992,H,Rep. Bradley of Carroll Dist. 6,B001246,Jeb Bradley,"Only Bradley in the House then (no initial); Jeb Bradley NH House 1990-2002, Wolfeboro (Carroll)"
+1993,H,Rep. J. Bradley of Carr 8,B001246,Jeb Bradley,
+1994,H,Rep. J. Bradley of Carr 8,B001246,Jeb Bradley,
+1994,H,"Rep. J. Bradley, Carr 8",B001246,Jeb Bradley,
+1995,H,"Rep. J. Bradley, Carr 8",B001246,Jeb Bradley,
+1996,H,"Rep. J. Bradley, Carr 8",B001246,Jeb Bradley,
+1997,H,"Rep. J. Bradley, Carr 8",B001246,Jeb Bradley,
+1998,H,"Rep. J. Bradley, Carr 8",B001246,Jeb Bradley,
+1999,H,"Rep. J. Bradley, Carr 8",B001246,Jeb Bradley,
+2000,H,"Rep. J. Bradley, Carr 8",B001246,Jeb Bradley,
+2001,H,"Rep. J. Bradley, Carr 8",B001246,Jeb Bradley,
+2002,H,"Rep. J. Bradley, Carr 8",B001246,Jeb Bradley,
+1997,H,Rep. J. Bradley,B001246,Jeb Bradley,HB 726: 'Rep. J. Bradley; Carr 8'
+1999,H,"Rep. Bradley, Carr 8",B001246,Jeb Bradley,Carroll 8 = Jeb Bradley's seat
+2000,H,"Rep. Bradley, Carr 8",B001246,Jeb Bradley,Carroll 8 = Jeb Bradley's seat
+2001,H,"Rep. Bradley, Carr 8",B001246,Jeb Bradley,Carroll 8 = Jeb Bradley's seat
+2002,H,"Rep. Bradley, Carr 8",B001246,Jeb Bradley,Carroll 8 = Jeb Bradley's seat
+1994,H,"Rep. P. Bradley, Coos 6",,,"REJECTED: Paula Bradley (Coos), not Jeb"
+1990,H,Rep. Pappas of Hillsborough Dist. 37,,,"REJECTED: 1990 Pappas, not Chris Pappas (born 1980)"
+2002,H,"Rep. Guinta, Hills 39",G000570,Frank C. Guinta,"NH House 2000-04, Manchester (Hillsborough 39); only Guinta in the House"
+2005,S,"Sen. Hassan, Dist 23",H001076,Margaret Wood Hassan,"NH Senate 2004-10, District 23"
+2006,S,"Sen. Hassan, Dist 23",H001076,Margaret Wood Hassan,"NH Senate 2004-10, District 23"
+2007,S,"Sen. Hassan, Dist 23",H001076,Margaret Wood Hassan,"NH Senate 2004-10, District 23"
+2008,S,"Sen. Hassan, Dist 23",H001076,Margaret Wood Hassan,"NH Senate 2004-10, District 23"
+2001,H,"Rep. Pappas, Hills 48",,,"REJECTED: 2001-02 session, before Chris Pappas joined the House (elected Nov 2002)"
+2002,H,"Rep. Pappas, Hills 48",,,"REJECTED: 2001-02 session, before Chris Pappas joined the House (elected Nov 2002)"
