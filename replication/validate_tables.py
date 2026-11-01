@@ -70,7 +70,7 @@ ALLOWED = {
                          "South Dakota Legislature", "North Dakota Legislative Assembly",
                          "Rhode Island General Assembly", "Georgia General Assembly (Internet Archive)",
                          "Connecticut General Assembly", "New York State Assembly",
-                         "New Hampshire General Court (Internet Archive)"},
+                         "New Hampshire General Court (Internet Archive)", "Idaho Legislature"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -262,6 +262,10 @@ def main():
                     kind, digits = re.match(r"([A-Z]+)(\d+)$", num).groups()
                     url = (f"https://web.archive.org/web/2010/http://www.gencourt.state.nh.us/legislation/{yr}/"
                            f"{kind}{int(digits):04d}.html")
+                    detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Idaho Legislature":
+                    _, sess, num = r.bill_id.split("-", 2)
+                    url = f"https://legislature.idaho.gov/sessioninfo/{sess.replace('E', 'extra1')}/legislation/"
                     detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "Wyoming Legislature":
                     _, yr, num = r.bill_id.split("-", 2)
