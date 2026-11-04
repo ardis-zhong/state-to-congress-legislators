@@ -365,6 +365,8 @@ ARCHIVE_SOURCES = [
     ("ny_state_legislation_sponsored.csv", "NY", "New York State Assembly"),         # local; ny_assembly_bills.py
     ("nh_state_legislation_sponsored.csv", "NH", "New Hampshire General Court (Internet Archive)"),  # local; nh_gencourt_bills.py
     ("id_state_legislation_sponsored.csv", "ID", "Idaho Legislature"),               # local; id_legislature_bills.py
+    ("ma_state_legislation_sponsored.csv", "MA", "Massachusetts General Court (Internet Archive)"),  # local; ma_wayback_bills.py
+    ("tn_state_legislation_sponsored.csv", "TN", "Tennessee General Assembly (Internet Archive)"),  # local; tn_wayback_bills.py
 ]
 
 
@@ -395,7 +397,9 @@ def archive_rows(people, skip):
     (e.g. RI-1997-H5205), GA-<session start year>-HB159 (e.g. GA-1995-HB159, 1995-1996),
     CT-<year>-SB00199 (e.g. CT-2003-SB00199), NY-<term start year>-A00614 (e.g. NY-1999-A00614,
     NY-2003-S06717 for a Senate bill), NH-<session year>-HB1346 (e.g. NH-1994-HB1346),
-    ID-<session>-H526 (e.g. ID-2000-H526, ID-2000E-H1 for an extraordinary session). California
+    ID-<session>-H526 (e.g. ID-2000-H526, ID-2000E-H1 for an extraordinary session), MA-<General Court>-S513
+    (e.g. MA-182-S513, 2001-2002), TN-<General Assembly>-SB360 (e.g. TN-100-SB360, 1997-1998; 7000s =
+    extraordinary-session bills, as the General Assembly numbered their files). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
     (ratified acts, text_version = Enrolled), with the year ratified. Without an introduced date, year = the session's first year."""

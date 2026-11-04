@@ -1,0 +1,22 @@
+ga,chamber,sponsor,bioguide_id,name,note
+100,S,Cohen,C001068,Steve Cohen,TN Senate 1983-2006
+100,S,Davis L,D000599,Lincoln Davis,TN Senate 1996-2002
+100,S,Davis,D000599,Lincoln Davis,"Plain 'Davis' on Senate bills until 1997-02-10, then 'Davis L'; only Davis in the 1997-98 Senate"
+100,H,Burchett,B001309,Tim Burchett,TN House 1995-98
+100,H,Davis R,,,"REJECTED: House 'Davis R' 1997-98, not David Davis (House from 1998-99)"
+100,H,Davis,,,REJECTED: plain House 'Davis' before 1997-02-12 = 'Davis R'
+101,S,Cohen,C001068,Steve Cohen,TN Senate 1983-2006
+102,S,Cohen,C001068,Steve Cohen,TN Senate 1983-2006
+101,S,Davis L,D000599,Lincoln Davis,TN Senate 1996-2002
+102,S,Davis L,D000599,Lincoln Davis,TN Senate 1996-2002
+101,S,Burchett,B001309,Tim Burchett,TN Senate 1999-2010
+102,S,Burchett,B001309,Tim Burchett,TN Senate 1999-2010
+105,S,Burchett,B001309,Tim Burchett,TN Senate 1999-2010
+101,S,Blackburn,B001243,Marsha Blackburn,TN Senate 1999-2002; the only Blackburn in the Senate
+102,S,Blackburn,B001243,Marsha Blackburn,TN Senate 1999-2002; the only Blackburn in the Senate
+101,H,Black,B001273,Diane Black,TN House dist 45 1999-2004; the only Black in the House
+105,S,Black,B001273,Diane Black,TN Senate dist 18 2005-2010; the only Black in the Senate
+101,H,Davis (Wash),D000606,David Davis,TN House dist 6 (Washington County) 1999-2006
+102,H,Davis (Wash),D000606,David Davis,TN House dist 6 (Washington County) 1999-2006
+101,H,Davis (Cocke),,,REJECTED: House member from Cocke County (not David Davis)
+102,H,Davis (Cocke),,,REJECTED: House member from Cocke County (not David Davis)

@@ -70,7 +70,9 @@ ALLOWED = {
                          "South Dakota Legislature", "North Dakota Legislative Assembly",
                          "Rhode Island General Assembly", "Georgia General Assembly (Internet Archive)",
                          "Connecticut General Assembly", "New York State Assembly",
-                         "New Hampshire General Court (Internet Archive)", "Idaho Legislature"},
+                         "New Hampshire General Court (Internet Archive)", "Idaho Legislature",
+                         "Massachusetts General Court (Internet Archive)",
+                         "Tennessee General Assembly (Internet Archive)"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -262,6 +264,16 @@ def main():
                     kind, digits = re.match(r"([A-Z]+)(\d+)$", num).groups()
                     url = (f"https://web.archive.org/web/2010/http://www.gencourt.state.nh.us/legislation/{yr}/"
                            f"{kind}{int(digits):04d}.html")
+                    detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Massachusetts General Court (Internet Archive)":
+                    _, gc, num = r.bill_id.split("-", 2)
+                    folder = "house" if num[0] == "H" else "senate"
+                    url = f"https://web.archive.org/web/2008/http://www.mass.gov/legis/bills/{folder}/"
+                    detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Tennessee General Assembly (Internet Archive)":
+                    _, ga, num = r.bill_id.split("-", 2)
+                    folder = {"100": "100gahtm/100_bill", "101": "101gahtm/101_BILL"}.get(ga, "currentga/BILL")
+                    url = f"https://web.archive.org/web/2008/http://www.legislature.state.tn.us/bills/{folder}/"
                     detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "Idaho Legislature":
                     _, sess, num = r.bill_id.split("-", 2)
