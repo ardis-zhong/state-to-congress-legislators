@@ -72,7 +72,8 @@ ALLOWED = {
                          "Connecticut General Assembly", "New York State Assembly",
                          "New Hampshire General Court (Internet Archive)", "Idaho Legislature",
                          "Massachusetts General Court (Internet Archive)",
-                         "Tennessee General Assembly (Internet Archive)"},
+                         "Tennessee General Assembly (Internet Archive)",
+                         "Oregon Legislature (Internet Archive)"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -302,6 +303,10 @@ def main():
                 elif n == 4 and r.text_source == "Mississippi Legislature":
                     _, sess, num = r.bill_id.split("-", 2)
                     url = f"https://billstatus.ls.state.ms.us/{sess}/pdf/mainmenu.htm"
+                    detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Oregon Legislature (Internet Archive)":
+                    _, sess, num = r.bill_id.split("-", 2)
+                    url = f"https://web.archive.org/web/2010/http://www.leg.state.or.us/{sess[2:4]}reg/pubs/"
                     detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "Oregon Legislature":
                     _, sess, num = r.bill_id.split("-", 2)
