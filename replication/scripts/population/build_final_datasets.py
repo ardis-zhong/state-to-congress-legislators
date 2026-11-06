@@ -186,6 +186,8 @@ def main():
         w.writerows(person_rows)
 
     print(f'Wrote {args.out}:', len(person_rows), 'rows')
+    from apply_state_year_corrections import apply  # verified corrections to the researched service years
+    apply(person_level=args.out)
 
     both_chamber_count = sum(1 for r in person_rows if r['Chambers'] == 'Senate+House')
     print('Both-chamber individuals:', both_chamber_count)

@@ -8,7 +8,7 @@ databases without text.
 
   --members  The bill-search page's data lists every session's sponsors with a roster key
              ("Lance, Leonard (As Asm)", 71); our people's entries are written as candidates for the
-             reviewed list replication/data/reference/nj_roster_keys_2000_2009.csv.
+             reviewed list replication/data/reference/nj_roster_keys_2000_2011.csv.
   --lists    For each reviewed (session, roster key): the sponsor search
              (/api/billSearchHist/combinedSponsorSearch/.../<key>/.../<session>), which gives each
              bill with the person's sponsor type and order; bills on which the person is the first
@@ -40,9 +40,9 @@ import urllib.request
 SITE = "https://www.njleg.state.nj.us"
 PUB = "https://pub.njleg.state.nj.us"
 CACHE = "nj_njleg_cache"
-SESSIONS = (2000, 2002, 2004, 2006, 2008)
+SESSIONS = (2000, 2002, 2004, 2006, 2008, 2010)
 PEOPLE = "replication/data/population/person_level.csv"
-KEYS = "replication/data/reference/nj_roster_keys_2000_2009.csv"
+KEYS = "replication/data/reference/nj_roster_keys_2000_2011.csv"
 CANDIDATES = "nj_roster_key_candidates.csv"
 LIST_OUT = "nj_first_prime_bills.csv"
 TEXT_OUT = "nj_state_legislation_sponsored.csv"
@@ -101,7 +101,7 @@ def nj_people():
             s, ys = re.sub(r"\bpresent\b", "2026", r["StateLegYears"], flags=re.I), set()
             for a, z in re.findall(r"((?:19|20)\d\d)\s*[-–]\s*(?:[A-Za-z]+\s+)?((?:19|20)\d\d)", s):
                 ys |= set(range(int(a), int(z) + 1))
-            if any(2000 <= y <= 2009 for y in ys):
+            if any(2000 <= y <= 2011 for y in ys):
                 r["years"] = ys
                 out.append(r)
     return out

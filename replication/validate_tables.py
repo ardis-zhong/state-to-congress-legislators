@@ -215,8 +215,21 @@ def main():
             # version of this document is available")
             stub = [(r.bill_id, r.bill_text[:80]) for r in df.itertuples()
                     if re.search(r"only the pdf version of this document is available|"
-                                 r"document (is )?not (yet )?available", r.bill_text[:500], re.I)]
+                                 r"document (is )?not (yet )?available|text is being revised", r.bill_text[:500], re.I)]
             report(n, "text is not a placeholder page", len(stub), len(df), stub)
+
+            # characters that mean a text was decoded wrongly or carries binary junk
+            ctrl = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]")
+            junk = [(r.bill_id, len(ctrl.findall(r.bill_text))) for r in df.itertuples()
+                    if ctrl.search(r.bill_text)]
+            report(n, "text has no control characters", len(junk), len(df), junk)
+            raw_file = [r.bill_id for r in df.itertuples() if r.bill_text.startswith(("%PDF", "{\\rtf", "PK\x03", "<html", "<!DOCTYPE"))]
+            report(n, "text is not a raw file or web page", len(raw_file), len(df), raw_file)
+            lost = [(r.bill_id, r.bill_text.count("\ufffd")) for r in df.itertuples()
+                    if r.bill_text.count("\ufffd") >= 5]
+            report(n, "text has fewer than 5 replacement characters", len(lost), len(df), lost, warn_only=True)
+            short = [(r.bill_id, r.bill_text[:80]) for r in df.itertuples() if len(r.bill_text) < 200]
+            report(n, "text is at least 200 characters", len(short), len(df), short, warn_only=True)
 
             miss = []
             for r in df.itertuples():

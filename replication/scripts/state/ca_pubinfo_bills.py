@@ -52,7 +52,7 @@ import zipfile
 
 CACHE = "ca_pubinfo_cache"
 TEXT_DIR = "ca_billtext_cache"
-SESSIONS = [1999, 2001, 2003, 2005, 2007]
+SESSIONS = [1999, 2001, 2003, 2005, 2007, 2009, 2011]
 CHAPTERED_SESSIONS = [1989, 1991]
 CHAPTERED_AUTHORS = "replication/data/reference/ca_chaptered_authors_1989_1992.csv"
 PERSON_LEVEL = "replication/data/population/person_level.csv"

@@ -8,7 +8,7 @@ coverage (2009 on). Minnesota state-text pilot (Ardis, 2026-10-25). Regular sess
   --members  Each session's status search page (/bills/status_search.php?body=<House|Senate>
              &session=<code>) lists the chief authors ("author1", first-named authors) with ids;
              our people's entries are written as candidates for the reviewed list
-             replication/data/reference/mn_author_ids_1995_2008.csv.
+             replication/data/reference/mn_author_ids_1995_2010.csv.
   --lists    For each reviewed (session, body, id): the bills of the person's own house on which the
              person is chief author (/bills/status_result.php?...&author1[]=<id>&submit_author1=GO).
              Bills only, not resolutions.
@@ -41,9 +41,9 @@ import urllib.request
 BASE = "https://www.revisor.mn.gov"
 CACHE = "mn_revisor_cache"
 SESSIONS = {"0791995": (79, 1995), "0801997": (80, 1997), "0811999": (81, 1999), "0822001": (82, 2001),
-            "0832003": (83, 2003), "0842005": (84, 2005), "0852007": (85, 2007)}
+            "0832003": (83, 2003), "0842005": (84, 2005), "0852007": (85, 2007), "0862009": (86, 2009)}
 PEOPLE = "replication/data/population/person_level.csv"
-IDS = "replication/data/reference/mn_author_ids_1995_2008.csv"
+IDS = "replication/data/reference/mn_author_ids_1995_2010.csv"
 CANDIDATES = "mn_author_id_candidates.csv"
 LIST_OUT = "mn_chief_author_bills.csv"
 TEXT_OUT = "mn_state_legislation_sponsored.csv"
@@ -100,7 +100,7 @@ def mn_people():
             s, ys = re.sub(r"\bpresent\b", "2026", r["StateLegYears"], flags=re.I), set()
             for a, z in re.findall(r"((?:19|20)\d\d)\s*[-–]\s*(?:[A-Za-z]+\s+)?((?:19|20)\d\d)", s):
                 ys |= set(range(int(a), int(z) + 1))
-            if any(1995 <= y <= 2008 for y in ys):
+            if any(1995 <= y <= 2010 for y in ys):
                 r["years"] = ys
                 out.append(r)
     return out

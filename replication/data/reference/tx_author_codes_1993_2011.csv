@@ -79,3 +79,17 @@ session,code,label,bioguide_id,name,state_leg_years,author_label,note
 811,A4685,"Turner, Sylvester (H-A4685)",T000489,Sylvester Turner,1989-2016,"Turner, Sylvester","A4685; not Bob, Chris or Jim Turner"
 811,A4725,Veasey (H-A4725),V000131,Marc Veasey,2005-2013,Veasey,
 811,A4950,Weber (H-A4950),W000814,Randy Weber,2009-2013,Weber,
+82R,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+82R,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+82R,A2020,Gooden (H-A2020),G000589,Lance Gooden,2011-2015; 2017-2019,Gooden,
+82R,A4605,"Taylor, Van (H-A4605)",T000479,Van Taylor,2010-2015 (House district 66); 2015-2019 (Senate district 8),"Taylor, Van",Larry Taylor rejected
+82R,A4685,Turner (H-A4685),T000489,Sylvester Turner,1989-2016,Turner,
+82R,A4725,Veasey (H-A4725),V000131,Marc Veasey,2005-2013,Veasey,
+82R,A4950,Weber (H-A4950),W000814,Randy Weber,2009-2013,Weber,
+821,A2495,Castro (H-A2495),C001091,Joaquin Castro,2003-2013,Castro,
+821,A2920,Gallego (H-A2920),G000572,Pete Gallego,1991-2013,Gallego,
+821,A2020,Gooden (H-A2020),G000589,Lance Gooden,2011-2015; 2017-2019,Gooden,
+821,A4605,"Taylor, Van (H-A4605)",T000479,Van Taylor,2010-2015 (House district 66); 2015-2019 (Senate district 8),"Taylor, Van",Larry Taylor rejected
+821,A4685,Turner (H-A4685),T000489,Sylvester Turner,1989-2016,Turner,
+821,A4725,Veasey (H-A4725),V000131,Marc Veasey,2005-2013,Veasey,
+821,A4950,Weber (H-A4950),W000814,Randy Weber,2009-2013,Weber,

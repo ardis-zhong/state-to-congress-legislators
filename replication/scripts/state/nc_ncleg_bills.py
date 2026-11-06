@@ -10,7 +10,7 @@ semicolon ("Sponsors: Representatives Edwards; Culp, Gardner, ..."). The member 
 primary-sponsored bills cover 2001 on only, and the site lists no ids for former members, so:
 
   --lists    For each reviewed (person, session, chamber) in
-             replication/data/reference/nc_sponsor_names_1989_2008.csv, the website's bill-text
+             replication/data/reference/nc_sponsor_names_1989_2012.csv, the website's bill-text
              search (/Search/BillText, all editions) for the phrases "Representatives <Surname>"
              and "Representative <Surname>" (or "Senators"/"Senator"), also with the person's
              initial ("A. Adams", used when members share a surname), which match where the
@@ -40,7 +40,7 @@ import urllib.request
 
 BASE = "https://www.ncleg.gov"
 CACHE = "nc_ncleg_cache"
-NAMES = "replication/data/reference/nc_sponsor_names_1989_2008.csv"
+NAMES = "replication/data/reference/nc_sponsor_names_1989_2012.csv"
 LIST_OUT = "nc_first_sponsor_candidates.csv"
 TEXT_OUT = "nc_state_legislation_sponsored.csv"
 UA = "state-to-congress-legislators/1.0 (research dataset; https://github.com/ardis-zhong/state-to-congress-legislators)"
@@ -160,6 +160,7 @@ def crawl_texts(limit=0):
                     f.write(text)
         names, primary, iso = sponsors_line(text)
         primary = re.sub(r"\s*\(by request\)", "", primary, flags=re.I)  # introduced on someone's behalf
+        primary = re.sub(r"\s*\(Primary Sponsors?\).*", "", primary, flags=re.I)  # 2011 on: "T. Moore (Primary Sponsor). For a ..."
         first = re.split(r",|\band\b|─", primary)[0].strip().rstrip(".") if primary else ""
         sq = lambda x: re.sub(r"[^a-z]", "", x.lower())
         # the surname alone, or with the person's own initial ("A. Adams"); another member's initial fails

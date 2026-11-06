@@ -9,7 +9,7 @@ biennium.
              _getSponsorsByBiennium/?bienniumYear=1991-92, as used by the "Bills by sponsor"
              report) give every House and Senate member's id; our people's entries are written
              as candidates for the reviewed list
-             replication/data/reference/wa_sponsor_ids_1991_2008.csv.
+             replication/data/reference/wa_sponsor_ids_1991_2012.csv.
   --lists    The "Bills by sponsor" report, primary bills only
              (/bi/report/billsbysponsor/?biennium=..&<house|senate>SponsorId=..&sponsorType=..
              &billsBySponsorReportType=primarybills), lists each person's primary-sponsored
@@ -45,9 +45,9 @@ import urllib.request
 APP = "https://app.leg.wa.gov"
 FILES = "https://lawfilesext.leg.wa.gov"
 CACHE = "wa_leg_cache"
-BIENNIA = [f"{y}-{str(y + 1)[2:]}" for y in range(1991, 2009, 2)]
+BIENNIA = [f"{y}-{str(y + 1)[2:]}" for y in range(1991, 2013, 2)]
 PEOPLE = "replication/data/population/person_level.csv"
-IDS = "replication/data/reference/wa_sponsor_ids_1991_2008.csv"
+IDS = "replication/data/reference/wa_sponsor_ids_1991_2012.csv"
 CANDIDATES = "wa_sponsor_id_candidates.csv"
 LIST_OUT = "wa_primary_sponsor_bills.csv"
 TEXT_OUT = "wa_state_legislation_sponsored.csv"
@@ -122,7 +122,7 @@ def wa_people():
             # ranges such as "1994-2005" or "January 1989-January 1993"
             for a, z in re.findall(r"((?:19|20)\d\d)\s*[-–]\s*(?:[A-Za-z]+\s+)?((?:19|20)\d\d)", s):
                 ys |= set(range(int(a), int(z) + 1))
-            if any(1991 <= y <= 2009 for y in ys):
+            if any(1991 <= y <= 2012 for y in ys):
                 r["years"] = ys
                 out.append(r)
     return out

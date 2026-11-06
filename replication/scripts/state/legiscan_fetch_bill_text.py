@@ -37,7 +37,7 @@ OUTPUT: legiscan_billtext_cache/<doc_id>.raw.<ext>  -- original file
             mime, extracted text length, extraction method/errors
 
 USAGE:
-    python3 legiscan_fetch_bill_text.py YOUR_LEGISCAN_API_KEY
+    LEGISCAN_API_KEY=... python3 legiscan_fetch_bill_text.py
 """
 
 import base64
@@ -109,7 +109,11 @@ def call(op, key, **params):
 
 
 def strip_html(raw_bytes):
-    text = raw_bytes.decode("utf-8", errors="replace")
+    # Some states' HTML is Windows-1252 (e.g. North Carolina's dashes, Michigan's section signs).
+    try:
+        text = raw_bytes.decode("utf-8")
+    except UnicodeDecodeError:
+        text = raw_bytes.decode("cp1252", errors="replace")
     text = re.sub(r"(?is)<(script|style).*?>.*?</\1>", " ", text)
     text = re.sub(r"(?s)<[^>]+>", " ", text)
     text = html.unescape(text)
@@ -213,15 +217,17 @@ def load_unique_docs(path, sponsor_types=None, rows=None):
 
 
 def main():
-    if len(sys.argv) not in (2, 3):
-        print("Usage: python3 legiscan_fetch_bill_text.py YOUR_LEGISCAN_API_KEY [--all-sponsor-types]")
+    # The key comes from the LEGISCAN_API_KEY environment variable, so it never shows in process lists.
+    args = sys.argv[1:]
+    key = os.environ.get("LEGISCAN_API_KEY", "")
+    scope_all = "--all-sponsor-types" in args
+    if not key:
+        print("Set LEGISCAN_API_KEY first. Usage: python3 legiscan_fetch_bill_text.py [--all-sponsor-types]")
         print("  By default this fetches text for bills our people SPONSORED: 'Primary Sponsor' rows,")
         print("  plus 'Sponsor' rows in states whose LegiScan data never uses 'Primary Sponsor'.")
         print("  LegiScan's free tier allows 30,000 queries/month; cached doc_ids cost nothing.")
         print("  Pass --all-sponsor-types to also include co-sponsors and joint sponsors.")
         sys.exit(1)
-    key = sys.argv[1]
-    scope_all = len(sys.argv) == 3 and sys.argv[2] == "--all-sponsor-types"
     if scope_all:
         print("Loading unique Introduced doc_ids from state_legislation_sponsored.csv (all sponsor types)...")
         docs = load_unique_docs("state_legislation_sponsored.csv")

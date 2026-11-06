@@ -39,7 +39,7 @@ import urllib.request
 
 BASE = "https://legacylis.virginia.gov"
 CACHE = "va_lis_cache"
-FIRST_YEAR, LAST_YEAR = 1994, 2009
+FIRST_YEAR, LAST_YEAR = 1994, 2012
 PERSON_LEVEL = "replication/data/population/person_level.csv"
 LEGISLATOR_FILES = ["legislators-current.json", "legislators-historical.json"]
 MATCHES = "replication/data/reference/va_member_matches.csv"

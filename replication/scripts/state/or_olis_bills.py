@@ -9,7 +9,7 @@ state-text pilot (2026-10-26). Neither host has a robots.txt. The OData service 
   --lists    Each session's MeasureSponsors (SponsorLevel Chief/Regular with a PrintOrder). A measure's
              first chief sponsor is its chief sponsor with the lowest print order; measures whose first
              chief sponsor is a reviewed legislator code
-             (replication/data/reference/or_legislator_codes_2007_2009.csv) are kept.
+             (replication/data/reference/or_legislator_codes_2007_2012.csv) are kept.
   --texts    The measure's "Introduced" document (MeasureDocuments -> OLIS PDF), read with pdfplumber.
              Its heading ("Sponsored by Representative MERKLEY ...") must name the person first.
 
@@ -33,8 +33,9 @@ import urllib.request
 
 ODATA = "https://api.oregonlegislature.gov/odata/odataservice.svc"
 CACHE = "or_olis_cache"
-SESSIONS = {"2007R1": "2007 Regular Session", "2008S1": "2008 Special Session", "2009R1": "2009 Regular Session"}
-CODES = "replication/data/reference/or_legislator_codes_2007_2009.csv"
+SESSIONS = {"2007R1": "2007 Regular Session", "2008S1": "2008 Special Session", "2009R1": "2009 Regular Session",
+            "2010S1": "2010 Special Session", "2011R1": "2011 Regular Session", "2012R1": "2012 Regular Session"}
+CODES = "replication/data/reference/or_legislator_codes_2007_2012.csv"
 LIST_OUT = "or_chief_sponsored_measures.csv"
 TEXT_OUT = "or_state_legislation_sponsored.csv"
 UA = "state-to-congress-legislators/1.0 (research dataset; https://github.com/ardis-zhong/state-to-congress-legislators)"

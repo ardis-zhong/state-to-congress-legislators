@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 83,251 bills, 475 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Connecticut and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 85,967 rows, 480 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Connecticut and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -88,11 +88,14 @@ One row per state bill or resolution the person sponsored, with text
 available: "Primary Sponsor" in LegiScan; "Sponsor" in CT, MS, and SD, which
 never use "Primary Sponsor", when the legislature's own record (Connecticut's
 introducer files, Mississippi's "By:" line, South Dakota's prime sponsor) names
-the person first; and, in sessions where LegiScan records no
-sponsor roles at all (most states' sessions from about 2007 to 2012), bills
-on which the person is the only listed sponsor. Co-sponsors are excluded, as
-are bills from those role-less sessions with more than one listed sponsor,
-since the primary sponsor can't be told apart. `bioguide_id`, `name`,
+the person first. In sessions where LegiScan records no sponsor roles at all
+(most states' sessions from about 2007 to 2012), the primary sponsor comes from
+the legislature's own record where it can be used (CA, FL, KY, MD, MI, MN, MS,
+NC, NJ, OH, OR, PA, SC, TX, VA, WA and WI, listed under each state below), or
+otherwise from the sponsor line printed on the bill's introduced text in LegiScan
+(AL, AZ, CO, GA, IA, IN, LA, MA, MO, NH, NV, OK and UT: the person must be named
+first); for the rest (e.g. HI, IL, KS), only bills whose sole listed sponsor is the
+person are included. Co-sponsors are excluded. `bioguide_id`, `name`,
 `bill_id` (state-LegiScan session ID-bill number, e.g. `OH-1145-HB144`; for
 bills from the legislatures' own archives (before LegiScan's coverage),
 state-session-bill number, e.g. `CA-1999-AB2027` (`X1` etc. marks
@@ -355,7 +358,7 @@ The archive kept only a small share of the pages, so these rows are few.
 For Tennessee, 1997–2002 and 2007–2008 bills and joint resolutions come from the
 Internet Archive's copies of the General Assembly's former bill files; each file
 is the bill as filed and names its prime sponsor ("SENATE BILL 360 By Cohen").
-475 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
+480 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
 Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995,
 Maryland and the Missouri Senate from 1996, New Mexico, Ohio,
 Illinois, Louisiana, Nevada, North Dakota, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Connecticut and Massachusetts from 2001, Wyoming from 2003, other states from 2008); for

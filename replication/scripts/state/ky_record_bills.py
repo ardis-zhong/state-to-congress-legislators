@@ -9,7 +9,7 @@ General Assembly before LegiScan's Kentucky coverage (2010 on). Kentucky state-t
   --members  Each session's sponsor pages (spon_H/spon_S.htm, from 2008 sponsors_house/senate.html)
              list every member with the bills and resolutions they sponsored or co-sponsored. Our
              people's entries are written as candidates for the reviewed list
-             replication/data/reference/ky_sponsor_names_1998_2009.csv.
+             replication/data/reference/ky_sponsor_names_1998_2011.csv.
   --lists    For each reviewed (session, chamber, name): the items on the member's sponsor page;
              each item's record page lists its sponsors, the primary sponsor first ("SB 97 (BR 1084)
              - B. Guthrie"; from 2008 "Sponsors J. Westwood, ..."). Items whose first sponsor is the
@@ -49,10 +49,10 @@ SESSIONS = {"98rs": (1998, "1998 Regular Session"), "00rs": (2000, "2000 Regular
             "06ss": (2006, "2006 Special Session"), "07rs": (2007, "2007 Regular Session"),
             "07ss": (2007, "2007 Special Session"), "08rs": (2008, "2008 Regular Session"),
             "08ss": (2008, "2008 Special Session"), "09rs": (2009, "2009 Regular Session"),
-            "09ss": (2009, "2009 Special Session")}
+            "09ss": (2009, "2009 Special Session"), "10rs": (2010, "2010 Regular Session"), "11rs": (2011, "2011 Regular Session"), "11ss": (2011, "2011 Special Session")}
 NEW_LAYOUT = {"08rs", "08ss", "09rs", "09ss"}
 PEOPLE = "replication/data/population/person_level.csv"
-NAMES = "replication/data/reference/ky_sponsor_names_1998_2009.csv"
+NAMES = "replication/data/reference/ky_sponsor_names_1998_2011.csv"
 CANDIDATES = "ky_sponsor_name_candidates.csv"
 LIST_OUT = "ky_primary_sponsored_bills.csv"
 TEXT_OUT = "ky_state_legislation_sponsored.csv"
@@ -135,7 +135,7 @@ def ky_people():
             ys = set()
             for a, z in re.findall(r"((?:19|20)\d\d)\s*[-–]\s*((?:19|20)\d\d)", r["StateLegYears"]):
                 ys |= set(range(int(a), int(z) + 1))
-            if any(1998 <= y <= 2009 for y in ys):
+            if any(1998 <= y <= 2011 for y in ys):
                 r["years"] = ys
                 out.append(r)
     return out

@@ -204,6 +204,9 @@ def excluded_texts(table):
 
 STATE_SPONSORED = "state_legislation_sponsored.csv"  # local; see replication/README.md step 3
 STATE_TEXT_MANIFEST = "bill_text_manifest.csv"       # local; written by legiscan_fetch_bill_text.py
+LEGISCAN_ROLELESS = "legiscan_roleless_first_named.csv"  # local; written by legiscan_roleless_check.py
+LEGISCAN_ROLELESS_MANIFEST = "bill_text_manifest_roleless.csv"  # local; same
+LEGISCAN_ROLELESS_NAMES = "replication/data/reference/legiscan_roleless_names.csv"
 LEGISCAN_SPONSOR_CHECK = "replication/data/reference/legiscan_sponsor_check.csv"  # legiscan_sponsor_check.py
 
 
@@ -213,6 +216,19 @@ def congress_on(date_str):
     if (m, d) < (1, 3):
         y -= 1
     return (y - 1787) // 2
+
+
+# LegiScan sessions that record no sponsor roles (so only sole-sponsor bills could be kept) where the
+# legislature's own record of the primary sponsor is used instead (Ardis 2026-11-04: complete the dataset).
+# Archive rows replace LegiScan's for these sessions: {state: {LegiScan session id, ...}}.
+LEGISCAN_SESSIONS_REPLACED = {"CA": {"30", "82"}, "SC": {"43", "106"}, "NC": {"41", "40", "126"},
+                              "MD": {"34", "113", "924", "409"}, "MI": {"36"}, "MN": {"70"}, "WA": {"59", "103"},
+                              "VA": {"16", "23", "115", "817"}, "PA": {"14", "15"},
+                              "OH": {"11", "13", "95", "1015"}, "OR": {"38", "102", "954"}, "KY": {"24", "86", "356"},
+                              "NJ": {"31"}, "MS": {"44", "474", "87", "475"}, "TX": {"108", "133"}, "WI": {"72"}, "FL": {"35", "130", "288", "287"},
+                              "NV": {"64"}}  # Nevada 2009 is in the archive scan
+# Michigan's archive step reads bills only, so LegiScan's sole-sponsor resolutions stay for that session.
+LEGISCAN_TYPES_KEPT = {"MI": re.compile(r"(HR|SR|HCR|SCR|HJR|SJR)")}
 
 
 def state_bill_rows():
@@ -228,7 +244,20 @@ def state_bill_rows():
     with open(LEGISCAN_SPONSOR_CHECK, newline="", encoding="utf-8") as f:
         not_first = {(c["StateAbbr"], c["BioguideId"], c["SessionId"], c["BillNumber"])
                      for c in csv.DictReader(f) if c["Verdict"] == "NotFirst"}
-    return [r for r in rows if (r["StateAbbr"], r["BioguideId"], r["SessionId"], r["BillNumber"]) not in not_first]
+    # Role-less sessions: bills with several listed sponsors where the bill's own text names the person first
+    # (legiscan_roleless_check.py; who is who reviewed in legiscan_roleless_names.csv).
+    if os.path.exists(LEGISCAN_ROLELESS):
+        with open(LEGISCAN_ROLELESS_NAMES, newline="", encoding="utf-8") as f:
+            ok = {(x["StateAbbr"], x["BioguideId"], x["FirstNamed"]) for x in csv.DictReader(f)}
+        with open(LEGISCAN_ROLELESS, newline="", encoding="utf-8") as f:
+            first = {(x["StateAbbr"], x["BioguideId"], x["SessionId"], x["BillNumber"]) for x in csv.DictReader(f)
+                     if (x["StateAbbr"], x["BioguideId"], x["FirstNamed"]) in ok}
+        with open(STATE_SPONSORED, newline="", encoding="utf-8") as f:
+            rows = rows + [r for r in csv.DictReader(f)
+                           if (r["StateAbbr"], r["BioguideId"], r["SessionId"], r["BillNumber"]) in first]
+    return [r for r in rows if (r["StateAbbr"], r["BioguideId"], r["SessionId"], r["BillNumber"]) not in not_first
+            and (r["SessionId"] not in LEGISCAN_SESSIONS_REPLACED.get(r["StateAbbr"], ())
+                 or (r["StateAbbr"] in LEGISCAN_TYPES_KEPT and LEGISCAN_TYPES_KEPT[r["StateAbbr"]].match(r["BillNumber"])))]
 
 
 def state_bill_dates(r):
@@ -254,10 +283,13 @@ def build_table4():
         if not os.path.exists(path):
             raise Pending(f"{path} missing; run the LegiScan steps in replication/README.md")
     text_path = {}
-    with open(STATE_TEXT_MANIFEST, newline="", encoding="utf-8") as f:
-        for m in csv.DictReader(f):
-            if int(m["TextLength"] or 0) > 0 and m["TextPath"]:
-                text_path[m["DocId"]] = m["TextPath"]
+    for manifest in (STATE_TEXT_MANIFEST, LEGISCAN_ROLELESS_MANIFEST):
+        if not os.path.exists(manifest):
+            continue
+        with open(manifest, newline="", encoding="utf-8") as f:
+            for m in csv.DictReader(f):
+                if int(m["TextLength"] or 0) > 0 and m["TextPath"]:
+                    text_path[m["DocId"]] = m["TextPath"]
     people = {p["BioguideId"]: (p["Name"], p["State"]) for p in load_person_level()}
     skip = excluded_texts(4)
     out = []
@@ -514,10 +546,25 @@ BUILDERS = {1: build_table1, 2: build_table2, 3: build_table3, 4: build_table4,
             5: build_table5, 6: build_table6, 7: build_table7}
 
 
+# Windows-1252 punctuation that some sources deliver as C1 control characters.
+C1_TO_CP1252 = {i: bytes([i]).decode("cp1252", errors="ignore") or " " for i in range(0x80, 0xA0)}
+CONTROL_TO_SPACE = {i: " " for i in list(range(0x0B, 0x0D)) + [0x0E, 0x0F] + list(range(0x10, 0x20)) + [0x7F]}
+CONTROL_TO_SPACE.update({i: "" for i in (0x00, 0x08)})
+CONTROL_TO_SPACE.update({i: " " for i in range(0x01, 0x08)})
+
+
+def clean_text(text):
+    """Remove bytes that are not text: NUL (breaks CSV readers), other control characters (page
+    feeds, Alaska's formatting marks), and restore Windows-1252 punctuation read as C1 controls."""
+    return text.translate(C1_TO_CP1252).translate(CONTROL_TO_SPACE)
+
+
 def write(num, rows):
     import pandas as pd
     fname, cols = TABLES[num]
     df = pd.DataFrame(rows, columns=cols)
+    if "bill_text" in df.columns:
+        df["bill_text"] = df["bill_text"].map(clean_text)
     for fmt in ("csv", "dta"):
         os.makedirs(os.path.join(DATASETS_DIR, fmt), exist_ok=True)
     df.to_csv(os.path.join(DATASETS_DIR, "csv", fname + ".csv"), index=False)

@@ -8,7 +8,7 @@ The archive starts with the 1996 session (1995rs and earlier return 404).
   --members  For each person and regular session, the sponsor page /<year>rs/sponsors/<key>.htm
              (key = surname, lower case); its heading names the member ("Senator Andrew P.
              Harris District 9"). Candidates go to a reviewed list,
-             replication/data/reference/md_sponsor_keys_1996_2008.csv.
+             replication/data/reference/md_sponsor_keys_1996_2012.csv.
   --lists    Each reviewed sponsor page lists every bill and joint resolution the member sponsored, with its
              "Sponsored By" line; a bill is kept when the person is named first (the primary
              sponsor). Bills first named "The President", "The Speaker", the Chair of a
@@ -39,9 +39,9 @@ import urllib.request
 
 BASE = "https://mgaleg.maryland.gov/"
 CACHE = "md_mga_cache"
-YEARS = range(1996, 2009)
+YEARS = [*range(1996, 2009), 2010, 2011, 2012]  # LegiScan has sponsor roles for 2009
 PEOPLE = "replication/data/population/person_level.csv"
-KEYS = "replication/data/reference/md_sponsor_keys_1996_2008.csv"
+KEYS = "replication/data/reference/md_sponsor_keys_1996_2012.csv"
 CANDIDATES = "md_sponsor_key_candidates.csv"
 LIST_OUT = "md_primary_sponsor_bills.csv"
 TEXT_OUT = "md_state_legislation_sponsored.csv"

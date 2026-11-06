@@ -7,7 +7,7 @@ robots.txt. Regular sessions 1999-2009 and the extraordinary sessions listed on 
 
   --members  Each session's "List of Measures by Author" (/<session>/pdf/h_auth.htm, s_auth.htm; .xml from 2008) links a
              page per member; our people's pages are written as candidates for the reviewed list
-             replication/data/reference/ms_author_pages_1999_2009.csv.
+             replication/data/reference/ms_author_pages_1999_2011.csv.
   --lists    Each reviewed author page lists the measures the member authored; their document links give
              the PDF folder, and the introduced version is <bill>IN.pdf.
   --texts    The introduced PDF, read with pdfplumber. Its "By: Senator(s) Nunnelee, ..." line must name
@@ -34,7 +34,7 @@ import urllib.request
 BASE = "https://billstatus.ls.state.ms.us"
 CACHE = "ms_billstatus_cache"
 PEOPLE = "replication/data/population/person_level.csv"
-PAGES = "replication/data/reference/ms_author_pages_1999_2009.csv"
+PAGES = "replication/data/reference/ms_author_pages_1999_2011.csv"
 CANDIDATES = "ms_author_page_candidates.csv"
 LIST_OUT = "ms_authored_measures.csv"
 TEXT_OUT = "ms_state_legislation_sponsored.csv"
@@ -80,7 +80,7 @@ def cached(cache_path, make):
 def sessions():
     """['1999', '2000', ..., '20051E', ...] for 1999-2009."""
     page = cached(os.path.join(CACHE, "sessions.htm"), lambda: fetch(f"{BASE}/sessions.htm")).decode("latin-1")
-    return sorted({s for s in re.findall(r"/(\d{4}\w*)/pdf/mainmenu\.htm", page) if 1999 <= int(s[:4]) <= 2009})
+    return sorted({s for s in re.findall(r"/(\d{4}\w*)/pdf/mainmenu\.htm", page) if 1999 <= int(s[:4]) <= 2011})
 
 
 def session_label(code):
@@ -97,7 +97,7 @@ def ms_people():
             ys = set()
             for a, z in re.findall(r"((?:19|20)\d\d)\s*[-–]\s*((?:19|20)\d\d)", r["StateLegYears"]):
                 ys |= set(range(int(a), int(z) + 1))
-            if any(1999 <= y <= 2009 for y in ys):
+            if any(1999 <= y <= 2011 for y in ys):
                 r["years"] = ys
                 out.append(r)
     return out

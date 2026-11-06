@@ -26,3 +26,5 @@ session,year,body,author_id,label,chief_authored,bioguide_id,name,state_leg_year
 0852007,2007,House,40862,Finstad,5,F000475,Brad Finstad,2003-2009,
 0852007,2007,House,40905,Paulsen,21,P000594,Erik Paulsen,1995-2009,
 0852007,2007,Senate,20426,Fischbach,33,F000470,Michelle Fischbach,1996-2018,
+0862009,2009,House,40993,Emmer,34,E000294,Tom Emmer,2005-2011,
+0862009,2009,Senate,20495,Fischbach,33,F000470,Michelle Fischbach,1996-2018,

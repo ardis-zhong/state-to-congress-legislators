@@ -26,3 +26,6 @@ session,year,chamber,label,bioguide_id,name,state_leg_years,state_leg_chamber,no
 08ss,2008,S,"Guthrie, Brett",G000558,Brett Guthrie,1999-2008,Kentucky Senate (32nd district),only senator surnamed Guthrie = Brett Guthrie (Senate 1999-2008)
 09rs,2009,H,"Comer Jr., James R.",C001108,James Comer,2001-2012,Kentucky House of Representatives (53rd district),only House member surnamed Comer = James R. Comer Jr. (House 2001-2012)
 09ss,2009,H,"Comer Jr., James R.",C001108,James Comer,2001-2012,Kentucky House of Representatives (53rd district),only House member surnamed Comer = James R. Comer Jr. (House 2001-2012)
+10rs,2010,H,"Comer Jr., James R.",C001108,James Comer,2001-2012,Kentucky House of Representatives (53rd district),
+11rs,2011,H,"Comer Jr., James R.",C001108,James Comer,2001-2012,Kentucky House of Representatives (53rd district),
+11ss,2011,H,"Comer Jr., James R.",C001108,James Comer,2001-2012,Kentucky House of Representatives (53rd district),

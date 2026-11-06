@@ -10,7 +10,7 @@ pages). Bill text starts with the 73rd Legislature (1993); regular and special s
   --members  Each session's author report index (/bills/<session>/reports/author/index.htm) lists
              every member with a code ("Turner, Sylvester (H-A4685)"); our people's entries are
              written as candidates for the reviewed list
-             replication/data/reference/tx_author_codes_1993_2009.csv.
+             replication/data/reference/tx_author_codes_1993_2011.csv.
   --lists    Each reviewed member's author report (/bills/<session>/reports/author/<code>.htm)
              lists the bills they authored or joint-authored with all authors in order; bills on
              which the person is listed first are kept.
@@ -40,9 +40,9 @@ FTP = "ftp://ftp.legis.state.tx.us"
 CACHE = "tx_ftp_cache"
 SESSIONS = {"73R": 1993, "74R": 1995, "75R": 1997, "76R": 1999, "77R": 2001, "78R": 2003, "781": 2003, "782": 2003,
             "783": 2003, "784": 2004, "79R": 2005, "791": 2005, "792": 2005, "793": 2006, "80R": 2007, "81R": 2009,
-            "811": 2009}
+            "811": 2009, "82R": 2011, "821": 2011}
 PEOPLE = "replication/data/population/person_level.csv"
-CODES = "replication/data/reference/tx_author_codes_1993_2009.csv"
+CODES = "replication/data/reference/tx_author_codes_1993_2011.csv"
 CANDIDATES = "tx_author_code_candidates.csv"
 LIST_OUT = "tx_first_author_bills.csv"
 TEXT_OUT = "tx_state_legislation_sponsored.csv"
@@ -102,7 +102,7 @@ def tx_people():
             s, ys = re.sub(r"\bpresent\b", "2026", r["StateLegYears"], flags=re.I), set()
             for a, z in re.findall(r"((?:19|20)\d\d)\s*[-–]\s*(?:[A-Za-z]+\s+)?((?:19|20)\d\d)", s):
                 ys |= set(range(int(a), int(z) + 1))
-            if any(1993 <= y <= 2009 for y in ys):
+            if any(1993 <= y <= 2011 for y in ys):
                 r["years"] = ys
                 out.append(r)
     return out
@@ -179,7 +179,7 @@ def folder_listing(session, typ, num):
 
 
 # Texas bylines tell same-surname members apart by county ("Turner of Harris") or initial ("Cuellar, H.").
-COUNTY = {"T000489": "harris", "C001063": "webb"}  # Sylvester Turner, Henry Cuellar
+COUNTY = {"T000479": "collin", "T000489": "harris", "C001063": "webb"}  # Sylvester Turner, Henry Cuellar
 
 
 def close(a, b):

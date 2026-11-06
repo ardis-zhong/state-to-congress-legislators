@@ -8,7 +8,7 @@ STEP 1 (--lists): every bill in every 1998-2009 session (regular, special, organ
     from the paged session lists /Session/Bills/<session>?Chamber=<house|senate>&PageNumber=N,
     which give the bill number, title, and "Filed By" sponsor. Output: fl_bill_list.csv.
 STEP 2 (--texts): for the bills filed by our people (reviewed list
-    replication/data/reference/fl_filer_names_1998_2009.csv), the bill as filed (the
+    replication/data/reference/fl_filer_names_1998_2012.csv), the bill as filed (the
     introduced version): /Session/Bill/<session>/<number>/BillText/Filed/HTML.
     Output: fl_state_legislation_sponsored.csv.
 
@@ -36,9 +36,10 @@ CACHE = "fl_senate_cache"
 SESSIONS = ["1998", "1998O", "1999", "2000", "2000A", "2000O", "2001", "2001A", "2001B", "2001C",
             "2002", "2002D", "2002E", "2002O", "2003", "2003A", "2003B", "2003C", "2003D", "2003E",
             "2004", "2004A", "2004O", "2005", "2005B", "2006", "2006O", "2007", "2007A", "2007B",
-            "2007C", "2007D", "2008", "2008O", "2009", "2009A", "2009B"]
+            "2007C", "2007D", "2008", "2008O", "2009", "2009A", "2009B",
+            "2010", "2010A", "2010C", "2010O", "2011", "2012", "2012B", "2012O"]
 LIST_OUT = "fl_bill_list.csv"
-FILERS = "replication/data/reference/fl_filer_names_1998_2009.csv"
+FILERS = "replication/data/reference/fl_filer_names_1998_2012.csv"
 TEXT_OUT = "fl_state_legislation_sponsored.csv"
 UA = "state-to-congress-legislators/1.0 (research dataset; https://github.com/ardis-zhong/state-to-congress-legislators)"
 CRAWL_DELAY = 10
@@ -146,6 +147,21 @@ def by_check(text, must):
     return by_line, "Yes" if first == must or first.endswith(" " + must) else "No"
 
 
+def filed_pdf(session, number):
+    """The filed text from the bill's PDF copy (cached)."""
+    import logging
+    import pdfplumber
+    logging.getLogger("pdfminer").setLevel(logging.ERROR)
+    path = os.path.join(CACHE, "texts", f"{session}_{number}_filed.pdf")
+    if not os.path.exists(path):
+        time.sleep(CRAWL_DELAY)
+        req = urllib.request.Request(f"{BASE}/Session/Bill/{session}/{number}/BillText/Filed/PDF", headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=120) as r, open(path, "wb") as f:
+            f.write(r.read())
+    with pdfplumber.open(path) as pdf:
+        return "\n".join((page.extract_text() or "") for page in pdf.pages).strip()
+
+
 def crawl_texts(limit=0):
     with open(FILERS, newline="", encoding="utf-8") as f:
         filers = list(csv.DictReader(f))
@@ -166,6 +182,8 @@ def crawl_texts(limit=0):
         raw = get(f"/Session/Bill/{b['session']}/{b['number']}/BillText/Filed/HTML",
                   os.path.join(CACHE, "texts", f"{b['session']}_{b['number']}_filed.html"))
         text = filed_text(raw) if raw else ""
+        if raw.startswith("%PDF"):  # a few "HTML" links serve the PDF itself (e.g. 2011 SB 46)
+            text = filed_pdf(b["session"], b["number"])
         by_line, match = by_check(text, r["text_must_name"] or r["filer_name"])
         text_path = ""
         if text:

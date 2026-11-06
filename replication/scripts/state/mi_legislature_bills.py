@@ -7,7 +7,7 @@ LegiScan's Michigan coverage (2009 on). Michigan state-text pilot (Ardis, 2026-1
   --members  Each session's "Browse Bills by Sponsor" page (/Bills/SearchBySponsor?session=...)
              lists the session's sponsors (one list per chamber); our people's entries are
              written as candidates for the reviewed list
-             replication/data/reference/mi_sponsor_names_1989_2008.csv.
+             replication/data/reference/mi_sponsor_names_1989_2010.csv.
   --lists    For each reviewed (session, chamber, sponsor) the bills on which the person is the
              primary sponsor: /Search/ExecuteSearch?sessions=...&docTypes=<House|Senate> Bill
              &sponsorTypesList=primary&sponsor=<name>.
@@ -41,9 +41,9 @@ import urllib.request
 
 BASE = "https://www.legislature.mi.gov"
 CACHE = "mi_legislature_cache"
-SESSIONS = [f"{y}-{y + 1}" for y in range(1989, 2008, 2)]
+SESSIONS = [f"{y}-{y + 1}" for y in range(1989, 2010, 2)]
 PEOPLE = "replication/data/population/person_level.csv"
-NAMES = "replication/data/reference/mi_sponsor_names_1989_2008.csv"
+NAMES = "replication/data/reference/mi_sponsor_names_1989_2010.csv"
 CANDIDATES = "mi_sponsor_name_candidates.csv"
 LIST_OUT = "mi_primary_sponsor_bills.csv"
 TEXT_OUT = "mi_state_legislation_sponsored.csv"
@@ -52,12 +52,20 @@ DELAY = 2
 _last = [0.0]
 
 
+def decode_page(data):
+    """The bill .htm files are Word exports in Windows-1252."""
+    try:
+        return data.decode("utf-8")
+    except UnicodeDecodeError:
+        return data.decode("cp1252", errors="replace")
+
+
 def get(path, cache_path, binary=False):
     """Fetch BASE+path once (cached). Returns the body, or empty for a 404."""
     if os.path.exists(cache_path):
         with open(cache_path, "rb") as f:
             data = f.read()
-        return data if binary else data.decode("utf-8", errors="replace")
+        return data if binary else decode_page(data)
     for attempt in range(5):
         wait = DELAY - (time.time() - _last[0])
         if wait > 0:
@@ -80,7 +88,7 @@ def get(path, cache_path, binary=False):
     os.makedirs(os.path.dirname(cache_path), exist_ok=True)
     with open(cache_path, "wb") as f:
         f.write(data)
-    return data if binary else data.decode("utf-8", errors="replace")
+    return data if binary else decode_page(data)
 
 
 def plain(s):
@@ -113,7 +121,7 @@ def mi_people():
             for a, z in re.findall(r"((?:19|20)\d\d)\s*[-–]\s*((?:19|20)\d\d|present)", r["StateLegYears"]):
                 ys |= set(range(int(a), (2026 if z == "present" else int(z)) + 1))
             ys |= {int(y) for y in re.findall(r"(?:19|20)\d\d", r["StateLegYears"])}
-            if any(1989 <= y <= 2008 for y in ys):
+            if any(1989 <= y <= 2010 for y in ys):
                 out.append(r)
     return out
 

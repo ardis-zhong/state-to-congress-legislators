@@ -43,10 +43,10 @@ import urllib.parse
 
 BASE = "https://www.scstatehouse.gov"
 CACHE = "sc_statehouse_cache"
-SESSIONS = {n: f"{1993 + 2 * (n - 110)}-{1994 + 2 * (n - 110)}" for n in range(106, 118)}
+SESSIONS = {n: f"{1993 + 2 * (n - 110)}-{1994 + 2 * (n - 110)}" for n in range(106, 120)}
 FIRST_FULL = 109  # earlier sessions: ratified acts only
 PEOPLE = "replication/data/population/person_level.csv"
-CODES = "replication/data/reference/sc_sponsor_codes_1985_2008.csv"
+CODES = "replication/data/reference/sc_sponsor_codes_1985_2012.csv"
 CANDIDATES = "sc_sponsor_code_candidates.csv"
 LIST_OUT = "sc_primary_sponsored_bills.csv"
 TEXT_OUT = "sc_state_legislation_sponsored.csv"
@@ -113,7 +113,7 @@ def sc_people():
             s, ys = re.sub(r"\bpresent\b", "2026", r["StateLegYears"], flags=re.I), set()
             for a, z in re.findall(r"((?:19|20)\d\d)\s*[-–]\s*(?:[A-Za-z]+\s+)?((?:19|20)\d\d)", s):
                 ys |= set(range(int(a), int(z) + 1))
-            if any(1985 <= y <= 2008 for y in ys):
+            if any(1985 <= y <= 2012 for y in ys):
                 r["years"] = ys
                 out.append(r)
     return out

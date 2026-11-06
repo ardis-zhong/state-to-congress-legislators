@@ -10,7 +10,7 @@ for population members who served in the General Assembly before LegiScan's Ohio
      the bill's primary sponsors (separately from cosponsors) with a stable member id
      (member_lpid).
   2. Bills whose primary sponsors include one of our people, per the reviewed id list
-     replication/data/reference/oh_sponsor_ids_1997_2008.csv (e.g. Joyce Beatty, not her
+     replication/data/reference/oh_sponsor_ids_1997_2014.csv (e.g. Joyce Beatty, not her
      husband Otto Beatty; Charlie Wilson, not Jason Wilson). Joint primary sponsors count, as in
      LegiScan's Ohio data.
   3. The introduced version ("As Introduced"): /api/v2/<ga>/legislation/<bill>/ lists the
@@ -41,8 +41,9 @@ import urllib.request
 API = "https://search-prod.lis.state.oh.us"
 CACHE = "oh_solar_cache"
 ASSEMBLIES = ["general_assembly_122", "general_assembly_123", "general_assembly_124", "general_assembly_125",
-              "general_assembly_125_special_1", "general_assembly_126", "general_assembly_127"]
-IDS = "replication/data/reference/oh_sponsor_ids_1997_2008.csv"
+              "general_assembly_125_special_1", "general_assembly_126", "general_assembly_127",
+              "general_assembly_128", "general_assembly_129", "general_assembly_130"]
+IDS = "replication/data/reference/oh_sponsor_ids_1997_2014.csv"
 OUT = "oh_state_legislation_sponsored.csv"
 UA = "state-to-congress-legislators/1.0 (research dataset; https://github.com/ardis-zhong/state-to-congress-legislators)"
 DELAY = 2

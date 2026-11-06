@@ -74,3 +74,14 @@ session,chamber,page,label,bioguide_id,name,state_leg_years,note
 20093E,H,house_authors/palazzo.xml,Steven Palazzo,P000601,Steven Palazzo,2006-2011,Steven Palazzo (House 2006-2011)
 20093E,S,senate_authors/hyde-smith.xml,Cindy Hyde-Smith,H001079,Cindy Hyde-Smith,2000-2012,Cindy Hyde-Smith (Senate 2000-2012)
 20093E,S,senate_authors/nunnelee.xml,Alan Nunnelee,N000186,Alan Nunnelee,1995-2011,"only member page for Nunnelee (Alan Nunnelee, Senate 1995-2011)"
+2010,H,house_authors/palazzo.xml,Steven Palazzo,P000601,Steven Palazzo,2006-2011,
+2010,S,senate_authors/hyde-smith.xml,Cindy Hyde-Smith,H001079,Cindy Hyde-Smith,2000-2012,
+2010,S,senate_authors/nunnelee.xml,Alan Nunnelee,N000186,Alan Nunnelee,1995-2011,
+20101E,H,house_authors/palazzo.xml,Steven Palazzo,P000601,Steven Palazzo,2006-2011,
+20101E,S,senate_authors/hyde-smith.xml,Cindy Hyde-Smith,H001079,Cindy Hyde-Smith,2000-2012,
+20101E,S,senate_authors/nunnelee.xml,Alan Nunnelee,N000186,Alan Nunnelee,1995-2011,
+20102E,H,house_authors/palazzo.xml,Steven Palazzo,P000601,Steven Palazzo,2006-2011,
+20102E,S,senate_authors/hyde-smith.xml,Cindy Hyde-Smith,H001079,Cindy Hyde-Smith,2000-2012,
+20102E,S,senate_authors/nunnelee.xml,Alan Nunnelee,N000186,Alan Nunnelee,1995-2011,
+2011,S,senate_authors/hyde-smith.xml,Cindy Hyde-Smith,H001079,Cindy Hyde-Smith,2000-2012,
+20111E,S,senate_authors/hyde-smith.xml,Cindy Hyde-Smith,H001079,Cindy Hyde-Smith,2000-2012,

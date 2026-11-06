@@ -10,7 +10,7 @@ The site has no list of bills by sponsor for past terms, so every bill is read b
 bills (A) are read for every term; Senate bills (S) only for the terms in which a population member sat
 in the Senate. A term's numbers are read until 1,000 in a row are missing (the numbering has gaps of a few
 hundred, e.g. 1999 A07716-A07999). Bills whose SPONSOR is a
-reviewed (term, chamber, sponsor) in replication/data/reference/ny_sponsors_1999_2008.csv are kept, and
+reviewed (term, chamber, sponsor) in replication/data/reference/ny_sponsors_1999_2010.csv are kept, and
 their text's "Introduced by M. of A. MORELLE, ..." / "Introduced by Sen. KUHL" line must name the person
 first (IntroducedByMatch). Bills introduced by the Rules Committee "at request of" a member are not the
 member's. Resolutions (K, J, B) are not read.
@@ -38,8 +38,8 @@ import urllib.request
 
 BASE = "https://nyassembly.gov/leg/"
 CACHE = "ny_assembly_cache"
-SPONSORS = "replication/data/reference/ny_sponsors_1999_2008.csv"
-TERMS = [1999, 2001, 2003, 2005, 2007]
+SPONSORS = "replication/data/reference/ny_sponsors_1999_2010.csv"
+TERMS = [1999, 2001, 2003, 2005, 2007, 2009]
 SENATE_TERMS = [1999, 2001, 2003]  # Randy Kuhl (State Senate 1987-2004)
 TEXT_OUT = "ny_state_legislation_sponsored.csv"
 UA = "state-to-congress-legislators/1.0 (research dataset; https://github.com/ardis-zhong/state-to-congress-legislators)"

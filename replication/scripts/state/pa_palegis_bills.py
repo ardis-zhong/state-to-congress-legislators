@@ -8,7 +8,7 @@ sessions only.
   --members  Each session's bill search page (/legislation/bills?sessYr=<year>&sessInd=0)
              lists that session's sponsors with their member ids ("301|H"); our people's
              entries are written as candidates for the reviewed list
-             replication/data/reference/pa_member_ids_1969_2008.csv. --members also records
+             replication/data/reference/pa_member_ids_1969_2010.csv. --members also records
              each candidate's full name and result count from the first page of their sponsor
              listing ("Bills Sponsored By Representative Joseph R. Pitts ... returned 332
              results"), to review namesakes and to size the crawl.
@@ -44,9 +44,9 @@ import urllib.request
 
 BASE = "https://www.palegis.us"
 CACHE = "pa_palegis_cache"
-SESSIONS = range(1969, 2009, 2)
+SESSIONS = range(1969, 2011, 2)
 PEOPLE = "replication/data/population/person_level.csv"
-IDS = "replication/data/reference/pa_member_ids_1969_2008.csv"
+IDS = "replication/data/reference/pa_member_ids_1969_2010.csv"
 CANDIDATES = "pa_member_id_candidates.csv"
 LIST_OUT = "pa_prime_sponsor_bills.csv"
 # 1971-1977 Senate: the website's prime sponsors are wrong for whole member-sessions (e.g. Zemprelli's
@@ -125,7 +125,7 @@ def pa_people():
             ys = set()
             for a, z in re.findall(r"((?:19|20)\d\d)\s*[-–]\s*((?:19|20)\d\d)", s):
                 ys |= set(range(int(a), int(z) + 1))
-            if any(1969 <= y <= 2008 for y in ys):
+            if any(1969 <= y <= 2010 for y in ys):
                 r["years"] = ys
                 out.append(r)
     return out

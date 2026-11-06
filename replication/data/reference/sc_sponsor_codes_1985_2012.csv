@@ -60,3 +60,10 @@ session,years,chamber,code,label,bioguide_id,name,state_leg_years,note
 116,2005-2006,H,1421590739,Norman,N000190,Ralph Norman,2005-2007; 2009-2017 (48th district; non-continuous),only Representative Norman = Ralph Norman (House 2005-2006 here)
 117,2007-2008,H,506818121,Duncan,D000615,Jeff Duncan,2003-2010 (District 15),only Representative Duncan = Jeff Duncan (House 2003-2010)
 117,2007-2008,H,1393181651,Mulvaney,M001182,Mick Mulvaney,2007-2009 (House; 45th district); 2009-2011 (Senate; 16th district),only Representative Mulvaney = Mick Mulvaney (House 2007-2008)
+118,2009-2010,H,506818121,Duncan,D000615,Jeff Duncan,2003-2010 (District 15),only Representative Duncan = Jeff Duncan (House 2003-2010)
+118,2009-2010,H,1421590739,Norman,N000190,Ralph Norman,2005-2007; 2009-2017 (48th district; non-continuous),only Representative Norman = Ralph Norman (House 2009-2017)
+118,2009-2010,H,1646306621,Scott,S001184,Tim Scott,2009-2011,only Representative Scott = Tim Scott (House 2009-2011)
+118,2009-2010,S,1393181651,Mulvaney,M001182,Mick Mulvaney,2007-2009 (House; 45th district); 2009-2011 (Senate; 16th district),same permanent member code as his House years
+118,2009-2010,S,1640908894,Scott,,,2009-2011,"rejected: Senator Scott = John L. Scott Jr., not Tim Scott (who sat in the House)"
+119,2011-2012,H,1421590739,Norman,N000190,Ralph Norman,2005-2007; 2009-2017 (48th district; non-continuous),only Representative Norman = Ralph Norman (House 2009-2017)
+119,2011-2012,S,1640908894,Scott,,,2009-2011,"rejected: Senator Scott = John L. Scott Jr., not Tim Scott (in Congress from Jan 2011)"
