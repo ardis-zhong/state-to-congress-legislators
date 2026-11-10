@@ -16,7 +16,7 @@ published on Harvard Dataverse (link to come).
 |---|---|---|
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
-| 3 | `table3_effectiveness_scores` | Built: 8,297 scores for 1,039 people |
+| 3 | `table3_effectiveness_scores` | Built: 8,298 scores for 1,039 people |
 | 4 | `table4_state_bill_text` | Built: 87,507 rows, 487 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
@@ -61,14 +61,16 @@ Source: Center for Effective Lawmaking (thelawmakers.org).
   seated in 2025 have no federal score yet. CEL's files have no score for
   Sheila Frahm (Senate, June–Nov 1996) or Charles H. Wilson (D-CA, 1963–1981).
 - State: State Legislative Effectiveness Scores (SLES) through 2025. CEL's
-  coverage starts between 1989 and 2007 depending on the state, so 569 people
+  coverage starts between 1989 and 2007 depending on the state, so 565 people
   whose state service ended earlier have no state scores. CEL's state file has
   no Bioguide IDs; scores were linked by state, last name, first name, and
-  years (see `replication/scripts/effectiveness/match_sles.py`), and 470
+  years (see `replication/scripts/effectiveness/match_sles.py`), and 475
   people matched. Two people whose state service began in 2025, after they
   left Congress (Jerry McNerney, Joe Sempolinski), have no state scores yet.
   Reviewed matches and corrections (e.g. a CEL term recorded under Shelley
-  Moore Capito's ID while she was in the U.S. Senate) are listed in
+  Moore Capito's ID while she was in the U.S. Senate, and Kai Kahele's
+  2017-2018 Hawaii Senate term, which CEL lists under his late father
+  Gilbert Kahele) are listed in
   `replication/data/reference/sles_review.csv`.
 - Both scores are scaled so the average legislator in a chamber and session
   scores 1, but they are computed separately for each body, so a state and a
