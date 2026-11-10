@@ -229,6 +229,7 @@ LEGISCAN_SESSIONS_REPLACED = {"CA": {"30", "82"}, "SC": {"43", "106"}, "NC": {"4
                               "NV": {"64"},  # Nevada 2009 is in the archive scan
                               "NH": {"54"}}  # New Hampshire 2010: LegiScan lists Bradley and Hassan only as "Sponsor"
 # Michigan's archive step reads bills only, so LegiScan's sole-sponsor resolutions stay for that session.
+LEGISCAN_CHAMBERS = "replication/data/reference/legiscan_session_chambers.csv"  # legiscan_session_chambers.py
 LEGISCAN_TYPES_KEPT = {"MI": re.compile(r"(HR|SR|HCR|SCR|HJR|SJR)")}
 
 
@@ -256,6 +257,16 @@ def state_bill_rows():
         with open(STATE_SPONSORED, newline="", encoding="utf-8") as f:
             rows = rows + [r for r in csv.DictReader(f)
                            if (r["StateAbbr"], r["BioguideId"], r["SessionId"], r["BillNumber"]) in first]
+    # Bills that began in the other chamber (a senator who carries a House bill through the Senate, a New
+    # Jersey Senate companion's sponsors on the Assembly bill) are dropped, as in the state-archive sources
+    # (decided 2026-11-10): the person's chamber per session is in legiscan_session_chambers.csv.
+    with open(LEGISCAN_CHAMBERS, newline="", encoding="utf-8") as f:
+        chamber = {(c["state"], c["session_id"], c["bioguide_id"]): c["chamber"] for c in csv.DictReader(f)}
+    side = {"H": "lower", "A": "lower", "S": "upper"}
+    if any(chamber.get((r["StateAbbr"], r["SessionId"], r["BioguideId"])) == "REVIEW" for r in rows):
+        sys.exit("legiscan_session_chambers.csv has REVIEW rows: decide them in legiscan_chamber_overrides.csv")
+    rows = [r for r in rows if chamber.get((r["StateAbbr"], r["SessionId"], r["BioguideId"]), "any") == "any"
+            or side.get(r.get("Body", "")) in (None, chamber[(r["StateAbbr"], r["SessionId"], r["BioguideId"])])]
     return [r for r in rows if (r["StateAbbr"], r["BioguideId"], r["SessionId"], r["BillNumber"]) not in not_first
             and (r["SessionId"] not in LEGISCAN_SESSIONS_REPLACED.get(r["StateAbbr"], ())
                  or (r["StateAbbr"] in LEGISCAN_TYPES_KEPT and LEGISCAN_TYPES_KEPT[r["StateAbbr"]].match(r["BillNumber"])))]

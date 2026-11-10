@@ -280,6 +280,7 @@ def main():
                         "PeopleId": pid, "SessionId": sid,
                         "SessionTitle": bill.get("session", {}).get("session_title", ""),
                         "BillId": bill.get("bill_id"), "BillNumber": bill.get("bill_number"),
+                        "Body": bill.get("body", ""),  # chamber of origin (H/A lower, S upper)
                         "Title": bill.get("title", ""), "Description": bill.get("description", ""),
                         "Status": STATUS_MAP.get(bill.get("status"), bill.get("status")),
                         "StatusDate": bill.get("status_date", ""),
@@ -299,7 +300,7 @@ def main():
                     })
 
     fieldnames = ["Name", "BioguideId", "State", "StateAbbr", "PeopleId", "SessionId",
-                  "SessionTitle", "BillId", "BillNumber", "Title", "Description", "Status",
+                  "SessionTitle", "BillId", "BillNumber", "Body", "Title", "Description", "Status",
                   "StatusDate", "CurrentBody", "SponsorType", "SponsorOrder", "NumSponsors",
                   "SessionHasRoles", "DocIds",
                   "IntroducedDocId", "IntroducedDocType", "IntroducedDocDate", "IntroducedMime",

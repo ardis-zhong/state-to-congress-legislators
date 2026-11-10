@@ -13,9 +13,9 @@ Generated 2026-11-10 by `replication/coverage_report.py` from the built tables (
 | 1980s | 1,766 | 116 | 6.6% | 31 | 1.8% |
 | 1990s | 1,818 | 788 | 43.3% | 734 | 40.4% |
 | 2000s | 1,648 | 1,381 | 83.8% | 1,447 | 87.8% |
-| 2010s | 1,139 | 1,032 | 90.6% | 1,030 | 90.4% |
+| 2010s | 1,139 | 1,031 | 90.5% | 1,030 | 90.4% |
 | 2020s | 318 | 285 | 89.6% | 264 | 83.0% |
-| All | 8,479 | 3,691 | 43.5% | 3,506 | 41.3% |
+| All | 8,479 | 3,690 | 43.5% | 3,506 | 41.3% |
 
 SLES (CEL's State Legislative Effectiveness Scores) begin by state between the late 1980s and the 2000s, so earlier state service has no score anywhere.
 
@@ -28,7 +28,7 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Florida | 58 | 558 | 306 | 159 | 141 | 6 | before 1998 print only (State Library holds printed bills) |
 | California | 89 | 753 | 292 | 259 | 26 | 7 | 1969-1988 print only (HathiTrust scans; research dataset request pending); 1989-1992 enacted bills only |
 | New York | 50 | 442 | 288 | 195 | 92 | 1 | before 1999 not online (Assembly site starts 1999-2000) |
-| Texas | 41 | 412 | 251 | 189 | 51 | 11 | before 1993 not online (FTP texts start 1993) |
+| Texas | 41 | 412 | 252 | 189 | 51 | 12 | before 1993 not online (FTP texts start 1993) |
 | Illinois | 36 | 326 | 234 | 170 | 59 | 5 | before 1997 not online (Legisnet starts 1997; 1993-1996 Public Acts only) |
 | Ohio | 41 | 359 | 199 | 159 | 37 | 3 | before 1997 not online (SOLAR starts 1997) |
 | Georgia | 27 | 268 | 179 | 125 | 51 | 3 | before 1995 not online; 1995-2008 only what the Internet Archive kept |
@@ -78,7 +78,7 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 
 460 people with state service since 1969 have no Table 4 row at all.
 
-### Appendix: person-years from 2009 on without state bill text (161)
+### Appendix: person-years from 2009 on without state bill text (162)
 
 LegiScan covers every state from 2009 or 2010, so each of these needs a reason. Reviewed reasons come from `replication/data/reference/coverage_gap_reasons.csv`; a first or last year of service without a reviewed reason is marked as an edge year (most members join or leave in January, between sessions, and file no bill that year).
 
@@ -199,7 +199,7 @@ LegiScan covers every state from 2009 or 2010, so each of these needs a reason. 
 | Jasmine Crockett | C001130 | Texas | 2023 | edge year (first or last year of service; not individually checked) |
 | Joaquin Castro | C001091 | Texas | 2013 | edge year (first or last year of service; not individually checked) |
 | Julie Johnson | J000310 | Texas | 2025 | edge year (first or last year of service; not individually checked) |
-| Lance Gooden | G000589 | Texas | 2019 | edge year (first or last year of service; not individually checked) |
+| Lance Gooden | G000589 | Texas | 2015, 2019 | edge year (first or last year of service; not individually checked) |
 | Marc Veasey | V000131 | Texas | 2013 | edge year (first or last year of service; not individually checked) |
 | Pat Fallon | F000246 | Texas | 2021 | edge year (first or last year of service; not individually checked) |
 | Pete Gallego | G000572 | Texas | 2013 | edge year (first or last year of service; not individually checked) |
