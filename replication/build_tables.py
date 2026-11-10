@@ -225,7 +225,7 @@ LEGISCAN_SESSIONS_REPLACED = {"CA": {"30", "82"}, "SC": {"43", "106"}, "NC": {"4
                               "MD": {"34", "113", "924", "409"}, "MI": {"36"}, "MN": {"70"}, "WA": {"59", "103"},
                               "VA": {"16", "23", "115", "817"}, "PA": {"14", "15"},
                               "OH": {"11", "13", "95", "1015"}, "OR": {"38", "102", "954"}, "KY": {"24", "86", "356"},
-                              "NJ": {"31"}, "NY": {"27"}, "MS": {"44", "474", "87", "475"}, "TX": {"108", "133"}, "WI": {"72"}, "FL": {"35", "130", "288", "287"},
+                              "NJ": {"31"}, "NY": {"27"}, "MS": {"44", "474", "87", "475"}, "TX": {"108", "133"}, "WI": {"72"}, "FL": {"35", "130", "288", "287"}, "IL": {"21"},
                               "NV": {"64"}}  # Nevada 2009 is in the archive scan
 # Michigan's archive step reads bills only, so LegiScan's sole-sponsor resolutions stay for that session.
 LEGISCAN_TYPES_KEPT = {"MI": re.compile(r"(HR|SR|HCR|SCR|HJR|SJR)")}
@@ -396,6 +396,7 @@ ARCHIVE_SOURCES = [
     ("ct_state_legislation_sponsored.csv", "CT", "Connecticut General Assembly"),    # local; ct_cga_bills.py
     ("ny_state_legislation_sponsored.csv", "NY", "New York State Assembly"),         # local; ny_assembly_bills.py
     ("nh_state_legislation_sponsored.csv", "NH", "New Hampshire General Court (Internet Archive)"),  # local; nh_gencourt_bills.py
+    ("nh_live_state_legislation_sponsored.csv", "NH", "New Hampshire General Court"),  # local; nh_gencourt_bills.py --live (2009 Senate files the archive lacks)
     ("id_state_legislation_sponsored.csv", "ID", "Idaho Legislature"),               # local; id_legislature_bills.py
     ("ma_state_legislation_sponsored.csv", "MA", "Massachusetts General Court (Internet Archive)"),  # local; ma_wayback_bills.py
     ("tn_state_legislation_sponsored.csv", "TN", "Tennessee General Assembly (Internet Archive)"),  # local; tn_wayback_bills.py

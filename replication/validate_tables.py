@@ -70,7 +70,7 @@ ALLOWED = {
                          "South Dakota Legislature", "North Dakota Legislative Assembly",
                          "Rhode Island General Assembly", "Georgia General Assembly (Internet Archive)",
                          "Connecticut General Assembly", "New York State Assembly",
-                         "New Hampshire General Court (Internet Archive)", "Idaho Legislature",
+                         "New Hampshire General Court (Internet Archive)", "New Hampshire General Court", "Idaho Legislature",
                          "Massachusetts General Court (Internet Archive)",
                          "Tennessee General Assembly (Internet Archive)",
                          "Oregon Legislature (Internet Archive)"},
@@ -272,6 +272,11 @@ def main():
                 elif n == 4 and r.text_source == "New York State Assembly":
                     _, yr, num = r.bill_id.split("-", 2)
                     url = f"https://nyassembly.gov/leg/?bn={num}&term={yr}&Summary=Y&Text=Y"
+                    detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "New Hampshire General Court":
+                    _, yr, num = r.bill_id.split("-", 2)
+                    kind, digits = re.match(r"([A-Z]+)(\d+)$", num).groups()
+                    url = f"https://gc.nh.gov/legislation/{yr}/{kind}{int(digits):04d}.html"
                     detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "New Hampshire General Court (Internet Archive)":
                     _, yr, num = r.bill_id.split("-", 2)

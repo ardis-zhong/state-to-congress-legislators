@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,297 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 86,509 rows, 481 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Connecticut and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 86,738 rows, 481 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Connecticut and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -91,10 +91,11 @@ introducer files, Mississippi's "By:" line, South Dakota's prime sponsor) names
 the person first. In sessions where LegiScan records no sponsor roles at all
 (most states' sessions from about 2007 to 2012), the primary sponsor comes from
 the legislature's own record where it can be used (CA, FL, KY, MD, MI, MN, MS,
-NC, NJ, OH, OR, PA, SC, TX, VA, WA and WI, listed under each state below), or
+NC, NJ, OH, OR, PA, SC, TX, VA, WA and WI, and IL 2009-2010, listed under each state below), or
 otherwise from the sponsor line printed on the bill's introduced text in LegiScan
 (AL, AZ, CO, GA, IA, IN, LA, MA, MO, NH, NV, OK and UT: the person must be named
-first); for the rest (e.g. HI, IL, KS), only bills whose sole listed sponsor is the
+first; for HI 2009-2012, the first introducer on the Legislature's archived bill
+status pages); for the rest (e.g. most HI 2012 bills, KS), only bills whose sole listed sponsor is the
 person are included. Co-sponsors are excluded. `bioguide_id`, `name`,
 `bill_id` (state-LegiScan session ID-bill number, e.g. `OH-1145-HB144`; for
 bills from the legislatures' own archives (before LegiScan's coverage),
@@ -184,7 +185,9 @@ sponsors. Ohio's archive gives no introduction date, so `year` is the General
 Assembly's first year.
 For Illinois, 1997–2002 bills come from the General Assembly's legacy
 "Legisnet" archive and 2003–2008 bills from ilga.gov's member pages and the
-General Assembly's file repository (ftp.ilga.gov): the bills on which the
+General Assembly's file repository (ftp.ilga.gov), and 2009–2010 (96th General
+Assembly) bills from LegiScan checked against that repository's bill-status
+records (the person must be filer, or first-named chief sponsor): the bills on which the
 person is chief sponsor, with their introduced text, counted only when the
 person introduced the bill. Illinois's leaders often file bills that a member
 takes over later, so 80 bills whose status history shows they were filed by
@@ -340,8 +343,9 @@ person, and the text's "Introduced by" line for the bill's own chamber must name
 them first. The site shows each bill's latest printing, so amended bills carry
 their amended text (`text_version` = `Amended`). Bills the Rules Committee
 introduced at a member's request are not counted.
-For New Hampshire, 1989–2008 bills and resolutions come from the Internet
-Archive's copies of the General Court's bill text files (one file per measure,
+For New Hampshire, 1989–2009 bills and resolutions come from the Internet
+Archive's copies (and, for 2009 Senate files the archive lacks, the General
+Court's own site, gc.nh.gov) of the General Court's bill text files (one file per measure,
 read for every archived measure of the years and chambers our people served):
 the first sponsor printed in the file must be the person, matched by year and
 district in a reviewed list. Each file holds one printing, so measures that

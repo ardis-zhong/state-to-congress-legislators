@@ -136,7 +136,7 @@ NAME_OVERRIDES = {
     "L000586": [("alfred", "lawson")],  # Al Lawson
     # LegiScan lists Madeleine Dean under her married name: people_id 13961, "Madeleine Dean Cunnane",
     # PA HD-153 (2012-2018), found by the 2026-11-04 coverage audit.
-    "D000631": [("madeleine", "dean cunnane")],  # Madeleine Dean
+    "D000631": [("madeleine", "cunnane")],  # Madeleine Dean (split_name keeps the last word)
 }
 
 

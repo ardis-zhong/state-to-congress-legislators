@@ -38,6 +38,8 @@ def apply(person_level=PERSON_LEVEL, targets=TARGETS):
         fix = fixes.get(r["BioguideId"])
         if fix:
             years = [int(y) for y in re.findall(r"(?:19|20)\d\d", fix["state_leg_years"])]
+            if re.search(r"\bpresent\b", fix["state_leg_years"], re.I):
+                years.append(2026)
             r["StateLegChamber"], r["StateLegYears"] = fix["state_leg_chamber"], fix["state_leg_years"]
             r["MinYear"], r["MaxYear"] = min(years), max(years)
     with open(targets, "w", newline="", encoding="utf-8") as f:

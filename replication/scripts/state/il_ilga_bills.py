@@ -49,6 +49,10 @@ FTP = "https://ftp.ilga.gov"
 CACHE = "il_ilga_cache"
 LEGISNET = {90: 1997, 91: 1999, 92: 2001}
 NEW_SITE = {93: (3, 2003), 94: (8, 2005), 95: (9, 2007)}  # GA -> (ILGA.Web.GAId, first year)
+# 96th GA (2009-2010): LegiScan records no sponsor roles there, and ilga.gov no longer serves member pages for
+# past General Assemblies, so the candidates are every LegiScan sponsorship of our people in that session; the
+# repository's bill-status XML ("Filed with the Clerk by Rep. ...") and the text decide who introduced it.
+LEGISCAN_96 = {"session_id": "21", "first_year": 2009}
 PEOPLE = "replication/data/population/person_level.csv"
 KEYS = "replication/data/reference/il_member_keys_1997_2008.csv"
 CANDIDATES = "il_member_key_candidates.csv"
@@ -190,6 +194,13 @@ def crawl_lists():
                                 "chief_sponsor": cells[1]})
         print(f"GA {ga} {k['name']}: {sum(1 for o in out if o['ga'] == ga and o['bioguide_id'] == k['bioguide_id'])} "
               f"chief-sponsored", flush=True)
+    with open("state_legislation_sponsored.csv", newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            m = re.fullmatch(r"([A-Z]+?)0*(\d+)", r["BillNumber"])
+            if r["StateAbbr"] == "IL" and r["SessionId"] == LEGISCAN_96["session_id"] and m:
+                out.append({"ga": 96, "bioguide_id": r["BioguideId"], "name": r["Name"],
+                            "chamber": "House" if m.group(1).startswith("H") else "Senate", "type": m.group(1),
+                            "number": int(m.group(2)), "title": r["Title"], "chief_sponsor": ""})
     seen, unique = set(), []
     for o in out:  # a member listed in both chambers in one General Assembly (Hultgren, 2005-06)
         if (o["bioguide_id"], o["ga"], o["type"], o["number"]) not in seen:
@@ -297,7 +308,8 @@ def crawl_texts(limit=0):
         date, filer, changes = status(ga, typ, num)
         text, version = introduced_text(ga, typ, num)
         text_path = ""
-        if text and not re.search(rf"[A-Z]{{2,5}}0*{num}\b", text[:800].replace(" ", "")):
+        if text and not re.search(rf"[A-Z]{{2,5}}0*{num}\b", text[:800].replace(" ", "")) \
+                and not re.search(rf"\b[A-Z]{{2,5}}\s*0*{num}\b", text[:800]):  # 'HR1385 96TH GENERAL ASSEMBLY
             text = ""  # an error or index page, not the bill
         if text:
             text_path = os.path.join(CACHE, "texts", f"{ga}_{typ}{num}.txt")
@@ -315,7 +327,15 @@ def crawl_texts(limit=0):
             match = "No"
         else:
             match = "Unchanged"  # no filer named (1997-2002, and resolutions) and no change of chief sponsor
-        y = LEGISNET.get(ga) or NEW_SITE[ga][1]
+        if ga == 96 and match == "Unchanged":
+            # 96th GA candidates come from LegiScan's sponsor lists, not a chief-sponsor list, so a resolution
+            # filed without a name counts only when the status XML names the person first among its sponsors
+            xml = os.path.join(CACHE, "status", f"{ga}_{typ}{num}.xml")
+            heads = re.findall(r"<sponsors>([^<]*)</sponsors>", open(xml, encoding="utf-8", errors="replace").read()) \
+                if os.path.exists(xml) else []
+            lead = re.split(r",| and ", re.sub(r"^(?:Rep\.|Sen\.)\s*", "", heads[0].strip()))[0] if heads else ""
+            match = "Yes" if lead and surname in squash(lead) else "No"
+        y = LEGISNET.get(ga) or (NEW_SITE[ga][1] if ga in NEW_SITE else LEGISCAN_96["first_year"])
         suffix = {1: "st", 2: "nd", 3: "rd"}.get(ga % 10 if ga % 100 not in (11, 12, 13) else 0, "th")
         out.append({"BioguideId": b["bioguide_id"], "Name": b["name"],
                     "Session": f"{ga}{suffix} General Assembly ({y}-{y + 1})",

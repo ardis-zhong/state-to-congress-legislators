@@ -14,6 +14,7 @@ INPUTS (repo root, gitignored):
     sponsored_legislation_full.csv      the original 907-person fetch (gap-fill merged in)
     sponsored_legislation_pending.csv   the fetch for extraction_queue_pending.csv
     sponsored_legislation_recheck.csv   the fetch for extraction_queue_recheck.csv (2026-10-12 additions)
+    sponsored_legislation_refresh.csv   the freeze-date refresh for members serving in the current Congress
     fetch_log.csv, fetch_log_pending.csv, fetch_log_recheck.csv   per-person API-reported totals
 OUTPUT:
     sponsored_legislation_full_deduped.csv   only population members, one row per item
@@ -30,8 +31,11 @@ import csv
 import os
 from collections import Counter
 
-INPUTS = ["sponsored_legislation_full.csv", "sponsored_legislation_pending.csv", "sponsored_legislation_recheck.csv"]
-LOGS = ["fetch_log.csv", "fetch_log_pending.csv", "fetch_log_recheck.csv"]
+# The freeze-date refresh (refresh_queue.py, for members serving in the current Congress) comes first, so its
+# copy of an item -- with the latest action, and so the latest passage status -- is the one kept.
+INPUTS = ["sponsored_legislation_refresh.csv", "sponsored_legislation_full.csv", "sponsored_legislation_pending.csv",
+          "sponsored_legislation_recheck.csv"]
+LOGS = ["fetch_log.csv", "fetch_log_pending.csv", "fetch_log_recheck.csv", "fetch_log_refresh.csv"]
 PERSON_LEVEL = "replication/data/population/person_level.csv"
 OUT = "sponsored_legislation_full_deduped.csv"
 

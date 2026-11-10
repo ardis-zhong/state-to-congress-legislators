@@ -50,6 +50,59 @@ BYLINE = {
 }
 
 
+HI_CDX = "hi_capitol_cache/status_wayback"  # Wayback CDX listings of capitol.hawaii.gov measure_indiv pages
+
+
+def hi_status_index():
+    """(year, type, number) -> (original URL, timestamp) of an archived Hawaii status page (2010-2012).
+    capitol.hawaii.gov itself is behind a bot check, so only the Internet Archive's copies are read."""
+    import glob
+    have = {}
+    for path in sorted(glob.glob(os.path.join(HI_CDX, "hi_cdx_*.txt"))):
+        for line in open(path, errors="replace"):
+            p = line.split()
+            m = re.search(r"session(201[012])/lists/measure_indiv\.aspx\?billtype=([A-Z]+)&billnumber=(?:%20)?\s*0*(\d+)", p[0] if p else "", re.I) \
+                or re.search(r"measure_indiv\.aspx\?billtype=([A-Z]+)&billnumber=0*(\d+)&year=(201[012])", p[0] if p else "", re.I)
+            if not m:
+                continue
+            g = m.groups()
+            year, typ, num = (g[0], g[1], g[2]) if g[0].startswith("20") else (g[2], g[0], g[1])
+            have.setdefault((int(year), typ.upper(), int(num)), (p[0], p[1] if len(p) > 1 and p[1].isdigit() else ""))
+    return have
+
+
+def hi_first_introducer(year, bill, index, cache={}):
+    """The first name in 'Introducer(s):' on the archived status page, e.g. 'TAKAI' or 'SAY (BR)'."""
+    import time
+    import urllib.request
+    m = re.match(r"([A-Z]+?)0*(\d+)$", bill)
+    hit = index.get((year, m.group(1), int(m.group(2)))) if m else None
+    if not hit:
+        return None
+    path = os.path.join(HI_CDX, "pages", f"{year}_{m.group(1)}{int(m.group(2))}.html")
+    if not os.path.exists(path):
+        url, ts = hit
+        wb = f"https://web.archive.org/web/{ts}id_/{url}" if ts else f"https://web.archive.org/web/2013id_/{url}"
+        for attempt in range(4):
+            time.sleep(3)
+            try:
+                with urllib.request.urlopen(urllib.request.Request(wb, headers={"User-Agent": "state-to-congress-legislators/1.0 (research dataset)"}), timeout=120) as r:
+                    data = r.read()
+                break
+            except Exception:
+                time.sleep(20 * (attempt + 1))
+        else:
+            return None
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "wb") as f:
+            f.write(data)
+    page = open(path, encoding="utf-8", errors="replace").read()
+    import html as _html
+    t = " ".join(_html.unescape(re.sub(r"<[^>]+>", " ", page)).split())
+    intro = re.search(r"Introducer\(s\):\s*(.+?)(?:\s+Current Referral|\s+Companion|\s+Report Title|\s+Measure Title|$)", t)
+    return intro.group(1).split(",")[0].strip() if intro else ""
+
+
 def first_named(state, text):
     flat = " ".join((text or "")[:6000].split())
     m = re.search(BYLINE[state], flat)
@@ -92,7 +145,7 @@ def doc_text(doc_id, key):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--fetch", action="store_true")
-    ap.add_argument("--states", default=",".join(BYLINE))
+    ap.add_argument("--states", default=",".join(list(BYLINE) + ["HI"]))
     ap.add_argument("--limit", type=int, default=0)
     args = ap.parse_args()
     key = os.environ["LEGISCAN_API_KEY"]
@@ -109,8 +162,20 @@ def main():
         with open(MANIFEST, newline="", encoding="utf-8") as f:
             manifest = {m["DocId"]: m for m in csv.DictReader(f)}
     out = []
+    hi_index = hi_status_index() if "HI" in states else {}
     for i, r in enumerate(rows, 1):
         doc = r["IntroducedDocId"]
+        if r["StateAbbr"] == "HI":  # Hawaii's texts print a blank "INTRODUCED BY:"; the status page names them
+            year = int(re.search(r"20\d\d", r["SessionTitle"]).group(0))
+            named = hi_first_introducer(year, r["BillNumber"], hi_index)
+            surname = re.sub(r"[^A-Z]", "", r["Name"].split()[-1].upper())
+            if not named or surname not in re.sub(r"[^A-Z]", "", named.upper()):  # not first: no text needed
+                out.append({"StateAbbr": "HI", "BioguideId": r["BioguideId"], "Name": r["Name"], "SessionId": r["SessionId"],
+                            "SessionTitle": r["SessionTitle"], "BillNumber": r["BillNumber"], "NumSponsors": r["NumSponsors"],
+                            "DocId": doc, "HasText": "", "FirstNamed": named or ""})
+                continue
+        else:
+            named = None
         text, mime, raw = doc_text(doc, key)
         if doc not in manifest and text:
             manifest[doc] = {"DocId": doc, "Mime": mime, "RawPath": raw,
@@ -118,7 +183,7 @@ def main():
         out.append({"StateAbbr": r["StateAbbr"], "BioguideId": r["BioguideId"], "Name": r["Name"],
                     "SessionId": r["SessionId"], "SessionTitle": r["SessionTitle"], "BillNumber": r["BillNumber"],
                     "NumSponsors": r["NumSponsors"], "DocId": doc, "HasText": "Yes" if text else "No",
-                    "FirstNamed": first_named(r["StateAbbr"], text)})
+                    "FirstNamed": named if named is not None else first_named(r["StateAbbr"], text)})
         if i % 200 == 0:
             print(f"  ...{i}/{len(rows)}", flush=True)
             with open(MANIFEST, "w", newline="", encoding="utf-8") as f:
