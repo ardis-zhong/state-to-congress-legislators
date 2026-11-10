@@ -90,7 +90,7 @@ Pete Gallego,G000572,Texas,TX,Texas House of Representatives,1991-2013,1991,2013
 Ruben Gallego,G000574,Arizona,AZ,Arizona House of Representatives,2011-2014,2011,2014
 Glenn Grothman,G000576,Wisconsin,WI,Wisconsin State Assembly (1993-2005; dist 58); Wisconsin Senate (2005-2015; dist 20),WI Assembly 1993-2005 (6 terms); WI Senate 2005-2015 (3 terms),1993,2015
 Matt Gaetz,G000578,Florida,FL,Florida House of Representatives,2010-2016,2010,2016
-Tom Garrett,G000580,Virginia,VA,Virginia Senate,dist 22; elected 2011/took office Jan 2012 through his 2016 election to Congress (source shows some date overlap/error with Congress dates - flagged),2011,2016
+Tom Garrett,G000580,Virginia,VA,Virginia Senate; Virginia House of Delegates (56th district),2012-2017 (Senate); 2024-present (House of Delegates),2012,2024
 Jimmy Gomez,G000585,California,CA,CA State Assembly (51st district),2012-2017,2012,2017
 Sylvia Garcia,G000587,Texas,TX,Texas Senate,2013-2018,2013,2018
 Lance Gooden,G000589,Texas,TX,Texas House of Representatives,2011-2015; 2017-2019,2011,2019
@@ -194,7 +194,7 @@ Nellie Pou,P000621,New Jersey,NJ,New Jersey General Assembly 1997-2012; New Jers
 Jimmy Patronis,P000622,Florida,FL,Florida House of Representatives (6th district),2006-2014,2006,2014
 Matt Rosendale,R000103,Montana,MT,Montana House of Representatives; Montana Senate,2011-2013 (House); 2013-2017 (Senate),2011,2017
 Deborah Ross,R000305,North Carolina,NC,NC House,2003-2013,2003,2013
-Laura Richardson,R000581,California,CA,CA State Assembly (55th district) 2007 (brief); CA State Senate (35th district) 2024-present,Assembly 2007 (few months); Senate 2024-present,2007,2026
+Laura Richardson,R000581,California,CA,California State Assembly; California State Senate,2006-2007 (Assembly); 2024-present (Senate),2006,2024
 Cedric Richmond,R000588,Louisiana,LA,Louisiana House of Representatives (101st district),2000-2011,2000,2011
 David Rivera,R000590,Florida,FL,Florida House of Representatives (112th district),2002-2010,2002,2010
 Steve Russell,R000604,Oklahoma,OK,Oklahoma Senate,2009-2013,2009,2013
@@ -237,7 +237,7 @@ David Valadao,V000129,California,CA,CA State Assembly (30th district),2010-2012,
 Juan Vargas,V000130,California,CA,CA State Assembly (79th district); CA State Senate (40th district),Assembly 2000-2006; Senate 2010-2013,2000,2013
 Marc Veasey,V000131,Texas,TX,Texas House of Representatives,2005-2013,2005,2013
 Jeff Van Drew,V000133,New Jersey,NJ,New Jersey General Assembly (1st district) 2002-2008; New Jersey Senate (1st district) 2008-2018,2002-2018,2002,2018
-Nikema Williams,W000788,Georgia,GA,Georgia State Senate (39th district),Dec 2017-Jan 2021,2017,2021
+Nikema Williams,W000788,Georgia,GA,Georgia State Senate (39th district),2017-2021,2017,2021
 Frederica Wilson,W000808,Florida,FL,Florida House of Representatives (104th district); Florida Senate (33rd district),1998-2002; 2002-2010,1998,2010
 Jackie Walorski,W000813,Indiana,IN,Indiana House of Representatives (21st district),2005-2010,2005,2010
 Mimi Walters,W000820,California,CA,CA State Assembly (73rd district); CA State Senate (33rd then 37th district),Assembly 2005-2008; Senate 2008-2015,2005,2015
@@ -359,7 +359,7 @@ Julia Carson,C000191,Indiana,IN,Indiana House of Representatives; Indiana Senate
 Michael N. Castle,C000243,Delaware,DE,Delaware House of Representatives (1967-1969); Delaware Senate (1969-1977; Minority Leader 1975-1976),1967-1977,1967,1977
 John Cavanaugh,C000261,Nebraska,NE,Nebraska Legislature,1973-1977,1973,1977
 Rod Chandler,C000293,Washington,WA,Washington House of Representatives,January 1975-January 1983; dist 45 (~4 terms),1975,1983
-Bill Chappell,C000321,Florida,FL,Florida House of Representatives (Speaker 1961-1963),1954-1964; 1966-1968,1954,1968
+Bill Chappell,C000321,Florida,FL,Florida House of Representatives,1954-1964,1954,1964
 Eugene Chappie,C000322,California,CA,California State Assembly,1964-1980,1964,1980
 Lawton Chiles,C000356,Florida,FL,Florida House of Representatives; Florida State Senate,House 1958-1966; Senate 1966-1970,1958,1970
 Shirley Chisholm,C000371,New York,NY,New York State Assembly,1965-1968,1965,1968
@@ -512,7 +512,7 @@ Virgil Goode,G000280,Virginia,VA,Senate of Virginia,circa 1973-1997 (won special
 Slade Gorton,G000333,Washington,WA,Washington House of Representatives,1959-1969,1959,1969
 Bob Graham,G000352,Florida,FL,Florida House of Representatives; Florida State Senate,House 1966-1970; Senate 1970-1978,1966,1978
 Lindsey Graham,G000359,South Carolina,SC,South Carolina House of Representatives,1993-1995,1993,1995
-Bill Grant,G000382,Florida,FL,Florida Senate (5th district),1983-1987,1983,1987
+Bill Grant,G000382,Florida,FL,Florida Senate,1982-1986,1982,1986
 Chuck Grassley,G000386,Iowa,IA,Iowa House of Representatives,1959-1975,1959,1975
 Mike Gravel,G000388,Alaska,AK,Alaska House of Representatives (Speaker 1965-66),1963-1967,1963,1967
 Gene Green,G000410,Texas,TX,Texas House of Representatives; Texas Senate,1973-1985 (House district 140); 1985-1993 (Senate),1973,1993
@@ -547,7 +547,7 @@ Thomas F. Hartnett,H000302,South Carolina,SC,South Carolina House of Representat
 Dennis Hastert,H000323,Illinois,IL,Illinois House of Representatives,1981-1987 (districts 39 then 82),1981,1987
 Doc Hastings,H000329,Washington,WA,Washington House of Representatives,January 1979-January 1987; dist 16 (4 terms; Assistant Majority Leader),1979,1987
 Charles Hatcher,H000340,Georgia,GA,Georgia House of Representatives (114th; then 131st district),1973-1980,1973,1980
-Mark Hatfield,H000343,Oregon,OR,Oregon House of Representatives; Oregon State Senate,1951-1955 (House); 1955-1959 (Senate; resigned to become Sec of State),1951,1959
+Mark Hatfield,H000343,Oregon,OR,Oregon House of Representatives; Oregon State Senate,1951-1955 (House); 1955-1957 (Senate),1951,1957
 Augustus Hawkins,H000367,California,CA,CA State Assembly (62nd district),1935-1963,1935,1963
 Chic Hecht,H000439,Nevada,NV,Nevada Senate,1967-1975,1967,1975
 Joel Hefley,H000444,Colorado,CO,Colorado House of Representatives (1977-1978); Colorado Senate district 9 (1979-1987),1977-1987,1977,1987
@@ -696,16 +696,16 @@ Raymond J. McGrath,M000458,New York,NY,New York State Assembly,1977-1980,1977,19
 Paul McHale,M000466,Pennsylvania,PA,Pennsylvania House of Representatives,1983-1991,1983,1991
 John M. McHugh,M000472,New York,NY,New York State Senate,1985-1992,1985,1992
 Scott McInnis,M000477,Colorado,CO,Colorado House of Representatives district 57; House Majority Leader,1983-1993,1983,1993
-K. Gunn McKay,M000490,Utah,UT,Utah House of Representatives,c.1963-1967 (2 terms; began 1962),1962,1967
+K. Gunn McKay,M000490,Utah,UT,Utah House of Representatives,1963-1966,1963,1966
 John R. McKernan Jr.,M000512,Maine,ME,Maine House of Representatives,1973-1977 (Assistant Republican Floor Leader),1973,1977
 Cynthia McKinney,M000523,Georgia,GA,Georgia House of Representatives,1988-1992,1988,1992
 Stewart McKinney,M000527,Connecticut,CT,Connecticut House of Representatives; Minority Leader 2nd term,1967-1971,1967,1971
 James F. McNulty Jr.,M000589,Arizona,AZ,Arizona State Senate,1969-1975,1969,1975
 Michael McNulty,M000590,New York,NY,New York State Assembly,1983-1988,1983,1988
 Carrie Meek,M000628,Florida,FL,Florida House of Representatives (106th district); Florida Senate (36th district),1979-1982; 1982-1992,1979,1992
-John Melcher,M000635,Montana,MT,Montana House of Representatives; Montana Senate,1960-1964,1960,1964
+John Melcher,M000635,Montana,MT,Montana House of Representatives; Montana Senate,1961-1962 and 1969 (House); 1963-1966 (Senate),1961,1969
 Bob Menendez,M000639,New Jersey,NJ,New Jersey General Assembly (1988-1991); New Jersey State Senate (1991-1993),1988-1993,1988,1993
-Jack Metcalf,M000669,Washington,WA,Washington House of Representatives (1961-1965); Washington State Senate (1967-1974; 1980-1992),WA House dist 38 1961-1965 (1 term); WA Senate two non-consecutive stints dist 21 then dist 10 (~3-4 terms),1961,1965
+Jack Metcalf,M000669,Washington,WA,Washington House of Representatives; Washington State Senate,1961-1965 (House); 1967-1975 and 1981-1993 (Senate),1961,1993
 Howard Metzenbaum,M000678,Ohio,OH,Ohio House of Representatives; Ohio Senate,1943-1947 (House); 1947-1951 (Senate),1943,1951
 Jan Meyers,M000684,Kansas,KS,Kansas Senate,1972-1984,1972,1984
 John Mica,M000689,Florida,FL,Florida House of Representatives (39th district),1976-1980,1976,1980
@@ -751,7 +751,7 @@ Harry Mitchell,M001167,Arizona,AZ,Arizona State Senate,1999-2006,1999,2006
 Chris Murphy,M001169,Connecticut,CT,Connecticut House of Representatives; Connecticut State Senate,House 1999-2003; Senate 2003-2007,1999,2007
 Claire McCaskill,M001170,Missouri,MO,Missouri House of Representatives,1983-1989,1983,1989
 Jeff Merkley,M001176,Oregon,OR,Oregon House of Representatives,1999-2009 (Speaker 2007-2009),1999,2009
-Tom McClintock,M001177,California,CA,CA State Assembly (36th then 38th district); CA State Senate (19th district),Assembly 1982-2000; Senate 2000-2008,1982,2008
+Tom McClintock,M001177,California,CA,California State Assembly; California State Senate,1982-1992 and 1996-2000 (Assembly); 2000-2008 (Senate),1982,2008
 David McKinley,M001180,West Virginia,WV,West Virginia House of Delegates,1980-1994 (dist 3),1980,1994
 Joe Manchin,M001183,West Virginia,WV,West Virginia House of Delegates; West Virginia Senate,1982-1986 (House); 1986-1996 (Senate),1982,1996
 Luke Messer,M001189,Indiana,IN,Indiana House of Representatives (57th district),2003-2006 (appointed; did not seek reelection),2003,2006
@@ -818,7 +818,7 @@ Jimmy Quillen,Q000013,Tennessee,TN,Tennessee House of Representatives,1954-1962 
 Tom Railsback,R000012,Illinois,IL,Illinois House of Representatives,1962-1966,1962,1966
 Jim Ramstad,R000033,Minnesota,MN,Minnesota Senate,1981-1991,1981,1991
 Charles Rangel,R000053,New York,NY,New York State Assembly,1967-1971,1967,1971
-William R. Ratchford,R000067,Connecticut,CT,Connecticut House of Representatives; Speaker 1969-1972,1963-1979,1963,1979
+William R. Ratchford,R000067,Connecticut,CT,Connecticut House of Representatives,1963-1974,1963,1974
 Arthur Ravenel Jr.,R000072,South Carolina,SC,South Carolina House of Representatives; South Carolina Senate,1953-1959 (House); 1981-1985; 1985-1987; 1997-2005 (Senate),1953,2005
 Jack Reed,R000122,Rhode Island,RI,Rhode Island State Senate,1985-1991 (elected 1984; 3 terms; exact end date approximate),1984,1991
 Ralph Regula,R000141,Ohio,OH,Ohio House of Representatives 1964-1967 (1 term); Ohio State Senate 1967-1973 (3 terms),1964-1973,1964,1973
@@ -846,7 +846,7 @@ Mike Rogers,R000572,Michigan,MI,Michigan Senate,1995-2001,1995,2001
 Mike Ross,R000573,Arkansas,AR,Arkansas State Senate,1991-2001,1991,2001
 Mike Rogers,R000575,Alabama,AL,Alabama House of Representatives,1994-2002; became minority leader in 2nd term,1994,2002
 Tim Ryan,R000577,Ohio,OH,Ohio State Senate,2000-2002,2000,2002
-Peter Roskam,R000580,Illinois,IL,Illinois House of Representatives; Illinois Senate,1993-1999 (House; district 40); 1999(2000)-2007 (Senate; districts 20 then 48),1993,2007
+Peter Roskam,R000580,Illinois,IL,Illinois House of Representatives; Illinois Senate,1993-1999 (House); 2000-2007 (Senate),1993,2007
 Jim Risch,R000584,Idaho,ID,Idaho State Senate (President Pro Tem),1974-1988; 1995-2002 (non-consecutive),1974,2002
 Dennis Ross,R000593,Florida,FL,Florida House of Representatives (63rd district),2000-2008,2000,2008
 Marco Rubio,R000595,Florida,FL,Florida House of Representatives (Speaker 2006-2008),2000-2008,2000,2008
@@ -970,7 +970,7 @@ George Voinovich,V000126,Ohio,OH,Ohio House of Representatives,1967-1971,1967,19
 David Vitter,V000127,Louisiana,LA,Louisiana House of Representatives,1992-1999,1992,1999
 Chris Van Hollen,V000128,Maryland,MD,Maryland House of Delegates (1991-1995); Maryland State Senate (1995-2003),1991-2003,1991,2003
 Alton Waldon,W000038,New York,NY,New York State Assembly; New York State Senate,1983-1986 (Assembly); 1991-1999 (Senate),1983,1999
-Malcolm Wallop,W000092,Wyoming,WY,Wyoming State Senate,1973-1976,1973,1976
+Malcolm Wallop,W000092,Wyoming,WY,Wyoming House of Representatives; Wyoming Senate,1969-1972 (House); 1973-1976 (Senate),1969,1976
 Mike Ward,W000139,Kentucky,KY,Kentucky House of Representatives,1989-1993 (resigned Nov 1993),1989,1993
 Craig Washington,W000177,Texas,TX,Texas House of Representatives; Texas Senate,1973-1982 (House district 86); 1983-1989 (Senate district 13),1973,1989
 Harold Washington,W000180,Illinois,IL,Illinois House of Representatives; Illinois Senate,1965-1977 (House; district 26); 1977-1981 (Senate),1965,1981
@@ -992,7 +992,7 @@ Charlie Wilson,W000570,Texas,TX,Texas House of Representatives; Texas Senate,196
 Charles H. Wilson,W000571,California,CA,CA State Assembly (66th district),1955-1963,1955,1963
 Pete Wilson,W000607,California,CA,California State Assembly,1966-1971,1966,1971
 Bob Wise,W000654,West Virginia,WV,West Virginia Senate,1980-1982 (dist 17; 1 term),1980,1982
-Howard Wolpe,W000682,Michigan,MI,Michigan House of Representatives (exact dates not confirmed by source; c. mid-1970s prior to 1979 US House election),c. 1973-1978 (approximate; source did not give exact dates),1973,1978
+Howard Wolpe,W000682,Michigan,MI,Michigan House of Representatives,1973-1976,1973,1976
 Jim Wright,W000763,Texas,TX,Texas House of Representatives,1947-1949,1947,1949
 Joseph P. Wyatt Jr.,W000777,Texas,TX,Texas House of Representatives,1971-1979,1971,1979
 Albert Wynn,W000784,Maryland,MD,Maryland House of Delegates (1983-1987); Maryland Senate (1987-1993),1983-1993,1983,1993

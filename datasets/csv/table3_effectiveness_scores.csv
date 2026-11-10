@@ -475,6 +475,7 @@ B000615,William Boner,97,1981,0.073746,Federal,House
 B000615,William Boner,98,1983,0.111873,Federal,House
 B000615,William Boner,99,1985,0.138323,Federal,House
 B000615,William Boner,100,1987,0.233963,Federal,House
+B000615,William Boner,1997-1998,1997,1.166127,State,Lower
 B000619,David Bonior,95,1977,0.064308,Federal,House
 B000619,David Bonior,96,1979,0.01511,Federal,House
 B000619,David Bonior,97,1981,0.084264,Federal,House
@@ -4800,6 +4801,7 @@ M000639,Bob Menendez,115,2016,0.916479,Federal,Senate
 M000639,Bob Menendez,116,2018,1.189735,Federal,Senate
 M000639,Bob Menendez,117,2020,2.029434,Federal,Senate
 M000639,Bob Menendez,118,2022,1.119013,Federal,Senate
+M000669,Jack Metcalf,1991-1992,1991,2.006272,State,Upper
 M000669,Jack Metcalf,104,1995,0.122437,Federal,House
 M000669,Jack Metcalf,105,1997,1.593093,Federal,House
 M000669,Jack Metcalf,106,1999,0.549223,Federal,House
@@ -5497,6 +5499,8 @@ N000106,Howard C. Nielson,98,1983,0.068215,Federal,House
 N000106,Howard C. Nielson,99,1985,0.454156,Federal,House
 N000106,Howard C. Nielson,100,1987,0.225022,Federal,House
 N000106,Howard C. Nielson,101,1989,1.552725,Federal,House
+N000106,Howard C. Nielson,1997-1998,1997,0.575657,State,Upper
+N000106,Howard C. Nielson,1999-2000,1999,1.162137,State,Upper
 N000127,Rick Nolan,94,1975,0.259103,Federal,House
 N000127,Rick Nolan,95,1977,0.630556,Federal,House
 N000127,Rick Nolan,96,1979,1.410516,Federal,House
@@ -6572,6 +6576,11 @@ S000094,Thomas Sawyer,104,1995,0.616893,Federal,House
 S000094,Thomas Sawyer,105,1997,0.0,Federal,House
 S000094,Thomas Sawyer,106,1999,0.030842,Federal,House
 S000094,Thomas Sawyer,107,2001,0.062428,Federal,House
+S000094,Thomas Sawyer,2007-2008,2007,0.25624,State,Upper
+S000094,Thomas Sawyer,2009-2010,2009,0.092744,State,Upper
+S000094,Thomas Sawyer,2011-2012,2011,0.40575,State,Upper
+S000094,Thomas Sawyer,2013-2014,2013,0.268578,State,Upper
+S000094,Thomas Sawyer,2015-2016,2015,0.034393,State,Upper
 S000097,Jim Saxton,99,1985,0.110316,Federal,House
 S000097,Jim Saxton,100,1987,0.285726,Federal,House
 S000097,Jim Saxton,101,1989,0.391972,Federal,House
@@ -7796,6 +7805,7 @@ V000133,Jeff Van Drew,116,2019,0.791056,Federal,House
 V000133,Jeff Van Drew,117,2021,0.504758,Federal,House
 V000133,Jeff Van Drew,118,2023,1.120499,Federal,House
 W000038,Alton Waldon,99,1985,0.015369,Federal,House
+W000038,Alton Waldon,1999-2000,1999,0.06724,State,Upper
 W000092,Malcolm Wallop,95,1976,0.105341,Federal,Senate
 W000092,Malcolm Wallop,96,1978,0.223469,Federal,Senate
 W000092,Malcolm Wallop,97,1980,1.239511,Federal,Senate

@@ -16,7 +16,7 @@ published on Harvard Dataverse (link to come).
 |---|---|---|
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
-| 3 | `table3_effectiveness_scores` | Built: 8,287 scores for 1,039 people |
+| 3 | `table3_effectiveness_scores` | Built: 8,297 scores for 1,039 people |
 | 4 | `table4_state_bill_text` | Built: 86,509 rows, 481 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Connecticut and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
