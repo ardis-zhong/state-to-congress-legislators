@@ -73,7 +73,7 @@ ALLOWED = {
                          "New Hampshire General Court (Internet Archive)", "New Hampshire General Court", "Idaho Legislature",
                          "Massachusetts General Court (Internet Archive)",
                          "Tennessee General Assembly (Internet Archive)",
-                         "Oregon Legislature (Internet Archive)"},
+                         "Oregon Legislature (Internet Archive)", "Arizona Legislature (Internet Archive)"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -272,6 +272,11 @@ def main():
                 elif n == 4 and r.text_source == "New York State Assembly":
                     _, yr, num = r.bill_id.split("-", 2)
                     url = f"https://nyassembly.gov/leg/?bn={num}&term={yr}&Summary=Y&Text=Y"
+                    detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Arizona Legislature (Internet Archive)":
+                    _, code, num = r.bill_id.split("-", 2)
+                    leg, sess = code[:2], code[2:].lower()
+                    url = f"https://web.archive.org/web/2010/http://www.azleg.gov/legtext/{leg}leg/{sess}/bills/{num.lower()}p.pdf"
                     detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "New Hampshire General Court":
                     _, yr, num = r.bill_id.split("-", 2)

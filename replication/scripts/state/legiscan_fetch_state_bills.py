@@ -47,7 +47,7 @@ OUTPUT:
         silently dropped.
 
 USAGE:
-    python3 legiscan_fetch_state_bills.py YOUR_LEGISCAN_API_KEY
+    LEGISCAN_API_KEY=... python3 legiscan_fetch_state_bills.py [targets_file.csv]
 """
 
 import base64
@@ -55,6 +55,7 @@ import csv
 import io
 import json
 import os
+import re
 import sys
 import time
 import urllib.request
@@ -131,15 +132,29 @@ def load_target_years(path):
     return out
 
 
+# LegiScan credits some measures to a same-surname legislator in the OTHER chamber, so they never reach our
+# person (found by the 2026-11-10 coverage audit). Reviewed reassignments: (state, session_id, people_id
+# LegiScan credits) -> (our person's people_id, the bill numbers of our person's chamber). The credited
+# legislator sat in the other chamber that session, so he could not have sponsored these measures.
+REASSIGN = {
+    # Joseph Hardy was a Nevada Senator in 2011; the Assembly measures are Assemblyman Cresent Hardy's.
+    ("NV", "127", "8469"): ("12728", re.compile(r"A(B|R|CR|JR)\d")),
+    # Vernon Sykes was an Ohio Senator in 2017-2018; the House measures are Rep. Emilia Strong Sykes's
+    # (checked against the Ohio Legislature's own primary-sponsor records).
+    ("OH", "1422", "597"): ("16970", re.compile(r"H(B|R|CR|JR)\d")),
+}
+
+
 def main():
-    if len(sys.argv) not in (2, 3):
-        print("Usage: python3 legiscan_fetch_state_bills.py YOUR_LEGISCAN_API_KEY [targets_file.csv]")
+    # The key comes from the LEGISCAN_API_KEY environment variable, so it never shows in process lists.
+    key = os.environ.get("LEGISCAN_API_KEY", "")
+    if not key or len(sys.argv) > 2:
+        print("Set LEGISCAN_API_KEY first. Usage: python3 legiscan_fetch_state_bills.py [targets_file.csv]")
         print("  targets_file.csv defaults to replication/data/targets/state_bill_targets.csv -- pass the same file you")
         print("  used with legiscan_match_people.py (e.g. replication/data/targets/state_bill_targets_full.csv for the")
         print("  full 1019-person population).")
         sys.exit(1)
-    key = sys.argv[1]
-    targets_path = sys.argv[2] if len(sys.argv) == 3 else "replication/data/targets/state_bill_targets.csv"
+    targets_path = sys.argv[1] if len(sys.argv) == 2 else "replication/data/targets/state_bill_targets.csv"
 
     print("Loading matched people and target years...")
     people_id_to_person, state_to_ids = load_matched_people("legiscan_people_matches.csv")
@@ -240,6 +255,9 @@ def main():
                     continue
                 for sp in bill.get("sponsors", []):
                     pid = str(sp.get("people_id", ""))
+                    swap = REASSIGN.get((state, str(sid), pid))
+                    if swap and swap[1].match(bill.get("bill_number", "")):
+                        pid = swap[0]
                     if pid not in target_ids_this_state:
                         continue
                     person = people_id_to_person[pid]

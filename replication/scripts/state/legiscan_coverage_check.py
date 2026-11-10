@@ -26,7 +26,7 @@ This script makes a small, cheap number of API calls (well under the free
     inspection)
 
 USAGE:
-    python3 legiscan_coverage_check.py YOUR_LEGISCAN_API_KEY
+    LEGISCAN_API_KEY=... python3 legiscan_coverage_check.py
 
 Get a free API key (30,000 queries/month) by registering at
 https://legiscan.com/user/register, then generating a key on your account
@@ -35,6 +35,7 @@ page. This is a separate key from the Congress.gov one used earlier.
 
 import csv
 import json
+import os
 import sys
 import time
 import urllib.error
@@ -69,10 +70,11 @@ def call(op, key, **params):
 
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python3 legiscan_coverage_check.py YOUR_LEGISCAN_API_KEY")
+    # The key comes from the LEGISCAN_API_KEY environment variable, so it never shows in process lists.
+    key = os.environ.get("LEGISCAN_API_KEY", "")
+    if not key:
+        print("Set LEGISCAN_API_KEY first. Usage: python3 legiscan_coverage_check.py")
         sys.exit(1)
-    key = sys.argv[1]
 
     print("=== Step 1: checking session archive depth for all 50 states + DC ===\n")
     rows = []

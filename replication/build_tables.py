@@ -226,7 +226,8 @@ LEGISCAN_SESSIONS_REPLACED = {"CA": {"30", "82"}, "SC": {"43", "106"}, "NC": {"4
                               "VA": {"16", "23", "115", "817"}, "PA": {"14", "15"},
                               "OH": {"11", "13", "95", "1015"}, "OR": {"38", "102", "954"}, "KY": {"24", "86", "356"},
                               "NJ": {"31"}, "NY": {"27"}, "MS": {"44", "474", "87", "475"}, "TX": {"108", "133"}, "WI": {"72"}, "FL": {"35", "130", "288", "287"}, "IL": {"21"},
-                              "NV": {"64"}}  # Nevada 2009 is in the archive scan
+                              "NV": {"64"},  # Nevada 2009 is in the archive scan
+                              "NH": {"54"}}  # New Hampshire 2010: LegiScan lists Bradley and Hassan only as "Sponsor"
 # Michigan's archive step reads bills only, so LegiScan's sole-sponsor resolutions stay for that session.
 LEGISCAN_TYPES_KEPT = {"MI": re.compile(r"(HR|SR|HCR|SCR|HJR|SJR)")}
 
@@ -401,6 +402,7 @@ ARCHIVE_SOURCES = [
     ("ma_state_legislation_sponsored.csv", "MA", "Massachusetts General Court (Internet Archive)"),  # local; ma_wayback_bills.py
     ("tn_state_legislation_sponsored.csv", "TN", "Tennessee General Assembly (Internet Archive)"),  # local; tn_wayback_bills.py
     ("or_wayback_state_legislation_sponsored.csv", "OR", "Oregon Legislature (Internet Archive)"),  # local; or_wayback_bills.py
+    ("az_state_legislation_sponsored.csv", "AZ", "Arizona Legislature (Internet Archive)"),  # local; az_wayback_bills.py
 ]
 
 
@@ -434,7 +436,8 @@ def archive_rows(people, skip):
     ID-<session>-H526 (e.g. ID-2000-H526, ID-2000E-H1 for an extraordinary session), MA-<General Court>-S513
     (e.g. MA-182-S513, 2001-2002), TN-<General Assembly>-SB360 (e.g. TN-100-SB360, 1997-1998; 7000s =
     extraordinary-session bills, as the General Assembly numbered their files); Oregon archive bills use the
-    same form as OLIS ones (e.g. OR-1999R1-HB2013). California
+    same form as OLIS ones (e.g. OR-1999R1-HB2013); AZ-<Legislature><session>-HB2059 (e.g. AZ-471R-HB2059, the
+    47th Legislature's first regular session, 2005; AZ-452S-SB1001 for its second special session). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
     (ratified acts, text_version = Enrolled), with the year ratified. Without an introduced date, year = the session's first year."""

@@ -27,7 +27,7 @@ OUTPUT: legiscan_people_matches.csv       -- one row per target person:
             spending more queries.
 
 USAGE:
-    python3 legiscan_match_people.py YOUR_LEGISCAN_API_KEY
+    LEGISCAN_API_KEY=... python3 legiscan_match_people.py [targets_file.csv]
 """
 
 import csv
@@ -195,14 +195,15 @@ def cached_call(op, key, cache_key, **params):
 
 
 def main():
-    if len(sys.argv) not in (2, 3):
-        print("Usage: python3 legiscan_match_people.py YOUR_LEGISCAN_API_KEY [targets_file.csv]")
+    # The key comes from the LEGISCAN_API_KEY environment variable, so it never shows in process lists.
+    key = os.environ.get("LEGISCAN_API_KEY", "")
+    if not key or len(sys.argv) > 2:
+        print("Set LEGISCAN_API_KEY first. Usage: python3 legiscan_match_people.py [targets_file.csv]")
         print("  targets_file.csv defaults to replication/data/targets/state_bill_targets.csv (the original 247-person")
         print("  scope). Pass replication/data/targets/state_bill_targets_full.csv to cover the full 1019-person")
         print("  population (see dataset-completion-status.md / population-added-109-people.md).")
         sys.exit(1)
-    key = sys.argv[1]
-    targets_path = sys.argv[2] if len(sys.argv) == 3 else "replication/data/targets/state_bill_targets.csv"
+    targets_path = sys.argv[1] if len(sys.argv) == 2 else "replication/data/targets/state_bill_targets.csv"
 
     with open(targets_path, newline="", encoding="utf-8") as f:
         targets = list(csv.DictReader(f))

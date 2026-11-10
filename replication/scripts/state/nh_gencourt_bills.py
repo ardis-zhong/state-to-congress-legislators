@@ -156,7 +156,7 @@ LIVE_YEARS = (2009, 2010)     # the archive kept only ~135 of these years' Senat
 LIVE_DELAY = 11
 LIVE_LOG = os.path.join(CACHE, "sponsors_live.tsv")
 LIVE_OUT = "nh_live_state_legislation_sponsored.csv"
-LEGISCAN_FROM = 2010  # first New Hampshire session in LegiScan (with sponsor roles)
+LEGISCAN_FROM = 2011  # LegiScan's 2010 session lists Bradley and Hassan only as "Sponsor" (not Primary), so 2010 comes from here
 
 
 def live_path(year, kind, num):
@@ -242,7 +242,7 @@ def crawl_texts(live=False):
         y = re.search(r"\b(\d{4}) SESSION", text[:600])
         session = y.group(1) if y and int(y.group(1)) == int(year) - 1 and int(num) < 1000 else year
         if int(session) >= LEGISCAN_FROM:
-            continue  # LegiScan has New Hampshire from 2010, with sponsor roles
+            continue  # LegiScan covers 2011 on (role-less 2011-2012 sessions: legiscan_roleless_check.py)
         t = re.search(r"\bAN ACT\b(.+?)(?:\n\s*(?:SPONSORS?:|INTRODUCED BY:|REFERRED TO:|COMMITTEE:|AMENDED ANALYSIS|ANALYSIS|STATEMENT)|$)", text[:3000], re.S) or \
             re.search(r"\b(?:A RESOLUTION|JOINT RESOLUTION|RELATING TO:)\s*(.+?)(?:\n\s*(?:SPONSORS?:|INTRODUCED BY:|REFERRED TO:|COMMITTEE:|AMENDED ANALYSIS|ANALYSIS|STATEMENT)|$)", text[:3000], re.S)
         title = " ".join(t.group(0 if t.group(0).startswith("AN ACT") else 1).split()) if t else ""

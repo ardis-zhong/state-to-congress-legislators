@@ -74,9 +74,9 @@ python3 replication/scripts/federal/fetch_federal_bill_text.py "$CONGRESS_API_KE
 **3. State (LegiScan)**
 
 ```
-python3 replication/scripts/state/legiscan_coverage_check.py "$LEGISCAN_API_KEY"
-python3 replication/scripts/state/legiscan_match_people.py "$LEGISCAN_API_KEY" replication/data/targets/state_bill_targets_full.csv
-python3 replication/scripts/state/legiscan_fetch_state_bills.py "$LEGISCAN_API_KEY" replication/data/targets/state_bill_targets_full.csv
+python3 replication/scripts/state/legiscan_coverage_check.py   # every LegiScan script reads LEGISCAN_API_KEY from the environment
+python3 replication/scripts/state/legiscan_match_people.py replication/data/targets/state_bill_targets_full.csv
+python3 replication/scripts/state/legiscan_fetch_state_bills.py replication/data/targets/state_bill_targets_full.csv
 python3 replication/scripts/state/legiscan_fetch_bill_text.py   # reads LEGISCAN_API_KEY from the environment; sponsors only by default; --all-sponsor-types adds co-sponsors
 ```
 

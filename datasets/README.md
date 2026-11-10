@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,297 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 86,738 rows, 481 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Connecticut and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 87,393 rows, 485 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -96,7 +96,10 @@ otherwise from the sponsor line printed on the bill's introduced text in LegiSca
 (AL, AZ, CO, GA, IA, IN, LA, MA, MO, NH, NV, OK and UT: the person must be named
 first; for HI 2009-2012, the first introducer on the Legislature's archived bill
 status pages); for the rest (e.g. most HI 2012 bills, KS), only bills whose sole listed sponsor is the
-person are included. Co-sponsors are excluded. `bioguide_id`, `name`,
+person are included. Where LegiScan credits a measure to a same-surname legislator of the
+other chamber, it is credited to our person (Ohio 2017-2018 House measures listed under Senator
+Vernon Sykes are Emilia Strong Sykes's; Nevada 2011 Assembly measures listed under Senator
+Joseph Hardy are Cresent Hardy's). Co-sponsors are excluded. `bioguide_id`, `name`,
 `bill_id` (state-LegiScan session ID-bill number, e.g. `OH-1145-HB144`; for
 bills from the legislatures' own archives (before LegiScan's coverage),
 state-session-bill number, e.g. `CA-1999-AB2027` (`X1` etc. marks
@@ -305,6 +308,11 @@ person, with the introduced document, whose "Sponsored by" line must name
 the person first. For 1997–2005, the Internet Archive's copies of the
 Legislature's former website give each session's Measure History (every
 measure with its chief sponsors) and the introduced texts.
+For Arizona, 2001–2009 bills and resolutions come from the Internet Archive's
+copies of the Legislature's introduced texts (azleg.gov asks crawlers to wait 120
+seconds and has no index of past sponsors): every archived introduced file of
+1999–2009 was read, and the first name in its "Introduced by" line must be the
+person, matched by Legislature and chamber in a reviewed list.
 For Mississippi, 1999–2009 bills and resolutions come from the Legislature's
 Bill Status System (billstatus.ls.state.ms.us): each member's "Measures by
 Author" page, with the introduced version, whose "By:" line must name the
@@ -343,8 +351,8 @@ person, and the text's "Introduced by" line for the bill's own chamber must name
 them first. The site shows each bill's latest printing, so amended bills carry
 their amended text (`text_version` = `Amended`). Bills the Rules Committee
 introduced at a member's request are not counted.
-For New Hampshire, 1989–2009 bills and resolutions come from the Internet
-Archive's copies (and, for 2009 Senate files the archive lacks, the General
+For New Hampshire, 1989–2010 bills and resolutions come from the Internet
+Archive's copies (and, for 2009–2010 Senate files the archive lacks, the General
 Court's own site, gc.nh.gov) of the General Court's bill text files (one file per measure,
 read for every archived measure of the years and chambers our people served):
 the first sponsor printed in the file must be the person, matched by year and
@@ -362,10 +370,10 @@ The archive kept only a small share of the pages, so these rows are few.
 For Tennessee, 1997–2002 and 2007–2008 bills and joint resolutions come from the
 Internet Archive's copies of the General Assembly's former bill files; each file
 is the bill as filed and names its prime sponsor ("SENATE BILL 360 By Cohen").
-481 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
+485 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
 Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995,
 Maryland and the Missouri Senate from 1996, New Mexico, Ohio,
-Illinois, Louisiana, Nevada, North Dakota, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Connecticut and Massachusetts from 2001, Wyoming from 2003, other states from 2008); for
+Illinois, Louisiana, Nevada, North Dakota, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
 York bills); `year`/`congress` then fall back to the bill's status date or
