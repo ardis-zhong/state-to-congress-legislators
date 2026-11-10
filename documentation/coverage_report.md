@@ -13,9 +13,9 @@ Generated 2026-11-10 by `replication/coverage_report.py` from the built tables (
 | 1980s | 1,766 | 116 | 6.6% | 31 | 1.8% |
 | 1990s | 1,818 | 788 | 43.3% | 734 | 40.4% |
 | 2000s | 1,648 | 1,381 | 83.8% | 1,447 | 87.8% |
-| 2010s | 1,139 | 1,032 | 90.6% | 1,028 | 90.3% |
+| 2010s | 1,139 | 1,032 | 90.6% | 1,030 | 90.4% |
 | 2020s | 318 | 285 | 89.6% | 264 | 83.0% |
-| All | 8,479 | 3,691 | 43.5% | 3,504 | 41.3% |
+| All | 8,479 | 3,691 | 43.5% | 3,506 | 41.3% |
 
 SLES (CEL's State Legislative Effectiveness Scores) begin by state between the late 1980s and the 2000s, so earlier state service has no score anywhere.
 
@@ -264,7 +264,7 @@ By Congress where coverage is short of the served count:
 | 118 | 256 | 255 | 255 | 255 |
 | 119 | 257 | 0 | 256 | 256 |
 
-Known causes: CEL's LES starts with the 93rd Congress (1973) and has not scored the 119th yet; Congress.gov's sponsored-legislation API starts with the 93rd; Congress.gov has almost no digital bill text before the 101st (1989). A person-Congress with no sponsored item at all is usually genuine (short service, or a member who sponsored nothing as lead sponsor).
+Known causes: CEL's LES starts with the 93rd Congress (1973) and has not scored the 119th yet; within the 93rd-118th, every person-Congress without an LES is a few weeks or months of service (sworn in after a November special election, or left early in the Congress), which CEL does not score, except Sheila Frahm and Charles H. Wilson (D-CA), whom CEL's files lack (checked 2026-11-10); Congress.gov's sponsored-legislation API starts with the 93rd; Congress.gov has almost no digital bill text before the 101st (1989). A person-Congress with no sponsored item at all is usually genuine (short service, or a member who sponsored nothing as lead sponsor).
 
 ## Demographics (Table 2)
 

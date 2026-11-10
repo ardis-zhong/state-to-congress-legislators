@@ -261,6 +261,9 @@ def main():
              if r.les < r.n or r["items"] < r.n or r.text < r.n]
     md.append(table(["Congress", "Served", "LES", "Items", "Text"], grows))
     md.append("\nKnown causes: CEL's LES starts with the 93rd Congress (1973) and has not scored the 119th yet; "
+              "within the 93rd-118th, every person-Congress without an LES is a few weeks or months of service "
+              "(sworn in after a November special election, or left early in the Congress), which CEL does not score, "
+              "except Sheila Frahm and Charles H. Wilson (D-CA), whom CEL's files lack (checked 2026-11-10); "
               "Congress.gov's sponsored-legislation API starts with the 93rd; Congress.gov has almost no digital "
               "bill text before the 101st (1989). A person-Congress with no sponsored item at all is usually "
               "genuine (short service, or a member who sponsored nothing as lead sponsor).\n")
