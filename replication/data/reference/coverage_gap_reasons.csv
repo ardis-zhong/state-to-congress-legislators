@@ -12,3 +12,9 @@ S001191,Arizona,2012,Resigned from the Arizona Senate in January 2012
 T000476,North Carolina,2011-2012,"House Speaker; the Legislature's text search finds no 2011-2012 bill naming him first (control: the same search finds exactly LegiScan's five 2013 bills)"
 K000390,Nevada,2011-2012,"Nevada Senate 2011: the printed sponsor line names someone else first on all 28 of his measures"
 E000296,Pennsylvania,2015-2016,LegiScan (which records roles for this session) lists him only as a co-sponsor
+K000307,Pennsylvania,1973-1974,"None of the 130 items palegis.us lists under him for 1973-1974 names him first in its introduced text (all read 2026-11-10)"
+L000187,Pennsylvania,1973-1974,"1973 texts print plain 'LEDERER' while William J. and Raymond F. Lederer both sat in the House; palegis.us files all 42 such first-named bills under William J. Lederer, so none can be credited to Raymond"
+C001110,California,2005-2006,"Not in the legislature: Orange County Board of Supervisors 2005-2006 (Table 1 corrected 2026-11-10)"
+M001154,North Carolina,1995-1996,"Not in the legislature 1995-1996 (Table 1 corrected 2026-11-10)"
+M001123,Pennsylvania,1981-1982,"Not in the legislature 1980-1982 (U.S. House 1980-1981; Table 1 corrected 2026-11-10)"
+F000471,Wisconsin,2001-2002,"His 2001-2002 own-house proposals (SB32, SB404, SJR29, SJR55) all print another senator first"
