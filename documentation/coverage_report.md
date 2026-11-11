@@ -12,10 +12,10 @@ Generated 2026-11-10 by `replication/coverage_report.py` from the built tables (
 | 1970s | 1,655 | 85 | 5.1% | 0 | 0.0% |
 | 1980s | 1,765 | 116 | 6.6% | 31 | 1.8% |
 | 1990s | 1,817 | 788 | 43.4% | 734 | 40.4% |
-| 2000s | 1,648 | 1,381 | 83.8% | 1,447 | 87.8% |
+| 2000s | 1,648 | 1,383 | 83.9% | 1,447 | 87.8% |
 | 2010s | 1,139 | 1,031 | 90.5% | 1,030 | 90.4% |
 | 2020s | 318 | 285 | 89.6% | 264 | 83.0% |
-| All | 8,477 | 3,690 | 43.5% | 3,506 | 41.4% |
+| All | 8,477 | 3,692 | 43.6% | 3,506 | 41.4% |
 
 SLES (CEL's State Legislative Effectiveness Scores) begin by state between the late 1980s and the 2000s, so earlier state service has no score anywhere.
 
@@ -33,7 +33,7 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Ohio | 41 | 359 | 199 | 159 | 37 | 3 | before 1997 not online (SOLAR starts 1997) |
 | Georgia | 27 | 268 | 179 | 125 | 51 | 3 | before 1995 not online; 1995-2008 only what the Internet Archive kept |
 | Missouri | 21 | 207 | 160 | 90 | 66 | 4 | House not crawlable (robots.txt; webmaster contact listed); Senate from 1996 |
-| Colorado | 25 | 177 | 157 | 81 | 71 | 5 | pre-2014 site behind a Cloudflare challenge; texts disallowed by robots.txt |
+| Colorado | 25 | 177 | 155 | 81 | 69 | 5 | pre-2014 site behind a Cloudflare challenge; texts disallowed by robots.txt |
 | Michigan | 37 | 314 | 149 | 132 | 8 | 9 | before 1989 not online |
 | New Jersey | 27 | 296 | 147 | 85 | 62 | 0 | before 2000 not online |
 | Virginia | 30 | 299 | 134 | 104 | 28 | 2 | before 1994 not online (LIS starts 1994) |
