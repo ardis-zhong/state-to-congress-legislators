@@ -4,18 +4,18 @@ Generated 2026-11-10 by `replication/coverage_report.py` from the built tables (
 
 ## State service (Tables 3 and 4)
 
-947 people served in a state legislature in 1969 or later: 8,479 person-years.
+947 people served in a state legislature in 1969 or later: 8,477 person-years.
 
 | Decade | Person-years | With bill text (T4) | % | With SLES score (T3) | % |
 |---|---|---|---|---|---|
 | 1969 | 135 | 4 | 3.0% | 0 | 0.0% |
 | 1970s | 1,655 | 85 | 5.1% | 0 | 0.0% |
-| 1980s | 1,766 | 116 | 6.6% | 31 | 1.8% |
-| 1990s | 1,818 | 788 | 43.3% | 734 | 40.4% |
+| 1980s | 1,765 | 116 | 6.6% | 31 | 1.8% |
+| 1990s | 1,817 | 788 | 43.4% | 734 | 40.4% |
 | 2000s | 1,648 | 1,381 | 83.8% | 1,447 | 87.8% |
 | 2010s | 1,139 | 1,031 | 90.5% | 1,030 | 90.4% |
 | 2020s | 318 | 285 | 89.6% | 264 | 83.0% |
-| All | 8,479 | 3,690 | 43.5% | 3,506 | 41.3% |
+| All | 8,477 | 3,690 | 43.5% | 3,506 | 41.4% |
 
 SLES (CEL's State Legislative Effectiveness Scores) begin by state between the late 1980s and the 2000s, so earlier state service has no score anywhere.
 
@@ -25,7 +25,7 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 
 | State | People | Person-years | Without text | 1969-88 | 1989-2008 | 2009 on | Why (pre-LegiScan) |
 |---|---|---|---|---|---|---|---|
-| Florida | 58 | 558 | 306 | 159 | 141 | 6 | before 1998 print only (State Library holds printed bills) |
+| Florida | 58 | 557 | 305 | 159 | 140 | 6 | before 1998 print only (State Library holds printed bills) |
 | California | 89 | 753 | 292 | 259 | 26 | 7 | 1969-1988 print only (HathiTrust scans; research dataset request pending); 1989-1992 enacted bills only |
 | New York | 50 | 442 | 288 | 195 | 92 | 1 | before 1999 not online (Assembly site starts 1999-2000) |
 | Texas | 41 | 412 | 252 | 189 | 51 | 12 | before 1993 not online (FTP texts start 1993) |
@@ -44,7 +44,7 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Louisiana | 17 | 180 | 115 | 69 | 42 | 4 | before 1997 not online; 2010 site author list incomplete (Richmond) |
 | Connecticut | 16 | 122 | 114 | 75 | 38 | 1 | by-legislator index blocked by robots.txt; introducer files from 2001 |
 | Indiana | 18 | 158 | 108 | 82 | 23 | 3 | pre-2010 archive blocks automated access (403); IGA API needs a key |
-| North Carolina | 30 | 278 | 105 | 84 | 7 | 14 | before 1989 not online |
+| North Carolina | 30 | 277 | 104 | 83 | 7 | 14 | before 1989 not online |
 | Alabama | 13 | 111 | 103 | 74 | 27 | 2 | no pre-LegiScan archive found |
 | Kansas | 13 | 101 | 97 | 29 | 58 | 10 | site behind Cloudflare; archive starts ~2011 |
 | Maryland | 15 | 167 | 93 | 64 | 25 | 4 | before 1996 not online |
