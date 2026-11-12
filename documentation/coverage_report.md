@@ -11,11 +11,11 @@ Generated 2026-11-11 by `replication/coverage_report.py` from the built tables (
 | 1969 | 135 | 4 | 3.0% | 0 | 0.0% |
 | 1970s | 1,655 | 85 | 5.1% | 0 | 0.0% |
 | 1980s | 1,765 | 116 | 6.6% | 31 | 1.8% |
-| 1990s | 1,817 | 828 | 45.6% | 734 | 40.4% |
+| 1990s | 1,817 | 832 | 45.8% | 734 | 40.4% |
 | 2000s | 1,648 | 1,405 | 85.3% | 1,447 | 87.8% |
 | 2010s | 1,139 | 1,031 | 90.5% | 1,030 | 90.4% |
 | 2020s | 318 | 285 | 89.6% | 264 | 83.0% |
-| All | 8,477 | 3,754 | 44.3% | 3,506 | 41.4% |
+| All | 8,477 | 3,758 | 44.3% | 3,506 | 41.4% |
 
 SLES (CEL's State Legislative Effectiveness Scores) begin by state between the late 1980s and the 2000s, so earlier state service has no score anywhere.
 
@@ -34,7 +34,7 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Georgia | 27 | 268 | 179 | 125 | 51 | 3 | before 1995 not online; 1995-2008 only what the Internet Archive kept |
 | Colorado | 25 | 177 | 155 | 81 | 69 | 5 | pre-2014 site behind a Cloudflare challenge; texts disallowed by robots.txt |
 | Michigan | 37 | 314 | 149 | 132 | 8 | 9 | before 1989 not online |
-| New Jersey | 27 | 296 | 147 | 85 | 62 | 0 | before 2000 not online |
+| New Jersey | 27 | 296 | 143 | 85 | 58 | 0 | before 2000 not online |
 | Virginia | 30 | 299 | 134 | 104 | 28 | 2 | before 1994 not online (LIS starts 1994) |
 | Missouri | 21 | 207 | 132 | 90 | 38 | 4 | before 1996 not online (House records from 1996, Senate from 1996); House courtesy resolutions have no text |
 | Washington | 24 | 197 | 127 | 101 | 24 | 2 | before 1991 not online |

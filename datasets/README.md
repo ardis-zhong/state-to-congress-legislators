@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,298 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 86,254 rows, 496 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and Missouri from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003, Colorado from 2007); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 86,257 rows, 496 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and Missouri from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003, Colorado from 2007); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -253,7 +253,8 @@ For New Jersey, 2000–2009 bills and resolutions come from the Legislature's
 website (njleg.state.nj.us): its sponsor search for each session, keeping
 bills on which the person is the first prime sponsor, with the bill as
 introduced; a bill counts when the text's "Sponsored by:" line names the
-person first.
+person first. For 1996–1999 only a small sample of introduced texts survives in
+the Internet Archive (3 rows).
 For Minnesota, 1995–2008 bills come from the Revisor of Statutes' bill status
 system (revisor.mn.gov): the bills of each member's own house on which they
 are chief author, with the introduction text. Minnesota's texts print no

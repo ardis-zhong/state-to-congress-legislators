@@ -76,7 +76,7 @@ ALLOWED = {
                          "Oregon Legislature (Internet Archive)", "Arizona Legislature (Internet Archive)",
                          "Colorado General Assembly (Internet Archive)", "Florida Legislature (Internet Archive)",
                          "Missouri House of Representatives", "Missouri House of Representatives (Internet Archive)",
-                         "Oklahoma Legislature (Internet Archive)"},
+                         "Oklahoma Legislature (Internet Archive)", "New Jersey Legislature (Internet Archive)"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -270,11 +270,18 @@ def main():
                     detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "Connecticut General Assembly":
                     _, yr, num = r.bill_id.split("-", 2)
-                    url = f"https://www.cga.ct.gov/{yr}/TOB/{num[0]}/{yr}{num[:2]}-{num[2:]}-R00-{num[:2]}.htm"
+                    url = (f"https://www.cga.ct.gov/ps{int(yr) % 100:02d}/tob/{num[0].lower()}/{num[:2].lower()}-{int(num[2:]):04d}.htm"
+                           if int(yr) <= 1998 else
+                           f"https://www.cga.ct.gov/{'ps99' if yr == '1999' else yr}/TOB/{num[0]}/{yr}{num[:2]}-{num[2:]}-R00-{num[:2]}.htm")
                     detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "New York State Assembly":
                     _, yr, num = r.bill_id.split("-", 2)
                     url = f"https://nyassembly.gov/leg/?bn={num}&term={yr}&Summary=Y&Text=Y"
+                    detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "New Jersey Legislature (Internet Archive)":
+                    _, yr, num = r.bill_id.split("-", 2)
+                    sess = {"1996": "9697", "1998": "9899"}[yr]
+                    url = f"https://web.archive.org/web/2001/http://www.njleg.state.nj.us/{sess}/Bills/"
                     detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "Oklahoma Legislature (Internet Archive)":
                     _, yr, num = r.bill_id.split("-", 2)

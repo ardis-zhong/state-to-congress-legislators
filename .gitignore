@@ -115,3 +115,5 @@ datasets/*/table5_federal_bill_text.*
 /WHERE_THINGS_ARE.md
 /mo_house_cache
 /ok_wayback_cache
+/nj_wayback_cache
+/ct_ps_cache
