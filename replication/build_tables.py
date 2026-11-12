@@ -415,6 +415,9 @@ ARCHIVE_SOURCES = [
     ("or_wayback_state_legislation_sponsored.csv", "OR", "Oregon Legislature (Internet Archive)"),  # local; or_wayback_bills.py
     ("az_state_legislation_sponsored.csv", "AZ", "Arizona Legislature (Internet Archive)"),  # local; az_wayback_bills.py
     ("co_state_legislation_sponsored.csv", "CO", "Colorado General Assembly (Internet Archive)"),  # local; co_wayback_bills.py
+    ("fl_wayback_state_legislation_sponsored.csv", "FL", "Florida Legislature (Internet Archive)"),  # local; fl_wayback_bills.py (1995-1997)
+    ("mo_house_state_legislation_sponsored.csv", "MO", "Missouri House of Representatives"),  # local; mo_house_bills.py (1996-1999)
+    ("mo_house_archive_state_legislation_sponsored.csv", "MO", "Missouri House of Representatives"),  # local; mo_house_bills.py --archive-* (2000-2009)
 ]
 
 
@@ -450,7 +453,8 @@ def archive_rows(people, skip):
     extraordinary-session bills, as the General Assembly numbered their files); Oregon archive bills use the
     same form as OLIS ones (e.g. OR-1999R1-HB2013); AZ-<Legislature><session>-HB2059 (e.g. AZ-471R-HB2059, the
     47th Legislature's first regular session, 2005; AZ-452S-SB1001 for its second special session), CO-<year>A-HB1011 (e.g.
-    CO-2007A-HB1011, the 2007 regular session). California
+    CO-2007A-HB1011, the 2007 regular session), FL-<year>-<HB|SB><n> for Florida 1995-1997 (e.g. FL-1995-HB13), MO-<year>-HB<n> for the Missouri House 1996-1999 and
+    MO-<year><R|S1|S2>-HB<n> for 2000-2009 (e.g. MO-2003R-HB71, MO-2003S1-HB1; 2000-2003 texts are Internet Archive copies, text_source "Missouri House of Representatives (Internet Archive)", set per row by the file's TextSource column). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
     (ratified acts, text_version = Enrolled), with the year ratified. Without an introduced date, year = the session's first year."""
@@ -472,7 +476,7 @@ def archive_rows(people, skip):
                 else:
                     year, congress = lo, (lo - 1787) // 2
                 out.append([r["BioguideId"], people[r["BioguideId"]][0], r["BillId"], " ".join(r["Title"].split()),
-                            r["Session"], str(congress), year, state, source,
+                            r["Session"], str(congress), year, state, r.get("TextSource") or source,
                             r.get("TextVersion") or "Introduced", text])
     return out
 

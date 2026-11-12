@@ -1,6 +1,6 @@
 # Coverage report
 
-Generated 2026-11-10 by `replication/coverage_report.py` from the built tables (1,042 people). State service is counted in person-years from 1969 (Table 1's state legislative years, ranges inclusive), federal service in person-Congresses from the 91st (1969). A state person-year counts as covered when the person has a row dated that year, a row from a session that names that year, or a row in the other year of the same two-year session.
+Generated 2026-11-11 by `replication/coverage_report.py` from the built tables (1,042 people). State service is counted in person-years from 1969 (Table 1's state legislative years, ranges inclusive), federal service in person-Congresses from the 91st (1969). A state person-year counts as covered when the person has a row dated that year, a row from a session that names that year, or a row in the other year of the same two-year session.
 
 ## State service (Tables 3 and 4)
 
@@ -11,11 +11,11 @@ Generated 2026-11-10 by `replication/coverage_report.py` from the built tables (
 | 1969 | 135 | 4 | 3.0% | 0 | 0.0% |
 | 1970s | 1,655 | 85 | 5.1% | 0 | 0.0% |
 | 1980s | 1,765 | 116 | 6.6% | 31 | 1.8% |
-| 1990s | 1,817 | 788 | 43.4% | 734 | 40.4% |
-| 2000s | 1,648 | 1,383 | 83.9% | 1,447 | 87.8% |
+| 1990s | 1,817 | 799 | 44.0% | 734 | 40.4% |
+| 2000s | 1,648 | 1,400 | 85.0% | 1,447 | 87.8% |
 | 2010s | 1,139 | 1,031 | 90.5% | 1,030 | 90.4% |
 | 2020s | 318 | 285 | 89.6% | 264 | 83.0% |
-| All | 8,477 | 3,692 | 43.6% | 3,506 | 41.4% |
+| All | 8,477 | 3,720 | 43.9% | 3,506 | 41.4% |
 
 SLES (CEL's State Legislative Effectiveness Scores) begin by state between the late 1980s and the 2000s, so earlier state service has no score anywhere.
 
@@ -32,11 +32,11 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Illinois | 36 | 326 | 234 | 170 | 59 | 5 | before 1997 not online (Legisnet starts 1997; 1993-1996 Public Acts only) |
 | Ohio | 41 | 359 | 199 | 159 | 37 | 3 | before 1997 not online (SOLAR starts 1997) |
 | Georgia | 27 | 268 | 179 | 125 | 51 | 3 | before 1995 not online; 1995-2008 only what the Internet Archive kept |
-| Missouri | 21 | 207 | 160 | 90 | 66 | 4 | House not crawlable (robots.txt; webmaster contact listed); Senate from 1996 |
 | Colorado | 25 | 177 | 155 | 81 | 69 | 5 | pre-2014 site behind a Cloudflare challenge; texts disallowed by robots.txt |
 | Michigan | 37 | 314 | 149 | 132 | 8 | 9 | before 1989 not online |
 | New Jersey | 27 | 296 | 147 | 85 | 62 | 0 | before 2000 not online |
 | Virginia | 30 | 299 | 134 | 104 | 28 | 2 | before 1994 not online (LIS starts 1994) |
+| Missouri | 21 | 207 | 132 | 90 | 38 | 4 | before 1996 not online (House records from 1996, Senate from 1996); House courtesy resolutions have no text |
 | Washington | 24 | 197 | 127 | 101 | 24 | 2 | before 1991 not online |
 | Wisconsin | 19 | 219 | 121 | 78 | 39 | 4 | before 1995 not online |
 | Minnesota | 22 | 190 | 117 | 91 | 22 | 4 | before 1995 not online |
@@ -76,7 +76,7 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Alaska | 3 | 20 | 6 | 5 | 0 | 1 | before 1993 not online |
 | New Mexico | 5 | 21 | 6 | 4 | 1 | 1 | before 1996 not online |
 
-460 people with state service since 1969 have no Table 4 row at all.
+456 people with state service since 1969 have no Table 4 row at all.
 
 ### Appendix: person-years from 2009 on without state bill text (162)
 

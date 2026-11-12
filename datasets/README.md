@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,298 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 85,550 rows, 487 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and the Missouri Senate from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003, Colorado from 2007); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 85,706 rows, 491 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and Missouri from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003, Colorado from 2007); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -119,7 +119,7 @@ Carolina's 1995 session), `WI-1995-AB80` (Wisconsin's 1995–96 session), `NJ-20
 Jersey's 2000–01 session), `MN-79-HF11` (Minnesota's 79th Legislature, 1995–96), or `TX-73R-HB1801`
 (Texas's 73rd Legislature, regular session, 1993), `LA-97RS-HB70`
 (Louisiana's 1997 regular session), or `SC-111-H3651` (South Carolina's 1995–96
-session), `MO-1999-SB282` (Missouri Senate, 1999 session), `HI-1999-HB228`
+session), `MO-1999-SB282` (Missouri Senate, 1999 session), `MO-2003R-HB71` (Missouri House, 2003 regular session), `HI-1999-HB228`
 (Hawaii's 1999 session), `KY-03RS-SB97` (Kentucky's 2003 regular session), `AR-1995R-SB12`
 (Arkansas's 1995 regular session), `IA-GA76-SF123` (Iowa's 76th General Assembly,
 1995–96), `AK-21-HB77` (Alaska's 21st Legislature, 1999–2000), `NM-1997R-HB322`
@@ -144,7 +144,8 @@ Assembly`, `Michigan Legislature`, `Maryland General Assembly`,
 `Washington Legislature`, `North Carolina General Assembly`,
 `Wisconsin Legislature`, `New Jersey Legislature`, `Minnesota Legislature`,
 `Texas Legislature`, `Louisiana Legislature`,
-`South Carolina Legislature`, `Missouri Senate`, `Hawaii State Legislature`,
+`South Carolina Legislature`, `Missouri Senate`, `Missouri House of Representatives`,
+`Missouri House of Representatives (Internet Archive)`, `Hawaii State Legislature`,
 `Kentucky General Assembly`, `Arkansas General Assembly`,
 `Iowa General Assembly`, `Alaska Legislature`, `New Mexico Legislature`,
 `Nevada Legislature`, `Oregon Legislature`, `Mississippi Legislature`,
@@ -274,8 +275,12 @@ has only the bills that became law, in their ratified form.
 For Missouri, 1996–2009 Senate bills come from the Senate's website
 (senate.mo.gov): each session's bill list names every bill's sponsor, with the
 introduced text; where that text prints "INTRODUCED BY SENATOR ...", the
-person must be named first. The House's archive is closed to crawlers, so
-Missouri House service before 2009 has no rows.
+person must be named first. 1996–2009 House bills come from the House's own
+records (read with the webmaster's permission): bill-tracking files for
+1996–1999 and the archive site's per-member "Sponsored Bills" lists for
+2000–2009, with the introduced texts (2000–2003 as Internet Archive copies of the
+former website); the text's "INTRODUCED BY REPRESENTATIVE(S)" line must name the
+person first. Most House simple (courtesy) resolutions have no text online.
 For Hawaii, 1999–2008 bills and resolutions come from the Legislature's
 public data website (data.capitol.hawaii.gov): each year's lists of measures
 introduced name the introducers, and items whose first-named introducer is
@@ -379,9 +384,9 @@ The archive kept only a small share of the pages, so these rows are few.
 For Tennessee, 1997–2002 and 2007–2008 bills and joint resolutions come from the
 Internet Archive's copies of the General Assembly's former bill files; each file
 is the bill as filed and names its prime sponsor ("SENATE BILL 360 By Cohen").
-487 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
+491 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
 Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995,
-Maryland and the Missouri Senate from 1996, New Mexico, Ohio,
+Maryland and Missouri from 1996, New Mexico, Ohio,
 Illinois, Louisiana, Nevada, North Dakota, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003, Colorado from 2007, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New

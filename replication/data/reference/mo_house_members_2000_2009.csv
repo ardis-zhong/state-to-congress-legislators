@@ -1,0 +1,32 @@
+year,code,district,roster_name,bioguide_id,name,check_surname,note
+2000,R,86,Todd Akin,A000358,Todd Akin,AKIN,
+2000,R,124,Vicky Hartzler,H001053,Vicky Hartzler,HARTZLER,
+2000,R,115,Blaine Luetkemeyer,L000569,Blaine Luetkemeyer,LUETKEMEYER,
+2001,R,115,Blaine Luetkemeyer,L000569,Blaine Luetkemeyer,LUETKEMEYER,
+2001,S1,115,Blaine Luetkemeyer,L000569,Blaine Luetkemeyer,LUETKEMEYER,
+2002,R,115,Blaine Luetkemeyer,L000569,Blaine Luetkemeyer,LUETKEMEYER,
+2003,R,115,Blaine Luetkemeyer,L000569,Blaine Luetkemeyer,LUETKEMEYER,
+2003,S1,115,Blaine Luetkemeyer,L000569,Blaine Luetkemeyer,LUETKEMEYER,
+2003,S2,115,Blaine Luetkemeyer,L000569,Blaine Luetkemeyer,LUETKEMEYER,
+2004,R,115,Blaine Luetkemeyer,L000569,Blaine Luetkemeyer,LUETKEMEYER,
+2001,R,59,Russ Carnahan,C001060,Russ Carnahan,CARNAHAN,
+2001,S1,59,Russ Carnahan,C001060,Russ Carnahan,CARNAHAN,
+2002,R,59,Russ Carnahan,C001060,Russ Carnahan,CARNAHAN,
+2003,R,59,Russ Carnahan,C001060,Russ Carnahan,CARNAHAN,
+2003,S1,59,Russ Carnahan,C001060,Russ Carnahan,CARNAHAN,
+2003,S2,59,Russ Carnahan,C001060,Russ Carnahan,CARNAHAN,
+2004,R,59,Russ Carnahan,C001060,Russ Carnahan,CARNAHAN,
+2006,R,150,Jason Smith,S001195,Jason Smith,SMITH,
+2007,R,150,Jason Smith,S001195,Jason Smith,SMITH,
+2007,S1,150,Jason Smith,S001195,Jason Smith,SMITH,
+2008,R,150,Jason Smith,S001195,Jason Smith,SMITH,
+2009,R,150,Jason Smith,S001195,Jason Smith,SMITH,
+2007,R,13,Bob Onder,O000177,Bob Onder,ONDER,
+2007,S1,13,Bob Onder,O000177,Bob Onder,ONDER,
+2008,R,13,Bob Onder,O000177,Bob Onder,ONDER,
+2009,R,136,Eric Burlison,B001316,Eric Burlison,BURLISON,
+2000-2002,R,123,Edwin Hartzler,,,,REJECTED: not Vicky Hartzler (district 124)
+2000-2002,R,11,Philip Smith,,,,REJECTED: not Jason Smith
+2003-2009,R,14,Joe Smith,,,,REJECTED: not Jason Smith
+2003-2006,R,118,Todd Smith,,,,REJECTED: not Jason Smith
+2005,R,150,Franklin Barnitz,,,,district 150 before Jason Smith's special election (late 2005); Smith not on the 2005 roster

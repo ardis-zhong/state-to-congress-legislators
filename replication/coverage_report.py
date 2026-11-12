@@ -56,7 +56,7 @@ STATE_NOTES = {
     "North Carolina": "before 1989 not online",
     "Louisiana": "before 1997 not online; 2010 site author list incomplete (Richmond)",
     "Tennessee": "only what the Internet Archive kept (1997-2008); before 1997 not online; capitol.tn.gov blocks crawlers",
-    "Missouri": "House not crawlable (robots.txt; webmaster contact listed); Senate from 1996",
+    "Missouri": "before 1996 not online (House records from 1996, Senate from 1996); House courtesy resolutions have no text",
     "Indiana": "pre-2010 archive blocks automated access (403); IGA API needs a key",
     "Arizona": "before 1999 not online; 1999-2009 only what the Internet Archive kept",
     "Colorado": "pre-2014 site behind a Cloudflare challenge; texts disallowed by robots.txt",

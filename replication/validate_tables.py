@@ -74,7 +74,8 @@ ALLOWED = {
                          "Massachusetts General Court (Internet Archive)",
                          "Tennessee General Assembly (Internet Archive)",
                          "Oregon Legislature (Internet Archive)", "Arizona Legislature (Internet Archive)",
-                         "Colorado General Assembly (Internet Archive)"},
+                         "Colorado General Assembly (Internet Archive)", "Florida Legislature (Internet Archive)",
+                         "Missouri House of Representatives", "Missouri House of Representatives (Internet Archive)"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -367,6 +368,12 @@ def main():
                     yr = int(r.bill_id.split("-")[1])
                     url = (f"https://www.senate.mo.gov/{yr % 100:02d}info/bil-list.htm" if yr <= 2004 else
                            f"https://www.senate.mo.gov/{yr % 100:02d}info/BTS_Web/BillList.aspx?SessionType=R")
+                    detail = f"{r.state_session}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source.startswith("Missouri House of Representatives"):
+                    _, code, num = r.bill_id.split("-", 2)
+                    yr, sess = int(code[:4]), code[4:] or "R"
+                    url = (f"https://documents.house.mo.gov/billtracking/bills{yr % 100:02d}/bills{yr % 100:02d}/{num}.htm"
+                           if yr < 2000 else f"https://archive.house.mo.gov/BillContent.aspx?bill={num}&year={yr}&code={sess}")
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "South Carolina Legislature":
                     _, sess, bill = r.bill_id.split("-", 2)

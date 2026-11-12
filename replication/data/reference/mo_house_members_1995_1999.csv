@@ -1,0 +1,19 @@
+year,district,roster_name,bioguide_id,name,check_surname,note
+1996,86,W. Todd Akin,A000358,Todd Akin,AKIN,House 1989-2001
+1997,86,W. Todd Akin,A000358,Todd Akin,AKIN,House 1989-2001
+1998,86,W. Todd Akin,A000358,Todd Akin,AKIN,House 1989-2001
+1999,86,W. Todd Akin,A000358,Todd Akin,AKIN,House 1989-2001
+1996,124,Vicky Hartzler,H001053,Vicky Hartzler,HARTZLER,House 1995-2001; Ed Hartzler (district 123) is another member
+1997,124,Vicky Hartzler,H001053,Vicky Hartzler,HARTZLER,House 1995-2001
+1998,124,Vicky Hartzler,H001053,Vicky Hartzler,HARTZLER,House 1995-2001
+1999,124,Vicky Hartzler,H001053,Vicky Hartzler,HARTZLER,House 1995-2001
+1999,115,Blaine Luetkemeyer,L000569,Blaine Luetkemeyer,LUETKEMEYER,House 1999-2005
+1996,123,Ed Hartzler,,,,REJECTED: Ed Hartzler is not Vicky Hartzler
+1997,123,Ed Hartzler,,,,REJECTED
+1998,123,Ed Hartzler,,,,REJECTED
+1999,123,Ed Hartzler,,,,REJECTED
+1996,11,Philip Smith,,,,REJECTED: not Jason Smith (House from 2005)
+1997,11,Philip Smith,,,,REJECTED
+1998,11,Philip Smith,,,,REJECTED
+1999,11,Philip Smith,,,,REJECTED
+1996,112,Joe Clay Crum,,,,REJECTED: not Clay
