@@ -38,7 +38,7 @@ FIRST_YEAR = 1969
 # datasets/README.md). Years are the earliest year each state's own digital record reaches.
 STATE_NOTES = {
     "California": "1969-1988 print only (HathiTrust scans; research dataset request pending); 1989-1992 enacted bills only",
-    "Florida": "before 1998 print only (State Library holds printed bills)",
+    "Florida": "before 1995 print only (State Library holds printed bills); 1995-1997 only what the Internet Archive kept",
     "New York": "before 1999 not online (Assembly site starts 1999-2000)",
     "Texas": "before 1993 not online (FTP texts start 1993)",
     "Illinois": "before 1997 not online (Legisnet starts 1997; 1993-1996 Public Acts only)",
@@ -61,7 +61,7 @@ STATE_NOTES = {
     "Arizona": "before 1999 not online; 1999-2009 only what the Internet Archive kept",
     "Colorado": "pre-2014 site behind a Cloudflare challenge; texts disallowed by robots.txt",
     "Kansas": "site behind Cloudflare; archive starts ~2011",
-    "Oklahoma": "robots.txt disallows all crawling",
+    "Oklahoma": "robots.txt disallows all crawling; House 1999-2004 only what the Internet Archive kept (most 1999 texts missing)",
     "Alabama": "no pre-LegiScan archive found",
     "Montana": "site behind bot defense (F5)",
     "Vermont": "old site robots.txt disallows all",

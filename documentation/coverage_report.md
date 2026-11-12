@@ -11,11 +11,11 @@ Generated 2026-11-11 by `replication/coverage_report.py` from the built tables (
 | 1969 | 135 | 4 | 3.0% | 0 | 0.0% |
 | 1970s | 1,655 | 85 | 5.1% | 0 | 0.0% |
 | 1980s | 1,765 | 116 | 6.6% | 31 | 1.8% |
-| 1990s | 1,817 | 799 | 44.0% | 734 | 40.4% |
-| 2000s | 1,648 | 1,400 | 85.0% | 1,447 | 87.8% |
+| 1990s | 1,817 | 828 | 45.6% | 734 | 40.4% |
+| 2000s | 1,648 | 1,405 | 85.3% | 1,447 | 87.8% |
 | 2010s | 1,139 | 1,031 | 90.5% | 1,030 | 90.4% |
 | 2020s | 318 | 285 | 89.6% | 264 | 83.0% |
-| All | 8,477 | 3,720 | 43.9% | 3,506 | 41.4% |
+| All | 8,477 | 3,754 | 44.3% | 3,506 | 41.4% |
 
 SLES (CEL's State Legislative Effectiveness Scores) begin by state between the late 1980s and the 2000s, so earlier state service has no score anywhere.
 
@@ -25,9 +25,9 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 
 | State | People | Person-years | Without text | 1969-88 | 1989-2008 | 2009 on | Why (pre-LegiScan) |
 |---|---|---|---|---|---|---|---|
-| Florida | 58 | 557 | 305 | 159 | 140 | 6 | before 1998 print only (State Library holds printed bills) |
 | California | 89 | 753 | 292 | 259 | 26 | 7 | 1969-1988 print only (HathiTrust scans; research dataset request pending); 1989-1992 enacted bills only |
 | New York | 50 | 442 | 288 | 195 | 92 | 1 | before 1999 not online (Assembly site starts 1999-2000) |
+| Florida | 58 | 557 | 277 | 159 | 112 | 6 | before 1995 print only (State Library holds printed bills); 1995-1997 only what the Internet Archive kept |
 | Texas | 41 | 412 | 252 | 189 | 51 | 12 | before 1993 not online (FTP texts start 1993) |
 | Illinois | 36 | 326 | 234 | 170 | 59 | 5 | before 1997 not online (Legisnet starts 1997; 1993-1996 Public Acts only) |
 | Ohio | 41 | 359 | 199 | 159 | 37 | 3 | before 1997 not online (SOLAR starts 1997) |
@@ -52,10 +52,10 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Maine | 9 | 81 | 77 | 45 | 31 | 1 | robots.txt blocks AI crawlers (respected) |
 | Oregon | 18 | 134 | 68 | 38 | 24 | 6 | before 1997 not online; special sessions not read |
 | Tennessee | 11 | 113 | 67 | 37 | 30 | 0 | only what the Internet Archive kept (1997-2008); before 1997 not online; capitol.tn.gov blocks crawlers |
-| Oklahoma | 14 | 84 | 65 | 31 | 32 | 2 | robots.txt disallows all crawling |
 | Nevada | 14 | 117 | 60 | 32 | 24 | 4 | before 1997 not online |
 | South Carolina | 19 | 145 | 60 | 50 | 7 | 3 | before 1985 not online; 1985-1990 enacted bills only |
 | Wyoming | 7 | 63 | 60 | 34 | 26 | 0 | before 2003 not online |
+| Oklahoma | 14 | 84 | 59 | 31 | 26 | 2 | robots.txt disallows all crawling; House 1999-2004 only what the Internet Archive kept (most 1999 texts missing) |
 | Hawaii | 11 | 116 | 55 | 34 | 21 | 0 | before 1999 House/Senate Journals only; 2012 status pages mostly not archived |
 | Kentucky | 13 | 83 | 51 | 33 | 16 | 2 | before 1998 not online |
 | Nebraska | 8 | 79 | 45 | 31 | 11 | 3 | before 1999 not read |
@@ -76,7 +76,7 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Alaska | 3 | 20 | 6 | 5 | 0 | 1 | before 1993 not online |
 | New Mexico | 5 | 21 | 6 | 4 | 1 | 1 | before 1996 not online |
 
-456 people with state service since 1969 have no Table 4 row at all.
+451 people with state service since 1969 have no Table 4 row at all.
 
 ### Appendix: person-years from 2009 on without state bill text (162)
 

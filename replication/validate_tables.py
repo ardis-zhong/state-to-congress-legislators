@@ -75,7 +75,8 @@ ALLOWED = {
                          "Tennessee General Assembly (Internet Archive)",
                          "Oregon Legislature (Internet Archive)", "Arizona Legislature (Internet Archive)",
                          "Colorado General Assembly (Internet Archive)", "Florida Legislature (Internet Archive)",
-                         "Missouri House of Representatives", "Missouri House of Representatives (Internet Archive)"},
+                         "Missouri House of Representatives", "Missouri House of Representatives (Internet Archive)",
+                         "Oklahoma Legislature (Internet Archive)"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
@@ -274,6 +275,11 @@ def main():
                 elif n == 4 and r.text_source == "New York State Assembly":
                     _, yr, num = r.bill_id.split("-", 2)
                     url = f"https://nyassembly.gov/leg/?bn={num}&term={yr}&Summary=Y&Text=Y"
+                    detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Oklahoma Legislature (Internet Archive)":
+                    _, yr, num = r.bill_id.split("-", 2)
+                    bien = {1999: "1999-00", 2000: "1999-00", 2001: "2001-02", 2002: "2001-02"}.get(int(yr), "2003-04")
+                    url = f"https://web.archive.org/web/2006/http://www.lsb.state.ok.us/{bien}HB/{num}_int.rtf"
                     detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "Arizona Legislature (Internet Archive)":
                     _, code, num = r.bill_id.split("-", 2)

@@ -418,6 +418,7 @@ ARCHIVE_SOURCES = [
     ("fl_wayback_state_legislation_sponsored.csv", "FL", "Florida Legislature (Internet Archive)"),  # local; fl_wayback_bills.py (1995-1997)
     ("mo_house_state_legislation_sponsored.csv", "MO", "Missouri House of Representatives"),  # local; mo_house_bills.py (1996-1999)
     ("mo_house_archive_state_legislation_sponsored.csv", "MO", "Missouri House of Representatives"),  # local; mo_house_bills.py --archive-* (2000-2009)
+    ("ok_wayback_state_legislation_sponsored.csv", "OK", "Oklahoma Legislature (Internet Archive)"),  # local; ok_wayback_bills.py (1999-2004 House)
 ]
 
 
@@ -454,7 +455,7 @@ def archive_rows(people, skip):
     same form as OLIS ones (e.g. OR-1999R1-HB2013); AZ-<Legislature><session>-HB2059 (e.g. AZ-471R-HB2059, the
     47th Legislature's first regular session, 2005; AZ-452S-SB1001 for its second special session), CO-<year>A-HB1011 (e.g.
     CO-2007A-HB1011, the 2007 regular session), FL-<year>-<HB|SB><n> for Florida 1995-1997 (e.g. FL-1995-HB13), MO-<year>-HB<n> for the Missouri House 1996-1999 and
-    MO-<year><R|S1|S2>-HB<n> for 2000-2009 (e.g. MO-2003R-HB71, MO-2003S1-HB1; 2000-2003 texts are Internet Archive copies, text_source "Missouri House of Representatives (Internet Archive)", set per row by the file's TextSource column). California
+    MO-<year><R|S1|S2>-HB<n> for 2000-2009 (e.g. MO-2003R-HB71, MO-2003S1-HB1; 2000-2003 texts are Internet Archive copies, text_source "Missouri House of Representatives (Internet Archive)", set per row by the file's TextSource column). OK-<year>-HB<n> for the Oklahoma House 1999-2004 (e.g. OK-2001-HB1004). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
     (ratified acts, text_version = Enrolled), with the year ratified. Without an introduced date, year = the session's first year."""

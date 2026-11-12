@@ -1,0 +1,52 @@
+year,chamber,filer,bioguide_id,name,note
+1995,H,Boyd,B000716,Allen Boyd,House 1989-1996
+1996,H,Boyd,B000716,Allen Boyd,House 1989-1996
+1995,H,Davis,D000114,James Davis,House 1988-1996 (Majority Leader); only House filer printed as plain 'Davis' in 1995-96
+1996,H,Davis,D000114,James Davis,House 1988-1996
+1995,H,Frankel,F000462,Lois Frankel,House 1994-2002
+1996,H,Frankel,F000462,Lois Frankel,House 1994-2002
+1997,H,Frankel,F000462,Lois Frankel,House 1994-2002
+1995,H,Klein,K000366,Ron Klein,House 1992-1996
+1996,H,Klein,K000366,Ron Klein,House 1992-1996
+1997,S,Klein,K000366,Ron Klein,Senate from Nov 1996
+1995,H,Lawson,L000586,Al Lawson,House 1982-2000
+1996,H,Lawson,L000586,Al Lawson,House 1982-2000
+1997,H,Lawson,L000586,Al Lawson,House 1982-2000
+1995,H,Meek,M001148,Kendrick Meek,House from Nov 1994 (Carrie Meek left the Legislature in 1992)
+1996,H,Meek,M001148,Kendrick Meek,House 1995-1998
+1997,H,Meek,M001148,Kendrick Meek,House 1995-1998
+1995,H,Posey,P000599,Bill Posey,House 1992-2000
+1996,H,Posey,P000599,Bill Posey,House 1992-2000
+1997,H,Posey,P000599,Bill Posey,House 1992-2000
+1995,H,Wasserman Schultz,W000797,Debbie Wasserman Schultz,House 1992-2000
+1996,H,Wasserman Schultz,W000797,Debbie Wasserman Schultz,House 1992-2000
+1997,H,Wasserman Schultz,W000797,Debbie Wasserman Schultz,House 1992-2000
+1995,H,Webster,W000806,Daniel Webster,House 1980-1998 (Speaker 1996-1998)
+1996,H,Webster,W000806,Daniel Webster,House 1980-1998
+1997,H,Webster,W000806,Daniel Webster,House 1980-1998
+1997,H,Feeney,F000447,Tom Feeney,House from Nov 1996
+1997,H,Kosmas,K000370,Suzanne Kosmas,House from Nov 1996
+1997,H,Putnam,P000586,Adam Putnam,House from Nov 1996
+1995,S,Brown-Waite,B001247,Ginny Brown-Waite,Senate 1993-2003
+1996,S,Brown-Waite,B001247,Ginny Brown-Waite,Senate 1993-2003
+1997,S,Brown-Waite,B001247,Ginny Brown-Waite,Senate 1993-2003
+1995,S,Crist,C001111,Charlie Crist,Senate 1993-1999
+1996,S,Crist,C001111,Charlie Crist,Senate 1993-1999
+1997,S,Crist,C001111,Charlie Crist,Senate 1993-1999
+1995,S,Diaz-Balart,D000600,Mario Diaz-Balart,Senate 1993-2000 (Lincoln left the Legislature in 1992)
+1996,S,Diaz-Balart,D000600,Mario Diaz-Balart,Senate 1993-2000
+1997,S,Diaz-Balart,D000600,Mario Diaz-Balart,Senate 1993-2000
+1995,S,Harris,H001035,Katherine Harris,Senate 1994-1998
+1996,S,Harris,H001035,Katherine Harris,Senate 1994-1998
+1997,S,Harris,H001035,Katherine Harris,Senate 1994-1998
+1995,S,Wexler,W000314,Robert Wexler,Senate 1990-1996
+1996,S,Wexler,W000314,Robert Wexler,Senate 1990-1996
+1995,H,Crist,,,REJECTED: House 'Crist' = Victor Crist
+1996,H,Crist,,,REJECTED: House 'Crist' = Victor Crist
+1997,H,Crist,,,REJECTED: House 'Crist' = Victor Crist
+1995,H,Harris,,,REJECTED: House 'Harris' is not Katherine Harris (Senate)
+1996,H,Harris,,,REJECTED: House 'Harris' is not Katherine Harris (Senate)
+1997,H,Harris,,,REJECTED: House 'Harris' is not Katherine Harris (Senate)
+1995,H,Brown,,,REJECTED: House 'Brown' is not Ginny Brown-Waite (Senate)
+1996,H,Brown,,,REJECTED: House 'Brown' is not Ginny Brown-Waite (Senate)
+1997,H,Brown,,,REJECTED: House 'Brown' is not Ginny Brown-Waite (Senate)

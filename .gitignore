@@ -114,3 +114,4 @@ datasets/*/table5_federal_bill_text.*
 # --- Local guide to this laptop's file layout (mentions the external drive) ---
 /WHERE_THINGS_ARE.md
 /mo_house_cache
+/ok_wayback_cache

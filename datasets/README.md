@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,298 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 85,706 rows, 491 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and Missouri from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003, Colorado from 2007); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 86,254 rows, 496 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and Missouri from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003, Colorado from 2007); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -119,7 +119,7 @@ Carolina's 1995 session), `WI-1995-AB80` (Wisconsin's 1995–96 session), `NJ-20
 Jersey's 2000–01 session), `MN-79-HF11` (Minnesota's 79th Legislature, 1995–96), or `TX-73R-HB1801`
 (Texas's 73rd Legislature, regular session, 1993), `LA-97RS-HB70`
 (Louisiana's 1997 regular session), or `SC-111-H3651` (South Carolina's 1995–96
-session), `MO-1999-SB282` (Missouri Senate, 1999 session), `MO-2003R-HB71` (Missouri House, 2003 regular session), `HI-1999-HB228`
+session), `MO-1999-SB282` (Missouri Senate, 1999 session), `MO-2003R-HB71` (Missouri House, 2003 regular session), `OK-2001-HB1004` (Oklahoma House, 2001 session), `HI-1999-HB228`
 (Hawaii's 1999 session), `KY-03RS-SB97` (Kentucky's 2003 regular session), `AR-1995R-SB12`
 (Arkansas's 1995 regular session), `IA-GA76-SF123` (Iowa's 76th General Assembly,
 1995–96), `AK-21-HB77` (Alaska's 21st Legislature, 1999–2000), `NM-1997R-HB322`
@@ -176,7 +176,9 @@ For Florida, 1998–2009 bills come from the Florida Senate's website
 when the person is its sole filer and the first member named in the text's
 "By …" line (70 bills whose text names another member first are excluded;
 House bills from 2003–2009 print no "By" line, so their filer comes from the
-session's bill list).
+session's bill list). For 1995–1997, the Internet Archive's copies of the former
+Online Sunshine website give each bill's filers and the introduced text (same
+sole-filer rule; only 1997 texts print a "By" line).
 For Virginia, 1994–2009 bills come from the General Assembly's legacy
 Legislative Information System (legacylis.virginia.gov): each member's
 "Legislation as Chief Patron" list for every session, and each bill's text as
@@ -318,6 +320,10 @@ person, with the introduced document, whose "Sponsored by" line must name
 the person first. For 1997–2005, the Internet Archive's copies of the
 Legislature's former website give each session's Measure History (every
 measure with its chief sponsors) and the introduced texts.
+For Oklahoma, 1999–2004 House measures come from the Internet Archive's copies of the
+Legislature's former website (the current sites disallow all crawling): principal
+authors from the House Journal (Personal Index 2000–2004, daily first readings 1999),
+and the introduced text's "By:" line must name the person first (John Sullivan, Dan Boren).
 For Colorado, Cory Gardner's 2007–2008 House bills come from the Internet Archive's
 copies of the General Assembly's former website (the archive kept about half of those
 sessions' introduced House bills; nothing usable before 2007): the first House sponsor
@@ -384,10 +390,10 @@ The archive kept only a small share of the pages, so these rows are few.
 For Tennessee, 1997–2002 and 2007–2008 bills and joint resolutions come from the
 Internet Archive's copies of the General Assembly's former bill files; each file
 is the bill as filed and names its prime sponsor ("SENATE BILL 360 By Cohen").
-491 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
+496 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
 Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995,
 Maryland and Missouri from 1996, New Mexico, Ohio,
-Illinois, Louisiana, Nevada, North Dakota, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska and New York from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003, Colorado from 2007, other states from 2008); for
+Illinois, Louisiana, Nevada, North Dakota, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003, Colorado from 2007, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
 York bills); `year`/`congress` then fall back to the bill's status date or
