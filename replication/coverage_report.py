@@ -59,7 +59,7 @@ STATE_NOTES = {
     "Missouri": "before 1996 not online (House records from 1996, Senate from 1996); House courtesy resolutions have no text",
     "Indiana": "pre-2010 archive blocks automated access (403); IGA API needs a key",
     "Arizona": "before 1999 not online; 1999-2009 only what the Internet Archive kept",
-    "Colorado": "pre-2014 site behind a Cloudflare challenge; texts disallowed by robots.txt",
+    "Colorado": "before 1993 not online; 1993-2006 enacted bills only (Session Laws, Internet Archive); old bill site behind Cloudflare, current one disallows texts",
     "Kansas": "site behind Cloudflare; archive starts ~2011",
     "Oklahoma": "robots.txt disallows all crawling; House 1999-2004 only what the Internet Archive kept (most 1999 texts missing)",
     "Alabama": "no pre-LegiScan archive found",

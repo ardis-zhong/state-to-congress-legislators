@@ -283,6 +283,11 @@ def main():
                     sess = {"1996": "9697", "1998": "9899"}[yr]
                     url = f"https://web.archive.org/web/2001/http://www.njleg.state.nj.us/{sess}/Bills/"
                     detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
+                elif n == 4 and r.text_source == "Colorado General Assembly (Internet Archive)" \
+                        and r.text_version == "Chaptered":  # session laws 1993-2006 (co_sessionlaws_bills.py)
+                    _, code, num = r.bill_id.split("-", 2)
+                    url = f"https://web.archive.org/web/2005/http://www.state.co.us/gov_dir/leg_dir/olls/sl{code[:4]}a/"
+                    detail = f"{r.state_session}; {num}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "Oklahoma Legislature (Internet Archive)":
                     _, yr, num = r.bill_id.split("-", 2)
                     bien = {1999: "1999-00", 2000: "1999-00", 2001: "2001-02", 2002: "2001-02"}.get(int(yr), "2003-04")

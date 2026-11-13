@@ -421,6 +421,7 @@ ARCHIVE_SOURCES = [
     ("ok_wayback_state_legislation_sponsored.csv", "OK", "Oklahoma Legislature (Internet Archive)"),  # local; ok_wayback_bills.py (1999-2004 House)
     ("nj_wayback_state_legislation_sponsored.csv", "NJ", "New Jersey Legislature (Internet Archive)"),  # local; nj_wayback_bills.py (1996-1999 sample)
     ("ct_ps_state_legislation_sponsored.csv", "CT", "Connecticut General Assembly"),  # local; ct_ps_bills.py (1993-2000)
+    ("co_sessionlaws_state_legislation_sponsored.csv", "CO", "Colorado General Assembly (Internet Archive)"),  # local; co_sessionlaws_bills.py (1993-2006 enacted)
 ]
 
 
@@ -460,7 +461,8 @@ def archive_rows(people, skip):
     MO-<year><R|S1|S2>-HB<n> for 2000-2009 (e.g. MO-2003R-HB71, MO-2003S1-HB1; 2000-2003 texts are Internet Archive copies, text_source "Missouri House of Representatives (Internet Archive)", set per row by the file's TextSource column). OK-<year>-HB<n> for the Oklahoma House 1999-2004 (e.g. OK-2001-HB1004). New Jersey 1996-1999 archive copies use the 2000-on form (NJ-1998-A1128); Connecticut 1993-2000 bills the 2001-on form (CT-1995-HB05005). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
-    (ratified acts, text_version = Enrolled), with the year ratified. Without an introduced date, year = the session's first year."""
+    (ratified acts, text_version = Enrolled), with the year ratified; Colorado 1993-2006 rows (CO-<year>A-HB<n>,
+    from the Session Laws) are enacted bills only too (text_version = Chaptered). Without an introduced date, year = the session's first year."""
     out = []
     for path, state, source in ARCHIVE_SOURCES:
         if not os.path.exists(path):
