@@ -66,7 +66,7 @@ STATE_NOTES = {
     "Montana": "site behind bot defense (F5)",
     "Vermont": "old site robots.txt disallows all",
     "Maine": "robots.txt blocks AI crawlers (respected)",
-    "Connecticut": "by-legislator index blocked by robots.txt; introducer files from 2001",
+    "Connecticut": "texts before 1993 not online; 1993-2000 read bill by bill from the bill text files (no introducer index), introducer files from 2001",
     "Idaho": "almost all measures introduced by committees (no member named)",
     "Hawaii": "before 1999 House/Senate Journals only; 2012 status pages mostly not archived",
     "Kentucky": "before 1998 not online",

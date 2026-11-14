@@ -17,7 +17,7 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,042 rows |
 | 2 | `table2_demographics` | Built: 1,042 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,298 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 86,360 rows, 504 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and Missouri from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 86,545 rows, 508 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and Missouri from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, New Jersey from 2000, Arizona and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -365,6 +365,10 @@ copies of the General Assembly's former website (www.legis.state.ga.us, which
 no longer exists): the archived bill lists name each measure's first sponsor,
 and the text's "By:" line, where printed, must name the person (surname and
 district) first. Measures the archive did not keep have no row.
+For Connecticut, 1993–2000 bills (and 1993–1994 Senate bills) come from the
+General Assembly's own bill text files, read by number for every bill of each
+session (there is no introducer index for those years): the text's "Introduced
+by" line must name the person (surname and district) first.
 For Connecticut, 2001–2009 bills come from the General Assembly's public bulk
 data (ftp.cga.ct.gov: each measure's introducers in order) and its bill text
 files: the person must be the first introducer, and the text's "Introduced by:"
@@ -396,10 +400,10 @@ The archive kept only a small share of the pages, so these rows are few.
 For Tennessee, 1997–2002 and 2007–2008 bills and joint resolutions come from the
 Internet Archive's copies of the General Assembly's former bill files; each file
 is the bill as filed and names its prime sponsor ("SENATE BILL 360 By Cohen").
-504 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
-Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995,
+508 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
+Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995,
 Maryland and Missouri from 1996, New Mexico, Ohio,
-Illinois, Louisiana, Nevada, North Dakota, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, New Jersey from 2000, Arizona, Connecticut and Massachusetts from 2001, Wyoming from 2003, other states from 2008); for
+Illinois, Louisiana, Nevada, North Dakota, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, New Jersey from 2000, Arizona and Massachusetts from 2001, Wyoming from 2003, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
 York bills); `year`/`congress` then fall back to the bill's status date or
