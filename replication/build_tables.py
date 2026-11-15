@@ -17,6 +17,7 @@ A table whose ingredients or design decisions aren't settled yet is reported as
 PENDING with the reason, rather than written out partially.
 """
 
+import collections
 import csv
 import datetime
 import json
@@ -208,6 +209,8 @@ LEGISCAN_ROLELESS = "legiscan_roleless_first_named.csv"  # local; written by leg
 LEGISCAN_ROLELESS_MANIFEST = "bill_text_manifest_roleless.csv"  # local; same
 LEGISCAN_ROLELESS_NAMES = "replication/data/reference/legiscan_roleless_names.csv"
 LEGISCAN_SPONSOR_CHECK = "replication/data/reference/legiscan_sponsor_check.csv"  # legiscan_sponsor_check.py
+# LegiScan rows credited to the wrong person (reviewed against the bill's own text; final audit 2026-11-14)
+LEGISCAN_MISATTRIBUTED = "replication/data/reference/legiscan_misattributed.csv"
 
 
 def congress_on(date_str):
@@ -246,6 +249,8 @@ def state_bill_rows():
     with open(LEGISCAN_SPONSOR_CHECK, newline="", encoding="utf-8") as f:
         not_first = {(c["StateAbbr"], c["BioguideId"], c["SessionId"], c["BillNumber"])
                      for c in csv.DictReader(f) if c["Verdict"] == "NotFirst"}
+    with open(LEGISCAN_MISATTRIBUTED, newline="", encoding="utf-8") as f:
+        not_first |= {(c["StateAbbr"], c["BioguideId"], c["SessionId"], c["BillNumber"]) for c in csv.DictReader(f)}
     # Role-less sessions: bills with several listed sponsors where the bill's own text names the person first
     # (legiscan_roleless_check.py; who is who reviewed in legiscan_roleless_names.csv).
     if os.path.exists(LEGISCAN_ROLELESS):
@@ -319,8 +324,40 @@ def build_table4():
                     r["SessionTitle"], str(congress), year, r["StateAbbr"], "LegiScan",
                     r["IntroducedDocType"] or "Introduced", text])
     out.extend(archive_rows(people, skip))
+    out = drop_carried_over(out)
     out.sort(key=lambda x: (x[0], x[6], x[2]))
     return out
+
+
+def drop_carried_over(rows):
+    """A bill carried over into the next session of the same legislature (Virginia's continued bills,
+    the second year of Hawaii's, Oklahoma's, New Hampshire's and West Virginia's two-year legislatures)
+    keeps its number and its text, and LegiScan and some archives list it again under the later session.
+    Keep only the earliest copy: same person, state, bill type letter and number, and the same text
+    (letters and digits only). Bills reintroduced under a new number are kept. Final audit 2026-11-14."""
+    import hashlib
+
+    def key(r):
+        num = r[2].split("-", 2)[2] if r[2].count("-") >= 2 else r[2]
+        m = re.match(r"([A-Z]+)0*(\d+)", num)
+        norm = re.sub(r"[^a-z0-9]+", "", r[10].lower())
+        return (r[0], r[7], (m.group(1)[0], int(m.group(2))) if m else num, hashlib.md5(norm.encode()).hexdigest())
+
+    groups = collections.defaultdict(list)
+    for i, r in enumerate(rows):
+        groups[key(r)].append(i)
+    drop = set()
+    for idx in groups.values():
+        if len(idx) < 2:
+            continue
+        idx.sort(key=lambda i: (rows[i][6], rows[i][2]))
+        y0 = int(rows[idx[0]][6]) if str(rows[idx[0]][6]).isdigit() else None
+        for i in idx[1:]:
+            y = int(rows[i][6]) if str(rows[i][6]).isdigit() else None
+            if y0 is not None and y is not None and y - y0 <= 2:  # the next session, not a later legislature
+                drop.add(i)
+    print(f"  carried-over copies dropped: {len(drop)}")
+    return [r for i, r in enumerate(rows) if i not in drop]
 
 
 # State bills from before LegiScan's coverage, from the legislatures' own archives (state-text

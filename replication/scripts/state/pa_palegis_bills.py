@@ -306,8 +306,16 @@ def first_named(names, surname):
     ("CHULZE" for Schulze)."""
     import difflib
     sq = re.sub(r"[^A-Z0-9]", "", names)
-    if re.match(rf"[A-Z0-9]{{0,3}}{surname}", sq) or re.match(rf"M[A-Z0-9]{{3,6}}{surname}", sq):
-        return True
+    m = re.match(rf"([A-Z0-9]{{0,3}}){surname}", sq) or re.match(rf"(M[A-Z0-9]{{3,6}}){surname}", sq)
+    if m:
+        # The letters before the surname must be stray OCR letters or a garbled "MESSRS", not another
+        # member named first: no list separator may stand between them and the surname
+        # ("MURPHY,SMITH", "MOORE,GEKAS" and "MAHADY,MURPHY" name someone else first). Audit fix 2026-11-14.
+        pre = len(m.group(1))
+        if pre <= 1:
+            return True
+        pos = [i for i, c in enumerate(names) if re.match(r"[A-Z0-9]", c)]
+        return not re.search(r",|AND", names[:pos[pre]])
     first = re.split(r",|AND", names)[0]
     first = re.sub(r"[^A-Z]", "", first)[:len(surname) + 1]
     return len(surname) >= 5 and difflib.SequenceMatcher(None, first, surname).ratio() >= 0.8

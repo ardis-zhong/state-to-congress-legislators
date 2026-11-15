@@ -1,21 +1,21 @@
 # Coverage report
 
-Generated 2026-11-13 by `replication/coverage_report.py` from the built tables (1,042 people). State service is counted in person-years from 1969 (Table 1's state legislative years, ranges inclusive), federal service in person-Congresses from the 91st (1969). A state person-year counts as covered when the person has a row dated that year, a row from a session that names that year, or a row in the other year of the same two-year session.
+Generated 2026-11-14 by `replication/coverage_report.py` from the built tables (1,042 people). State service is counted in person-years from 1969 (Table 1's state legislative years, ranges inclusive), federal service in person-Congresses from the 91st (1969). A state person-year counts as covered when the person has a row dated that year, a row from a session that names that year, or a row in the other year of the same two-year session.
 
 ## State service (Tables 3 and 4)
 
-947 people served in a state legislature in 1969 or later: 8,477 person-years.
+947 people served in a state legislature in 1969 or later: 8,476 person-years.
 
 | Decade | Person-years | With bill text (T4) | % | With SLES score (T3) | % |
 |---|---|---|---|---|---|
 | 1969 | 135 | 4 | 3.0% | 0 | 0.0% |
-| 1970s | 1,655 | 85 | 5.1% | 0 | 0.0% |
-| 1980s | 1,765 | 116 | 6.6% | 31 | 1.8% |
+| 1970s | 1,653 | 85 | 5.1% | 0 | 0.0% |
+| 1980s | 1,766 | 116 | 6.6% | 31 | 1.8% |
 | 1990s | 1,817 | 875 | 48.2% | 734 | 40.4% |
 | 2000s | 1,648 | 1,420 | 86.2% | 1,447 | 87.8% |
-| 2010s | 1,139 | 1,031 | 90.5% | 1,030 | 90.4% |
-| 2020s | 318 | 285 | 89.6% | 264 | 83.0% |
-| All | 8,477 | 3,816 | 45.0% | 3,506 | 41.4% |
+| 2010s | 1,139 | 1,030 | 90.4% | 1,030 | 90.4% |
+| 2020s | 318 | 284 | 89.3% | 264 | 83.0% |
+| All | 8,476 | 3,814 | 45.0% | 3,506 | 41.4% |
 
 SLES (CEL's State Legislative Effectiveness Scores) begin by state between the late 1980s and the 2000s, so earlier state service has no score anywhere.
 
@@ -34,7 +34,7 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Georgia | 27 | 268 | 179 | 125 | 51 | 3 | before 1995 not online; 1995-2008 only what the Internet Archive kept |
 | Michigan | 37 | 314 | 149 | 132 | 8 | 9 | before 1989 not online |
 | New Jersey | 27 | 296 | 143 | 85 | 58 | 0 | before 2000 not online |
-| Virginia | 30 | 299 | 134 | 104 | 28 | 2 | before 1994 not online (LIS starts 1994) |
+| Virginia | 30 | 299 | 136 | 104 | 28 | 4 | before 1994 not online (LIS starts 1994) |
 | Missouri | 21 | 207 | 132 | 90 | 38 | 4 | before 1996 not online (House records from 1996, Senate from 1996); House courtesy resolutions have no text |
 | Washington | 24 | 197 | 127 | 101 | 24 | 2 | before 1991 not online |
 | Wisconsin | 19 | 219 | 121 | 78 | 39 | 4 | before 1995 not online |
@@ -43,7 +43,7 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Louisiana | 17 | 180 | 115 | 69 | 42 | 4 | before 1997 not online; 2010 site author list incomplete (Richmond) |
 | Colorado | 25 | 177 | 113 | 81 | 27 | 5 | before 1993 not online; 1993-2006 enacted bills only (Session Laws, Internet Archive); old bill site behind Cloudflare, current one disallows texts |
 | Indiana | 18 | 158 | 108 | 82 | 23 | 3 | pre-2010 archive blocks automated access (403); IGA API needs a key |
-| North Carolina | 30 | 277 | 104 | 83 | 7 | 14 | before 1989 not online |
+| North Carolina | 30 | 277 | 105 | 83 | 8 | 14 | before 1989 not online |
 | Alabama | 13 | 111 | 103 | 74 | 27 | 2 | no pre-LegiScan archive found |
 | Connecticut | 16 | 122 | 98 | 75 | 22 | 1 | texts before 1993 not online; 1993-2000 read bill by bill from the bill text files (no introducer index), introducer files from 2001 |
 | Kansas | 13 | 101 | 97 | 29 | 58 | 10 | site behind Cloudflare; archive starts ~2011 |
@@ -66,8 +66,8 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Rhode Island | 6 | 41 | 35 | 13 | 22 | 0 | before 1997 not online |
 | Mississippi | 6 | 59 | 30 | 16 | 12 | 2 | before 1999 not online |
 | Montana | 7 | 35 | 27 | 11 | 12 | 4 | site behind bot defense (F5) |
-| Pennsylvania | 36 | 385 | 23 | 12 | 7 | 4 | 1970s Senate prime-sponsor records partly wrong on palegis.us (scanned texts used) |
 | South Dakota | 5 | 31 | 23 | 16 | 7 | 0 | before 1997 not online |
+| Pennsylvania | 36 | 384 | 21 | 10 | 7 | 4 | 1970s Senate prime-sponsor records partly wrong on palegis.us (scanned texts used) |
 | Vermont | 4 | 29 | 21 | 12 | 8 | 1 | old site robots.txt disallows all |
 | New Hampshire | 7 | 67 | 19 | 7 | 12 | 0 | before 1989 not online |
 | North Dakota | 3 | 39 | 19 | 10 | 8 | 1 | before 1997 not online |
@@ -76,9 +76,9 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Alaska | 3 | 20 | 6 | 5 | 0 | 1 | before 1993 not online |
 | New Mexico | 5 | 21 | 6 | 4 | 1 | 1 | before 1996 not online |
 
-439 people with state service since 1969 have no Table 4 row at all.
+440 people with state service since 1969 have no Table 4 row at all.
 
-### Appendix: person-years from 2009 on without state bill text (162)
+### Appendix: person-years from 2009 on without state bill text (164)
 
 LegiScan covers every state from 2009 or 2010, so each of these needs a reason. Reviewed reasons come from `replication/data/reference/coverage_gap_reasons.csv`; a first or last year of service without a reviewed reason is marked as an edge year (most members join or leave in January, between sessions, and file no bill that year).
 
@@ -208,6 +208,8 @@ LegiScan covers every state from 2009 or 2010, so each of these needs a reason. 
 | Ben McAdams | M001209 | Utah | 2013 | Left the Utah Senate November 13, 2012 (Wikipedia infobox); no 2013 service |
 | Mike Kennedy | K000403 | Utah | 2019, 2025 | Entered Congress January 3, 2025; state seat ended at the start of the year; Left the legislature January 1, 2019, at the start of the year (Wikipedia infobox) |
 | Becca Balint | B001318 | Vermont | 2023 | Left the legislature January 3, 2023, at the start of the year (Wikipedia infobox) |
+| Donald McEachin | M001200 | Virginia | 2017 | Left the Virginia Senate for Congress on January 3, 2017, before the 2017 session; his only 2017 rows were 2016 bills continued into it (dropped as duplicates, final audit 2026-11-14) |
+| John McGuire | M001239 | Virginia | 2025 | Left the Virginia Senate for Congress in January 2025, before the 2025 session; his only 2025 rows were 2024 bills continued into it (dropped as duplicates, final audit 2026-11-14) |
 | Morgan Griffith | G000568 | Virginia | 2011 | Left the legislature January 3, 2011, at the start of the year (Wikipedia infobox) |
 | Robert Hurt | H001060 | Virginia | 2011 | Left the legislature January 3, 2011, at the start of the year (Wikipedia infobox) |
 | Jaime Herrera Beutler | H001056 | Washington | 2011 | Left the legislature January 2, 2011, at the start of the year (Wikipedia infobox) |
