@@ -77,7 +77,8 @@ ALLOWED = {
                          "Colorado General Assembly (Internet Archive)", "Florida Legislature (Internet Archive)",
                          "Missouri House of Representatives", "Missouri House of Representatives (Internet Archive)",
                          "Oklahoma Legislature (Internet Archive)", "New Jersey Legislature (Internet Archive)"},
-        "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"}},
+        "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"},
+        "first_named": {"Yes", "No", "Unknown"}},
     5: {"chamber": {"House", "Senate"}},
     7: {"passed": {"Yes", "No"}},
 }

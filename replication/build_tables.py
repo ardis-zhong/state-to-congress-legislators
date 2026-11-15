@@ -44,7 +44,7 @@ TABLES = {
         ["bioguide_id", "name", "session", "year", "les", "level", "chamber"]),
     4: ("table4_state_bill_text",
         ["bioguide_id", "name", "bill_id", "bill_name", "state_session", "congress", "year", "state",
-         "text_source", "text_version", "bill_text"]),
+         "text_source", "text_version", "first_named", "bill_text"]),
     5: ("table5_federal_bill_text",
         ["bioguide_id", "name", "bill_id", "bill_name", "congress", "year", "chamber", "bill_text"]),
     6: ("table6_state_bill_topics",
@@ -211,6 +211,8 @@ LEGISCAN_ROLELESS_NAMES = "replication/data/reference/legiscan_roleless_names.cs
 LEGISCAN_SPONSOR_CHECK = "replication/data/reference/legiscan_sponsor_check.csv"  # legiscan_sponsor_check.py
 # LegiScan rows credited to the wrong person (reviewed against the bill's own text; final audit 2026-11-14)
 LEGISCAN_MISATTRIBUTED = "replication/data/reference/legiscan_misattributed.csv"
+# primary sponsors per LegiScan bill, for first_named where the text prints no sponsor line (legiscan_primary_counts.py)
+LEGISCAN_PRIMARY_COUNTS = "replication/data/processed/legiscan_primary_counts.csv"
 
 
 def congress_on(date_str):
@@ -309,6 +311,8 @@ def build_table4():
                     text_path[m["DocId"]] = m["TextPath"]
     people = {p["BioguideId"]: (p["Name"], p["State"]) for p in load_person_level()}
     skip = excluded_texts(4)
+    with open(LEGISCAN_PRIMARY_COUNTS, newline="", encoding="utf-8") as f:
+        primaries = {(c["StateAbbr"], c["SessionId"], c["BillNumber"]): int(c["Primaries"]) for c in csv.DictReader(f)}
     out = []
     for r in state_bill_rows():
         if f"{r['StateAbbr']}-{r['SessionId']}-{r['BillNumber']}" in skip:
@@ -319,13 +323,33 @@ def build_table4():
         with open(path, encoding="utf-8", errors="replace") as tf:
             text = tf.read()
         year, congress = state_bill_dates(r)
+        if r["SponsorType"] == "Primary Sponsor":
+            basis = "lead" if primaries.get((r["StateAbbr"], r["SessionId"], r["BillNumber"])) == 1 else "multi"
+        else:  # 'Sponsor' rows kept only as sole sponsor, or after a first-sponsor check (CT, MS, SD, role-less sessions)
+            basis = "lead"
         out.append([r["BioguideId"], people[r["BioguideId"]][0],
                     f"{r['StateAbbr']}-{r['SessionId']}-{r['BillNumber']}", " ".join(r["Title"].split()),
                     r["SessionTitle"], str(congress), year, r["StateAbbr"], "LegiScan",
-                    r["IntroducedDocType"] or "Introduced", text])
+                    r["IntroducedDocType"] or "Introduced", text, basis])
     out.extend(archive_rows(people, skip))
     out = drop_carried_over(out)
+    out = add_first_named(out)
     out.sort(key=lambda x: (x[0], x[6], x[2]))
+    return out
+
+
+def add_first_named(rows):
+    """Table 4's first_named column (Ardis, 2026-11-14): Yes when the bill's printed sponsor line names the
+    person first, No when it names another member or a committee first, and where the text prints no sponsor
+    line, Yes if the source records the person as the bill's only lead sponsor, else Unknown
+    (replication/scripts/state/first_named.py; one regular expression per state)."""
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "scripts", "state"))
+    import first_named
+    out = []
+    for r in rows:
+        num = r[2].split("-", 2)[2] if r[2].count("-") >= 2 else r[2]
+        out.append(r[:10] + [first_named.value(r[7], num, r[10], r[1], r[11]), r[10]])
+    print("  first_named: " + ", ".join(f"{k} {sum(1 for r in out if r[10] == k)}" for k in ("Yes", "No", "Unknown")))
     return out
 
 
@@ -517,9 +541,16 @@ def archive_rows(people, skip):
                     year, congress = int(d[:4]), congress_on(d)
                 else:
                     year, congress = lo, (lo - 1787) // 2
+                # what the source records about the person's place among the bill's sponsors (for first_named)
+                if "PrimarySponsors" in r:  # Ohio: every primary sponsor; the check only found the name among them
+                    basis = "lead" if r["PrimarySponsors"] == "1" else "multi"
+                elif r.get("IntroducedByMatch") == "AuthorsChanged" or "IntroducedByMatch" not in r:
+                    basis = "multi"  # Minnesota author changes; California pubinfo (several primary authors possible)
+                else:
+                    basis = "checked"
                 out.append([r["BioguideId"], people[r["BioguideId"]][0], r["BillId"], " ".join(r["Title"].split()),
                             r["Session"], str(congress), year, state, r.get("TextSource") or source,
-                            r.get("TextVersion") or "Introduced", text])
+                            r.get("TextVersion") or "Introduced", text, basis])
     return out
 
 

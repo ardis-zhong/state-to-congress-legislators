@@ -158,7 +158,19 @@ Assembly`, `Rhode Island General Assembly`, `Nebraska Legislature`,
 `text_version` (the
 version the text is: `Introduced`, or where that isn't available `Prefiled`,
 `Draft`, `Amended`, `Reported`, `Engrossed`, `Adopted`, `Enrolled`, or
-`Chaptered`), `bill_text`.
+`Chaptered`), `first_named` (`Yes`, `No` or `Unknown`: whether the person is the first
+sponsor named on the bill; see below), `bill_text`.
+**`first_named`.** The state-archive rows count a bill only when the person is named first
+(or is the legislature's single lead sponsor), but LegiScan's "Primary Sponsor" often covers
+several people per bill (co-prime sponsors, joint authors, every co-introducer, committee
+members), so its rows can include bills on which the person is listed later. `first_named` is
+`Yes` when the sponsor line printed on the bill names the person first, `No` when it names
+another member or a committee first, and, where the text prints no sponsor line, `Yes` if the
+source records the person as the bill's only lead sponsor, else `Unknown` (one reviewed regular
+expression per state, `replication/scripts/state/first_named.py`). Filter on `first_named == "Yes"`
+for one lead sponsor per bill, as on the federal side. Of 85,838 rows: Yes 72,112, No 11,711
+(11,101 LegiScan, 610 archive: Ohio resolutions with several primary sponsors and committee
+bills), Unknown 2,015 (mostly Hawaii, Michigan and Florida House texts, which print no sponsors).
 Sources: LegiScan API (CC BY 4.0), whose archive starts between 2007 and 2013
 depending on the state; and, for California before LegiScan's coverage, the
 California Legislature's own archives (public domain under Cal. Gov. Code
