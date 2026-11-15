@@ -194,13 +194,16 @@ sole-filer rule; only 1997 texts print a "By" line).
 For Virginia, 1994–2009 bills come from the General Assembly's legacy
 Legislative Information System (legacylis.virginia.gov): each member's
 "Legislation as Chief Patron" list for every session, and each bill's text as
-offered; the text's "Patron--" line names the person first for all 2,213 (6 bills continued to the next year's
-session are counted once, in the session they were introduced).
+offered; the text's "Patron--" line names the person first for all 2,207 rows of 1994–2009 (bills continued to the next year's
+session are counted once, in the session they were introduced; 447 more rows come from the
+2010–2012 sessions, which LegiScan records without sponsor roles).
 For Ohio, 1997–2008 bills come from the Ohio Legislature's public legislation
 data service (search-prod.lis.state.oh.us, which serves legislature.ohio.gov):
 every bill and resolution on which the person is a primary sponsor (joint
 primary sponsors count, as in LegiScan's Ohio data), with its "As Introduced"
-text; the sponsor lines at the top of the text name the person for all 1,161.
+text; the sponsor lines at the top of the text name the person for all 1,188 rows of
+1997–2008 (213 more come from the 2009–2014 General Assemblies, which LegiScan records without
+sponsor roles).
 Many 2005–2008 resolutions were published only as adopted, so 538 rows are in
 their adopted wording (`text_version` = `Adopted`; one bill is `Reported`),
 and 442 rows are honorary resolutions that list most of a chamber as primary
@@ -436,7 +439,7 @@ Table 7). `bioguide_id`, `name`, `bill_id`, `bill_name`, `congress`, `year`,
 `chamber` (chamber of origin: `House` or `Senate`), `bill_text` (plain text of
 the version as introduced, or the earliest version Congress.gov has).
 Source: Congress.gov bill text (Government Publishing Office). Coverage:
-115,612 of 115,682 bills from the 101st Congress (1989) on (57 have no digital
+115,617 of 115,682 bills from the 101st Congress (1989) on (52 have no digital
 text; 13 garbled 1989 scans were removed, see
 `replication/data/reference/excluded_bill_texts.csv`); Congress.gov has
 almost no digital text before 1989, so the 137 people whose bills all predate
