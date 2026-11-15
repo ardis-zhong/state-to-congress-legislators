@@ -14,10 +14,10 @@ published on Harvard Dataverse (link to come).
 
 | # | File | Status |
 |---|---|---|
-| 1 | `table1_state_to_federal` | Built: 1,042 rows |
-| 2 | `table2_demographics` | Built: 1,042 rows |
-| 3 | `table3_effectiveness_scores` | Built: 8,298 scores for 1,039 people |
-| 4 | `table4_state_bill_text` | Built: 85,838 rows, 507 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and Missouri from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, New Jersey from 2000, Arizona and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
+| 1 | `table1_state_to_federal` | Built: 1,043 rows |
+| 2 | `table2_demographics` | Built: 1,043 rows |
+| 3 | `table3_effectiveness_scores` | Built: 8,299 scores for 1,040 people |
+| 4 | `table4_state_bill_text` | Built: 85,980 rows, 508 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and Missouri from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, New Jersey from 2000, Arizona and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
@@ -168,8 +168,8 @@ members), so its rows can include bills on which the person is listed later. `fi
 another member or a committee first, and, where the text prints no sponsor line, `Yes` if the
 source records the person as the bill's only lead sponsor, else `Unknown` (one reviewed regular
 expression per state, `replication/scripts/state/first_named.py`). Filter on `first_named == "Yes"`
-for one lead sponsor per bill, as on the federal side. Of 85,838 rows: Yes 72,112, No 11,711
-(11,101 LegiScan, 610 archive: Ohio resolutions with several primary sponsors and committee
+for one lead sponsor per bill, as on the federal side. Of 85,980 rows: Yes 72,223, No 11,742
+(11,132 LegiScan, 610 archive: Ohio resolutions with several primary sponsors and committee
 bills), Unknown 2,015 (mostly Hawaii, Michigan and Florida House texts, which print no sponsors).
 Sources: LegiScan API (CC BY 4.0), whose archive starts between 2007 and 2013
 depending on the state; and, for California before LegiScan's coverage, the
@@ -416,7 +416,7 @@ and some archives list it again with the same number and text.
 For Tennessee, 1997–2002 and 2007–2008 bills and joint resolutions come from the
 Internet Archive's copies of the General Assembly's former bill files; each file
 is the bill as filed and names its prime sponsor ("SENATE BILL 360 By Cohen").
-507 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
+508 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
 Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995,
 Maryland and Missouri from 1996, New Mexico, Ohio,
 Illinois, Louisiana, Nevada, North Dakota, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, New Jersey from 2000, Arizona and Massachusetts from 2001, Wyoming from 2003, other states from 2008); for

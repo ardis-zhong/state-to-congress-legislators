@@ -52,7 +52,7 @@ HOUSE_FILES = [
     'house_batch4_FINAL.csv',
     'house_batch5_texas.csv', 'house_batch5_groupB.csv', 'house_batch5_groupC.csv',
     'house_batch6_completeness_gap.csv', 'house_batch7_completeness_gap2.csv',
-    'house_batch8_chamber_gap.csv', 'house_batch9_recheck.csv',
+    'house_batch8_chamber_gap.csv', 'house_batch9_recheck.csv', 'house_batch10_new_members.csv',
 ]
 
 STATE_FIX = {'OH': 'Ohio', 'PA': 'Pennsylvania', 'RI': 'Rhode Island',

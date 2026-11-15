@@ -153,7 +153,7 @@ def build_table2():
 
 CEL_HOUSE = "cel_cache/CELHouse93to118Reduced-REVISED-06.26.2025.dta"
 CEL_SENATE = "cel_cache/CELSenate93to118Reduced.dta"
-CEL_STATES = "cel_cache/sles_all_50_states_202609.dta"
+CEL_STATES = "cel_cache/sles_all_50_states_202609-1.dta"
 SLES_MATCHES = "replication/data/processed/sles_matches.csv"
 
 
