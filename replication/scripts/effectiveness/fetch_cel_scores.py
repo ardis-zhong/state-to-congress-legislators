@@ -5,7 +5,7 @@ Download the Center for Effective Lawmaking's legislative effectiveness scores
 
     House LES, 93rd-118th Congress     CELHouse93to118Reduced-REVISED-06.26.2025.dta
     Senate LES, 93rd-118th Congress    CELSenate93to118Reduced.dta
-    State SLES, all states thru 2025   sles_all_50_states_202609.dta
+    State SLES, all states thru 2025   sles_all_50_states_202609-1.dta (re-uploaded Oct 2026: district fixes only)
     State SLES codebook                sles_all_state_codebook.pdf
 
 Files go to cel_cache/ at the repo root (gitignored); files already present
@@ -34,7 +34,7 @@ BASE = "https://thelawmakers.org/wp-content/uploads/"
 FILES = [
     "2025/06/CELHouse93to118Reduced-REVISED-06.26.2025.dta",
     "2025/03/CELSenate93to118Reduced.dta",
-    "2026/10/sles_all_50_states_202609.dta",
+    "2026/10/sles_all_50_states_202609-1.dta",
     "2026/10/sles_all_state_codebook.pdf",
 ]
 CACHE_DIR = "cel_cache"

@@ -39,7 +39,7 @@ run can resume without re-fetching.
 python3 replication/scripts/population/build_final_datasets.py
 python3 replication/scripts/population/fetch_legislator_party_gender.py
 python3 replication/scripts/population/fetch_race_lists.py
-python3 replication/scripts/population/fetch_congressional_directory.py --api-key "$CONGRESS_API_KEY"   # ~1.9 GB into cdir_cache/
+python3 replication/scripts/population/fetch_congressional_directory.py   # ~1.9 GB into cdir_cache/
 python3 replication/scripts/population/extract_veterans.py
 ```
 
@@ -60,14 +60,14 @@ settle by rule are decided in `replication/data/reference/sles_review.csv`.
 **2. Federal (Congress.gov)**
 
 ```
-python3 replication/scripts/federal/fetch_all_sponsored_legislation.py --api-key "$CONGRESS_API_KEY"
-python3 replication/scripts/federal/fetch_all_sponsored_legislation.py --api-key "$CONGRESS_API_KEY" \
+python3 replication/scripts/federal/fetch_all_sponsored_legislation.py
+python3 replication/scripts/federal/fetch_all_sponsored_legislation.py \
     --queue replication/data/targets/extraction_queue_pending.csv \
     --output sponsored_legislation_pending.csv --log fetch_log_pending.csv
-python3 replication/scripts/federal/gap_fill_missing_items.py "$CONGRESS_API_KEY"   # re-fetch people whose totals came up short (reads gapfill_targets.csv)
+python3 replication/scripts/federal/gap_fill_missing_items.py   # re-fetch people whose totals came up short (reads gapfill_targets.csv)
 python3 replication/scripts/federal/merge_sponsored_legislation.py  # combine + de-duplicate on (bioguide_id, url)
 python3 replication/scripts/federal/classify_status.py              # passed / failed status from latest action
-python3 replication/scripts/federal/fetch_federal_bill_text.py "$CONGRESS_API_KEY" sponsored_legislation_full_status.csv \
+python3 replication/scripts/federal/fetch_federal_bill_text.py sponsored_legislation_full_status.csv \
     --min-congress 101 --delay 0.8   # ~33 h for the 101st Congress (1989) on; resumable
 ```
 

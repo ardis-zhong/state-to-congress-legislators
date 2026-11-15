@@ -29,12 +29,13 @@ USAGE:
 
 import csv
 import json
+import os
 import sys
 import time
 import urllib.request
 import urllib.error
 
-API_KEY = None  # set from argv[1] at runtime, see main()
+API_KEY = None  # set from the CONGRESS_API_KEY environment variable, see main()
 BASE_URL = "https://api.congress.gov/v3/member/{bioguide_id}/sponsored-legislation"
 PAGE_LIMIT = 250
 MAX_RETRIES = 5
@@ -120,9 +121,10 @@ def gap_fill_person(bioguide_id, name, state, expected_count):
 
 def main():
     global API_KEY
-    if len(sys.argv) < 2:
-        raise SystemExit("Usage: python3 gap_fill_missing_items.py YOUR_API_KEY")
-    API_KEY = sys.argv[1]
+    # The key comes from the CONGRESS_API_KEY environment variable, so it never shows in process lists.
+    API_KEY = os.environ.get("CONGRESS_API_KEY", "")
+    if not API_KEY:
+        raise SystemExit("Set CONGRESS_API_KEY in the environment")
 
     with open("gapfill_targets.csv", newline="", encoding="utf-8") as f:
         targets = list(csv.DictReader(f))

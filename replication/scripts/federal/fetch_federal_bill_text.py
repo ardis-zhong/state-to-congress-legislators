@@ -35,7 +35,7 @@ OUTPUT: federal_billtext_cache/<congress>-<billtype>-<billnumber>.raw.<ext>
         federal_bill_text_manifest.csv
 
 USAGE (from the repo root):
-    python3 replication/scripts/federal/fetch_federal_bill_text.py "$CONGRESS_API_KEY" \
+    python3 replication/scripts/federal/fetch_federal_bill_text.py \
         sponsored_legislation_full_status.csv [--min-congress N] [--max-congress N] [--delay SECONDS]
         [--retry-no-text]   # re-check bills that had no text yet (e.g. a few months later)
     The manifest is appended after every bill; re-running skips finished bills.
@@ -252,7 +252,6 @@ def main():
     import argparse
     global MIN_SECONDS_BETWEEN_CALLS
     ap = argparse.ArgumentParser()
-    ap.add_argument("api_key")
     ap.add_argument("csv_path", help="federal dataset with Congress/Type/Number columns")
     ap.add_argument("--min-congress", type=int, default=0)
     ap.add_argument("--max-congress", type=int, default=999)
@@ -261,7 +260,11 @@ def main():
     ap.add_argument("--delay", type=float, default=MIN_SECONDS_BETWEEN_CALLS,
                     help="seconds between metered api.congress.gov calls (default %(default)s)")
     args = ap.parse_args()
-    key = args.api_key
+    # The key comes from the CONGRESS_API_KEY environment variable, so it never shows in process lists or logs.
+    import os
+    key = os.environ.get("CONGRESS_API_KEY", "")
+    if not key:
+        sys.exit("Set CONGRESS_API_KEY in the environment")
     MIN_SECONDS_BETWEEN_CALLS = args.delay
 
     print(f"Loading unique bills from {args.csv_path}...")

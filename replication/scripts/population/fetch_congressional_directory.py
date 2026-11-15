@@ -16,7 +16,7 @@ interruption.
 
 USAGE (from the repo root; the key is an api.data.gov key, the same one used
 for api.congress.gov):
-    python3 replication/scripts/population/fetch_congressional_directory.py --api-key "$CONGRESS_API_KEY"
+    python3 replication/scripts/population/fetch_congressional_directory.py
 """
 
 import argparse
@@ -50,8 +50,11 @@ def get(url, key, binary=False):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--api-key", required=True)
     args = ap.parse_args()
+    # The key comes from the CONGRESS_API_KEY environment variable (api.data.gov), so it never shows in process lists.
+    args.api_key = os.environ.get("CONGRESS_API_KEY", "")
+    if not args.api_key:
+        raise SystemExit("Set CONGRESS_API_KEY in the environment")
     os.makedirs(CACHE_DIR, exist_ok=True)
 
     listing = get(f"{API}/collections/CDIR/1970-01-01T00:00:00Z?pageSize=1000&offsetMark=*", args.api_key)

@@ -4,14 +4,14 @@ Freeze-date refresh (Ardis, 2026-11-09: freeze on 2026-12-04). Writes the fetch 
 with a term in the current Congress, whose sponsored-legislation lists (new bills, and the latest actions that
 decide passage status) change after the original fetch.
 
-Run on the freeze date, after downloading fresh legislators-current.json / legislators-historical.json:
+Run on the freeze date (CONGRESS_API_KEY set in the environment), after downloading fresh legislators-current.json / legislators-historical.json:
     python3 replication/scripts/federal/refresh_queue.py
-    python3 replication/scripts/federal/fetch_all_sponsored_legislation.py --api-key "$CONGRESS_API_KEY" \\
+    python3 replication/scripts/federal/fetch_all_sponsored_legislation.py \\
         --queue replication/data/targets/extraction_queue_refresh.csv \\
         --output sponsored_legislation_refresh.csv --log fetch_log_refresh.csv
     python3 replication/scripts/federal/merge_sponsored_legislation.py
     python3 replication/scripts/federal/classify_status.py
-    python3 replication/scripts/federal/fetch_federal_bill_text.py "$CONGRESS_API_KEY" sponsored_legislation_full_status.csv \\
+    python3 replication/scripts/federal/fetch_federal_bill_text.py sponsored_legislation_full_status.csv \\
         --min-congress 119 --delay 0.8
 """
 

@@ -25,7 +25,7 @@ RULES (no model in the loop; anything uncertain goes to review):
 People whose state service ended before CEL's coverage of their state begins
 (1993-2003, varies by state) are "before coverage" and have no state scores.
 
-INPUTS:  cel_cache/sles_all_50_states_202609.dta (fetch_cel_scores.py),
+INPUTS:  cel_cache/sles_all_50_states_202609-1.dta (fetch_cel_scores.py),
          replication/data/population/person_level.csv,
          legislators-current.json / legislators-historical.json
 OUTPUT:  replication/data/processed/sles_matches.csv
@@ -43,7 +43,7 @@ import unicodedata
 
 import pandas as pd
 
-SLES_FILE = "cel_cache/sles_all_50_states_202609.dta"
+SLES_FILE = "cel_cache/sles_all_50_states_202609-1.dta"
 PERSON_LEVEL = "replication/data/population/person_level.csv"
 LEGISLATOR_FILES = ["legislators-current.json", "legislators-historical.json"]
 REVIEW = "replication/data/reference/sles_review.csv"

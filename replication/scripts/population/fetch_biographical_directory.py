@@ -16,7 +16,7 @@ OUTPUT (gitignored, at the repo root):
 
 USAGE (from the repo root; the key is an api.data.gov key, the same one used
 for Congress.gov):
-    python3 replication/scripts/population/fetch_biographical_directory.py --api-key "$CONGRESS_API_KEY"
+    python3 replication/scripts/population/fetch_biographical_directory.py
 Re-running skips files already downloaded or extracted.
 """
 
@@ -61,8 +61,11 @@ def extract(pdf_path, txt_path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--api-key", required=True)
     args = ap.parse_args()
+    # The key comes from the CONGRESS_API_KEY environment variable (api.data.gov), so it never shows in process lists.
+    args.api_key = os.environ.get("CONGRESS_API_KEY", "")
+    if not args.api_key:
+        raise SystemExit("Set CONGRESS_API_KEY in the environment")
     os.makedirs(CACHE_DIR, exist_ok=True)
     for i in GRANULES:
         gid = f"{PACKAGE}-4-{i}"
