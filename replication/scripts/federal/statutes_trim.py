@@ -161,9 +161,29 @@ def split_merged(text, s, e, letter, bnum):
     return s, e
 
 
+PRINTCODE = re.compile(r"^\W*\d{1,3}\s*[-_]\s*\S{2,4}\s*[O0n]?\b.{0,30}$")
+
+
+def clean_tail(text):
+    """Drop page furniture after the measure's last line: a running page header, GPO's print code at the foot of a
+    volume's last page ('71-194 0 - 89 - 10 : QL. 3 PartA', '47-348 O - 72 - 53 (Pt. 2)'), or scanner specks (a line
+    with no word of four or more letters)."""
+    lines = text.rstrip().split("\n")
+    while len(lines) > 1:
+        last = lines[-1].strip()
+        if RUN.fullmatch(last) or (PRINTCODE.match(last) and (re.search(r"Q[Ll]|Pt\.|Part", last) or not re.search(r"[a-z]{4,}", last))) \
+                or not re.search(r"[A-Za-z]{4,}", last):
+            lines.pop()
+            continue
+        break
+    return "\n".join(lines).strip()
+
+
 def trim(text, law, btype, bnum, title, known=frozenset()):
     """known: the volume's other measures ('Public Law 99-586' strings and ('H', '278') resolution pairs)."""
-    return trim_conres(text, btype, bnum, title, known) if "CONRES" in btype else trim_law(text, law, known, btype, bnum)
+    t, how = (trim_conres(text, btype, bnum, title, known) if "CONRES" in btype
+              else trim_law(text, law, known, btype, bnum))
+    return clean_tail(t), how
 
 
 def ok(method):
