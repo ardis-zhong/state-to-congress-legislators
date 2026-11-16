@@ -44,6 +44,14 @@ rm federal_laws_cache/119_*.json
 python3 replication/scripts/federal/fetch_laws.py
 ```
 
+And the resolutions' vote histories (Table 7's `passed` for simple and concurrent resolutions): delete the 119th
+Congress's cached histories so they are read again (a few hundred requests, ~5 min; earlier Congresses come from cache):
+
+```
+rm federal_actions_cache/119_*.json
+python3 replication/scripts/federal/fetch_resolution_actions.py
+```
+
 The 1969-1988 sources do not change and need no refresh; if a member was added in step 1 who served then, rerun
 (from cache, only new files are fetched):
 

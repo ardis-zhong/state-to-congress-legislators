@@ -484,13 +484,28 @@ for 800 items with none and for all 1969–1972 bills; some 93rd–95th Congress
 items use older subject terms), `passed` (`Yes` if it became law, including
 over a veto; for simple resolutions, if agreed to; for concurrent resolutions,
 if agreed to by the second chamber), `source` (`Congress.gov` or
-`Congressional Bills Project`). `passed` comes from Congress.gov's latest
-recorded action, and is also `Yes` for every bill on Congress.gov's list of laws
-for its Congress (`replication/scripts/federal/fetch_laws.py`) and every measure
-printed in the Statutes at Large (Table 5): for older measures the latest
-recorded action is sometimes a procedural step after enactment (H.R. 2 of the
-100th Congress, enacted over a veto, ends on "Message on Senate action sent to
-the House"), which corrected 302 rows.
+`Congressional Bills Project`). For bills and joint resolutions, `passed` is
+`Yes` when Congress.gov's latest recorded action says the measure became law,
+when it is on Congress.gov's list of laws for its Congress
+(`replication/scripts/federal/fetch_laws.py`), or when it is printed as a law in
+the Statutes at Large (for older bills the latest recorded action is sometimes
+a procedural step after enactment: H.R. 2 of the 100th Congress, enacted over a
+veto, ends on "Message on Senate action sent to the House"). For simple and
+concurrent resolutions, `passed` comes from each resolution's full action
+history on Congress.gov (`replication/scripts/federal/fetch_resolution_actions.py`;
+10,954 resolutions that went past committee): the Library of Congress's
+"Passed/agreed to in House / Senate" actions, in the resolution's own chamber
+for simple resolutions, and in both chambers for concurrent ones (with any
+amendment by the second chamber agreed to, or a conference report adopted by
+both). A resolution's latest action is usually a step after the vote ("Motion
+to reconsider laid on the table Agreed to without objection."), so reading the
+latest action alone had marked 5,354 adopted resolutions as not passed and 2 as
+passed (one tabled, one whose amendment was never agreed to). Four concurrent
+resolutions printed in the Statutes at Large whose history on Congress.gov
+lacks a vote are `Yes` (the Statutes print only adopted resolutions).
+GovInfo's Statutes metadata is not used where it contradicts Congress.gov's
+record (its 104th Congress H. Con. Res. 19 is an enrollment correction; the
+real H. Con. Res. 19 died in subcommittee).
 
 Covers every Congress each person sponsored legislation in (91st Congress,
 1969, on). Source: Congress.gov API, fetched 2026-08 to 2026-10, from the 93rd

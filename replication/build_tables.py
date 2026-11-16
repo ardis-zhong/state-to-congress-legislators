@@ -620,13 +620,25 @@ def federal_items():
     for the 91st-92nd."""
     out = []
     enacted = enacted_measures()
+    printed_1989 = statutes_printed_1989()
+    res_votes, conflicts = resolution_votes(), []
     with open(FEDERAL_STATUS, newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f):
             if r["ItemCategory"] != "Bill/Resolution":
                 continue
             passed = federal_passed(r["Type"], r["BillStatus"], r["LatestActionText"])
-            if (r["Congress"], r["Type"].upper(), r["Number"]) in enacted:
+            key = (r["Congress"], r["Type"].upper(), r["Number"])
+            # Statutes metadata from 1989 on is trusted only for a measure that got past committee (GPO's metadata
+            # mislabels a few: its 104th H. Con. Res. 19 is an enrollment correction, while the real H. Con. Res. 19
+            # died in subcommittee)
+            if key in enacted or (key in printed_1989 and r["BillStatus"] not in ("Introduced", "Referred to Committee")):
                 passed = "Yes"
+            # resolutions: the recorded votes in the full action history decide (fetch_resolution_actions.py)
+            if key in res_votes:
+                if res_votes[key] != "Yes" and passed == "Yes" and key in (enacted | printed_1989):
+                    conflicts.append("-".join(key))
+                passed = "Yes" if (res_votes[key] == "Yes" or key in enacted
+                                   or (res_votes[key] == "BothVoted" and key in printed_1989)) else "No"
             out.append({"BioguideId": r["BioguideId"], "Congress": r["Congress"], "Type": r["Type"],
                         "Number": r["Number"], "Title": r["Title"],
                         "Year": r["IntroducedDate"][:4] if r["IntroducedDate"] else "",
@@ -638,6 +650,9 @@ def federal_items():
                             "Number": r["Number"], "Title": r["Title"], "Year": r["Year"], "Topic": "",
                             "Passed": "Yes" if r["BecameLaw"] == "Yes" or (r["Congress"], r["Type"].upper(), r["Number"]) in enacted
                             else "No", "Source": "Congressional Bills Project"})
+    if conflicts:
+        print(f"  resolutions printed in the Statutes but with no recorded adoption on Congress.gov: {len(conflicts)} "
+              f"(kept Yes if the Statutes text was read and checked, else No): {', '.join(conflicts[:10])}")
     return out
 
 
@@ -658,6 +673,43 @@ def enacted_measures():
         with open(FEDERAL_STATUTES_MANIFEST, newline="", encoding="utf-8") as f:
             out |= {(r["Congress"], r["BillType"].upper(), r["BillNumber"]) for r in csv.DictReader(f)
                     if r["TextPath"] and int(r["TextLength"] or 0) > 0}
+    return out
+
+
+FEDERAL_RESOLUTION_ACTIONS = "federal_resolution_actions.csv"  # local; fetch_resolution_actions.py
+
+
+def resolution_votes():
+    """(congress, TYPE, number) -> 'Yes' / 'No' for simple and concurrent resolutions whose full action history was
+    read: adopted per the Library of Congress action codes (agreed to in the resolution's chamber; for concurrent
+    resolutions, in both, with any second-chamber amendment resolved). Decided 2026-11-15: the latest recorded action
+    alone (the old rule) marked thousands of adopted resolutions as not passed."""
+    out = {}
+    if os.path.exists(FEDERAL_RESOLUTION_ACTIONS):
+        with open(FEDERAL_RESOLUTION_ACTIONS, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                if r["Adopted"] in ("Yes", "No"):
+                    # both chambers voted but the history lacks the step resolving a second-chamber amendment:
+                    # 'No' here, unless the Statutes print the resolution (handled in federal_items)
+                    both = r["AgreedHouse"] == "True" and r["AgreedSenate"] == "True"
+                    out[(r["Congress"], r["Type"].upper(), r["Number"])] = r["Adopted"] if r["Adopted"] == "Yes" or not both \
+                        else "BothVoted"
+    return out
+
+
+FEDERAL_STATUTES_ENACTED = "federal_statutes_enacted.csv"  # local; fetch_statutes_enacted.py (Statutes metadata, 1989 on)
+
+
+def statutes_printed_1989():
+    """(congress, TYPE, number) of the measures printed in the Statutes at Large from 1989 on (volumes 103-138), per
+    GPO's metadata: laws and adopted concurrent resolutions. A measure counts only if its Congress is the volume's
+    (volume 103 = 101st Congress, 1st session); GPO's metadata names H.R. 2913 of the 110th Congress for a 2009 law."""
+    out = set()
+    if os.path.exists(FEDERAL_STATUTES_ENACTED):
+        with open(FEDERAL_STATUTES_ENACTED, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                if r["Congress"].isdigit() and int(r["Congress"]) == 101 + (int(r["Volume"]) - 103) // 2:
+                    out.add((r["Congress"], r["BillType"].upper(), r["BillNumber"]))
     return out
 
 
