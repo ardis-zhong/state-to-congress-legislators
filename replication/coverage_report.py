@@ -47,7 +47,7 @@ STATE_NOTES = {
     "Georgia": "before 1995 not online; 1995-2008 only what the Internet Archive kept",
     "Virginia": "before 1994 not online (LIS starts 1994)",
     "Pennsylvania": "1970s Senate prime-sponsor records partly wrong on palegis.us (scanned texts used)",
-    "New Jersey": "before 2000 not online",
+    "New Jersey": "before 1996 not online (1996-1999 from the Legislature's published bill-tracking databases)",
     "Massachusetts": "before 2009 only what the Internet Archive kept (Senate sample; no sponsor index)",
     "Maryland": "before 1996 not online",
     "Minnesota": "before 1995 not online",
@@ -264,8 +264,11 @@ def main():
               "within the 93rd-118th, every person-Congress without an LES is a few weeks or months of service "
               "(sworn in after a November special election, or left early in the Congress), which CEL does not score, "
               "except Sheila Frahm and Charles H. Wilson (D-CA), whom CEL's files lack (checked 2026-11-10); "
-              "Congress.gov's sponsored-legislation API starts with the 93rd; Congress.gov has almost no digital "
-              "bill text before the 101st (1989). A person-Congress with no sponsored item at all is usually "
+              "Congress.gov's sponsored-legislation API starts with the 93rd, so the 91st-92nd (1969-1972) come from "
+              "the Congressional Bills Project (public bills only, no resolutions); Congress.gov has almost no digital "
+              "bill text before the 101st (1989), so for the 91st-100th only enacted measures have text (Statutes at "
+              "Large), and a person-Congress without text there is one in which none of the person's bills became law. "
+              "A person-Congress with no sponsored item at all is usually "
               "genuine (short service, or a member who sponsored nothing as lead sponsor).\n")
 
     # ---- Table 2

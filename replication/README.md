@@ -69,7 +69,13 @@ python3 replication/scripts/federal/merge_sponsored_legislation.py  # combine + 
 python3 replication/scripts/federal/classify_status.py              # passed / failed status from latest action
 python3 replication/scripts/federal/fetch_federal_bill_text.py sponsored_legislation_full_status.csv \
     --min-congress 101 --delay 0.8   # ~33 h for the 101st Congress (1989) on; resumable
+python3 replication/scripts/federal/fetch_laws.py                   # Congress.gov law lists (passed = on the list), ~2 min
+python3 replication/scripts/federal/cbp_bills_1969_1972.py          # 91st-92nd Congress bills, Congressional Bills Project file
+python3 replication/scripts/federal/fetch_statutes_text.py --mods --texts   # enacted text 1969-1988, Statutes at Large; ~4 h, resumable
 ```
+
+The Congressional Bills Project file (`US-Legislative-congressional_bills_19.3.csv`, from
+https://compagendas.la.utexas.edu/project/us/datasets) goes in `congressional_bills_project/`.
 
 **3. State (LegiScan)**
 

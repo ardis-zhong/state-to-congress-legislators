@@ -7,6 +7,9 @@ legiscan_session_cache/
 /legiscan_billtext_cache
 legiscan_bill_cache/
 /federal_billtext_cache
+/federal_statutes_cache
+/federal_laws_cache
+/congressional_bills_project
 /cdir_cache
 bioguide2005_cache/
 /ca_pubinfo_cache
@@ -116,5 +119,7 @@ datasets/*/table5_federal_bill_text.*
 /mo_house_cache
 /ok_wayback_cache
 /nj_wayback_cache
+/nj_legdb_cache
+/nj_legdb_state_legislation_sponsored.csv
 /ct_ps_cache
 /co_sessionlaws_cache

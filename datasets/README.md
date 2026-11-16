@@ -17,10 +17,10 @@ published on Harvard Dataverse (link to come).
 | 1 | `table1_state_to_federal` | Built: 1,043 rows |
 | 2 | `table2_demographics` | Built: 1,043 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,299 scores for 1,040 people |
-| 4 | `table4_state_bill_text` | Built: 85,980 rows, 508 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland and Missouri from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, New Jersey from 2000, Arizona and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
-| 5 | `table5_federal_bill_text` | Built: 115,629 bills, 903 people (1989 on); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 86,414 rows, 509 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland, Missouri and New Jersey from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, Arizona and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
+| 5 | `table5_federal_bill_text` | Built: 118,353 bills, 1,008 people (1989 on; enacted measures from 1969); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
-| 7 | `table7_federal_bill_topics` | Built: 164,718 bills and resolutions, 1,040 people |
+| 7 | `table7_federal_bill_topics` | Built: 173,334 bills and resolutions, 1,041 people (1969 on) |
 
 ## Columns
 
@@ -153,8 +153,11 @@ Assembly`, `Michigan Legislature`, `Maryland General Assembly`,
 Assembly`, `Rhode Island General Assembly`, `Nebraska Legislature`,
 `Georgia General Assembly (Internet Archive)`, `Connecticut General Assembly`,
 `New York State Assembly`, `New Hampshire General Court (Internet Archive)`,
-`Idaho Legislature`, `Massachusetts General Court (Internet Archive)`,
-`Tennessee General Assembly (Internet Archive)`, or `Oregon Legislature (Internet Archive)`),
+`New Hampshire General Court`, `Idaho Legislature`, `Massachusetts General
+Court (Internet Archive)`, `Tennessee General Assembly (Internet Archive)`,
+`Oregon Legislature (Internet Archive)`, `Arizona Legislature (Internet
+Archive)`, `Colorado General Assembly (Internet Archive)`, `Florida
+Legislature (Internet Archive)`, or `Oklahoma Legislature (Internet Archive)`),
 `text_version` (the
 version the text is: `Introduced`, or where that isn't available `Prefiled`,
 `Draft`, `Amended`, `Reported`, `Engrossed`, `Adopted`, `Enrolled`, or
@@ -268,8 +271,13 @@ For New Jersey, 2000–2009 bills and resolutions come from the Legislature's
 website (njleg.state.nj.us): its sponsor search for each session, keeping
 bills on which the person is the first prime sponsor, with the bill as
 introduced; a bill counts when the text's "Sponsored by:" line names the
-person first. For 1996–1999 only a small sample of introduced texts survives in
-the Internet Archive (3 rows).
+person first. For 1996–1999 the source is the Legislature's own bill-tracking
+databases for those sessions (pub.njleg.gov/leg-databases/9697data and 9899data,
+dBase tables: each bill's first prime sponsor and its introduced document) and
+the bill texts still on its site; a bill counts when the introduced text names
+the person first ("Sponsored by: Assemblyman ..." or, on pre-filed bills, "By
+Assemblyman LANCE"): 437 rows for 7 people (one bill naming another member
+first is excluded).
 For Minnesota, 1995–2008 bills come from the Revisor of Statutes' bill status
 system (revisor.mn.gov): the bills of each member's own house on which they
 are chief author, with the introduction text. Minnesota's texts print no
@@ -419,10 +427,10 @@ and some archives list it again with the same number and text.
 For Tennessee, 1997–2002 and 2007–2008 bills and joint resolutions come from the
 Internet Archive's copies of the General Assembly's former bill files; each file
 is the bill as filed and names its prime sponsor ("SENATE BILL 360 By Cohen").
-508 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
+509 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
 Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995,
-Maryland and Missouri from 1996, New Mexico, Ohio,
-Illinois, Louisiana, Nevada, North Dakota, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, New Jersey from 2000, Arizona and Massachusetts from 2001, Wyoming from 2003, other states from 2008); for
+Maryland, Missouri and New Jersey from 1996, New Mexico, Ohio,
+Illinois, Louisiana, Nevada, North Dakota, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, Arizona and Massachusetts from 2001, Wyoming from 2003, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
 York bills); `year`/`congress` then fall back to the bill's status date or
@@ -436,14 +444,32 @@ the introduced text names a different legislator.
 **Table 5: Federal bill text**
 One row per sponsored bill or resolution with digital text (same bills as
 Table 7). `bioguide_id`, `name`, `bill_id`, `bill_name`, `congress`, `year`,
-`chamber` (chamber of origin: `House` or `Senate`), `bill_text` (plain text of
-the version as introduced, or the earliest version Congress.gov has).
-Source: Congress.gov bill text (Government Publishing Office). Coverage:
-115,617 of 115,682 bills from the 101st Congress (1989) on (52 have no digital
-text; 13 garbled 1989 scans were removed, see
-`replication/data/reference/excluded_bill_texts.csv`); Congress.gov has
-almost no digital text before 1989, so the 137 people whose bills all predate
-1989 have no rows here (their bills are in Table 7).
+`chamber` (chamber of origin: `House` or `Senate`), `text_source`
+(`Congress.gov` or `Statutes at Large`), `bill_text` (plain text of the version
+as introduced, or the earliest version Congress.gov has; for `Statutes at
+Large` rows, the measure as enacted).
+Sources: Congress.gov bill text (Government Publishing Office): 115,617 of
+115,682 bills from the 101st Congress (1989) on (52 have no digital text; 13
+garbled 1989 scans were removed, see
+`replication/data/reference/excluded_bill_texts.csv`). Congress.gov has almost
+no digital text before 1989, so for 1969–1988 (91st–100th Congresses) the
+enacted measures have the text printed in the United States Statutes at Large
+(volumes 83–102, GovInfo; `replication/scripts/federal/fetch_statutes_text.py`):
+every public and private law whose primary bill is one of the person's, and
+every concurrent resolution adopted, 2,736 rows for 306 people (105 of them
+have no other federal text). These texts are GPO's scans with a text layer, so
+they carry OCR errors. Each law's text is cut from the Statutes pages at the
+law's own heading ("Public Law 99-446 / 99th Congress") to the next law's;
+a concurrent resolution's text is the block ending with its "Agreed to"
+line, identified by its printed citation ("[H. Con. Res. 278]") or, where that
+is unreadable, by its printed caption matching GPO's title. Of the 2,744
+enacted measures, one has no text: GPO's file for S. Con. Res. 59 (98th
+Congress) lacks its last page. GPO's metadata links Public Law 91-182 to H.R.
+15112, but the law printed is H.J. Res. 1041, so that link is not used.
+H.J. Res. 738 (99th Congress) was enacted twice (Public Laws 99-500 and 99-591);
+the first is kept. Bills that did not become law have no text before 1989
+(introduced bills of that period are not digitized in any free source), so 33
+people with bills in Table 7 have no rows here.
 
 **Table 6: State bill topics**
 `bioguide_id`, `name`, `bill_id`, `bill_name`, `state_session`, `congress`,
@@ -454,13 +480,29 @@ One row per bill or resolution sponsored (amendments excluded: Congress.gov
 gives them no title or topic). `bioguide_id`, `name`,
 `bill_id` (Congress-type-number, e.g. `117-HR-1234`), `bill_name` (title),
 `congress`, `year` (year introduced), `topic` (Congress.gov policy area; blank
-for 800 items with none; some 93rd–95th Congress items use older subject
-terms), `passed` (`Yes` if it became law, including over a veto; for simple
-resolutions, if agreed to; for concurrent resolutions, if agreed to by the
-second chamber. Based on Congress.gov's latest recorded action).
+for 800 items with none and for all 1969–1972 bills; some 93rd–95th Congress
+items use older subject terms), `passed` (`Yes` if it became law, including
+over a veto; for simple resolutions, if agreed to; for concurrent resolutions,
+if agreed to by the second chamber), `source` (`Congress.gov` or
+`Congressional Bills Project`). `passed` comes from Congress.gov's latest
+recorded action, and is also `Yes` for every bill on Congress.gov's list of laws
+for its Congress (`replication/scripts/federal/fetch_laws.py`) and every measure
+printed in the Statutes at Large (Table 5): for older measures the latest
+recorded action is sometimes a procedural step after enactment (H.R. 2 of the
+100th Congress, enacted over a veto, ends on "Message on Senate action sent to
+the House"), which corrected 302 rows.
 
-Covers every Congress each person sponsored legislation in (93rd Congress
-on). Source: Congress.gov API, fetched 2026-08 to 2026-10. For 36 prolific
+Covers every Congress each person sponsored legislation in (91st Congress,
+1969, on). Source: Congress.gov API, fetched 2026-08 to 2026-10, from the 93rd
+Congress (1973); Congress.gov lists no sponsored legislation before that, so
+the 91st–92nd Congresses (1969–1972) come from the Congressional Bills Project
+(E. Scott Adler and John Wilkerson, distributed by the Comparative Agendas
+Project, file `US-Legislative-congressional_bills_19.3.csv`;
+`replication/scripts/federal/cbp_bills_1969_1972.py`): 8,628 public bills (H.R.
+and S.; the dataset has no resolutions) for 108 people, 228 of which became
+law. That dataset names sponsors without an ID, so each member was matched to
+the name spelling used for them in each Congress and chamber
+(`replication/data/reference/cbp_sponsor_names_1969_1972.csv`). For 36 prolific
 sponsors, Congress.gov's item list is slightly shorter than its own reported
 total (largest gap: 45 of 3,329); this is a known quirk of the API.
 

@@ -36,6 +36,24 @@ python3 replication/scripts/federal/fetch_federal_bill_text.py sponsored_legisla
 Check: every member's `ItemsMatch` is True in `fetch_log_refresh.csv`; the merge prints per-person shortfalls (a few
 long-serving members are 2 items short of Congress.gov's count, which includes duplicates: accepted).
 
+Then refresh the law list (Table 7's `passed` also counts every bill on it): delete the 119th Congress's cached pages
+so they are fetched again, and rerun (about 30 seconds):
+
+```
+rm federal_laws_cache/119_*.json
+python3 replication/scripts/federal/fetch_laws.py
+```
+
+The 1969-1988 sources do not change and need no refresh; if a member was added in step 1 who served then, rerun
+(from cache, only new files are fetched):
+
+```
+python3 replication/scripts/federal/cbp_bills_1969_1972.py          # Congressional Bills Project, 1969-1972 (Table 7)
+python3 replication/scripts/federal/fetch_statutes_text.py --texts  # Statutes at Large, enacted text 1969-1988 (Table 5)
+```
+
+A new 1969-1972 member also needs rows in `replication/data/reference/cbp_sponsor_names_1969_1972.csv`.
+
 ## 3. State (LegiScan; ~1 hour)
 
 1. Delete the bulk datasets of sessions still in progress, so they are downloaded again:

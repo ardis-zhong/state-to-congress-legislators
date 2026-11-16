@@ -36,15 +36,23 @@ are too large for GitHub and will be published on Harvard Dataverse.
 
 ## Data coverage and limitations
 
-**State data starts around 2007.** LegiScan, the source for state bills,
-has no digitized sessions before roughly 2007-2010, depending on the state
-(per-state start dates:
-`replication/data/reference/legiscan_state_coverage.csv`). Many people in
-the population served in their state legislature entirely before that, so
-no state bill data exists for them. Others are partly covered, and their
-state bill data is a lower bound rather than a complete career record (see
-`replication/data/reference/legiscan_coverage_gap_analysis.csv`). Federal
-data from Congress.gov covers the full 1979-present period.
+**State bill text** comes from LegiScan for roughly 2009 on, and for earlier
+sessions from each legislature's own records (archived websites, bill-status
+systems and published databases; for some states, copies kept by the
+Internet Archive). How far back that reaches depends on the state: from
+1969 in Pennsylvania, from the late 1980s or 1990s in most states, and not at
+all where the legislature's old records are print-only or closed to
+automated access. `documentation/coverage_report.md` gives coverage by state
+and decade, with the reason for each gap; state service before a state's
+records begin has no bill text, so those people's state bill data is a
+lower bound rather than a complete career record.
+
+**Federal bills** (Table 7) come from Congress.gov from the 93rd Congress
+(1973) on, and from the Congressional Bills Project for the 91st-92nd
+(1969-1972). **Federal bill text** (Table 5) is the text as introduced from
+Congress.gov from 1989 on; for 1969-1988, Congress.gov has no digital text,
+so only bills that became law (and concurrent resolutions) have text, as
+printed in the Statutes at Large.
 
 ## Data sources and licensing
 
@@ -65,6 +73,19 @@ is published here under that license, with attribution:
 > © LegiScan LLC, licensed under CC BY 4.0
 > (https://creativecommons.org/licenses/by/4.0/). Retrieved via
 > https://legiscan.com.
+
+**Federal bills before 1973** (Table 7, 91st-92nd Congresses): E. Scott
+Adler and John Wilkerson, Congressional Bills Project, distributed by the
+Comparative Agendas Project
+(https://compagendas.la.utexas.edu/project/us/datasets, file
+`US-Legislative-congressional_bills_19.3.csv`). **Enacted federal text
+before 1989** (Table 5): United States Statutes at Large, volumes 83-102,
+from the Government Publishing Office's GovInfo service (U.S. government
+work).
+
+**State legislatures' own records** (Table 4 rows whose `text_source` is a
+legislature): bill text and sponsor records published by the state
+legislatures; see `datasets/README.md` for each source.
 
 **Legislative effectiveness scores** (Table 3) come from the Center for
 Effective Lawmaking (thelawmakers.org) and are republished here with the

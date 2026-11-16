@@ -46,12 +46,12 @@ TABLES = {
         ["bioguide_id", "name", "bill_id", "bill_name", "state_session", "congress", "year", "state",
          "text_source", "text_version", "first_named", "bill_text"]),
     5: ("table5_federal_bill_text",
-        ["bioguide_id", "name", "bill_id", "bill_name", "congress", "year", "chamber", "bill_text"]),
+        ["bioguide_id", "name", "bill_id", "bill_name", "congress", "year", "chamber", "text_source", "bill_text"]),
     6: ("table6_state_bill_topics",
         ["bioguide_id", "name", "bill_id", "bill_name", "state_session", "congress", "year", "topic",
          "passed"]),
     7: ("table7_federal_bill_topics",
-        ["bioguide_id", "name", "bill_id", "bill_name", "congress", "year", "topic", "passed"]),
+        ["bioguide_id", "name", "bill_id", "bill_name", "congress", "year", "topic", "passed", "source"]),
 }
 
 
@@ -399,7 +399,8 @@ def drop_carried_over(rows):
 # North Carolina: 1989-2008 from ncleg.gov (first-named primary sponsor in the introduced text).
 # Wisconsin: 1995-2010 from docs.legis.wisconsin.gov (first-named author in the introduced text).
 # New Jersey: 2000-2009 from njleg.state.nj.us (first prime sponsor, checked against the introduced
-# text). Minnesota: 1995-2008 from the Revisor's bill status (chief authors; texts print no authors).
+# text); 1996-1999 from the Legislature's published bill-tracking databases (FIRSTPRIME) and bill texts.
+# Minnesota: 1995-2008 from the Revisor's bill status (chief authors; texts print no authors).
 # Texas: 1993-2009 from the Legislature's FTP site (first author in the author reports, checked against the
 # introduced text's "By:" line).
 # Louisiana: 1997-2009 from legis.la.gov (primary author, checked against the original version's "BY ..." line).
@@ -480,7 +481,7 @@ ARCHIVE_SOURCES = [
     ("mo_house_state_legislation_sponsored.csv", "MO", "Missouri House of Representatives"),  # local; mo_house_bills.py (1996-1999)
     ("mo_house_archive_state_legislation_sponsored.csv", "MO", "Missouri House of Representatives"),  # local; mo_house_bills.py --archive-* (2000-2009)
     ("ok_wayback_state_legislation_sponsored.csv", "OK", "Oklahoma Legislature (Internet Archive)"),  # local; ok_wayback_bills.py (1999-2004 House)
-    ("nj_wayback_state_legislation_sponsored.csv", "NJ", "New Jersey Legislature (Internet Archive)"),  # local; nj_wayback_bills.py (1996-1999 sample)
+    ("nj_legdb_state_legislation_sponsored.csv", "NJ", "New Jersey Legislature"),  # local; nj_legdb_bills.py (1996-1999; replaces the nj_wayback_bills.py sample)
     ("ct_ps_state_legislation_sponsored.csv", "CT", "Connecticut General Assembly"),  # local; ct_ps_bills.py (1993-2000)
     ("co_sessionlaws_state_legislation_sponsored.csv", "CO", "Colorado General Assembly (Internet Archive)"),  # local; co_sessionlaws_bills.py (1993-2006 enacted)
 ]
@@ -519,7 +520,7 @@ def archive_rows(people, skip):
     same form as OLIS ones (e.g. OR-1999R1-HB2013); AZ-<Legislature><session>-HB2059 (e.g. AZ-471R-HB2059, the
     47th Legislature's first regular session, 2005; AZ-452S-SB1001 for its second special session), CO-<year>A-HB1011 (e.g.
     CO-2007A-HB1011, the 2007 regular session), FL-<year>-<HB|SB><n> for Florida 1995-1997 (e.g. FL-1995-HB13), MO-<year>-HB<n> for the Missouri House 1996-1999 and
-    MO-<year><R|S1|S2>-HB<n> for 2000-2009 (e.g. MO-2003R-HB71, MO-2003S1-HB1; 2000-2003 texts are Internet Archive copies, text_source "Missouri House of Representatives (Internet Archive)", set per row by the file's TextSource column). OK-<year>-HB<n> for the Oklahoma House 1999-2004 (e.g. OK-2001-HB1004). New Jersey 1996-1999 archive copies use the 2000-on form (NJ-1998-A1128); Connecticut 1993-2000 bills the 2001-on form (CT-1995-HB05005). California
+    MO-<year><R|S1|S2>-HB<n> for 2000-2009 (e.g. MO-2003R-HB71, MO-2003S1-HB1; 2000-2003 texts are Internet Archive copies, text_source "Missouri House of Representatives (Internet Archive)", set per row by the file's TextSource column). OK-<year>-HB<n> for the Oklahoma House 1999-2004 (e.g. OK-2001-HB1004). New Jersey 1996-1999 bills use the 2000-on form (NJ-1998-A1128); Connecticut 1993-2000 bills the 2001-on form (CT-1995-HB05005). California
     1989-1992 rows are enacted bills only, in their chaptered version (text_version = Chaptered),
     with the year chaptered as year; South Carolina 1985-1990 rows are likewise enacted bills only
     (ratified acts, text_version = Enrolled), with the year ratified; Colorado 1993-2006 rows (CO-<year>A-HB<n>,
@@ -560,7 +561,10 @@ FEDERAL_TEXT_MANIFEST = "federal_bill_text_manifest.csv"  # local; written by fe
 def build_table5():
     """One row per sponsored bill or resolution that has digital text (the Introduced
     version, or the earliest version Congress.gov has). Same bills as Table 7; Congress.gov
-    has almost no digital text before the 101st Congress (1989). chamber = chamber of origin."""
+    has almost no digital text before the 101st Congress (1989), so for 1969-1988 the enacted
+    measures (laws and concurrent resolutions) have the text printed in the Statutes at Large
+    (GovInfo; fetch_statutes_text.py; text_source = "Statutes at Large", decided 2026-11-15 to
+    complete coverage). chamber = chamber of origin."""
     for path in (FEDERAL_STATUS, FEDERAL_TEXT_MANIFEST):
         if not os.path.exists(path):
             raise Pending(f"{path} missing; run the federal steps in replication/README.md")
@@ -569,24 +573,32 @@ def build_table5():
         for m in csv.DictReader(f):
             if int(m["TextLength"] or 0) > 0 and m["TextPath"]:
                 text_path[(m["Congress"], m["BillType"].lower(), m["BillNumber"])] = m["TextPath"]
+    statute_path = {}
+    if os.path.exists(FEDERAL_STATUTES_MANIFEST):
+        with open(FEDERAL_STATUTES_MANIFEST, newline="", encoding="utf-8") as f:
+            for m in csv.DictReader(f):
+                if int(m["TextLength"] or 0) > 0 and m["TextPath"]:
+                    statute_path.setdefault((m["Congress"], m["BillType"].lower(), m["BillNumber"]), m["TextPath"])
     people = {p["BioguideId"]: p["Name"] for p in load_person_level()}
     skip = excluded_texts(5)
     rows = []
-    with open(FEDERAL_STATUS, newline="", encoding="utf-8") as f:
-        for r in csv.DictReader(f):
-            if r["ItemCategory"] != "Bill/Resolution" or r["BioguideId"] not in people:
-                continue
-            if f"{r['Congress']}-{r['Type'].upper()}-{r['Number']}" in skip:
-                continue
-            path = text_path.get((r["Congress"], r["Type"].lower(), r["Number"]))
-            if not path or not os.path.exists(path):
-                continue
-            with open(path, encoding="utf-8", errors="replace") as tf:
-                text = tf.read()
-            rows.append([r["BioguideId"], people[r["BioguideId"]],
-                         f"{r['Congress']}-{r['Type'].upper()}-{r['Number']}", " ".join(r["Title"].split()),
-                         str(r["Congress"]), int(r["IntroducedDate"][:4]) if r["IntroducedDate"] else None,
-                         "House" if r["Type"].upper().startswith("H") else "Senate", text])
+    for r in federal_items():
+        if r["BioguideId"] not in people:
+            continue
+        if f"{r['Congress']}-{r['Type'].upper()}-{r['Number']}" in skip:
+            continue
+        key = (r["Congress"], r["Type"].lower(), r["Number"])
+        path, source = text_path.get(key), "Congress.gov"
+        if not path or not os.path.exists(path):
+            path, source = statute_path.get(key), "Statutes at Large"
+        if not path or not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8", errors="replace") as tf:
+            text = tf.read()
+        rows.append([r["BioguideId"], people[r["BioguideId"]],
+                     f"{r['Congress']}-{r['Type'].upper()}-{r['Number']}", " ".join(r["Title"].split()),
+                     str(r["Congress"]), int(r["Year"]) if r["Year"] else None,
+                     "House" if r["Type"].upper().startswith("H") else "Senate", source, text])
     rows.sort(key=lambda r: (r[0], int(r[4]), r[2]))
     return rows
 
@@ -596,6 +608,59 @@ def build_table6():
 
 
 FEDERAL_STATUS = "sponsored_legislation_full_status.csv"  # local; see replication/README.md step 2
+# 1969-1972 (91st-92nd Congresses), before Congress.gov's sponsored-legislation lists: Congressional Bills
+# Project (Adler and Wilkerson), cbp_bills_1969_1972.py (decided 2026-11-15 to complete coverage)
+FEDERAL_CBP = "cbp_sponsored_legislation_1969_1972.csv"
+FEDERAL_STATUTES_MANIFEST = "federal_statutes_manifest.csv"  # local; fetch_statutes_text.py (enacted texts, 1969-1988)
+
+
+def federal_items():
+    """Every sponsored bill or resolution (no amendments), as dicts with BioguideId, Congress, Type, Number,
+    Title, Year, Topic, Passed, Source: Congress.gov from the 93rd Congress, the Congressional Bills Project
+    for the 91st-92nd."""
+    out = []
+    enacted = enacted_measures()
+    with open(FEDERAL_STATUS, newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            if r["ItemCategory"] != "Bill/Resolution":
+                continue
+            passed = federal_passed(r["Type"], r["BillStatus"], r["LatestActionText"])
+            if (r["Congress"], r["Type"].upper(), r["Number"]) in enacted:
+                passed = "Yes"
+            out.append({"BioguideId": r["BioguideId"], "Congress": r["Congress"], "Type": r["Type"],
+                        "Number": r["Number"], "Title": r["Title"],
+                        "Year": r["IntroducedDate"][:4] if r["IntroducedDate"] else "",
+                        "Topic": r["PolicyArea"], "Passed": passed, "Source": "Congress.gov"})
+    if os.path.exists(FEDERAL_CBP):
+        with open(FEDERAL_CBP, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                out.append({"BioguideId": r["BioguideId"], "Congress": r["Congress"], "Type": r["Type"],
+                            "Number": r["Number"], "Title": r["Title"], "Year": r["Year"], "Topic": "",
+                            "Passed": "Yes" if r["BecameLaw"] == "Yes" or (r["Congress"], r["Type"].upper(), r["Number"]) in enacted
+                            else "No", "Source": "Congressional Bills Project"})
+    return out
+
+
+FEDERAL_LAWS = "federal_laws.csv"  # local; fetch_laws.py (Congress.gov law lists, 93rd Congress on)
+
+
+def enacted_measures():
+    """(congress, TYPE, number) of every measure known to be enacted or adopted apart from its latest action:
+    Congress.gov's law lists (bills and joint resolutions that became law), and measures printed in the Statutes
+    at Large (laws and concurrent resolutions, 1969-1988), counting only texts found and checked by
+    fetch_statutes_text.py. Congress.gov's latest recorded action for older measures is sometimes a procedural
+    step after enactment, so the latest action alone misses some (decided 2026-11-15)."""
+    out = set()
+    if os.path.exists(FEDERAL_LAWS):
+        with open(FEDERAL_LAWS, newline="", encoding="utf-8") as f:
+            out |= {(r["Congress"], r["BillType"].upper(), r["BillNumber"]) for r in csv.DictReader(f)}
+    if os.path.exists(FEDERAL_STATUTES_MANIFEST):
+        with open(FEDERAL_STATUTES_MANIFEST, newline="", encoding="utf-8") as f:
+            out |= {(r["Congress"], r["BillType"].upper(), r["BillNumber"]) for r in csv.DictReader(f)
+                    if r["TextPath"] and int(r["TextLength"] or 0) > 0}
+    return out
+
+
 LAW_STATUSES = {"Became Law", "Became Law (Veto Overridden)"}
 
 
@@ -610,28 +675,28 @@ def federal_passed(bill_type, status, latest_action):
         return "Yes" if status == "Agreed To (Resolution)" else "No"
     if t in ("HCONRES", "SCONRES"):
         origin, other = ("House", "Senate") if t == "HCONRES" else ("Senate", "House")
-        adopted = status == "Agreed To (Resolution)" and re.search(
-            rf"agreed to in (the )?{other}|{other} agreed to|message on {other} action", latest_action, re.I)
+        adopted = (status == "Agreed To (Resolution)" and re.search(
+            rf"agreed to in (the )?{other}|{other} agreed to|message on {other} action", latest_action, re.I)) or \
+            re.match(rf"\s*(measure )?passed {other}\b(?!,? amended)", latest_action, re.I)   # older wording of the second vote
         return "Yes" if adopted else "No"
     return "No"
 
 
 def build_table7():
     """One row per sponsored bill or resolution (amendments excluded: Congress.gov gives
-    them no title or policy area). topic = Congress.gov policy area (blank if none);
+    them no title or policy area). topic = Congress.gov policy area (blank if none; always blank
+    for 1969-1972, whose bills come from the Congressional Bills Project, source column);
     passed = became law / adopted; year = year introduced; congress = Congress number."""
     if not os.path.exists(FEDERAL_STATUS):
         raise Pending(f"{FEDERAL_STATUS} missing; run the federal steps in replication/README.md")
     people = {p["BioguideId"]: p["Name"] for p in load_person_level()}
     rows = []
-    with open(FEDERAL_STATUS, newline="", encoding="utf-8") as f:
-        for r in csv.DictReader(f):
-            if r["ItemCategory"] != "Bill/Resolution" or r["BioguideId"] not in people:
-                continue
-            rows.append([r["BioguideId"], people[r["BioguideId"]],
-                         f"{r['Congress']}-{r['Type'].upper()}-{r['Number']}", " ".join(r["Title"].split()),
-                         str(r["Congress"]), int(r["IntroducedDate"][:4]) if r["IntroducedDate"] else None,
-                         r["PolicyArea"], federal_passed(r["Type"], r["BillStatus"], r["LatestActionText"])])
+    for r in federal_items():
+        if r["BioguideId"] not in people:
+            continue
+        rows.append([r["BioguideId"], people[r["BioguideId"]],
+                     f"{r['Congress']}-{r['Type'].upper()}-{r['Number']}", " ".join(r["Title"].split()),
+                     str(r["Congress"]), int(r["Year"]) if r["Year"] else None, r["Topic"], r["Passed"], r["Source"]])
     rows.sort(key=lambda r: (r[0], int(r[4]), r[2]))
     return rows
 

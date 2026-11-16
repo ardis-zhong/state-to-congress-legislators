@@ -11,11 +11,11 @@ Generated 2026-11-15 by `replication/coverage_report.py` from the built tables (
 | 1969 | 135 | 4 | 3.0% | 0 | 0.0% |
 | 1970s | 1,653 | 85 | 5.1% | 0 | 0.0% |
 | 1980s | 1,766 | 116 | 6.6% | 31 | 1.8% |
-| 1990s | 1,817 | 875 | 48.2% | 734 | 40.4% |
+| 1990s | 1,817 | 890 | 49.0% | 734 | 40.4% |
 | 2000s | 1,648 | 1,420 | 86.2% | 1,447 | 87.8% |
 | 2010s | 1,139 | 1,030 | 90.4% | 1,030 | 90.4% |
 | 2020s | 323 | 289 | 89.5% | 266 | 82.4% |
-| All | 8,481 | 3,819 | 45.0% | 3,508 | 41.4% |
+| All | 8,481 | 3,834 | 45.2% | 3,508 | 41.4% |
 
 SLES (CEL's State Legislative Effectiveness Scores) begin by state between the late 1980s and the 2000s, so earlier state service has no score anywhere.
 
@@ -33,9 +33,9 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Ohio | 41 | 359 | 199 | 159 | 37 | 3 | before 1997 not online (SOLAR starts 1997) |
 | Georgia | 27 | 268 | 179 | 125 | 51 | 3 | before 1995 not online; 1995-2008 only what the Internet Archive kept |
 | Michigan | 37 | 314 | 149 | 132 | 8 | 9 | before 1989 not online |
-| New Jersey | 27 | 296 | 143 | 85 | 58 | 0 | before 2000 not online |
 | Virginia | 30 | 299 | 136 | 104 | 28 | 4 | before 1994 not online (LIS starts 1994) |
 | Missouri | 21 | 207 | 132 | 90 | 38 | 4 | before 1996 not online (House records from 1996, Senate from 1996); House courtesy resolutions have no text |
+| New Jersey | 27 | 296 | 128 | 85 | 43 | 0 | before 1996 not online (1996-1999 from the Legislature's published bill-tracking databases) |
 | Washington | 24 | 197 | 127 | 101 | 24 | 2 | before 1991 not online |
 | Wisconsin | 19 | 219 | 121 | 78 | 39 | 4 | before 1995 not online |
 | Minnesota | 22 | 190 | 117 | 91 | 22 | 4 | before 1995 not online |
@@ -76,7 +76,7 @@ Person-years with no Table 4 row, by period, and the reason where known. 2009 on
 | Alaska | 3 | 20 | 6 | 5 | 0 | 1 | before 1993 not online |
 | New Mexico | 5 | 21 | 6 | 4 | 1 | 1 | before 1996 not online |
 
-440 people with state service since 1969 have no Table 4 row at all.
+439 people with state service since 1969 have no Table 4 row at all.
 
 ### Appendix: person-years from 2009 on without state bill text (164)
 
@@ -226,29 +226,29 @@ LegiScan covers every state from 2009 or 2010, so each of these needs a reason. 
 
 | Decade (Congress start) | Person-Congresses | LES score (T3) | ≥1 sponsored item (T7) | ≥1 bill text (T5) |
 |---|---|---|---|---|
-| 1960s | 92 | 0.0% | 0.0% | 0.0% |
-| 1970s | 849 | 86.2% | 86.5% | 0.0% |
-| 1980s | 1,289 | 99.6% | 98.1% | 21.2% |
+| 1960s | 92 | 0.0% | 97.8% | 54.3% |
+| 1970s | 849 | 86.2% | 98.8% | 51.7% |
+| 1980s | 1,289 | 99.6% | 98.1% | 62.1% |
 | 1990s | 1,315 | 99.8% | 98.6% | 98.6% |
 | 2000s | 1,389 | 99.9% | 99.4% | 99.4% |
 | 2010s | 1,335 | 99.4% | 99.2% | 99.1% |
 | 2020s | 771 | 66.4% | 99.6% | 99.6% |
-| All | 7,040 | 93.1% | 96.1% | 71.6% |
+| All | 7,040 | 93.1% | 98.9% | 86.1% |
 
 By Congress where coverage is short of the served count:
 
 | Congress | Served | LES | Items | Text |
 |---|---|---|---|---|
-| 91 | 92 | 0 | 0 | 0 |
-| 92 | 109 | 0 | 0 | 0 |
-| 93 | 132 | 131 | 132 | 0 |
-| 94 | 168 | 164 | 165 | 0 |
-| 95 | 197 | 195 | 195 | 0 |
-| 96 | 243 | 242 | 242 | 0 |
-| 97 | 243 | 243 | 238 | 0 |
-| 98 | 256 | 254 | 250 | 2 |
-| 99 | 254 | 252 | 248 | 2 |
-| 100 | 265 | 264 | 261 | 1 |
+| 91 | 92 | 0 | 90 | 50 |
+| 92 | 109 | 0 | 105 | 49 |
+| 93 | 132 | 131 | 132 | 69 |
+| 94 | 168 | 164 | 165 | 82 |
+| 95 | 197 | 195 | 195 | 107 |
+| 96 | 243 | 242 | 242 | 132 |
+| 97 | 243 | 243 | 238 | 111 |
+| 98 | 256 | 254 | 250 | 136 |
+| 99 | 254 | 252 | 248 | 137 |
+| 100 | 265 | 264 | 261 | 149 |
 | 101 | 271 | 271 | 268 | 268 |
 | 102 | 263 | 262 | 259 | 259 |
 | 103 | 265 | 265 | 261 | 261 |
@@ -266,7 +266,7 @@ By Congress where coverage is short of the served count:
 | 118 | 256 | 255 | 255 | 255 |
 | 119 | 258 | 0 | 256 | 256 |
 
-Known causes: CEL's LES starts with the 93rd Congress (1973) and has not scored the 119th yet; within the 93rd-118th, every person-Congress without an LES is a few weeks or months of service (sworn in after a November special election, or left early in the Congress), which CEL does not score, except Sheila Frahm and Charles H. Wilson (D-CA), whom CEL's files lack (checked 2026-11-10); Congress.gov's sponsored-legislation API starts with the 93rd; Congress.gov has almost no digital bill text before the 101st (1989). A person-Congress with no sponsored item at all is usually genuine (short service, or a member who sponsored nothing as lead sponsor).
+Known causes: CEL's LES starts with the 93rd Congress (1973) and has not scored the 119th yet; within the 93rd-118th, every person-Congress without an LES is a few weeks or months of service (sworn in after a November special election, or left early in the Congress), which CEL does not score, except Sheila Frahm and Charles H. Wilson (D-CA), whom CEL's files lack (checked 2026-11-10); Congress.gov's sponsored-legislation API starts with the 93rd, so the 91st-92nd (1969-1972) come from the Congressional Bills Project (public bills only, no resolutions); Congress.gov has almost no digital bill text before the 101st (1989), so for the 91st-100th only enacted measures have text (Statutes at Large), and a person-Congress without text there is one in which none of the person's bills became law. A person-Congress with no sponsored item at all is usually genuine (short service, or a member who sponsored nothing as lead sponsor).
 
 ## Demographics (Table 2)
 

@@ -42,6 +42,7 @@ from build_tables import TABLES, DATASETS_DIR, PERSON_LEVEL, LEGISLATOR_FILES  #
 SAMPLE_OUT = "validation_sample.tsv"
 # Rows flagged by a check, looked at by hand, and found correct (with the reason).
 REVIEWED = "replication/data/reference/validation_reviewed.csv"
+OCR_DIGITS = str.maketrans({"I": "1", "i": "1", "l": "1", "|": "1", "o": "0", "O": "0", "S": "5", "s": "5"})
 TYPE_NAMES = {"HR": "house-bill", "S": "senate-bill", "HRES": "house-resolution",
               "SRES": "senate-resolution", "HJRES": "house-joint-resolution",
               "SJRES": "senate-joint-resolution", "HCONRES": "house-concurrent-resolution",
@@ -79,8 +80,8 @@ ALLOWED = {
                          "Oklahoma Legislature (Internet Archive)", "New Jersey Legislature (Internet Archive)"},
         "text_version": {"Introduced", "Prefiled", "Draft", "Amended", "Reported", "Engrossed", "Adopted", "Enrolled", "Chaptered"},
         "first_named": {"Yes", "No", "Unknown"}},
-    5: {"chamber": {"House", "Senate"}},
-    7: {"passed": {"Yes", "No"}},
+    5: {"chamber": {"House", "Senate"}, "text_source": {"Congress.gov", "Statutes at Large"}},
+    7: {"passed": {"Yes", "No"}, "source": {"Congress.gov", "Congressional Bills Project"}},
 }
 
 problems = []
@@ -235,12 +236,21 @@ def main():
             short = [(r.bill_id, r.bill_text[:80]) for r in df.itertuples() if len(r.bill_text) < 200]
             report(n, "text is at least 200 characters", len(short), len(df), short, warn_only=True)
 
-            miss = []
+            miss, statutes_caption = [], []
             for r in df.itertuples():
                 text = re.sub(r"\s+", " ", r.bill_text.replace("\xa0", " ")).upper()
                 if n == 5:
                     c, typ, num = r.bill_id.split("-")
                     ok = re.search(TYPE_TEXT[typ] + r"\s*" + num + r"\b", text[:3000]) is not None
+                    if not ok and r.text_source == "Statutes at Large":
+                        # scanned margin notes: OCR letters for digits ('[H. R. II334]'), spaces inside the number;
+                        # a law's text starts at the heading it was matched on (fetch_statutes_text.py)
+                        raw = re.sub(r"\s+", " ", r.bill_text[:3000]).translate(OCR_DIGITS)
+                        ok = (re.search(r"(?<!\d)" + r"\s?".join(num) + r"(?!\d)", raw) is not None
+                              or re.match(r"[^\n]{0,30}?(PUBLIC|PRIVATE)\s*L", text[:60]) is not None)
+                        if not ok:
+                            statutes_caption.append((r.bill_id, text[:80]))
+                            continue
                 else:
                     # California archive IDs end in X<n> for extraordinary sessions (CA-1993-SB2X1)
                     number = re.sub(r"X\d+$", "", r.bill_id.split("-", 2)[2]) if r.text_source != "LegiScan" \
@@ -261,6 +271,11 @@ def main():
             # Many states' documents omit the number (Kentucky drafts, Indiana "No. ____",
             # NC/SC/MN layouts), so for state bills this is a warning to look at, not an error.
             report(n, "text names its own bill number", len(miss), len(df), miss, warn_only=(n == 4))
+            if n == 5:
+                # concurrent resolutions whose bracket is unreadable were identified by their printed caption
+                # matching GPO's title (fetch_statutes_text.py); listed for a look, not an error
+                report(n, "Statutes text names its bill number (else identified by caption)", len(statutes_caption),
+                       len(df), statutes_caption, warn_only=True)
 
         if n in (4, 5, 7):
             for r in df.sample(min(10, len(df))).itertuples():
@@ -409,7 +424,8 @@ def main():
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "New Jersey Legislature":
                     _, yr, num = r.bill_id.split("-", 2)
-                    url = f"https://www.njleg.state.nj.us/bill-search/{yr}/{num}"
+                    url = (f"https://www.njleg.state.nj.us/bill-search/{yr}/{num}" if int(yr) >= 2000 else
+                           f"https://pub.njleg.gov/leg-databases/{ {'1996': '9697', '1998': '9899'}[yr]}data/DBASE.ZIP")
                     detail = f"{r.state_session}; {r.bill_name[:60]}"
                 elif n == 4 and r.text_source == "Minnesota Legislature":
                     _, leg, num = r.bill_id.split("-", 2)
