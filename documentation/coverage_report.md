@@ -1,6 +1,6 @@
 # Coverage report
 
-Generated 2026-11-15 by `replication/coverage_report.py` from the built tables (1,043 people). State service is counted in person-years from 1969 (Table 1's state legislative years, ranges inclusive), federal service in person-Congresses from the 91st (1969). A state person-year counts as covered when the person has a row dated that year, a row from a session that names that year, or a row in the other year of the same two-year session.
+Generated 2026-11-19 by `replication/coverage_report.py` from the built tables (1,043 people). State service is counted in person-years from 1969 (Table 1's state legislative years, ranges inclusive), federal service in person-Congresses from the 91st (1969). A state person-year counts as covered when the person has a row dated that year, a row from a session that names that year, or a row in the other year of the same two-year session.
 
 ## State service (Tables 3 and 4)
 
@@ -232,7 +232,7 @@ LegiScan covers every state from 2009 or 2010, so each of these needs a reason. 
 | 1990s | 1,315 | 99.8% | 98.6% | 98.6% |
 | 2000s | 1,389 | 99.9% | 99.4% | 99.4% |
 | 2010s | 1,335 | 99.4% | 99.2% | 99.1% |
-| 2020s | 771 | 66.4% | 99.6% | 99.6% |
+| 2020s | 771 | 66.4% | 99.7% | 99.7% |
 | All | 7,040 | 93.1% | 98.9% | 86.1% |
 
 By Congress where coverage is short of the served count:
@@ -264,7 +264,7 @@ By Congress where coverage is short of the served count:
 | 114 | 274 | 270 | 270 | 270 |
 | 115 | 270 | 266 | 266 | 266 |
 | 118 | 256 | 255 | 255 | 255 |
-| 119 | 258 | 0 | 256 | 256 |
+| 119 | 258 | 0 | 257 | 257 |
 
 Known causes: CEL's LES starts with the 93rd Congress (1973) and has not scored the 119th yet; within the 93rd-118th, every person-Congress without an LES is a few weeks or months of service (sworn in after a November special election, or left early in the Congress), which CEL does not score, except Sheila Frahm and Charles H. Wilson (D-CA), whom CEL's files lack (checked 2026-11-10); Congress.gov's sponsored-legislation API starts with the 93rd, so the 91st-92nd (1969-1972) come from the Congressional Bills Project (public bills only, no resolutions); Congress.gov has almost no digital bill text before the 101st (1989), so for the 91st-100th only enacted measures have text (Statutes at Large), and a person-Congress without text there is one in which none of the person's bills became law. A person-Congress with no sponsored item at all is usually genuine (short service, or a member who sponsored nothing as lead sponsor).
 

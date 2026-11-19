@@ -44,14 +44,14 @@ TABLES = {
         ["bioguide_id", "name", "session", "year", "les", "level", "chamber"]),
     4: ("table4_state_bill_text",
         ["bioguide_id", "name", "bill_id", "bill_name", "state_session", "congress", "year", "state",
-         "text_source", "text_version", "first_named", "bill_text"]),
+         "text_source", "text_version", "first_named", "committees", "bill_text"]),
     5: ("table5_federal_bill_text",
         ["bioguide_id", "name", "bill_id", "bill_name", "congress", "year", "chamber", "text_source", "bill_text"]),
     6: ("table6_state_bill_topics",
         ["bioguide_id", "name", "bill_id", "bill_name", "state_session", "congress", "year", "topic",
          "passed"]),
     7: ("table7_federal_bill_topics",
-        ["bioguide_id", "name", "bill_id", "bill_name", "congress", "year", "topic", "passed", "source"]),
+        ["bioguide_id", "name", "bill_id", "bill_name", "congress", "year", "topic", "passed", "source", "committees"]),
 }
 
 
@@ -334,8 +334,45 @@ def build_table4():
     out.extend(archive_rows(people, skip))
     out = drop_carried_over(out)
     out = add_first_named(out)
+    coms = state_committees()
+    out = [r[:11] + [coms.get(r[2], "")] + [r[11]] for r in out]
+    print(f"  committees: {sum(1 for r in out if r[11]):,} of {len(out):,} rows")
     out.sort(key=lambda x: (x[0], x[6], x[2]))
     return out
+
+
+LEGISCAN_COMMITTEES = "legiscan_bill_committees.csv"   # local; legiscan_committees.py
+ARCHIVE_COMMITTEES = "archive_bill_committees.csv"     # local; archive_committees.py
+FEDERAL_COMMITTEES = "federal_bill_committees.csv"     # local; fetch_committees.py
+
+
+def state_committees():
+    """Table 4 bill_id -> 'House: Judiciary; Senate: Finance' (committee referrals in order; Ardis 2026-11-18):
+    LegiScan's referral data for LegiScan rows, the legislatures' own records for archive rows where saved."""
+    out = collections.defaultdict(list)
+    if os.path.exists(LEGISCAN_COMMITTEES):
+        with open(LEGISCAN_COMMITTEES, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                out[f"{r['State']}-{r['SessionId']}-{r['BillNumber']}"].append((int(r["Order"]), r["Chamber"], r["Committee"]))
+    if os.path.exists(ARCHIVE_COMMITTEES):
+        with open(ARCHIVE_COMMITTEES, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                out[r["BillId"]].append((int(r["Order"]), r["Chamber"], r["Committee"]))
+    fmt = lambda ch, c: f"{ch}: {c}" if ch else c
+    return {k: "; ".join(fmt(ch, c) for _, ch, c in sorted(v)) for k, v in out.items()}
+
+
+def federal_committees():
+    """Table 7 bill_id -> 'House: Judiciary; Senate: Finance' (committees the measure was referred to or acted on, in
+    order of their first recorded action; Bill Status bulk data from the 108th Congress, Congress.gov before)."""
+    out = collections.defaultdict(list)
+    if os.path.exists(FEDERAL_COMMITTEES):
+        with open(FEDERAL_COMMITTEES, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                dates = re.findall(r"\d{4}-\d{2}-\d{2}", r["Activities"])
+                name = re.sub(r"\s+Committee$", "", r["Committee"].strip())
+                out[f"{r['Congress']}-{r['Type'].upper()}-{r['Number']}"].append((min(dates) if dates else "9999", r["Chamber"], name))
+    return {k: "; ".join(f"{ch}: {n}" if ch else n for _, ch, n in sorted(v)) for k, v in out.items()}
 
 
 def add_first_named(rows):
@@ -742,13 +779,16 @@ def build_table7():
     if not os.path.exists(FEDERAL_STATUS):
         raise Pending(f"{FEDERAL_STATUS} missing; run the federal steps in replication/README.md")
     people = {p["BioguideId"]: p["Name"] for p in load_person_level()}
+    coms = federal_committees()
     rows = []
     for r in federal_items():
         if r["BioguideId"] not in people:
             continue
-        rows.append([r["BioguideId"], people[r["BioguideId"]],
-                     f"{r['Congress']}-{r['Type'].upper()}-{r['Number']}", " ".join(r["Title"].split()),
-                     str(r["Congress"]), int(r["Year"]) if r["Year"] else None, r["Topic"], r["Passed"], r["Source"]])
+        bid = f"{r['Congress']}-{r['Type'].upper()}-{r['Number']}"
+        rows.append([r["BioguideId"], people[r["BioguideId"]], bid, " ".join(r["Title"].split()),
+                     str(r["Congress"]), int(r["Year"]) if r["Year"] else None, r["Topic"], r["Passed"], r["Source"],
+                     coms.get(bid, "")])
+    print(f"  committees: {sum(1 for r in rows if r[9]):,} of {len(rows):,} rows")
     rows.sort(key=lambda r: (r[0], int(r[4]), r[2]))
     return rows
 

@@ -94,7 +94,7 @@ CA,2016,2023-2024 Regular Session,R000620,Luz Rivas,lower,29,0,43,0,chamber of m
 CA,2016,2023-2024 Regular Session,W000832,Aisha Wahab,upper,0,50,0,66,chamber of most first-listed bills
 CA,2172,2025-2026 Regular Session,G000607,James Gallagher,lower,26,0,33,0,chamber of most first-listed bills
 CA,2172,2025-2026 Regular Session,M001166,Jerry McNerney,upper,0,43,0,50,chamber of most first-listed bills
-CA,2172,2025-2026 Regular Session,R000581,Laura Richardson,upper,0,43,0,54,chamber of most first-listed bills
+CA,2172,2025-2026 Regular Session,R000581,Laura Richardson,upper,0,42,0,53,chamber of most first-listed bills
 CA,2172,2025-2026 Regular Session,W000832,Aisha Wahab,upper,0,57,0,76,chamber of most first-listed bills
 CA,30,2009-2010 Regular Session,B001270,Karen Bass,any,0,0,169,23,session records no sponsor roles
 CA,30,2009-2010 Regular Session,B001285,Julia Brownley,any,0,0,294,48,session records no sponsor roles
@@ -754,7 +754,7 @@ OH,1815,2021-2022 Regular Session,S001164,Jean Schmidt,lower,11,0,55,0,chamber o
 OH,1815,2021-2022 Regular Session,S001223,Emilia Sykes,lower,15,0,57,0,chamber of most first-listed bills
 OH,2033,2023-2024 Regular Session,R000619,Michael A. Rulli,upper,0,10,0,12,chamber of most first-listed bills
 OH,2033,2023-2024 Regular Session,S001164,Jean Schmidt,lower,20,0,74,0,chamber of most first-listed bills
-OH,2190,2025-2026 Regular Session,S001164,Jean Schmidt,lower,21,0,157,33,chamber of most first-listed bills
+OH,2190,2025-2026 Regular Session,S001164,Jean Schmidt,lower,21,0,160,34,chamber of most first-listed bills
 OH,95,2011-2012 Regular Session,B001306,Troy Balderson,any,1,4,94,99,session records no sponsor roles
 OH,95,2011-2012 Regular Session,S000094,Thomas Sawyer,any,0,5,49,164,session records no sponsor roles
 OK,1043,2014 Regular Session,B001317,Josh Brecheen,upper,20,51,39,72,chamber of most first-listed bills
@@ -1088,6 +1088,8 @@ VA,2139,2024 1st Special Session,S001230,Suhas Subramanyam,any,0,0,0,0,session r
 VA,2149,2025 Regular Session,G000580,Tom Garrett,lower,21,0,21,0,chamber of most first-listed bills
 VA,2149,2025 Regular Session,M001239,John McGuire,upper,0,1,0,1,chamber of most first-listed bills
 VA,2149,2025 Regular Session,S001230,Suhas Subramanyam,upper,0,5,0,5,chamber of most first-listed bills
+VA,2237,2026 Regular Session,G000580,Tom Garrett,lower,24,0,24,0,chamber of most first-listed bills
+VA,2257,2026 1st Special Session,G000580,Tom Garrett,any,0,0,0,0,session records no sponsor roles
 VA,23,2010 Regular Session,C001105,Barbara Comstock,any,0,0,80,0,session records no sponsor roles
 VA,23,2010 Regular Session,C001118,Ben Cline,any,0,0,100,0,session records no sponsor roles
 VA,23,2010 Regular Session,G000568,Morgan Griffith,any,0,0,106,0,session records no sponsor roles

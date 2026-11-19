@@ -12,15 +12,18 @@ published on Harvard Dataverse (link to come).
 
 ## Status
 
+Data frozen November 18–19, 2026: Congress.gov, LegiScan and the Center for Effective Lawmaking's files as
+of that date.
+
 | # | File | Status |
 |---|---|---|
 | 1 | `table1_state_to_federal` | Built: 1,043 rows |
 | 2 | `table2_demographics` | Built: 1,043 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,299 scores for 1,040 people |
-| 4 | `table4_state_bill_text` | Built: 86,414 rows, 509 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland, Missouri and New Jersey from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, Arizona and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
-| 5 | `table5_federal_bill_text` | Built: 118,353 bills, 1,008 people (1989 on; enacted measures from 1969); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 86,440 rows, 509 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland, Missouri and New Jersey from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, Arizona and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
+| 5 | `table5_federal_bill_text` | Built: 119,037 bills, 1,008 people (1989 on; enacted measures from 1969); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
-| 7 | `table7_federal_bill_topics` | Built: 173,334 bills and resolutions, 1,041 people (1969 on) |
+| 7 | `table7_federal_bill_topics` | Built: 174,058 bills and resolutions, 1,041 people (1969 on) |
 
 ## Columns
 
@@ -162,7 +165,21 @@ Legislature (Internet Archive)`, or `Oklahoma Legislature (Internet Archive)`),
 version the text is: `Introduced`, or where that isn't available `Prefiled`,
 `Draft`, `Amended`, `Reported`, `Engrossed`, `Adopted`, `Enrolled`, or
 `Chaptered`), `first_named` (`Yes`, `No` or `Unknown`: whether the person is the first
-sponsor named on the bill; see below), `bill_text`.
+sponsor named on the bill; see below), `committees` (the committees the bill was referred to, in order, as
+`Chamber: Committee` separated by `; `; see below), `bill_text`.
+**`committees`.** For LegiScan rows, LegiScan's referral records (its referral list; where that is empty, the
+bill's current committee or the referral actions in its history; `replication/scripts/state/legiscan_committees.py`):
+33,035 of 37,039 rows have at least one committee; most of the rest are resolutions adopted without referral.
+For state-archive rows, the legislatures' own records where they were saved with the bill
+(`replication/scripts/state/archive_committees.py`): bill histories for California 1999–2012, Pennsylvania,
+New Jersey, Illinois, Louisiana, Minnesota, Oregon 1997–2005, Kentucky and Florida 1995–1997, and the referral
+printed on the bill itself for New York, Virginia, Michigan, North Carolina, Maryland, Washington, West
+Virginia, Wisconsin, Nevada, Mississippi, Rhode Island, Connecticut and New Hampshire (the bill's first
+committee or committees; New York's later printings show the committee path). 28,355 of 49,401 archive rows
+have committees; the other archive sources (Texas, Hawaii, Ohio, Florida 1998–2009, California before 1999 and
+smaller states) were saved without bill histories, so their `committees` is blank. Committee names are as the
+source records them (Illinois and Arizona abbreviations kept; Mississippi run-on sponsor names removed).
+
 **`first_named`.** The state-archive rows count a bill only when the person is named first
 (or is the legislature's single lead sponsor), but LegiScan's "Primary Sponsor" often covers
 several people per bill (co-prime sponsors, joint authors, every co-introducer, committee
@@ -448,8 +465,9 @@ Table 7). `bioguide_id`, `name`, `bill_id`, `bill_name`, `congress`, `year`,
 (`Congress.gov` or `Statutes at Large`), `bill_text` (plain text of the version
 as introduced, or the earliest version Congress.gov has; for `Statutes at
 Large` rows, the measure as enacted).
-Sources: Congress.gov bill text (Government Publishing Office): 115,617 of
-115,682 bills from the 101st Congress (1989) on (52 have no digital text; 13
+Sources: Congress.gov bill text (Government Publishing Office): 116,296 of
+116,406 bills from the 101st Congress (1989) on (51 recent 119th Congress
+bills not yet printed and 46 older ones have no digital text; 13
 garbled 1989 scans were removed, see
 `replication/data/reference/excluded_bill_texts.csv`). Congress.gov has almost
 no digital text before 1989, so for 1969–1988 (91st–100th Congresses) the
@@ -484,7 +502,12 @@ for 800 items with none and for all 1969–1972 bills; some 93rd–95th Congress
 items use older subject terms), `passed` (`Yes` if it became law, including
 over a veto; for simple resolutions, if agreed to; for concurrent resolutions,
 if agreed to by the second chamber), `source` (`Congress.gov` or
-`Congressional Bills Project`). For bills and joint resolutions, `passed` is
+`Congressional Bills Project`), `committees` (every committee the measure was referred
+to or acted on, as `Chamber: Committee`, in order of its first recorded action; Congress.gov names committees
+by their current names, e.g. a 1988 bill shows Health, Education, Labor, and Pensions; from GPO's Bill Status
+bulk data for the 108th Congress on and Congress.gov's committee records before, `replication/scripts/federal/fetch_committees.py`;
+160,177 of 174,070 rows; blank for the 1969–1972 bills, which no source records, and for measures never
+referred, such as privileged resolutions). For bills and joint resolutions, `passed` is
 `Yes` when Congress.gov's latest recorded action says the measure became law,
 when it is on Congress.gov's list of laws for its Congress
 (`replication/scripts/federal/fetch_laws.py`), or when it is printed as a law in

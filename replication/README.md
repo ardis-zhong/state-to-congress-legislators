@@ -72,6 +72,7 @@ python3 replication/scripts/federal/fetch_federal_bill_text.py sponsored_legisla
 python3 replication/scripts/federal/fetch_laws.py                   # Congress.gov law lists (passed = on the list), ~2 min
 python3 replication/scripts/federal/fetch_resolution_actions.py     # resolutions' vote histories (passed), ~3 h, resumable
 python3 replication/scripts/federal/fetch_statutes_enacted.py       # Statutes metadata 1989-2024 (cross-check of passed), ~3 min
+python3 replication/scripts/federal/fetch_committees.py             # committee referrals (Bill Status bulk 108th on; API before), ~5 h, resumable
 python3 replication/scripts/federal/cbp_bills_1969_1972.py          # 91st-92nd Congress bills, Congressional Bills Project file
 python3 replication/scripts/federal/fetch_statutes_text.py --mods --texts   # enacted text 1969-1988, Statutes at Large; ~4 h, resumable
 ```
@@ -86,6 +87,8 @@ python3 replication/scripts/state/legiscan_coverage_check.py   # every LegiScan 
 python3 replication/scripts/state/legiscan_match_people.py replication/data/targets/state_bill_targets_full.csv
 python3 replication/scripts/state/legiscan_fetch_state_bills.py replication/data/targets/state_bill_targets_full.csv
 python3 replication/scripts/state/legiscan_fetch_bill_text.py   # reads LEGISCAN_API_KEY from the environment; sponsors only by default; --all-sponsor-types adds co-sponsors
+python3 replication/scripts/state/legiscan_committees.py   # committee referrals from the LegiScan datasets
+python3 replication/scripts/state/archive_committees.py    # committee referrals from the state archives' saved files
 ```
 
 **4. Bill text corpus**

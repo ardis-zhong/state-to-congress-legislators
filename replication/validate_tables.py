@@ -143,7 +143,7 @@ def main():
         report(n, "bioguide_id in population", len(bad), len(df), bad.bioguide_id.head())
         dup = df[df.duplicated(KEYS[n], keep=False)]
         report(n, f"unique on {'+'.join(KEYS[n])}", len(dup), len(df), dup[KEYS[n]].head().values.tolist())
-        required = [c for c in cols if c not in ("topic", "bill_name")]
+        required = [c for c in cols if c not in ("topic", "bill_name", "committees")]   # committees blank = no referral record
         blank = df[(df[required] == "").any(axis=1)]
         report(n, "no blank required cells", len(blank), len(df),
                [(r.bioguide_id, [c for c in required if r[c] == ""]) for _, r in blank.head().iterrows()])

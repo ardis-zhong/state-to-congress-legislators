@@ -52,6 +52,25 @@ rm federal_actions_cache/119_*.json
 python3 replication/scripts/federal/fetch_resolution_actions.py
 ```
 
+Committee referrals (Table 7's `committees`): refresh the current Congress's Bill Status zips, then rerun (bills of
+earlier Congresses come from cache):
+
+```
+rm federal_committees_cache/billstatus/BILLSTATUS-119-*.zip
+python3 replication/scripts/federal/fetch_committees.py
+```
+
+Run these Congress.gov steps one after another, never in parallel: on 2026-11-18 a committee fetch running
+alongside the member refresh pushed the key over Congress.gov's rate limit and 27 members failed with HTTP 429
+(the refresh had to be rerun).
+
+State committee referrals (Table 4's `committees`), after the LegiScan steps below:
+
+```
+python3 replication/scripts/state/legiscan_committees.py
+python3 replication/scripts/state/archive_committees.py
+```
+
 The 1969-1988 sources do not change and need no refresh; if a member was added in step 1 who served then, rerun
 (from cache, only new files are fetched):
 
