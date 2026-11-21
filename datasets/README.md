@@ -20,7 +20,7 @@ of that date.
 | 1 | `table1_state_to_federal` | Built: 1,043 rows |
 | 2 | `table2_demographics` | Built: 1,043 rows |
 | 3 | `table3_effectiveness_scores` | Built: 8,299 scores for 1,040 people |
-| 4 | `table4_state_bill_text` | Built: 86,440 rows, 509 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland, Missouri and New Jersey from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, Arizona and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
+| 4 | `table4_state_bill_text` | Built: 86,440 rows, 509 people (2008 on; Pennsylvania from 1969, South Carolina from 1985, California, Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Florida, Georgia, Iowa, Minnesota and Wisconsin from 1995, Maryland, Missouri and New Jersey from 1996, Nevada, New Mexico, North Dakota, Ohio, Illinois, Louisiana, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, Arizona and Massachusetts from 2001, Wyoming from 2003); to be published on Dataverse |
 | 5 | `table5_federal_bill_text` | Built: 119,037 bills, 1,008 people (1989 on; enacted measures from 1969); to be published on Dataverse |
 | 6 | `table6_state_bill_topics` | Pending |
 | 7 | `table7_federal_bill_topics` | Built: 174,058 bills and resolutions, 1,041 people (1969 on) |
@@ -445,9 +445,9 @@ For Tennessee, 1997–2002 and 2007–2008 bills and joint resolutions come from
 Internet Archive's copies of the General Assembly's former bill files; each file
 is the bill as filed and names its prime sponsor ("SENATE BILL 360 By Cohen").
 509 people have rows (Pennsylvania from 1969, South Carolina from 1985, California,
-Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Georgia, Iowa, Minnesota and Wisconsin from 1995,
+Michigan, New Hampshire and North Carolina from 1989, Arkansas and Washington from 1991, Colorado, Connecticut, Texas and West Virginia from 1993, Virginia from 1994, Florida, Georgia, Iowa, Minnesota and Wisconsin from 1995,
 Maryland, Missouri and New Jersey from 1996, New Mexico, Ohio,
-Illinois, Louisiana, Nevada, North Dakota, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Florida from 1995, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, Arizona and Massachusetts from 2001, Wyoming from 2003, other states from 2008); for
+Illinois, Louisiana, Nevada, North Dakota, Oregon, Rhode Island, South Dakota and Tennessee from 1997, Idaho and Kentucky from 1998, Alaska, Hawaii, Mississippi, Nebraska, New York and the Oklahoma House from 1999, Arizona and Massachusetts from 2001, Wyoming from 2003, other states from 2008); for
 those whose state service began earlier these are bills from the covered
 years only. Some LegiScan dates are impossible (e.g. 1969 for 2013–2014 New
 York bills); `year`/`congress` then fall back to the bill's status date or

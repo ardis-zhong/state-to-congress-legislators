@@ -31,8 +31,8 @@ Column definitions, sources, and build status for each table are in
 [`datasets/README.md`](datasets/README.md). Tables 4 and 5 (full bill text)
 are too large for GitHub and will be published on Harvard Dataverse.
 
-**Status:** work in progress. The tables are being built one at a time;
-`datasets/README.md` shows which are finished.
+**Status:** Tables 1–5 and 7 are final as of the November 18–19, 2026 data
+freeze; Table 6 (state bill topics) is pending. `datasets/README.md` describes each table.
 
 ## Data coverage and limitations
 
