@@ -125,3 +125,4 @@ datasets/*/table5_federal_bill_text.*
 /nj_legdb_state_legislation_sponsored.csv
 /ct_ps_cache
 /co_sessionlaws_cache
+/topics_data

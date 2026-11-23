@@ -91,6 +91,21 @@ python3 replication/scripts/state/legiscan_committees.py   # committee referrals
 python3 replication/scripts/state/archive_committees.py    # committee referrals from the state archives' saved files
 ```
 
+**3b. Table 6 topic classifier (RoBERTa; training on a GPU)**
+
+```
+python3 replication/scripts/topics/build_topic_data.py      # model inputs into topics_data/ (committee references stripped)
+python3 replication/scripts/topics/topic_proxies.py         # committee / subject-term / CA-heading evidence (keyword crosswalk)
+python3 replication/scripts/topics/draw_gold_sample.py      # 400-bill hand-coding sample (documentation/topic_gold_sample/)
+python3 replication/scripts/topics/make_topic_runs.py       # the 26 runs: training-set size and time windows
+pip install -r replication/scripts/topics/requirements_topics.txt          # on the GPU machine
+sbatch replication/scripts/topics/run_topic_array.sbatch    # one job per run (or: finetune_topics.py --run-id <id>)
+python3 replication/scripts/topics/evaluate_topics.py       # learning curves, calibration, estimated + gold accuracy
+```
+
+Labels are the 33 current Congress.gov policy areas (Table 7). `topic_keyword_crosswalk.csv` maps committee names and
+legislatures' subject terms to policy areas; federal bills, whose true labels are known, calibrate that check.
+
 **4. Bill text corpus**
 
 ```

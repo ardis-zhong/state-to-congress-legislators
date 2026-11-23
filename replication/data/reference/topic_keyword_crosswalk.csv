@@ -1,0 +1,37 @@
+rule_id,pattern,policy_areas,informative,note
+agri,\b(agricultur\w*|farm\w*|food|nutrition|dairy|crops?|livestock)\b,Agriculture and Food,Yes,
+animal,\b(animals?|wildlife|fish\w*|game|hunting|veterinar\w*)\b,Animals|Public Lands and Natural Resources,Yes,fish and game committees also handle habitat
+military,\b(military|veterans?'?|national guard|defense|armed forces|armed services|intelligence)\b,Armed Forces and National Security,Yes,
+homeland,\b(homeland security|emergency|disasters?|civil defense|fire ?fighters?|fire safety)\b,Emergency Management|Armed Forces and National Security,Yes,
+arts,\b(arts?|culture|cultural|historic\w*|museums?|libraries|library|religio\w*)\b,"Arts, Culture, Religion|Social Sciences and History",Yes,
+civil,\b(civil rights|human rights|minorit\w*|equal opportunity|women|discriminat\w*|disabilit\w*)\b,"Civil Rights and Liberties, Minority Issues",Yes,
+commerce,\b(commerce|business\w*|consumers?|professions?|licens\w*|industr\w*|corporations?|small business|economic development|tourism|gaming|wagering|gambling|lottery|alcohol\w*|liquor|beverages?|trade practices|occupations?|economic growth|job creation)\b,Commerce,Yes,
+legislature,\b(legislat\w*|ethics|lobby\w*)\b,Congress|Government Operations and Politics,Yes,state legislature's own affairs = Congress category
+judiciary,\b(judiciary|judicial|courts?|codes|jurisprudence|justice|law and justice|law & justice|civil procedure|evidence)\b,"Crime and Law Enforcement|Law|Civil Rights and Liberties, Minority Issues|Families|Private Legislation|Immigration",Yes,"judiciary committees take criminal law, courts, family law, civil rights, claims and immigration"
+crime,\b(criminal|crimes?|corrections?|prisons?|public safety|law enforcement|police|sentencing|firearms|weapons|controlled substances|drugs?|offenses|punishments?)\b,Crime and Law Enforcement,Yes,
+tax,\b(tax\w*|revenue)\b,Taxation|Economics and Public Finance,Yes,
+banking,\b(banking|banks?|financial institutions|financial services|insurance|securities|credit|lending|mortgages?)\b,Finance and Financial Sector|Health,Yes,insurance committees also take health insurance
+education,\b(educat\w*|eduction|schools?|universit\w*|colleges?|higher ed\w*|students?|teachers?)\b,Education,Yes,'eduction' = typo in a committee name
+energy,\b(energy|utilit\w*|electric\w*|power|oil|gas|petroleum|nuclear|coal|mines?|mining)\b,"Energy|Science, Technology, Communications",Yes,utility committees also take telecommunications
+environment,\b(environment\w*|conservation|pollution|solid waste|toxic|hazardous|climate|air quality|recycling)\b,Environmental Protection,Yes,
+natres,\b(natural resources|public lands?|lands?|parks?|forest\w*|outdoor|land use)\b,Public Lands and Natural Resources|Environmental Protection|Water Resources Development,Yes,
+water,\b(water\w*|rivers?|flood\w*|irrigation|ports and waterways)\b,Water Resources Development|Environmental Protection,Yes,
+family,\b(famil\w*|child\w*|youth|juvenile|domestic|marriage|adoption)\b,Families|Social Welfare,Yes,
+international,\b(international|foreign|federal relations|interstate|intergovernmental)\b,International Affairs|Foreign Trade and International Finance|Government Operations and Politics,Yes,
+government,\b(government\w*|state affairs|administration|administrative|public employ\w*|civil service|state personnel|personnel|procurement|elections?|redistricting|reapportionment|privileges and elections|campaign\w*|voting|counties|cities|towns|municipal\w*|local gov\w*|state and local|public officers|constitutional amendments|constitution|oversight|accountability|government reform|district of columbia|post office|postal)\b,Government Operations and Politics,Yes,
+pension,\b(pensions?|retirement|social security|soc sec)\b,Government Operations and Politics|Labor and Employment|Social Welfare,Yes,
+health,\b(health\w*|hospitals?|medic\w*|mental|pharm\w*|nursing|physicians?|public health|h\.&h\.s)\b,Health,Yes,
+welfare,\b(human services|welfare|social services|aging|seniors?|senior citizens|elder\w*|poverty|public assistance|h\.&h\.s)\b,Social Welfare|Health,Yes,
+housing,\b(housing|community development|urban affairs|urban|community affairs|homeless\w*|real estate|real property|landlord\w*|tenants?)\b,Housing and Community Development,Yes,
+immigration,\b(immigra\w*|aliens?|citizenship|naturaliz\w*)\b,Immigration,Yes,
+labor,\b(labou?r|employment|workforce|workers?|industrial relations|jobs|unemployment|wages?|workplace|apprentice\w*)\b,Labor and Employment,Yes,
+generallaw,\b(general laws?|statutes|uniform laws?|law revision)\b,Law|Government Operations and Politics|Commerce,Yes,miscellaneous-jurisdiction committees (CT/MA/RI General Laws)
+native,\b(indian\w*|tribal|tribes?|native americans?|hawaiian affairs|hawaiian)\b,Native Americans,Yes,
+claims,\b(claims?)\b,Private Legislation,Yes,claims committees and private claims bills
+science,\b(science|technology|telecommunications?|communications|information technology|cyber\w*|broadband|internet|computers?|research|space|aeronautic\w*)\b,"Science, Technology, Communications",Yes,
+sports,\b(sports?|recreation|athletic\w*|boating|tourism)\b,Sports and Recreation,Yes,
+transport,\b(transport\w*|trans|highways?|motor vehicles?|vehicles|roads?|traffic|transit|aviation|airports?|railroads?|infrastructure|public works|bridges|merchant marine|maritime|shipping)\b,Transportation and Public Works,Yes,'trans' = abbreviated committee name
+fiscal,\b(appropriations?|approp|budget\w*|fiscal|finance|ways and means|ways & means|spending)\b,Economics and Public Finance|Taxation,No,fiscal committees take bills of every topic for their cost: ignored in the accuracy checks
+procedural,\b(rules|calendars?|assignments|committee of the whole|reference|resolutions|organization|executive nominations|operations of the (house|senate)|whole|management|steering|council)\b,,No,procedural referrals carry no topic
+commemorative,\b(commendations?|condolences?|memorials?|congratulat\w*|honorary|honoring|special (day|week|month)|recognition|deaths?|memorialized|achievement|academic achievement|designations?|symbols)\b,Commemorations,No,honorary measures: Congress.gov retired its Commemorations area after 2008; ignored in the current-33 checks
+chamberadmin,\b(house administration|senate administration|rules and administration|legislative management|legislative administration|legislative council)\b,Congress,Yes,"committees that run the chamber itself (federal House Administration, Senate Rules and Administration)"

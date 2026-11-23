@@ -1,0 +1,4 @@
+# Table 6 topic classifier (GPU machine). Python 3.9+.
+torch>=2.1
+transformers>=4.40,<5
+numpy
