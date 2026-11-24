@@ -41,6 +41,7 @@ csv.field_size_limit(sys.maxsize)
 DATA = "topics_data"
 GOLD_CODED = "documentation/topic_gold_sample/gold_sample_coded.xlsx"
 GOLD_KEY = "documentation/topic_gold_sample/gold_sample_key.csv"
+RUNS = "replication/data/reference/topic_runs.csv"
 REPORT = "documentation/topic_model_report.md"
 FIG = "documentation/topic_learning_curve.png"
 FINAL = "size_all_s1"
@@ -96,12 +97,16 @@ def main():
     gold = load_gold()
 
     runs, state_preds = [], {}
+    plan = {r["run_id"]: r["train_from"] for r in csv.DictReader(open(RUNS, newline=""))}
     for mfile in sorted(glob.glob(os.path.join(a.runs_dir, "*", "metrics.json"))):
         d = os.path.dirname(mfile)
         m = json.load(open(mfile))
         if m.get("smoke"):
             continue
         rid = m["run_id"]
+        if plan.get(rid) != m.get("train_from"):
+            print(f"skipping {rid}: not in {RUNS}, or made under an earlier design")
+            continue
         fed = list(csv.DictReader(open(os.path.join(d, "federal_test_predictions.csv"), newline="", encoding="utf-8")))
         main_set = "test" if m["design"] == "size" else "out_of_time"
         ft = [r for r in fed if r["test_set"] == main_set]

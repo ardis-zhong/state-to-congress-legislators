@@ -97,7 +97,7 @@ python3 replication/scripts/state/archive_committees.py    # committee referrals
 python3 replication/scripts/topics/build_topic_data.py      # model inputs into topics_data/ (committee references stripped)
 python3 replication/scripts/topics/topic_proxies.py         # committee / subject-term / CA-heading evidence (keyword crosswalk)
 python3 replication/scripts/topics/draw_gold_sample.py      # 400-bill hand-coding sample (documentation/topic_gold_sample/)
-python3 replication/scripts/topics/make_topic_runs.py       # the 30 runs: training-set size, time, and fixed-size time windows
+python3 replication/scripts/topics/make_topic_runs.py       # the 29 runs: training-set size, time, and fixed-size time windows
 pip install -r replication/scripts/topics/requirements_topics.txt          # on the GPU machine
 bash replication/scripts/topics/run_all_topics.sh all       # every run on one GPU (check = smoke test; <run_id> = one run)
 python3 replication/scripts/topics/evaluate_topics.py       # learning curves, calibration, estimated + gold accuracy

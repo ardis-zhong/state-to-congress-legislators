@@ -19,6 +19,7 @@ WHAT="${1:-}"
 finished() {
   local d="topic_runs_out/$1"
   [ -f "$d/metrics.json" ] || return 1
+  grep -q '"train_from": "101"' "$d/metrics.json" || return 1       # made before the 1989-on design: run again
   if [ "$1" = "size_all_s1" ] && [ ! -f "$d/model/tokenizer_config.json" ]; then return 1; fi
   return 0
 }
