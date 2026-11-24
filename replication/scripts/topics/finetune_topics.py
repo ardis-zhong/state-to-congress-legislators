@@ -6,9 +6,9 @@ expanding-window design. Meant for a GPU (SDSU research computing, Colab); runs 
 Three designs (rows of topic_runs.csv, made by make_topic_runs.py):
   size   train on a random N of the federal training pool (N = 1,000 ... all), several seeds for small N;
          tested on one fixed held-out federal test set. Shows how much fine-tuning data the labels need.
-  time   train on Congresses 93..T, test on the next two Congresses (out of time) and on the in-window test bills.
+  time   train on Congresses 101..T (all with text), test on the next two Congresses (out of time) and on the in-window test bills.
          Shows how well labels from one era carry to later ones.
-  time_fixed  the time windows with a constant number of training bills (random 25,000 from Congresses 93..T).
+  time_fixed  the time windows with a constant number of training bills (random 9,500 from Congresses 101..T).
 Every run also labels every state bill, so state-side evidence (committees, official subject terms, the gold
 sample) can be traced along both windows.
 
@@ -154,12 +154,15 @@ def main():
         val = [r for r in fed if r["split"] == "val"]
         tests["test"] = [r for r in fed if r["split"] == "test"]
     else:
-        lo, hi = 93, int(run["train_through"])
+        lo, hi = int(run["train_from"]), int(run["train_through"])
         t_lo, t_hi = (int(x) for x in run["test_congresses"].split("-"))
         train = [r for r in fed if lo <= r["congress"] <= hi and r["split"] == "train"]
         if run["design"] == "time_fixed":        # same number of bills in every window
             random.Random(seed).shuffle(train)
-            train = train[:int(run["train_size"])]
+            n = int(run["train_size"])
+            if len(train) < n and not a.smoke:
+                sys.exit(f"window has only {len(train)} training bills, fewer than {n}")
+            train = train[:n]
         val = [r for r in fed if lo <= r["congress"] <= hi and r["split"] == "val"]
         tests["in_window"] = [r for r in fed if lo <= r["congress"] <= hi and r["split"] == "test"]
         tests["out_of_time"] = [r for r in fed if t_lo <= r["congress"] <= t_hi]
@@ -175,7 +178,8 @@ def main():
     tok = AutoTokenizer.from_pretrained(a.model)
     model = AutoModelForSequenceClassification.from_pretrained(a.model, num_labels=len(labels)).to(device)
     collate = Collate(tok, 128 if a.smoke else a.max_len)
-    epochs = 1 if a.smoke else epochs_for(len(train))
+    # time designs: the same number of epochs in every window, so epochs never differ between windows
+    epochs = 1 if a.smoke else 5 if run["design"] != "size" else epochs_for(len(train))
     loader = DataLoader(train, batch_size=a.batch, shuffle=True, collate_fn=collate,
                         generator=torch.Generator().manual_seed(seed))
     opt = torch.optim.AdamW(model.parameters(), lr=a.lr, weight_decay=0.01)

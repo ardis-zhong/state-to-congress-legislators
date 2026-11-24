@@ -106,7 +106,7 @@ def main():
         main_set = "test" if m["design"] == "size" else "out_of_time"
         ft = [r for r in fed if r["test_set"] == main_set]
         row = dict(run_id=rid, design=m["design"], train_size=m["n_train"], seed=m["seed"],
-                   train_through=m.get("train_through", ""), label_set=m["label_set"],
+                   train_from=m.get("train_from", ""), train_through=m.get("train_through", ""), label_set=m["label_set"],
                    fed_accuracy=m.get(f"{main_set}_accuracy"), fed_macro_f1=m.get(f"{main_set}_macro_f1"),
                    fed_in_window_accuracy=m.get("in_window_accuracy"))
         row["fed_committee_consistency"], _ = consistency([(r["pred"], fprox.get(r["bill_id"], {}).get("committee_areas", set())) for r in ft])
@@ -248,7 +248,7 @@ def write_report(runs, groups, slope, intercept, gold, fed_ceiling, state_ceilin
               "| Window | Trained on Congresses | Federal bills | In-window accuracy | Next two Congresses accuracy | "
               "State committee consistency | Agreement with final |", "|---|---|---|---|---|---|---|"]
         for r in time_runs:
-            L.append(f"| {'fixed size' if r['design'] == 'time_fixed' else 'growing'} | 93–{r['train_through']} | {fmt(r['train_size'], False)} | {fmt(r['fed_in_window_accuracy'])} | "
+            L.append(f"| {'fixed size' if r['design'] == 'time_fixed' else 'growing'} | {r['train_from']}–{r['train_through']} | {fmt(r['train_size'], False)} | {fmt(r['fed_in_window_accuracy'])} | "
                      f"{fmt(r['fed_accuracy'])} | {fmt(r['state_committee_consistency'])} | "
                      f"{fmt(r.get('state_agreement_with_final'))} |")
         L.append("")
