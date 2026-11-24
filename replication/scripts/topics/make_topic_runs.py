@@ -7,6 +7,8 @@ fine-tuning run of finetune_topics.py).
         (1 seed): how much fine-tuning the labels need. size_all_s1 is the model that labels Table 6.
   time  train on Congresses 93..T for T = 98, 102, 106, 110, 114, 116; test on Congresses T+1..T+2: does an older
         training window carry to later Congresses?
+  time_fixed  the same six windows, each trained on a random 25,000 bills from Congresses 93..T, so that the number of
+        training bills is constant and only the period covered changes.
   sensitivity  size_all_commem_s1: all data, with the retired Commemorations area (used through 2008) as a 34th label.
 
 USAGE (from the repo root):  python3 replication/scripts/topics/make_topic_runs.py
@@ -21,6 +23,9 @@ for n, seeds in ((1000, 3), (2000, 3), (5000, 3), (10000, 3), (20000, 3), (50000
         rows.append([f"size_{name}_s{s}", "size", n, "", "", s, "current"])
 for t in (98, 102, 106, 110, 114, 116):
     rows.append([f"time_through{t}", "time", "", t, f"{t + 1}-{t + 2}", 1, "current"])
+FIXED = 25000   # below the smallest window's pool (29,316 through the 98th) and above 20,000, so every time run uses 3 epochs
+for t in (98, 102, 106, 110, 114, 116):
+    rows.append([f"time_fixed{FIXED}_through{t}", "time_fixed", FIXED, t, f"{t + 1}-{t + 2}", 1, "current"])
 rows.append(["size_all_commem_s1", "size", "all", "", "", 1, "with_commemorations"])
 with open(OUT, "w", newline="") as f:
     w = csv.writer(f, lineterminator="\n")

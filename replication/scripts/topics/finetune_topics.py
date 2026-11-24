@@ -3,11 +3,12 @@
 Fine-tune RoBERTa on Congress.gov policy areas (federal bills) and label the state bills: one run of the Table 6
 expanding-window design. Meant for a GPU (SDSU research computing, Colab); runs on CPU/Apple MPS only for smoke tests.
 
-Two designs (rows of topic_runs.csv, made by make_topic_runs.py):
+Three designs (rows of topic_runs.csv, made by make_topic_runs.py):
   size   train on a random N of the federal training pool (N = 1,000 ... all), several seeds for small N;
          tested on one fixed held-out federal test set. Shows how much fine-tuning data the labels need.
   time   train on Congresses 93..T, test on the next two Congresses (out of time) and on the in-window test bills.
          Shows how well labels from one era carry to later ones.
+  time_fixed  the time windows with a constant number of training bills (random 25,000 from Congresses 93..T).
 Every run also labels every state bill, so state-side evidence (committees, official subject terms, the gold
 sample) can be traced along both windows.
 
@@ -156,6 +157,9 @@ def main():
         lo, hi = 93, int(run["train_through"])
         t_lo, t_hi = (int(x) for x in run["test_congresses"].split("-"))
         train = [r for r in fed if lo <= r["congress"] <= hi and r["split"] == "train"]
+        if run["design"] == "time_fixed":        # same number of bills in every window
+            random.Random(seed).shuffle(train)
+            train = train[:int(run["train_size"])]
         val = [r for r in fed if lo <= r["congress"] <= hi and r["split"] == "val"]
         tests["in_window"] = [r for r in fed if lo <= r["congress"] <= hi and r["split"] == "test"]
         tests["out_of_time"] = [r for r in fed if t_lo <= r["congress"] <= t_hi]

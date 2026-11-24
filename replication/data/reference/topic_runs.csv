@@ -24,4 +24,10 @@ time_through106,time,,106,107-108,1,current
 time_through110,time,,110,111-112,1,current
 time_through114,time,,114,115-116,1,current
 time_through116,time,,116,117-118,1,current
+time_fixed25000_through98,time_fixed,25000,98,99-100,1,current
+time_fixed25000_through102,time_fixed,25000,102,103-104,1,current
+time_fixed25000_through106,time_fixed,25000,106,107-108,1,current
+time_fixed25000_through110,time_fixed,25000,110,111-112,1,current
+time_fixed25000_through114,time_fixed,25000,114,115-116,1,current
+time_fixed25000_through116,time_fixed,25000,116,117-118,1,current
 size_all_commem_s1,size,all,,,1,with_commemorations

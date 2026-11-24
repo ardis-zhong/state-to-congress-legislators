@@ -241,13 +241,14 @@ def write_report(runs, groups, slope, intercept, gold, fed_ceiling, state_ceilin
                  f"{fmt(r.get('gold_accuracy'))} ({fmt(r.get('gold_accuracy_lenient'))}) | "
                  f"{fmt(r.get('state_agreement_with_final'))} |")
     L += ["", f"![Learning curve]({os.path.basename(FIG)})", ""]
-    time_runs = sorted([r for r in runs if r["design"] == "time"], key=lambda r: int(r["train_through"]))
+    time_runs = sorted([r for r in runs if r["design"] in ("time", "time_fixed")],
+                       key=lambda r: (r["design"], int(r["train_through"])))
     if time_runs:
         L += ["## Drift over time (time window)", "",
-              "| Trained on Congresses | Federal bills | In-window accuracy | Next two Congresses accuracy | "
-              "State committee consistency | Agreement with final |", "|---|---|---|---|---|---|"]
+              "| Window | Trained on Congresses | Federal bills | In-window accuracy | Next two Congresses accuracy | "
+              "State committee consistency | Agreement with final |", "|---|---|---|---|---|---|---|"]
         for r in time_runs:
-            L.append(f"| 93–{r['train_through']} | {fmt(r['train_size'], False)} | {fmt(r['fed_in_window_accuracy'])} | "
+            L.append(f"| {'fixed size' if r['design'] == 'time_fixed' else 'growing'} | 93–{r['train_through']} | {fmt(r['train_size'], False)} | {fmt(r['fed_in_window_accuracy'])} | "
                      f"{fmt(r['fed_accuracy'])} | {fmt(r['state_committee_consistency'])} | "
                      f"{fmt(r.get('state_agreement_with_final'))} |")
         L.append("")
