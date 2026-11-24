@@ -30,14 +30,16 @@ available, to measure agreement. Don't look up how the model or the committees c
 4. **Money bills.** A general appropriations or budget bill → **Economics and Public Finance**. A bill funding one
    program (e.g. school construction) → that program's area (Education). Tax bills → **Taxation**.
 5. **Elections and redistricting** (including legislative districts) → **Government Operations and Politics**.
-6. **Honorary and commemorative measures** (congratulations, memorials, special days): Congress.gov stopped using a
-   separate "Commemorations" area after 2008 and now assigns these to the subject being honored. Code the subject:
-   a championship team → Sports and Recreation; a hospital's anniversary → Health; "Breast Cancer Awareness Month" →
-   Health; a school or students → Education; a veteran or military unit → Armed Forces and National Security; a
-   church or cultural group → Arts, Culture, Religion; a historical event or anniversary → Social Sciences and
-   History. A memorial for a person with no clear subject: a former legislator → Congress; a public official →
-   Government Operations and Politics; anyone else → Arts, Culture, Religion, with Low confidence. Always also mark
-   `honorary_or_commemorative` = Yes.
+6. **Honorary and commemorative measures** (congratulations, memorials, special days): Congress.gov's separate
+   "Commemorations" area appears in our data only through the 110th Congress (2007-2008). Since then these measures get
+   the area of the subject honored. Code that subject, as Table 7 shows Congress.gov doing from the 111th Congress on:
+   a championship team → Sports and Recreation (168 of 170); a military unit or veterans → Armed Forces and National
+   Security (67 of 87); awareness days and months → the subject (Health is the most common); **an anniversary → the
+   subject of the anniversary** (a university's → Education), not Social Sciences and History by default.
+   A memorial or tribute to a person: a current or former legislator → Congress (27 of 29); anyone else → the field the
+   person is known for (an athlete → Sports and Recreation, a police officer → Crime and Law Enforcement, an artist or
+   member of the clergy → Arts, Culture, Religion). If no field is evident, use your best guess with Low confidence;
+   there is no clear Congress.gov pattern for these. Always also mark `honorary_or_commemorative` = Yes.
 7. **Claims against the state** for one named person or company → **Private Legislation**.
 8. **Unclear or unreadable text:** pick the best area from the title, set confidence Low and explain in `notes`.
 

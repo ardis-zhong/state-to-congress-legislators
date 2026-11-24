@@ -9,6 +9,8 @@ Per run:
             areas their committees point to (topic_proxies.py), and the same share for the TRUE label (the ceiling)
   state     committee consistency, subject-term consistency (legislatures' own subject indexes, via LegiScan) and
             California-heading consistency of the predicted labels; agreement with the final model (size_all_s1)
+            (the California heading is part of the title and digest the model reads, so that check is NOT independent:
+            it is reported for reference and never used in the accuracy estimate)
   gold      once documentation/topic_gold_sample/gold_sample_coded.xlsx exists: era-weighted accuracy against the
             hand codes (strict = first choice; lenient = first or second choice), and the gold labels' own committee
             consistency (the state ceiling)
@@ -229,7 +231,7 @@ def write_report(runs, groups, slope, intercept, gold, fed_ceiling, state_ceilin
     size = sorted([r for r in runs if r["design"] == "size"], key=lambda r: (r["label_set"], r["train_size"], r["seed"]))
     L += ["## How much fine-tuning (training-set size window)", "",
           "| Run | Federal bills | Federal accuracy | Federal macro-F1 | Federal committee consistency (ceiling) | "
-          "State committee consistency | State subject consistency | CA heading consistency | Est. state accuracy | "
+          "State committee consistency | State subject consistency | CA heading consistency (not independent) | Est. state accuracy | "
           "Gold accuracy (lenient) | Agreement with final |", "|" + "---|" * 11]
     for r in size:
         L.append(f"| {r['run_id']} | {fmt(r['train_size'], False)} | {fmt(r['fed_accuracy'])} | {fmt(r['fed_macro_f1'])} | "

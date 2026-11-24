@@ -14,7 +14,7 @@ sample) can be traced along both windows.
 Splits are fixed by a hash of bill_id (independent of row order and run): 10% of labeled federal bills = test,
 3% = validation (best epoch chosen on validation macro-F1), the rest = training pool.
 
-Input: the tokenizer gets (title, body) as a text pair, body truncated so the pair fits MAX_LEN tokens. body is
+Input: the tokenizer gets (title, body) as a text pair, the longer part truncated until it fits MAX_LEN tokens. body is
 the bill text with committee references removed (build_topic_data.py); bills without text use the title alone.
 
 Outputs in <out>/<run_id>/:
@@ -55,9 +55,15 @@ def split_of(bill_id):
     return "test" if h < 10 else "val" if h < 13 else "train"
 
 
-def read_gz(path):
+def read_gz(path, keep, keep_per_1000=1000):
+    """Rows as dicts with only the `keep` fields; keep_per_1000 < 1000 takes a fixed hash subset (smoke tests)."""
+    out = []
     with gzip.open(path, "rt", newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+        for r in csv.DictReader(f):
+            if keep_per_1000 < 1000 and int(hashlib.md5(("s" + r["bill_id"]).encode()).hexdigest(), 16) % 1000 >= keep_per_1000:
+                continue
+            out.append({k: r[k] for k in keep})
+    return out
 
 
 def epochs_for(n):
@@ -83,7 +89,7 @@ class Collate:
         titles = [b["title"] or "" for b in batch]
         bodies = [b["body"] or "" for b in batch]
         if any(bodies):
-            enc = self.tok(titles, [x or "." for x in bodies], truncation="only_second", max_length=self.max_len,
+            enc = self.tok(titles, [x or "." for x in bodies], truncation="longest_first", max_length=self.max_len,
                            padding=True, return_tensors="pt")
         else:
             enc = self.tok(titles, truncation=True, max_length=self.max_len, padding=True, return_tensors="pt")
@@ -131,7 +137,9 @@ def main():
     np.random.seed(seed)
     torch.manual_seed(seed)
 
-    fed = [r for r in read_gz(os.path.join(a.data_dir, "federal_topic_data.csv.gz")) if r["label"] in lid]
+    sub = 30 if a.smoke else 1000
+    fed = [r for r in read_gz(os.path.join(a.data_dir, "federal_topic_data.csv.gz"),
+                              ("bill_id", "congress", "label", "title", "body"), sub) if r["label"] in lid]
     for r in fed:
         r["y"] = lid[r["label"]]
         r["split"] = split_of(r["bill_id"])
@@ -140,7 +148,8 @@ def main():
     if run["design"] == "size":
         pool = [r for r in fed if r["split"] == "train"]
         n = len(pool) if run["train_size"] == "all" else int(run["train_size"])
-        train = random.Random(seed).sample(pool, min(n, len(pool)))
+        random.Random(seed).shuffle(pool)
+        train = pool[:n]                 # nested: with one seed, each larger window contains every smaller one
         val = [r for r in fed if r["split"] == "val"]
         tests["test"] = [r for r in fed if r["split"] == "test"]
     else:
@@ -150,12 +159,12 @@ def main():
         val = [r for r in fed if lo <= r["congress"] <= hi and r["split"] == "val"]
         tests["in_window"] = [r for r in fed if lo <= r["congress"] <= hi and r["split"] == "test"]
         tests["out_of_time"] = [r for r in fed if t_lo <= r["congress"] <= t_hi]
-    state = read_gz(os.path.join(a.data_dir, "state_topic_data.csv.gz"))
+    state = read_gz(os.path.join(a.data_dir, "state_topic_data.csv.gz"), ("bill_id", "title", "body"), sub)
     if a.smoke:
         rng = random.Random(0)
         train, val = rng.sample(train, min(200, len(train))), rng.sample(val, min(100, len(val)))
         tests = {k: rng.sample(v, min(200, len(v))) for k, v in tests.items()}
-        state = rng.sample(state, 300)
+        state = rng.sample(state, min(300, len(state)))
 
     device = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
     amp = device == "cuda"
