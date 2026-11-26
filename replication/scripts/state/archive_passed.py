@@ -196,7 +196,305 @@ def new_jersey(want):
     return out
 
 
-EXTRACTORS = [("CA", california), ("PA", pennsylvania), ("NJ", new_jersey)]
+# ---------------------------------------------------------------------------------------------- Florida
+FL_OTHER_BILL = re.compile(r"(?:Iden\.?/Sim\.?/Compare|Link/Iden/Sim/Compare|companion bill\(s\)|See also|"
+                           r"refer to|see\s+(?:CS/)*[HS])[^;]*", re.I)
+FL_LAW = re.compile(r"Approved by Governor|Became Law without Governor|Chapter No\.|Location: Became Law|"
+                    r"filed with Secretary of State|veto overridden|Became Law", re.I)
+
+
+def fl_decide(typ, actions):
+    """actions: the bill's own history text, with clauses about other (identical or companion) bills removed."""
+    a = FL_OTHER_BILL.sub(" ", actions)
+    if re.search(r"Veto Message|Vetoed", a, re.I) and not re.search(r"veto overridden", a, re.I):
+        return "No", "vetoed"
+    if FL_LAW.search(a):
+        return "Yes", "became law / filed with Secretary of State"
+    if typ in ("HR", "SR") and re.search(r"\bAdopted\b", a):
+        return "Yes", "resolution adopted"
+    if re.search(r"Laid on Table|Substituted", a, re.I) and FL_OTHER_BILL.search(actions):
+        return "No", "laid on table: an identical/companion bill passed instead"
+    return "No", "died / not passed"
+
+
+def florida(want):
+    """1998-2012: the Senate site's session bill lists (fl_senate_cache/lists/<session>_<house|senate>_<page>.html) give
+    each measure's full 'Last Action'. 1995-1997: Online Sunshine bill pages kept by the Internet Archive
+    (fl_wayback_cache/pages/<year>/<H123>.html) give the dated history. Yes = approved by the Governor, became law
+    without signature, chapter number, or (resolutions, memorials) 'Signed by Officers and filed with Secretary of
+    State'; simple resolutions (HR, SR) also when 'Adopted'. A bill laid on the table because an identical or companion
+    bill passed instead did not itself pass. Clauses naming the other bill ('refer to SB 48 (Ch. 99-413)', 'See also
+    SR 84 (Adopted)') are removed before matching. A blank archived page = Unknown."""
+    out = {}
+    for f in sorted(glob.glob("fl_senate_cache/lists/*.html")):
+        code = os.path.basename(f).split("_")[0]
+        t = open(f, "rb").read().decode("utf-8", "replace")
+        for m in re.finditer(r">\s*(?:CS/)*([HS][A-Z]*)\s+(\d+[A-Z]?)\s*</a>(.*?)Last Action:\s*(.*?)(?=</)", t, re.S):
+            bid = f"FL-{code}-{m.group(1)}{m.group(2)}"          # special sessions: 'HB 55B' -> FL-2001B-HB55B
+            if bid in want and bid not in out:
+                a = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", m.group(4))).replace("&amp;", "&").replace("&#39;", "'")
+                out[bid] = fl_decide(m.group(1), a)
+    for f in glob.glob("fl_wayback_cache/pages/*/*.html"):
+        year = f.split("/")[-2]
+        m = re.match(r"([HS])(\d+)\.html$", os.path.basename(f))
+        bid = f"FL-{year}-{m.group(1)}B{m.group(2)}" if m else ""
+        if bid not in want or bid in out:
+            continue
+        entries = []                                  # dated entries, with their wrapped continuation lines
+        for l in lines_of(f):
+            if re.match(r"\d\d/\d\d/\d\d\s", l):
+                entries.append(l)
+            elif entries and not re.match(r"(BILL TEXT|STATUTE CITATIONS|SUBJECT INDEX|Bill Text|Statute Citations)", l):
+                entries[-1] += " " + l
+            elif entries:
+                break
+        if not entries:
+            out[bid] = ("Unknown", "archived page has no history")
+            continue
+        typ = "HR" if m.group(1) == "H" and int(m.group(2)) >= 9000 else m.group(1) + "B"   # House resolutions: 9001 on
+        res = fl_decide(typ, " ; ".join(entries))
+        if res[0] == "No" and res[1] == "died / not passed" and not re.search(
+                r"(?i)died|withdrawn|indefinitely postponed|laid on table|carried over", entries[-1]):
+            res = ("Unknown", "archived copy taken before the session ended")
+        out[bid] = res
+    return out
+
+
+# ---------------------------------------------------------------------------------------------- Texas
+def texas(want):
+    """FTP author reports (tx_ftp_cache/authors/<session>_<code>.htm) give each measure's last action with the body that
+    took it ('Last Action: 06/09/1993 E Effective on 9/1/93'). E (executive) actions mean law ('Effective ...', 'Signed by
+    the Governor') or, for concurrent and joint resolutions, 'Signed by the Governor' / 'Filed with the Secretary of
+    State', except 'Vetoed by the Governor'. Simple resolutions (HR, SR) end with 'Adopted' or 'Reported enrolled'
+    after adoption. Anything else = not passed."""
+    out = {}
+    for f in glob.glob("tx_ftp_cache/authors/*.htm"):
+        code = os.path.basename(f).split("_")[0]
+        s = plain(f)
+        for m in re.finditer(r"\b([HS][A-Z]*) (\d+) Author:.*?Last Action:\s*(\d\d/\d\d/\d{4})\s+([A-Z])\s+(.*?)\s+Caption:", s):
+            bid = f"TX-{code}-{m.group(1)}{m.group(2)}"
+            if bid not in want or bid in out:
+                continue
+            ty, who, act = m.group(1), m.group(4), m.group(5)
+            if who == "E":
+                out[bid] = ("No", "vetoed by the Governor") if "Vetoed" in act else ("Yes", f"last action: {act[:40]}")
+            elif ty in ("HR", "SR") and re.match(r"(Adopted|Reported enrolled)", act):
+                out[bid] = ("Yes", "resolution adopted")
+            else:
+                out[bid] = ("No", f"last action: {act[:40]}")
+    return out
+
+
+# ---------------------------------------------------------------------------------------------- batch: one-page sources
+def louisiana(want):
+    """BillInfo pages (la_legis_cache/info/<i>.html) give 'Current Status': 'Signed by the Governor - Act 445', 'Became
+    Act without signature' = law; 'Sent to the Secretary of State' / 'Enrolled' + adopted = resolution adopted; 'Pending
+    ...', 'Withdrawn ...', 'Subject to call ...', 'Vetoed ...' = not passed. Each page's bill and session come from the
+    saved search lists (la_legis_cache/lists|search/<session>_*.html), since the page header shows the current session."""
+    key = {}
+    for f in glob.glob("la_legis_cache/lists/*.html") + glob.glob("la_legis_cache/search/*.html"):
+        sess = os.path.basename(f).split("_")[0]
+        for i, b in re.findall(r'BillInfo\.aspx\?i=(\d+)"[^>]*>\s*([A-Z]+\d+)\s*<', open(f, errors="replace").read()):
+            key.setdefault(i, f"LA-{sess}-{b}")
+    out = {}
+    for f in glob.glob("la_legis_cache/info/*.html"):
+        bid = key.get(os.path.basename(f)[:-5])
+        if bid not in want or bid in out:
+            continue
+        m = re.search(r"Current Status:\s*(.{0,80}?)\s+(?:Text|Digests|Amendments|Authors|Votes)\b", plain(f))
+        st = (m.group(1) if m else "").strip()
+        if not st:
+            out[bid] = ("Unknown", "no current status on the saved page")
+        elif re.search(r"Signed by the Governor|Act\s*\d+|without (the Governor's )?signature|Sent to the Secretary of State|"
+                       r"veto overridden", st, re.I):
+            out[bid] = ("Yes", f"current status: {st[:50]}")
+        else:
+            out[bid] = ("No", f"current status: {st[:50]}")
+    return out
+
+
+def mississippi(want):
+    """Author pages (ms_billstatus_cache/author_pages/<session>_<name>.htm) list each measure with its final action:
+    'Approved by Governor' (law), 'Enrolled Bill Signed' (concurrent resolution adopted by both houses), 'Adopted' /
+    'Immediate Release' (simple resolution adopted); 'Died ...', 'Vetoed', 'Veto Sustained', 'Failed' = not passed."""
+    out = {}
+    for f in glob.glob("ms_billstatus_cache/author_pages/*"):
+        sess = os.path.basename(f).split("_")[0]
+        s = plain(f)
+        for m in re.finditer(r"\b((?:H|S)[A-Z]*) ?(\d{1,4})\b(.*?)\b\d\d/\d\d (?:\([HS]\) )?([A-Z][A-Za-z ]{3,32}?)(?= (?:H|S)[A-Z]* ?\d{1,4}\b| KEY| End|$)", s):
+            bid = f"MS-{sess}-{m.group(1)}{int(m.group(2)):04d}"      # pages print 'SC 508'; Table 4 ids pad: SC0508
+            if bid not in want or bid in out:
+                continue
+            st = m.group(4).strip()
+            if re.match(r"(Approved by Governor|Enrolled Bill Signed|Veto Overridden)", st):
+                out[bid] = ("Yes", st)
+            elif re.match(r"(Adopted|Immediate Release)", st) and m.group(1) in ("HR", "SR"):   # concurrent: 'Enrolled Bill Signed'
+                out[bid] = ("Yes", f"resolution: {st}")
+            else:
+                out[bid] = ("No", st)
+    return out
+
+
+def maryland(want):
+    """Sponsor pages (md_mga_cache/sponsors/<year>_<key>.htm) give 'Status as of <date>: Became Law - Chapter 621' /
+    'Became Law - Joint Resolution 2' / 'Became Law - Overridden Veto' (passed), or 'Vetoed by the Governor ...' / 'Bill is
+    in the House - Unfavorable ...' (not passed)."""
+    out = {}
+    for f in glob.glob("md_mga_cache/sponsors/*.htm"):
+        year = os.path.basename(f)[:4]
+        for m in re.finditer(r"\b(HB|SB|HJ|SJ)\s*(\d+)\s+Status as of [A-Za-z]+ \d+, \d{4}:\s*(.*?)\s+Sponsored By", plain(f)):
+            bid = f"MD-{year}-{m.group(1)}{m.group(2)}"
+            if bid in want and bid not in out:
+                st = m.group(3)
+                out[bid] = ("Yes", st[:50]) if st.startswith("Became Law") else ("No", st[:50])
+    return out
+
+
+def west_virginia(want):
+    """Bill history pages (wv_legislature_cache/history/<year>_RS_<num>.html): 'LAST ACTION: H Chapter 99, Acts 1996' =
+    law; anything else (committee referral, 'Vetoed by Governor', ...) = not passed. No last action on the page = Unknown."""
+    out = {}
+    for f in glob.glob("wv_legislature_cache/history/*.html"):
+        m0 = re.match(r"(\d{4})_RS_(\d+)\.html$", os.path.basename(f))
+        s = plain(f)
+        h = re.search(r"\b(House|Senate) Bill (\d+)\b", s)
+        if not m0 or not h:
+            continue
+        bid = f"WV-{m0.group(1)}-{h.group(1)[0]}B{h.group(2)}"
+        if bid not in want or bid in out:
+            continue
+        m = re.search(r"LAST ACTION:\s*(.{0,60}?)\s\d\d/\d\d/\d\d", s)
+        if not m:
+            out[bid] = ("Unknown", "no last action on the saved page")
+        else:
+            out[bid] = ("Yes", m.group(1)) if re.search(r"Chapter \d+|Acts \d{4}", m.group(1)) else ("No", m.group(1))
+    return out
+
+
+def alaska(want):
+    """BASIS prime-sponsorship tables (ak_akleg_cache/sponsorship/<legislature>_<code>.html): Current Status 'CHAPTER 72
+    SLA 01' = law, 'LEGIS RESOLVE 12' = resolution adopted by both houses; a committee ('(H) FIN') or 'FAILED' = not passed."""
+    out = {}
+    for f in glob.glob("ak_akleg_cache/sponsorship/*.html"):
+        leg = os.path.basename(f).split("_")[0]
+        for m in re.finditer(r"\b([HS][A-Z]*) (\d+) (.*?)(?:REPRESENTATIVES?|SENATORS?) [A-Z ,.'-]+? "
+                             r"((?:\([HS]\) \w+)|[A-Z][A-Z ]*?\d+(?: [A-Z]+ \d+)?|[A-Z][A-Z ]+) (\d\d/\d\d/\d{4})", plain(f)):
+            bid = f"AK-{leg}-{m.group(1)}{m.group(2)}"
+            if bid in want and bid not in out:
+                st = m.group(4)
+                out[bid] = ("Yes", st) if re.match(r"(CHAPTER|LEGIS RESOLVE|PERMANENTLY FILED)", st) else ("No", st)
+    return out
+
+
+def idaho(want):
+    """Year-end mini-data status lists (id_legislature_cache/lists/<year>.html): '(+) indicates ADOPTED or LAW';
+    'LAW+' / 'ADOPTED+' = passed, anything else = not passed."""
+    out = {}
+    for f in glob.glob("id_legislature_cache/lists/*.html"):
+        year = os.path.basename(f)[:4]
+        s = plain(f)
+        for m in re.finditer(r"\b([HS](?:JR|CR|JM|R|M)?)0*(\d+)a*\b [^.]{2,60}?\.{3,}\s*(.{1,40}?)(?=\s+[HS](?:JR|CR|JM|R|M)?\d{3,4}a*\b|$)", s):
+            bid = f"ID-{year}-{m.group(1)}{m.group(2)}"
+            if bid in want and bid not in out:
+                st = m.group(3).strip()
+                out[bid] = ("Yes", st) if re.search(r"\b(LAW|ADOPTED)\b", st) else ("No", st)
+    return out
+
+
+def kentucky(want):
+    """Legislative Record pages (ky_record_cache/items/<session>_<bill>.html) carry each measure's history: 'signed by
+    Governor', 'became law without Governor's signature', 'filed ... Secretary of State', 'Acts ch.' = passed; simple
+    resolutions (HR, SR) also when 'adopted'. Otherwise not passed."""
+    out = {}
+    for f in glob.glob("ky_record_cache/items/*.html"):
+        m0 = re.match(r"(\d\d[a-z]{2})_([A-Z]+\d+)\.html$", os.path.basename(f))
+        bid = f"KY-{m0.group(1).upper()}-{m0.group(2)}" if m0 else ""
+        if bid not in want:
+            continue
+        s = plain(f)
+        if re.search(r"signed by (the )?Governor|became law without|Secretary of State|Acts,? ch\.|veto overridden", s, re.I) \
+                and not re.search(r"vetoed(?!.*overrid)", s, re.I):
+            out[bid] = ("Yes", "history: signed / filed")
+        elif re.match(r"[HS]R\d", m0.group(2)) and re.search(r"\badopted\b", s, re.I):
+            out[bid] = ("Yes", "resolution adopted")
+        else:
+            out[bid] = ("No", "history: not signed or adopted")
+    return out
+
+
+def new_mexico(want):
+    """Legislation pages (nm_nmlegis_cache/bills/<session>_<bill>.html): a chapter number ('Ch. 59', 'SGND BY GOV ... Ch.')
+    = law; memorials and resolutions passed by their house(s) ('PASSED/H') count as adopted. Otherwise not passed."""
+    out = {}
+    for f in glob.glob("nm_nmlegis_cache/bills/*.html"):
+        m0 = re.match(r"(\w+?)_([A-Z]+\d+)\.html$", os.path.basename(f))
+        bid = f"NM-{m0.group(1)}-{m0.group(2)}" if m0 else ""
+        if bid not in want:
+            continue
+        s = plain(f)
+        if re.search(r"\bCh\.\s?\d+|SGND BY GOV", s):
+            out[bid] = ("Yes", "chaptered / signed by the Governor")
+        elif re.match(r"[HS](M|R)\d", m0.group(2)) and "PASSED/" in s:
+            out[bid] = ("Yes", "memorial/resolution passed")
+        else:
+            out[bid] = ("No", "no chapter")
+    return out
+
+
+def ohio(want):
+    """SOLAR version lists (oh_solar_cache/versions/general_assembly_<ga>_<bill>.json): a governor's signing date or
+    effective date on any version = law; a simple resolution with an 'As Adopted' version, or a concurrent/joint
+    resolution with an 'As Enrolled' version, was adopted. No saved version list = Unknown."""
+    import json
+    out = {}
+    for f in glob.glob("oh_solar_cache/versions/general_assembly_*.json"):
+        m0 = re.match(r"general_assembly_(\d+)_([a-z]+)(\d+)\.json$", os.path.basename(f))
+        if not m0:
+            continue
+        bid = f"OH-GA{m0.group(1)}-{m0.group(2).upper()}{m0.group(3)}"
+        if bid not in want:
+            continue
+        try:
+            v = json.load(open(f))
+        except Exception:
+            continue
+        names = {x.get("version") or "" for x in v}
+        if any(x.get("governor_signed_date") or x.get("effective_date") for x in v):
+            out[bid] = ("Yes", "signed by the Governor")
+        elif m0.group(2) in ("hr", "sr") and "As Adopted" in names:
+            out[bid] = ("Yes", "resolution adopted")
+        elif m0.group(2) in ("hcr", "scr", "hjr", "sjr") and "As Enrolled" in names:
+            out[bid] = ("Yes", "resolution adopted by both houses")
+        else:
+            out[bid] = ("No", "last version: " + sorted(names)[-1] if names else "no versions")
+    return out
+
+
+def connecticut(want):
+    """2001-2009: the Connecticut General Assembly's bill_info.csv (ct_cga_cache/ftp/<year>bill_info.csv) gives the public
+    or special act number (pasa_num) of every bill that became law. 1993-2000 bills: no saved status (Unknown)."""
+    out = {}
+    for f in glob.glob("ct_cga_cache/ftp/*bill_info.csv"):
+        year = os.path.basename(f)[:4]
+        for r in csv.DictReader(open(f, newline="", encoding="utf-8", errors="replace")):
+            m = re.match(r"([A-Z]+)0*(\d+)$", (r.get("bill_num") or "").strip())
+            if not m:
+                continue
+            for bid in (f"CT-{year}-{m.group(1)}{int(m.group(2)):05d}", f"CT-{year}-{m.group(1)}{m.group(2)}"):
+                if bid in want and bid not in out:
+                    pa = (r.get("pasa_num") or "").strip()
+                    out[bid] = ("Yes", f"{(r.get('pasa_type') or '').strip()} act {pa}") if pa not in ("", "0", "NULL") else ("No", "no act number")
+    return out
+
+
+def by_version(want, versions_yes, versions_no, note):
+    """Sources whose single saved text is the bill's final state (New Hampshire's archived files are 'FINAL VERSION' when
+    the bill passed, the introduced or amended text when it died; Colorado's Session Laws hold only enacted acts)."""
+    return {b: ("Yes", note) if v in versions_yes else ("No", note) for b, v in want.items() if v in versions_yes | versions_no}
+
+
+EXTRACTORS = [("CA", california), ("PA", pennsylvania), ("NJ", new_jersey), ("FL", florida), ("TX", texas), ("LA", louisiana), ("MS", mississippi), ("MD", maryland), ("WV", west_virginia),
+              ("AK", alaska), ("ID", idaho), ("KY", kentucky), ("NM", new_mexico), ("OH", ohio), ("CT", connecticut)]
 
 NOT_AVAILABLE = {}
 
@@ -207,6 +505,11 @@ def main():
     res = {}
     for st, fn in EXTRACTORS:
         got = fn({b for b in want if t4[b][0] == st})
+        res.update({b: v + (t4[b][1],) for b, v in got.items()})
+    nh = {b: t4[b][2] for b in want if t4[b][0] == "NH"}
+    co = {b: t4[b][2] for b in want if t4[b][1] == "Colorado General Assembly (Internet Archive)"}
+    for got in (by_version(nh, {"Enrolled"}, {"Introduced", "Amended"}, "final archived file: enrolled (passed) or not"),
+                by_version(co, {"Chaptered"}, set(), "Session Laws chapter")):
         res.update({b: v + (t4[b][1],) for b, v in got.items()})
     rows, tally = [], collections.Counter()
     for b in sorted(want):
