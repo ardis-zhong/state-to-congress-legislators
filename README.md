@@ -29,7 +29,8 @@ The repo has two parts:
 
 Column definitions, sources, and build status for each table are in
 [`datasets/README.md`](datasets/README.md). Tables 4 and 5 (full bill text)
-are too large for GitHub and will be published on Harvard Dataverse.
+are too large for GitHub and are published on Harvard Dataverse:
+https://doi.org/10.7910/DVN/GBGZCI
 
 **Status:** Tables 1–5 and 7 are final as of the November 18–19, 2026 data
 freeze; Table 6 (state bill topics) is pending. `datasets/README.md` describes each table.
